@@ -1,0 +1,86 @@
+{
+  "site": {
+    "id": "R30 lot (illustrative, regional)",
+    "lga": "Regional local government (illustrative)",
+    "region": "regional",
+    "r_code": "R30",
+    "area_m2": 375,
+    "width_m": 12.5,
+    "depth_m": 30.0,
+    "verge": {
+      "path_or_road_offset_m": 0.5,
+      "basis": "existing",
+      "source": "subdivision engineering drawing"
+    },
+    "instruments": [
+      {
+        "type": "ldp",
+        "ref": "LDP (illustrative)",
+        "clauses": [
+          {
+            "ref": "cl 3.2",
+            "text": "Garages are to be set back a minimum of 4.5 m from the primary street.",
+            "targets": [
+              {
+                "chapter": "ch2",
+                "clause": "C3.3.3",
+                "effect": {
+                  "set": {
+                    "value": 4.5
+                  }
+                },
+                "reading_confirmed": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "proposal": {
+    "dwelling_type": "single_house",
+    "dwelling_count": 1,
+    "storeys": 1
+  },
+  "building": {
+    "roofed_area_m2": 240,
+    "house_length_m": 24.3
+  },
+  "parking": {
+    "garage": {
+      "setback_primary_m": 4.5,
+      "ext_width_m": 5.99,
+      "bays": 2,
+      "parallel_parking": false,
+      "parallel_wall_openings": 0,
+      "present": true
+    }
+  },
+  "facts_meta": {
+    "site.area_m2": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "lot plan"
+      }
+    },
+    "site.verge.path_or_road_offset_m": {
+      "method": "measured",
+      "confidence": 0.9,
+      "source": {
+        "file": "engineering drawing"
+      }
+    },
+    "building.roofed_area_m2": {
+      "method": "computed",
+      "confidence": 0.9
+    },
+    "parking.garage.setback_primary_m": {
+      "method": "stated",
+      "confidence": 0.95,
+      "source": {
+        "file": "site plan"
+      }
+    }
+  }
+}

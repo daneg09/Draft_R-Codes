@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Side and rear setbacks Element Objectives",
+  "text": "Development is to achieve the following Element Objectives: O 2.4.1 Building boundary setbacks provide for adequate separation between neighbouring properties. O 2.4.2 Building boundary setbacks are consistent with the existing streetscape pattern or the desired streetscape character. O 2.4.3 The setback of development from side and rear boundaries enables retention of existing trees and provision of deep soil areas that reinforce the landscape character of the area, support tree canopy and assist with stormwater management. O 2.4.4 The setback of development from side and rear boundaries provides a transition between sites with different land uses or intensity of development.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.4",
+      "relation": "same",
+      "note": "Element Objectives"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 18
+  },
+  "register_ref": "C4P2-071",
+  "verify": false,
+  "notes": "",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.3.2(i)#r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Reduced primary street setback for a portion of the frontage: maximum width of the reduced portion",
+  "text": "C3.3.2 Notwithstanding C3.3.1, the following reductions are permitted: i. the primary street setback line may be reduced for a portion of the frontage width in accordance with in Table 3.3b (refer Figure 3.3a). Table 3.3b maximum percentage of frontage width (R2 to R40): The greater of: 30% of the frontage width or 4m. Maximum percentage of frontage width excludes garages which are provided in accordance with Table 3.3c.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R2-R40"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "building.primary_street_reduced_portion_width_m",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "building.primary_street_reduced_portion_width_m",
+    "site.frontage_m"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "max(0.3 * site.frontage_m, 4)",
+    "op": ">=",
+    "value": {
+      "fact": "building.primary_street_reduced_portion_width_m"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.3",
+  "defined_terms": [
+    "frontage",
+    "garage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.2(i)",
+      "relation": "relaxed",
+      "note": "30% of frontage -> the greater of 30% or 4 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1(iii)",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 31,
+    "table": "Table 3.3b",
+    "figure": "Figure 3.3a"
+  },
+  "register_ref": "ch3-048",
+  "verify": false,
+  "notes": "The formula value is the permitted width; the rule MEETS when the built-forward width is at or under it. The Table 3.3b footnote excludes garages provided in accordance with Table 3.3c (p31), so the fact is the width excluding such a garage.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Footnote reads 'Maximum percentage of frontage width excludes garages which are provided in accordance with Table 3.3c': a garage that meets Table 3.3c is not counted in the reduced-portion width."
+  }
+}

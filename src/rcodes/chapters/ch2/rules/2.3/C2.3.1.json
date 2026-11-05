@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Minimum on-site car parking spaces, Perth and Peel (Table 2.3a)",
+  "text": "Applies to development within the Perth and Peel regions only. C2.3.1 Car parking is provided on site in accordance with Table 2.3a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "perth-peel",
+  "inputs": [
+    "parking.spaces",
+    "site.location",
+    "proposal.bedrooms"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.3a",
+    "fact": "parking.spaces",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+  "defined_terms": [
+    "car parking space",
+    "Location A",
+    "Location B"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.1",
+      "relation": "relaxed",
+      "note": "R40 and below: Location A 1-2 bed 1 -> 0; Location B 2+ bed 2 -> 1"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.3.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "same",
+      "note": "R50+ minimums unchanged"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 18,
+    "extract_line": 542,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch2-022",
+  "verify": false,
+  "notes": "Minimum applies to all parking on site (garages, carports, uncovered, undercroft, basement). Location A/B definitions are in the table notes (register ch2-023: straight-line measurement enlarges Location A). Ancillary dwelling row and the R50+ maximum column are separate rules (C2.3.1-r1, -r2, -r3).",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

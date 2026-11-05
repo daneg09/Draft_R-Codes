@@ -1,0 +1,54 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.18.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.18",
+  "element_title": "Utilities",
+  "title": "Laundries convenient, secure, weather-protected, well-vented and sized to the dwelling",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Laundries are designed and located to be convenient to use, secure, weather-protected and well-vented; and are of an overall size and dimension that is appropriate to the size of the dwelling.",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.18",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.18.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 86,
+    "extract_line": 2962
+  },
+  "register_ref": "C4P2-128",
+  "verify": false,
+  "notes": "DG 4.18.4 gives cupboard laundry dimensions (1 m clear width; circulation area printed 'at least 900m') as guidance; not tested.",
+  "verified": {
+    "method": "page-image",
+    "page": 86,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

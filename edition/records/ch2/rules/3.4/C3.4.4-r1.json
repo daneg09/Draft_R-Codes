@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.4.4#r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Lower density code governs the boundary wall between differently coded sites",
+  "text": "Table 3.4c note: Where the subject site is adjacent to a site with a lower density code, the maximum wall length and height of the boundary wall between them is determined by the lower density code.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "density code"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.4",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4b",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 34
+  },
+  "register_ref": "ch2-066",
+  "verify": false,
+  "notes": "Table 3.4c note. Needs the adjoining lot's coding per boundary; no per-boundary fact exists, so recorded as judgment. A planner re-runs the C3.4.4 rules with the lower code where it applies.",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

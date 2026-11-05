@@ -1,0 +1,54 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Legible, continuous pedestrian path from footpath and parking to entries",
+  "text": "A legible, well-defined, continuous path of travel is provided from the public footpath and car parking areas to building access areas such as lobbies, stairs, accessways and individual dwelling entries.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.path_of_travel_to_entries"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.path_of_travel_to_entries",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "accessway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.8",
+      "relation": "relaxed",
+      "note": "mixed-use separation of residential and non-residential access dropped (not in the table of changes)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 41
+  },
+  "register_ref": "C4P1-117",
+  "verify": false,
+  "notes": "diverges: from ch3 C3.7.10, which is a judgment record. This chapter's fact vocabulary provides parking.path_of_travel_to_entries for C3.7.10, so the clause is recorded as a yes/no the applicant states (continuous path from the public footpath and car parking to lobbies, stairs, accessways and dwelling entries). Whether it is 'legible, well-defined' remains for the planner on review.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed (printed without a closing full stop). Yes/no encoding; 'legible, well-defined' remains for the planner."
+  }
+}

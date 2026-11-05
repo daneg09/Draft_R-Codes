@@ -1,0 +1,56 @@
+{
+  "id": "table-3.2a-storeys",
+  "title": "Table 3.2a Maximum building heights: maximum number of storeys",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "storeys",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2-R35"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": "R40-R60"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R80+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 4,
+      "note": "R80, R100, R160 and LR, MR and HR"
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": 4,
+      "note": "Table 2.10a: maximum four storeys in accordance with Table 3.2a (minimum two storeys is a separate rule)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 28,
+    "table": "Table 3.2a"
+  },
+  "register_ref": "ch2-039",
+  "verify": false,
+  "notes": "Table 3.2a split into one file per column (storeys, total height) because the engine reads table keys as application facts; a 'metric' key cannot be supplied by an application. Other register rows: ch2-040, ch2-041.",
+  "verified": {
+    "method": "page-image",
+    "page": "28, 25, 7",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R100-SL 4 storeys confirmed by Table 2.10a (p25) and Table 2A (p7)."
+  }
+}

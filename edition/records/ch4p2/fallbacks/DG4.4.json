@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.4",
+  "element_title": "Private open space and balconies",
+  "title": "Private open space and balconies design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.4.1 It is preferable that primary open space areas connect and are accessible from, the living room, dining room or kitchen of the dwelling. DG 4.4.2 The location and size of covered private open space should balance the functionality of the outdoor space with the climatic performance and daylighting of internal spaces. The following design solutions can assist with this: in temperate climate zones, deep covered areas are desirable on east and west faces, and to all faces in climate zones 1 and 3, to maximise shading of living spaces; for single fronted dwellings it is preferable that the living room has good daylight access and consideration should be given to alternative balcony configurations that do not provide deep shade to this room; west or east facing open space may require additional shading from low angle summer sun. Use operable screens or angled blades to admit winter sun; locate balconies to the side of living areas (with side access from the room), or consider the use of a pergola or operable awning, to enable winter solar gain and daylight to living rooms; use operable louvres for balconies with high exposure to prevailing winds. DG 4.4.3 Balconies and open space should be designed to retain good external outlook to landscape, views or open sky via the balcony from internal rooms. Ideally this means that the outer edge of the private open space is open to the sky and visible from the living room. Consider orientation of the balcony to avoid or minimise the need for high screening to achieve visual privacy requirements, as this can restrict daylight access and outlook for both the open space and adjoining habitable rooms. DG 4.4.4 Private open space should also offer residents reasonable privacy from neighbouring properties and the public realm. The extensive use of transparent balustrading or fencing, such as glass, pool fencing, or a minimum compliance balustrade, at ground floor and lower levels is not ideal as these solutions offer no privacy for residents. Inclusion of opaque or partially obscured fences and balustrades are preferable. This has the additional advantage of screening the storage of unsightly objects where required. DG 4.4.5 In some locations it will not be possible to provide open space that has high amenity for residents. Examples include sites affected by road, rail or aircraft noise, developments involving the adaptive reuse of existing buildings; higher buildings or exposed coastal locations where wind speed restricts the functionality, amenity and safety of outdoor space. In these circumstances consider design solutions such as: increasing internal living areas with bay windows, juliet balconies or operable walls opening into narrower open space; enclosed or semi-enclosed / operable wintergardens; roof-top terraces. DG 4.4.6 Where the provision of private open space is constrained by other factors, consider providing alternative secondary living spaces and/or increasing the area of communal open space. Increasing the area of communal open space commensurate with a decrease in private open space may also be appropriate where there is an explicit intent to facilitate communal living (footnote 1: Examples may include student housing, supported housing, co-operative housing, 'Nightingale' projects, Baugruppen and the like.) DG 4.4.7 Design should also consider the daily useability of private open space: use operable screens, shutters, hoods and pergolas to control sunlight and wind access to the open space area enabling its use at different times of the day and season; consider providing a water tap for plants and a gas outlet for a barbeque to primary balconies and private open space; make provision for the safety and amenity of pets; provide additional space where clothes drying, storage or air conditioning units are located in private open space, screening these utilities from the street and integrating them in the building design; condenser units should exhaust away from not into the private open space. Consider co-locating these items so that the exhaust assists with clothes drying; set back balustrades from the building or balcony edge where overlooking or safety is an issue. DG 4.4.8 Integrate balconies and private open space into the overall form and aesthetic of the development. For example: projecting balconies should be integrated into the building design and the design and finish of soffits considered; operable screens, shutters, hoods and pergolas should complement the materiality of the building; downpipes and balcony drainage should be integrated with the façade and building design; locate air-conditioning units on roofs, in basements or storerooms, or fully integrate them into the building design. Exposed pipework or outdoor units should not be visible from the street.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 59,
+    "extract_line": 2020
+  },
+  "register_ref": "C4P2-114",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.4",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Three columns on page 59 checked word for word against the page image; the wintergardens bullet belongs to DG 4.4.5, not DG 4.4.2. Footnote 1 to DG 4.4.6 carried inline.",
+  "verified": {
+    "method": "page-image",
+    "page": 59,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

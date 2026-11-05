@@ -1,0 +1,31 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Size and layout of dwellings merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.1.1 Dwellings have a primary living space that: i. is proportionate to the type and size of the dwelling and intended number of occupants; ii. has a physical and visual relationship with the primary garden area, private open space and/or public open space; and iii. incorporates environmental design principles, including passive solar design and appropriate daylighting and shading, appropriate for the climate. M2.1.2 Each dwelling provides adequate, conveniently located storage for large items that are: i. proportionate to the size of the dwelling and intended number of occupants; and ii. integrated into the design of the building and/or screened from view to ensure that it is not visually intrusive when viewed from the street.",
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 15,
+    "extract_line": 429
+  },
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

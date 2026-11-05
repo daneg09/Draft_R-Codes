@@ -1,0 +1,67 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Visitor bicycle parking: 0.1 spaces per dwelling, rounded up (Table 3.9)",
+  "text": "Table 3.9 Bicycle parking: Visitor 0.1 space per dwelling.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.bicycle_spaces_visitor",
+    "proposal.dwelling_count"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "parking.bicycle_spaces_visitor",
+    "op": ">=",
+    "value": "round(0.1 * proposal.dwelling_count + 0.4999)",
+    "label": "0.1 per dwelling, rounded up"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [
+    "bicycle parking"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T3.9",
+      "relation": "same",
+      "note": "visitor bicycle 1 per 10 dwellings -> 0.1 per dwelling (same rate)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-097",
+  "verify": false,
+  "notes": "from: ch4p1 C2.3.7-r1. Table 3.9 footnote 1: rounded up to the next whole number (round(x + 0.4999) is ceiling for these ratios). diverges: ch4p1 Table 2.3a rounds to the nearest whole number for the same rates (register C4P2-104). No dwelling threshold: one dwelling needs 1 visitor space.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

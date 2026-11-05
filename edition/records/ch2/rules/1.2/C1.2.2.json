@@ -1,0 +1,67 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.2.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Primary street setback area minimum 30% soft landscaping",
+  "text": "C1.2.2 The primary street setback area is to provide a minimum 30% soft landscaping (Figure 1.2b).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.street_setback_soft_area_m2",
+    "landscape.street_setback_area_m2"
+  ],
+  "evaluator": {
+    "type": "percentage-of",
+    "fact": "landscape.street_setback_soft_area_m2",
+    "of": "landscape.street_setback_area_m2",
+    "op": ">=",
+    "value": 30
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+  "defined_terms": [
+    "primary street setback area",
+    "soft landscape"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.2",
+      "relation": "tightened",
+      "note": "not more than 50% impervious -> 30% soft landscaping"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 11,
+    "figure": "Figure 1.2b"
+  },
+  "register_ref": "ch2-009",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Paved areas are excluded from soft landscaping (Figure 1.2b). 30% soft excludes permeable paving, which the current 50%-impervious test allowed. R100-SL: no minimum (Table 2.10a), excluded by coding."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.4.4#height-r100sl",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary wall maximum height on lots less than 100 m2 (R100-SL, 13 m)",
+  "text": "Table 2.10a Modified provisions for housing on lots less than 100m2. 3.4 Lot boundary setbacks (1), C3.4.5: Boundary walls permitted: - behind the street setback; and - to a maximum boundary wall height of 13m. (1) Where development abuts an adjoining property not coded R100-SL, the modified provisions of Table 2.10a do not apply.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.boundary_walls.count",
+      "op": ">=",
+      "value": 1
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.all_coded_r100_sl",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.boundary_walls.max_height_m",
+    "building.boundary_walls.count",
+    "adjoining.all_coded_r100_sl"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.boundary_walls.max_height_m",
+    "op": "<=",
+    "value": 13
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+  "defined_terms": [
+    "boundary wall"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.10a",
+      "relation": "unclear",
+      "note": "current Part C Table 2.10a; register ch2-065: 13 m wall height R100-SL via draft Table 2.10a"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 25,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch2-065",
+  "verify": true,
+  "notes": "Table 2.10a cites C3.4.5 (the draft's numbering slip; the provision modifies C3.4.4/Table 3.4c). Footnote 1 is encoded with proposed fact adjoining.all_coded_r100_sl: where any adjoining property is not R100-SL this rule is excluded and no deemed-exempt boundary wall height is encoded for the lot (the Table 3.4c R50+ 7 m rule would be the likely fallback; verify). Length and boundary-count limits at R100-SL are not stated.",
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Value 13m confirmed on p25 and in Table 2A (p7). The Table 2.10a row cites C3.4.5 although it modifies the C3.4.4/Table 3.4c height, and the page does not say which height applies under footnote 1 when an adjoining lot is not R100-SL."
+  }
+}

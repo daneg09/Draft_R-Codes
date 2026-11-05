@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.2(ii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Porch, verandah or unenclosed balcony projection into the primary street setback",
+  "text": "C3.3.2 Notwithstanding C3.3.1, the following reductions are permitted: Porches, verandahs, unenclosed balcony or equivalent: ii. for a porch, verandah, unenclosed balcony or equivalent the primary street setback may be reduced up to half the required primary street setback as specified in Table 3.3a, up to the full building width (refer Figure 3.3b); and",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "building.porch_projection_m",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "building.porch_projection_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "2 * building.porch_projection_m",
+    "op": "<=",
+    "value": {
+      "table": "table-3.3a-primary"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "porch",
+    "verandah",
+    "balcony",
+    "primary street setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.4",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.2(ii)",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 30,
+    "figure": "Figure 3.3b"
+  },
+  "register_ref": "ch2-048",
+  "verify": false,
+  "notes": "Encoded as a formula whose value is a table lookup: evaluators._resolve_value accepts {'table': ...} as a formula value (only the expression itself cannot reference a table). Twice the projection must not exceed the Table 3.3a primary setback, i.e. the projection is at most half the required setback. Full building width is permitted so no width test. Coding excludes R100-SL (table has no row; the formula evaluator cannot return NOT_APPLICABLE).",
+  "verified": {
+    "method": "page-image",
+    "page": 30,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

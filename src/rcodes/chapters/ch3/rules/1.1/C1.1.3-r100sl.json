@@ -1,0 +1,76 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.1.3-r100sl",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Primary garden area for lots coded R100-SL (Table 2.10a)",
+  "text": "Table 2.10a Modified provisions for housing on lots less than 100m2. 1.1 Private open space | C1.1.1 | Dwellings to provide: - a single consolidated uncovered primary garden area with a minimum area of 15m2 and a minimum dimension of 3m;",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.pga.area_m2",
+    "landscape.pga.min_dim_m",
+    "landscape.pga.roofed_pct"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "landscape.pga.area_m2",
+        "op": ">=",
+        "value": 15
+      },
+      {
+        "type": "threshold",
+        "fact": "landscape.pga.min_dim_m",
+        "op": ">=",
+        "value": 3
+      },
+      {
+        "type": "threshold",
+        "fact": "landscape.pga.roofed_pct",
+        "op": "<=",
+        "value": 0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.1",
+  "defined_terms": [
+    "primary garden area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.1a",
+      "relation": "unclear",
+      "note": "current R100-SL source not confirmed from the register"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 26,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch3-006",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 26,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear (15m2, 3m, uncovered). Clauses column cites C1.1.1, which in Chapter 3 is the OLA clause; the PGA clause is C1.1.3 (drafting error, no effect on values)."
+  },
+  "notes": "Table 2.10a (Chapter 3 p26; grouped dwellings in R100-SL subject to C2.10.1) replaces Table 1.1b: a single consolidated UNCOVERED PGA of 15 m2 with a 3 m minimum dimension, one composite. Uncovered encoded as roofed_pct <= 0. Table 2.10a lists the clause as 'C1.1.1' although the PGA clause is C1.1.3. Same as the Chapter 2 twin. Two-column extract."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.8.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.8",
+  "element_title": "Ancillary dwellings",
+  "title": "Ancillary dwelling: dual key only, number and maximum 70 m2 per Table 2.8a",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling",
+    "ancillary_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "An ancillary dwelling in accordance with Table 2.8a, provided that it: i. does not preclude the primary dwelling from meeting the maximum site cover and the minimum required private open space, soft landscaping, trees and deep soil area; and ii. complies with the following design elements as relevant: 2.2 Solar access and natural ventilation, 2.3 Parking, 2.5 Utilities, 3.1 Site cover, 3.2 Building height, 3.3 Street setbacks, 3.4 Lot boundary setbacks, 3.5 Site works and retaining walls, 3.6 Streetscape, 3.7 Access, 3.8 Solar access for adjoining sites, 3.9 Visual privacy. Table 2.8a Ancillary dwelling provisions (number of apartments; ancillary dwelling type; maximum ancillary dwellings; maximum internal floor area): 1-19 dwellings: dual key dwelling only; 1 per development; 70m2. 20 or more dwellings: dual key dwelling only; 2 per development and 1 per additional 10 dwellings¹; 70m2. ¹Rounded down to the nearest 10 dwellings. Note: The above provisions relate to the ancillary dwelling portion of the development, with the exception of 3.1 Site cover, 3.4 Lot boundary setbacks and 3.8 Solar access for adjoining sites which would need to be assessed in combination with the primary dwelling. The primary dwelling would still need to comply with all relevant provisions of the R-Codes.",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.ancillary_dwelling",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.ancillary_dwelling",
+    "proposal.dwelling_count",
+    "ancillary.dual_key",
+    "ancillary.count",
+    "ancillary.internal_floor_area_m2"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "ancillary.dual_key",
+        "expected": true
+      },
+      {
+        "type": "formula",
+        "expr": "ancillary.count",
+        "op": "<=",
+        "value": "1 if proposal.dwelling_count < 20 else 2 + round((proposal.dwelling_count - 24.5) / 10)",
+        "label": "1 per development for 1-19 apartments; 2 per development and 1 per additional 10 dwellings (rounded down to the nearest 10) for 20 or more"
+      },
+      {
+        "type": "table-lookup",
+        "table": "table-2.8a",
+        "fact": "ancillary.internal_floor_area_m2",
+        "op": "<="
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.8",
+  "defined_terms": [
+    "ancillary dwelling",
+    "dual key dwelling",
+    "internal floor area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.8.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.8a",
+      "relation": "same",
+      "note": "dual key only; 1 per development (1-19), 2 plus 1 per additional 10 (20+); 70 m2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 24,
+    "extract_line": 745,
+    "table": "Table 2.8a"
+  },
+  "register_ref": "C4P1-064",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 2.8a (p24) heads the first column 'Number of apartments' but labels rows 'dwellings'; whether the count includes the ancillary dwellings is not stated. Values (dual key only, 1 / 2 + 1 per additional 10 rounded down, 70 m2) confirmed."
+  },
+  "notes": "from: ch3 C2.8.1. diverges: Table 2.8a p24 allows dual key ancillary dwellings only, numbered per development (1 for 1-19 apartments; 2 plus 1 per additional 10 dwellings, rounded down to the nearest 10, for 20 or more), each at most 70 m2 (Chapter 3: one per site, 90 m2 or 70 m2 with a small dwelling). The count formula gives 20-29: 2, 30-39: 3, 40-49: 4. ToC says the maximum rose from 70 m2 to 90 m2 for all ancillary dwellings; not so for apartments (register C4P1-064). Dual key ancillary is now deemed exempt at R10-R25. (i) and (ii) are cross-references tested by their own rules. verify: whether proposal.dwelling_count includes the ancillary dwellings."
+}

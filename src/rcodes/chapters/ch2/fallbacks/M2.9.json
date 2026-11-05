@@ -1,0 +1,31 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M2.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.9",
+  "element_title": "Small dwellings",
+  "title": "Small dwellings merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.9.1 The design of small dwellings ensures adequate indoor and outdoor amenity for occupants. M2.9.2 Alternative and affordable housing options are provided for small households where it can be demonstrated that the development: i. is located in an area that has good access to public transport, public open space, local retailing, and other community infrastructure; ii. responds to a demand for small dwellings in the locality which may be recognised in the local planning framework; iii. provides an adequate mix of dwelling sizes; and iv. is consistent with the existing and/or future intended streetscape and local character.",
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 24,
+    "extract_line": 736
+  },
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

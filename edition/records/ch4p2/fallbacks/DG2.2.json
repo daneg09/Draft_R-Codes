@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG2.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.2",
+  "element_title": "Building height",
+  "title": "Building height Design Guidance",
+  "text": "DG 2.2.1 Building height is typically expressed in storeys to allow flexibility of design solutions at ground and roof levels, promote generous floor to ceiling heights and provide for future building adaptability. Table 2.2 shows indicative building height in metres that would normally correlate to number of storeys, with typical allowances for ceiling heights, floor structure, services, rooftop articulation and topographic changes. Double-height floors should generally be considered as two storeys. DG 2.2.2 Increasing building heights above the relevant acceptable outcomes may be appropriate in locations where the proposed development would not unreasonably impact on the amenity of adjoining properties and streetscape character. This may include the following circumstances: larger development sites (such as amalgamated sites) where taller buildings can be set back sufficiently from adjoining properties; sites of significance such as: Gateway sites; Corner lots and/or Where neighbouring built form exceeds the local planning framework; development sites that abut non-residential lots; to enable an innovative and creative design response to a site; where the development would provide an appropriate transition in scale from existing or planned tall, multistorey development; where the development would contribute to a unifying streetscape character; and/or where the development is compatible with a steeply sloping site. DG 2.2.3 Proposed building height should respond to specific values within a precinct, along with any guidance provided by the local planning framework. DG 2.2.4 The height of buildings should respond to the desired future character of the street and neighbourhood. This includes neighbourhoods that are likely to undergo significant redevelopment in the future, as well as buildings unlikely to change (for example heritage or buildings nearby that would not be redeveloped). DG 2.2.5 Corner sites are opportunities for greater height and density with fewer impacts on neighbour amenity. They are also opportunities for placemaking as landmark built forms. DG 2.2.6 Sloping sites create both opportunities and constraints that should be considered and resolved in the design. A good design maintains a positive ground plane that engages its community and a built form that respond to the topography. DG 2.2.7 Integrate or screen services and utilities so as not to dominate the facade design or roof silhouette. This may also include a variance to the materials and colours of the main portion of the proposal. DG 2.2.8 Design roof forms that are simple, uncluttered and visually appealing. In larger developments, subtle but consistent variations in roof form should be considered to add visual interest to the streetscape. DG 2.2.9 Roof areas should be considered and designed to complement the overall form, massing and architectural treatment of each development and articulated to contribute to the skyline profile. DG 2.2.10 Consider the siting and orientation of building height on the site to balance access to solar energy and natural ventilation with the need to mitigate amenity impacts on adjoining properties. Table 2.2 notes: Overall building heights are set by adding together the floor to ceiling heights for the desired number of storeys, with a nominal allowance of 4m for the ground floor and 3m for subsequent floors. Add at least 2m to the total to allow for rooftop articulation. Building height limits for higher density typologies: These default heights are provided as a conservative baseline and higher building height limits may be appropriate subject to detailed local planning.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/PG2.2.1",
+      "relation": "restructured",
+      "note": "Volume 2 PG 2.2.1 to 2.2.11 were planning guidance for local governments; moved to Appendix A8"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "DG 2.2.2 height-exceedance circumstances are new guidance for proponents and assessors"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": "14-15"
+  },
+  "register_ref": "C4P2-069; C4P2-067",
+  "verify": false,
+  "notes": "DG 2.2.2 nesting confirmed on page 15: Gateway sites, Corner lots and/or, and Where neighbouring built form exceeds the local planning framework are sub-bullets of 'sites of significance'. The Table 2.2 notes (p14) are appended under 'Table 2.2 notes:'. DG 2.2.2 is not described in the Table of Changes (C4P2-069).",
+  "verified": {
+    "method": "page-image",
+    "page": "14-15",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

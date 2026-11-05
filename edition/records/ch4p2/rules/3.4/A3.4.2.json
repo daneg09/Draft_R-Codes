@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.4.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.4",
+  "element_title": "Communal open space",
+  "title": "Communal open space on the ground floor or lift-served floors universally accessible from the primary street entry",
+  "text": "Communal open space located on the ground floor or on floors serviced by lifts must be universally accessible from the primary street entry of the development.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "landscape.cos.area_m2",
+      "op": ">",
+      "value": 0,
+      "label": "communal open space provided"
+    }
+  ],
+  "inputs": [
+    "landscape.cos.area_m2",
+    "landscape.cos.universally_accessible"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.cos.universally_accessible",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.4",
+  "defined_terms": [
+    "communal open space",
+    "universally accessible"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.4.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 34
+  },
+  "register_ref": "C4P2-083",
+  "verify": false,
+  "notes": "landscape.cos.universally_accessible read as: every COS area on the ground floor or a lift-served floor is universally accessible from the primary street entry. Applies where COS is provided.",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

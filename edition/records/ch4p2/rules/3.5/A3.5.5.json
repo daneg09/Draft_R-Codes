@@ -1,0 +1,53 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.5.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Windows and balconies restrict direct overlooking without excessive high sills or permanent screening",
+  "text": "Windows and balconies are sited, oriented, offset or articulated to restrict direct overlooking, without excessive reliance on high sill levels or permanent screening of windows and balconies.",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.5",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.5.4",
+      "relation": "same",
+      "note": "renumbered A3.5.4 -> A3.5.5"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36
+  },
+  "register_ref": "C4P2-087",
+  "verify": false,
+  "notes": "Judgment ('excessive'). FACTS.md privacy.no_excessive_overlooking_within_site is not used.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

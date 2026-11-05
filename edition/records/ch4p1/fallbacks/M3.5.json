@@ -1,0 +1,39 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M3.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "element": "3.5",
+  "element_title": "Site works and retaining walls",
+  "title": "Site works and retaining walls merit assessment criteria",
+  "text": "M3.5.1 Development that considers and responds to the natural features of the site and requires minimal excavation/fill. M3.5.2 Where excavation/fill is necessary, all finished levels respect the natural ground level at the lot boundary of the site and as viewed from the street. M3.5.3 Retaining walls that result in land which can be effectively used for the benefit of residents, do not detrimentally affect the amenity of adjoining properties in the opinion of the decision-maker, and are designed, engineered and landscaped having due regard to the provisions of element 3.10 Visual privacy.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.5.1",
+      "relation": "same",
+      "note": "P3.5.1-P3.5.3"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 36
+  },
+  "register_ref": "C4P1-101",
+  "verify": false,
+  "notes": "from: ch3 M3.5 (unchanged). M3.5.3 still refers to 'element 3.10 Visual privacy', which is 3.9 in this chapter (stale cross-reference). Figure 3.5a is a copy of Figure 3.2a.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "M3.5.3 cites 'element 3.10 Visual privacy'; visual privacy is element 3.9 in this chapter (the Table 3.5a note on the same page correctly cites 3.9). Kept as printed."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.2.1#height",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.2",
+  "element_title": "Building height",
+  "title": "Maximum total building height",
+  "text": "C3.2.1 Building height complies with Table 3.2a. Table 3.2a Maximum building heights, maximum total building height: R2-R35 10m; R40-R60 13m; R80, R100, R160 and LR, MR and HR 16m. Refer Figure 3.2a for building height and natural ground level measurement guidance. Refer Figure 3.2b for total building height guidance. This table provides a maximum building height only and development will need to consider other elements such as 3.9 Solar access for adjoining sites.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.total_height_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.2a-height",
+    "fact": "building.total_height_m",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.2",
+  "defined_terms": [
+    "total building height",
+    "natural ground level",
+    "deemed natural ground level"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.6-C6",
+      "relation": "relaxed",
+      "note": "7 m wall limit removed; skillion/gable/concealed 8 m -> 10 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T3",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.2a",
+      "relation": "relaxed",
+      "note": "R40 10 -> 13 m; R50-R60 skillion 11 -> 13 m; R80 skillion 14 -> 16 m (ch3-044)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 29,
+    "table": "Table 3.2a",
+    "figure": "Figure 3.2a, 3.2b"
+  },
+  "register_ref": "ch3-044",
+  "verify": false,
+  "notes": "Height is the highest point of the development above natural ground level (deemed natural ground level where it varies). No wall height or roof-type limits in the draft. The R100-SL row (16 m) is not in Table 3.2a; Table 3A (p7) prints 16m spanning R80 and R100-SL.",
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values match p29. R100-SL 16 m is not in Table 3.2a but Table 3A (p7) prints 16m spanning R80 and R100-SL, and Table 2.10a (p26) refers R100-SL to Table 3.2a."
+  }
+}

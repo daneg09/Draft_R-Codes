@@ -1,0 +1,59 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.7.3(iii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Driveway aggregate width 9 m per property (R35 and below)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R35"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.driveway.aggregate_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.driveway.aggregate_width_m",
+    "op": "<=",
+    "value": 9.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+  "defined_terms": [
+    "driveway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.2",
+      "relation": "relaxed",
+      "note": "0.5 m side boundary setback deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.3",
+      "relation": "relaxed",
+      "note": "0.3 m side boundary setback deleted"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 39
+  },
+  "register_ref": "ch2-077",
+  "verify": false,
+  "notes": "Aggregate of all driveway widths at the street boundary for the one property.",
+  "text": "Driveways must be: iii. in areas coded R35 and below, a maximum aggregate width no greater than 9m for any one property;",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Second and third storey walls: maximum 14 m length at the Table 3.4a setback",
+  "text": "C3.4.2 The second and third storey of walls shall be set back in accordance with Table 3.4a for a maximum wall length of 14m (including any balconies). For a portion of wall exceeding 14m in length: i. the wall is to be set back 3m from the lot boundary for the remainder of its length; or ii. contain a minimum 3m x 3m separation measured from the lot boundary (Refer Figure 3.4e).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.storeys",
+      "op": ">=",
+      "value": 2
+    }
+  ],
+  "inputs": [
+    "building.upper_storey_wall_max_length_m",
+    "building.upper_storey_wall_over_14m_setback_m",
+    "building.upper_storey_wall_has_3x3_separation",
+    "proposal.storeys"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "any",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "building.upper_storey_wall_max_length_m",
+        "op": "<=",
+        "value": 14,
+        "label": "upper storey wall not longer than 14 m"
+      },
+      {
+        "type": "threshold",
+        "fact": "building.upper_storey_wall_over_14m_setback_m",
+        "op": ">=",
+        "value": 3,
+        "label": "portion beyond 14 m set back 3 m"
+      },
+      {
+        "type": "boolean",
+        "fact": "building.upper_storey_wall_has_3x3_separation",
+        "expected": true,
+        "label": "3 m x 3 m separation"
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "storey",
+    "wall length",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.4.2",
+      "relation": "mixed",
+      "note": "second-storey 14 m rule extended to second and third storeys (C4P1-090)"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "new for R10-R25 (no length-based rule in Part B)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 33,
+    "figure": "Figure 3.4e"
+  },
+  "register_ref": "C4P1-090",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 33,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C3.4.2. Applies to buildings of two or more storeys; the first 14 m is tested by the C3.4.1 side rules. With the third storey at 2.0 m (Table 3.4a) the 14 m rule bites on long three-storey apartment walls (C4P1-090). Overlaps the R50-R60 14 m boundary wall rule."
+}

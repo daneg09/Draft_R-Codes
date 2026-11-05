@@ -1,0 +1,92 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.6.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.6",
+  "element_title": "Outbuildings",
+  "title": "Outbuilding wall height (3 m, or 3.5 m where materials match the dwelling)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "Table 2.6a Outbuilding provisions: maximum wall height 3m. C2.6.2 Notwithstanding C2.6.1(i), an outbuilding can have a wall height of up to 3.5m where the external wall and roof materials and finishes (including colour) are the same as those of the dwelling on the same site.",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "outbuilding.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "outbuilding.present",
+    "outbuilding.wall_height_m",
+    "outbuilding.matches_dwelling_materials"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "outbuilding.wall_height_m",
+    "op": "<=",
+    "value": 3.0
+  },
+  "exceptions": [
+    {
+      "label": "C2.6.2: external wall and roof materials, finishes and colour match the dwelling",
+      "condition": {
+        "type": "boolean",
+        "fact": "outbuilding.matches_dwelling_materials",
+        "expected": true
+      },
+      "effect": {
+        "set": {
+          "value": 3.5
+        }
+      },
+      "inputs": [
+        "outbuilding.matches_dwelling_materials"
+      ],
+      "source": "C2.6.2, p22",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.6",
+  "defined_terms": [
+    "outbuilding",
+    "wall height"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.6.1",
+      "relation": "same",
+      "note": "3 m unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.6.2",
+      "relation": "tightened",
+      "note": "3.5 m where materials 'compatible' -> 'the same'"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 22,
+    "extract_line": 699,
+    "table": "Table 2.6a",
+    "figure": "Figure 2.6a"
+  },
+  "register_ref": "C4P1-059",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C2.6.2 says 'Notwithstanding C2.6.1(i)', which is the lot boundary cross-reference, not the Table 2.6a wall height (p22)."
+  },
+  "notes": "from: ch3 C2.6.1-r1 (evaluator and exception unchanged). C2.6.2 says 'Notwithstanding C2.6.1(i)' but C2.6.1(i) is the lot boundary cross-reference; read as modifying the Table 2.6a wall height."
+}

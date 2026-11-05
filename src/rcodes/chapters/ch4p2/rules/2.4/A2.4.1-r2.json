@@ -1,0 +1,90 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Boundary wall height (storeys) within the Table 2.1 limit",
+  "text": "A 2.4.1 Development complies with the side and rear setbacks set out in Table 2.1, except where: (a) modified by the local planning framework, in which case development complies with the side and rear setbacks set out in the applicable local planning instrument AND/OR (b) a greater setback is required to address 3.5 Visual privacy.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.boundary_wall_storeys",
+    "site.r_code",
+    "building.boundary_walls.adjoining_wall_exists"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.1-boundary-wall-storeys",
+    "fact": "building.boundary_wall_storeys",
+    "op": "<="
+  },
+  "exceptions": [
+    {
+      "label": "Table 2.1 note 2: wall abuts an existing or simultaneously constructed wall of equal or greater proportions",
+      "condition": {
+        "type": "boolean",
+        "fact": "building.boundary_walls.adjoining_wall_exists",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "source": "Table 2.1 note 2",
+      "inputs": [
+        "building.boundary_walls.adjoining_wall_exists"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.4",
+  "defined_terms": [
+    "boundary wall",
+    "storey"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.4.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "relaxed",
+      "note": "2 storeys unchanged for R80 to R160 and LR1; R-AC3/MR2 3 to 4; HR1 4 unchanged; MR1, HR2, HR3 new"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-028..C4P2-033; C4P2-064",
+  "verify": false,
+  "notes": "Height of walls built to a side boundary; 0 where none. Note 2 exception (wall abutting an existing or simultaneously constructed wall of equal or greater proportions) is read as lifting the Table 2.1 boundary wall limits; verify. Note 3 (lower density code governs) is A2.4.1-r4. MR2 3 to 4 storeys is not in the Table of Changes (C4P2-031). The 'except where modified by the local planning framework' limb is applied through the instruments layer (Chapter 1B 3.5, Table 3.5A); this rule encodes the Table 2.1 default.",
+  "verified": {
+    "method": "page-image",
+    "page": "13, 18",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values confirmed (p13). Note 2 superscript sits on the 'Boundary wall height (storeys)1,2,3' row header, so it applies to every code column; its wording ('Wall may be built up to a lot boundary, where it abuts an existing or simultaneously constructed wall of equal or greater proportions') is permissive and does not expressly lift the storey limit, so the exception keeps its own verify flag."
+  }
+}

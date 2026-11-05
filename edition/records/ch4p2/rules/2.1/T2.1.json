@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/T2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.1",
+  "element_title": "Primary development parameters",
+  "title": "Table 2.1 Primary Development Parameters apply as default standards",
+  "text": "Table 2.1 provides default development standards that may be amended or replaced through the local planning framework, as set out in Chapter 1: Operation of the Code, Clause 3.5 Local Planning Framework. This includes local planning schemes, local planning policies, precinct structure plans and local development plans. In the absence of properly adopted local instruments, Table 2.1 applies. Primary controls are categorised into the following streetscape contexts and character: Low rise: 1 – 4 storeys. Intended built form outcomes include a mix of detached housing, grouped housing and apartments. Development is predominantly 1-2 storeys with opportunities for townhouse or apartment development up to 4 storeys in appropriate locations. Activated ground floor uses may be appropriate for apartment developments where they are located within an activity centre or corridor. Mid-rise: 5 – 8 storeys. Intended built form outcomes include apartment development generally up to 8 storeys. Where provided within a predominantly residential context, development maintains residential amenity through building separation, orientation and setbacks which respond to the planned or emerging scale of the area. Lower building levels, including podiums and terraces should provide a scaled interface to the street. Where located within an activity centre or corridor, activated contiguous pedestrian friendly street frontages may be appropriate. High-rise: 9 storeys and above. Intended built form outcomes include apartment development generally 9 storeys and above. Development is predominantly located within high intensity activity centres and corridors and is typically characterised by podium and tower elements that support highly activated and pedestrianised street frontages. Table 2.1 summarises Acceptable Outcomes for elements 2.2, 2.3, 2.4 and 2.5.",
+  "kind": "judgment",
+  "column": "table",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.1",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "restructured",
+      "note": "8 code columns become 10; Primary Controls renamed Primary Development Parameters"
+    },
+    {
+      "id": "rcodes:vol2-2024/2.1",
+      "relation": "renamed",
+      "note": "intent and 2.1.1 text"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": "12-13",
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-016; C4P2-017; C4P2-036; C4P2-064; C4P2-065",
+  "verify": false,
+  "notes": "Record of Table 2.1's status; the testable cells are the A rules of 2.2 to 2.5 (per-metric tables table-2.1-*); table-2.1.json is the summary form. Columns: R80, LR1 (renamed R-AC4), R100, R160, MR1 (new), MR2 (renamed R-AC3), HR1 (renamed R-AC1), HR2 (new), HR3 (new), R-PA (renamed R-AC0, 'Planned Areas', refer to scheme/LDP/precinct controls). R-AC2 has no column (dropped; Info Sheet 4 maps R-AC3 and R-AC2 to MR2, not stated in the draft). Table of Changes miscounts: it says a net increase of one density code (actual +2: minus R-AC2, plus MR1, HR2, HR3), labels the 8-storey code 'R-AC3 (MR1)' (Table 2.1 has MR1 new and R-AC3 = MR2), omits the R-AC0 to R-PA rename, omits the R80, R100 and R160 side setback increases and the R80 rear increase, and misdescribes MR2/HR rear setbacks as reduced from 6 m (they were already nil) (C4P2-017, C4P2-037 to C4P2-051). The intro text says LPS and PSPs may amend Table 2.1 but Chapter 1B 3.5.2 and Table 3.5A regulate LPPs and LDPs only (C4P2-016). Table 3.5A lists 'A2.6.1 Where decreasing building separation' but A2.6.1 is building depth and separation is A2.7.1 (C4P2-007). Notes 1 to 6 renumbered from Volume 2 notes 1, 2, 3, 5, 6, 7; note 5 still says 'this SPP' (C4P2-064). Section 2 preamble (printed in each Acceptable Outcomes box): Acceptable Outcomes are default provisions to assist in satisfying the objectives; proposals may require additional or alternative design solutions where specified in the local planning framework '(clause 1.2)', a stale Volume 2 reference (now Chapter 1B 3.5).",
+  "verified": {
+    "method": "page-image",
+    "page": "12-13",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "table-3.4a-side-3.6-to-7m",
+  "title": "Table 3.4a Lot boundary setbacks: side setback, wall height 3.6 m to 7 m",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "flat side setback regardless of wall height"
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "flat side setback regardless of wall height"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R5+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 1.5
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 33,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "ch3-055",
+  "verify": true,
+  "notes": "Table 3.4a split into one file per wall-height band (and rear) because table keys are application facts. No rounding footnote in the draft: the 3.5-3.6 m and 7.0-7.1 m gaps are unresolved (register ch3-055).",
+  "verified": {
+    "method": "page-image",
+    "page": 33,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values confirmed. Table 3.4a (p33) prints the bands as 'Wall height up to 3.5m', 'Wall height 3.6m to 7m' and 'Wall height above 7.1m', leaving 3.5-3.6 m and 7.0-7.1 m undefined; Table 3A (p7) prints the top band as '7.1m and above'."
+  }
+}

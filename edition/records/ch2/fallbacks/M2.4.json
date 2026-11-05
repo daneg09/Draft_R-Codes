@@ -1,0 +1,31 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M2.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.4",
+  "element_title": "Waste management",
+  "title": "Waste management merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.4.1 Sufficient space for waste storage is provided that: i. is convenient for residents; ii. has collection areas which can be accessed by service vehicles; and iii. can be secured and managed where required. M2.4.2 Waste management facilities are located and screened to minimise negative impacts on the streetscape, communal areas, building entries, major openings, and the local amenity.",
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 20,
+    "extract_line": 607
+  },
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

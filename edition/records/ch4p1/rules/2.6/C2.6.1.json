@@ -1,0 +1,92 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.6.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.6",
+  "element_title": "Outbuildings",
+  "title": "Outbuilding area, ridge height and location per Table 2.6a",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "Any outbuilding is provided in accordance with Table 2.6a, provided that it: i. is set back or built up to lot boundaries in accordance with C3.4.1, C3.4.4, C3.4.5 or C3.4.6; ii. does not exceed the maximum allowable site cover in accordance with C3.1.1; iii. does not reduce the minimum primary garden area required in accordance with C1.1.1; iv. does not reduce the minimum soft landscaping required in accordance with C1.2.1; and v. does not reduce the minimum tree provision and associated deep soil area in accordance with C1.2.4. Table 2.6a Outbuilding provisions: maximum individual or collective area per site 60m2; maximum wall height 3m; maximum ridge height 4.2m; location not located within the primary or secondary street setback area. Refer to Figure 2.6a for wall and ridge height guidance. Outbuildings will need to comply with the NCC requirements, including but not limited to fire separation.",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "outbuilding.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "outbuilding.present",
+    "outbuilding.total_area_m2",
+    "outbuilding.ridge_height_m",
+    "outbuilding.in_street_setback_area"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "outbuilding.total_area_m2",
+        "op": "<=",
+        "value": 60.0
+      },
+      {
+        "type": "threshold",
+        "fact": "outbuilding.ridge_height_m",
+        "op": "<=",
+        "value": 4.2
+      },
+      {
+        "type": "boolean",
+        "fact": "outbuilding.in_street_setback_area",
+        "expected": false
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.6",
+  "defined_terms": [
+    "outbuilding",
+    "primary street setback area",
+    "secondary street setback area",
+    "ridge height"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.6.1",
+      "relation": "same",
+      "note": "R30-R60 unchanged; C3.4.6 added to the boundary cross-references"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.3-C3",
+      "relation": "relaxed",
+      "note": "R10-R25: wall 2.4 m -> 3 m; 10%-of-site cap removed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 22,
+    "extract_line": 688,
+    "table": "Table 2.6a",
+    "figure": "Figure 2.6a"
+  },
+  "register_ref": "C4P1-058",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C2.6.1 (evaluator unchanged). Table 2.6a p22: 60 m2 individual or collective per site, ridge 4.2 m, not in the primary or secondary street setback area; wall height is C2.6.1-r1. Cross-references (i) to (v) are tested by their own rules; (iii) cites only the primary garden area (C1.1.1). Limited relevance to apartment buildings (register C4P1-058). Must also meet the NCC."
+}

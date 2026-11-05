@@ -1,0 +1,39 @@
+{
+  "id": "table-2.3a-visitor",
+  "title": "Table 2.3a Car parking provisions (visitor car parking bays per dwelling)",
+  "keys": [
+    "site.location"
+  ],
+  "unit": "bays per dwelling",
+  "rows": [
+    {
+      "match": {
+        "site.location": "A"
+      },
+      "value": 0.1,
+      "note": "Location A"
+    },
+    {
+      "match": {
+        "site.location": "B"
+      },
+      "value": 0.15,
+      "note": "Location B"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 20,
+    "extract_line": 628,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "C4P1-040",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Reference table for the visitor row of Table 2.3a. Rule C2.3.5 takes its threshold from table-2.3a-visitor-bays, whose rows give the bay count as an expression (ratio x total number of dwellings, rounded to the nearest whole number with 0.5 up), because a lookup here returns the ratio, not the bay count. No 0-4 dwelling exemption in this chapter."
+}

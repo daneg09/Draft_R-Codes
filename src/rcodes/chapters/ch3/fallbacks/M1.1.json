@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Private open space merit assessment criteria",
+  "text": "M1.1.1 Dwellings are designed to have direct access to private open space which provides for entertaining, leisure and connection to the outdoors that is: i. of sufficient size and dimension to be functional and usable for the intended number of dwelling occupants; ii. is sited, oriented and designed for occupant amenity, including consideration of solar access and natural ventilation appropriate to the climatic region; and iii. capable of use in conjunction with a primary living space of the dwelling. M1.1.2 Private open space allows for sufficient uncovered area to: i. permit winter sun and natural ventilation into the dwelling; and ii. provide for soft landscaping, including the planting of a tree(s) and deep soil area. M1.1.3 Balconies balance the need for outlook, solar access and natural ventilation with: i. visual privacy considerations; ii. acoustic and noise impacts; and iii. local climatic considerations such as high winds. M1.1.4 Dwellings which provide private open space within the primary street setback area are designed to: i. facilitate street surveillance between the dwelling and the street; and ii. minimise the use of visually impermeable or solid front fences above 1.2m in height.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.1-P1.1",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.1-P1.2",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.1-P1.3",
+      "relation": "restructured",
+      "note": "front-setback OLA principle -> M1.1.4"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.1.1",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.1.2",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.1.3",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.1.4",
+      "relation": "deleted",
+      "note": "increased communal open space for communal living; no successor"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.5-C5",
+      "relation": "deleted",
+      "note": "grouped communal open space and the 20% open space deduction (ch3-019); no rule"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 9
+  },
+  "register_ref": "ch3-003",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Single set of merit criteria for OLA (R2-R25) and PGA (R30+); text identical to Chapter 2 (p9). Part C P1.1.4 (communal living) has no successor. Part B 5.1.5 communal open space for grouped dwellings is deleted (ch3-019) and has no rule; communal open space is now a multiple-dwelling matter.",
+  "inputs": []
+}

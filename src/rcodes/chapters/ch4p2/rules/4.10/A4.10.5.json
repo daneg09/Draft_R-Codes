@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.10.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.10",
+  "element_title": "Facade design",
+  "title": "Street setback of 1 m or less: awnings define and give weather protection to entries",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Development with a primary setback of 1m or less to the street includes awnings that: define and provide weather protection to entries; are integrated into the façade design; are consistent with the streetscape character.",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "building.street_setback_m",
+      "op": "<=",
+      "value": 1.0
+    }
+  ],
+  "inputs": [
+    "building.street_setback_m",
+    "facade.entry_awnings_provided"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "facade.entry_awnings_provided",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.10",
+  "defined_terms": [
+    "primary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.10.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 70,
+    "extract_line": 2417
+  },
+  "register_ref": "C4P2-120",
+  "verify": false,
+  "notes": "Only the first limb (awnings that define and weather-protect the entries) is tested; the integration and streetscape-consistency limbs are A4.10.5-r1 (judgment). building.street_setback_m is read as the primary street setback here; where it is the secondary street that is smaller, supply the primary street figure.",
+  "verified": {
+    "method": "page-image",
+    "page": 70,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

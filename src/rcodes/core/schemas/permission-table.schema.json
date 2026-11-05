@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riseurban.au/rcodes/schemas/permission-table.schema.json",
+  "title": "Local planning framework permission table (Ch1 Tables 2.5A, 2.5B, 3.5A; clause 2.5.2)",
+  "type": "object",
+  "required": ["id", "version", "instruments", "chapters", "rows", "default", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "version": {"type": "string"},
+    "instruments": {"type": "array", "items": {"enum": ["ldp", "lpp", "scheme", "precinct_structure_plan", "structure_plan", "other"]}},
+    "chapters": {"type": "array", "items": {"type": "string"}},
+    "rows": {"type": "array", "items": {
+      "type": "object",
+      "required": ["element", "clauses", "permission"],
+      "additionalProperties": false,
+      "properties": {
+        "element": {"type": "string"},
+        "element_title": {"type": "string"},
+        "chapters": {"type": "array", "items": {"type": "string"}, "description": "restrict the row to these chapters; omit for all chapters of the table"},
+        "clauses": {"description": "\"all\", \"other\", or a list of clause refs such as C3.3.1", "oneOf": [{"enum": ["all", "other"]}, {"type": "array", "items": {"type": "string"}}]},
+        "permission": {"enum": ["without-wapc", "regional-lg", "wapc", "untabled"]},
+        "direction": {"enum": ["increase", "decrease", "any"], "description": "the direction of change the permission is limited to; omit for any"},
+        "condition": {"type": "string"},
+        "register_ref": {"type": "string"},
+        "verify": {"type": "boolean"},
+        "note": {"type": "string"}
+      }}},
+    "default": {"enum": ["without-wapc", "regional-lg", "wapc", "untabled"]},
+    "source": {"type": "object"},
+    "notes": {"type": "string"}
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.5-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Maximum garage and carport parking for an ancillary dwelling, R50 and above, outside Perth and Peel (as printed: 0)",
+  "text": "Table 2.3b (occupant car parking): Ancillary dwelling - maximum garage and carport parking for R50 and above (per dwelling) 0.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling",
+    "ancillary_dwelling"
+  ],
+  "coding": [
+    "R50+"
+  ],
+  "region": "regional",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.ancillary_dwelling",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.ancillary_dwelling",
+    "parking.ancillary_garage_carport_spaces"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.ancillary_garage_carport_spaces",
+    "op": "<=",
+    "value": 0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "ancillary dwelling",
+    "garage",
+    "carport"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "unclear",
+      "note": "Part C maximum for ancillary was 1"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 20,
+    "extract_line": 648,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch3-030",
+  "verify": true,
+  "notes": "Content twin of Chapter 2 C2.3.3-r3 (renumbered). Same Table 2.3b header problem as C2.3.5-r2: read literally an ancillary dwelling at R50+ outside Perth and Peel may have no garage or carport space, contradicting the ancillary minimum of 1 at R40 and below. Encoded as printed.",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page 20 prints Table 2.3b with columns headed 'Minimum parking space(s) for R40 and below (per dwelling)' (1 / 1 / 2 / 2) and 'Maximum garage and carport parking for R50 and above (per dwelling)' (0 / 1 / 1 / 1) for ancillary / studio-1 bed / 2 bed / 3+ bed. The headings are not transposed; the second column reads like minimums under a 'maximum' heading and caps a 3+ bedroom dwelling below the R40-and-below minimum. Encoded as printed."
+  }
+}

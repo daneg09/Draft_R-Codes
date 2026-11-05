@@ -1,0 +1,74 @@
+{
+  "id": "table-3.2-overshadow",
+  "title": "A3.2.3 Maximum overshadowing of an adjoining property (percent of its site area)",
+  "keys": [
+    "adjoining.south.r_code"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "adjoining.south.r_code": "R25-"
+      },
+      "value": 25,
+      "note": "R25 and lower"
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R30-R40"
+      },
+      "value": 35
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R50-R60"
+      },
+      "value": 50
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R80+"
+      },
+      "value": null,
+      "note": "R80 or higher: nil requirements"
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": [
+          "LR1",
+          "MR1",
+          "MR2",
+          "HR1",
+          "HR2",
+          "HR3",
+          "R-PA",
+          "R-AC0",
+          "R-AC1",
+          "R-AC2",
+          "R-AC3",
+          "R-AC4",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "named higher-density codes read as 'R80 or higher': nil requirements"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 28,
+    "table": "A3.2.3"
+  },
+  "register_ref": "C4P2-080",
+  "verify": false,
+  "notes": "Operative for A3.2.3. The limits are printed in the clause, not a numbered table; this file is a lookup for them. Values checked against p28. A null row or a miss (e.g. R100-SL) is NOT_APPLICABLE. Footnote 1 proportional reduction is A3.2.3-r1.",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 28,
+    "note": "p28 clause A3.2.3 limits confirmed; named codes are not on the page and are read as 'R80 or higher' (this Part applies only to R80 and above)."
+  }
+}

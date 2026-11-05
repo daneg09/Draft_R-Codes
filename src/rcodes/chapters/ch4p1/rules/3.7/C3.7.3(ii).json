@@ -1,0 +1,59 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.3(ii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Driveway maximum width 6 m at the street boundary",
+  "text": "Driveways must be: ii. a maximum 6m wide at the street boundary;",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.driveway.width_at_boundary_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.driveway.width_at_boundary_m",
+    "op": "<=",
+    "value": 6.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "driveway",
+    "street boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.2",
+      "relation": "relaxed",
+      "note": "side clearance 0.5 m -> 0.3 m; 4 m minimum for 5+ dwellings and 9 m aggregate removed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 39
+  },
+  "register_ref": "C4P1-110",
+  "verify": false,
+  "notes": "from: ch3 C3.7.3(ii) (unchanged).",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

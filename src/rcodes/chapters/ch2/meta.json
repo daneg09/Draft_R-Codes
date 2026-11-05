@@ -1,0 +1,23 @@
+{
+  "chapter": "ch2",
+  "version": "draft-2026-10-24",
+  "title": "Chapter 2 Single Houses",
+  "kind": "built-form",
+  "pathway": "deemed-exempt-or-merit",
+  "dwelling_types": ["single_house"],
+  "coding": ["all"],
+  "summary_table": "table-2A",
+  "source": {"file": "Residential Design Codes Chapter 2 - Single Houses.pdf", "extract": "Working/text/draft/Residential Design Codes Chapter 2 - Single Houses.txt"},
+  "register": "Working/register/ch2-single-houses.csv",
+  "elements": {
+    "1.1": "Private open space", "1.2": "Trees and landscaping", "1.3": "Water management and conservation",
+    "2.1": "Size and layout of dwellings", "2.2": "Solar access and natural ventilation", "2.3": "Parking",
+    "2.4": "Waste management", "2.5": "Utilities", "2.6": "Outbuildings", "2.7": "Universal design",
+    "2.8": "Ancillary dwellings", "2.9": "Small dwellings", "2.10": "Housing on lots less than 100m2",
+    "3.1": "Site cover", "3.2": "Building height", "3.3": "Street setbacks", "3.4": "Lot boundary setbacks",
+    "3.5": "Site works and retaining walls", "3.6": "Streetscape", "3.7": "Access",
+    "3.8": "Retaining existing dwellings", "3.9": "Solar access for adjoining sites", "3.10": "Visual privacy",
+    "4.1": "Site area"
+  },
+  "notes": "R80 standards apply to single houses in areas coded R100, R160, LR, MR and HR (Chapter 2 note; register CH1-06). R100-SL provisions are modified by Table 2.10a."
+}

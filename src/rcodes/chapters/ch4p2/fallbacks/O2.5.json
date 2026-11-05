@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.5",
+  "element_title": "Plot ratio",
+  "title": "Plot ratio Element Objective",
+  "text": "Development is to achieve the following Element Objectives: O 2.5.1 The overall bulk and scale of development is appropriate for the existing or planned character of the area.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.5",
+      "relation": "same",
+      "note": "Element Objective"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 20
+  },
+  "register_ref": "C4P2-072",
+  "verify": false,
+  "notes": "Where Table 2.1 plot ratio is N/A (R80 to MR2), O 2.5.1 is the only bulk control (C4P2-072).",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

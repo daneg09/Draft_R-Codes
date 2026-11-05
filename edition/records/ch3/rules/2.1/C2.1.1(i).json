@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.1.1(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Primary living space on the ground floor has direct access to the primary garden area",
+  "text": "C2.1.1 Each dwelling is to have one room that is the designated primary living space where: i. the primary living space is provided on the ground floor, it is to have direct physical and visual access to the primary garden area; or",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "proposal.primary_living_space_floor",
+      "op": "==",
+      "value": "ground"
+    }
+  ],
+  "inputs": [
+    "proposal.primary_living_space_floor",
+    "building.primary_living_direct_access_to_pga"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.primary_living_direct_access_to_pga",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.1",
+  "defined_terms": [
+    "primary living space",
+    "primary garden area"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "new deemed exempt provision for grouped dwellings R2-R25 (Part B had none; OLA accessible from the primary living space)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.1",
+      "relation": "same",
+      "note": "Part C text carried into Chapter 3"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 15,
+    "extract_line": 439
+  },
+  "register_ref": "ch3-020",
+  "verify": true,
+  "notes": "Tests access to the primary garden area, which in Chapter 3 exists only at R30 and above; R25 and below use the outdoor living area (C1.1.1), so whether this binds R25 and below is unclear (register ch3-020). Encoded for all codes as printed, as in Chapter 2. Verify scope.",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values and wording match p15. Ambiguous on the page: the clause carries no density qualifier but tests access to the primary garden area, which Chapter 3 uses at R30 and above; whether it binds R25 and below (where the outdoor living area applies) is not stated."
+  }
+}

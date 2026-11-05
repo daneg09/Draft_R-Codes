@@ -1,0 +1,79 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.2",
+  "element_title": "Natural ventilation",
+  "title": "Habitable rooms have openings on at least two walls, centres at least 2 m apart in a straight line",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Habitable rooms have openings on at least two walls with a straight line distance between the centre of the openings of at least 2m.",
+  "inputs": [
+    "dwellings.min.openings_two_walls",
+    "dwellings.min.opening_centre_separation_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "dwellings.min.openings_two_walls",
+        "expected": true
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.opening_centre_separation_m",
+        "op": ">=",
+        "value": 2.0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.2",
+  "defined_terms": [
+    "habitable room"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.2.1",
+      "relation": "same",
+      "note": "identical text; the ToC claim that it now reads 'openings (windows and/or doors)' is not in the draft (C4P2-111)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 52,
+    "extract_line": 1759,
+    "figure": "Figure 4.1c (sic, 4.2c)"
+  },
+  "register_ref": "C4P2-111",
+  "verify": true,
+  "notes": "verify: read literally the clause applies to every habitable room, which few single-aspect apartments could meet; it may be meant per dwelling (openings to two walls of the dwelling). dwellings.min.openings_two_walls is read as every habitable room (FACTS-PROPOSED-part4a.md). New 2 m figure is labelled Figure 4.1c (figures in 4.2 are copies of 4.1 numbering).",
+  "verified": {
+    "method": "page-image",
+    "page": 52,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page prints \"Habitable rooms have openings on at least two walls\" for every habitable room; read literally few single-aspect apartments could comply. Drafting ambiguity (per room or per dwelling) left for review."
+  }
+}

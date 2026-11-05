@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG3.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.8",
+  "element_title": "Vehicle access",
+  "title": "Vehicle access Design Guidance",
+  "text": "DG 3.8.1 Good design can reduce the visual impact of vehicle access at the street frontage. Consider: providing access from a secondary street where possible; keeping the width to a minimum and avoiding vehicle standing areas within the street setback; in built passing points but not the full driveway length; positioning ramps, gates and roller doors behind the main building frontage; selecting materials and colours that identify the access point while integrating with the built form and streetscape; minimising voids in the building façade through the use of doors or gates at entries or returning the façade detailing along exposed sides/interior of driveways; concealing building services, pipes and ducts within visible parking areas. DG 3.8.2 Locate and design vehicle access to minimise impacts on pedestrians, in particular ensuring that vehicles exiting the site have adequate visibility of oncoming pedestrians, cyclists and vehicles. DG 3.8.3 Visitor bays are readily accessed from the primary vehicle entry. Where located inside security gates, provide intercom controls to facilitate visitor access. DG 3.8.4 Consider design solutions to reduce the impact of vehicle entries and circulation areas within the site accommodating appropriate sightlines and safety considerations, such as: using changes in materials, colour, levels or landscaping to delineate pedestrian and vehicle circulation areas and define pedestrian paths in shared areas; locating vehicle entries to minimise ramp lengths and excavation; where required, incorporating aesthetically pleasing traffic calming devices that are integrated into the design such as changes in paving material or textures; reducing parts of the driveway to single lane (3m width) to allow for the incorporation of deep soil areas; minimising the visual impact of unavoidable long driveways through changing alignments and screen planting. DG 3.8.5 Minimise the need for large vehicles to enter and manoeuvre within the site. Where it is required, ensure a well-planned path of travel with sufficient clearance distances and site lines. This requires consideration of building servicing requirements, including waste collection, during the preliminary design.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG3.8",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 44
+  },
+  "register_ref": "C4P2-096",
+  "verify": false,
+  "notes": "List items of DG 3.8.1 and DG 3.8.4 assigned from the rendered page (p44); the extract interleaves them.",
+  "verified": {
+    "method": "page-image",
+    "page": 44,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p44 DG 3.8.1 and DG 3.8.4 list items re-assigned from the page."
+  }
+}

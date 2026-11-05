@@ -1,0 +1,29 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Street setbacks merit assessment criteria",
+  "text": "M3.3.1 Buildings are set back from street boundaries an appropriate distance to ensure they: i. are consistent with the existing or future streetscape and local character; ii. provide sufficient space for tree planting and other landscaping, as well as community interaction; iii. provide adequate privacy to the dwellings; iv. accommodate site planning requirements such as parking and utilities; and v. allow safety clearances for easements for essential service corridors and sightlines. M3.3.2 Buildings mass and form that: i. uses design features to affect the size and scale of the building; ii. provide the opportunity for building articulation, such as well-defined entries, varying setbacks across the building width, verandahs, porches and balconies; iii. uses appropriate minor projections that do not detract from the character of the streetscape; iv. minimises the proportion of the fa\u00e7ade at ground level taken up by building services, vehicle entries, parking supply, blank walls, servicing infrastructure access, meters and the like; and v. positively contributes to the prevailing or future development context and streetscape as outlined in the local planning framework. M3.3.3 Garages and/or carports are set back to: i. contribute positively to the streetscape and appearance of dwellings; ii. maintain clear sightlines along the street, to not obstruct views of dwellings from the street and vice versa; and iii. ensure vehicle parking on a driveway only occurs where space permits and does not impede on any existing or planned adjoining pedestrian, cycle, or dual-use path.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 30
+  },
+  "verified": {
+    "method": "page-image",
+    "page": "30, 32",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

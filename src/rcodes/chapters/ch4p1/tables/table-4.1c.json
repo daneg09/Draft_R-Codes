@@ -1,0 +1,35 @@
+{
+  "id": "table-4.1c",
+  "title": "C4.1.6 coding band: R50 and above",
+  "keys": [
+    "site.r_code"
+  ],
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R50+"
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": "R40-"
+      },
+      "value": false
+    }
+  ],
+  "default": false,
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 50
+  },
+  "register_ref": "C4P1-145",
+  "verify": false,
+  "notes": "Engine helper, not a published table: true where the clause's coding band applies, false otherwise (default false). Used as a condition inside the concession exceptions on C4.1.1 (a table-lookup with no fact answers MEETS when the value is truthy), because exceptions cannot carry a coding of their own. Values are never null. Chapter 4 Part 1 covers R10-R60 only. C4.1.6: gold-level accessible or small dwelling at R50 and above (R50-R60 in this chapter).",
+  "verified": {
+    "method": "page-image",
+    "page": 50,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

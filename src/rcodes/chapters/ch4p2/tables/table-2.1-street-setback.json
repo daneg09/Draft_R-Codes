@@ -1,0 +1,101 @@
+{
+  "id": "table-2.1-street-setback",
+  "title": "Table 2.1 Minimum primary and secondary street setbacks",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "LR1",
+          "R-AC4"
+        ]
+      },
+      "value": 2,
+      "note": "2 m or nil; nil if commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "site.r_code": "R100"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": "R160"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": "MR1"
+      },
+      "value": 2,
+      "note": "2 m or nil; nil if commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "MR2",
+          "R-AC3"
+        ]
+      },
+      "value": 2,
+      "note": "2 m or nil; nil if commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "HR1",
+          "R-AC1"
+        ]
+      },
+      "value": 2,
+      "note": "2 m or nil; nil if commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "site.r_code": "HR2"
+      },
+      "value": 2,
+      "note": "2 m or nil; nil if commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "site.r_code": "HR3"
+      },
+      "value": 2,
+      "note": "2 m or nil; nil if commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R-PA",
+          "R-AC0"
+        ]
+      },
+      "value": null
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13
+  },
+  "register_ref": "C4P2-034..C4P2-036",
+  "verify": false,
+  "notes": "Minimum setback to the primary and secondary street in metres (A2.3.1). The '2m or nil' cells carry 2; the nil option is the A2.3.1 exception conditioned on building.ground_floor_commercial and table-2.1-street-setback-nil. Extract: '2m | 2m or nil1 | 2m | 2m or nil1 | 2m or nil1' = R80 | LR1 | R100-R160 | MR1-MR2 | HR1-HR3. Rows also match the current names (R-AC4 = LR1, R-AC3 = MR2, R-AC1 = HR1, R-AC0 = R-PA; register C4P2-017). R-AC2 has no column and no row. The generic LR, MR and HR bands have no row (MR and HR each span columns with different values), so a site coded only LR, MR or HR is NOT_APPLICABLE until its code is known.",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG2.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Side and rear setbacks Design Guidance",
+  "text": "DG 2.4.1 Consider boundary walls to maximise site efficiency. Where possible, boundary walls should be co-located with and match the alignment and extent of existing neighbouring boundary walls to minimise the impact of overshadowing, visual privacy and to coordinate building frontages to streetscapes. DG 2.4.2 Ensure building articulation along adjoining lot boundaries through appropriate variations to side and rear setbacks, avoiding long expanses of blank or flat walls. For taller buildings, setbacks should support articulated façades that reduce perceived bulk while avoiding excessive stepping that may compromise internal amenity or building efficiency. DG 2.4.3 Reduced setbacks may be necessary due to the irregular shape or topography of the lot. In such instances, it is important to balance these competing elements while recognising some lots due to their shape will not achieve the same level of yield as more regular shaped lots. DG 2.4.4 On sloping sites, increased side and rear setbacks to the higher portion of the site assist in reducing building bulk, improve visual privacy and minimise overshadowing. DG 2.4.5 Build-to-boundary development can support efficient building layouts, improve site utilisation and reinforce established streetscape patterns. Consider the extent to which increased boundary development contributes positively to the intended character of the area while managing impacts on adjoining properties. DG 2.4.6 In streets where buildings have nil side setback, such as in dense urban contexts, main streets or for podium forms within centres, continue the built form pattern. DG 2.4.7 Greater setbacks can provide opportunities to retain or provide trees within the site accommodating sufficient deep soil area. This could also be considered to accommodate adjoining tree/s. DG 2.4.8 Consider the integration of deep soil areas, tree retention and canopy planting early in the site planning process to support landscape, environmental and amenity outcomes. DG 2.4.9 Reduced setbacks and greater boundary wall provision may be appropriate where the development site abuts non-residential land or other contexts with a reduced need to residential interface protection.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.4",
+      "relation": "restructured",
+      "note": "Volume 2 planning guidance; DG 2.4.5 and 2.4.9 new"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 19
+  },
+  "register_ref": "C4P2-071",
+  "verify": false,
+  "notes": "Interleaved in the extract; checked word for word against page 19.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

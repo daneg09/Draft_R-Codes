@@ -1,0 +1,2380 @@
+[
+  {
+    "title": "Two grouped dwellings R20, dwelling site 300 m2: garden provisions all met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.1",
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r1",
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r2",
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r3",
+      "rcodes:draft-2026-10-24/ch3/C1.2.1",
+      "rcodes:draft-2026-10-24/ch3/C1.2.1-r1",
+      "rcodes:draft-2026-10-24/ch3/C1.2.2",
+      "rcodes:draft-2026-10-24/ch3/C1.2.4",
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r1",
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r2",
+      "rcodes:draft-2026-10-24/ch3/C1.3.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r3": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.3.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 OLA 24 m2, 3.5 m wide, half covered: area, dimension and roof cover fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.1",
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r1",
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 24,
+          "min_dim_m": 3.5,
+          "uncovered_pct": 50,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R15 grouped: no OLA minimum applies",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R15",
+        "area_m2": 600,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 0,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 100,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.1": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "R25 OLA in the primary street setback with permeable fences: location not applicable via C1.1.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r3",
+      "rcodes:draft-2026-10-24/ch3/C1.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R25",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": false,
+          "in_primary_street_setback": true
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r3": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch3/C1.1.2": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r3": "C1.1.2 single consolidated OLA in the primary street setback area with visually permeable street walls and fences"
+      }
+    }
+  },
+  {
+    "title": "R25 OLA in the primary street setback, fence permeability not stated: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r3",
+      "rcodes:draft-2026-10-24/ch3/C1.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R25",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": null
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": false,
+          "in_primary_street_setback": true
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r3": "CANNOT_TELL",
+        "rcodes:draft-2026-10-24/ch3/C1.1.2": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "building.front_fence.visually_permeable"
+      ]
+    }
+  },
+  {
+    "title": "R25 OLA in the primary street setback with solid fences: location fails and C1.1.2 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.1-r3",
+      "rcodes:draft-2026-10-24/ch3/C1.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R25",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": false
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": false,
+          "in_primary_street_setback": true
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.1-r3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.1.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 grouped dwelling site 200 m2, PGA 30 m2: Table 1.1b 191-220 band met (PGA from R30 in Chapter 3)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3",
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r1",
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r2",
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 200,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 12,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 4.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 30,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 30,
+        "street_setback_soft_area_m2": 10,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 30,
+          "min_dim_m": 3.0,
+          "roofed_pct": 20,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R30 site 200 m2, PGA 25 m2, 2.5 m wide, 40% roofed: area, dimension and roof cover fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3",
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r1",
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 200,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 12,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 4.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 30,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 30,
+        "street_setback_soft_area_m2": 10,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 25,
+          "min_dim_m": 2.5,
+          "roofed_pct": 40,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "secondary_pos": {
+          "area_m2": 0
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 site 200 m2, PGA 22 m2 with a secondary POS: meets via C1.1.4 reduction",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 200,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 12,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 4.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 30,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 30,
+        "street_setback_soft_area_m2": 10,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 3,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 22,
+          "min_dim_m": 3.0,
+          "roofed_pct": 20,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "secondary_pos": {
+          "area_m2": 10,
+          "min_dim_m": 3,
+          "uncovered": true,
+          "outside_street_setback": true,
+          "extra_tree": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3": "C1.1.4 secondary private open space on a site of 161 m2 or more: required PGA reduced by 10 m2"
+      }
+    }
+  },
+  {
+    "title": "R40 site 200 m2, PGA 22 m2, secondary POS not described: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 200,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 12,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 4.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 30,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 30,
+        "street_setback_soft_area_m2": 10,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 22,
+          "min_dim_m": 3.0,
+          "roofed_pct": 20,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "landscape.secondary_pos.area_m2"
+      ]
+    }
+  },
+  {
+    "title": "R60 site 150 m2, PGA 15 m2 with a secondary POS: site under 161 m2 so no reduction, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 150,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 12,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 4.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 25,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 30,
+        "street_setback_soft_area_m2": 10,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 15,
+          "min_dim_m": 3.0,
+          "roofed_pct": 20,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "secondary_pos": {
+          "area_m2": 10,
+          "min_dim_m": 3,
+          "uncovered": true,
+          "outside_street_setback": true,
+          "extra_tree": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 PGA in the primary street setback with permeable fences: C1.1.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r3",
+      "rcodes:draft-2026-10-24/ch3/C1.1.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 200,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 12,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 4.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 30,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 30,
+        "street_setback_soft_area_m2": 10,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 30,
+          "min_dim_m": 3.0,
+          "roofed_pct": 20,
+          "behind_street_setback": false,
+          "in_primary_street_setback": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r3": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch3/C1.1.5": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r3": "C1.1.5 single consolidated PGA in the primary street setback area with visually permeable street walls and fences"
+      }
+    }
+  },
+  {
+    "title": "R100-SL grouped dwelling site 90 m2: Table 2.10a PGA 15 m2 uncovered and 10% soft landscaping met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r100sl",
+      "rcodes:draft-2026-10-24/ch3/C1.2.1-r100sl"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R100-SL",
+        "area_m2": 90,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 6,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 1.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 9,
+        "soft_min_dim_m": 1.0,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 15,
+          "min_dim_m": 3.0,
+          "roofed_pct": 0,
+          "in_primary_street_setback": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r100sl": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.1-r100sl": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R100-SL grouped dwelling site 90 m2: PGA 12 m2 and 8% soft landscaping fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.1.3-r100sl",
+      "rcodes:draft-2026-10-24/ch3/C1.2.1-r100sl"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R100-SL",
+        "area_m2": 90,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 6,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 1.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 7.2,
+        "soft_min_dim_m": 1.0,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "pga": {
+          "area_m2": 12,
+          "min_dim_m": 3.0,
+          "roofed_pct": 0,
+          "in_primary_street_setback": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.1.3-r100sl": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.2.1-r100sl": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 site 300 m2, 12% soft landscaping with a significant tree retained: meets at 10% via C1.2.6; root zone provided (C1.2.7)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.1",
+      "rcodes:draft-2026-10-24/ch3/C1.2.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": true,
+        "has_communal_street": false,
+        "retained_tree_root_zone_provided": true
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 36,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.7": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.1": "C1.2.6 significant existing tree retained on site: soft landscaping reduced to 10%"
+      }
+    }
+  },
+  {
+    "title": "R20 retained significant tree without a nominal root zone: C1.2.7 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": true,
+        "has_communal_street": false,
+        "retained_tree_root_zone_provided": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.7": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 12% soft landscaping, tree retention not stated: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": null,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 36,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "site.significant_tree_retained"
+      ]
+    }
+  },
+  {
+    "title": "R20 12% soft landscaping, no tree retained, 0.8 m strips: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.1",
+      "rcodes:draft-2026-10-24/ch3/C1.2.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 36,
+        "soft_min_dim_m": 0.8,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.2.1-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 street setback area 25% soft: fails C1.2.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 15,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Communal street landscaped and lit: C1.2.3 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": true,
+        "communal_street_landscaped_and_lit": true
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Communal street not landscaped or lit: C1.2.3 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": true,
+        "communal_street_landscaped_and_lit": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 frontage 25 m, three dwellings, 6 m setback: two street trees required; one street tree fails C1.2.4, three elsewhere meets C1.2.4-r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.4",
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 25,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 3,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 3,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 frontage 25 m, three dwellings: four street trees and one elsewhere meets C1.2.4-r1 via note 1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.4",
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 25,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 3,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 4,
+        "trees_elsewhere": 1,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "per-dwelling trees planted in the primary street setback area (Table 1.2a note 1); street setback trees also required"
+      }
+    }
+  },
+  {
+    "title": "R20 three dwellings, two street trees of two and one elsewhere: per-dwelling trees short, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 25,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 3,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 2,
+        "trees_elsewhere": 1,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 1.0 m street setback, two dwellings: one tree in the setback and one elsewhere satisfy the per-dwelling trees",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 1.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 1,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "per-dwelling trees planted in the primary street setback area (Table 1.2a note 1); no street setback trees required"
+      }
+    }
+  },
+  {
+    "title": "R20 one tree elsewhere for two dwellings, dwelling count not stated: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 1,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "proposal.dwelling_count"
+      ]
+    }
+  },
+  {
+    "title": "R20 deep soil 6 m2 per tree: fails Table 1.2b",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.4-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 6,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.4-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Nine uncovered at-grade bays with three shade trees: meets C1.2.5 (ceil 9/4 = 3)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 9
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "parking_shade_trees": 3
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.5": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Nine uncovered at-grade bays with two shade trees: fails C1.2.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 9
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "parking_shade_trees": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.5": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Six grouped dwellings with a landscaping plan: C1.2.8 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.8"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 30,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 6,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "landscaping_plan_provided": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.8": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Five grouped dwellings without a landscaping plan: C1.2.8 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.2.8"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 5,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "landscaping_plan_provided": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.2.8": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Stormwater to the local system where the decision-maker requires it: C1.3.1 not applicable via C1.3.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.3.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": false,
+        "stormwater_to_system_required": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.3.1": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C1.3.1": "C1.3.2 directed to a district or local stormwater drainage system where required by the decision-maker"
+      }
+    }
+  },
+  {
+    "title": "Stormwater not retained and not required off site: fails C1.3.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.3.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": false,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.3.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Stormwater not retained, decision-maker requirement unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C1.3.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 15,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 360,
+        "avg_site_area_per_dwelling_m2": 460
+      },
+      "building": {
+        "primary_street_setback_m": 6.0,
+        "front_fence": {
+          "visually_permeable": true
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "ola": {
+          "area_m2": 30,
+          "min_dim_m": 4.0,
+          "uncovered_pct": 70,
+          "behind_street_setback": true,
+          "in_primary_street_setback": false
+        },
+        "soft_area_m2": 60,
+        "soft_min_dim_m": 1.5,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees_in_street_setback": 1,
+        "trees_elsewhere": 2,
+        "tree_deep_soil_min_m2": 9,
+        "tree_deep_soil_min_dim_m": 1.5,
+        "stormwater_retained_on_site": false,
+        "stormwater_to_system_required": null
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C1.3.1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "landscape.stormwater_to_system_required"
+      ]
+    }
+  }
+]

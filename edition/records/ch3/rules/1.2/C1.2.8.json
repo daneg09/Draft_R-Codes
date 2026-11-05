@@ -1,0 +1,65 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.2.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Landscaping plan for five or more grouped dwellings",
+  "text": "Landscaping plan. C1.2.8 For five or more grouped dwellings, provide a landscaping plan in accordance with Appendix A3.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">=",
+      "value": 5
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count",
+    "landscape.landscaping_plan_provided"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.landscaping_plan_provided",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.2",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.8",
+      "relation": "same",
+      "note": "Part C: multiple dwellings or 5+ grouped dwellings"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "new deemed exempt requirement for grouped R25 and below"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 12
+  },
+  "register_ref": "ch3-016",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 12,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "New to Chapter 3 (no Chapter 2 twin). Applies to five or more grouped dwellings (rule condition). Whether the plan accords with Appendix A3 is stated by the applicant; its content is not tested."
+}

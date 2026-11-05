@@ -1,0 +1,61 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.17.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.17",
+  "element_title": "Waste management",
+  "title": "Waste storage facilities per WALGA Better Practice considerations (or local government requirements)",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Waste storage facilities are provided in accordance with the Better Practice considerations of the WALGA Multiple Dwelling Waste Management Plan Guidelines (or local government requirements where applicable).",
+  "inputs": [
+    "services.waste.walga_better_practice"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.waste.walga_better_practice",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.17",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.17.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 84,
+    "extract_line": 2902
+  },
+  "register_ref": "C4P2-127",
+  "verify": false,
+  "notes": "Compliance with an external guideline is encoded as an applicant statement backed by the Level 1 Waste Management Plan (A4.17.2); the assessor may treat it as judgment. The draft prints no bin or store sizes; they come from the WALGA guidelines or the local government.",
+  "verified": {
+    "method": "page-image",
+    "page": 84,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

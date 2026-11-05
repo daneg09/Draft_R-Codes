@@ -1,0 +1,64 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.3.1#laneway-r100sl",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Setback to an adjoining right-of-way on lots less than 100 m2 (R100-SL)",
+  "text": "Table 2.10a Modified provisions for housing on lots less than 100m2. 3.3 Street setbacks, C3.3.1: Right-of-way - 0.5m setback to adjoining right-of-way; and - nil street setback for upper floors.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_row",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.row_setback_m",
+    "site.has_row"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.row_setback_m",
+    "op": ">=",
+    "value": 0.5
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.3",
+  "defined_terms": [
+    "right-of-way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.10a",
+      "relation": "unclear",
+      "note": "current Part C Table 2.10a; values not compared"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 26,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch3-046",
+  "verify": true,
+  "notes": "Table 2.10a (Chapter 3 p26, register ch3-040) makes no primary/not-primary distinction for the right-of-way at R100-SL. Table 3A (p7) shows N/A in the not-primary row at R100-SL; inconsistent with Table 2.10a.",
+  "verified": {
+    "method": "page-image",
+    "page": 26,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 2.10a (p26) gives 0.5m to any adjoining right-of-way, but Table 3A (p7) prints N/A at R100-SL for a laneway that is not the primary street and '0.5m/Nil' where it is. Draft inconsistency between the two tables."
+  }
+}

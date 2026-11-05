@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.3",
+  "element_title": "Size and layout of dwellings",
+  "title": "Minimum internal floor area per Table 4.3a, plus 3 m2 per extra toilet and 5 m2 per extra bathroom",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Dwellings have a minimum internal floor area in accordance with Table 4.3a.",
+  "inputs": [
+    "dwellings.min.internal_floor_area_m2",
+    "dwellings.min.bedrooms_of_smallest",
+    "dwellings.min.bathrooms_of_smallest",
+    "dwellings.min.separate_toilets_of_smallest"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "dwellings.min.internal_floor_area_m2",
+    "op": ">=",
+    "value": "(36 if dwellings.min.bedrooms_of_smallest == 0 else 47 if dwellings.min.bedrooms_of_smallest == 1 else 67 if dwellings.min.bedrooms_of_smallest == 2 else 90) + 5 * max(0, dwellings.min.bathrooms_of_smallest - 1) + 3 * dwellings.min.separate_toilets_of_smallest",
+    "label": "Table 4.3a: studio 36, 1 bed 47, 2 bed 67, 3 bed 90 m2 (one bathroom); +5 m2 per additional bathroom; +3 m2 per second or separate toilet"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.3",
+  "defined_terms": [
+    "internal floor area",
+    "dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.3.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T4.3a",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 55,
+    "extract_line": 1885,
+    "table": "Table 4.3a"
+  },
+  "register_ref": "C4P2-113",
+  "verify": true,
+  "notes": "from: ch4p1 C2.1.6. diverges: studio 36 m2 (ch4p1 37 m2). Table 4.3a (table-4.3a, reference) is carried in the formula so the footnote additions can be added. verify: the footnote marker is printed on the 2 bed and 3 bed rows only, so whether +3/+5 m2 applies to a studio or 1 bed with a second toilet or bathroom is unclear (applied to all here, as ch4p1); 4+ bedrooms are not printed and are read as the 3 bed row.",
+  "verified": {
+    "method": "page-image",
+    "page": 55,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 4.3a sizes 36/47/67/90 m2 confirmed. Footnote 1 marker is printed on \"2 bed x 1 bath\" and \"3 bed x 1 bath\" only (not studio or 1 bed), while the footnote wording is general; the formula applies +3/+5 m2 to all types. 4+ bedrooms not printed (read as 3 bed)."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.5.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.5",
+  "element_title": "Site works and retaining walls",
+  "title": "Retaining walls and fill behind the street setback: setback per Table 3.5a",
+  "text": "Retaining walls and fill within the site and behind the street setback to comply with Table 3.5a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "site_works.retaining_max_height_m",
+    "site_works.retaining_setback_m"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.5a",
+    "fact": "site_works.retaining_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.5",
+  "defined_terms": [
+    "retaining wall",
+    "fill",
+    "natural ground level",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.5a",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.7-C7.2",
+      "relation": "relaxed",
+      "note": "Part B Table 4: nil setback only for 0.5 m or less; now 1 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 36,
+    "table": "Table 3.5a"
+  },
+  "register_ref": "C4P1-099",
+  "verify": false,
+  "notes": "from: ch3 C3.5.2 (unchanged). Height measured from NGL at the lot boundary adjacent to that point of the wall (Table 3.5a note). R10-R25: nil-setback retaining height 0.5 m -> 1 m.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 3.5a applies to retaining walls and fill behind the street setback; footnote 'take the nearest higher value' and the measurement note confirmed."
+  }
+}

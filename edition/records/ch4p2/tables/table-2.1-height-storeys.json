@@ -1,0 +1,97 @@
+{
+  "id": "table-2.1-height-storeys",
+  "title": "Table 2.1 Building height (storeys)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "storeys",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": 4,
+      "note": "merged cell with LR1 (4)"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "LR1",
+          "R-AC4"
+        ]
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "R100"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "site.r_code": "R160"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "site.r_code": "MR1"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "MR2",
+          "R-AC3"
+        ]
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "HR1",
+          "R-AC1"
+        ]
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "site.r_code": "HR2"
+      },
+      "value": 16
+    },
+    {
+      "match": {
+        "site.r_code": "HR3"
+      },
+      "value": 20
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R-PA",
+          "R-AC0"
+        ]
+      },
+      "value": null,
+      "note": "refer to local planning scheme, local development plan and/or precinct controls"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13
+  },
+  "register_ref": "C4P2-018..C4P2-027",
+  "verify": false,
+  "notes": "Maximum building height in storeys above natural ground level (A2.2.1). Checked against the page 13 extract ('4 6 8 6 8 12 16 20', R80 and LR1 merged) and register rows C4P2-018 to C4P2-027. Rows also match the current names (R-AC4 = LR1, R-AC3 = MR2, R-AC1 = HR1, R-AC0 = R-PA; register C4P2-017). R-AC2 has no column and no row. The generic LR, MR and HR bands have no row (MR and HR each span columns with different values), so a site coded only LR, MR or HR is NOT_APPLICABLE until its code is known.",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

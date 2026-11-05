@@ -1,0 +1,51 @@
+{
+  "id": "table-4.6",
+  "title": "Table 4.6a Storage requirements (storage area)",
+  "keys": [
+    "dwellings.min.storage_bedrooms"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "dwellings.min.storage_bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 3,
+      "note": "studio dwelling / 1 bedroom dwelling"
+    },
+    {
+      "match": {
+        "dwellings.min.storage_bedrooms": 2
+      },
+      "value": 4,
+      "note": "2 bedroom dwellings"
+    },
+    {
+      "match": {
+        "dwellings.min.storage_bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 5,
+      "note": "3 bedroom dwellings (4+ read as 3)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 62,
+    "extract_line": 2160,
+    "table": "Table 4.6a"
+  },
+  "register_ref": "C4P2-116",
+  "verify": false,
+  "notes": "Printed as 'Table 4.6a' but cited as 'Table 4.6' by A4.6.1 (C4P2-116). Minimum dimension 1.5 m and minimum height 2.1 m are constant across rows and carried in rule A4.6.1. Dimensions exclusive of services and plant (footnote 1).",
+  "verified": {
+    "method": "page-image",
+    "page": 62,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Printed title \"Table 4.6a Storage Requirements\"; A4.6.1 cites \"Table 4.6\". Units m2 (3/3/4/5); 1.5 m and 2.1 m span all rows; footnote 1 on all three column headers."
+  }
+}

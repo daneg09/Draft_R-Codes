@@ -1,0 +1,53 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.9.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.9",
+  "element_title": "Visual privacy",
+  "title": "Apartments on the same lot apply C3.9.1 to C3.9.3 to each other",
+  "text": "Sources of overlooking for apartments on the same lot are to apply C3.9.1, C3.9.2 and C3.9.3.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "privacy.between_apartments_same_lot_compliant"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "privacy.between_apartments_same_lot_compliant",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.9",
+  "defined_terms": [
+    "cone of vision"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.10.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 45
+  },
+  "register_ref": "C4P1-131",
+  "verify": false,
+  "notes": "diverges: from ch3 C3.10.4, which is a judgment record. This chapter's fact vocabulary provides privacy.between_apartments_same_lot_compliant for C3.9.4, so the clause is a yes/no: every source of overlooking between apartments on the same lot meets C3.9.1, C3.9.2 and C3.9.3 when read as if the other apartment were on an adjoining property. The engine cannot run the C3.9.1-C3.9.3 rules per internal pair.",
+  "verified": {
+    "method": "page-image",
+    "page": 45,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed; yes/no encoding (the engine cannot run C3.9.1-C3.9.3 per internal pair)."
+  }
+}

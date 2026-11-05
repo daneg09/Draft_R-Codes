@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.5.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Living rooms have an external outlook from at least one unscreened major opening",
+  "text": "Living rooms have an external outlook from at least one major opening that is not obscured by a screen.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "privacy.living_room_outlook"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "privacy.living_room_outlook",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.5",
+  "defined_terms": [
+    "major opening"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.5.3",
+      "relation": "same",
+      "note": "renumbered A3.5.3 -> A3.5.4"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36
+  },
+  "register_ref": "C4P2-087",
+  "verify": false,
+  "notes": "privacy.living_room_outlook read as true where every living room meets this.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

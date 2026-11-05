@@ -1,0 +1,122 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Carport setback from the primary street",
+  "text": "C3.3.4 Carports are set back from the primary street boundary in accordance with Table 3.3a. This setback may be reduced by up to 50 per cent where: i. the carport width including supporting structures does not exceed 60 per cent of the frontage width ii. the carport is free of walls (excluding pillar and posts with a horizontal dimension of 450mm by 450mm or less) for all portions that project forward of the primary street setback line; and iii. the construction allows an unobstructed view between the dwelling and the street, right-of-way or equivalent.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.carport.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.carport.setback_primary_m",
+    "site.r_code",
+    "parking.carport.present",
+    "parking.carport.width_m",
+    "site.frontage_m",
+    "parking.carport.free_of_walls_forward_of_setback",
+    "parking.carport.unobstructed_view_dwelling_to_street"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-primary",
+    "fact": "parking.carport.setback_primary_m",
+    "op": ">="
+  },
+  "exceptions": [
+    {
+      "label": "carport 50 per cent reduction",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "percentage-of",
+            "fact": "parking.carport.width_m",
+            "of": "site.frontage_m",
+            "op": "<=",
+            "value": 60,
+            "label": "width not more than 60% of frontage"
+          },
+          {
+            "type": "boolean",
+            "fact": "parking.carport.free_of_walls_forward_of_setback",
+            "expected": true,
+            "label": "free of walls forward of the setback line"
+          },
+          {
+            "type": "boolean",
+            "fact": "parking.carport.unobstructed_view_dwelling_to_street",
+            "expected": true,
+            "label": "unobstructed view between dwelling and street"
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "2 * parking.carport.setback_primary_m",
+          "op": ">=",
+          "value": {
+            "table": "table-3.3a-primary"
+          }
+        }
+      },
+      "inputs": [
+        "parking.carport.width_m",
+        "site.frontage_m",
+        "parking.carport.free_of_walls_forward_of_setback",
+        "parking.carport.unobstructed_view_dwelling_to_street"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "carport",
+    "primary street",
+    "frontage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.1-C1.2",
+      "relation": "relaxed",
+      "note": "roof pitch, colour and materials test deleted; 450 mm posts and no-walls test added"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.5",
+      "relation": "relaxed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 31
+  },
+  "register_ref": "ch2-052",
+  "verify": false,
+  "notes": "The 50% reduction is applied by replacing the lookup with a formula (twice the carport setback must meet the Table 3.3a value). The 450 mm post dimension is part of the 'free of walls' fact (parking.carport.post_size_mm is available if a stricter composite is wanted). Coding excludes R100-SL (table has no row).",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

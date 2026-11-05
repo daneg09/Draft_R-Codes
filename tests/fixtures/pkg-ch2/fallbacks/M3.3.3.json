@@ -1,0 +1,15 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M3.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Garages and carports merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": ["single_house"],
+  "coding": ["all"],
+  "region": "all",
+  "text": "Garages and/or carports are set back to: (i) contribute positively to the streetscape and appearance of dwellings; (ii) maintain clear sightlines along the street, not obstruct views of dwellings from the street and vice versa; and (iii) ensure vehicle parking on a driveway only occurs where space permits and does not impede on any existing or planned adjoining pedestrian, cycle, or dual-use path.",
+  "source": {"file": "Residential Design Codes Chapter 2 - Single Houses.pdf", "page": 31}
+}

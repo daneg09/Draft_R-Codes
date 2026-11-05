@@ -1,0 +1,96 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.1",
+  "element_title": "Solar and daylight access",
+  "title": "Climate zones 4 to 6: at least 70% of dwellings get 2 hours of sun to living rooms and private open space, and at most 15% in a building get none",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "In climate zones 4, 5 and 6 only: (a) Dwellings with a northern aspect are maximised, with a minimum of 70 per cent of dwellings having living rooms and private open space that obtain at least 2 hours direct sunlight between 9am and 3pm on 21 June AND (b) A maximum of 15 per cent of dwellings in a building receiving no direct sunlight between 9am and 3pm on 21 June.",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.climate_zone",
+      "op": ">=",
+      "value": 4
+    },
+    {
+      "type": "threshold",
+      "fact": "site.climate_zone",
+      "op": "<=",
+      "value": 6
+    }
+  ],
+  "inputs": [
+    "site.climate_zone",
+    "dwellings.with_2h_sun_pct",
+    "dwellings.no_sun_pct"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.with_2h_sun_pct",
+        "op": ">=",
+        "value": 70
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.no_sun_pct",
+        "op": "<=",
+        "value": 15
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.1",
+  "defined_terms": [
+    "climate zone",
+    "habitable room",
+    "private open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.1.1",
+      "relation": "same",
+      "note": "register C4P2-110 change_type 'new' refers to DG 4.1.4 only; A4.1.1 to A4.1.4 unchanged"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 50,
+    "extract_line": 1673,
+    "figure": "Figure 4.1b"
+  },
+  "register_ref": "C4P2-110",
+  "verify": false,
+  "notes": "from: ch4p1 C2.2.2 (same 70% / 15% test). diverges: the 2 hours must reach both the living rooms and the private open space (ch4p1: primary living space only); supply dwellings.with_2h_sun_pct counting only dwellings where both do. (b) is per building: supply the worst building. 'Dwellings with a northern aspect are maximised' is qualitative and left to O4.1.1.",
+  "verified": {
+    "method": "page-image",
+    "page": 50,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

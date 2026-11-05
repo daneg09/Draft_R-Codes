@@ -1,0 +1,150 @@
+{
+  "id": "table-2B-avg",
+  "title": "Table 2B Average site area per dwelling (single houses)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 1000,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 800,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R15"
+      },
+      "value": 666,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5"
+      },
+      "value": 571,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R20"
+      },
+      "value": 450,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R25"
+      },
+      "value": 350,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R30"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "site.r_code": "R35"
+      },
+      "value": 260
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 220
+    },
+    {
+      "match": {
+        "site.r_code": "R50"
+      },
+      "value": 180
+    },
+    {
+      "match": {
+        "site.r_code": "R60"
+      },
+      "value": 150
+    },
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": 120
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 120,
+      "note": "R80 site area provisions apply to all single houses on lots coded R100, R160 and LR, MR and HR (Table 2B note)"
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "No av applies"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 51,
+    "table": "Table 2B"
+  },
+  "register_ref": "ch2-097",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 51,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R10-R25 averages printed struck through (pink box: proposed removal for Perth and Peel); those rows keep verify true. All other values checked."
+  },
+  "notes": "Average site area column of Table 2B; used by C4.1.1-r1. R2-R5: no average; R100-SL: 'No av applies'. Transcribed from page 51. The strikethrough on the R10-R25 average site areas is a flagged proposed change for the Perth and Peel regions only (Information Sheet 5); the averages are kept as operative with verify true. Table 2B drops the dwelling-type column and the multiple-dwelling rows of current Table D; single-house values are unchanged."
+}

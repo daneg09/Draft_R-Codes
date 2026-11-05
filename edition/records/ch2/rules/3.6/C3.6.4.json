@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.6.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Carport width as a proportion of frontage",
+  "text": "Carports and supporting structure shall not exceed 60 per cent of the frontage where projected forward of the primary street setback line in accordance with C3.3.4.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.carport.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.carport.present",
+    "parking.carport.width_m",
+    "site.frontage_m"
+  ],
+  "evaluator": {
+    "type": "percentage-of",
+    "fact": "parking.carport.width_m",
+    "of": "site.frontage_m",
+    "op": "<=",
+    "value": 60
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+  "defined_terms": [
+    "carport",
+    "frontage",
+    "primary street setback line"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.6",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.1-C1.2(i)",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 37
+  },
+  "register_ref": "ch2-071",
+  "verify": true,
+  "notes": "Applies only where the carport projects forward of the primary street setback line (C3.3.4); that trigger is not encoded here, the rule runs for any carport. Cross-reference C3.3.4 for the carport's own setback and openness tests.",
+  "verified": {
+    "method": "page-image",
+    "page": 37,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "60% value and wording confirmed. The trigger 'where projected forward of the primary street setback line in accordance with C3.3.4' is not encoded (no fact); the rule runs for any carport, so it can report DOES_NOT_MEET for a carport behind the setback line."
+  }
+}

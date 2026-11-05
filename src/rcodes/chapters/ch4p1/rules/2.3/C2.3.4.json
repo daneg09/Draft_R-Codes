@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.3.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "R50 and above: occupant parking averages at most 2 bays per dwelling",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R50-R60"
+  ],
+  "region": "all",
+  "text": "For R50 and above, maximum occupant parking does not exceed 2 bays per dwelling, averaged across the residential component of the development.",
+  "inputs": [
+    "parking.resident_spaces_per_dwelling_avg"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.resident_spaces_per_dwelling_avg",
+    "op": "<=",
+    "value": 2
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.3",
+  "defined_terms": [
+    "car parking space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "tightened",
+      "note": "maximum garage and carport parking 1/2/2 per dwelling at R30+ -> 2 bays per dwelling averaged at R50+, all bay types including basement"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 19,
+    "extract_line": 590
+  },
+  "register_ref": "C4P1-043",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C2.3.1-r2. diverges: one averaged cap of 2 bays per dwelling over all occupant bays (basement and undercroft included), not a per-dwelling garage and carport cap by bedroom count. R50 and above only, so R50 and R60 in this chapter; no maximum at R10-R40. ToC says maxima apply at R30 and above (register C4P1-043)."
+}

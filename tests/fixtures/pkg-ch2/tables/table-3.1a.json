@@ -1,0 +1,17 @@
+{
+  "id": "table-3.1a",
+  "title": "Table 3.1a Maximum site cover (single houses)",
+  "keys": ["site.r_code"],
+  "unit": "%",
+  "rows": [
+    {"match": {"site.r_code": "R2-R2.5"}, "value": 25},
+    {"match": {"site.r_code": "R5"}, "value": 35},
+    {"match": {"site.r_code": "R10"}, "value": 45},
+    {"match": {"site.r_code": "R12.5"}, "value": 50},
+    {"match": {"site.r_code": "R15-R25"}, "value": 55},
+    {"match": {"site.r_code": "R30+"}, "value": null, "note": "no site cover provision at R30 and above"}
+  ],
+  "source": {"file": "Residential Design Codes Chapter 2 - Single Houses.pdf", "page": 7},
+  "register_ref": "ch2-001",
+  "verify": true
+}

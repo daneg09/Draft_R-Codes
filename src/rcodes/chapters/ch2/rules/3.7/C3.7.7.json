@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.7.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "1 m x 1 m sightline truncation either side of a ROW driveway",
+  "text": "Walls, fences and other structures truncated or reduced to no higher than 0.75m within a 1m x 1m sightline truncation on either side of a driveway where vehicle access is taken from a right-of-way (refer Figure 3.7d).",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.access_from_rear_row",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.sightlines.row_truncation_1m",
+    "site.access_from_rear_row"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.sightlines.row_truncation_1m",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+  "defined_terms": [
+    "driveway",
+    "right-of-way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.5-C5",
+      "relation": "relaxed",
+      "note": "C3.7.6 path-offset exemption is new to Part B"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 40,
+    "figure": "Figure 3.7d"
+  },
+  "register_ref": "ch2-079",
+  "verify": true,
+  "notes": "Condition uses site.access_from_rear_row; a side ROW access would also trigger the clause but has no fact (parking.access.street_type == row is the alternative).",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values (0.75m, 1m x 1m) confirmed. The page triggers on access 'taken from a right-of-way' (not only a rear one); the condition uses site.access_from_rear_row, so a side ROW access is missed. parking.access.street_type == row would match the page; not changed here because it alters the ch2/ch3 pairing signature."
+  }
+}

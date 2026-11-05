@@ -1,0 +1,89 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.7.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Exit to the street in forward gear",
+  "text": "Driveways designed to allow vehicles to exit to the street in forward gear where the driveway: i. the distance from an on site car parking space to the street boundary is 30m or more; or ii. the street to which it connects is a designated primary distributor or integrator arterial.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "30 m or more to the street boundary, or primary distributor / integrator arterial",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "parking.driveway.space_to_boundary_m",
+          "op": ">=",
+          "value": 30.0
+        },
+        {
+          "type": "threshold",
+          "fact": "site.primary_street_class",
+          "op": "==",
+          "value": "primary_distributor"
+        },
+        {
+          "type": "threshold",
+          "fact": "site.primary_street_class",
+          "op": "==",
+          "value": "integrator_arterial"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "parking.driveway.exit_forward_gear",
+    "parking.driveway.space_to_boundary_m",
+    "site.primary_street_class"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.driveway.exit_forward_gear",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+  "defined_terms": [
+    "driveway",
+    "street boundary",
+    "primary distributor",
+    "integrator arterial"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.4",
+      "relation": "relaxed",
+      "note": "15 m -> 30 m; 5+ dwellings trigger dropped"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 39
+  },
+  "register_ref": "ch2-078",
+  "verify": false,
+  "notes": "Where neither trigger holds the rule does not apply. Regional and rural-residential long driveways: threshold 15 m -> 30 m. Street class is the primary street's class; a driveway to a secondary street that is an arterial is not distinguished.",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

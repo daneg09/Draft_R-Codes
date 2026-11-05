@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.2.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Shade trees for uncovered at-grade car parking: one small tree per four spaces",
+  "text": "C1.2.5 Uncovered at-grade car parking to include shade trees planted at a minimum ratio of one small tree for every four car spaces, with the total number of trees to be rounded up to the nearest whole number. Note: These trees are in addition to the trees to be provided in accordance with C1.2.4.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "parking.uncovered_at_grade_spaces",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "parking.uncovered_at_grade_spaces",
+    "landscape.parking_shade_trees"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "4 * landscape.parking_shade_trees",
+    "op": ">=",
+    "value": {
+      "fact": "parking.uncovered_at_grade_spaces"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.2",
+  "defined_terms": [
+    "small tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.5",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.1",
+      "relation": "same",
+      "note": "C2.1(iii) one tree per four uncovered spaces"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.4-C4.3",
+      "relation": "deleted",
+      "note": "shade trees between every six consecutive spaces"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 11
+  },
+  "register_ref": "C4P1-012",
+  "verify": false,
+  "notes": "from: ch3 C1.2.5. Test unchanged; coding R10-R60. trees >= ceil(spaces / 4) tested as 4 x trees >= spaces. Additional to the C1.2.4 trees.",
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

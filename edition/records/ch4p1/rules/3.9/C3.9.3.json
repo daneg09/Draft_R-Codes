@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.9.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.9",
+  "element_title": "Visual privacy",
+  "title": "Bedroom or study major opening offset 1.5 m from a parallel adjoining opening",
+  "text": "Notwithstanding C3.9.2, a major opening to a bedroom or study may be offset a minimum of 1.5m from a parallel major opening on an adjoining property, measured from the edge of one major opening to another (refer Figure 3.9g).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "privacy.sources_above_0_5m",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.vacant_or_unknown",
+      "expected": false
+    },
+    {
+      "type": "boolean",
+      "fact": "privacy.cone_captures_adjoining_opening",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "adjoining.vacant_or_unknown",
+    "privacy.bedroom_study_offset_m",
+    "privacy.cone_captures_adjoining_opening",
+    "privacy.sources_above_0_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "privacy.bedroom_study_offset_m",
+    "op": ">=",
+    "value": 1.5
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.9",
+  "defined_terms": [
+    "major opening",
+    "adjoining property"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.10.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 45,
+    "figure": "Figure 3.9g"
+  },
+  "register_ref": "C4P1-130",
+  "verify": false,
+  "notes": "from: ch3 C3.10.3 (renumbered C3.9.3). Bedroom and study openings only; measured edge to edge between parallel openings. May not address overlooking of other floor levels (p45 note). Applies to sources with a floor level more than 0.5 m above NGL; the cone radius includes the width of any adjoining ROW, communal street or battleaxe leg (p45 note). C3.9.4 applies C3.9.1-C3.9.3 between apartments on the same lot.",
+  "verified": {
+    "method": "page-image",
+    "page": 45,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

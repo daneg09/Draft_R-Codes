@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.2.1#storeys-r100sl",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.2",
+  "element_title": "Building height",
+  "title": "Storeys on lots less than 100 m2 (R100-SL): minimum two, maximum four",
+  "text": "Table 2.10a Modified provisions for housing on lots less than 100m2. 3.2 Building height, C3.2.1: Minimum two storey building height. Maximum four storey building height in accordance with Table 3.2a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "inputs": [
+    "proposal.storeys"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "count",
+        "fact": "proposal.storeys",
+        "op": ">=",
+        "value": 2,
+        "label": "minimum two storeys"
+      },
+      {
+        "type": "count",
+        "fact": "proposal.storeys",
+        "op": "<=",
+        "value": 4,
+        "label": "maximum four storeys"
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.2",
+  "defined_terms": [
+    "storey"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.10a",
+      "relation": "unclear",
+      "note": "current Part C Table 2.10a (register ch2-038 current_source); values not compared"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 25,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch2-041",
+  "verify": false,
+  "notes": "Table 2.10a modified provision for C3.2.1. Table 2.10a footnote 1 (abutting a non-R100-SL property) is not attached to 3.2.",
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.3.1#communal-street",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Setback to a communal street: no provision in Table 3.3a",
+  "text": "C3.3.1 Buildings are set back from the street boundary in accordance with Table 3.3a.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_communal_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "site.has_communal_street",
+    "building.communal_street_setback_m"
+  ],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "defined_terms": [
+    "communal street",
+    "street",
+    "street boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3a",
+      "relation": "deleted",
+      "note": "'adjoining communal street 0.5 m' row (R30-R60) not carried"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "deleted",
+      "note": "R10-R25 communal street treated as a secondary street (Table B legend, 5.1.2 C2.1(iv))"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29,
+    "table": "Table 3.3a",
+    "figure": "Figure 3.3d (p31)"
+  },
+  "register_ref": "C4P1-077",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Confirmed missing: Table 3.3a (p29) has rows for primary street, secondary street and the two laneway or right-of-way rows only; Table 4A (p7) has none either. Figure 3.3d (p31) still shows a '2.5m communal street setback (clause 5.1.2 C2.1 iv)' and a '1.5m communal street setback (Table B column 7 secondary street)'. No value on the page."
+  },
+  "notes": "from: ch3 C3.3.1#communal-street. As in Chapter 3, Table 3.3a (p29) and Table 4A (p7) have no communal street row, although the Table of Changes says communal street setbacks are reduced, Figure 3.3d (p31) still shows a 2.5 m communal street setback citing Part B clause 5.1.2 C2.1 iv, and C1.2.3 and C3.7.13-C3.7.14 refer to communal streets (C4P1-077). A building fronting an internal communal street could need the secondary street value (1.5 m / 1 m) or the 0.5 m right-of-way value; a planner decides. No value encoded; building.communal_street_setback_m is recorded for the planner."
+}

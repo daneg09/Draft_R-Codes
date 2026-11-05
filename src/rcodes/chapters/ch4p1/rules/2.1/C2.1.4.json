@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Bedrooms at least 9 m2 and 2.7 m x 2.7 m (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Bedrooms have a minimum internal floor area of 9m2 and can accommodate a minimum dimension of 2.7m x 2.7m (refer Figure 2.1c). Minimum area is inclusive of built-in robes and cabinetry, however the minimum dimension excludes built-in robes and cabinetry.",
+  "inputs": [
+    "dwellings.min.bedroom_area_m2",
+    "dwellings.min.bedroom_min_dim_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.bedroom_area_m2",
+        "op": ">=",
+        "value": 9.0
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.bedroom_min_dim_m",
+        "op": ">=",
+        "value": 2.7
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "bedroom",
+    "internal floor area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 16,
+    "extract_line": 478,
+    "figure": "Figure 2.1c"
+  },
+  "register_ref": "C4P1-025",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "new: no Chapter 3 equivalent. Heading 'Habitable rooms (applies to R30-R60 only)'. Area includes built-in robes and cabinetry; the dimension excludes them. Facts are the smallest bedroom in the development."
+}

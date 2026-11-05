@@ -1,0 +1,55 @@
+{
+  "id": "table-3.3b",
+  "title": "Table 3.3b Reduced primary street setback",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10-R12.5"
+      },
+      "value": 5
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R25"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R35"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": "R50-R60"
+      },
+      "value": null,
+      "note": "no row in Table 3.3b for R50 and above"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 30,
+    "table": "Table 3.3b"
+  },
+  "register_ref": "C4P1-078",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 30,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Copied from Chapter 3 and checked against p30; trimmed to R10-R60. Maximum percentage of frontage width (the greater of 30% or 4 m, all codes) is a formula in C3.3.2(i)#r1; it excludes garages provided under Table 3.3c."
+}

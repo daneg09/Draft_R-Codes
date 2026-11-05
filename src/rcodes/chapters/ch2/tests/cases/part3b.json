@@ -1,0 +1,1930 @@
+[
+  {
+    "title": "3.5 fill 0.4 m forward, 1.4 m retaining at 1.5 m, excavation behind the line: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.5.1",
+      "rcodes:draft-2026-10-24/ch2/C3.5.2",
+      "rcodes:draft-2026-10-24/ch2/C3.5.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "site_works": {
+        "forward_of_setback_max_change_m": 0.4,
+        "forward_of_setback_for_access_drainage_light": false,
+        "retaining_max_height_m": 1.4,
+        "retaining_setback_m": 1.5,
+        "excavation_behind_setback": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.5.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.5.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.5.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.5 cut 0.8 m forward not for access, 2.2 m retaining at 1.0 m, excavation forward: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.5.1",
+      "rcodes:draft-2026-10-24/ch2/C3.5.2",
+      "rcodes:draft-2026-10-24/ch2/C3.5.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "site_works": {
+        "forward_of_setback_max_change_m": 0.8,
+        "forward_of_setback_for_access_drainage_light": false,
+        "retaining_max_height_m": 2.2,
+        "retaining_setback_m": 1.0,
+        "excavation_behind_setback": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.5.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.5.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.5.3": "DOES_NOT_MEET"
+      },
+      "pathway": "merit-assessment"
+    }
+  },
+  {
+    "title": "3.5 1.0 m retaining at nil setback meets (1 m or less row)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.5.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "site_works": {
+        "forward_of_setback_max_change_m": 0.4,
+        "forward_of_setback_for_access_drainage_light": false,
+        "retaining_max_height_m": 1.0,
+        "retaining_setback_m": 0.0,
+        "excavation_behind_setback": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.5.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.5 cut 0.8 m forward for vehicle access: exception, not applicable",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.5.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "site_works": {
+        "forward_of_setback_max_change_m": 0.8,
+        "forward_of_setback_for_access_drainage_light": true,
+        "retaining_max_height_m": 1.4,
+        "retaining_setback_m": 1.5,
+        "excavation_behind_setback": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.5.1": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C3.5.1": "necessary for universal or vehicle access, drainage or natural light"
+      }
+    }
+  },
+  {
+    "title": "3.5 cut 0.8 m forward, purpose unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.5.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "site_works": {
+        "forward_of_setback_max_change_m": 0.8,
+        "retaining_max_height_m": 1.4,
+        "retaining_setback_m": 1.5,
+        "excavation_behind_setback": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.5.1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "site_works.forward_of_setback_for_access_drainage_light"
+      ]
+    }
+  },
+  {
+    "title": "3.6 two-storey house on POS, 6 m garage on 12 m frontage, 7.2 m carport, 1.8 m permeable fence: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.6.1",
+      "rcodes:draft-2026-10-24/ch2/C3.6.2",
+      "rcodes:draft-2026-10-24/ch2/C3.6.3",
+      "rcodes:draft-2026-10-24/ch2/C3.6.4",
+      "rcodes:draft-2026-10-24/ch2/C3.6.5(i)",
+      "rcodes:draft-2026-10-24/ch2/C3.6.5(ii)",
+      "rcodes:draft-2026-10-24/ch2/C3.6.6-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.6.6-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "adjoins_public_open_space": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "storeys": 2
+      },
+      "building": {
+        "entrance_identifiable_from_street": true,
+        "major_opening_to_frontage": true,
+        "upper_level_outlook_to_pos": true,
+        "front_fence": {
+          "present": true,
+          "height_m": 1.8,
+          "permeable_above_m": 1.2,
+          "pillars_present": true,
+          "pillar_height_m": 1.8,
+          "pillar_size_mm": 450
+        }
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "ext_width_m": 6.0,
+          "upper_floor_over_half_width": false,
+          "entrance_clearly_visible": true
+        },
+        "carport": {
+          "present": true,
+          "width_m": 7.2
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.6.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.6.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.6.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.6.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.6.5(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.6.5(ii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.6.6-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.6.6-r2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.6 no identifiable entry, no POS outlook, 7 m garage and 8 m carport on 12 m, 2.0 m solid fence with 500 mm pillars: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.6.1",
+      "rcodes:draft-2026-10-24/ch2/C3.6.2",
+      "rcodes:draft-2026-10-24/ch2/C3.6.3",
+      "rcodes:draft-2026-10-24/ch2/C3.6.4",
+      "rcodes:draft-2026-10-24/ch2/C3.6.5(i)",
+      "rcodes:draft-2026-10-24/ch2/C3.6.5(ii)",
+      "rcodes:draft-2026-10-24/ch2/C3.6.6-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.6.6-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "adjoins_public_open_space": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "storeys": 2
+      },
+      "building": {
+        "entrance_identifiable_from_street": false,
+        "major_opening_to_frontage": true,
+        "upper_level_outlook_to_pos": false,
+        "front_fence": {
+          "present": true,
+          "height_m": 2.0,
+          "permeable_above_m": 1.5,
+          "pillars_present": true,
+          "pillar_height_m": 2.0,
+          "pillar_size_mm": 500
+        }
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "ext_width_m": 7.0,
+          "upper_floor_over_half_width": false,
+          "entrance_clearly_visible": true
+        },
+        "carport": {
+          "present": true,
+          "width_m": 8.0
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.6.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.6.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.6.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.6.4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.6.5(i)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.6.5(ii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.6.6-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.6.6-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.6.3 7 m garage on 12 m frontage (58%) with balcony over and visible entry: meets at 60%",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.6.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "ext_width_m": 7.0,
+          "upper_floor_over_half_width": true,
+          "entrance_clearly_visible": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.6.3": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C3.6.3": "upper floor or balcony over more than half the garage width and entrance clearly visible"
+      }
+    }
+  },
+  {
+    "title": "3.6.3 7 m garage on 12 m frontage, balcony facts unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.6.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "ext_width_m": 7.0
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.6.3": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "parking.garage.upper_floor_over_half_width"
+      ]
+    }
+  },
+  {
+    "title": "3.6.5 R100-SL 0.9 m street fence meets Table 2.10a",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.6.5(i)-R100-SL"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R100-SL",
+        "area_m2": 90,
+        "frontage_m": 6,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "building": {
+        "front_fence": {
+          "present": true,
+          "height_m": 0.9,
+          "permeable_above_m": 0.9
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.6.5(i)-R100-SL": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.6.5 R100-SL 1.2 m street fence fails Table 2.10a",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.6.5(i)-R100-SL"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R100-SL",
+        "area_m2": 90,
+        "frontage_m": 6,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "building": {
+        "front_fence": {
+          "present": true,
+          "height_m": 1.2,
+          "permeable_above_m": 1.2
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.6.5(i)-R100-SL": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.7 R20 corner lot, access from secondary street, 3-6 m driveway 6 m from corner, 30 m long, sightlines clear: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.1",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(i)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(ii)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(iii)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(iv)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(v)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(vi)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.4",
+      "rcodes:draft-2026-10-24/ch2/C3.7.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "corner_lot": true,
+        "has_secondary_street": true,
+        "has_row": false,
+        "has_communal_street": false,
+        "primary_street_class": "local",
+        "access_from_rear_row": false,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "access": {
+          "count": 1,
+          "from_lowest_order_street": true
+        },
+        "driveway": {
+          "width_min_m": 3.0,
+          "width_at_boundary_m": 6.0,
+          "aggregate_width_m": 9.0,
+          "setback_to_corner_m": 6.0,
+          "right_angle_to_carriageway": true,
+          "trafficable_and_drained": true,
+          "space_to_boundary_m": 30.0,
+          "exit_forward_gear": true
+        },
+        "sightlines": {
+          "clear_0_75m_within_1_5m": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(ii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(iii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(iv)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(v)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(vi)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.5": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.7 R20 corner lot, access from primary street, 2.5-7 m driveway 4 m from corner, 35 m long reversing, fences in sightline: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.1",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(i)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(ii)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(iii)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(iv)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(v)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.3(vi)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.4",
+      "rcodes:draft-2026-10-24/ch2/C3.7.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "corner_lot": true,
+        "has_secondary_street": true,
+        "has_row": false,
+        "has_communal_street": false,
+        "primary_street_class": "local",
+        "access_from_rear_row": false,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "access": {
+          "count": 1,
+          "from_lowest_order_street": false
+        },
+        "driveway": {
+          "width_min_m": 2.5,
+          "width_at_boundary_m": 7.0,
+          "aggregate_width_m": 10.0,
+          "setback_to_corner_m": 4.0,
+          "right_angle_to_carriageway": false,
+          "trafficable_and_drained": false,
+          "space_to_boundary_m": 35.0,
+          "exit_forward_gear": false
+        },
+        "sightlines": {
+          "clear_0_75m_within_1_5m": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(i)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(ii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(iii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(iv)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(v)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.3(vi)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.5": "DOES_NOT_MEET"
+      },
+      "pathway": "merit-assessment"
+    }
+  },
+  {
+    "title": "3.7.4 primary distributor frontage, 10 m driveway, reversing: fails (arterial trigger)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "corner_lot": true,
+        "has_secondary_street": true,
+        "has_row": false,
+        "has_communal_street": false,
+        "primary_street_class": "primary_distributor",
+        "access_from_rear_row": false,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "driveway": {
+          "space_to_boundary_m": 10.0,
+          "exit_forward_gear": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.4": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.7.5 fences in sightline but footpath 2 m from boundary: C3.7.6 exception, not applicable",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "corner_lot": true,
+        "has_secondary_street": true,
+        "has_row": false,
+        "has_communal_street": false,
+        "primary_street_class": "local",
+        "access_from_rear_row": false,
+        "verge": {
+          "path_or_road_offset_m": 2.0,
+          "basis": "planned"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "sightlines": {
+          "clear_0_75m_within_1_5m": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.5": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.5": "C3.7.6 path, shared path or road alignment more than 1.5 m from the street boundary"
+      }
+    }
+  },
+  {
+    "title": "3.7.5 fences in sightline, path offset unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "corner_lot": true,
+        "has_secondary_street": true,
+        "has_row": false,
+        "has_communal_street": false,
+        "primary_street_class": "local",
+        "access_from_rear_row": false
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "sightlines": {
+          "clear_0_75m_within_1_5m": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.5": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "site.verge.path_or_road_offset_m"
+      ]
+    }
+  },
+  {
+    "title": "3.7.2 R40 lot with communal street, one access point: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 20,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "has_row": false,
+        "has_communal_street": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "retained_dwelling": false
+      },
+      "parking": {
+        "access": {
+          "count": 1
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.7.2 R40 lot with communal street, two access points, 20 m frontage: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 20,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "has_row": false,
+        "has_communal_street": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "retained_dwelling": false
+      },
+      "parking": {
+        "access": {
+          "count": 2
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.7.2 R40 lot, two access points, 45 m frontage: meets via exception (iii)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 45,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "has_row": false,
+        "has_communal_street": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "retained_dwelling": false
+      },
+      "parking": {
+        "access": {
+          "count": 2
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.2": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.2": "(iii) lot frontage exceeds 40 m: two access points"
+      }
+    }
+  },
+  {
+    "title": "3.7.2 R40 lot, two access points, no ROW or communal street: exception (ii), not applicable",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 20,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "has_row": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "retained_dwelling": false
+      },
+      "parking": {
+        "access": {
+          "count": 2
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.2": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "3.7.2 R40 lot, two access points, retained dwelling unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 20,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "has_row": false,
+        "has_communal_street": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "access": {
+          "count": 2
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.2": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "proposal.retained_dwelling"
+      ]
+    }
+  },
+  {
+    "title": "3.7.7 rear ROW access with 1 m truncations: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "access_from_rear_row": true,
+        "has_row": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "sightlines": {
+          "row_truncation_1m": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.7": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.7.7 rear ROW access, no truncation: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "access_from_rear_row": true,
+        "has_row": true
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "parking": {
+        "sightlines": {
+          "row_truncation_1m": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.7": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.7 battleaxe leg 3.6 m, pedestrian leg 1.5 m with 1 m clear path: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.8(i)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.8(ii)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.9"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "battleaxe": true,
+        "battleaxe_leg_width_m": 3.6,
+        "has_pedestrian_access_leg": true,
+        "pedestrian_access_leg_width_m": 1.5,
+        "pedestrian_access_leg_clear_path_m": 1.0
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "retained_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.8(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.8(ii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.7.9": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.7 battleaxe leg 3.0 m, pedestrian leg 1.2 m with 0.8 m clear path: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.8(i)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.8(ii)",
+      "rcodes:draft-2026-10-24/ch2/C3.7.9"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "battleaxe": true,
+        "battleaxe_leg_width_m": 3.0,
+        "has_pedestrian_access_leg": true,
+        "pedestrian_access_leg_width_m": 1.2,
+        "pedestrian_access_leg_clear_path_m": 0.8
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "retained_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.8(i)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.8(ii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.7.9": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.7.8 pedestrian leg 1.0 m where a dwelling is retained: meets via exception",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.8(i)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "battleaxe": true,
+        "battleaxe_leg_width_m": 3.6,
+        "has_pedestrian_access_leg": true,
+        "pedestrian_access_leg_width_m": 1.0,
+        "pedestrian_access_leg_clear_path_m": 1.0
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "retained_dwelling": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.8(i)": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.8(i)": "reduced to 1 m where required to retain an existing dwelling"
+      }
+    }
+  },
+  {
+    "title": "3.7.8 pedestrian leg 1.0 m, retention unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.7.8(i)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5,
+        "battleaxe": true,
+        "battleaxe_leg_width_m": 3.6,
+        "has_pedestrian_access_leg": true,
+        "pedestrian_access_leg_width_m": 1.0,
+        "pedestrian_access_leg_clear_path_m": 1.0
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.7.8(i)": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "proposal.retained_dwelling"
+      ]
+    }
+  },
+  {
+    "title": "3.9 R20 two-storey house shades adjoining R20 lot 20% and diagonal lot 10%: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.1",
+      "rcodes:draft-2026-10-24/ch2/C3.9.1-diagonal",
+      "rcodes:draft-2026-10-24/ch2/C3.9.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 20,
+        "diagonal_pct": 10,
+        "adjoining_rear_half_pct": 20
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.9.1-diagonal": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.9.3": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "3.9 R20 two-storey house shades adjoining R20 lot 30% and diagonal lot 15%: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.1",
+      "rcodes:draft-2026-10-24/ch2/C3.9.1-diagonal"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 30,
+        "diagonal_pct": 15,
+        "adjoining_rear_half_pct": 30
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.9.1-diagonal": "DOES_NOT_MEET"
+      },
+      "pathway": "merit-assessment"
+    }
+  },
+  {
+    "title": "3.9 single-storey house with 3.2 m walls shading 30%: C3.9.2 exemption, not applicable",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.1",
+      "rcodes:draft-2026-10-24/ch2/C3.9.1-diagonal"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "storeys": 1,
+        "max_wall_height_m": 3.2,
+        "has_walls_3_6_to_7m": false,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 30,
+        "diagonal_pct": 15,
+        "adjoining_rear_half_pct": 30
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch2/C3.9.1-diagonal": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "C3.9.2 single storey, wall height not more than 3.5 m"
+      }
+    }
+  },
+  {
+    "title": "3.9 shading 30%, 3.2 m walls, storeys unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "max_wall_height_m": 3.2,
+        "has_walls_3_6_to_7m": false,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 30,
+        "diagonal_pct": 15,
+        "adjoining_rear_half_pct": 30
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "building.storeys"
+      ]
+    }
+  },
+  {
+    "title": "3.9 adjoining R80 lot: no maximum, not applicable",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 250,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R80",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 60,
+        "diagonal_pct": 10,
+        "adjoining_rear_half_pct": 60
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "3.9.3 narrow R40 adjoining lot: 45% of site but 30% of rear half: Table 3.9b governs, meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.1",
+      "rcodes:draft-2026-10-24/ch2/C3.9.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 8,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R40",
+          "frontage_m": 7.0,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R40"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 45,
+        "diagonal_pct": 10,
+        "adjoining_rear_half_pct": 30
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch2/C3.9.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.9.3 narrow R40 adjoining lot: 40% of rear half: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.1",
+      "rcodes:draft-2026-10-24/ch2/C3.9.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 8,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R40",
+          "frontage_m": 7.0,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R40"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 45,
+        "diagonal_pct": 10,
+        "adjoining_rear_half_pct": 40
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.9.3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.9.3 narrow R50 adjoining lot: 55% of rear half: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R50",
+        "area_m2": 250,
+        "frontage_m": 8,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R50",
+          "frontage_m": 7.5,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R40"
+        },
+        "north_shared_boundary_count": 1
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 50,
+        "diagonal_pct": 10,
+        "adjoining_rear_half_pct": 55
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.9.4 neighbour's northern boundary shared with two lots, proportional limit met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 2
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 20,
+        "diagonal_pct": 10,
+        "adjoining_rear_half_pct": 20,
+        "proportional_to_shared_boundary": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.4": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.9.4 neighbour's northern boundary shared with two lots, proportional limit exceeded",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.9.4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 2
+      },
+      "building": {
+        "storeys": 2,
+        "max_wall_height_m": 6.0,
+        "has_walls_over_7_1m": false
+      },
+      "overshadow": {
+        "adjoining_pct": 20,
+        "diagonal_pct": 10,
+        "adjoining_rear_half_pct": 20,
+        "proportional_to_shared_boundary": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.9.4": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.10 upper floor set back 3 / 4.5 / 6 m from an existing neighbour, screened, 1.5 m offset: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r3",
+      "rcodes:draft-2026-10-24/ch2/C3.10.2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": false
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 3.0,
+        "other_habitable_setback_m": 4.5,
+        "outdoor_active_setback_m": 6.0,
+        "cone_captures_adjoining_opening": true,
+        "cone_forward_of_adjoining_setback_line": false,
+        "screened_or_offset": true,
+        "bedroom_study_offset_m": 1.5
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r3": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.10 upper floor set back 2 / 3 / 4 m, cone captures neighbour's openings, no screening, 1.0 m offset: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r3",
+      "rcodes:draft-2026-10-24/ch2/C3.10.2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": false
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 2.0,
+        "other_habitable_setback_m": 3.0,
+        "outdoor_active_setback_m": 4.0,
+        "cone_captures_adjoining_opening": true,
+        "cone_forward_of_adjoining_setback_line": false,
+        "screened_or_offset": false,
+        "bedroom_study_offset_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.10.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.10.3": "DOES_NOT_MEET"
+      },
+      "pathway": "merit-assessment"
+    }
+  },
+  {
+    "title": "3.10 short setbacks but cone captures no adjoining opening: not applicable",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": false
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 2.0,
+        "other_habitable_setback_m": 3.0,
+        "outdoor_active_setback_m": 4.0,
+        "cone_captures_adjoining_opening": false,
+        "cone_forward_of_adjoining_setback_line": false,
+        "screened_or_offset": false,
+        "bedroom_study_offset_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r1": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r2": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r3": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "3.10 short setbacks, cone capture unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": false
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 2.0,
+        "other_habitable_setback_m": 3.0,
+        "outdoor_active_setback_m": 4.0,
+        "cone_forward_of_adjoining_setback_line": false,
+        "screened_or_offset": false,
+        "bedroom_study_offset_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.1-r1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "privacy.cone_captures_adjoining_opening"
+      ]
+    }
+  },
+  {
+    "title": "3.10.2 cone captures an opening forward of the neighbour's street setback line: not applicable",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": false
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 2.0,
+        "other_habitable_setback_m": 3.0,
+        "outdoor_active_setback_m": 4.0,
+        "cone_captures_adjoining_opening": true,
+        "cone_forward_of_adjoining_setback_line": true,
+        "screened_or_offset": false,
+        "bedroom_study_offset_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.2": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "3.10.4 vacant adjoining lot, cones kept within the lot at 3 / 4.5 / 6 m: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": true
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 3.0,
+        "other_habitable_setback_m": 4.5,
+        "outdoor_active_setback_m": 6.0,
+        "cone_captures_adjoining_opening": true,
+        "cone_forward_of_adjoining_setback_line": false,
+        "screened_or_offset": true,
+        "bedroom_study_offset_m": 1.5
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "3.10.4 vacant adjoining lot, cones extend beyond the boundary, unscreened: fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": true
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 2.0,
+        "other_habitable_setback_m": 3.0,
+        "outdoor_active_setback_m": 4.0,
+        "cone_captures_adjoining_opening": true,
+        "cone_forward_of_adjoining_setback_line": false,
+        "screened_or_offset": false,
+        "bedroom_study_offset_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "3.10.4 vacant adjoining lot, cones extend beyond the boundary but screened (C3.10.5): meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r1",
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r2",
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": true
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 2.0,
+        "other_habitable_setback_m": 3.0,
+        "outdoor_active_setback_m": 4.0,
+        "cone_captures_adjoining_opening": true,
+        "cone_forward_of_adjoining_setback_line": false,
+        "screened_or_offset": true,
+        "bedroom_study_offset_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r3": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r1": "C3.10.5 source of overlooking screened (fixed element, obscure glazing or 75% screen below 1.6 m)"
+      }
+    }
+  },
+  {
+    "title": "3.10.4 vacant adjoining lot, cones extend beyond the boundary, screening unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C3.10.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 500,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house"
+      },
+      "adjoining": {
+        "south": {
+          "r_code": "R20",
+          "frontage_m": 15,
+          "battleaxe": false
+        },
+        "diagonal": {
+          "r_code": "R20"
+        },
+        "north_shared_boundary_count": 1,
+        "vacant_or_unknown": true
+      },
+      "privacy": {
+        "sources_above_0_5m": true,
+        "bedroom_study_setback_m": 2.0,
+        "other_habitable_setback_m": 3.0,
+        "outdoor_active_setback_m": 4.0,
+        "cone_captures_adjoining_opening": true,
+        "cone_forward_of_adjoining_setback_line": false,
+        "bedroom_study_offset_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C3.10.4-r1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "privacy.screened_or_offset"
+      ]
+    }
+  }
+]

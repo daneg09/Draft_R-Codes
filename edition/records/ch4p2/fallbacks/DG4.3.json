@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.3",
+  "element_title": "Size and layout of dwellings",
+  "title": "Size and layout of dwellings design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.3.1 People living in apartments need spaces that support their lifestyles, with rooms to spend time with family and friends, rooms to seek time alone, and a range of functional spaces for cooking, cleaning, washing and storage. Consider layouts that are flexible to accommodate the diverse and changing needs of occupants, including: room sizes and dimensions that can accommodate a variety of furniture arrangements, for example, rectangular spaces are often more easily furnished than square spaces; prepare design drawings that illustrate potential furniture layouts using realistically sized furniture, including living and dining settings in the living space; arranging internal spaces to maximise flexibility and privacy for individual occupants; dual-master apartments or dual key apartments to provide more flexibility for different household configurations; locating living areas and bedrooms on the external face of the building to receive daylight, with living spaces oriented towards views; providing space for robes, typically with a minimum width of 1.8m for the main bedroom and 1.5m for other bedrooms. DG 4.3.2 Efficiency of space can be enhanced by co-locating internal circulation areas to maximise the useable area of rooms and improve privacy between different functional areas. Give careful consideration to the location of doors, windows and walls available for furnishing as well as the relationships between different functional spaces. For example, avoid direct access between bedrooms and bathroom via the living room as such access compromises the privacy of these spaces, increases noise transfer and limits the functionality of the living space. DG 4.3.3 Consider the size and proportions of rooms to create a sense of spaciousness and maximise daylight penetration. For instance, long, narrow rooms in cross-over or cross-through apartments require a width of at least 4m. DG 4.3.4 Additional ceiling height adds significantly to the sense of space in a dwelling. Higher ceilings may also assist with natural ventilation and to accommodate ceiling fans for cooling and heat distribution. Given that the overall building height is constrained once constructed, provision for additional ceiling height needs to be considered at the planning stage. When choosing ceiling heights, consider: introducing changes in ceiling height to give greater definition to spaces within the dwelling; locating bulkheads above non-habitable spaces such as robes or storage areas, to maintain higher ceilings in habitable space areas; providing more ceiling height to ground floor street front units to provide greater flexibility for adaptive reuse, for instance if located in mixed use areas, consider providing ceiling heights of 3.3m or more; if ceiling heights are constrained, reducing room depth accordingly to compensate for the loss of daylight penetration, reduced volume and sense of spaciousness.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 56,
+    "extract_line": 1919
+  },
+  "register_ref": "C4P2-113",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.3",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Three columns on page 56 checked word for word against the page image. Page 54 figure notes (9 m open plan maximum, 4 m cafe/restaurant ceilings) are captions, not DG.",
+  "verified": {
+    "method": "page-image",
+    "page": 56,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Primary street setback",
+  "text": "C3.3.1 Buildings are set back from the street boundary in accordance with Table 3.3a. Table 3.3a Minimum setback of buildings from the street, primary street: R10 and R12.5 7.5m; R15-25 6m; R30-35 4m; R40 3m; R50-60 2m. Note: Where road widening is required, street setbacks are to be calculated from the adjusted street boundary following widening.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.primary_street_setback_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-primary",
+    "fact": "building.primary_street_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "defined_terms": [
+    "primary street",
+    "street boundary",
+    "street setback",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "same",
+      "note": "R10-R12.5 7.5 m, R15-R25 6 m unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3a",
+      "relation": "same",
+      "note": "R30-R35 4 m, R40 3 m, R50-R60 2 m unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1",
+      "relation": "restructured",
+      "note": "averaging and compensation replaced by the Table 3.3b projection model (C4P1-078)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P1-076",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "7.5m cell spans R10 and R12.5 (p29); Table 4A (p7) agrees."
+  },
+  "notes": "from: ch3 C3.3.1. Table 3.3a (p29) and Table 4A (p7): R10-R12.5 7.5 m, R15-R25 6 m, R30-R35 4 m, R40 3 m, R50-R60 2 m. building.primary_street_setback_m excludes minor projections (C3.3.1#r1) and portions reduced under C3.3.2. Where road widening is required the setback is measured from the adjusted street boundary (table note). A communal street has no Table 3.3a row (C3.3.1#communal-street). The table note on R80 Code Standards for single houses and grouped dwellings does not concern this chapter (C4P1-076)."
+}

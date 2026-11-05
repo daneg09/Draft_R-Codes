@@ -1,0 +1,93 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.1.3-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Primary garden area behind the street setback area",
+  "text": "Primary garden area (applies to R30-R80; R100-SL; LR, MR and HR only). C1.1.3 A single consolidated primary garden area to be provided in accordance with Table 1.1b. Table 1.1b Primary garden area provisions. Location: Behind the street setback area(3). 3 Does not apply where C1.1.5 is met. C1.1.5 Notwithstanding C1.1.3, a single consolidated primary garden area may be located within the primary street setback area where any street walls or fences within the primary street setback area are visually permeable in accordance with C3.6.5 and C3.6.6.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R30-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.pga.behind_street_setback",
+    "landscape.pga.in_primary_street_setback",
+    "building.front_fence.visually_permeable"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.pga.behind_street_setback",
+    "expected": true
+  },
+  "exceptions": [
+    {
+      "label": "C1.1.5 single consolidated PGA in the primary street setback area with visually permeable street walls and fences",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "landscape.pga.in_primary_street_setback",
+            "expected": true
+          },
+          {
+            "type": "boolean",
+            "fact": "building.front_fence.visually_permeable",
+            "expected": true
+          }
+        ]
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "source": "C1.1.5 (register ch3-008)",
+      "inputs": [
+        "landscape.pga.in_primary_street_setback",
+        "building.front_fence.visually_permeable"
+      ],
+      "verify": false
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.1",
+  "defined_terms": [
+    "primary garden area",
+    "street setback area",
+    "primary street setback area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.1.1",
+      "relation": "relaxed",
+      "note": "current: behind the primary street setback, no exception"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 10,
+    "table": "Table 1.1b"
+  },
+  "register_ref": "ch3-006",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Note 3 marker sits on the location cell, which spans all site-area rows."
+  },
+  "notes": "diverges: coding R30-R80 and R80-equivalent codes (PGA applies from R30 in Chapter 3, p10). Table 1.1b location column, note 3 'does not apply where C1.1.5 is met' (marker interleaved in the extract)."
+}

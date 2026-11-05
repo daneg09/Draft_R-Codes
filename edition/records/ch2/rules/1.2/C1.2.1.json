@@ -1,0 +1,95 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Soft landscaping minimum 15% of the site",
+  "text": "C1.2.1 Development to provide a minimum 15% soft landscaping per site with a minimum dimension of 1m (refer Figure 1.2a). C1.2.4 The soft landscaping percentage of C1.2.1 may be reduced to 10% where a significant existing tree is retained on site. Note: a retained tree replaces the tree planting provision in C1.2.4 on a like-for-like basis.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.soft_area_m2",
+    "site.area_m2",
+    "site.significant_tree_retained"
+  ],
+  "evaluator": {
+    "type": "percentage-of",
+    "fact": "landscape.soft_area_m2",
+    "of": "site.area_m2",
+    "op": ">=",
+    "value": 15
+  },
+  "exceptions": [
+    {
+      "label": "C1.2.4 significant existing tree retained on site: soft landscaping reduced to 10%",
+      "condition": {
+        "type": "boolean",
+        "fact": "site.significant_tree_retained",
+        "expected": true
+      },
+      "effect": {
+        "set": {
+          "value": 10
+        }
+      },
+      "source": "C1.2.4 (register ch2-012)",
+      "inputs": [
+        "site.significant_tree_retained"
+      ],
+      "verify": false
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+  "defined_terms": [
+    "soft landscape",
+    "site area",
+    "significant existing tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.1",
+      "relation": "same",
+      "note": "R50+ unchanged"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "no site-wide soft landscaping requirement at R40 and below in Part B"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.6",
+      "relation": "same",
+      "note": "tree-retention reduction to 10%; new for R2-R40 (ch2-012)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 11,
+    "figure": "Figure 1.2a"
+  },
+  "register_ref": "ch2-008",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C1.2.4 is on page 12; its note cites C1.2.4 where C1.2.3 is meant (drafting error, no effect on values)."
+  },
+  "notes": "Soft landscape per the A1 definition (min 300 mm soil depth, in-ground planting, turf included; excludes permeable paving and planter boxes). C1.2.4 is an exception, not a rule (a concession not taken must not fail the element). C1.2.4 note: a retained tree replaces the tree planting provision 'in C1.2.4' like-for-like; the planting provision is actually C1.2.3 (cross-reference error, ch2-012). R100-SL: C1.2.1-r100sl."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "table-2.8a",
+  "title": "Table 2.8a Ancillary dwelling provisions (maximum internal floor area)",
+  "keys": [
+    "proposal.dwelling_count"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 1,
+          "max": 19
+        }
+      },
+      "value": 70,
+      "note": "1-19 dwellings: dual key dwelling only; maximum 1 per development"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 20
+        }
+      },
+      "value": 70,
+      "note": "20 or more dwellings: dual key dwelling only; maximum 2 per development and 1 per additional 10 dwellings (rounded down to the nearest 10)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 24,
+    "extract_line": 760,
+    "table": "Table 2.8a"
+  },
+  "register_ref": "C4P1-064",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Value = maximum internal floor area of each ancillary dwelling (70 m2 in both rows). The maximum number per development is carried as a formula in rule C2.8.1. Note: provisions relate to the ancillary dwelling portion of the development, except 3.1 Site cover, 3.4 Lot boundary setbacks and 3.8 Solar access for adjoining sites, assessed with the primary dwelling. Differs from Chapter 3 Table 2.8a (keyed on a small dwelling on the same site, 90/70 m2)."
+}

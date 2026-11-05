@@ -1,0 +1,50 @@
+{
+  "id": "table-3.3c",
+  "title": "Table 3.3c Setback of garages from the primary street",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2-R35"
+      },
+      "value": 5.0,
+      "note": "Figure 3.3c; reducible to 4.5 m or 3 m under the un-numbered C3.3.3 paragraphs"
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 3,
+      "note": "'In accordance with Table 3.3a' (mirrors table-3.3a-primary)"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R50+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 2,
+      "note": "'In accordance with Table 3.3a' (mirrors table-3.3a-primary)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 32,
+    "table": "Table 3.3c"
+  },
+  "register_ref": "ch3-052",
+  "verify": false,
+  "notes": "C3.3.3 (R2-R35) tests the literal 5.0 m with its reductions as exceptions; C3.3.3#r40-plus looks up table-3.3a-primary directly because the draft cell says 'In accordance with Table 3.3a'. The R40+ rows here mirror that table for completeness.",
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

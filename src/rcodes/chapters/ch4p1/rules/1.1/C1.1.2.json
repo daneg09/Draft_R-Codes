@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Balconies unscreened for at least 25% of the total balcony perimeter",
+  "text": "C1.1.2 Balconies are to be unscreened for at least 25% of the total perimeter of the balcony (refer Figure 1.1a). Figure 1.1a note: Boundary perimeter length = A + B + C + D. Minimum 25% of balcony perimeter to be unscreened. Total balcony perimeter to include sides that abut building walls.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "dwellings.balconies_provided",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "dwellings.balconies_provided",
+    "dwellings.min.balcony_unscreened_perimeter_pct"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "dwellings.min.balcony_unscreened_perimeter_pct",
+    "op": ">=",
+    "value": 25
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.1",
+  "defined_terms": [
+    "balcony"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.1.4",
+      "relation": "same",
+      "note": "R30-R60 unchanged"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "R10-R25: no Part B equivalent (more restrictive for low-coded apartments)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 9,
+    "figure": "Figure 1.1a"
+  },
+  "register_ref": "C4P1-007",
+  "verify": false,
+  "notes": "New here (no Chapter 3 equivalent; ch3 C1.1.2 is the OLA in the street setback area). Applies where any apartment has a balcony (rule condition, proposed fact dwellings.balconies_provided). Fact is the lowest unscreened share of any balcony. Figure 1.1a: perimeter = A+B+C+D including sides that abut building walls; the 1.6 m high fixed screen is the screened portion.",
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

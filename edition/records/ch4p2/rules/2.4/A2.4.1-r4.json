@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Boundary wall between differently coded sites determined by the lower density code (note 3)",
+  "text": "Table 2.1 note 3: Where the subject site and an affected adjoining site are subject to different density codes, the length and height of any boundary wall on the boundary between them is determined by reference to the lower density code.",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.4",
+  "defined_terms": [
+    "boundary wall"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "same",
+      "note": "Volume 2 Table 2.1 note 2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-064",
+  "verify": true,
+  "notes": "Judgment: the lower code may be one with no Table 2.1 column (R60 and below, Chapters 3 and 4 Part 1) and named codes have no order in the engine, so the governing limit cannot be looked up. A planner applies the lower code's boundary wall provisions on that boundary.",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "note 3 wording confirmed (p13); 'the lower density code' gives no order among the named codes (LR1, MR1, MR2, HR1 to HR3, R-PA) or between them and numeric codes."
+  }
+}

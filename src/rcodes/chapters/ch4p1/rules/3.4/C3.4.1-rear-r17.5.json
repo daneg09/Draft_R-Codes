@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear-r17.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Rear setback (R17.5 and above): no provision",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. Table 3.4a Lot boundary setbacks, rear setback: 3m (applicable to R10-R15 only).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R17.5-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.rear_setback_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.rear_setback_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-rear"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2a",
+      "relation": "unclear",
+      "note": "R17.5-R25 rear setbacks by Tables 2a/2b have no draft equivalent"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2b",
+      "relation": "unclear"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4a",
+      "relation": "unclear",
+      "note": "Part C applied the wall-height setbacks to all lot boundaries (R30-R60)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "C4P1-087",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "No rear value for R17.5 and above on p32; Table 4A (p7) prints N/A spanning R17.5 to R60. The page does not say whether the rear setback is nil or the side values apply."
+  },
+  "notes": "from: ch3 C3.4.1#rear-r17.5. AMBIGUITY (C4P1-087): the draft gives no rear setback for R17.5-R60 (Table 3.4a 'applicable to R10-R15 only'; Table 4A p7 'N/A'), and never says the side values apply to the rear boundary. Encoded as NOT_APPLICABLE through the null row, not as the side values; reads as a nil rear setback unless clarified (register C4P1-003 conflict 3)."
+}

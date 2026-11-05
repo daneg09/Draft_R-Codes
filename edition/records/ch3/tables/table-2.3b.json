@@ -1,0 +1,54 @@
+{
+  "id": "table-2.3b",
+  "title": "Table 2.3b Car parking provisions for development outside of the Perth and Peel regions (occupant minimum spaces per dwelling, R40 and below)",
+  "keys": [
+    "proposal.bedrooms"
+  ],
+  "unit": "spaces",
+  "rows": [
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 1,
+      "note": "studio and 1 bedroom; second column (R50+ 'maximum garage and carport') prints 1"
+    },
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 2,
+      "note": "2 bedroom; second column prints 1"
+    },
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 2,
+      "note": "3+ bedroom; second column prints 1"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 20,
+    "extract_line": 644,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch3-030",
+  "verify": true,
+  "notes": "Value = 'Minimum parking space(s) for R40 and below (per dwelling)', same as Chapter 2. The printed table has further parts carried as rule thresholds: (1) ancillary dwelling row: minimum 1 (rule C2.3.5-r1); second column 0 (C2.3.5-r3). (2) second column headed 'Maximum garage and carport parking for R50 and above (per dwelling)': studio/1 bed 1, 2 bed 1, 3+ bed 1 (rule C2.3.5-r2). HEADER PROBLEM (register ch3-030): the values look like a transposed Location B minimum row; encoded literally with verify true; no R50+ minimum stated. (3) Visitor car parking (rule C2.3.7): 0-4 dwellings no visitor parking required; 5+ dwellings 0.15 bays per dwelling for the total number of dwellings, rounded to the nearest whole number with 0.5 or greater rounded up. No Location A/B outside Perth and Peel. C2.9.1(ii) small dwelling parking cites Table 2.3a only.",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page 20 prints Table 2.3b with columns headed 'Minimum parking space(s) for R40 and below (per dwelling)' (1 / 1 / 2 / 2) and 'Maximum garage and carport parking for R50 and above (per dwelling)' (0 / 1 / 1 / 1) for ancillary / studio-1 bed / 2 bed / 3+ bed. The headings are not transposed; the second column reads like minimums under a 'maximum' heading and caps a 3+ bedroom dwelling below the R40-and-below minimum. Encoded as printed."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.9.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.9",
+  "element_title": "Solar access for adjoining sites",
+  "title": "Overshadowing of a narrow adjoining lot (Table 3.9b, rear half of site)",
+  "text": "Notwithstanding C3.9.1, in climate zones 4, 5, and 6, where the adjoining property is: i. coded R40 or greater; and ii. has a lot frontage 7.5m or less (excluding battleaxe lots); iii. development is designed so that its shadow cast at midday, 21 June onto any other adjoining property does not exceed the limits set out in Table 3.9b.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "label": "climate zone 4, 5 or 6",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.south.battleaxe",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "adjoining.south.battleaxe",
+    "adjoining.south.frontage_m",
+    "adjoining.south.r_code",
+    "overshadow.adjoining_rear_half_pct",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.9b",
+    "fact": "overshadow.adjoining_rear_half_pct",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.9",
+  "defined_terms": [
+    "adjoining property",
+    "frontage",
+    "battleaxe lot",
+    "overshadowing"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.9.2",
+      "relation": "relaxed",
+      "note": "R50-R60 rear half 50% -> 55%; new for single houses at R40 and below"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.9b",
+      "relation": "relaxed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 45,
+    "table": "Table 3.9b",
+    "figure": "Figure 3.9e"
+  },
+  "register_ref": "ch3-085",
+  "verify": false,
+  "notes": "Same as Chapter 2 C3.9.3. Table 3.9b keyed by the adjoining lot's coding and frontage; other adjoining lots have no row (NOT_APPLICABLE, C3.9.1 governs). No limit on the front half. The C3.9.2 exemption is written against C3.9.1 only. Coding excludes R100-SL: Chapter 3 Table 2.10a (p26) removes all 3.9 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded).",
+  "verified": {
+    "method": "page-image",
+    "page": 45,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

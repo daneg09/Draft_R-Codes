@@ -1,0 +1,58 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C4.1.1-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Minimum frontage of the site (Table 3B)",
+  "text": "Minimum and average site area. C4.1.1 Development which complies with the dwelling type and site area provisions set out in Table 3B and the following provisions. Table 3B Site area requirements. Minimum frontage (m): R2 50; R2.5 40; R5 30; R10 20; R12.5 17; R15 12; R17.5 12; R20 10; R25 8; R30, R35, R40, R50, R60, R80 and R100-SL -. R80 site area provisions apply to all grouped dwellings located on lots coded R100, R160 and LR, MR and HR. - Indicated not applicable.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "site.frontage_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "site.frontage_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3B-frontage"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M4.1",
+  "defined_terms": [
+    "frontage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/T-D",
+      "relation": "mixed",
+      "note": "minimum frontage column; current footnote limited it to single houses, now removed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 54,
+    "table": "Table 2B"
+  },
+  "register_ref": "ch3-089",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 54,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Frontage values checked. Table 3B (p54) prints the frontage column with no dwelling-type limit (the current 'only applies to single houses' footnote is gone), so a rear grouped dwelling site or survey-strata lot with no street frontage reads as failing; the page does not say whether the frontage is of the parent lot or of each dwelling site or lot (ch3-089)."
+  },
+  "notes": "diverges: Table 3B (p54) for Table 2B; test otherwise as the Chapter 2 twin. With the 'only applies to single houses' footnote removed, the minimum frontage column (50 m at R2 to 8 m at R25) reads as applying to the grouped dwelling lot (ch3-089 asks whether this is intended; verify). Frontage at the primary street setback line. R30 and above: null."
+}

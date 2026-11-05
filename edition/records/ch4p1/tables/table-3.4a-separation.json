@@ -1,0 +1,54 @@
+{
+  "id": "table-3.4a-separation",
+  "title": "Table 3.4a applied to C3.4.6: separation between buildings on the same lot by facing wall height",
+  "keys": [
+    "building.separation_same_lot_wall_height_m"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "building.separation_same_lot_wall_height_m": {
+          "max": 3.5
+        }
+      },
+      "value": 2.0,
+      "note": "1 m + 1 m (Figure 3.4l shows 2 m)"
+    },
+    {
+      "match": {
+        "building.separation_same_lot_wall_height_m": {
+          "min": 3.5000001,
+          "max": 7.0
+        }
+      },
+      "value": 3.0,
+      "note": "1.5 m + 1.5 m (Figure 3.4l shows 3 m)"
+    },
+    {
+      "match": {
+        "building.separation_same_lot_wall_height_m": {
+          "min": 7.0000001
+        }
+      },
+      "value": 4.0,
+      "note": "2.0 m + 2.0 m from Table 3.4a; Figure 3.4l shows 6 m (3 m + 3 m) and Table 4A's 3.5 m would give 7 m (register C4P1-085, C4P1-097)",
+      "verify": true
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "C4P1-097",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": "32, 35",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Derived table (twice Table 3.4a). Figure 3.4l (p35) confirms 2m and 3m for the lower bands but shows 6m (3m + 3m) for the upper band against 4m derived from Table 3.4a's 2.0m and 7m from Table 4A's 3.5m."
+  },
+  "notes": "Addition for Chapter 4 Part 1 (no Chapter 3 equivalent). Twice the Table 3.4a side setback, because C3.4.6 sets buildings back 'as though there is a lot boundary between them'. Keyed on the height of the taller facing wall (proposed fact building.separation_same_lot_wall_height_m). The 3.5-3.6 m and 7.0-7.1 m gaps follow the C3.4.1 rule conditions (above 3.5 m and above 7.0 m)."
+}

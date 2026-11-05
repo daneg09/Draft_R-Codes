@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Maximum car parking: 2 bays per dwelling averaged across the residential component",
+  "text": "Maximum parking provision does not exceed 2 bays per dwelling, averaged across the residential component of the development.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.resident_spaces_per_dwelling_avg"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.resident_spaces_per_dwelling_avg",
+    "op": "<=",
+    "value": 2
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.9.3",
+      "relation": "restructured",
+      "note": "double the Table 3.9 minimum -> 2 bays per dwelling averaged"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46
+  },
+  "register_ref": "C4P2-107",
+  "verify": true,
+  "notes": "from: ch4p1 C2.3.4 (parking.resident_spaces_per_dwelling_avg: all occupant bays / dwellings). Register C4P2-107: 'double the minimum' of nil would be nil; cap now looser for 1-bed and tighter for 2+ bed in Location B (2.5 -> 2.0). verify: whether visitor bays count toward the maximum ('maximum parking provision'). FACTS.md parking.max_spaces_per_dwelling not used.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p46 'Maximum parking provision ... averaged across the residential component' does not say whether visitor bays count toward the 2 bays per dwelling."
+  }
+}

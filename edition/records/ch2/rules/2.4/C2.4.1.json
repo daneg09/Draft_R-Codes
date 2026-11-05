@@ -1,0 +1,66 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.4.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.4",
+  "element_title": "Waste management",
+  "title": "Waste storage bins screened from view",
+  "text": "C2.4.1 Waste storage bins are screened from view from communal areas, the street, public open space, and other areas accessible to the public.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "services.bins_screened"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.bins_screened",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.4",
+  "defined_terms": [
+    "street",
+    "public open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.3",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.6",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.7",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.4.3",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 20,
+    "extract_line": 607
+  },
+  "register_ref": "ch2-026",
+  "verify": false,
+  "notes": "No waste management plan provision in this chapter. Merit wording changed from 'do not negatively impact' to 'minimise negative impacts'.",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

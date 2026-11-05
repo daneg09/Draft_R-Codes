@@ -1,0 +1,80 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.7.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.7",
+  "element_title": "Building separation",
+  "title": "Building separation within the site at least the Table 2.7 distance",
+  "text": "A 2.7.1 Development complies with the separation requirements set out in Table 2.7.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.same_lot_separation_applies",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.separation_within_site_m",
+    "building.separation_storeys",
+    "building.same_lot_separation_applies"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.7",
+    "fact": "building.separation_within_site_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.7",
+  "defined_terms": [
+    "building separation",
+    "storey"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.7.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T2.7",
+      "relation": "relaxed",
+      "note": "12/7.5/4.5 m up to 4 storeys, 18/12/6 m 5 to 8, 24/18/9 m 9+ by room type, to 3 m up to 4 storeys and 6 m at 5+; room types and averaging deleted"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 22,
+    "table": "Table 2.7"
+  },
+  "register_ref": "C4P2-074",
+  "verify": true,
+  "notes": "Applies where the site holds more than one building or facing portions of a building. Measured from the outer face of the building envelope including balconies (Figure 2.7a). verify: 'Building height up to 4 storeys / 5 storeys and above' is read as the storeys of the taller facing building (building.separation_storeys), not the storey level of each facing portion. With no within-site privacy Acceptable Outcome (A3.5.1 applies only adjoining an existing dwelling), 3 m is effectively the only numeric within-site privacy control (C4P2-074). Application 'All R-Codes' is odd inside Chapter 4 Part 2. Table 3.5A lists separation against 'A2.6.1' (C4P2-007).",
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 2.7 (p22) heads its columns 'Building height: Up to 4 storeys / 5 storeys and above' without saying whose height (the taller facing building or each facing portion)."
+  }
+}

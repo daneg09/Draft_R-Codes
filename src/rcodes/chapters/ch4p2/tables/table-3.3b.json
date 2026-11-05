@@ -1,0 +1,171 @@
+{
+  "id": "table-3.3b",
+  "title": "Table 3.3b Tree sizes (reference)",
+  "keys": [
+    "tree_size",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "canopy_diameter_at_maturity"
+      },
+      "value": "2-6m"
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "nominal_height_at_maturity"
+      },
+      "value": "3-8m"
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "required_dsa_m2"
+      },
+      "value": 9
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "recommended_min_dsa_width_m"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "min_dsa_width_with_rsz_m"
+      },
+      "value": 1
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "rsz_width_m"
+      },
+      "value": 1
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "indicative_pot_size"
+      },
+      "value": "100L"
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "canopy_diameter_at_maturity"
+      },
+      "value": "6-9m"
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "nominal_height_at_maturity"
+      },
+      "value": "8-12m"
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "required_dsa_m2"
+      },
+      "value": 36
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "recommended_min_dsa_width_m"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "min_dsa_width_with_rsz_m"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "rsz_width_m"
+      },
+      "value": 1
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "indicative_pot_size"
+      },
+      "value": "200L"
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "canopy_diameter_at_maturity"
+      },
+      "value": ">9m"
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "nominal_height_at_maturity"
+      },
+      "value": ">12m"
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "required_dsa_m2"
+      },
+      "value": 64
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "recommended_min_dsa_width_m"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "min_dsa_width_with_rsz_m"
+      },
+      "value": 4.5
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "rsz_width_m"
+      },
+      "value": 1.5
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "indicative_pot_size"
+      },
+      "value": "500L"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3b"
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Reference transcription (keys are not facts; rules A3.3.5-r4 to -r6 carry the deep soil values). Rootable soil zone (RSZ) minimum 1 m depth. Note 1: rootable areas are for determining minimum width only and do not reduce the required DSA. Figure 3.3b labels Small 3-8 m, Medium 8-12 m and Large over 12 m high, consistent with the height column.",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 31
+  }
+}

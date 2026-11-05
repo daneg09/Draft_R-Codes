@@ -1,0 +1,78 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Reduced primary street setback for a portion of the frontage: minimum reduced setback",
+  "text": "C3.3.2 Notwithstanding C3.3.1, the following reductions are permitted: i. the primary street setback line may be reduced for a portion of the frontage width in accordance with in Table 3.3b (refer Figure 3.3a). Table 3.3b Reduced street setback, reduced primary street setback: R10 - R12.5 5m; R15 - R25 4m; R30 - R35 3m; R40 2m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R40"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "building.primary_street_reduced_portion_width_m",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "building.primary_street_setback_reduced_portion_m",
+    "building.primary_street_reduced_portion_width_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3b",
+    "fact": "building.primary_street_setback_reduced_portion_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "defined_terms": [
+    "primary street setback line",
+    "frontage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.2(i)",
+      "relation": "restructured",
+      "note": "R30-R40 'up to 1 m for 30% of frontage' -> Table 3.3b reduced setback"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1(ii)",
+      "relation": "deleted",
+      "note": "averaging of adjoining dwellings' setbacks deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1(iii)",
+      "relation": "restructured",
+      "note": "50% compensated reduction replaced by a fixed reduced setback"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 30,
+    "table": "Table 3.3b",
+    "figure": "Figure 3.3a"
+  },
+  "register_ref": "C4P1-078",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 30,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear; Table 3.3b has no row for R50 and above. Draft's 'in accordance with in Table 3.3b' kept verbatim. Figure 3.3a is labelled 'HOUSE'."
+  },
+  "notes": "from: ch3 C3.3.2(i). Table 3.3b (p30): R10-R12.5 5 m, R15-R25 4 m, R30-R35 3 m, R40 2 m; no row for R50-R60. Applies only where a portion is built forward (reduced-portion width > 0); the width limit is C3.3.2(i)#r1. Figure 3.3a is labelled 'HOUSE' and the draft does not discuss apartment frontages (C4P1-078). Draft typo 'in accordance with in Table 3.3b'."
+}

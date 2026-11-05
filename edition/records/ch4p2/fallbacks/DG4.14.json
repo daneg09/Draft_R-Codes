@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.14",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.14",
+  "element_title": "Mixed use",
+  "title": "Mixed use design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.14.1 One of the desirable outcomes of mixed use development is better activation of the street. This can be achieved by considering design solutions that enhance the streetscape such as: development addresses the street and is directly accessed from the street; flexible and adaptable design that can attract diverse range of activities and be adapted over time to different uses; street frontages are well-articulated and include a mix of solid wall and glazing that allow interaction between the street and the interior; providing live-work apartments at ground floor rather than commercial uses. DG 4.14.2 Where development is located within a mixed use area designated within the local planning framework, ground floor units should be designed for future adaption to non-residential uses, such as by increased floor to floor heights and ensuring universal access requirements can be met. DG 4.14.3 The design of mixed use development should include the necessary infrastructure to support business activity. Applicants should review the local planning framework to see if there are any applicable requirements that apply to non-residential uses beyond the scope of this Code. Some design considerations include: provision of universal access to the premises; vehicle access for deliveries; providing sufficient staff and customer parking; inclusion of amenities for staff and customers, such as toilets. DG 4.14.4 The inclusion of non-residential uses in a residential development requires additional design consideration to manage the potential impacts between the these land uses. Design solutions that can assist in mitigating impacts include: residential entries being separated from commercial entries and clearly distinguishable; design of the building frontage includes CPTED principles, including being well-lit and avoiding places for concealment; separating commercial service and waste storage areas from residential components; residential car parking and communal facilities can be accessed securely and exclusively by residents and their guests; noisy areas within the non-residential uses are oriented away from major openings of dwellings and/or shielded with sound attenuation solutions; air-conditioning and mechanical ventilation equipment for non-residential uses is sited and designed to maintain acceptable noise levels within dwellings; exhaust from non-residential uses is vented away from dwellings; lighting for non-residential uses does not directly impact residential dwellings.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 79,
+    "extract_line": 2719
+  },
+  "register_ref": "C4P2-124",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.14",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Page 79 checked word for word. DG 4.14.4 prints 'between the these land uses'; kept. Register C4P2-124: the Table of Changes (p19) says DG 4.14.2 was modified to add 'This recognises that market demand may not support the immediate delivery of non-residential uses...'; that sentence is not in the draft DG 4.14.2 (p79). Regional main streets may have weak ground-floor commercial demand (register regional note).",
+  "verified": {
+    "method": "page-image",
+    "page": 79,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

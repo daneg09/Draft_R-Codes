@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.1.1(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Primary living space on the ground floor has direct access to the primary garden area",
+  "text": "C2.1.1 The dwelling is to have one room that is the designated primary living space where: i. the primary living space is provided on the ground floor, it is to have direct physical and visual access to the primary garden area; or",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "proposal.primary_living_space_floor",
+      "op": "==",
+      "value": "ground"
+    }
+  ],
+  "inputs": [
+    "proposal.primary_living_space_floor",
+    "building.primary_living_direct_access_to_pga"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.primary_living_direct_access_to_pga",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.1",
+  "defined_terms": [
+    "primary living space",
+    "primary garden area"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "no Part B equivalent for single houses R40 and below"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.1",
+      "relation": "same",
+      "note": "Part C text carried into Chapter 2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 15,
+    "extract_line": 430
+  },
+  "register_ref": "ch2-015",
+  "verify": true,
+  "notes": "Clause carries no density qualifier but tests access to the primary garden area, which exists only at R50-R80 and R100-SL (C1.1.3). Whether it binds R40 and below (where the outdoor living area applies) is unclear; encoded for all codes as printed. Verify scope.",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values and wording match p15. Ambiguous on the page: the clause carries no density qualifier but tests access to the primary garden area (a term used at R50+ / R100-SL); whether it binds R40 and below is not stated."
+  }
+}

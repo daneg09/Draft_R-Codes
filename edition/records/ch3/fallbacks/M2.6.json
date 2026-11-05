@@ -1,0 +1,32 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M2.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.6",
+  "element_title": "Outbuildings",
+  "title": "Outbuildings merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.6.1 Outbuildings minimise negative impacts on the amenity for residents of the development, adjoining properties or the streetscape. M2.6.2 Siting and size of outbuildings does not compromise the ability to provide adequate primary garden area, soft landscaping, trees and deep soil areas.",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 22,
+    "extract_line": 706
+  },
+  "register_ref": "ch3-035",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

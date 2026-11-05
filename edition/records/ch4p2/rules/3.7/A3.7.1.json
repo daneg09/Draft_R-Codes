@@ -1,0 +1,62 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.7.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.7",
+  "element_title": "Pedestrian access and entries",
+  "title": "Pedestrian entries connected by a legible, continuous path of travel to lobbies, stairs, accessways and dwelling entries",
+  "text": "Pedestrian entries are connected via a legible, well-defined, continuous path of travel to building access areas such as lift lobbies, stairs, accessways and individual dwelling entries.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.path_of_travel_to_entries"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.path_of_travel_to_entries",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.7",
+  "defined_terms": [
+    "continuous path of travel"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.7.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 41
+  },
+  "register_ref": "C4P2-095",
+  "verify": false,
+  "notes": "from: ch4p1 C3.7.10 (parking.path_of_travel_to_entries).",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

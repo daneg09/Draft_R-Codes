@@ -1,0 +1,56 @@
+{
+  "id": "table-3.2a-height",
+  "title": "Table 3.2a Maximum building heights: maximum total building height",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2-R35"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.r_code": "R40-R60"
+      },
+      "value": 13
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R80+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 16,
+      "note": "R80, R100, R160 and LR, MR and HR"
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": 16,
+      "note": "Not listed in Table 3.2a; inferred from Table 2.10a 'maximum four storey building height in accordance with Table 3.2a' and Table 2A"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 28,
+    "table": "Table 3.2a"
+  },
+  "register_ref": "ch2-039",
+  "verify": false,
+  "notes": "Second column of Table 3.2a (see table-3.2a-storeys). No wall height limit and no roof-type distinction in the draft.",
+  "verified": {
+    "method": "page-image",
+    "page": "28, 7",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R100-SL 16 m row confirmed by Table 2A (p7), where 16m spans R80 and R100-SL."
+  }
+}

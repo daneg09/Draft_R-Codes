@@ -1,0 +1,43 @@
+{
+  "id": "table-4.3b",
+  "title": "Table 4.3b Minimum internal floor areas and dimensions for habitable rooms (living room minimum dimension)",
+  "keys": [
+    "dwellings.min.living_room_bedrooms"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "dwellings.min.living_room_bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 3.6,
+      "note": "living room - studio and 1 bed apartments; minimum area N/A"
+    },
+    {
+      "match": {
+        "dwellings.min.living_room_bedrooms": {
+          "min": 2
+        }
+      },
+      "value": 4,
+      "note": "living room - other dwelling types; minimum area N/A"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 55,
+    "extract_line": 1898,
+    "table": "Table 4.3b"
+  },
+  "register_ref": "C4P2-113",
+  "verify": false,
+  "notes": "Operative for the living room rows (rule A4.3.2-r2): studio and 1 bed 3.6 m, other dwelling types 4 m, minimum area N/A. The bedroom rows are constant and carried in rules A4.3.2 (master bedroom 10 m2, 3 m) and A4.3.2-r1 (other bedrooms 9 m2, 3 m); footnote 1 \"Excluding robes\" is printed before each bedroom 3m (the extract's \"13m\").",
+  "verified": {
+    "method": "page-image",
+    "page": 55,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

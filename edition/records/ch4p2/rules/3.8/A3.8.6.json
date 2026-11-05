@@ -1,0 +1,92 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.8.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.8",
+  "element_title": "Vehicle access",
+  "title": "Two-way driveway where it serves more than 10 dwellings, parking is 15 m or more from the street, or the street is a distributor or arterial",
+  "text": "Driveways designed for two way access to allow for vehicles to enter the street in forward gear where: the driveway serves more than 10 dwellings; the distance from an on-site car parking to the street is 15m or more OR the public street to which it connects is designated as a primary distributor, district distributor or integrated arterial road.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "parts": [
+        {
+          "type": "count",
+          "fact": "parking.driveway.dwellings_served",
+          "op": ">",
+          "value": 10
+        },
+        {
+          "type": "threshold",
+          "fact": "parking.driveway.parking_to_street_m",
+          "op": ">=",
+          "value": 15
+        },
+        {
+          "type": "formula",
+          "expr": "site.primary_street_class == 'primary_distributor' or site.primary_street_class == 'district_distributor' or site.primary_street_class == 'integrator_arterial'"
+        }
+      ],
+      "label": "any trigger"
+    }
+  ],
+  "inputs": [
+    "parking.driveway.dwellings_served",
+    "parking.driveway.parking_to_street_m",
+    "parking.driveway.two_way",
+    "site.primary_street_class"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.driveway.two_way",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.8",
+  "defined_terms": [
+    "primary distributor",
+    "district distributor"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.8.6",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 43
+  },
+  "register_ref": "C4P2-096",
+  "verify": true,
+  "notes": "The three triggers are read as alternatives (the printed list joins only the last two with OR). parking.driveway.two_way and parking.driveway.parking_to_street_m proposed. The street class is site.primary_street_class (the driveway is assumed to connect to the primary street; verify for secondary street access). 'Integrated arterial' read as integrator_arterial.",
+  "verified": {
+    "method": "page-image",
+    "page": 43,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p43 the three triggers are a dash list with OR printed only after the second; the first is joined by neither AND nor OR."
+  }
+}

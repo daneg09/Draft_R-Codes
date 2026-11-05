@@ -1,0 +1,77 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.2(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Reduced primary street setback for a portion of the frontage: minimum reduced setback",
+  "text": "C3.3.2 Notwithstanding C3.3.1, the following reductions are permitted: i. the primary street setback line may be reduced for a portion of the frontage width in accordance with in Table 3.3b (refer Figure 3.3a). Table 3.3b Reduced street setback, reduced primary street setback: R2 13m; R2.5 10m; R5 8m; R10 - R12.5 5m; R15 - R25 4m; R30 - R35 3m; R40 2m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R40"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "building.primary_street_reduced_portion_width_m",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "building.primary_street_setback_reduced_portion_m",
+    "building.primary_street_reduced_portion_width_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3b",
+    "fact": "building.primary_street_setback_reduced_portion_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "primary street setback line",
+    "frontage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1(ii)",
+      "relation": "deleted",
+      "note": "averaging deleted (ch2-047)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1(iii)",
+      "relation": "restructured",
+      "note": "50% compensated reduction replaced by fixed reduced setback"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.2(i)",
+      "relation": "restructured",
+      "note": "R30-R40 'up to 1 m for 30% of frontage' -> Table 3.3b"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 30,
+    "table": "Table 3.3b",
+    "figure": "Figure 3.3a"
+  },
+  "register_ref": "ch2-046",
+  "verify": false,
+  "notes": "Applies only where a portion is built forward (reduced-portion width > 0). No Table 3.3b row for R50+. Companion test C3.3.2(i)-r1 limits the width of the reduced portion. Draft typo 'in accordance with in Table 3.3b'.",
+  "verified": {
+    "method": "page-image",
+    "page": 30,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

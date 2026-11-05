@@ -1,0 +1,88 @@
+{
+  "id": "table-2.3a",
+  "title": "Table 2.3a Car parking provisions for development within the Perth and Peel regions (occupant minimum spaces per dwelling)",
+  "keys": [
+    "site.location",
+    "proposal.bedrooms"
+  ],
+  "unit": "spaces",
+  "rows": [
+    {
+      "match": {
+        "site.location": "A",
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 0,
+      "note": "Location A studio and 1 bedroom; max garage/carport (R50+) 1"
+    },
+    {
+      "match": {
+        "site.location": "A",
+        "proposal.bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 0,
+      "note": "Location A 2 bedroom; max garage/carport (R50+) 2"
+    },
+    {
+      "match": {
+        "site.location": "A",
+        "proposal.bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 1,
+      "note": "Location A 3+ bedroom; max garage/carport (R50+) 2"
+    },
+    {
+      "match": {
+        "site.location": "B",
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 1,
+      "note": "Location B studio and 1 bedroom; max garage/carport (R50+) 1"
+    },
+    {
+      "match": {
+        "site.location": "B",
+        "proposal.bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 1,
+      "note": "Location B 2 bedroom; max garage/carport (R50+) 2"
+    },
+    {
+      "match": {
+        "site.location": "B",
+        "proposal.bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 1,
+      "note": "Location B 3+ bedroom; max garage/carport (R50+) 2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 19,
+    "extract_line": 596,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch3-025",
+  "verify": false,
+  "notes": "Value = occupant minimum parking spaces per dwelling (all parking types). Same minimums as Chapter 2. The printed table has three further parts, carried as rule thresholds because a row holds one value: (1) ancillary dwelling row: minimum 0 in Location A and B (rule C2.3.1-r1); maximum garage/carport 1 at R50+ (C2.3.1-r3). (2) Maximum garage and carport parking for R50 and above (per dwelling; footnote 1: none at R40 and below), Location A and B: studio/1 bed 1, 2 bed 2, 3+ bed 2 (rule C2.3.1-r2). (3) Visitor car parking (rule C2.3.3): 0-4 dwellings no visitor parking required; 5+ dwellings 0.1 bays per dwelling (Location A) or 0.15 bays per dwelling (Location B) for the total number of dwellings. Ratios round to the nearest whole number, 0.5 or greater rounded up (1.4 -> 1, 1.5 -> 2). Maximum applies to garages and carports; extra spaces may be uncovered, undercroft or basement. LOCATION A: within 800 m of a train station on a high-frequency rail route (straight line from the pedestrian entry to the platform to any part of a lot); within 250 m of a high-frequency transit route, or routes combining to timed stops every 15 minutes in weekday peaks 7-9am and 5-7pm (straight line from any part of the route to any part of the lot); and/or within an activity centre. LOCATION B: all other land. Register ch3-029: straight-line measurement replaces 'walkable catchment'.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.1#laneway-primary",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Setback to an adjoining laneway or right-of-way that is the primary street",
+  "text": "C3.3.1 Buildings are set back from the street boundary in accordance with Table 3.3a. Table 3.3a Minimum setback of buildings from the street, adjoining laneway or right-of-way where it is the primary street to the dwelling (1): R2, R2.5, R5, R10 and R12.5 as per Secondary Street setbacks; R15-25, R30-35, R40 and R50-80 1.5m. (1) Does not apply to ancillary dwellings.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_row",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "site.row_is_primary_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.row_setback_m",
+    "site.r_code",
+    "site.has_row",
+    "site.row_is_primary_street"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-laneway-primary",
+    "fact": "building.row_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "right-of-way",
+    "laneway",
+    "primary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1(iv)",
+      "relation": "relaxed",
+      "note": "2.5 m (1.5 m porch) where ROW is the main frontage -> 1.5 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3a",
+      "relation": "relaxed",
+      "note": "ROW as primary street 2 m -> 1.5 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "ch2-044",
+  "verify": false,
+  "notes": "Table 3.3a footnote 1: this row does not apply to ancillary dwellings (applies_to is single_house only).",
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Merged cells confirmed on the page: 'As per Secondary Street setbacks' spans R2 to R12.5 for both laneway rows; 1.5m spans R15-25 to R50-80."
+  }
+}

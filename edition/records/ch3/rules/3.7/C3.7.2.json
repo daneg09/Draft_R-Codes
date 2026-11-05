@@ -1,0 +1,127 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "One vehicle access point per lot (R40 and above)",
+  "text": "In areas R40 and above, vehicle access points are limited to one per lot (refer Figure 3.7a) except where: i. an existing dwelling is being retained that has an established access point that is not able to serve the other dwellings; ii. dwellings front the street and access is not available from a communal street or rear right-of-way; or iii. the lot frontage exceeds 40m, two vehicle access points are permitted.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R40+"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.access.count",
+    "proposal.retained_dwelling",
+    "site.frontage_m",
+    "site.has_communal_street",
+    "site.has_row"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.access.count",
+    "op": "<=",
+    "value": 1
+  },
+  "exceptions": [
+    {
+      "label": "(i) retained dwelling with an established access point",
+      "condition": {
+        "type": "boolean",
+        "fact": "proposal.retained_dwelling",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "proposal.retained_dwelling"
+      ],
+      "verify": true
+    },
+    {
+      "label": "(ii) dwellings front the street and no communal street or rear ROW access",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "site.has_row",
+            "expected": false
+          },
+          {
+            "type": "boolean",
+            "fact": "site.has_communal_street",
+            "expected": false
+          }
+        ]
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "site.has_row",
+        "site.has_communal_street"
+      ],
+      "verify": true
+    },
+    {
+      "label": "(iii) lot frontage exceeds 40 m: two access points",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.frontage_m",
+        "op": ">",
+        "value": 40
+      },
+      "effect": {
+        "set": {
+          "value": 2
+        }
+      },
+      "inputs": [
+        "site.frontage_m"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "frontage",
+    "right-of-way",
+    "communal street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.2",
+      "relation": "relaxed",
+      "note": "Part C applied the limit at R30+; draft R40 and above"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "Part B had no limit"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 40,
+    "figure": "Figure 3.7a"
+  },
+  "register_ref": "ch3-074",
+  "verify": true,
+  "notes": "Same test as Chapter 2 C3.7.2. Exception (i) 'not able to serve the other dwellings' and (ii) 'dwellings front the street' are not tested (no facts); the exceptions turn on retention and on the absence of a communal street or rear ROW. R30-R35 grouped dwellings lose the Part C one-access limit (not in the table of changes).",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording, R40 and above coding and the 40m / two access points limb confirmed. Exceptions (i) and (ii) state no effect; (i) 'not able to serve the other dwellings' and (ii) 'dwellings front the street' have no facts. Encoded as not applicable on retention / absence of a communal street or rear ROW."
+  }
+}

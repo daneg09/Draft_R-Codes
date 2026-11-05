@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Ceiling heights at least 2.65 m (habitable) and 2.4 m (non-habitable) (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Measured from the finished floor level to the ceiling level, minimum ceiling heights are: i. 2.65m for habitable rooms; and ii. 2.4m for non-habitable rooms. All other ceilings are to meet the requirements of the NCC.",
+  "inputs": [
+    "dwellings.min.ceiling_height_habitable_m",
+    "dwellings.min.ceiling_height_non_habitable_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.ceiling_height_habitable_m",
+        "op": ">=",
+        "value": 2.65
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.ceiling_height_non_habitable_m",
+        "op": ">=",
+        "value": 2.4
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "habitable room",
+    "non-habitable room"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.6",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 16,
+    "extract_line": 484
+  },
+  "register_ref": "C4P1-026",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "new: no Chapter 3 equivalent. Heading 'Habitable rooms (applies to R30-R60 only)'. Limbs (i) and (ii) joined by 'and', so one composite. Other ceilings fall to the NCC and are not tested."
+}

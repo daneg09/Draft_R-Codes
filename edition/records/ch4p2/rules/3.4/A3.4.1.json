@@ -1,0 +1,77 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.4.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.4",
+  "element_title": "Communal open space",
+  "title": "Communal open space: 6 m2 per dwelling up to 300 m2, more than 10 dwellings (Table 3.4)",
+  "text": "Developments include communal open space in accordance with Table 3.4. Table 3.4: More than 10 dwellings - Total: 6m2 per dwelling up to maximum 300m2; at least 2m2 per dwelling up to 100m2 minimum accessible / hard landscape area (included in overall area requirement); minimum open space dimension 4m.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">",
+      "value": 10
+    }
+  ],
+  "inputs": [
+    "landscape.cos.area_m2",
+    "proposal.dwelling_count"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "landscape.cos.area_m2",
+    "op": ">=",
+    "value": "min(6 * proposal.dwelling_count, 300)"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.4",
+  "defined_terms": [
+    "communal open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.4.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4"
+  },
+  "register_ref": "C4P2-083",
+  "verify": false,
+  "notes": "from: ch4p1 C1.3.1 (same test). Up to 10 dwellings is A3.4.1-r3. FACTS.md landscape.cos.pct_of_site ('Table 3.4') is not used: Table 3.4 is per dwelling, not a share of the site. 11 dwellings need 66 m2.",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

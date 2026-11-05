@@ -1,0 +1,133 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Garage setback from the primary street",
+  "text": "C3.3.3 Garages are set back from the primary street boundary in accordance with Table 3.3c. Table 3.3c Setback of garages from the primary street: R2-R35 5.0m (Refer Figure 3.3c); R40 and above In accordance with Table 3.3a. In areas coded R2 - R35, setback of garages to the primary street may be reduced: i. to 4.5m where an existing or planned footpath, shared path or road alignment is located more than 1m from the street boundary; or ii. to 3m where the garage allows vehicles to be parked parallel to the street. The wall parallel to the street must include more than one opening.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R35"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.garage.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.garage.setback_primary_m",
+    "site.verge.path_or_road_offset_m",
+    "parking.garage.parallel_parking",
+    "parking.garage.parallel_wall_openings",
+    "parking.garage.present"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.garage.setback_primary_m",
+    "op": ">=",
+    "value": 5.0
+  },
+  "exceptions": [
+    {
+      "label": "footpath or road more than 1 m from boundary",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.verge.path_or_road_offset_m",
+        "op": ">",
+        "value": 1.0
+      },
+      "effect": {
+        "set": {
+          "value": 4.5
+        }
+      },
+      "inputs": [
+        "site.verge.path_or_road_offset_m"
+      ]
+    },
+    {
+      "label": "garage allows parallel parking",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "parking.garage.parallel_parking",
+            "expected": true
+          },
+          {
+            "type": "count",
+            "fact": "parking.garage.parallel_wall_openings",
+            "op": ">",
+            "value": 1
+          }
+        ]
+      },
+      "effect": {
+        "set": {
+          "value": 3.0
+        }
+      },
+      "inputs": [
+        "parking.garage.parallel_parking",
+        "parking.garage.parallel_wall_openings"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "garage",
+    "primary street",
+    "street boundary",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.1-C1.1",
+      "relation": "tightened",
+      "note": "4.5 -> 5.0 m at R2-R35"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 31,
+    "table": "Table 3.3c",
+    "figure": "Figure 3.3c"
+  },
+  "register_ref": "ch2-050",
+  "verify": false,
+  "notes": "Verified fixture rule. R40 and above are governed by Table 3.3a (C3.3.3#r40-plus). Reduction paragraphs are un-numbered in the draft. Garage-adjoins-dwelling reduction (Part B Figure 8b) deleted (register ch2-051). Applies only where a garage is proposed (condition parking.garage.present, as for C3.3.3#r40-plus).",
+  "variable_by": [
+    {
+      "instrument": "ldp",
+      "permission": "without-wapc",
+      "source": "T2.5B row 3.3"
+    },
+    {
+      "instrument": "lpp",
+      "permission": "wapc",
+      "source": "T2.5A row 3.3 other"
+    }
+  ],
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

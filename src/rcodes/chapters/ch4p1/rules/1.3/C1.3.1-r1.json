@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.3",
+  "element_title": "Communal open space",
+  "title": "Communal open space: accessible hard landscape area 2 m2 per dwelling up to 100 m2 (Table 1.3a)",
+  "text": "C1.3.1 Communal open space is provided for apartment development in accordance with Table 1.3a and the following: i. located in common property and behind the primary street setback line; ii. to be universally accessible to all occupants of the development; and iii. exclusive to the residential component of mixed-use development. Table 1.3a Provision of communal open space. Up to 10 dwellings: No provision. More than 10 dwellings: minimum accessible/hard landscape area (included in overall provision) 2m2 per dwelling up to 100m2. Communal open spaces can be co-located with deep soil areas, soft landscaping area and/or co-indoor communal spaces.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">",
+      "value": 10
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count",
+    "landscape.cos.hard_landscape_area_m2"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "landscape.cos.hard_landscape_area_m2",
+    "op": ">=",
+    "value": "min(2 * proposal.dwelling_count, 100)"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.3",
+  "defined_terms": [
+    "communal open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.3.1",
+      "relation": "same",
+      "note": "R30-R60"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.3a",
+      "relation": "same"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "R10-R25 apartments had no COS requirement (Part B 5.1.5 is grouped only)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 12,
+    "table": "Table 1.3a"
+  },
+  "register_ref": "C4P1-017",
+  "verify": false,
+  "notes": "New here (no Chapter 3 equivalent; Chapter 3 has no communal open space element). Applies to developments of more than 10 dwellings (Table 1.3a 'Up to 10 dwellings: No provision'; rule condition). Threshold cliff: 11 dwellings need 66 m2 (C4P1-017). Table 2.5A: COS clauses need WAPC approval to modify (C4P1-018). Minimum accessible / hard landscape area min(2 x dwellings, 100), included in the overall provision. Proposed fact landscape.cos.hard_landscape_area_m2.",
+  "verified": {
+    "method": "page-image",
+    "page": 12,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

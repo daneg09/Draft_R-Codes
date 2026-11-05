@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.3.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Parking outside Perth and Peel: no regional table in Chapter 4 Part 1",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "regional",
+  "text": "Car parking is provided on site in accordance with Table 2.3a. [No regional parking table is printed in Chapter 4 Part 1; Table 2.3a Locations A and B carry no Perth and Peel limit.]",
+  "inputs": [
+    "site.region"
+  ],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.3",
+  "defined_terms": [
+    "Location A",
+    "Location B"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "current parking tables apply state-wide; Chapters 2 and 3 add Table 2.3b for outside Perth and Peel, Chapter 4 Part 1 does not"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 19,
+    "extract_line": 587
+  },
+  "register_ref": "C4P1-048",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Gap record: no regional parking table is printed on p19-20; Table 2.3a carries no Perth and Peel limit."
+  },
+  "notes": "new: records a gap, not a provision. ToC p7 says a separate regional table is provided and that Locations A and B do not apply outside Perth and Peel; Chapter 4 Part 1 has no such table (register C4P1-048). Table 2.3a rules (C2.3.1, C2.3.3, C2.3.5, C2.3.7) are region all and still run; whether DPLH intends them to apply regionally, or a regional table is missing, needs confirmation. No value invented."
+}

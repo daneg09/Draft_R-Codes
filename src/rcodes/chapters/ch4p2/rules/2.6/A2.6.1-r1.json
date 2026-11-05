@@ -1,0 +1,53 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.6.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.6",
+  "element_title": "Building depth",
+  "title": "Other building depths assessed on merit against 4.1 and 4.2",
+  "text": "All other proposals will be assessed on their merits with particular consideration to 4.1 Solar and daylight access and 4.2 Natural ventilation.",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.6",
+  "defined_terms": [
+    "building depth"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.6.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 21
+  },
+  "register_ref": "C4P2-073",
+  "verify": false,
+  "notes": "Second sentence of A2.6.1: where the building is not double-loaded single-aspect, depth has no number and is a judgment against O 2.6, 4.1 and 4.2.",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

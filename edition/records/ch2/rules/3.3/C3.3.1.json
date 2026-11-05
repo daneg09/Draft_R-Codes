@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Primary street setback",
+  "text": "C3.3.1 Buildings are set back from the street boundary in accordance with Table 3.3a. Table 3.3a Minimum setback of buildings from the street, primary street: R2 20m; R2.5 15m; R5 12m; R10 and R12.5 7.5m; R15-25 6m; R30-35 4m; R40 3m; R50-80 2m. Note: Where road widening is required, street setbacks are to be calculated from the adjusted street boundary following widening. R80 Code Standards apply to single houses and grouped dwellings in areas coded R100, R160 and LR, MR and HR.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.primary_street_setback_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-primary",
+    "fact": "building.primary_street_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "primary street",
+    "street boundary",
+    "street setback",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "relaxed",
+      "note": "R40 4 m -> 3 m; other codes unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1",
+      "relation": "restructured",
+      "note": "averaging and compensation replaced by Table 3.3b projection model"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3a",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "ch2-042",
+  "verify": false,
+  "notes": "building.primary_street_setback_m is the setback of the building excluding minor projections (C3.3.1-r1) and portions reduced under C3.3.2, which are separate tests. Where road widening is required the setback is measured from the adjusted street boundary (Table 3.3a note; site.road_widening_m). Corner truncation setback deleted (register ch2-045). R100-SL 1 m is a separate rule.",
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Side setback, walls 3.6 m to 7 m high (R10-R25)",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. ii. For R10-R25, the stated setback distances may be reduced by half the width of an adjoining pedestrian access way to a maximum reduction of 2m (refer to Figure 3.4d). Table 3.4a Lot boundary setbacks, side setback: Wall height 3.6m to 7m 1.5m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R25"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.has_walls_3_6_to_7m",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.side_setback_walls_3_6_to_7m_m",
+    "site.r_code",
+    "site.adjoining_pedestrian_access_way_width_m",
+    "building.has_walls_3_6_to_7m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.side_setback_walls_3_6_to_7m_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-side-3.6-to-7m"
+    }
+  },
+  "exceptions": [
+    {
+      "label": "adjoining pedestrian access way (C3.4.1(ii))",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.adjoining_pedestrian_access_way_width_m",
+        "op": ">",
+        "value": 0
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "building.side_setback_walls_3_6_to_7m_m + min(site.adjoining_pedestrian_access_way_width_m / 2, 2)",
+          "op": ">=",
+          "value": {
+            "table": "table-3.4a-side-3.6-to-7m"
+          }
+        }
+      },
+      "inputs": [
+        "site.adjoining_pedestrian_access_way_width_m"
+      ],
+      "source": "C3.4.1(ii), Figure 3.4d, page 32"
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "wall height",
+    "setback",
+    "pedestrian access way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.1",
+      "relation": "restructured",
+      "note": "wall height and length matrix -> flat setback by wall height (C4P1-086)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2a",
+      "relation": "relaxed",
+      "note": "wall length dimension dropped"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2b",
+      "relation": "relaxed",
+      "note": "major-opening setbacks (3.5 m to 5 m+) dropped"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "restructured",
+      "note": "column 7 side setbacks"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.1(vi)",
+      "relation": "tightened",
+      "note": "R10-R25 reduction by half an adjoining ROW, pedestrian access way, communal street or battleaxe leg -> pedestrian access way only (C4P1-089)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 32,
+    "table": "Table 3.4a",
+    "figure": "Figure 3.4a-d"
+  },
+  "register_ref": "C4P1-086",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "1.5m confirmed (Table 4A p7 agrees). Table 3.4a (p32) prints the bands as 'Wall height up to 3.5m', 'Wall height 3.6m to 7m' and 'Wall height above 7.1m', leaving 3.5-3.6 m and 7.0-7.1 m undefined; Table 4A (p7) prints '3.6m -7m (2nd storey)' and '7.1m and above (3rd storey)'. The encoded band conditions (> 3.5, > 7.0) are an inference."
+  },
+  "notes": "from: ch3 C3.4.1#side-3.6-to-7m. Table 3.4a (p32) side setback 1.5 m, the same at every code; C3.4.1(ii) (pedestrian access way, half its width, max 2 m) is limited to R10-R25, so this band carries it as an exception and R30-R60 is a separate rule. No length or major-opening distinction (C4P1-086). Rounding gap between wall-height bands (3.5-3.6 m, 7.0-7.1 m) unresolved. Applies only where the building has walls 3.6 m to 7 m high (condition on building.has_walls_3_6_to_7m); the band does not depend on the building's maximum wall height."
+}

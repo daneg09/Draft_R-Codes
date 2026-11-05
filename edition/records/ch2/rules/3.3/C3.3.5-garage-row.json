@@ -1,0 +1,84 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.5#garage-row",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Garage setback from a right-of-way",
+  "text": "C3.3.5 Garages and carports are set back from a secondary street and right-of way in accordance with Table 3.3a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.garage.present",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "site.has_row",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "site.row_is_primary_street",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "parking.garage.setback_row_m",
+    "site.r_code",
+    "parking.garage.present",
+    "site.has_row",
+    "site.row_is_primary_street"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-laneway",
+    "fact": "parking.garage.setback_row_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "garage",
+    "right-of-way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.1-C1.4",
+      "relation": "tightened",
+      "note": "nil to ROW boundary with 6 m manoeuvring space -> 0.5 m (R15+)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.6",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 31,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "ch2-053",
+  "verify": false,
+  "notes": "Uses the 'not the primary street' row; where the ROW is the primary street the garage is governed by C3.3.3. The 6 m manoeuvring-space test of Part B C1.4 is not carried.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

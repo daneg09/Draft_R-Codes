@@ -1,0 +1,44 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Access merit assessment criteria",
+  "text": "M3.7.1 Access for each development site is to: i. balance pedestrian and cyclist safety while providing safe vehicle access; ii. minimise the extent of impervious surfaces; iii. provide legible access; and iv. include high quality landscaping features. M3.7.2 Vehicle access is designed and located to: i. minimise the number and width of vehicle access points and the impact on the streetscape; ii. provide access to the street with the lowest volume of traffic; and iii. accommodate sloping sites and retaining walls. M3.7.3 The width of the communal street or battleaxe leg may be reduced where it is necessary to retain an existing dwelling provided: i. safe vehicle access, setbacks or clearances and sightlines are achieved; and ii. it is only reduced for the portion required to retain the dwelling. P3.7.4 Unobstructed sightlines provided at vehicle access points to ensure safety and visibility along vehicle access ways, streets, rights-of-way, communal streets, crossovers, and footpaths. P3.7.5 Legible, safe, and direct access for residents and their visitors to move between communal car parking areas or public streets and individual dwellings. P3.7.6 Development with potential to be subdivided to create 20 or more green title lots, strata lots or survey-strata lots provides legible internal connections and access to streets and be designed to accommodate traffic movement and volume, visitor parking, pedestrian access, street shade trees, utility services and access for waste collection and emergency service vehicles.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.7.1",
+      "relation": "same",
+      "note": "P3.7.1-P3.7.3 (C4P1-124)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.7.4",
+      "relation": "same",
+      "note": "P3.7.4-P3.7.6 (C4P1-113)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": "39-40"
+  },
+  "register_ref": "C4P1-124",
+  "verify": false,
+  "notes": "from: ch3 M3.7 (unchanged). M3.7.1-M3.7.3 on p39; the p40 criteria are printed with a 'P' prefix (P3.7.4-P3.7.6, C4P1-113), apparently a labelling error for 'M'; recorded here as merit criteria. Deleted with no deemed exempt successor: Part B 5.3.6 C6.4 stair access to no more than two dwellings per floor, weather protection (C4P1-119), and the Part C C3.7.13 12 m communal street for 20+ lots (C4P1-122; P3.7.6 only).",
+  "verified": {
+    "method": "page-image",
+    "page": "39-40",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "M3.7.1-M3.7.3 on p39; p40 criteria printed with a 'P' prefix (P3.7.4-P3.7.6); kept as printed and recorded as merit criteria."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.3",
+  "element_title": "Street setbacks",
+  "title": "Primary and secondary street setback at least the Table 2.1 minimum",
+  "text": "A 2.3.1 Development complies with the street setback set out in Table 2.1, except where modified by the local planning framework, in which case development complies with the street setback set out in the applicable local planning instrument.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.street_setback_m",
+    "site.r_code",
+    "building.ground_floor_commercial"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.1-street-setback",
+    "fact": "building.street_setback_m",
+    "op": ">="
+  },
+  "exceptions": [
+    {
+      "label": "Table 2.1 note 1: nil setback where commercial use at ground floor (LR1, MR1, MR2, HR1, HR2, HR3)",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "building.ground_floor_commercial",
+            "expected": true
+          },
+          {
+            "type": "table-lookup",
+            "table": "table-2.1-street-setback-nil"
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "threshold",
+          "fact": "building.street_setback_m",
+          "op": ">=",
+          "value": 0
+        }
+      },
+      "source": "Table 2.1 note 1",
+      "inputs": [
+        "building.ground_floor_commercial",
+        "site.r_code"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.3",
+  "defined_terms": [
+    "primary street",
+    "secondary street",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.3.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "same",
+      "note": "2 m; 2 m or nil for the mixed-use codes (Volume 2 note 5, now note 1)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 16,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-070; C4P2-034; C4P2-035",
+  "verify": false,
+  "notes": "Minimum setback to the primary and, on two-frontage sites, the secondary street, measured to the cadastral street boundary (2.3 intent). R80, R100 and R160 have no nil option. R-PA refers to the scheme/LDP: NOT_APPLICABLE. 14 new Design Guidance items (C4P2-070). The 'except where modified by the local planning framework' limb is applied through the instruments layer (Chapter 1B 3.5, Table 3.5A); this rule encodes the Table 2.1 default.",
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

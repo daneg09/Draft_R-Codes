@@ -1,0 +1,76 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Separation between buildings, or facing portions of a building, on the same lot",
+  "text": "C3.4.6 For apartments, buildings on the same lot, or facing portions of the same building are to be set back from each other as through there is a lot boundary between them (refer Figure 3.4l). Note: Visual privacy setbacks may also apply.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.same_lot_separation_applies",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.separation_same_lot_m",
+    "building.separation_same_lot_wall_height_m",
+    "building.same_lot_separation_applies"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.separation_same_lot_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-separation"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "apartment",
+    "lot",
+    "lot boundary",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.4.7",
+      "relation": "same",
+      "note": "buildings on the same lot or facing portions set back as if a lot boundary lay between them (C4P1-097)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.1(iv)",
+      "relation": "restructured",
+      "note": "Tables 2a/2b basis -> Table 3.4a (1.0 / 1.5 / 2.0 m each side)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4a",
+    "figure": "Figure 3.4l (p35)"
+  },
+  "register_ref": "C4P1-097",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed on p34 ('as through' verbatim). Figure 3.4l (p35) shows building separation 2m (1m + 1m), 3m (1.5m + 1.5m) and 6m (3m + 3m) by storey: the lower two match twice Table 3.4a, the upper matches neither twice 2.0m (4m, Table 3.4a) nor twice 3.5m (7m, Table 4A). Figure 3.4l also cites 'C3.10.4' for visual privacy (element 3.9 here)."
+  },
+  "notes": "diverges: ch3 C3.4.6 (grouped dwellings: C3.4.1 to C3.4.5 apply at internal site boundaries, a boolean confirmation) has a different subject; here the clause sets a separation between apartment buildings, or facing portions of one building, on the same lot. Encoded as a threshold on building.separation_same_lot_m: twice the Table 3.4a side setback for the taller facing wall (table-3.4a-separation keyed on proposed fact building.separation_same_lot_wall_height_m: up to 3.5 m 2 m, 3.6-7 m 3 m, above 7.1 m 4 m). Using the taller wall for both sides is conservative where the facing walls differ in height. CONFLICT: Figure 3.4l (p35) still shows 6 m (3 m + 3 m), 3 m and 2 m, i.e. the current 3 m upper value; with Table 4A's 3.5 m it would be 7 m (C4P1-085, C4P1-097). Whether the 14 m wall length rule (C3.4.2) and nil-setback boundary walls (C3.4.4) also apply between buildings is not encoded. Visual privacy (3.9) may require more. Applies only where the lot holds more than one building or a building has facing portions (proposed fact building.same_lot_separation_applies)."
+}

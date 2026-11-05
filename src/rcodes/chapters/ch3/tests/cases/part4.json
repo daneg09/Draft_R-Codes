@@ -1,0 +1,826 @@
+[
+  {
+    "title": "R20 two grouped dwellings, smallest site 400 m2, average 450 m2, lot frontage 20 m: met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r7",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 400,
+        "avg_site_area_per_dwelling_m2": 450
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r7": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 smallest dwelling site 330 m2 and average 420 m2: minimum 350 and (flagged) average 450 fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 330,
+        "avg_site_area_per_dwelling_m2": 420
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r7": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 dwelling site 330 m2 on an existing strata lot with legal road access: not applicable via C4.1.4(ii)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 330,
+        "avg_site_area_per_dwelling_m2": 450
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "C4.1.4(ii) existing lot with permanent legal access to a public road"
+      }
+    }
+  },
+  {
+    "title": "R20 small dwelling on a 250 m2 site: 250 / 0.65 = 385 >= 350, meets via C4.1.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": true,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 250,
+        "avg_site_area_per_dwelling_m2": 450
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "C4.1.5 small dwelling at R25 and below: minimum and average site area reduced by up to 35%"
+      }
+    }
+  },
+  {
+    "title": "R20 250 m2 dwelling site, small dwelling status unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": null,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 250,
+        "avg_site_area_per_dwelling_m2": 450
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "proposal.small_dwelling"
+      ]
+    }
+  },
+  {
+    "title": "R20 small dwelling on a 200 m2 site: 200 / 0.65 = 308 < 350, fails even with C4.1.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": true,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 200,
+        "avg_site_area_per_dwelling_m2": 450
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 gold-level dwelling on a 180 m2 site, 2 dwellings: 180 / 0.65 = 277 >= 260, meets via C4.1.6",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 12
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "gold",
+        "reduced_site_area_dwelling_count": 1
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 180,
+        "avg_site_area_per_dwelling_m2": 300
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "C4.1.6 gold-level accessible or small dwelling at R30 to R40: reduced by up to 35%, no site under 100 m2, at most 50% of 4 or more sites"
+      }
+    }
+  },
+  {
+    "title": "R30 six dwellings, four on reduced gold-level sites: 67% exceeds the 50% cap, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 30
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 6,
+        "small_dwelling": false,
+        "universal_design_level": "gold",
+        "reduced_site_area_dwelling_count": 4
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 180,
+        "avg_site_area_per_dwelling_m2": 300
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 small dwellings, average 110 m2 per dwelling, 2 of 4 reduced: 110 / 0.65 = 169 >= 150, meets via C4.1.7",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 4,
+        "small_dwelling": true,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 2
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 105,
+        "avg_site_area_per_dwelling_m2": 110
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r7": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r7": "C4.1.7 gold-level accessible or small dwelling at R50 and above: reduced by up to 35%, no site under 100 m2, small dwellings at most 50% of sites"
+      }
+    }
+  },
+  {
+    "title": "R60 small dwellings, smallest site 90 m2: 100 m2 floor fails minimum and average",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 4,
+        "small_dwelling": true,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 2
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 90,
+        "avg_site_area_per_dwelling_m2": 110
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r7": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R25 grouped lot frontage 7 m: Table 3B frontage 8 m not met (footnote removed, verify)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R25",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 7
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 320,
+        "avg_site_area_per_dwelling_m2": 360
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 grouped lot: no Table 3B frontage minimum",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r3",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 6
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 200,
+        "avg_site_area_per_dwelling_m2": 230
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r3": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r7": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 grouped dwelling on a 420 m2 rear battleaxe site: battleaxe minimum 450 not met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 420,
+        "region": "regional",
+        "battleaxe": true,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 4
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 400,
+        "avg_site_area_per_dwelling_m2": 450
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 grouped dwelling on a 460 m2 rear battleaxe site: battleaxe minimum met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 460,
+        "region": "regional",
+        "battleaxe": true,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 4
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 400,
+        "avg_site_area_per_dwelling_m2": 450
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R2 grouped dwellings: no average in Table 3B",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r7",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R2",
+        "area_m2": 12000,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 80
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 5500,
+        "avg_site_area_per_dwelling_m2": 6000
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r7": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R30 survey-strata subdivision, smallest lot 270 m2, average 290 m2: minimum met, average 300 fails; no frontage minimum",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r4",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r1",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 18
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 2,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 270,
+        "avg_site_area_per_dwelling_m2": 290,
+        "min_site_area_m2": 270,
+        "avg_site_area_m2": 290,
+        "min_frontage_m": 6,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r4": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r5": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "R20 survey-strata subdivision, 3 of 4 lots reduced for small dwellings at R20 (C4.1.5, no cap): meets minimum",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r4",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r1",
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": true,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 4,
+        "reduced_lots_count": 3,
+        "site_area_per_dwelling_m2": 400,
+        "avg_site_area_per_dwelling_m2": 450,
+        "min_site_area_m2": 240,
+        "avg_site_area_m2": 300,
+        "min_frontage_m": 10,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r4": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r5": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r4": "C4.1.5 small dwelling at R25 and below: minimum and average site area reduced by up to 35%"
+      }
+    }
+  },
+  {
+    "title": "R60 subdivision, 3 of 4 lots reduced for small dwellings: 75% exceeds the 50% cap, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": true,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 4,
+        "reduced_lots_count": 3,
+        "site_area_per_dwelling_m2": 110,
+        "avg_site_area_per_dwelling_m2": 130,
+        "min_site_area_m2": 110,
+        "avg_site_area_m2": 130,
+        "min_frontage_m": 5,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r4": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R10 subdivision with a 950 m2 battleaxe lot: battleaxe minimum 925 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R10",
+        "area_m2": 1900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 40
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 2,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 900,
+        "avg_site_area_per_dwelling_m2": 1000,
+        "min_site_area_m2": 900,
+        "avg_site_area_m2": 1000,
+        "min_frontage_m": 20,
+        "battleaxe_lot": true,
+        "min_battleaxe_site_area_m2": 950
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r6": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R10 subdivision with a 900 m2 battleaxe lot: battleaxe minimum 925 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R10",
+        "area_m2": 1900,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 40
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 2,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 900,
+        "avg_site_area_per_dwelling_m2": 1000,
+        "min_site_area_m2": 900,
+        "avg_site_area_m2": 1000,
+        "min_frontage_m": 20,
+        "battleaxe_lot": true,
+        "min_battleaxe_site_area_m2": 900
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r6": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R12.5 subdivision with 15 m minimum frontage: Table 3B 17 m fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C4.1.1-r5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R12.5",
+        "area_m2": 1700,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 32
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "small_dwelling": false,
+        "universal_design_level": "none",
+        "reduced_site_area_dwelling_count": 0
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 2,
+        "reduced_lots_count": 0,
+        "site_area_per_dwelling_m2": 800,
+        "avg_site_area_per_dwelling_m2": 850,
+        "min_site_area_m2": 800,
+        "avg_site_area_m2": 850,
+        "min_frontage_m": 15,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C4.1.1-r5": "DOES_NOT_MEET"
+      }
+    }
+  }
+]

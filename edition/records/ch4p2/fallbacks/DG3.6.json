@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG3.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.6",
+  "element_title": "Public domain interface",
+  "title": "Public domain interface Design Guidance",
+  "text": "DG 3.6.1 Key components to consider when designing the interface with the public domain include entries, private terraces or balconies, fences and walls, changes in level, services locations and planting. These elements need to balance the requirement for passive surveillance with visual privacy. The design of these elements can influence the real or perceived safety and security of residents, promote opportunities for social interaction and enhance the street appeal of the development. DG 3.6.2 To improve passive surveillance, promote street setbacks which enable a person on a balcony or at a window to easily see the street. For apartments at ground floor close to the street, raising the floor height by 0.5m to 1m can be an effective way to maintain an appropriate balance between passive surveillance and privacy for residents. DG 3.6.3 Ground floor uses should complement the intended streetscape, balancing retail, commercial and residential elements, and avoiding excessive vehicle and service elements or blank walls. The visual prominence of underground car park vents should be minimised and located at a low level where possible. DG 3.6.4 Direct street entry to terraces, balconies and courtyard apartments is desirable where it can be achieved. Building entries should be readily identifiable and designed for universal access. Where there are multiple buildings and/or entries utilise architectural detailing, materials, colours and landscape treatments to differentiate the entries and improve legibility for residents and visitors. DG 3.6.5 Services such as fire utilities, rubbish collection areas and mailboxes should be easy to locate without being visually prominent through careful integration into the overall design of the development. Mail boxes should be located in lobbies perpendicular to the street alignment or integrated into front fences where individual street entries are provided. DG 3.6.6 Consider opportunities to promote casual interaction between residents and the public domain. Design solutions may include seating at building entries, near letter boxes and in private courtyards adjacent to streets. DG 3.6.7 Blank walls facing the street frontage should be avoided wherever possible. Blank walls can be broken up with entries, open screens, fencing, landscaping and other elements that provide greater visual interest when viewed from the street. DG 3.6.8 Where the recommended parameters for level change, fence height, permeability and activation cannot be achieved, consider planting, additional setbacks and materiality to minimise impacts to the streetscape. DG 3.6.9 Where development adjoins public parks, open space or bushland, the design positively addresses this interface. Potential design solutions include: direct street access, pedestrian paths and clearly defined building entries; paths, low fences and planting that clearly delineate between communal and private open space and the adjoining public open space; minimising the use of blank walls, solid fences and ground level parking. DG 3.6.10 On-site tree planting within the public domain interface should be responsive to street tree planting. For example, on streets with minimal verge width or tree canopy, consider how the development can positively contribute to tree canopy and shade provision of the public domain.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG3.6",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 40
+  },
+  "register_ref": "C4P2-094",
+  "verify": false,
+  "notes": "Three columns interleaved; re-joined by sense. Figure 3.6a (p38).",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

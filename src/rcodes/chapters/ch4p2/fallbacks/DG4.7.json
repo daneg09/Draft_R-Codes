@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.7",
+  "element_title": "Managing the impact of noise",
+  "title": "Managing the impact of noise design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.7.1 Strategies to manage noise need to be balanced with requirements for solar and daylight access, natural ventilation and streetscape objectives. This might require compromise to optimise these various requirements. When considering possible solutions, the primary objective is to create high quality living environments that respond to the existing neighbourhood context or, in an area undergoing transformation, the planned character of the area. In busy urban areas, this will require design solutions that have regard for established noise sources to reduce conflict between future residents and existing land owners. The following strategies may assist in managing external noise impacts on the development: maximise the distance between significant external noise sources and habitable rooms and private open space; orient residential uses away from or perpendicular to the noise source; where practical, use non-residential buildings and lower floor commercial tenancies as an acoustic barrier, ideally sited parallel with the noise source or configured as a podium to shield residential uses and open space areas; where solar access is taken from the same direction as the noise source, use double glazing to obtain winter solar access and daylight; while trees and landscaping do not physically reduce sound transmission, they may reduce the perceived level of noise. DG 4.7.2 The siting and orientation of buildings and activities within the site can make a major contribution to reducing sound transmission between dwellings. Consider: maximising the separation between buildings and activities on site and to neighbouring buildings/adjacent uses. The building separation requirements (refer 2.7) provide a starting point; co-locating noisy areas within buildings (such as entries and corridors) and cluster quieter activity areas, such as locating bedrooms next to or above each other; using doors to separate different noise zones within dwellings and the building; locating storage, circulation areas and non-habitable rooms to buffer noise to habitable rooms; treating wet areas as per habitable rooms in terms of acoustic insulation to prevent the transfer of noise from these areas to habitable rooms within the dwelling; locating living areas and bed rooms away from noise sources such as lifts, communal stairwells, mechanical equipment and communal bin stores; designing active communal open spaces to project sound away from bedroom windows. DG 4.7.3 In environments where managing the impacts of external noise is particularly challenging, (such as development adjacent to major roads, rail services, flight paths or entertainment venues) and spatial solutions are not effective, noise conflicts can be managed by more direct intervention such as: limiting the number and size of openings facing noise sources; using acoustic glazing, double glazing and/or acoustic louvres and acoustic seals to doors and windows; using materials with high sound reduction properties, with preference to high mass materials; utilising sound-absorbing materials in balconies to reduce sound transmission into the dwelling and the amplification of sound from private open space into the development; the use of wintergardens adjacent to the external noise source where some external aspect is required or desirable; installing acoustic walling to boundaries.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 66,
+    "extract_line": 2277
+  },
+  "register_ref": "C4P2-117",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.7",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Three columns on page 66 rebuilt from the page image. The reassembly had moved bullets between items: 'orient residential uses ...' and 'where practical, use non-residential buildings ...' belong to DG 4.7.1; 'locating storage ...' belongs to DG 4.7.2; 'utilising sound-absorbing materials in balconies ...', 'the use of wintergardens ...' and 'installing acoustic walling ...' belong to DG 4.7.3. Also restored 'and private open space' (DG 4.7.1) and 'and the building' (DG 4.7.2); 'and private open space' after 'balconies' in DG 4.7.3 is not printed.",
+  "verified": {
+    "method": "page-image",
+    "page": 66,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

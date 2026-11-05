@@ -1,0 +1,73 @@
+{
+  "id": "table-1.1b",
+  "title": "Table 1.1b Primary garden area provisions: minimum area per dwelling by site area (grouped dwellings R30-R80 and R80-equivalent codes)",
+  "keys": [
+    "site.area_m2"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 100,
+          "max": 130
+        }
+      },
+      "value": 16,
+      "note": "100-130 m2"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 130,
+          "max": 160
+        }
+      },
+      "value": 20,
+      "note": "131-160 m2"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 160,
+          "max": 190
+        }
+      },
+      "value": 25,
+      "note": "161-190 m2"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 190,
+          "max": 220
+        }
+      },
+      "value": 30,
+      "note": "191-220 m2"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 220
+        }
+      },
+      "value": 35,
+      "note": "greater than 220 m2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 10,
+    "table": "Table 1.1b"
+  },
+  "register_ref": "ch3-006",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Keyed on site area (of the dwelling, A1). Values identical to Chapter 2 (p10). Site area rounded up to the nearest whole number, so rows ascend with shared endpoints: an exact boundary takes the lower band. Sites under 100 m2 have no row (NOT_APPLICABLE): R100-SL is Table 2.10a (C1.1.3-r100sl). Constants in the rules: 35% maximum roof cover (C1.1.3-r2), 3 m minimum dimension (C1.1.3-r1), behind the street setback area unless C1.1.5 (C1.1.3-r3). Each band is 5 m2 below current Part C Table 1.1a (4 m2 for 100-130)."
+}

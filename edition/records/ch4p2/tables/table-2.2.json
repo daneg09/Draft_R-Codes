@@ -1,0 +1,137 @@
+{
+  "id": "table-2.2",
+  "title": "Table 2.2 Relative building height",
+  "keys": [
+    "building.height_storeys"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "building.height_storeys": 2
+      },
+      "value": 9
+    },
+    {
+      "match": {
+        "building.height_storeys": 3
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "building.height_storeys": 4
+      },
+      "value": 15
+    },
+    {
+      "match": {
+        "building.height_storeys": 5
+      },
+      "value": 18
+    },
+    {
+      "match": {
+        "building.height_storeys": 6
+      },
+      "value": 21
+    },
+    {
+      "match": {
+        "building.height_storeys": 7
+      },
+      "value": 24
+    },
+    {
+      "match": {
+        "building.height_storeys": 8
+      },
+      "value": 27
+    },
+    {
+      "match": {
+        "building.height_storeys": 9
+      },
+      "value": 30
+    },
+    {
+      "match": {
+        "building.height_storeys": 10
+      },
+      "value": 33
+    },
+    {
+      "match": {
+        "building.height_storeys": 11
+      },
+      "value": 36
+    },
+    {
+      "match": {
+        "building.height_storeys": 12
+      },
+      "value": 39
+    },
+    {
+      "match": {
+        "building.height_storeys": 13
+      },
+      "value": 42
+    },
+    {
+      "match": {
+        "building.height_storeys": 14
+      },
+      "value": 45
+    },
+    {
+      "match": {
+        "building.height_storeys": 15
+      },
+      "value": 48
+    },
+    {
+      "match": {
+        "building.height_storeys": 16
+      },
+      "value": 51
+    },
+    {
+      "match": {
+        "building.height_storeys": 17
+      },
+      "value": 54
+    },
+    {
+      "match": {
+        "building.height_storeys": 18
+      },
+      "value": 57
+    },
+    {
+      "match": {
+        "building.height_storeys": 19
+      },
+      "value": 60
+    },
+    {
+      "match": {
+        "building.height_storeys": 20
+      },
+      "value": 63
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 14
+  },
+  "register_ref": "C4P2-067",
+  "verify": false,
+  "notes": "Indicative building height in metres for a number of storeys (DG 2.2.1): 4 m ground floor, 3 m each further floor, plus 2 m rooftop articulation (2 = 9 m ... 20 = 63 m). Extended from 10 storeys (Volume 2) to 20. No row for 1 storey. Reference table; A2.2.1-r1 uses table-2.2-max-height-m, which reads this table at each Table 2.1 storey limit.",
+  "verified": {
+    "method": "page-image",
+    "page": 14,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

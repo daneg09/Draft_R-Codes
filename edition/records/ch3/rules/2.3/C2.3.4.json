@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Visitor bays marked and signposted, on common property and connected to building entries, Perth and Peel",
+  "text": "C2.3.4 Visitor car parking spaces to be: i. marked and clearly signposted as dedicated for visitor use only; ii. located on common property; and iii. connected to building entries via a continuous path of travel.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "perth-peel",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "parking.visitor_spaces",
+      "op": ">=",
+      "value": 1
+    }
+  ],
+  "inputs": [
+    "parking.visitor_spaces",
+    "parking.visitor_spaces_marked_and_accessible"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.visitor_spaces_marked_and_accessible",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "visitor car parking space",
+    "common property",
+    "continuous path of travel"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.4-C4.2",
+      "relation": "restructured",
+      "note": "'outside any security barrier' and 'close to or visible from the entry' dropped"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.3.5",
+      "relation": "restructured",
+      "note": "'served by common access' qualifier dropped"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 18,
+    "extract_line": 571
+  },
+  "register_ref": "ch3-028",
+  "verify": false,
+  "notes": "diverges: Chapter 2 C2.3.4 is the regional AS2890.1 clause (its Chapter 3 twin is C2.3.6); this clause is the visitor bay specification, which has no Chapter 2 equivalent. One applicant fact answers (i) to (iii) (see FACTS-PROPOSED-part2.md). Applies wherever visitor bays are provided. Twin of C2.3.8 (outside Perth and Peel).",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

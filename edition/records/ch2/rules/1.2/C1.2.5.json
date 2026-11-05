@@ -1,0 +1,62 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.2.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Nominal root zone for a retained significant tree (AS4970)",
+  "text": "C1.2.5 Where a significant existing tree is retained on site, a nominal root zone is to be provided in accordance with AS4970.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.significant_tree_retained",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "site.significant_tree_retained",
+    "site.retained_tree_root_zone_provided"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site.retained_tree_root_zone_provided",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+  "defined_terms": [
+    "significant existing tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.7",
+      "relation": "renamed",
+      "note": "tree protection zone -> nominal root zone"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 12
+  },
+  "register_ref": "ch2-013",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 12,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Requirement clear on the page; the 'nominal root zone' terminology query (not an AS4970 term) is a drafting matter and stays in notes."
+  },
+  "notes": "Applies only where a significant existing tree is retained (rule condition). 'Nominal root zone' is not an AS4970 term (AS4970 uses tree protection zone and structural root zone); drafting query."
+}

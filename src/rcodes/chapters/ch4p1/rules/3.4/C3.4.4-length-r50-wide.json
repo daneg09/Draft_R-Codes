@@ -1,0 +1,92 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50-wide",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary wall cumulative length, R50 and above, frontage greater than 8.5 m (65%)",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: i. boundary walls are located behind the street setback; ii. overshadowing does not exceed the limits of C3.8.1; and iii. they are finished to an equivalent standard to the rest of the development, to the satisfaction of the decision-maker. Table 3.4c Lot boundary setbacks, R50 and above where frontage is greater than 8.5m: 14m length, at which point the wall is to be set back a minimum of 3m measured from the lot boundary for a minimum length of 3m, with a cumulative maximum of 65% of the lot boundary the wall abuts.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R50-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.boundary_walls.count",
+      "op": ">=",
+      "value": 1
+    },
+    {
+      "type": "threshold",
+      "fact": "site.frontage_m",
+      "op": ">",
+      "value": 8.5
+    }
+  ],
+  "inputs": [
+    "building.boundary_walls.max_pct_of_boundary",
+    "building.boundary_walls.count",
+    "site.frontage_m",
+    "building.boundary_walls.adjoining_wall_exists"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.boundary_walls.max_pct_of_boundary",
+    "op": "<=",
+    "value": 65
+  },
+  "exceptions": [
+    {
+      "label": "abuts an existing or simultaneously constructed wall of similar or greater dimension (C3.4.5)",
+      "condition": {
+        "type": "boolean",
+        "fact": "building.boundary_walls.adjoining_wall_exists",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "building.boundary_walls.adjoining_wall_exists"
+      ],
+      "source": "C3.4.5, page 34",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "frontage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4b",
+      "relation": "same",
+      "note": "cumulative maximum where frontage exceeds 8.5 m; two-thirds -> 65% (C4P1-095)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4c",
+    "figure": "Figure 3.4j"
+  },
+  "register_ref": "C4P1-095",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear on the page, but the page says 'cumulative maximum of 65%' while the encoded fact (building.boundary_walls.max_pct_of_boundary) is the longest single wall as % of its boundary; needs a cumulative per-boundary fact."
+  },
+  "notes": "from: ch3 C3.4.4#length-r50-wide. Table 3.4c (p34) values unchanged from Chapter 3; the clause text now cites C3.8.1 for overshadowing. Frontage greater than 8.5 m: cumulative maximum 65% of the boundary the wall abuts, taken as building.boundary_walls.max_pct_of_boundary."
+}

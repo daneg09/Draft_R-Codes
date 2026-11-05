@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Uncovered at-grade parking planted with at least one tree per four bays",
+  "text": "Uncovered at-grade parking is planted with trees at a minimum rate of one tree per four bays.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "parking.uncovered_at_grade_spaces",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "landscape.parking_shade_trees",
+    "parking.uncovered_at_grade_spaces"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "4 * landscape.parking_shade_trees",
+    "op": ">=",
+    "value": {
+      "fact": "parking.uncovered_at_grade_spaces"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.9.9",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "figure": "Figure 3.9b"
+  },
+  "register_ref": "C4P2-108",
+  "verify": false,
+  "notes": "from: ch4p1 C1.2.5 (4 x trees >= bays, i.e. trees >= bays / 4 rounded up). No tree size is stated (ch4p1 says small tree). Figure 3.9b. Whether these trees are additional to the Table 3.3a trees is not stated.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C4.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Calculation of minimum site area",
+  "text": "Calculation of minimum site area. C4.1.2 The minimum site area set out in Table 2B is calculated as follows: i. in the case of a single house, the area of a green title lot or survey-strata lot.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch2/M4.1",
+  "defined_terms": [
+    "site area",
+    "green title lot",
+    "survey-strata lot"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 49
+  },
+  "register_ref": "ch2-089",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 49,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Calculation rule, not a test: it defines the site.area_m2 the C4.1.1 rules read (the lot area, not a strata lot). Recorded as kind judgment with no evaluator."
+}

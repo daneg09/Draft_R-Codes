@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.9.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.9",
+  "element_title": "Small dwellings",
+  "title": "Small dwelling subject to the site area concession: maximum internal floor area 70m2",
+  "text": "Small Dwellings – Site area concession applies – Refer 4.0 Land, C4.1.5, C4.1.6 and C4.1.7. C2.9.1 Small dwellings subject to the site area concession of C4.1.5, C4.1.6 or C4.1.7 shall comply with the following: i. a maximum internal dwelling floor area of 70m2; ii. parking provided in accordance with Table 2.3a; and iii. all other provisions of the R-Codes.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.small_dwelling",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.small_dwelling",
+    "proposal.internal_floor_area_m2"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "proposal.internal_floor_area_m2",
+    "op": "<=",
+    "value": 70.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.9",
+  "defined_terms": [
+    "small dwelling",
+    "internal floor area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.5.5-C5",
+      "relation": "restructured",
+      "note": "Part B applied at R30 and R40 only; concession now referenced for R25 and below (C4.1.5), R30-R40 (C4.1.6), R50+ (C4.1.7)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.9.1",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 24,
+    "extract_line": 738
+  },
+  "register_ref": "ch2-034",
+  "verify": false,
+  "notes": "Only (i) is encoded. (ii) parking per Table 2.3a is tested by C2.3.1 (Perth and Peel); the cross-reference names Table 2.3a only, so small dwellings outside Perth and Peel have no stated parking requirement (register ch2-034). (iii) all other provisions apply and are tested by their own rules. Register ch2-036: aged/dependent persons' and single bedroom dwellings (Part B 5.5.2, 5.5.3) are deleted; the C4.1.5 small dwelling concession replaces them.",
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

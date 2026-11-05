@@ -1,0 +1,32 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M2.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.8",
+  "element_title": "Ancillary dwellings",
+  "title": "Ancillary dwellings merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house",
+    "ancillary_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.8.1 The size of an ancillary dwelling allows for adequate internal amenity whilst remaining incidental to the primary dwelling. M2.8.2 Ancillary dwellings allow for diversity of housing while minimising adverse impacts on the amenity of: i. adjoining properties; ii. streetscape and local character; and iii. the primary dwelling.",
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 23,
+    "extract_line": 700
+  },
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 23,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

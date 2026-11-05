@@ -1,0 +1,102 @@
+{
+  "id": "table-2.1-plot-ratio",
+  "title": "Table 2.1 Plot ratio",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "ratio",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": null,
+      "note": "N/A"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "LR1",
+          "R-AC4"
+        ]
+      },
+      "value": null,
+      "note": "N/A"
+    },
+    {
+      "match": {
+        "site.r_code": "R100"
+      },
+      "value": null,
+      "note": "N/A"
+    },
+    {
+      "match": {
+        "site.r_code": "R160"
+      },
+      "value": null,
+      "note": "N/A"
+    },
+    {
+      "match": {
+        "site.r_code": "MR1"
+      },
+      "value": null,
+      "note": "N/A"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "MR2",
+          "R-AC3"
+        ]
+      },
+      "value": null,
+      "note": "N/A"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "HR1",
+          "R-AC1"
+        ]
+      },
+      "value": 4.0
+    },
+    {
+      "match": {
+        "site.r_code": "HR2"
+      },
+      "value": 6.0
+    },
+    {
+      "match": {
+        "site.r_code": "HR3"
+      },
+      "value": 7.0
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R-PA",
+          "R-AC0"
+        ]
+      },
+      "value": null,
+      "note": "refer to local planning scheme, local development plan and/or precinct controls"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13
+  },
+  "register_ref": "C4P2-054..C4P2-063",
+  "verify": false,
+  "notes": "Maximum plot ratio (A2.5.1); N/A = null (no provision, NOT_APPLICABLE). Extract 'N/A N/A 4.0 6.0 7.0' = low-rise | mid-rise | HR1 | HR2 | HR3. Note 6: plot ratio per the definitions (plot ratio area exclusions). Rows also match the current names (R-AC4 = LR1, R-AC3 = MR2, R-AC1 = HR1, R-AC0 = R-PA; register C4P2-017). R-AC2 has no column and no row. The generic LR, MR and HR bands have no row (MR and HR each span columns with different values), so a site coded only LR, MR or HR is NOT_APPLICABLE until its code is known.",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

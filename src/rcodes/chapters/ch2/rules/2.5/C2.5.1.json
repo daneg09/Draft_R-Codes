@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.5.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.5",
+  "element_title": "Utilities",
+  "title": "Service utilities accessible, with clear sightlines, integrated or screened from the street",
+  "text": "C2.5.1 Service utilities are designed and located such that they: i. are accessible and can be safely maintained; ii. maintain clear sightlines for vehicle access; and iii. integrated into the design of the development and/or screened from view of the street. Note: Where required by the NCC, fire service infrastructure is located to be visible, and with unobstructed access for its required use during an emergency.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "services.service_utilities_accessible_screened"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.service_utilities_accessible_screened",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.5",
+  "defined_terms": [
+    "service utilities",
+    "street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.1",
+      "relation": "tightened"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.2",
+      "relation": "tightened"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.3",
+      "relation": "tightened"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.4",
+      "relation": "tightened"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.5.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 20,
+    "extract_line": 620
+  },
+  "register_ref": "ch2-027",
+  "verify": false,
+  "notes": "Service utilities: power, water, gas, wastewater, fire services, letterboxes, telecommunications. The three sub-tests are answered by one applicant fact (FACTS.md). NCC fire infrastructure note: visible and unobstructed. Register ch2-028: Part B solar collector, aerial and vent pipe provisions deleted (solar collectors exempt under the Regulations).",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "table-4.4",
+  "title": "Table 4.4 Private open space requirements (minimum area)",
+  "keys": [
+    "dwellings.min.pos_dwelling_category"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "dwellings.min.pos_dwelling_category": "studio_1bed"
+      },
+      "value": 8,
+      "note": "studio apartment + 1 bedroom"
+    },
+    {
+      "match": {
+        "dwellings.min.pos_dwelling_category": "2bed"
+      },
+      "value": 10,
+      "note": "2 bedroom"
+    },
+    {
+      "match": {
+        "dwellings.min.pos_dwelling_category": "3bed_plus"
+      },
+      "value": 12,
+      "note": "3 bedroom (4+ read as 3)"
+    },
+    {
+      "match": {
+        "dwellings.min.pos_dwelling_category": "ground_floor"
+      },
+      "value": 15,
+      "note": "ground floor / apartment with a terrace"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 58,
+    "extract_line": 2002,
+    "table": "Table 4.4"
+  },
+  "register_ref": "C4P2-114",
+  "verify": false,
+  "notes": "Footnote 1: services and fixtures in private open space (air-conditioner units, clothes drying) are not visible from the street and/or are integrated (also A4.4.4). Exclude servicing areas such as bin storage, clothes drying and air conditioning units from the area. Same values as ch4p1 Table 1.1a.",
+  "verified": {
+    "method": "page-image",
+    "page": 58,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.2",
+  "element_title": "Natural ventilation",
+  "title": "Natural ventilation design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.2.1 Natural ventilation can be achieved by: natural cross ventilation, which occurs when dwellings have openings with two different orientations so that breeze can flow through the room or building to flush out hot or stale air; passive or buoyancy ventilation, which relies on the effect of rising hot air and requires high and low openings so that warm air is flushed from higher openings and cooler air is drawn in through lower openings. DG 4.2.2 Optimise the number of dwellings with openings oriented in at least two different directions to achieve better cross ventilation. The orientation of these openings and the design of façade elements and windows can also assist the capture and use of prevailing breezes. DG 4.2.3 Apartment layout and building depth are closely linked with the ability of an apartment to be naturally ventilated. Generally as the building gets deeper, effective airflow reduces. Minimising the depth of individual apartments, the length of enclosed corridors and overall building depth can improve opportunities for natural ventilation. DG 4.2.4 Sliding windows provide limited opportunity for the control of breeze. Preferable options include casement, awning or louvre windows. DG 4.2.5 Where the use of entry doors for cross ventilation is restricted by security of fire considerations, consider alternative design measures such as highlight windows, louvre panels and/or screens to funnel breezes into the apartment. DG 4.2.6 Better natural ventilation can be achieved for single aspect dwellings by having openings that can be left in an open position on at least two sides of the dwelling to create a breeze path. Consider design solutions such as: high and low level ventilation openings oriented between 45° to 90° of the prevailing cooling wind direction; windows in at least two rooms and connecting doors located at the rear of the room rather than adjacent to the windows; using stack effect ventilation/solar chimneys or wind scoops to naturally ventilate internal building areas or rooms such as bathrooms and laundries (particularly in climate zone 3); designing courtyards or building indentations that are open on one side and have a width-to-depth ratio of at least 3:1. DG 4.2.7 Where sufficient natural ventilation cannot be achieved due to constraints such as external noise or poor outdoor air quality, consider providing ventilation by passive trickle vents, ceiling fans and/or energy-efficient mechanical air exchange systems. Split system air-conditioners do not provide air exchange or ventilation. DG 4.2.8 Poor ventilation of wet areas can result in mould growth, a decline in indoor air quality in the entire dwelling and may cause building fabric to deteriorate. External openable windows should be provided to bathrooms and laundries wherever possible. When this is not possible, consider trickle vents in addition to mechanical exhaust systems, and switch mechanical exhaust systems separately from lights so they can be left on when the room is unoccupied.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 53,
+    "extract_line": 1796
+  },
+  "register_ref": "C4P2-112",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.2",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Two columns on page 53 checked word for word against the page image. DG 4.2.5 prints \"security of fire considerations\" (\"or\" meant); kept as printed. Figures in 4.2 are numbered 4.1a to 4.1c (C4P2-111).",
+  "verified": {
+    "method": "page-image",
+    "page": 53,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

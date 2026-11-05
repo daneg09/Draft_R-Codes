@@ -1,0 +1,99 @@
+{
+  "id": "table-3.4",
+  "title": "Table 3.4 Provision of communal open space (reference)",
+  "keys": [
+    "proposal.dwelling_count",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "overall_cos"
+      },
+      "value": "Informal seating associated with deep soil or other landscaped areas"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "min_dimension_m"
+      },
+      "value": null,
+      "note": "N/A"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "hard_landscape_m2_per_dwelling"
+      },
+      "value": null,
+      "note": "N/A (merged with the dimension cell)"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "cos_m2_per_dwelling"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "cos_max_m2"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "hard_landscape_m2_per_dwelling"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "hard_landscape_max_m2"
+      },
+      "value": 100
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "min_dimension_m"
+      },
+      "value": 4
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4"
+  },
+  "register_ref": "C4P2-083",
+  "verify": false,
+  "notes": "Reference transcription ('metric' is not a fact; rules A3.4.1 to A3.4.1-r3 carry the values). Accessible / hard landscape area is included in the overall area. Unchanged from Vol 2. Same values as ch4p1 Table 1.3a without the covered roof limit.",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 34,
+    "note": "p34: the up-to-10-dwellings N/A cell spans both the hard landscape and dimension columns."
+  }
+}

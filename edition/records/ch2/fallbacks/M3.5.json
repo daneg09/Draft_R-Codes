@@ -1,0 +1,30 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M3.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "element": "3.5",
+  "element_title": "Site works and retaining walls",
+  "title": "Site works and retaining walls merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M3.5.1 Development that considers and responds to the natural features of the site and requires minimal excavation/fill. M3.5.2 Where excavation/fill is necessary, all finished levels respect the natural ground level at the lot boundary of the site and as viewed from the street. M3.5.3 Retaining walls that result in land which can be effectively used for the benefit of residents, do not detrimentally affect the amenity of adjoining properties in the opinion of the decision-maker, and are designed, engineered and landscaped having due regard to the provisions of element 3.10 Visual privacy.",
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 36
+  },
+  "register_ref": "ch2-067",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

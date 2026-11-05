@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O4.18",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.18",
+  "element_title": "Utilities",
+  "title": "Utilities element objectives",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "O4.18.1 The site is serviced with power, water, gas (where available), wastewater, fire services and telecommunications/broadband services that are fit for purpose and meet current performance and access requirements of service providers. O4.18.2 All utilities are located such that they are accessible for maintenance and do not restrict safe movement of vehicles or pedestrians. O4.18.3 Utilities, such as distribution boxes, power and water meters are integrated into design of buildings and landscape so that they are not visually obtrusive from the street or open space within the development. O4.18.4 Utilities within individual dwellings are of a functional size and layout and located to minimise noise or air quality impacts on habitable rooms and balconies.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 86,
+    "extract_line": 2962
+  },
+  "register_ref": "C4P2-128",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O4.18",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Register C4P2-129: Vol2 Appendix A6 (summary list of all element objectives) is deleted with no draft equivalent, so these O records are the only listing of the 4.x objectives. Register C4P2-128: the element's Related Elements list cites '3.7 Public domain interface', which is 3.6 (3.7 is Pedestrian access and entries).",
+  "verified": {
+    "method": "page-image",
+    "page": 86,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

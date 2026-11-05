@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M3.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.2",
+  "element_title": "Building height",
+  "title": "Building height merit assessment criteria",
+  "text": "M3.2.1 Building height, bulk and scale is appropriate for the existing and/or desired future streetscape and local character of the area and nearby development. M3.2.2 Building height is considerate of the impact on the amenity of adjoining properties or the streetscape, including road reserves and public open space reserves, and where appropriate maintains: i. adequate solar access into indoor and outdoor active habitable space and solar collectors; and ii. access to views of significance.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": null,
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.2.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.2.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.6-P6",
+      "relation": "relaxed",
+      "note": "R10-R25 'no adverse impact' -> 'considerate of the impact' (C4P1-075)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 28
+  },
+  "register_ref": "C4P1-075",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 M3.2. Same text (p28); R10-R25 wording softened from Part B (C4P1-075)."
+}

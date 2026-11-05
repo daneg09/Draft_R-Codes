@@ -1,0 +1,67 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.2",
+  "element_title": "Building height",
+  "title": "Building height in metres within the Table 2.2 height for the Table 2.1 storey limit",
+  "text": "A 2.2.1 Development complies with the building height limit (storeys) set out in Table 2.1, except where modified by the local planning framework, in which case development complies with the building height limit set out in the applicable local planning instrument.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.height_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.2-max-height-m",
+    "fact": "building.height_m",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.2",
+  "defined_terms": [
+    "building height"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T2.2",
+      "relation": "restructured",
+      "note": "extended from 10 to 20 storeys; same 4 m + 3 m + 2 m assumptions"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 14,
+    "table": "Table 2.2"
+  },
+  "register_ref": "C4P2-067",
+  "verify": true,
+  "notes": "Second test for A2.2.1 in metres: Table 2.2 relative height at the Table 2.1 storey limit (R80/LR1 15 m, R100/MR1 21 m, R160/MR2 27 m, HR1 39 m, HR2 51 m, HR3 63 m). verify: A2.2.1 itself is in storeys and Table 2.2 is indicative (DG 2.2.1), so a DOES_NOT_MEET here is information for O 2.2 rather than a separate breach. R160 and MR2 at 27 m exceed the 25 m NCC effective-height threshold (C4P2-020).",
+  "verified": {
+    "method": "page-image",
+    "page": "14-15",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "A 2.2.1 (p15) is expressed in storeys only; DG 2.2.1 calls Table 2.2 'indicative' and the Table 2.2 notes (p14) call the default heights 'a conservative baseline'. The metres test is derived from Table 2.2, not printed as an Acceptable Outcome."
+  }
+}

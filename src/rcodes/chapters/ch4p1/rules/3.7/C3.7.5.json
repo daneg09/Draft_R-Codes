@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Passing points on driveways serving five or more dwellings",
+  "text": "Driveways designed to allow vehicles to pass in opposite directions where it serves five or more dwellings. Passing points are to be provided at least every 30m with driveways to be minimum 5.5m wide for a minimum 6.3m length (excluding manoeuvring tapers) (refer Figure 3.7c).",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "parking.driveway.dwellings_served",
+      "op": ">=",
+      "value": 5
+    }
+  ],
+  "inputs": [
+    "parking.driveway.dwellings_served",
+    "site.communal_street_passing_bay"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site.communal_street_passing_bay",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "driveway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.5",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.5",
+      "relation": "restructured",
+      "note": "Part B 4 m continuous width for 5+ dwellings -> 3 m driveway with 5.5 m passing points"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 40,
+    "figure": "Figure 3.7c"
+  },
+  "register_ref": "C4P1-112",
+  "verify": true,
+  "notes": "from: ch3 C3.7.5 (unchanged). Trigger is the dwelling count only; '30 m' is the maximum spacing of passing points. site.communal_street_passing_bay answers spacing at least every 30 m and 5.5 m width for 6.3 m length excluding tapers (Figure 3.7c); the same fact answers C3.7.6.",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Five or more dwellings, 30m spacing, 5.5m x 6.3m (tapers excluded) confirmed. The yes/no site.communal_street_passing_bay is shared with C3.7.6, which tests a different provision; where both apply one answer covers both."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Visitor parking for 5 or more grouped dwellings, outside Perth and Peel (Table 2.3b: 0.15 bays per dwelling)",
+  "text": "Visitor parking. C2.3.7 Visitor parking for grouped dwellings is provided on site in accordance with Table 2.3b. Table 2.3b visitor car parking, minimum parking: 0-4 dwellings no visitor parking required; 5+ dwellings 0.15 bays per dwelling for the total number of dwellings. Calculations of parking ratios shall be rounded to the nearest whole number, with fractions of 0.5 or greater rounded up (for example, 1.4 bays is rounded to 1 bay and 1.5 bays is rounded to 2 bays).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "regional",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">=",
+      "value": 5
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count",
+    "parking.visitor_spaces"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "parking.visitor_spaces",
+    "op": ">=",
+    "value": "round(0.15 * proposal.dwelling_count + 0.001)",
+    "label": "0.15 bays per dwelling for the total number of dwellings, rounded to the nearest whole number with 0.5 rounded up"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "visitor car parking space",
+    "common property"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.2",
+      "relation": "relaxed"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "relaxed",
+      "note": "about 0.25 bays per dwelling (5-8: 1; 9-12: 2; 13+: 3 plus 1 per four) -> 0.15"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 20,
+    "extract_line": 639,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch3-031",
+  "verify": false,
+  "notes": "New in Chapter 3 (no Chapter 2 equivalent). Table 2.3b p20: 0-4 dwellings no visitor parking (rule excluded by the condition); 5+ dwellings 0.15 bays per dwelling on the total. Same rounding note as Table 2.3a. Worked (register ch3-031): 9 dwellings 1 bay (was 2); 13-16 dwellings 2 (was 3); 20 dwellings 3 (was 4). ToC says regional metrics have 'no reductions', which is wrong for visitors.",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

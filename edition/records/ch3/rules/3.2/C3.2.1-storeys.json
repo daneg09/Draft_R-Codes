@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.2.1#storeys",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.2",
+  "element_title": "Building height",
+  "title": "Maximum number of storeys",
+  "text": "C3.2.1 Building height complies with Table 3.2a. Table 3.2a Maximum building heights, maximum number of storeys: R2-R35 2; R40-R60 3; R80, R100, R160 and LR, MR and HR 4.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "proposal.storeys",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.2a-storeys",
+    "fact": "proposal.storeys",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.2",
+  "defined_terms": [
+    "storey",
+    "building height"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.6-C6",
+      "relation": "restructured",
+      "note": "Part B had no storey limit; 2 storeys new for R2-R25"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T3",
+      "relation": "restructured",
+      "note": "wall height and roof-type metrics deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.2a",
+      "relation": "relaxed",
+      "note": "R40 2 -> 3 storeys (ch3-044)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 29,
+    "table": "Table 3.2a"
+  },
+  "register_ref": "ch3-044",
+  "verify": false,
+  "notes": "Register ch3-044 (one row for all bands in Chapter 3). proposal.storeys is used (application form); building.storeys is the same count from the elevations. R100-SL has a separate rule (minimum two, maximum four storeys per Table 2.10a).",
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

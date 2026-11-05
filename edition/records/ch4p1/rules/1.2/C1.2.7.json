@@ -1,0 +1,60 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.2.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Tree protection zone for a retained significant tree (AS4970)",
+  "text": "C1.2.7 Where a significant existing tree is retained on site, a tree protection zone is to be provided in accordance with AS4970.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.significant_tree_retained",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "site.significant_tree_retained",
+    "site.retained_tree_root_zone_provided"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site.retained_tree_root_zone_provided",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.2",
+  "defined_terms": [
+    "significant existing tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 11
+  },
+  "register_ref": "C4P1-014",
+  "verify": false,
+  "notes": "from: ch3 C1.2.7. Test unchanged. The Chapter 4 Part 1 text (p11) says 'tree protection zone' (as current Part C), where Chapter 3 says 'nominal root zone'; site.retained_tree_root_zone_provided is read here as the AS4970 tree protection zone. Applies where a significant existing tree is retained.",
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

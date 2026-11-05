@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.7.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Battleaxe leg lighting and landscaping",
+  "text": "A battleaxe leg, including any adjoining setbacks, is provided with adequate lighting and be landscaped and provided with adequate lighting to pathways and vehicle access areas.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.battleaxe",
+      "expected": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+  "defined_terms": [
+    "battleaxe leg"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.10",
+      "relation": "same",
+      "note": "Part C C3.7.10-C3.7.12; new deemed exempt for R40 and below (Part B relied on subdivision policy)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 41
+  },
+  "register_ref": "ch2-080",
+  "verify": false,
+  "notes": "'Adequate' lighting and 'landscaped' need a planner; no evaluator.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

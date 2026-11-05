@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.10.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.10",
+  "element_title": "Facade design",
+  "title": "Façade scale, articulation, materiality and rhythm at lower levels and across the façade",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Façade design includes: scaling, articulation, materiality and detailing at lower levels that reflect the scale, character and function of the public realm; rhythm and visual interest achieved by a combination of building articulation, the composition of different elements and changes in texture, material and colour.",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.10",
+  "defined_terms": [
+    "public realm"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.10.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 70,
+    "extract_line": 2417
+  },
+  "register_ref": "C4P2-120",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 70,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

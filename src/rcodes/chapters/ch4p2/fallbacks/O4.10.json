@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O4.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.10",
+  "element_title": "Facade design",
+  "title": "Facade design element objectives",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "O4.10.1 Building façades incorporate proportions, materials and design elements that respect and reference the character of the local area. O4.10.2 Building façades express internal functions and provide visual interest when viewed from the public realm.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 70,
+    "extract_line": 2417
+  },
+  "register_ref": "C4P2-120",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O4.10",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Register C4P2-129: Vol2 Appendix A6 (summary list of all element objectives) is deleted with no draft equivalent, so these O records are the only listing of the 4.x objectives. Register C4P2-120: the local planning framework route to modify this element is tightened (Chapter 1 Table 3.5A).",
+  "verified": {
+    "method": "page-image",
+    "page": 70,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

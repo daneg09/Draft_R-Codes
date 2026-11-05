@@ -1,0 +1,29 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M3.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.2",
+  "element_title": "Building height",
+  "title": "Building height merit assessment criteria",
+  "text": "M3.2.1 Building height, bulk and scale is appropriate for the existing and/or desired future streetscape and local character of the area and nearby development. M3.2.2 Building height is considerate of the impact on the amenity of adjoining properties or the streetscape, including road reserves and public open space reserves, and where appropriate maintains: i. adequate solar access into indoor and outdoor active habitable space and solar collectors; and ii. access to views of significance.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 28
+  },
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

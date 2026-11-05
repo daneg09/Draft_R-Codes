@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.3.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Car spaces and manoeuvring areas per AS2890.1, outside Perth and Peel",
+  "text": "Applies to development outside of the Perth and Peel regions only. C2.3.4 Car spaces and manoeuvring areas designed and provided in accordance with AS2890.1.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "regional",
+  "inputs": [
+    "parking.as2890_compliant"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.as2890_compliant",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+  "defined_terms": [
+    "car parking space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.4-C4.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.3.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 19,
+    "extract_line": 586
+  },
+  "register_ref": "ch2-025",
+  "verify": false,
+  "notes": "Twin of C2.3.2 (Perth and Peel).",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

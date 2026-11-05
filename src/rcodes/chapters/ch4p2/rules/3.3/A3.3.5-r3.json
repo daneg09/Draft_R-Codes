@@ -1,0 +1,107 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Trees on a site over 1,000 m2: 1 large plus 1 medium per additional 400 m2, or 1 large per additional 900 m2 (Table 3.3a)",
+  "text": "Table 3.3a: > 1,000m2 - 1 large tree and 1 medium tree for each additional 400m2 in excess of 1000m2 OR 1 large tree for each additional 900m2 in excess of 1000m2 AND small trees to suit area.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.area_m2",
+      "op": ">",
+      "value": 1000
+    }
+  ],
+  "inputs": [
+    "landscape.trees.large_count",
+    "landscape.trees.medium_count",
+    "site.area_m2"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "any",
+    "parts": [
+      {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "count",
+            "fact": "landscape.trees.large_count",
+            "op": ">=",
+            "value": 1
+          },
+          {
+            "type": "formula",
+            "expr": "landscape.trees.medium_count",
+            "op": ">=",
+            "value": "round((site.area_m2 - 1000) / 400 - 0.4999)",
+            "label": "1 medium per whole 400 m2 over 1,000 m2"
+          }
+        ],
+        "label": "1 large + 1 medium per additional 400 m2"
+      },
+      {
+        "type": "formula",
+        "expr": "landscape.trees.large_count",
+        "op": ">=",
+        "value": "1 + round((site.area_m2 - 1000) / 900 - 0.4999)",
+        "label": "1 large + 1 large per additional 900 m2"
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [
+    "medium tree",
+    "large tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.5",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.3a",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P2-082",
+  "verify": true,
+  "notes": "verify: read as (a) 1 large tree plus 1 medium tree for each whole 400 m2 over 1,000 m2, or (b) 1 large tree plus 1 large tree for each whole 900 m2 over 1,000 m2. Other readings: 1 large and 1 medium per 400 m2 each; or (b) without the base large tree. 'For each additional' counted in whole increments (no 'or part thereof', unlike ch4p1 Table 1.2a); round(x - 0.4999) is floor.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p31 Table 3.3a >1,000m2 cell: does not say whether the large tree is also per 400 m2 increment, or whether a part increment counts."
+  }
+}

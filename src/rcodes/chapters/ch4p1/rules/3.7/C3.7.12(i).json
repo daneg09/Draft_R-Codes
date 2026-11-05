@@ -1,0 +1,81 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.12(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Pedestrian access leg minimum width 1.5 m",
+  "text": "Where a pedestrian access leg is required to provide access from a dwelling site to a public street, it is to: i. be a minimum width of 1.5m; and ... The pedestrian access leg may be reduced to 1m where required to retain an existing dwelling.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_pedestrian_access_leg",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.retained_dwelling",
+    "site.has_pedestrian_access_leg",
+    "site.pedestrian_access_leg_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "site.pedestrian_access_leg_width_m",
+    "op": ">=",
+    "value": 1.5
+  },
+  "exceptions": [
+    {
+      "label": "reduced to 1 m where required to retain an existing dwelling",
+      "condition": {
+        "type": "boolean",
+        "fact": "proposal.retained_dwelling",
+        "expected": true
+      },
+      "effect": {
+        "set": {
+          "value": 1.0
+        }
+      },
+      "inputs": [
+        "proposal.retained_dwelling"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "pedestrian access leg"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.10",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 41
+  },
+  "register_ref": "C4P1-120",
+  "verify": false,
+  "notes": "from: ch3 C3.7.12(i) (unchanged). A pedestrian access leg from a dwelling site to a public street. 'Where required to retain' is tested only as a dwelling being retained (proposal.retained_dwelling), although this chapter has no retained-dwelling element.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "1.5m and the 1m reduction confirmed. The retention exception keeps its own verify flag: this chapter has no retained-dwelling element and 'where required to retain' is tested only as proposal.retained_dwelling."
+  }
+}

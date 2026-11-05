@@ -1,0 +1,58 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.1.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.1",
+  "element_title": "Solar and daylight access",
+  "title": "Orientation and external shading limit summer sun to habitable rooms and permit winter sun per A4.1.1(a)",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "The building is oriented and incorporates external shading devices in order to: minimise direct sunlight to habitable rooms: between late September and early March in climate zones 4, 5 and 6 only AND in all seasons in climate zones 1 and 3; permit winter sun to habitable rooms in accordance with A 4.1.1 (a).",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.1",
+  "defined_terms": [
+    "habitable room",
+    "climate zone"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.1.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 50,
+    "extract_line": 1693,
+    "figure": "Figure 4.1a"
+  },
+  "register_ref": "C4P2-110",
+  "verify": false,
+  "notes": "Judgment: 'minimise' and 'permit' set no measure. Figure 4.1a gives summer and winter solar angles for Perth (81 / 34 degrees), Broome (summer printed as -6, winter 49) and Albany (78 / 31). Climate zone 2 is not mentioned.",
+  "verified": {
+    "method": "page-image",
+    "page": 50,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.2",
+  "element_title": "Solar access and natural ventilation",
+  "title": "Courtyard that is the only daylight source to a habitable room is uncovered and at least 4m2",
+  "text": "Windows and openings (applies to R30-R80; R100-SL; LR, MR and HR only). C2.2.1 Where a courtyard is the only source of daylight to a habitable room, the courtyard must be uncovered and open to the sky(1) with a: i. minimum area of 4m2 (refer Figure 2.2a). (1) Excludes minor projections.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R30+",
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.courtyard_daylight_only",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.courtyard_daylight_only",
+    "building.courtyard_open_to_sky",
+    "building.courtyard_area_m2"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "building.courtyard_open_to_sky",
+        "expected": true
+      },
+      {
+        "type": "threshold",
+        "fact": "building.courtyard_area_m2",
+        "op": ">=",
+        "value": 4.0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.2",
+  "defined_terms": [
+    "habitable room",
+    "major opening"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.1",
+      "relation": "deleted",
+      "note": "openable window 10% of floor area deleted (NCC duplication), register ch3-023"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.3",
+      "relation": "deleted",
+      "note": "bathroom openable window deleted, register ch3-023"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 16,
+    "extract_line": 487,
+    "figure": "Figure 2.2a"
+  },
+  "register_ref": "ch3-022",
+  "verify": false,
+  "notes": "diverges: coding R30 and above plus R100-SL (Chapter 3 heading p16 'applies to R30-R80; R100-SL; LR, MR and HR only'; Chapter 2 starts at R50). LR/MR/HR are assessed at R80 standards. Figure 2.2a is still captioned '(multiple dwellings)' and shows a 0.5 x wall height dimension left over from Part C. 'Open to the sky' excludes minor projections (footnote 1).",
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

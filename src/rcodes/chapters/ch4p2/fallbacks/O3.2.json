@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O3.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.2",
+  "element_title": "Orientation",
+  "title": "Orientation Element Objectives",
+  "text": "O 3.2.1 Building layouts respond to the streetscape, topography and site attributes while optimising solar and daylight access within the development. O 3.2.2 Building form and orientation minimises overshadowing of the habitable rooms, open space and solar collectors of neighbouring properties during mid-winter.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O3.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 28
+  },
+  "register_ref": "C4P2-079",
+  "verify": false,
+  "notes": "Unchanged (C4P2-079 to C4P2-081).",
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

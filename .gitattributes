@@ -1,0 +1,4 @@
+# The edition is compared byte for byte with a fresh run; keep LF line endings on every platform.
+* text=auto eol=lf
+*.png binary
+*.pdf binary

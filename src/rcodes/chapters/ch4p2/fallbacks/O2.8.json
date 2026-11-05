@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.8",
+  "element_title": "Development incentives for community benefit",
+  "title": "Development incentives Planning Objectives",
+  "text": "PLANNING OBJECTIVES: Development incentives should be compatible with the objectives of this Code, the local planning scheme, applicable precinct structure plans, local development plans and local planning policies. Incentives should be chosen and weighted to reflect local priorities. Incentive-based provisions should provide clearly defined and measurable outcomes required to satisfy community benefit criteria. Incentives should be weighted so that the community outcomes are balanced with the benefit the developer achieves from the additional development allowed through varying the relevant development standard. Application of incentives should not result in adverse impacts on adjoining properties or the existing or desired streetscape character.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.8",
+      "relation": "same",
+      "note": "Planning Objectives retained"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 24
+  },
+  "register_ref": "C4P2-077",
+  "verify": false,
+  "notes": "Planning Objectives addressed to local government, not Element Objectives for a proposal.",
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

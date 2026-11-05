@@ -1,0 +1,12 @@
+{
+  "chapter": "ch1",
+  "version": "draft-2026-10-24",
+  "title": "Chapter 1 Operation of the Code",
+  "kind": "operation",
+  "operation_module": "rcodes.chapters.ch1.operation",
+  "dwelling_types": ["any"],
+  "coding": ["all"],
+  "source": {"file": "Residential Design Codes Chapter 1 - Operation of the Code.pdf", "extract": "Working/text/draft/Residential Design Codes Chapter 1 - Operation of the Code.txt"},
+  "register": "Working/register/ch1-operation-appendices.csv",
+  "notes": "Chapter 1A applies to Chapters 2, 3 and 4 Part 1 (deemed exempt or merit); Chapter 1B applies to Chapter 4 Part 2 (performance-based)."
+}

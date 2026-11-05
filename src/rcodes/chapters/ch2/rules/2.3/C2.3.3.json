@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Minimum on-site car parking spaces, R40 and below, outside Perth and Peel (Table 2.3b)",
+  "text": "Applies to development outside of the Perth and Peel regions only. C2.3.3 Car parking is provided on site in accordance with Table 2.3b.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R40"
+  ],
+  "region": "regional",
+  "inputs": [
+    "parking.spaces",
+    "proposal.bedrooms"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.3b",
+    "fact": "parking.spaces",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+  "defined_terms": [
+    "car parking space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.1",
+      "relation": "same",
+      "note": "equals Part B Location B values; register ch2-024 rates the element 'mixed'"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 19,
+    "extract_line": 585,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch2-024",
+  "verify": false,
+  "notes": "No Location A/B outside Perth and Peel. R40-and-below minimum stays 2 for 2+ bedrooms while Perth and Peel falls to 1. The table's second column (headed 'Maximum garage and carport parking for R50 and above') is encoded literally in C2.3.3-r2 and -r3; no R50+ minimum is stated.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

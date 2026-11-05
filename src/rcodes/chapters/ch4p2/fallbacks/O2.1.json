@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.1",
+  "element_title": "Primary development parameters",
+  "title": "Primary development parameters intent (no Element Objectives printed)",
+  "text": "Intent: Primary Development Parameters manage the form and scale of new development appropriate to the context and the existing or planned character of an area, while moderating impacts on neighbouring properties. Element Objectives for each Primary Development Parameter are provided in the following sections 2.2 – 2.7.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.1",
+      "relation": "renamed",
+      "note": "Primary Controls intent"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 10
+  },
+  "register_ref": "C4P2-065",
+  "verify": false,
+  "notes": "Element 2.1 prints an intent but no Element Objectives; the intent stands as the O record so T2.1 has a fallback. Not an objective in the printed sense; assess against O 2.2 to O 2.7.",
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

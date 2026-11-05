@@ -1,0 +1,84 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.2.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.2",
+  "element_title": "Solar access and natural ventilation",
+  "title": "Climate zones 4 to 6: at least 70% of apartments get 2 hours of sun to the living space and at most 15% get none (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "For apartments in climate zones 4,5 and 6: i. a minimum of 70 per cent of dwellings have a primary living space that achieves at least 2 hours direct sunlight between 9am and 3pm on 21 June; and ii. a maximum of 15 per cent of dwellings in a building receiving no direct sunlight to the primary living space between 9am and 3pm on 21 June.",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.climate_zone",
+      "op": ">=",
+      "value": 4
+    },
+    {
+      "type": "threshold",
+      "fact": "site.climate_zone",
+      "op": "<=",
+      "value": 6
+    }
+  ],
+  "inputs": [
+    "site.climate_zone",
+    "dwellings.with_2h_sun_pct",
+    "dwellings.no_sun_pct"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.with_2h_sun_pct",
+        "op": ">=",
+        "value": 70
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.no_sun_pct",
+        "op": "<=",
+        "value": 15
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.2",
+  "defined_terms": [
+    "primary living space",
+    "climate zone"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 18,
+    "extract_line": 559,
+    "figure": "Figure 2.2b"
+  },
+  "register_ref": "C4P1-037",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C2.2.2 (conditions only). diverges: the test is the share of apartments with 2 hours of direct sun to the primary living space (9am to 3pm, 21 June), not the north-west to east orientation and 3 m x 3 m uncovered area of Chapter 3. Coding R30-R60 per the 'Orientation of major openings' heading. (ii) is per building; supply the worst building. Register C4P1-037: the ToC says the C2.2.4 orientation rule is retained for multiple dwellings, but it never applied to them; Figure 2.2b caption still refers to single houses and grouped dwellings."
+}

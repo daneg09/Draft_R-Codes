@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O3.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.7",
+  "element_title": "Pedestrian access and entries",
+  "title": "Pedestrian access and entries Element Objectives",
+  "text": "O 3.7.1 Entries and pathways are universally accessible, easy to identify and safe for residents and visitors. O 3.7.2 Entries to the development connect to and address the public domain with an attractive street presence.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O3.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 41
+  },
+  "register_ref": "C4P2-095",
+  "verify": false,
+  "notes": "Unchanged.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

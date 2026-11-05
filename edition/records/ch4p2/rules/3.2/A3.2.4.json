@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.2.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.2",
+  "element_title": "Orientation",
+  "title": "Existing solar collectors on adjoining sites coded R40 or less keep 4 hours of sun on 21 June",
+  "text": "Where adjoining sites are coded R40 or less, buildings are oriented to maintain 4 hours per day solar access on 21 June for existing solar collectors on neighbouring sites.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "adjoining.solar_collectors_r40_or_lower",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "adjoining.solar_collectors_r40_or_lower",
+    "overshadow.solar_collectors_affected"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "overshadow.solar_collectors_affected",
+    "expected": false
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.2",
+  "defined_terms": [
+    "solar collector"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.2.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 28
+  },
+  "register_ref": "C4P2-081",
+  "verify": false,
+  "notes": "Applies where an adjoining site coded R40 or less has existing solar collectors (adjoining.solar_collectors_r40_or_lower, proposed). overshadow.solar_collectors_affected read as: the development reduces direct sun to any such collector below 4 hours on 21 June. Not limited to climate zones 4 to 6.",
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "table-1.3a",
+  "title": "Table 1.3a Provision of communal open space: reference",
+  "keys": [
+    "proposal.dwelling_count",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "cos_m2_per_dwelling"
+      },
+      "value": null,
+      "note": "Up to 10 dwellings: No provision"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "cos_max_m2"
+      },
+      "value": null,
+      "note": "Up to 10 dwellings: No provision"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "hard_landscape_m2_per_dwelling"
+      },
+      "value": null,
+      "note": "Up to 10 dwellings: No provision"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "hard_landscape_max_m2"
+      },
+      "value": null,
+      "note": "Up to 10 dwellings: No provision"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "min_dimension_m"
+      },
+      "value": null,
+      "note": "Up to 10 dwellings: No provision"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 10
+        },
+        "metric": "max_covered_roof_pct"
+      },
+      "value": null,
+      "note": "Up to 10 dwellings: No provision"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "cos_m2_per_dwelling"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "cos_max_m2"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "hard_landscape_m2_per_dwelling"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "hard_landscape_max_m2"
+      },
+      "value": 100
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "min_dimension_m"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 11
+        },
+        "metric": "max_covered_roof_pct"
+      },
+      "value": 25
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 12,
+    "table": "Table 1.3a"
+  },
+  "register_ref": "C4P1-017",
+  "verify": false,
+  "notes": "Reference transcription ('metric' is not a fact; C1.3.1 to C1.3.1-r3 carry the values as literals and formulas). More than 10 dwellings: 6 m2 per dwelling up to 300 m2; accessible/hard landscape 2 m2 per dwelling up to 100 m2 (included in the overall provision); minimum dimension 4 m; maximum covered roof area 25% of each communal open space area. Note: may be co-located with deep soil areas, soft landscaping and/or indoor communal spaces. Same values as current Part C Table 1.3a.",
+  "verified": {
+    "method": "page-image",
+    "page": 12,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

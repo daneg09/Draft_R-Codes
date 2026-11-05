@@ -1,0 +1,58 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.3.3-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Maximum garage and carport parking, R50 and above, outside Perth and Peel (Table 2.3b, as printed: 1)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R50+"
+  ],
+  "region": "regional",
+  "inputs": [
+    "parking.garage_carport_spaces"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.garage_carport_spaces",
+    "op": "<=",
+    "value": 1
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+  "defined_terms": [
+    "garage",
+    "carport"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "unclear",
+      "note": "Part C Location B maximum was 1/1/2/2; draft prints 0/1/1/1 under a 'maximum' header"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 19,
+    "extract_line": 588,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch2-024",
+  "verify": true,
+  "notes": "Table 2.3b header problem: the column headed 'Maximum garage and carport parking for R50 and above' prints 1 for studio/1 bed, 2 bed and 3+ bed (and 0 for ancillary), values that equal the Part C Location B MINIMUMS, so the header is probably wrong. Encoded literally as printed (maximum 1 garage/carport space per dwelling at R50+). Read literally, regional R50+ houses have no stated minimum. Needs correction by DPLH.",
+  "text": "Applies to development outside of the Perth and Peel regions only. C2.3.3 Car parking is provided on site in accordance with Table 2.3b. Table 2.3b Car parking provisions for development outside of the Perth and Peel regions, Maximum garage and carport parking for R50 and above (per dwelling): Studio and 1 bedroom dwelling 1; 2 bedroom dwelling 1; 3+ bedroom dwelling 1.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page 19 prints the second column of Table 2.3b headed 'Maximum garage and carport parking for R50 and above (per dwelling)' with values 0 / 1 / 1 / 1 (ancillary / studio-1 bed / 2 bed / 3+ bed). The headings are not transposed between rows; the column values read like minimums under a 'maximum' heading. Encoded as printed."
+  }
+}

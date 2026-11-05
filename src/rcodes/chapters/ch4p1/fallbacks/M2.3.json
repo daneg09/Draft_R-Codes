@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Parking merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "M2.3.1 Siting and the extent of parking does not dominate the development or streetscape and responds to the context and local character by: i. supporting the efficient use of the site; and ii. minimising the extent of paving for parking and vehicle access. M2.3.2 Adequate parking is provided for various modes of transport, including bicycles, motorcycles, scooters and cars, that has regard to the following considerations: i. the proximity of the proposed development to public transport, activity centres, areas of amenity and other facilities; ii. the type, size and number of dwellings; and iii. the availability of on-street and other off-street parking. M2.3.3 Parking spaces are designed for flexibility and adaptability having regard for: i. the needs of occupants, including consideration of universally accessible parking spaces; and ii. the ability to use the space for alternative purposes.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 19,
+    "extract_line": 586
+  },
+  "register_ref": "C4P1-049",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P2.3.1",
+      "relation": "same",
+      "note": "Part C P2.3.1 to P2.3.3"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-P3.2",
+      "relation": "deleted",
+      "note": "reduced on-site parking where controlled street parking exists"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-P3.3",
+      "relation": "deleted",
+      "note": "off-site parking and shared-use reductions, including the 15% sharing reduction"
+    }
+  ],
+  "notes": "from: ch3 M2.3 (same text). Register C4P1-049: Part B P3.2 and P3.3 have no direct successor.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

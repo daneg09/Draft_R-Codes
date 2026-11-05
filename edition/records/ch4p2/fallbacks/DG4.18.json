@@ -1,0 +1,50 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.18",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.18",
+  "element_title": "Utilities",
+  "title": "Utilities design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.18.1 Consider infrastructure solutions that can respond to future as well as present needs, including broadband internet, smart meters and distribution capacity for on-site power generation and storage. DG 4.18.2 Consider the location of a fibre network and provision of fibre connections in dwellings at the earliest possible stage in the planning and design process. This can prevent expensive re-design or retrofitting. DG 4.18.3 Determine the requirements of service providers in terms of metering, distribution, on-site reticulation and maintenance access to ensure these requirements are well-integrated into the design of the building frontage. DG 4.18.4 Laundries located in a cupboard should have a clear width of at least 1m, a clear circulation area of at least 900m to enable comfortable and safe access to the washing machine and tub, and adequate storage in the laundry for cleaning products and other related items. DG 4.18.5 Design and locate the laundry to reduce the impact of noise from an operating machine or drier on the living areas and bedrooms. DG 4.18.6 Ensure the laundry is adequately ventilated to remove hot damp air that may cause the growth of mould. DG 4.18.7 Consider the provision of communal laundries, located adjacent to communal areas. DG 4.18.8 Clothes lines are far more energy efficient than clothes dryers, seek opportunities to incorporated weather protected clothes drying in the building design. DG 4.18.9 Consider the provision of a screened utilities balcony incorporating air conditioning condenser units, hot water units and clothes drying.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 87,
+    "extract_line": 2998
+  },
+  "register_ref": "C4P2-128",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.18",
+      "relation": "same"
+    }
+  ],
+  "verify": true,
+  "notes": "DG 4.18.4 prints 'at least 900m' (page 87; unit error on the page, probably 900 mm); the laundry dimensions are guidance only and are not tested. DG 4.18.8 prints 'to incorporated'; kept.",
+  "verified": {
+    "method": "page-image",
+    "page": 87,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "DG 4.18.4 prints 'a clear circulation area of at least 900m' (page 87): the unit is wrong on the page and the intended figure (900 mm, or an area) cannot be settled from it. Guidance only, not tested. Rest of the text checked word for word."
+  }
+}

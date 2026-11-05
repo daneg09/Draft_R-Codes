@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.8.1(a)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.8",
+  "element_title": "Dwelling mix",
+  "title": "Where a local housing strategy or local planning instrument sets dwelling mix: mix provided in accordance with it",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "(a) Dwelling mix is provided in accordance with the objectives, proportions or targets specified in a local housing strategy or relevant local planning instrument OR",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.local_housing_mix_requirement",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "site.local_housing_mix_requirement",
+    "dwellings.mix_per_local_requirement"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "dwellings.mix_per_local_requirement",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.8",
+  "defined_terms": [
+    "local planning strategy"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.8.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 68,
+    "extract_line": 2358
+  },
+  "register_ref": "C4P2-118",
+  "verify": true,
+  "notes": "Alternative to A4.8.1(b); the two are made exclusive by site.local_housing_mix_requirement. verify: (b) applies only where there is 'no local housing strategy', while (a) also names any 'relevant local planning instrument'; a site with an LPI mix target but no strategy is read under (a). Where the strategy states objectives rather than numbers, compliance is a judgment the applicant can only assert.",
+  "verified": {
+    "method": "page-image",
+    "page": 68,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Limbs (a) OR (b) confirmed. (a) names \"a local housing strategy or relevant local planning instrument\" while (b) applies only \"where there is no local housing strategy\": a site with an LPI mix target but no strategy falls under both; read under (a)."
+  }
+}

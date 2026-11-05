@@ -1,0 +1,64 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.6.5(i)-R100-SL",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Street fence maximum height 900 mm (R100-SL, Table 2.10a)",
+  "text": "Table 2.10a: C3.6.5 Street fences to not exceed 900mm in height.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.front_fence.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.front_fence.height_m",
+    "building.front_fence.present"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.front_fence.height_m",
+    "op": "<=",
+    "value": 0.9
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+  "defined_terms": [
+    "primary street setback area"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "Table 2.10a modified provision for lots less than 100 m2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 25,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch2-073",
+  "verify": false,
+  "notes": "Replaces the 1.8 m cap of C3.6.5(i) for R100-SL. Table 2.10a footnote: where development abuts an adjoining property not coded R100-SL the modified provisions do not apply (footnote is attached to 3.4, 3.9 and 3.10 rows, not to 3.6).",
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 2.10a row 3.6 Streetscape / C3.6.5: 'Street fences to not exceed 900mm in height.' The footnote marker is on the 3.4, 3.9 and 3.10 rows only."
+  }
+}

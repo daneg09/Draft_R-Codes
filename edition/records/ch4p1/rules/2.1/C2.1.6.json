@@ -1,0 +1,66 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Minimum internal floor area per Table 2.1a, plus 3 m2 per extra toilet and 5 m2 per extra bathroom (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Dwellings are to provide minimum internal floor areas in accordance with Table 2.1a. Table 2.1a Minimum dwelling size provisions (Dwelling size: minimum internal floor area): Studio 37m2; 1 bed 47m2; 2 bed x 1 bath 67m2; 2 bed x 2 bath 72m2; 3 bed x 1 bath 90m2; 3 bed x 2 bath 95m2. An additional 3m2 shall be provided for designs that include an additional separate toilet, and 5m2 for designs that include an additional bathroom. Minimum internal floor area excludes storerooms where they are accessed external to the dwelling.",
+  "inputs": [
+    "dwellings.min.internal_floor_area_m2",
+    "dwellings.min.bedrooms_of_smallest",
+    "dwellings.min.bathrooms_of_smallest",
+    "dwellings.min.separate_toilets_of_smallest"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "dwellings.min.internal_floor_area_m2",
+    "op": ">=",
+    "value": "(37 if dwellings.min.bedrooms_of_smallest == 0 else 47 if dwellings.min.bedrooms_of_smallest == 1 else 67 if dwellings.min.bedrooms_of_smallest == 2 else 90) + 5 * max(0, dwellings.min.bathrooms_of_smallest - 1) + 3 * dwellings.min.separate_toilets_of_smallest",
+    "label": "Table 2.1a: studio 37, 1 bed 47, 2 bed 67, 3 bed 90 m2 for one bathroom; +5 m2 per additional bathroom (2x2 72, 3x2 95); +3 m2 per additional separate toilet"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "internal floor area",
+    "dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.7",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.1a",
+      "relation": "same",
+      "note": "same values"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 16,
+    "extract_line": 494,
+    "table": "Table 2.1a"
+  },
+  "register_ref": "C4P1-027",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 2.1a (p16) prints no 4+ bedroom row (read as 3 bed), and its unmarked table note does not say whether the +5 m2 additional bathroom applies to a studio or 1 bed, or whether it stacks on the printed 2x2 and 3x2 rows (read as reproducing them)."
+  },
+  "notes": "new: no Chapter 3 equivalent (Chapter 3 Table 2.1a is balcony size). Heading 'Dwelling size and mix (applies to R30-R60 only)'; R10-R25 apartments have no floor-area minimum, as now. Table 2.1a (table-2.1a, reference only) is carried in the formula: the bathroom step (+5 m2) reproduces the 2x2 (72) and 3x2 (95) rows. Minimum excludes storerooms accessed external to the dwelling. verify: 4+ bedroom apartments are not in the table (read as the 3-bed row), and whether the +5 m2 'additional bathroom' applies to a studio or 1-bed with a second bathroom is not stated. The facts describe the apartment with the least margin over its own requirement (see FACTS-PROPOSED-part2.md)."
+}

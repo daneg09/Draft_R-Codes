@@ -1,0 +1,20 @@
+HARD (unflagged) mismatches:
+
+Flagged / informational:
+laneway_not_primary_m R100-SL: table says None; rules ['C3.3.1#laneway-r100sl'] give ['0.5']
+laneway_primary_m R100-SL: table says 0.5; rules ['C3.3.1#laneway-r100sl'] agree (row flagged verify)
+rear_setback_m R17.5: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R20: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R25: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R30: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R35: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R40: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R50: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R60: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R80: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R100: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R160: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R100-SL: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+boundary_wall_height_m R2: table says 3.5; no governing rule found
+boundary_wall_height_m R2.5: table says 3.5; no governing rule found
+boundary_wall_height_m R5: table says 3.5; no governing rule found

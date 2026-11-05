@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.6.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.6",
+  "element_title": "Public domain interface",
+  "title": "Level change between terraces, front gardens, ground floor and street: average under 1 m, at most 1.2 m",
+  "text": "Changes in level between private terraces, front gardens and the ground floor level of the building and the street level average less than 1m and do not exceed 1.2m.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "public_domain.ground_floor_level_difference_avg_m",
+    "public_domain.ground_floor_level_difference_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "public_domain.ground_floor_level_difference_avg_m",
+        "op": "<",
+        "value": 1.0
+      },
+      {
+        "type": "threshold",
+        "fact": "public_domain.ground_floor_level_difference_m",
+        "op": "<=",
+        "value": 1.2
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.6",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.6.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 39
+  },
+  "register_ref": "C4P2-094",
+  "verify": false,
+  "notes": "public_domain.ground_floor_level_difference_avg_m (proposed): average of the level differences to street level along the frontage; public_domain.ground_floor_level_difference_m read as the greatest such difference.",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

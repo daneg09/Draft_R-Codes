@@ -1,0 +1,83 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Deep soil area per medium tree: 36 m2, minimum dimension 3 m (Table 1.2b)",
+  "text": "Tree Canopy. C1.2.4 A minimum number of trees to be planted in accordance with Tables 1.2a and provided with the required deep soil area per tree in accordance with Table 1.2b. Table 1.2b Tree size and deep soil area. Medium: canopy at maturity 6-9m; tree height at maturity 8-12m; minimum deep soil area 36m2; minimum deep soil area dimension 3m. Refer to Figure 1.2c for the provision of deep soil area for tree provisions.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "landscape.trees.medium_count",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "landscape.trees.medium_count",
+    "landscape.deep_soil.medium_min_m2",
+    "landscape.deep_soil.medium_min_dim_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "landscape.deep_soil.medium_min_m2",
+        "op": ">=",
+        "value": 36
+      },
+      {
+        "type": "threshold",
+        "fact": "landscape.deep_soil.medium_min_dim_m",
+        "op": ">=",
+        "value": 3
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.2",
+  "defined_terms": [
+    "deep soil area",
+    "medium tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.2b",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.2",
+      "relation": "tightened",
+      "note": "2 m x 2 m planting area -> Table 1.2b deep soil"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 10,
+    "table": "Table 1.2b",
+    "figure": "Figure 1.2c"
+  },
+  "register_ref": "C4P1-011",
+  "verify": false,
+  "notes": "from: ch3 C1.2.4-r2. diverges: Table 1.2b here has small, medium and large rows, so deep soil is tested per tree size with proposed facts landscape.deep_soil.medium_* (the smallest deep soil area and dimension provided to any medium tree); medium row is not in Chapter 3. Applies where a medium tree is provided (rule condition). Figure 1.2c.",
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

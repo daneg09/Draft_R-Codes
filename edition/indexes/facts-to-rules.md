@@ -1,0 +1,419 @@
+# Facts to rules
+
+Fact name, type and meaning (from the chapter FACTS.md), then the rules that need it, grouped by chapter. JSON form: `facts-to-rules.json`.
+
+- `adaptive_reuse.applies` (bool): the proposal adapts an existing building with new additions (A4.13.1, A4.13.2). Rules: ch4p2: A4.13.1, A4.13.2
+- `adaptive_reuse.heritage_value` (bool): the existing building being adapted has heritage value (local planning framework, Heritage Act 2018 or Commonwealth listing); scopes A4.13.1. Rules: ch4p2: A4.13.1
+- `adjoining.all_coded_r100_sl` (bool): every adjoining property is coded R100-SL (Table 2.10a footnote 1). Rules: ch2: C3.4.4#height-r100sl; ch3: C3.4.4#height-r100sl
+- `adjoining.diagonal.r_code` (code): diagonally adjacent lot receiving shadow. Rules: ch2: C3.9.1-diagonal; ch3: C3.9.1-diagonal; ch4p1: C3.8.1-diagonal
+- `adjoining.north_shared_boundary_count` (int): number of lots sharing the northern boundary (C3.9.4). Rules: ch2: C3.9.4; ch3: C3.9.4; ch4p1: C3.8.3; ch4p2: A3.2.3-r1
+- `adjoining.r_code` (code): R-coding of the adjoining property on the boundary the building faces, absent for uncoded land (Table 2.7: 9 m to R60 or below, 6 m to R80 or above; key of table-2.7-adjoining). Rules: ch4p2: A2.7.1-r1
+- `adjoining.solar_collectors_r40_or_lower` (bool): an adjoining site coded R40 or less has existing solar collectors (A3.2.4 trigger). Rules: ch4p2: A3.2.4
+- `adjoining.south.battleaxe` (bool): the adjoining southern lot is a battleaxe lot (C3.9.3(ii)). Rules: ch2: C3.9.3; ch3: C3.9.3; ch4p1: C3.8.2
+- `adjoining.south.frontage_m` (number). Rules: ch2: C3.9.3; ch3: C3.9.3; ch4p1: C3.8.1, C3.8.2
+- `adjoining.south.r_code` (code): coding of the lot that receives the shadow. Rules: ch2: C3.9.1, C3.9.3; ch3: C3.9.1, C3.9.3; ch4p1: C3.8.1, C3.8.2
+- `adjoining.vacant_or_unknown` (bool): adjoining site vacant or dwelling layout unknown (C3.10.4). Rules: ch2: C3.10.1-r1, C3.10.1-r2, C3.10.1-r3, C3.10.2, C3.10.3, C3.10.4-r1, C3.10.4-r2, C3.10.4-r3; ch3: C3.10.1-r1, C3.10.1-r2, C3.10.1-r3, C3.10.2, C3.10.3, C3.10.5-r1, C3.10.5-r2, C3.10.5-r3; ch4p1: C3.9.1-r1, C3.9.1-r2, C3.9.1-r3, C3.9.2, C3.9.3, C3.9.5-r1, C3.9.5-r2, C3.9.5-r3; ch4p2: A3.5.1-r1, A3.5.1-r2, A3.5.1-r3, A3.5.1-r4, A3.5.2-r1, A3.5.2-r2, A3.5.2-r3
+- `ancillary.count` (int): ancillary dwellings on the site. Rules: ch2: C2.8.1; ch3: C2.8.1; ch4p1: C2.8.1
+- `ancillary.dual_key` (bool): every ancillary dwelling is a dual key dwelling (Table 2.8a, dual key only). Rules: ch4p1: C2.8.1
+- `ancillary.internal_floor_area_m2` (number). Rules: ch2: C2.8.1; ch3: C2.8.1; ch4p1: C2.8.1
+- `ancillary.on_same_site_as_small_dwelling` (bool). Rules: ch2: C2.8.1; ch3: C2.8.1
+- `building.boundary_structure.length_m` (number): carport, patio, verandah on the boundary (Table 3.4b). Rules: ch2: C3.4.3; ch3: C3.4.3; ch4p1: C3.4.3
+- `building.boundary_structure.post_height_m` (number). Rules: ch2: C3.4.3; ch3: C3.4.3; ch4p1: C3.4.3
+- `building.boundary_structure.post_size_mm` (number): largest horizontal dimension of pillars or posts. Rules: ch2: C3.4.3; ch3: C3.4.3; ch4p1: C3.4.3
+- `building.boundary_structure.present` (bool): a carport, patio, verandah or equivalent is built up to a lot boundary (C3.4.3). Rules: ch2: C3.4.3; ch3: C3.4.3; ch4p1: C3.4.3
+- `building.boundary_structure.ridge_height_m` (number). Rules: ch2: C3.4.3; ch3: C3.4.3; ch4p1: C3.4.3
+- `building.boundary_wall_length_pct` (number): boundary wall length as % of the boundary (Table 2.1 note 4, two-thirds). Rules: ch4p2: A2.4.1-r3
+- `building.boundary_wall_storeys` (int): height of walls built to a side boundary, in storeys (Table 2.1). Rules: ch4p2: A2.4.1-r2
+- `building.boundary_walls.adjoining_wall_exists` (bool): abuts an existing or simultaneously built wall of similar or greater size (C3.4.5). Rules: ch2: C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50, C3.4.4#length-r50-wide; ch3: C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50, C3.4.4#length-r50-wide; ch4p1: C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50, C3.4.4#length-r50-wide; ch4p2: A2.4.1-r2, A2.4.1-r3
+- `building.boundary_walls.behind_street_setback` (bool). Rules: ch2: C3.4.4(i); ch3: C3.4.4(i); ch4p1: C3.4.4(i)
+- `building.boundary_walls.beyond_14m_setback_length_m` (number): R50+: length of that set-back portion. Rules: ch2: C3.4.4#length-r50; ch3: C3.4.4#length-r50; ch4p1: C3.4.4#length-r50
+- `building.boundary_walls.beyond_14m_setback_m` (number): R50+: setback of the portion beyond 14 m. Rules: ch2: C3.4.4#length-r50; ch3: C3.4.4#length-r50; ch4p1: C3.4.4#length-r50
+- `building.boundary_walls.count` (int): number of lot boundaries with boundary walls. Rules: ch2: C3.4.4#count-r10-r17.5, C3.4.4#count-r20-r25, C3.4.4#count-r30-r40-narrow, C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#height-r100sl, C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50, C3.4.4#length-r50-wide, C3.4.4(i); ch3: C3.4.4#count-r10-r17.5, C3.4.4#count-r20-r25, C3.4.4#count-r30-r40-narrow, C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#height-r100sl, C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50, C3.4.4#length-r50-wide, C3.4.4(i); ch4p1: C3.4.4#count-r10-r17.5, C3.4.4#count-r20-r25, C3.4.4#count-r30-r40-narrow, C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50, C3.4.4#length-r50-wide, C3.4.4(i)
+- `building.boundary_walls.excl_adjoining_pos_pct` (number): as above excluding portions abutting adjoining POS (narrow lots, Table 3.4c). Rules: ch2: C3.4.4#length-r30-r40-narrow; ch3: C3.4.4#length-r30-r40-narrow; ch4p1: C3.4.4#length-r30-r40-narrow
+- `building.boundary_walls.max_height_m` (number): includes any retaining wall beneath (C3.4.5). Rules: ch2: C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#height-r100sl; ch3: C3.4.4#height-r10-r40, C3.4.4#height-r50, C3.4.4#height-r100sl; ch4p1: C3.4.4#height-r10-r40, C3.4.4#height-r50
+- `building.boundary_walls.max_length_m` (number): longest boundary wall. Rules: ch2: C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r50; ch3: C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r50; ch4p1: C3.4.4#length-r10-r17.5, C3.4.4#length-r20-r25, C3.4.4#length-r50
+- `building.boundary_walls.max_pct_of_boundary` (number): longest wall as % of the boundary it abuts. Rules: ch2: C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r50-wide; ch3: C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r50-wide; ch4p1: C3.4.4#length-r20-r25, C3.4.4#length-r30-r40, C3.4.4#length-r50-wide
+- `building.communal_street_setback_m` (number): setback of a dwelling to a communal street or battleaxe leg. Rules: ch3: C3.3.1#communal-street; ch4p1: C3.3.1#communal-street
+- `building.courtyard_area_m2` (number). Rules: ch2: C2.2.1; ch3: C2.2.1; ch4p1: C2.2.1
+- `building.courtyard_daylight_only` (bool): a courtyard is the sole daylight source to a habitable room (C2.2.1). Rules: ch2: C2.2.1; ch3: C2.2.1; ch4p1: C2.2.1
+- `building.courtyard_open_to_sky` (bool): the courtyard is uncovered and open to the sky, minor projections excluded (C2.2.1). Rules: ch2: C2.2.1; ch3: C2.2.1; ch4p1: C2.2.1
+- `building.depth_m` (number): building depth (A2.6.1). Rules: ch4p2: A2.6.1
+- `building.entrance_identifiable_from_street` (bool). Rules: ch2: C3.6.1; ch3: C3.6.1
+- `building.faces_public_realm` (bool): buildings on the street or public realm frontage are oriented to face it (A3.2.1). Rules: ch4p2: A3.2.1
+- `building.front_fence.height_m` (number): fence or wall in the primary street setback area. Rules: ch2: C3.6.5(i), C3.6.5(i)-R100-SL; ch3: C3.6.5(i), C3.6.5(i)-R100-SL; ch4p1: C3.6.5(i)
+- `building.front_fence.permeable_above_m` (number): height above which it is visually permeable. Rules: ch2: C3.6.5(ii); ch3: C3.6.5(ii); ch4p1: C3.6.5(ii); ch4p2: A3.6.6
+- `building.front_fence.pillar_height_m` (number). Rules: ch2: C3.6.6-r1; ch3: C3.6.6-r1; ch4p1: C3.6.6-r1
+- `building.front_fence.pillar_size_mm` (number). Rules: ch2: C3.6.6-r2; ch3: C3.6.6-r2; ch4p1: C3.6.6-r2
+- `building.front_fence.pillars_present` (bool): the fence includes solid pillars (C3.6.6). Rules: ch2: C3.6.6-r1, C3.6.6-r2; ch3: C3.6.6-r1, C3.6.6-r2; ch4p1: C3.6.6-r1, C3.6.6-r2
+- `building.front_fence.present` (bool): a street wall or fence is provided in the primary street setback area (C3.6.5). Rules: ch2: C3.6.5(i), C3.6.5(i)-R100-SL, C3.6.5(ii), C3.6.6-r1, C3.6.6-r2; ch3: C3.6.5(i), C3.6.5(i)-R100-SL, C3.6.5(ii), C3.6.6-r1, C3.6.6-r2; ch4p1: C3.6.5(i), C3.6.5(ii), C3.6.6-r1, C3.6.6-r2; ch4p2: A3.6.6
+- `building.front_fence.visually_permeable` (bool): street walls and fences in the primary street setback area are visually permeable per C3.6.5 and C3.6.6, or there are none (C1.1.2, C1.1.5). Rules: ch2: C1.1.1-r3, C1.1.2, C1.1.3-r3, C1.1.5; ch3: C1.1.1-r3, C1.1.2, C1.1.3-r3, C1.1.5
+- `building.fronts_street_or_row` (bool): dwelling fronts a primary street, secondary street or public right-of-way (C2.10.1(i)). Rules: ch2: C2.10.1(i); ch3: C2.10.1(i)
+- `building.ground_floor_apartments_separate_entry` (bool): C3.6.2. Rules: ch4p1: C3.6.2
+- `building.ground_floor_commercial` (bool): commercial use at ground floor (Table 2.1 note 1: nil street setback). Rules: ch4p2: A2.3.1
+- `building.has_walls_3_6_to_7m` (bool): the building has walls 3.6 m to 7 m high facing a side boundary; condition for the C3.4.1 3.6-to-7m band rules. Rules: ch2: C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r50; ch3: C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r30-r40, C3.4.1#side-3.6-to-7m-r50; ch4p1: C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r30-r60
+- `building.has_walls_over_7_1m` (bool): the building has walls 7.1 m high or more facing a side boundary; condition for the C3.4.1 over-7.1m band rules. Rules: ch2: C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r50; ch3: C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r30-r40, C3.4.1#side-over-7.1m-r50; ch4p1: C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r30-r60
+- `building.has_walls_to_3_5m` (bool): the building has walls up to 3.5 m high facing a side boundary; condition for the C3.4.1 to-3.5m side setback band rules. Rules: ch2: C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r50; ch3: C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r30-r40, C3.4.1#side-to-3.5m-r50; ch4p1: C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r30-r60
+- `building.height_m` (number): building height in metres (Table 2.2 relative height). Rules: ch4p2: A2.2.1-r1
+- `building.height_storeys` (int): storeys above natural ground level (Table 2.1, Table 2.2). Rules: ch4p2: A2.2.1, A4.2.2(c)
+- `building.internal_boundary_treated_as_lot_boundary` (bool): C3.4.6. Rules: ch3: C3.4.6
+- `building.major_opening_to_frontage` (bool). Rules: ch2: C3.6.1; ch3: C3.6.1
+- `building.max_wall_height_m` (number): highest wall (for the single-storey overshadowing exemption). Rules: ch2: C3.9.1, C3.9.1-diagonal; ch3: C3.9.1, C3.9.1-diagonal
+- `building.plot_ratio` (number): gross floor area divided by site area (A2.5.1). Rules: ch4p2: A2.5.1
+- `building.porch_projection_m` (number): depth of porch, verandah or unenclosed balcony into the setback (C3.3.2(ii)). Rules: ch2: C3.3.2(ii); ch3: C3.3.2(ii); ch4p1: C3.3.2(ii)
+- `building.porch_street_setback_m` (number): absolute setback of a porch, balcony, verandah or equivalent to the street boundary (C3.3.2(iii)). Rules: ch2: C3.3.2(iii)#r1; ch3: C3.3.2(iii)#r1; ch4p1: C3.3.2(iii)#r1
+- `building.primary_living_direct_access_to_pga` (bool): C2.1.1(i). Rules: ch2: C2.1.1(i); ch3: C2.1.1(i)
+- `building.primary_living_direct_access_to_upper_pos` (bool): upper-floor primary living space has direct physical and visual access to the balcony, rooftop terrace or public open space (C2.1.1(ii)). Rules: ch2: C2.1.1(ii); ch3: C2.1.1(ii)
+- `building.primary_living_major_opening_orientation` (enum): NW, N, NE, E, other (C2.2.2). Rules: ch2: C2.2.2; ch3: C2.2.2
+- `building.primary_living_uncovered_area_m2` (number): uncovered area adjoining that opening. Rules: ch2: C2.2.2; ch3: C2.2.2
+- `building.primary_living_uncovered_min_dim_m` (number). Rules: ch2: C2.2.2; ch3: C2.2.2
+- `building.primary_street_projection_m` (number): depth of minor projections into the setback (eaves, chimneys, hoods). Rules: ch2: C3.3.1#r1; ch3: C3.3.1#r1; ch4p1: C3.3.1#r1
+- `building.primary_street_reduced_portion_width_m` (number): width of frontage built forward. Rules: ch2: C3.3.2(i), C3.3.2(i)#r1; ch3: C3.3.2(i), C3.3.2(i)#r1; ch4p1: C3.3.2(i), C3.3.2(i)#r1
+- `building.primary_street_setback_m` (number): minimum setback of the dwelling to the primary street boundary. Rules: ch2: C1.2.3, C1.2.3-r1, C3.3.1, C3.3.1#primary-r100sl, C3.3.2(iii); ch3: C1.2.4, C1.2.4-r1, C3.3.1, C3.3.1#primary-r100sl, C3.3.2(iii); ch4p1: C3.3.1, C3.3.2(iii)
+- `building.primary_street_setback_reduced_portion_m` (number): setback of the portion built forward under C3.3.2(i). Rules: ch2: C3.3.2(i); ch3: C3.3.2(i); ch4p1: C3.3.2(i)
+- `building.rear_setback_m` (number). Rules: ch2: C3.4.1#rear, C3.4.1#rear-r17.5; ch3: C3.4.1#rear, C3.4.1#rear-r17.5; ch4p1: C3.4.1#rear, C3.4.1#rear-r17.5; ch4p2: A2.4.1-r1
+- `building.roofed_area_m2` (number): site cover area per the A1 definition (all buildings and roofed structures; excludes eaves, pergolas, uncovered driveways). Rules: ch2: C3.1.1; ch3: C3.1.1; ch4p1: C3.1.1
+- `building.row_setback_m` (number): setback to laneway or right-of-way. Rules: ch2: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.1#laneway-r100sl; ch3: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.1#laneway-r100sl; ch4p1: C3.3.1#laneway, C3.3.1#laneway-primary
+- `building.same_lot_separation_applies` (bool): the lot holds more than one building, or a building has portions that face each other (C3.4.6 condition). Rules: ch4p1: C3.4.6; ch4p2: A2.7.1
+- `building.secondary_street_setback_m` (number). Rules: ch2: C3.3.1#secondary, C3.3.1#secondary-r100sl; ch3: C3.3.1#secondary, C3.3.1#secondary-r100sl; ch4p1: C3.3.1#secondary
+- `building.separation_same_lot_m` (number): separation between buildings on the same lot (C3.4.6). Rules: ch4p1: C3.4.6
+- `building.separation_same_lot_wall_height_m` (number): height of the taller of the facing walls between buildings, or facing portions of a building, on the same lot (C3.4.6, table-3.4a-separation). Rules: ch4p1: C3.4.6
+- `building.separation_storeys` (int): storey band of the facing walls for Table 2.7. Rules: ch4p2: A2.7.1, A2.7.1-r1
+- `building.separation_to_boundary_m` (number): separation to the adjoining property boundary (Table 2.7). Rules: ch4p2: A2.7.1-r1
+- `building.separation_within_site_m` (number): separation between buildings or wings within the site (Table 2.7). Rules: ch4p2: A2.7.1
+- `building.side_projection_m` (number): minor projections into side setbacks. Rules: ch2: C3.4.1(i); ch3: C3.4.1(i); ch4p1: C3.4.1(i)
+- `building.side_setback_m` (number): minimum side setback (A2.4.1). Rules: ch4p2: A2.4.1
+- `building.side_setback_walls_3_6_to_7m_m` (number): minimum side setback of walls 3.6 to 7 m. Rules: ch2: C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r50; ch3: C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r30-r40, C3.4.1#side-3.6-to-7m-r50; ch4p1: C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r30-r60
+- `building.side_setback_walls_over_7_1m_m` (number): minimum side setback of walls above 7.1 m. Rules: ch2: C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r50; ch3: C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r30-r40, C3.4.1#side-over-7.1m-r50; ch4p1: C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r30-r60
+- `building.side_setback_walls_to_3_5m_m` (number): minimum side setback of walls up to 3.5 m high. Rules: ch2: C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r50; ch3: C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r30-r40, C3.4.1#side-to-3.5m-r50; ch4p1: C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r30-r60
+- `building.single_aspect_central_corridor` (bool): the development comprises single-aspect apartments on each side of a central circulation corridor (A2.6.1 sets the 20 m limit only for this layout). Rules: ch4p2: A2.6.1
+- `building.storage.area_m2` (number): Table 2.1b storage. Rules: ch2: C2.1.2; ch3: C2.1.2
+- `building.storage.behind_street_setback` (bool). Rules: ch2: C2.1.2; ch3: C2.1.2
+- `building.storage.height_m` (number). Rules: ch2: C2.1.2; ch3: C2.1.2
+- `building.storage.min_dim_m` (number). Rules: ch2: C2.1.2; ch3: C2.1.2
+- `building.storeys` (int). Rules: ch2: C3.9.1, C3.9.1-diagonal; ch3: C3.9.1, C3.9.1-diagonal; ch4p1: C3.6.1, C3.6.1-r1; ch4p2: A3.6.3, A4.10.2
+- `building.street_setback_m` (number): minimum setback to the primary or secondary street (A2.3.1). Rules: ch4p2: A2.3.1, A4.10.5, A4.10.5-r1
+- `building.total_height_m` (number): maximum total building height above NGL. Rules: ch2: C3.2.1#height; ch3: C3.2.1#height; ch4p1: C3.2.1#height
+- `building.upper_level_outlook_to_pos` (bool): upper-level balcony or habitable-room window overlooking adjoining POS (C3.6.2). Rules: ch2: C3.6.2; ch3: C3.6.2; ch4p1: C3.6.1-r1
+- `building.upper_level_overlook_street` (bool): upper-level balcony or window overlooks the street (C3.6.1). Rules: ch4p1: C3.6.1; ch4p2: A3.6.3
+- `building.upper_pos.area_m2` (number): balcony or rooftop terrace serving an upper-floor primary living space (Table 2.1a). Rules: ch2: C2.1.1(ii); ch3: C2.1.1(ii)
+- `building.upper_pos.min_dim_m` (number). Rules: ch2: C2.1.1(ii); ch3: C2.1.1(ii)
+- `building.upper_storey_wall_has_3x3_separation` (bool): 3 m x 3 m separation instead (C3.4.2). Rules: ch2: C3.4.2; ch3: C3.4.2; ch4p1: C3.4.2
+- `building.upper_storey_wall_max_length_m` (number): longest second or third storey wall including balconies (C3.4.2). Rules: ch2: C3.4.2; ch3: C3.4.2; ch4p1: C3.4.2
+- `building.upper_storey_wall_over_14m_setback_m` (number): setback of the portion beyond 14 m. Rules: ch2: C3.4.2; ch3: C3.4.2; ch4p1: C3.4.2
+- `circulation.corridor_width_m` (number): A4.5.x. Rules: ch4p2: A4.5.1
+- `dwellings.balconies_10th_storey_high_low_vents` (bool): balconies of dwellings on the 10th storey and above have high and low level ventilation openings (A4.2.2(c)). Rules: ch4p2: A4.2.2(c)
+- `dwellings.balconies_provided` (bool): any apartment has a balcony (C1.1.2 condition). Rules: ch4p1: C1.1.2; ch4p2: A3.5.3
+- `dwellings.bedroom_living_openings_onto_circulation` (bool): any bedroom window or major opening to a living room opens directly onto circulation or common space (A4.5.5). Rules: ch4p2: A4.5.5
+- `dwellings.cross_through_end_openings_only_present` (bool): the proposal has cross-over or cross-through apartments with openings at either end and none on side walls (condition of A4.2.3). Rules: ch4p2: A4.2.3
+- `dwellings.cross_ventilated_pct` (number): share of dwellings in the first nine storeys naturally cross-ventilated (A4.2.2, 60%). Rules: ch4p2: A4.2.2(a)
+- `dwellings.ground_floor_fronting_count` (int): ground floor dwellings fronting a street or public open space (A3.6.1 trigger). Rules: ch4p2: A3.6.1
+- `dwellings.ground_floor_fronting_direct_access_pct` (number): share of those with direct access from the street or POS via their own terrace, balcony or courtyard (A3.6.1, majority). Rules: ch4p2: A3.6.1
+- `dwellings.ground_floor_openings_to_car_park` (bool): C2.1.10. Rules: ch4p1: C2.1.10
+- `dwellings.habitable_rooms_external_window_visible` (bool): every habitable room has at least one window in an external wall, visible from all parts of the room (A4.1.2). Rules: ch4p2: A4.1.2
+- `dwellings.lightwell_primary_fresh_air` (bool): any habitable room relies on a lightwell as its primary source of fresh air (A4.2.4). Rules: ch4p2: A4.2.4
+- `dwellings.lightwell_skylight_primary_daylight` (bool): any habitable room takes its primary daylight from a lightwell or skylight (A4.1.3). Rules: ch4p2: A4.1.3
+- `dwellings.max.cross_through_depth_m` (number): depth of the deepest such apartment (A4.2.3, 20 m). Rules: ch4p2: A4.2.3
+- `dwellings.max.single_aspect_living_depth_ratio` (number): depth of a single-aspect living space divided by ceiling height (C2.1.3, max 3). Rules: ch4p1: C2.1.3
+- `dwellings.max.single_aspect_open_plan_length_m` (number): length of the least compliant single aspect open plan living area, measured from the window (A4.3.4). Rules: ch4p2: A4.3.4
+- `dwellings.max.single_aspect_room_depth_ratio` (number): deepest room of those apartments divided by its ceiling height (A4.2.2(b), max 3). Rules: ch4p2: A4.2.2(b)
+- `dwellings.max_same_bedroom_count_pct` (number): share of dwellings with the same bedroom count (C2.1.7, 80%). Rules: ch4p1: C2.1.7; ch4p2: A4.8.1(b)
+- `dwellings.min.balcony_unscreened_perimeter_pct` (number): lowest % of balcony perimeter unscreened (C1.1.2). Rules: ch4p1: C1.1.2; ch4p2: A3.5.3
+- `dwellings.min.bathrooms_of_smallest` (int): bathrooms in the apartment tested for C2.1.6 (Table 2.1a 1-bath / 2-bath rows; +5 m2 per additional bathroom). Rules: ch4p1: C2.1.6; ch4p2: A4.3.1
+- `dwellings.min.bedroom_area_m2` (number): C2.1.4 (9 m2). Rules: ch4p1: C2.1.4; ch4p2: A4.3.2-r1
+- `dwellings.min.bedroom_min_dim_m` (number): C2.1.4 (2.7 m). Rules: ch4p1: C2.1.4; ch4p2: A4.3.2-r1
+- `dwellings.min.bedrooms_of_smallest` (int): bedroom count of that apartment. Rules: ch4p1: C2.1.6; ch4p2: A4.3.1
+- `dwellings.min.ceiling_height_habitable_m` (number): C2.1.5 (2.65 m). Rules: ch4p1: C2.1.5; ch4p2: A4.3.3
+- `dwellings.min.ceiling_height_non_habitable_m` (number): C2.1.5 (2.4 m). Rules: ch4p1: C2.1.5; ch4p2: A4.3.3
+- `dwellings.min.ground_floor_opening_to_car_park_setback_m` (number): least setback of a major opening of a ground-floor apartment facing directly onto car parking or a non-residential component (C2.1.10, 3 m). Rules: ch4p1: C2.1.10
+- `dwellings.min.habitable_window_clear_glazing_pct` (number): lowest share of that glazing that is clear glazing (A4.1.2, 50%). Rules: ch4p2: A4.1.2
+- `dwellings.min.habitable_window_glazing_pct` (number): lowest glazed area of any habitable room's windows as % of that room's internal floor area (A4.1.2, 10%). Rules: ch4p2: A4.1.2
+- `dwellings.min.internal_floor_area_m2` (number): smallest apartment against Table 2.1a by bedroom count. Rules: ch4p1: C2.1.6; ch4p2: A4.3.1
+- `dwellings.min.living_room_bedrooms` (int): bedroom count of the apartment whose living room has the least margin over Table 4.3b (key for table-4.3b; 0 = studio). Rules: ch4p2: A4.3.2-r2
+- `dwellings.min.master_bedroom_area_m2` (number): smallest master bedroom, excluding robes (A4.3.2, 10 m2). Rules: ch4p2: A4.3.2
+- `dwellings.min.master_bedroom_min_dim_m` (number): least master bedroom dimension, excluding robes (A4.3.2, 3 m). Rules: ch4p2: A4.3.2
+- `dwellings.min.nathers_margin_stars` (number): smallest margin, in NatHERS stars, by which any dwelling exceeds the NCC per-dwelling (lower) benchmark (A4.15.1(b), footnote 1). Rules: ch4p2: A4.15.1
+- `dwellings.min.noise_source_to_bedroom_window_m` (number): C2.1.11 (3 m). Rules: ch4p1: C2.1.11; ch4p2: A4.7.2
+- `dwellings.min.noise_source_to_habitable_wall_m` (number): C2.1.11 (1 m). Rules: ch4p1: C2.1.11
+- `dwellings.min.opening_centre_separation_m` (number): least straight-line distance between the centres of the openings on two walls of a habitable room (A4.2.1, 2 m). Rules: ch4p2: A4.2.1
+- `dwellings.min.openings_two_walls` (bool): every habitable room has openings on at least two walls (A4.2.1). Rules: ch4p2: A4.2.1
+- `dwellings.min.pos_area_m2` (number): smallest private open space (balcony, terrace or courtyard) of any apartment (Table 1.1a). Rules: ch4p1: C1.1.1, C1.1.1-r2; ch4p2: A4.4.1
+- `dwellings.min.pos_dwelling_category` (studio_1bed / 2bed / 3bed_plus / ground_floor): Table 1.1a size category of the apartment that dwellings.min.pos_area_m2 and pos_min_dim_m describe; a ground floor dwelling is ground_floor whatever its bedrooms (C1.1.1 to C1.1.1-r3). Rules: ch4p1: C1.1.1, C1.1.1-r1, C1.1.1-r2, C1.1.1-r3; ch4p2: A4.4.1
+- `dwellings.min.pos_min_dim_m` (number). Rules: ch4p1: C1.1.1-r1, C1.1.1-r3; ch4p2: A4.4.1
+- `dwellings.min.primary_living_min_dim_m` (number): smallest primary living space dimension (C2.1.1, 3.8 m). Rules: ch4p1: C2.1.1; ch4p2: A4.3.2-r2
+- `dwellings.min.separate_toilets_of_smallest` (int): additional separate toilets in that apartment (+3 m2 each, Table 2.1a note); 0 where none. Rules: ch4p1: C2.1.6; ch4p2: A4.3.1
+- `dwellings.min.storage_area_m2` (number): Table 2.1b. Rules: ch4p1: C2.1.8; ch4p2: A4.6.1
+- `dwellings.min.storage_bedrooms` (int): bedroom count of the apartment with the least compliant storage; key for Table 2.1b. Rules: ch4p1: C2.1.8; ch4p2: A4.6.1
+- `dwellings.min.storage_circulation_m` (number): adjacent circulation where dimension reduced to 1 m (C2.1.9, 0.9 m). Rules: ch4p1: C2.1.8
+- `dwellings.min.storage_height_m` (number): lowest storage area height (Table 2.1b, 2.1 m). Rules: ch4p1: C2.1.8; ch4p2: A4.6.1
+- `dwellings.min.storage_min_dim_m` (number). Rules: ch4p1: C2.1.8; ch4p2: A4.6.1
+- `dwellings.mix_per_local_requirement` (bool): the dwelling mix accords with those objectives, proportions or targets (A4.8.1(a)). Rules: ch4p2: A4.8.1(a)
+- `dwellings.no_sun_pct` (number): share with no direct sun (C2.2.2, max 15%). Rules: ch4p1: C2.2.2; ch4p2: A4.1.1
+- `dwellings.noise_source_adjacent_habitable_wall` (bool): a listed noise source (garage door, driveway, service area, plant room, building services, mechanical equipment, active communal open space, refuse bins or similar) is adjacent to the external wall of a habitable room (A4.7.2). Rules: ch4p2: A4.7.2
+- `dwellings.platinum_level_pct` (number): % of dwellings designed to Livable Housing Design Guidelines Platinum Level (A4.9.1(b), 5%). Rules: ch4p2: A4.9.1
+- `dwellings.pos_accessed_from_habitable_room` (bool): every dwelling's private open space is accessed directly from a habitable room (A4.4.1). Rules: ch4p2: A4.4.1
+- `dwellings.primary_living_direct_access_to_pos` (bool): C2.1.2. Rules: ch4p1: C2.1.2
+- `dwellings.silver_level_pct` (number): % of dwellings designed to Livable Housing Design Guidelines Silver Level or better (A4.9.1(a)). Rules: ch4p2: A4.9.1
+- `dwellings.single_aspect_in_cross_ventilated_share` (bool): single aspect apartments are counted in the 60% of A4.2.2(a) (condition of A4.2.2(b)). Rules: ch4p2: A4.2.2(b)
+- `dwellings.single_aspect_kitchen_furthest` (bool): in that living area the kitchen is the furthest point from the window (A4.3.4 allowance). Rules: ch4p2: A4.3.4
+- `dwellings.single_aspect_open_plan_ceiling_height_m` (number): ceiling height of that same living area (A4.3.4). Rules: ch4p2: A4.3.4
+- `dwellings.single_aspect_open_plan_present` (bool): the proposal has a single aspect open plan living area (condition of A4.3.4). Rules: ch4p2: A4.3.4
+- `dwellings.single_aspect_openings_45_90_to_cooling_wind` (bool): every such apartment's ventilation openings are oriented 45 to 90 degrees to the prevailing cooling wind (A4.2.2(b)). Rules: ch4p2: A4.2.2(b)
+- `dwellings.storage_behind_street_setback` (bool): every apartment's storage is behind the primary street setback (C2.1.8). Rules: ch4p1: C2.1.8
+- `dwellings.storage_door_on_greater_dim_80pct_openable` (bool): where a storage dimension is under 1.5 m, the door is on the greater dimension and openable for at least 80% of its length (C2.1.9(ii)). Rules: ch4p1: C2.1.8
+- `dwellings.storage_opening_not_inward` (bool): every storage area is accessed via an opening that does not open inwards (C2.1.8). Rules: ch4p1: C2.1.8
+- `dwellings.storage_separate_ventilated_weatherproof` (bool): every dwelling's storage is for its exclusive use, separate, ventilated and weatherproof (A4.6.1). Rules: ch4p2: A4.6.1
+- `dwellings.with_2h_sun_pct` (number): share of dwellings with 2 hours of direct sun (C2.2.2, 70%). Rules: ch4p1: C2.2.2; ch4p2: A4.1.1
+- `energy.significant_initiative` (bool): at least one significant energy efficiency initiative exceeding minimum practice is proposed (DG 4.15.1 list or an evidenced alternative) (A4.15.1(a)). Rules: ch4p2: A4.15.1
+- `facade.entry_awnings_provided` (bool): awnings define and give weather protection to the building entries (A4.10.5, first limb). Rules: ch4p2: A4.10.5
+- `facade.signage_provided` (bool): signage is proposed on the building; scopes A4.10.6. Rules: ch4p2: A4.10.6
+- `landscape.cos.area_m2` (number): communal open space area (Table 1.3a). Rules: ch4p1: C1.2.3-r1, C1.3.1, C1.3.2, C1.3.3; ch4p2: A3.4.1, A3.4.2, A3.4.3, A3.4.4, A3.4.5, A3.4.6, A3.4.7
+- `landscape.cos.behind_street_setback` (bool): COS is behind the street setback (C1.3.1(i)). Rules: ch4p1: C1.3.1(i)
+- `landscape.cos.exclusive_to_residential` (bool): COS is for the exclusive use of residents; mixed use only (C1.3.1(iii)). Rules: ch4p1: C1.3.1(iii)
+- `landscape.cos.hard_landscape_area_m2` (number): Table 1.3a accessible/hard landscape area (2 m2 per dwelling up to 100 m2), included in the overall COS (C1.3.1-r1). Rules: ch4p1: C1.3.1-r1; ch4p2: A3.4.1-r1
+- `landscape.cos.in_common_property` (bool): COS is on common property (C1.3.1(i)). Rules: ch4p1: C1.3.1(i)
+- `landscape.cos.landscaped_and_lit` (bool): C1.2.3. Rules: ch4p1: C1.2.3-r1
+- `landscape.cos.max_roofed_pct` (number): highest share of any one COS area under a covered roof (C1.3.1-r3, 25% of each area). Rules: ch4p1: C1.3.1-r3
+- `landscape.cos.min_dim_m` (number). Rules: ch4p1: C1.3.1-r2; ch4p2: A3.4.1-r2
+- `landscape.cos.oriented_to_limit_impacts` (bool): C1.3.3. Rules: ch4p1: C1.3.3
+- `landscape.cos.separated_from_noise_odour` (bool): C1.3.2. Rules: ch4p1: C1.3.2; ch4p2: A3.4.5
+- `landscape.cos.solar_access_pct` (number): share of communal open space with direct sun (A3.4.3). Rules: ch4p2: A3.4.3
+- `landscape.cos.universally_accessible` (bool): C1.3.1(ii). Rules: ch4p1: C1.3.1(ii); ch4p2: A3.4.2
+- `landscape.deep_soil.large_min_dim_m` (number): smallest deep soil dimension given to any large tree (C1.2.4-r5). Rules: ch4p1: C1.2.4-r5; ch4p2: A3.3.5-r6
+- `landscape.deep_soil.large_min_m2` (number): smallest deep soil area given to any large tree (C1.2.4-r5). Rules: ch4p1: C1.2.4-r5; ch4p2: A3.3.5-r6
+- `landscape.deep_soil.medium_min_dim_m` (number): smallest deep soil dimension given to any medium tree (C1.2.4-r4). Rules: ch4p1: C1.2.4-r4; ch4p2: A3.3.5-r5
+- `landscape.deep_soil.medium_min_m2` (number): smallest deep soil area given to any medium tree (C1.2.4-r4). Rules: ch4p1: C1.2.4-r4; ch4p2: A3.3.5-r5
+- `landscape.deep_soil.rootable_soil_zone_provided` (bool): where a deep soil area is narrower than the Table 3.3b recommended width, an additional rootable soil zone at least 1 m deep and of the Table 3.3b width adjoins it (A3.3.5-r4 to -r6). Rules: ch4p2: A3.3.5-r4, A3.3.5-r5, A3.3.5-r6
+- `landscape.deep_soil.small_min_dim_m` (number): smallest deep soil dimension given to any small tree (C1.2.4-r3). Rules: ch4p1: C1.2.4-r3; ch4p2: A3.3.5-r4
+- `landscape.deep_soil.small_min_m2` (number): smallest deep soil area given to any small tree (Table 1.2b, C1.2.4-r3). Rules: ch4p1: C1.2.4-r3; ch4p2: A3.3.5-r4
+- `landscape.deep_soil_pct` (number): deep soil area as % of site (Table 3.3b). Rules: ch4p2: A3.3.4, A3.3.7
+- `landscape.deep_soil_permeable_paving_pct` (number): highest share of any deep soil area under permeable paving or decking (A3.3.6, 20%). Rules: ch4p2: A3.3.6
+- `landscape.existing_trees.qualifying_all_retained` (bool): every such tree is retained (A3.3.1). Rules: ch4p2: A3.3.1, A3.3.2
+- `landscape.existing_trees.qualifying_present` (bool): the site has an existing tree meeting the A3.3.1 criteria (healthy and viable, not a listed weed, and height 4 m and/or trunk 160 mm at 1 m and/or canopy 4 m). Rules: ch4p2: A3.3.1, A3.3.2
+- `landscape.existing_trees.removal_arboriculture_report` (bool): removal of any such tree is supported by an arboriculture report (A3.3.2). Rules: ch4p2: A3.3.1, A3.3.2
+- `landscape.landscaping_plan_provided` (bool): C1.2.8. Rules: ch3: C1.2.8; ch4p1: C1.2.8
+- `landscape.ola.area_m2` (number): outdoor living area (R2-R40). Rules: ch2: C1.1.1; ch3: C1.1.1
+- `landscape.ola.behind_street_setback` (bool). Rules: ch2: C1.1.1-r3; ch3: C1.1.1-r3
+- `landscape.ola.in_primary_street_setback` (bool): consolidated OLA in the front setback (C1.1.2). Rules: ch2: C1.1.1-r3, C1.1.2; ch3: C1.1.1-r3, C1.1.2
+- `landscape.ola.min_dim_m` (number). Rules: ch2: C1.1.1-r1; ch3: C1.1.1-r1
+- `landscape.ola.uncovered_pct` (number): % of the required OLA without permanent roof cover. Rules: ch2: C1.1.1-r2; ch3: C1.1.1-r2
+- `landscape.on_structure.ground_cover.min_soil_depth_m` (number): smallest soil depth, in metres, given to any planter of that type (all types). Rules: ch4p2: A4.12.3-r5
+- `landscape.on_structure.ground_cover.provided` (bool): plants of this Table 4.12 type are planted on a building structure (podium, terrace, wall, roof); `<type>` is large_tree, medium_tree, small_tree, small_ornamental, shrub, ground_cover, turf (A4.12.3 to A4.12.3-r6). Rules: ch4p2: A4.12.3-r5
+- `landscape.on_structure.large_tree.min_soil_area_m2` (number): smallest soil area given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3
+- `landscape.on_structure.large_tree.min_soil_depth_m` (number): smallest soil depth, in metres, given to any planter of that type (all types). Rules: ch4p2: A4.12.3
+- `landscape.on_structure.large_tree.min_soil_dim_m` (number): smallest soil area dimension given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3
+- `landscape.on_structure.large_tree.min_soil_volume_m3` (number): smallest soil volume given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3
+- `landscape.on_structure.large_tree.provided` (bool): plants of this Table 4.12 type are planted on a building structure (podium, terrace, wall, roof); `<type>` is large_tree, medium_tree, small_tree, small_ornamental, shrub, ground_cover, turf (A4.12.3 to A4.12.3-r6). Rules: ch4p2: A4.12.3
+- `landscape.on_structure.medium_tree.min_soil_area_m2` (number): smallest soil area given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r1
+- `landscape.on_structure.medium_tree.min_soil_depth_m` (number): smallest soil depth, in metres, given to any planter of that type (all types). Rules: ch4p2: A4.12.3-r1
+- `landscape.on_structure.medium_tree.min_soil_dim_m` (number): smallest soil area dimension given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r1
+- `landscape.on_structure.medium_tree.min_soil_volume_m3` (number): smallest soil volume given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r1
+- `landscape.on_structure.medium_tree.provided` (bool): plants of this Table 4.12 type are planted on a building structure (podium, terrace, wall, roof); `<type>` is large_tree, medium_tree, small_tree, small_ornamental, shrub, ground_cover, turf (A4.12.3 to A4.12.3-r6). Rules: ch4p2: A4.12.3-r1
+- `landscape.on_structure.shrub.min_soil_depth_m` (number): smallest soil depth, in metres, given to any planter of that type (all types). Rules: ch4p2: A4.12.3-r4
+- `landscape.on_structure.shrub.provided` (bool): plants of this Table 4.12 type are planted on a building structure (podium, terrace, wall, roof); `<type>` is large_tree, medium_tree, small_tree, small_ornamental, shrub, ground_cover, turf (A4.12.3 to A4.12.3-r6). Rules: ch4p2: A4.12.3-r4
+- `landscape.on_structure.small_ornamental.min_soil_area_m2` (number): smallest soil area given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r3
+- `landscape.on_structure.small_ornamental.min_soil_depth_m` (number): smallest soil depth, in metres, given to any planter of that type (all types). Rules: ch4p2: A4.12.3-r3
+- `landscape.on_structure.small_ornamental.min_soil_dim_m` (number): smallest soil area dimension given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r3
+- `landscape.on_structure.small_ornamental.min_soil_volume_m3` (number): smallest soil volume given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r3
+- `landscape.on_structure.small_ornamental.provided` (bool): plants of this Table 4.12 type are planted on a building structure (podium, terrace, wall, roof); `<type>` is large_tree, medium_tree, small_tree, small_ornamental, shrub, ground_cover, turf (A4.12.3 to A4.12.3-r6). Rules: ch4p2: A4.12.3-r3
+- `landscape.on_structure.small_tree.min_soil_area_m2` (number): smallest soil area given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r2
+- `landscape.on_structure.small_tree.min_soil_depth_m` (number): smallest soil depth, in metres, given to any planter of that type (all types). Rules: ch4p2: A4.12.3-r2
+- `landscape.on_structure.small_tree.min_soil_dim_m` (number): smallest soil area dimension given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r2
+- `landscape.on_structure.small_tree.min_soil_volume_m3` (number): smallest soil volume given to any planter of that type (trees and small ornamentals). Rules: ch4p2: A4.12.3-r2
+- `landscape.on_structure.small_tree.provided` (bool): plants of this Table 4.12 type are planted on a building structure (podium, terrace, wall, roof); `<type>` is large_tree, medium_tree, small_tree, small_ornamental, shrub, ground_cover, turf (A4.12.3 to A4.12.3-r6). Rules: ch4p2: A4.12.3-r2
+- `landscape.on_structure.turf.min_soil_depth_m` (number): smallest soil depth, in metres, given to any planter of that type (all types). Rules: ch4p2: A4.12.3-r6
+- `landscape.on_structure.turf.provided` (bool): plants of this Table 4.12 type are planted on a building structure (podium, terrace, wall, roof); `<type>` is large_tree, medium_tree, small_tree, small_ornamental, shrub, ground_cover, turf (A4.12.3 to A4.12.3-r6). Rules: ch4p2: A4.12.3-r6
+- `landscape.parking_shade_trees` (int): small shade trees planted to serve the uncovered at-grade parking, additional to the C1.2.4 trees (C1.2.5). Rules: ch3: C1.2.5; ch4p1: C1.2.5; ch4p2: A3.9.9
+- `landscape.pga.area_m2` (number): primary garden area (R50+). Rules: ch2: C1.1.3, C1.1.3-r100sl; ch3: C1.1.3, C1.1.3-r100sl
+- `landscape.pga.behind_street_setback` (bool). Rules: ch2: C1.1.3-r3; ch3: C1.1.3-r3
+- `landscape.pga.in_primary_street_setback` (bool): C1.1.5. Rules: ch2: C1.1.3-r3, C1.1.5; ch3: C1.1.3-r3, C1.1.5
+- `landscape.pga.min_dim_m` (number). Rules: ch2: C1.1.3-r1, C1.1.3-r100sl; ch3: C1.1.3-r1, C1.1.3-r100sl
+- `landscape.pga.roofed_pct` (number): % of PGA with permanent roof cover. Rules: ch2: C1.1.3-r2, C1.1.3-r100sl; ch3: C1.1.3-r2, C1.1.3-r100sl
+- `landscape.plan_provided` (bool): a landscape plan is provided (A4.12.1). Rules: ch4p2: A4.12.1
+- `landscape.planting_on_structure_m2` (number): area of planting on structure (A3.3.7). Rules: ch4p2: A3.3.7
+- `landscape.secondary_pos.area_m2` (number): C1.1.4 secondary private open space. Rules: ch2: C1.1.3; ch3: C1.1.3
+- `landscape.secondary_pos.extra_tree` (bool): additional small tree provided. Rules: ch2: C1.1.3; ch3: C1.1.3
+- `landscape.secondary_pos.min_dim_m` (number). Rules: ch2: C1.1.3; ch3: C1.1.3
+- `landscape.secondary_pos.outside_street_setback` (bool). Rules: ch2: C1.1.3; ch3: C1.1.3
+- `landscape.secondary_pos.uncovered` (bool). Rules: ch2: C1.1.3; ch3: C1.1.3
+- `landscape.soft_area_m2` (number): soft landscape area per the A1 definition. Rules: ch2: C1.2.1, C1.2.1-r100sl; ch3: C1.2.1, C1.2.1-r100sl; ch4p1: C1.2.1
+- `landscape.soft_min_dim_m` (number). Rules: ch2: C1.2.1-r1, C1.2.1-r100sl; ch3: C1.2.1-r1, C1.2.1-r100sl; ch4p1: C1.2.1-r1
+- `landscape.stormwater_retained_on_site` (bool): runoff from a small rainfall event retained on site (C1.3.1). Rules: ch2: C1.3.1; ch3: C1.3.1; ch4p1: C1.4.1; ch4p2: A4.16.2
+- `landscape.stormwater_to_system_required` (bool): decision-maker requires connection (C1.3.2). Rules: ch2: C1.3.1; ch3: C1.3.1; ch4p1: C1.4.1
+- `landscape.street_setback_area_m2` (number): area of the primary street setback area. Rules: ch2: C1.2.2; ch3: C1.2.2; ch4p1: C1.2.2
+- `landscape.street_setback_soft_area_m2` (number): soft landscape within it. Rules: ch2: C1.2.2; ch3: C1.2.2; ch4p1: C1.2.2
+- `landscape.tree_deep_soil_min_dim_m` (number). Rules: ch2: C1.2.3-r2; ch3: C1.2.4-r2
+- `landscape.tree_deep_soil_min_m2` (number): smallest deep soil area provided to any required tree. Rules: ch2: C1.2.3-r2; ch3: C1.2.4-r2
+- `landscape.trees.large_count` (int): large trees, counted as for small_count. Rules: ch4p1: C1.2.4, C1.2.4-r1, C1.2.4-r2, C1.2.4-r5; ch4p2: A3.3.5-r2, A3.3.5-r3, A3.3.5-r6
+- `landscape.trees.medium_count` (int): medium trees, counted as for small_count. Rules: ch4p1: C1.2.4, C1.2.4-r1, C1.2.4-r2, C1.2.4-r4; ch4p2: A3.3.5-r1, A3.3.5-r2, A3.3.5-r3, A3.3.5-r5
+- `landscape.trees.small_count` (int): small trees (Table 1.2b size) on the whole development lot, excluding C1.2.5 parking shade trees; a retained significant tree counts by its size (C1.2.4 to C1.2.4-r5, Table 1.2a). Rules: ch4p1: C1.2.4, C1.2.4-r1, C1.2.4-r2, C1.2.4-r3; ch4p2: A3.3.5-r4
+- `landscape.trees_elsewhere` (int): small trees elsewhere on the lot. Rules: ch2: C1.2.3-r1; ch3: C1.2.4-r1
+- `landscape.trees_in_street_setback` (int): small trees in the primary street setback area. Rules: ch2: C1.2.3, C1.2.3-r1; ch3: C1.2.4, C1.2.4-r1
+- `mixed_use.nonres_access_from_street_or_primary_entry` (bool): non-residential space is accessed via the street frontage and/or the primary entry (A4.14.3). Rules: ch4p2: A4.14.3
+- `noise.exceeds_ncc_minimum` (bool): dwellings exceed the NCC acoustic minimum, for example by an AAAC rating or equivalent, normally shown by an acoustic report (A4.7.1). Rules: ch4p2: A4.7.1
+- `outbuilding.in_street_setback_area` (bool): primary or secondary street setback area. Rules: ch2: C2.6.1; ch3: C2.6.1; ch4p1: C2.6.1
+- `outbuilding.matches_dwelling_materials` (bool): external wall and roof materials and colour match (C2.6.2). Rules: ch2: C2.6.1-r1; ch3: C2.6.1-r1; ch4p1: C2.6.1-r1
+- `outbuilding.present` (bool). Rules: ch2: C2.6.1, C2.6.1-r1; ch3: C2.6.1, C2.6.1-r1; ch4p1: C2.6.1, C2.6.1-r1
+- `outbuilding.ridge_height_m` (number). Rules: ch2: C2.6.1; ch3: C2.6.1; ch4p1: C2.6.1
+- `outbuilding.total_area_m2` (number): individual or collective area per site. Rules: ch2: C2.6.1; ch3: C2.6.1; ch4p1: C2.6.1
+- `outbuilding.wall_height_m` (number). Rules: ch2: C2.6.1-r1; ch3: C2.6.1-r1; ch4p1: C2.6.1-r1
+- `overshadow.adjoining_pct` (number): shadow cast on the adjoining property as % of its site area. Rules: ch2: C3.9.1; ch3: C3.9.1; ch4p1: C3.8.1; ch4p2: A3.2.3
+- `overshadow.adjoining_rear_half_pct` (number): shadow on the rear half of a narrow adjoining lot (Table 3.9b). Rules: ch2: C3.9.1, C3.9.3; ch3: C3.9.1, C3.9.3; ch4p1: C3.8.1, C3.8.2
+- `overshadow.diagonal_pct` (number): on the diagonally adjacent lot. Rules: ch2: C3.9.1-diagonal; ch3: C3.9.1-diagonal; ch4p1: C3.8.1-diagonal
+- `overshadow.proportional_to_shared_boundary` (bool): C3.9.4. Rules: ch2: C3.9.4; ch3: C3.9.4; ch4p1: C3.8.3; ch4p2: A3.2.3-r1
+- `overshadow.solar_collectors_affected` (bool): A3.2.4. Rules: ch4p2: A3.2.4
+- `parking.access.count` (int): vehicle access points to the lot. Rules: ch2: C3.7.2; ch3: C3.7.2; ch4p1: C3.7.2; ch4p2: A3.8.1
+- `parking.access.from_lowest_order_street` (bool): C3.7.1. Rules: ch2: C3.7.1; ch3: C3.7.1; ch4p1: C3.7.1
+- `parking.access.street_type` (enum): row, communal_street, secondary_street, primary_street. Rules: ch3: C3.7.9; ch4p1: C3.7.9
+- `parking.ancillary_garage_carport_spaces` (int): garage and carport spaces serving the ancillary dwelling (Tables 2.3a, 2.3b ancillary maximum). Rules: ch2: C2.3.1-r3, C2.3.3-r3; ch3: C2.3.1-r3, C2.3.5-r3
+- `parking.ancillary_spaces` (int): spaces for the ancillary dwelling. Rules: ch2: C2.3.1-r1, C2.3.3-r1; ch3: C2.3.1-r1, C2.3.5-r1
+- `parking.as2890_compliant` (bool): spaces and manoeuvring per AS2890.1. Rules: ch2: C2.3.2, C2.3.4; ch3: C2.3.2, C2.3.6; ch4p1: C2.3.2; ch4p2: A3.9.4
+- `parking.basement.present` (bool): the development has basement parking (A3.9.10 trigger). Rules: ch4p2: A3.9.10, A3.9.10-r1
+- `parking.basement.protrusion_m` (number): greatest height of the basement above natural ground level (A3.9.10, 1 m). Rules: ch4p2: A3.9.10
+- `parking.behind_street_setback` (bool): car parking is outside every street setback (A3.9.5). Rules: ch4p2: A3.9.5
+- `parking.bicycle_secure_undercover_path` (bool): resident bicycle parking is secure, undercover and reached by a continuous path of travel from the vehicle or cycle entry (A3.9.1-r2). Rules: ch4p2: A3.9.1-r2
+- `parking.bicycle_spaces` (int): C2.3.7. Rules: ch4p1: C2.3.7; ch4p2: A3.9.1, A3.9.1-r2
+- `parking.bicycle_spaces_visitor` (int). Rules: ch4p1: C2.3.7-r1; ch4p2: A3.9.1-r1
+- `parking.carport.free_of_walls_forward_of_setback` (bool). Rules: ch2: C3.3.4; ch3: C3.3.4; ch4p1: C3.3.4
+- `parking.carport.present` (bool). Rules: ch2: C3.3.4, C3.3.5#carport-row, C3.3.5#carport-secondary, C3.6.4; ch3: C3.3.4, C3.3.5#carport-row, C3.3.5#carport-secondary, C3.6.4; ch4p1: C3.3.4, C3.3.5#carport-row, C3.3.5#carport-secondary, C3.6.4
+- `parking.carport.setback_primary_m` (number). Rules: ch2: C3.3.4; ch3: C3.3.4; ch4p1: C3.3.4
+- `parking.carport.setback_row_m` (number): carport setback to a laneway or right-of-way. Rules: ch2: C3.3.5#carport-row; ch3: C3.3.5#carport-row; ch4p1: C3.3.5#carport-row
+- `parking.carport.setback_secondary_m` (number). Rules: ch2: C3.3.5#carport-secondary; ch3: C3.3.5#carport-secondary; ch4p1: C3.3.5#carport-secondary
+- `parking.carport.unobstructed_view_dwelling_to_street` (bool). Rules: ch2: C3.3.4; ch3: C3.3.4; ch4p1: C3.3.4
+- `parking.carport.width_m` (number): including supporting structures. Rules: ch2: C3.3.4, C3.6.4; ch3: C3.3.4, C3.6.4; ch4p1: C3.3.4, C3.6.4
+- `parking.driveway.aggregate_width_m` (number): aggregate at street boundary (R35 and below). Rules: ch2: C3.7.3(iii)
+- `parking.driveway.dwellings_served` (int): most dwellings served by any one driveway (C3.7.4(i), C3.7.5). Rules: ch3: C3.7.4, C3.7.5; ch4p1: C3.7.4, C3.7.5; ch4p2: A3.8.6
+- `parking.driveway.exit_forward_gear` (bool). Rules: ch2: C3.7.4; ch3: C3.7.4; ch4p1: C3.7.4
+- `parking.driveway.parking_to_street_m` (number): greatest distance from an on-site car parking space to the street along the driveway (A3.8.6 trigger, 15 m). Rules: ch4p2: A3.8.6
+- `parking.driveway.right_angle_to_carriageway` (bool). Rules: ch2: C3.7.3(v); ch3: C3.7.3(v); ch4p1: C3.7.3(v)
+- `parking.driveway.setback_to_corner_m` (number). Rules: ch2: C3.7.3(iv); ch3: C3.7.3(iv); ch4p1: C3.7.3(iv)
+- `parking.driveway.side_boundary_setback_m` (number): least clearance of any driveway to a side lot boundary or street pole (C3.7.3(iii)). Rules: ch3: C3.7.3(iii); ch4p1: C3.7.3(iii)
+- `parking.driveway.space_to_boundary_m` (number): distance from a car space to the street boundary (C3.7.4). Rules: ch2: C3.7.4; ch3: C3.7.4; ch4p1: C3.7.4
+- `parking.driveway.trafficable_and_drained` (bool). Rules: ch2: C3.7.3(vi); ch3: C3.7.3(vi); ch4p1: C3.7.3(vi)
+- `parking.driveway.two_way` (bool): the driveway is designed for two-way access (A3.8.6). Rules: ch4p2: A3.8.6
+- `parking.driveway.width_at_boundary_m` (number). Rules: ch2: C3.7.3(ii); ch3: C3.7.3(ii); ch4p1: C3.7.3(ii)
+- `parking.driveway.width_min_m` (number). Rules: ch2: C3.7.3(i); ch3: C3.7.3(i); ch4p1: C3.7.3(i)
+- `parking.garage.entrance_clearly_visible` (bool). Rules: ch2: C3.6.3; ch3: C3.6.3; ch4p1: C3.6.3
+- `parking.garage.ext_width_m` (number): garage door and supporting structure width at the setback line. Rules: ch2: C3.6.3; ch3: C3.6.3; ch4p1: C3.6.3
+- `parking.garage.parallel_parking` (bool). Rules: ch2: C3.3.3; ch3: C3.3.3; ch4p1: C3.3.3
+- `parking.garage.parallel_wall_openings` (int). Rules: ch2: C3.3.3; ch3: C3.3.3; ch4p1: C3.3.3
+- `parking.garage.present` (bool). Rules: ch2: C3.3.3, C3.3.3#r40-plus, C3.3.5#garage-row, C3.3.5#garage-secondary, C3.6.3; ch3: C3.3.3, C3.3.3#r40-plus, C3.3.5#garage-row, C3.3.5#garage-secondary, C3.6.3; ch4p1: C3.3.3, C3.3.3#r40-plus, C3.3.5#garage-row, C3.3.5#garage-secondary, C3.6.3
+- `parking.garage.setback_primary_m` (number): garage to the primary street boundary. Rules: ch2: C3.3.3, C3.3.3#r40-plus; ch3: C3.3.3, C3.3.3#r40-plus; ch4p1: C3.3.3, C3.3.3#r40-plus
+- `parking.garage.setback_row_m` (number). Rules: ch2: C3.3.5#garage-row; ch3: C3.3.5#garage-row; ch4p1: C3.3.5#garage-row
+- `parking.garage.setback_secondary_m` (number). Rules: ch2: C3.3.5#garage-secondary; ch3: C3.3.5#garage-secondary; ch4p1: C3.3.5#garage-secondary
+- `parking.garage.upper_floor_over_half_width` (bool): upper floor or balcony over more than half the garage width (C3.6.3). Rules: ch2: C3.6.3; ch3: C3.6.3; ch4p1: C3.6.3
+- `parking.garage_carport_spaces` (int): spaces within garages and carports. Rules: ch2: C2.3.1-r2, C2.3.3-r2; ch3: C2.3.1-r2, C2.3.5-r2
+- `parking.motorcycle_spaces` (int): C2.3.3. Rules: ch4p1: C2.3.3; ch4p2: A3.9.2-r2
+- `parking.outside_primary_street_setback` (bool): no car parking within the primary street setback (A3.6.2); parking.behind_street_setback is all street setbacks (A3.9.5). Rules: ch4p2: A3.6.2
+- `parking.path_of_travel_to_entries` (bool): C3.7.10. Rules: ch4p1: C3.7.10; ch4p2: A3.7.1
+- `parking.pedestrian_access_separate` (bool): pedestrian access separate from vehicle access (C3.7.10 to C3.7.12). Rules: ch3: C3.7.11(ii); ch4p1: C3.7.11(ii)
+- `parking.pedestrian_access_width_m` (number). Rules: ch3: C3.7.11(i), C3.7.15(ii); ch4p1: C3.7.11(i)
+- `parking.pedestrian_path_continuous` (bool): the pedestrian path is a continuous path of travel from the street boundary to ground-floor dwelling or building entries (C3.7.11(iii)). Rules: ch3: C3.7.11(iii); ch4p1: C3.7.11(iii)
+- `parking.resident_spaces` (int): resident bays (Table 2.3a minimum). Rules: ch4p1: C2.3.1; ch4p2: A3.9.2
+- `parking.resident_spaces_per_dwelling_avg` (number): average bays per dwelling (C2.3.4, max 2). Rules: ch4p1: C2.3.4; ch4p2: A3.9.3
+- `parking.sightlines.clear_0_75m_within_1_5m` (bool): nothing above 0.75 m within 1.5 m of the driveway at the boundary (C3.7.5). Rules: ch2: C3.7.5; ch3: C3.7.7; ch4p1: C3.7.7; ch4p2: A3.8.7
+- `parking.sightlines.row_truncation_1m` (bool): C3.7.7. Rules: ch2: C3.7.7; ch3: C3.7.9; ch4p1: C3.7.9
+- `parking.spaces` (int): on-site car parking spaces for the dwelling. Rules: ch2: C2.3.1, C2.3.3; ch3: C2.3.1, C2.3.5
+- `parking.uncovered_at_grade_spaces` (int): number of uncovered at-grade car parking spaces on the site (C1.2.5). Rules: ch3: C1.2.5; ch4p1: C1.2.5; ch4p2: A3.9.9
+- `parking.visitor_bays_signed_common_property` (bool): C2.3.6. Rules: ch4p1: C2.3.6
+- `parking.visitor_bays_visible_signed_accessible` (bool): visitor bays are clearly visible from the driveway, signed 'Visitor Parking' and accessible from the primary entry or entries (A3.9.7). Rules: ch4p2: A3.9.7
+- `parking.visitor_spaces` (int): visitor bays on common property (C2.3.3, C2.3.7). Rules: ch3: C2.3.3, C2.3.4, C2.3.7, C2.3.8; ch4p1: C2.3.5, C2.3.6; ch4p2: A3.9.2-r1, A3.9.7
+- `parking.visitor_spaces_marked_and_accessible` (bool): C2.3.4. Rules: ch3: C2.3.4, C2.3.8
+- `privacy.bedroom_study_offset_m` (number): edge-to-edge offset between a bedroom/study major opening and the parallel adjoining opening (C3.10.3). Rules: ch2: C3.10.3; ch3: C3.10.3; ch4p1: C3.9.3
+- `privacy.bedroom_study_setback_m` (number): minimum cone-of-vision setback from a bedroom or study major opening. Rules: ch2: C3.10.1-r1, C3.10.4-r1; ch3: C3.10.1-r1, C3.10.5-r1; ch4p1: C3.9.1-r1, C3.9.5-r1; ch4p2: A3.5.1-r1, A3.5.2-r1
+- `privacy.between_apartments_same_lot_compliant` (bool): C3.9.4. Rules: ch4p1: C3.9.4
+- `privacy.cone_captures_adjoining_opening` (bool): cone captures a major opening or active habitable space of an existing adjoining dwelling. Rules: ch2: C3.10.1-r1, C3.10.1-r2, C3.10.1-r3, C3.10.2, C3.10.3; ch3: C3.10.1-r1, C3.10.1-r2, C3.10.1-r3, C3.10.2, C3.10.3; ch4p1: C3.9.1-r1, C3.9.1-r2, C3.9.1-r3, C3.9.2, C3.9.3; ch4p2: A3.5.1-r1, A3.5.1-r2, A3.5.1-r3
+- `privacy.cone_forward_of_adjoining_setback_line` (bool): C3.10.2. Rules: ch2: C3.10.2; ch3: C3.10.2; ch4p1: C3.9.2
+- `privacy.living_room_outlook` (bool): A3.5.4. Rules: ch4p2: A3.5.4
+- `privacy.other_habitable_setback_m` (number): from other habitable room major openings. Rules: ch2: C3.10.1-r2, C3.10.4-r2; ch3: C3.10.1-r2, C3.10.5-r2; ch4p1: C3.9.1-r2, C3.9.5-r2; ch4p2: A3.5.1-r2, A3.5.2-r2
+- `privacy.outdoor_active_setback_m` (number): from outdoor active habitable spaces. Rules: ch2: C3.10.1-r3, C3.10.4-r3; ch3: C3.10.1-r3, C3.10.5-r3; ch4p1: C3.9.1-r3, C3.9.5-r3; ch4p2: A3.5.1-r3, A3.5.2-r3
+- `privacy.screened_or_offset` (bool): fallback screening or 1.5 m offset (C3.10.3). Rules: ch2: C3.10.2, C3.10.4-r1, C3.10.4-r2, C3.10.4-r3; ch3: C3.10.2, C3.10.5-r1, C3.10.5-r2, C3.10.5-r3; ch4p1: C3.9.2, C3.9.5-r1, C3.9.5-r2, C3.9.5-r3
+- `privacy.sources_above_0_5m` (bool): any major opening or active habitable space with floor level more than 0.5 m above NGL. Rules: ch2: C3.10.1-r1, C3.10.1-r2, C3.10.1-r3, C3.10.2, C3.10.3, C3.10.4-r1, C3.10.4-r2, C3.10.4-r3; ch3: C3.10.1-r1, C3.10.1-r2, C3.10.1-r3, C3.10.2, C3.10.3, C3.10.5-r1, C3.10.5-r2, C3.10.5-r3; ch4p1: C3.9.1-r1, C3.9.1-r2, C3.9.1-r3, C3.9.2, C3.9.3, C3.9.5-r1, C3.9.5-r2, C3.9.5-r3; ch4p2: A3.5.1-r1, A3.5.1-r2, A3.5.1-r3, A3.5.1-r4, A3.5.2-r1, A3.5.2-r2, A3.5.2-r3
+- `proposal.ancillary_dwelling` (bool): proposal includes an ancillary dwelling. Rules: ch2: C2.3.1-r1, C2.3.1-r3, C2.3.3-r1, C2.3.3-r3, C2.8.1; ch3: C2.3.1-r1, C2.3.1-r3, C2.3.5-r1, C2.3.5-r3, C2.8.1; ch4p1: C2.8.1
+- `proposal.bedrooms` (int): 0 for studio. Rules: ch2: C2.1.1(ii), C2.1.2, C2.3.1, C2.3.1-r2, C2.3.3; ch3: C2.1.1(ii), C2.1.2, C2.3.1, C2.3.1-r2, C2.3.5
+- `proposal.dwelling_count` (int): number of grouped dwellings on the site. Rules: ch3: C1.2.4-r1, C1.2.8, C2.3.3, C2.3.7, C2.4.3-r1, C2.7.1, C3.4.6, C4.1.1, C4.1.1-r7; ch4p1: C1.3.1, C1.3.1(i), C1.3.1(ii), C1.3.1(iii), C1.3.1-r1, C1.3.1-r2, C1.3.1-r3, C2.1.7, C2.3.3, C2.3.5, C2.3.7, C2.3.7-r1, C2.7.1, C2.8.1, C4.1.1; ch4p2: A3.4.1, A3.4.1-r1, A3.4.1-r2, A3.4.1-r3, A3.9.1, A3.9.1-r1, A3.9.2-r1, A3.9.2-r2, A4.8.1(b)
+- `proposal.dwellings_universal_design_pct` (number): % of dwellings meeting silver level (C2.7.1). Rules: ch3: C2.7.1; ch4p1: C2.7.1
+- `proposal.internal_floor_area_m2` (number). Rules: ch2: C2.7.1, C2.9.1; ch3: C2.7.2, C2.9.1; ch4p1: C2.7.2, C2.9.1
+- `proposal.mixed_use` (bool). Rules: ch4p1: C1.3.1(iii); ch4p2: A4.14.3, A4.14.4, A4.14.5
+- `proposal.primary_living_space_floor` (ground / upper). Rules: ch2: C2.1.1(i), C2.1.1(ii); ch3: C2.1.1(i), C2.1.1(ii)
+- `proposal.reduced_site_area_dwelling_count` (int): number of grouped dwellings whose site area relies on the C4.1.5 to C4.1.7 reduction (C4.1.6(ii), C4.1.7(ii) 50% caps). Rules: ch3: C4.1.1, C4.1.1-r7; ch4p1: C4.1.1
+- `proposal.reduced_small_dwelling_count` (int): of proposal.reduced_site_area_dwelling_count, how many are small dwellings (C2.9.1); C4.1.4 and the C4.1.6 50% cap count small dwellings only (C4.1.1). Rules: ch4p1: C4.1.1
+- `proposal.retained_dwelling` (bool): an existing dwelling is retained (3.8). Rules: ch2: C3.7.2, C3.7.8(i); ch3: C3.7.2, C3.7.12(i); ch4p1: C3.7.2, C3.7.12(i)
+- `proposal.seeks_universal_design_site_area_variation` (bool): the application seeks the gold-level universal design site area variation under C4.1.6 or C4.1.7 (C2.7.1). Rules: ch2: C2.7.1; ch3: C2.7.2; ch4p1: C2.7.2
+- `proposal.small_dwelling` (bool): dwelling is a small dwelling (C2.9.1). Rules: ch2: C2.9.1, C4.1.1, C4.1.1-r1, C4.1.1-r4; ch3: C2.9.1, C4.1.1, C4.1.1-r1, C4.1.1-r4, C4.1.1-r7; ch4p1: C2.9.1
+- `proposal.storeys` (int): storeys of the dwelling. Rules: ch2: C3.2.1#storeys, C3.2.1#storeys-r100sl, C3.4.2, C3.6.2; ch3: C3.2.1#storeys, C3.2.1#storeys-r100sl, C3.4.2, C3.6.2; ch4p1: C3.2.1#storeys, C3.4.2
+- `proposal.universal_design_level` (none / silver / gold): A4 or Livable Housing Australia level. Rules: ch2: C2.7.1, C4.1.1, C4.1.1-r1, C4.1.1-r4; ch3: C2.7.2, C4.1.1, C4.1.1-r1, C4.1.1-r4, C4.1.1-r7; ch4p1: C2.7.2
+- `public_domain.entries_weather_protected` (bool): every pedestrian entry is protected from the weather (A3.7.2). Rules: ch4p2: A3.7.2
+- `public_domain.entry_from_street` (bool): A3.7.x. Rules: ch4p2: A3.2.1
+- `public_domain.fence_height_m` (number): average height of the solid portion of street walls and fences (A3.6.6). Rules: ch4p2: A3.6.6
+- `public_domain.ground_floor_level_difference_avg_m` (number): average level difference between private terraces, front gardens, ground floor and street level along the frontage (A3.6.5, under 1 m). Rules: ch4p2: A3.6.5
+- `public_domain.ground_floor_level_difference_m` (number): greatest level difference between ground floor and street level (A3.6.5, 1.2 m). Rules: ch4p2: A3.6.5
+- `roof.useable_space_provided` (bool): an accessible, useable roof space (terrace, communal or private open space) is proposed; scopes A4.11.3. Rules: ch4p2: A4.11.3
+- `services.bins_not_at_primary_entry` (bool): no bins at the primary pedestrian entry (A3.7.6). Rules: ch4p2: A3.7.6
+- `services.bins_outside_street_setback_not_visible` (bool): bins are outside the primary street setback and not visible from the primary street (A3.6.8). Rules: ch4p2: A3.6.8
+- `services.bins_screened` (bool). Rules: ch2: C2.4.1; ch3: C2.4.2; ch4p1: C2.4.2
+- `services.fibre_ready` (bool): development is fibre-to-premises ready throughout the site and to every dwelling (A4.18.2). Rules: ch4p2: A4.18.2
+- `services.functional_utilities_behind_setback` (bool): C2.5.2. Rules: ch2: C2.5.2; ch3: C2.5.2; ch4p1: C2.5.2
+- `services.functional_utilities_not_visible_from_street` (bool). Rules: ch2: C2.5.2; ch3: C2.5.2; ch4p1: C2.5.2
+- `services.service_utilities_accessible_screened` (bool): C2.5.1. Rules: ch2: C2.5.1; ch3: C2.5.1; ch4p1: C2.5.1
+- `services.waste.bin_area_per_wmp` (bool): bin area holds the number of bins the Level 1 WMP (or local government) requires for separate green waste, recycling and general waste (A4.17.3). Rules: ch4p2: A4.17.3
+- `services.waste.bin_space_per_lg_requirements` (bool): a dedicated, accessible space holds the number and type of waste bins the local government requires for the dwelling (C2.4.1). Rules: ch3: C2.4.1; ch4p1: C2.4.1
+- `services.waste.communal_area_separated_or_screened` (bool): the communal waste storage area is separated or screened from major openings, primary garden areas and communal open space (C2.4.3). Rules: ch3: C2.4.3; ch4p1: C2.4.3
+- `services.waste.communal_screened_from_view` (bool): communal waste storage is screened from view from the street, open space and private dwellings (A4.17.4). Rules: ch4p2: A4.17.4
+- `services.waste.communal_storage_area_m2` (number): communal waste storage area; above 0 triggers C2.4.3. Rules: ch3: C2.4.3; ch4p1: C2.4.3; ch4p2: A4.17.4
+- `services.waste.plan_provided` (bool): a Level 1 waste management plan (Design Phase) is provided (A4.17.2). Rules: ch4p2: A4.17.2
+- `services.waste.walga_better_practice` (bool): waste storage facilities follow the Better Practice considerations of the WALGA Multiple Dwelling Waste Management Plan Guidelines, or local government requirements (A4.17.1). Rules: ch4p2: A4.17.1
+- `site.access_from_rear_row` (bool): vehicle access is taken from a rear right-of-way. Rules: ch2: C3.4.4#count-r30-r40-narrow, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.7.7; ch3: C3.4.4#count-r30-r40-narrow, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.7.9; ch4p1: C3.4.4#count-r30-r40-narrow, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.7.9
+- `site.adjoining_pedestrian_access_way_width_m` (number): width of an adjoining pedestrian access way (C3.4.1(ii)). Rules: ch2: C3.4.1#rear, C3.4.1#side-3.6-to-7m, C3.4.1#side-over-7.1m, C3.4.1#side-to-3.5m; ch3: C3.4.1#rear, C3.4.1#side-3.6-to-7m, C3.4.1#side-over-7.1m, C3.4.1#side-to-3.5m; ch4p1: C3.4.1#rear, C3.4.1#side-3.6-to-7m, C3.4.1#side-over-7.1m, C3.4.1#side-to-3.5m
+- `site.adjoins_public_open_space` (bool). Rules: ch2: C3.6.2; ch3: C3.6.2; ch4p1: C3.6.1-r1
+- `site.area_m2` (number): site area. Rules: ch2: C1.1.3, C1.2.1, C1.2.1-r100sl, C2.10.1(i), C3.1.1, C4.1.1, C4.1.1-r2; ch3: C1.1.3, C1.2.1, C1.2.1-r100sl, C2.10.1(i), C3.1.1, C4.1.1-r2; ch4p1: C1.2.1, C1.2.4, C1.2.4-r1, C1.2.4-r2, C3.1.1, C4.1.1; ch4p2: A3.3.5-r1, A3.3.5-r2, A3.3.5-r3, A3.3.7
+- `site.battleaxe` (bool): lot is a battleaxe lot. Rules: ch2: C3.7.9, C4.1.1-r2; ch3: C3.7.13, C4.1.1-r2; ch4p1: C3.7.13
+- `site.battleaxe_leg_width_m` (number). Rules: ch2: C3.7.9
+- `site.climate_zone` (int): NCC climate zone (4, 5, 6 trigger overshadowing). Rules: ch2: C2.2.2, C3.9.1, C3.9.1-diagonal, C3.9.3, C3.9.4; ch3: C2.2.2, C3.9.1, C3.9.1-diagonal, C3.9.3, C3.9.4; ch4p1: C2.2.2, C3.8.1, C3.8.1-diagonal, C3.8.2, C3.8.3; ch4p2: A3.2.3, A3.2.3-r1, A4.1.1
+- `site.communal_street_carriageway_width_m` (number): paved vehicular carriageway width within the communal street (C3.7.15(i)). Rules: ch3: C3.7.15(i)
+- `site.communal_street_landscaped_and_lit` (bool): C1.2.3. Rules: ch3: C1.2.3; ch4p1: C1.2.3
+- `site.communal_street_passing_bay` (bool): passing or simultaneous entry/exit provided (C3.7.5, C3.7.6). Rules: ch3: C3.7.5, C3.7.6; ch4p1: C3.7.5, C3.7.6
+- `site.communal_street_serves_lots` (int): lots or dwellings the communal street serves (C3.7.15 threshold 20). Rules: ch3: C3.7.11(i), C3.7.11(ii), C3.7.11(iii), C3.7.15, C3.7.15(i), C3.7.15(ii), C3.7.15(iii)
+- `site.communal_street_soft_landscape_width_m` (number): width of soft landscaping within the communal street (C3.7.15(iii)). Rules: ch3: C3.7.15(iii)
+- `site.communal_street_width_m` (number): communal street or battleaxe leg width (C3.7.13, C3.7.14). Rules: ch3: C3.7.13, C3.7.15; ch4p1: C3.7.13
+- `site.corner_lot` (bool). Rules: ch2: C3.7.3(iv); ch3: C3.7.3(iv); ch4p1: C3.7.3(iv); ch4p2: A3.8.7-r1
+- `site.corner_lot_subdivided` (bool): lot results from subdivision of an original corner lot (C3.3.2(iii)). Rules: ch2: C3.3.2(iii), C3.3.2(iii)#r1; ch3: C3.3.2(iii), C3.3.2(iii)#r1; ch4p1: C3.3.2(iii), C3.3.2(iii)#r1
+- `site.corner_sightline_clear_0_75m` (bool): walls, fences and structures within 1.5 m of the street corner are no higher than 0.75 m (A3.8.7-r1). Rules: ch4p2: A3.8.7-r1
+- `site.existing_lot_with_legal_access` (bool): existing lot, survey-strata lot or strata lot with permanent legal access to a public road (C4.1.4(ii)). Rules: ch2: C4.1.1, C4.1.1-r2; ch3: C4.1.1, C4.1.1-r2, C4.1.1-r7; ch4p1: C4.1.1
+- `site.frontage_m` (number): frontage measured at the primary street setback line (A1 definition). Rules: ch2: C1.2.3, C1.2.3-r1, C3.3.2(i)#r1, C3.3.4, C3.4.4#count-r30-r40-narrow, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50-wide, C3.6.3, C3.6.4, C3.7.2, C4.1.1-r3; ch3: C1.2.4, C1.2.4-r1, C3.3.2(i)#r1, C3.3.4, C3.4.4#count-r30-r40-narrow, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50-wide, C3.6.3, C3.6.4, C3.7.2, C4.1.1-r3; ch4p1: C3.3.2(i)#r1, C3.3.4, C3.4.4#count-r30-r40-narrow, C3.4.4#length-r30-r40, C3.4.4#length-r30-r40-narrow, C3.4.4#length-r50-wide, C3.6.3, C3.6.4, C3.7.2; ch4p2: A3.8.1
+- `site.has_communal_street` (bool). Rules: ch2: C3.7.1, C3.7.2; ch3: C1.2.3, C3.3.1#communal-street, C3.7.1, C3.7.2, C3.7.11(i), C3.7.11(ii), C3.7.11(iii), C3.7.13, C3.7.15, C3.7.15(i), C3.7.15(ii), C3.7.15(iii); ch4p1: C1.2.3, C3.3.1#communal-street, C3.7.1, C3.7.2, C3.7.11(i), C3.7.11(ii), C3.7.11(iii), C3.7.13
+- `site.has_pedestrian_access_leg` (bool): a pedestrian access leg is required (C3.7.8). Rules: ch2: C3.7.8(i), C3.7.8(ii); ch3: C3.7.12(i), C3.7.12(ii); ch4p1: C3.7.12(i), C3.7.12(ii)
+- `site.has_public_realm_frontage` (bool): the site has a street or public realm frontage (A3.2.1 applies; A3.2.2 where false). Rules: ch4p2: A3.2.1, A3.2.2
+- `site.has_row` (bool): lot has frontage to a right-of-way or laneway. Rules: ch2: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.1#laneway-r100sl, C3.3.5#carport-row, C3.3.5#garage-row, C3.7.1, C3.7.2; ch3: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.1#laneway-r100sl, C3.3.5#carport-row, C3.3.5#garage-row, C3.7.1, C3.7.2; ch4p1: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.5#carport-row, C3.3.5#garage-row, C3.7.1, C3.7.2
+- `site.has_secondary_street` (bool). Rules: ch2: C3.3.1#secondary, C3.3.1#secondary-r100sl, C3.3.5#carport-secondary, C3.3.5#garage-secondary, C3.7.1; ch3: C3.3.1#secondary, C3.3.1#secondary-r100sl, C3.3.5#carport-secondary, C3.3.5#garage-secondary, C3.7.1; ch4p1: C3.3.1#secondary, C3.3.5#carport-secondary, C3.3.5#garage-secondary, C3.7.1
+- `site.local_housing_mix_requirement` (bool): a local housing strategy or relevant local planning instrument sets dwelling mix objectives, proportions or targets for the site (A4.8.1(a)/(b) switch). Rules: ch4p2: A4.8.1(a), A4.8.1(b)
+- `site.location` (A / B): parking Location A or B (Table 2.3a note). Rules: ch2: C2.3.1; ch3: C2.3.1, C2.3.3; ch4p1: C2.3.1, C2.3.5; ch4p2: A3.9.2-r1
+- `site.lot_approved_by_wapc` (bool): the lot, survey-strata lot or strata lot was approved by the WAPC at its current area (C4.1.4(i)). Rules: ch2: C4.1.1, C4.1.1-r2; ch3: C4.1.1, C4.1.1-r2, C4.1.1-r7; ch4p1: C4.1.1
+- `site.mixed_use_area_designated` (bool): the site is in a mixed use area designated in the local planning framework; scopes A4.14.1. Rules: ch4p2: A4.14.1
+- `site.pedestrian_access_leg_clear_path_m` (number): continuous path of travel in the pedestrian access leg clear of utilities and minor projections, eaves excluded (C3.7.8(ii)). Rules: ch2: C3.7.8(ii); ch3: C3.7.12(ii); ch4p1: C3.7.12(ii)
+- `site.pedestrian_access_leg_width_m` (number). Rules: ch2: C3.7.8(i); ch3: C3.7.12(i); ch4p1: C3.7.12(i)
+- `site.primary_street_class` (enum): local, access, neighbourhood_connector, district_distributor, primary_distributor, integrator_arterial. Rules: ch2: C3.7.4; ch3: C3.7.4, C3.7.6; ch4p1: C3.7.4, C3.7.6; ch4p2: A3.8.6
+- `site.r_code` (code): R-coding of the lot. Rules: ch2: C1.1.1, C3.1.1, C3.2.1#height, C3.2.1#storeys, C3.3.1, C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.1#secondary, C3.3.2(i), C3.3.2(ii), C3.3.3#r40-plus, C3.3.4, C3.3.5#carport-row, C3.3.5#carport-secondary, C3.3.5#garage-row, C3.3.5#garage-secondary, C3.4.1#rear, C3.4.1#rear-r17.5, C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r50, C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r50, C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r50, C4.1.1, C4.1.1-r1, C4.1.1-r4; ch3: C1.1.1, C3.1.1, C3.2.1#height, C3.2.1#storeys, C3.3.1, C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.1#secondary, C3.3.2(i), C3.3.2(ii), C3.3.3#r40-plus, C3.3.4, C3.3.5#carport-row, C3.3.5#carport-secondary, C3.3.5#garage-row, C3.3.5#garage-secondary, C3.4.1#rear, C3.4.1#rear-r17.5, C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r30-r40, C3.4.1#side-3.6-to-7m-r50, C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r30-r40, C3.4.1#side-over-7.1m-r50, C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r30-r40, C3.4.1#side-to-3.5m-r50, C4.1.1, C4.1.1-r1, C4.1.1-r4, C4.1.1-r7; ch4p1: C1.1.1, C1.1.1-r1, C1.1.1-r2, C1.1.1-r3, C3.1.1, C3.2.1#height, C3.2.1#storeys, C3.3.1, C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.1#secondary, C3.3.2(i), C3.3.2(ii), C3.3.3#r40-plus, C3.3.4, C3.3.5#carport-row, C3.3.5#carport-secondary, C3.3.5#garage-row, C3.3.5#garage-secondary, C3.4.1#rear, C3.4.1#rear-r17.5, C3.4.1#side-3.6-to-7m, C3.4.1#side-3.6-to-7m-r30-r60, C3.4.1#side-over-7.1m, C3.4.1#side-over-7.1m-r30-r60, C3.4.1#side-to-3.5m, C3.4.1#side-to-3.5m-r30-r60, C4.1.1; ch4p2: A2.2.1, A2.2.1-r1, A2.3.1, A2.4.1, A2.4.1-r1, A2.4.1-r2, A2.5.1
+- `site.region` (perth-peel / regional): Perth and Peel regions per Chapter 1 2.5.2. Rules: ch4p1: C2.3.1-r1
+- `site.retained_tree_root_zone_provided` (bool): nominal root zone per AS4970 (C1.2.5). Rules: ch2: C1.2.5; ch3: C1.2.7; ch4p1: C1.2.7
+- `site.row_is_primary_street` (bool): the laneway/ROW is the primary street. Rules: ch2: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.5#carport-row, C3.3.5#garage-row; ch3: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.5#carport-row, C3.3.5#garage-row; ch4p1: C3.3.1#laneway, C3.3.1#laneway-primary, C3.3.5#carport-row, C3.3.5#garage-row
+- `site.significant_tree_retained` (bool): a significant existing tree is retained (C1.2.4). Rules: ch2: C1.2.1, C1.2.5; ch3: C1.2.1, C1.2.7; ch4p1: C1.2.1, C1.2.7, C4.1.1; ch4p2: A3.3.4, A3.3.7
+- `site.structure_plan_or_ldp_approved_before_2024_04_10` (bool): lot is within a structure plan and/or local development plan approved before 10 April 2024 (C2.2.2 transitional footnote, until 10 April 2030). Rules: ch2: C2.2.2
+- `site.verge.path_or_road_offset_m` (number): existing or planned footpath, shared path or road alignment distance from street boundary. Rules: ch2: C3.3.3, C3.7.5; ch3: C3.3.3, C3.7.7; ch4p1: C3.3.3, C3.7.7
+- `site_works.excavation_behind_setback` (bool). Rules: ch2: C3.5.3; ch3: C3.5.3; ch4p1: C3.5.3
+- `site_works.forward_of_setback_for_access_drainage_light` (bool): the change is for access, drainage or natural light. Rules: ch2: C3.5.1; ch3: C3.5.1; ch4p1: C3.5.1
+- `site_works.forward_of_setback_max_change_m` (number): max fill or excavation forward of the street setback line. Rules: ch2: C3.5.1; ch3: C3.5.1; ch4p1: C3.5.1
+- `site_works.retaining_max_height_m` (number): retaining wall or fill height behind the setback line. Rules: ch2: C3.5.2; ch3: C3.5.2; ch4p1: C3.5.2
+- `site_works.retaining_setback_m` (number): its setback from the lot boundary. Rules: ch2: C3.5.2; ch3: C3.5.2; ch4p1: C3.5.2
+- `subdivision.avg_site_area_m2` (number). Rules: ch2: C4.1.1-r1; ch3: C4.1.1-r1
+- `subdivision.avg_site_area_per_dwelling_m2` (number). Rules: ch3: C4.1.1-r7
+- `subdivision.battleaxe_lot` (bool). Rules: ch2: C4.1.1-r6; ch3: C4.1.1-r6
+- `subdivision.lot_count` (int). Rules: ch2: C4.1.1, C4.1.1-r1, C4.1.1-r4; ch3: C4.1.1-r1, C4.1.1-r4
+- `subdivision.min_battleaxe_site_area_m2` (number): smallest proposed rear battleaxe lot area, calculated per C4.1.3(ii)-(iv) (Table 2B). Rules: ch2: C4.1.1-r6; ch3: C4.1.1-r6
+- `subdivision.min_frontage_m` (number). Rules: ch2: C4.1.1-r5; ch3: C4.1.1-r5
+- `subdivision.min_site_area_m2` (number): smallest proposed site area. Rules: ch2: C4.1.1-r1, C4.1.1-r4; ch3: C4.1.1-r1, C4.1.1-r4
+- `subdivision.proposed` (bool): the application creates lots. Rules: ch2: C4.1.1-r1, C4.1.1-r4, C4.1.1-r5, C4.1.1-r6; ch3: C4.1.1-r1, C4.1.1-r4, C4.1.1-r5, C4.1.1-r6
+- `subdivision.reduced_lots_count` (int): lots below the minimum. Rules: ch2: C4.1.1, C4.1.1-r1, C4.1.1-r4; ch3: C4.1.1-r1, C4.1.1-r4
+- `subdivision.site_area_per_dwelling_m2` (number): site area per dwelling for Table 3B. Rules: ch3: C4.1.1, C4.1.1-r7
+- `subdivision.truncation_area_added_m2` (number): C4.1.2 (max 20 m2). Rules: ch4p1: C4.1.1
+- `water.individual_metering` (bool): every dwelling is individually metered for water (A4.16.1). Rules: ch4p2: A4.16.1
+- `water.overland_flow_path` (bool): an overland flow path conveys major rainfall event runoff safely to the local stormwater drainage system (A4.16.3). Rules: ch4p2: A4.16.3

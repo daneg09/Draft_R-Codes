@@ -1,0 +1,95 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.1-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Maximum garage and carport parking spaces, R50 and above, Perth and Peel (Table 2.3a)",
+  "text": "Table 2.3a (occupant car parking, Location A and Location B): Maximum garage and carport parking for R50 and above (per dwelling)(1) - Studio and 1 bedroom dwelling 1; 2 bedroom dwelling 2; 3+ bedroom dwelling 2. (1) No maximum garage and carport parking applies to R40 and below. Maximum carparking applies to garages and carports. Additional parking may be provided as uncovered spaces, undercroft or basement parking.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R50+"
+  ],
+  "region": "perth-peel",
+  "inputs": [
+    "parking.garage_carport_spaces",
+    "proposal.bedrooms"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "any",
+    "parts": [
+      {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "count",
+            "fact": "proposal.bedrooms",
+            "op": "<=",
+            "value": 1
+          },
+          {
+            "type": "count",
+            "fact": "parking.garage_carport_spaces",
+            "op": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "count",
+            "fact": "proposal.bedrooms",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "type": "count",
+            "fact": "parking.garage_carport_spaces",
+            "op": "<=",
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "label": "maximum 1 (studio/1 bed) or 2 (2+ bed) garage and carport spaces per dwelling"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "garage",
+    "carport"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "relaxed",
+      "note": "Part C maximum 1/1/2/2 applied at R30+; now R50 and above only, so R30-R40 grouped dwellings lose the cap"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 19,
+    "extract_line": 597,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch3-026",
+  "verify": false,
+  "notes": "Footnote 1: no maximum garage and carport parking at R40 and below. Applies to garages and carports only; extra spaces may be uncovered, undercroft or basement. Same values in Location A and B. Whether the named code R100-SL is included in 'R50 and above' is not stated.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

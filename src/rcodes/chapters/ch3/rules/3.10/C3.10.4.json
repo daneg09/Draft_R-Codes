@@ -1,0 +1,53 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.10.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.10",
+  "element_title": "Visual privacy",
+  "title": "Grouped dwellings on the same lot apply C3.10.1 to C3.10.3 to each other",
+  "text": "Sources of overlooking for grouped dwellings on the same lot are to apply C3.10.1, C3.10.2 and C3.10.3.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.10",
+  "defined_terms": [
+    "cone of vision"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.10.4",
+      "relation": "unclear",
+      "note": "register row ch3-088 maps C3.10.2-C3.10.6 to Part C C3.10.2-C3.10.6 as 'same measures'; clause-level match not checked"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 47
+  },
+  "register_ref": "ch3-088",
+  "verify": false,
+  "notes": "New to the grouped package (no Chapter 2 twin; Chapter 2 C3.10.4 is the vacant-site rule, Chapter 3 C3.10.5). Cross-reference clause: C3.10.1, C3.10.2 and C3.10.3 apply between dwellings on the same lot. The privacy facts describe one adjoining interface, so the engine cannot run the rules per internal pair; a planner checks the internal cones. Recorded as judgment.",
+  "verified": {
+    "method": "page-image",
+    "page": 47,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

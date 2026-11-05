@@ -1,0 +1,24 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch1/F2.1",
+  "title": "Figure 2.1 R-Codes Chapter 2, Chapter 3 and Chapter 4 Part 1 approval process",
+  "source": {
+    "file": "Residential Design Codes Chapter 1 - Operation of the Code.pdf",
+    "page": 6,
+    "clause": "2.1.1",
+    "pdf_page": 13
+  },
+  "register_ref": "CH1-14, CH1-15, CH1-18, CH1-21",
+  "basis": "Clause 61 of Schedule 2 of the Planning and Development (Local Planning Schemes) Regulations 2015 and the local planning scheme. The R-Codes do not themselves exempt development from approval; clause 2.1.3 construes 'deemed exempt' as 'deemed-to-comply' for the purpose of clause 1 of Schedule 2.",
+  "merit_text": "Proposal addresses one or more merit assessment criteria of the R-Codes -> Requires judgement of merit; Development approval required (note 1: refer cl. 60 and 61 of part 7 in Schedule 2 of the Regulations).",
+  "verified": {
+    "method": "page-image",
+    "page": "6 (PDF p13)",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "rows": [
+    {"dwelling_type": "single_house", "required": false, "note": "Figure 2.1: single house, DA not required where all deemed exempt provisions are met. A scheme may require development approval for a single house irrespective of the R-Codes (heritage, special control areas, estate scheme provisions).", "text": "Proposal meets deemed exempt provisions of the R-Codes and the Scheme -> Yes -> Single house (note 1) -> Development approval not required -> Proceed to building permit. Note 1: A scheme may require development approval for a single house irrespective of the requirements of the R-Codes."},
+    {"dwelling_type": "grouped_dwelling", "required": true, "note": "Figure 2.1: all other residential development requires a DA even where all deemed exempt provisions are met (CH1-15).", "text": "Proposal meets deemed exempt provisions of the R-Codes and the Scheme -> Yes -> All other residential development -> Development approval required -> Development approval granted."},
+    {"dwelling_type": "multiple_dwelling", "required": true, "note": "As for grouped dwellings. Figure 2.1 covers Chapter 4 Part 1 only; Chapter 4 Part 2 approval is not shown in the figure.", "text": "Proposal meets deemed exempt provisions of the R-Codes and the Scheme -> Yes -> All other residential development -> Development approval required -> Development approval granted."}
+  ]
+}

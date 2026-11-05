@@ -1,0 +1,77 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.9.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.9",
+  "element_title": "Universal design",
+  "title": "20% of dwellings at Silver Level, or 5% at Platinum Level (Livable Housing Design Guidelines)",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "(a) 20 per cent of all dwellings, across a range of dwelling sizes, meet Silver Level requirements as defined in the Livable Housing Design Guidelines (Livable Housing Australia) OR (b) 5 per cent of dwellings are designed to Platinum Level as defined in the Livable Housing Design Guidelines (Livable Housing Australia).",
+  "inputs": [
+    "dwellings.silver_level_pct",
+    "dwellings.platinum_level_pct"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "any",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.silver_level_pct",
+        "op": ">=",
+        "value": 20
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.platinum_level_pct",
+        "op": ">=",
+        "value": 5
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.9",
+  "defined_terms": [
+    "universal design"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.9.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 69,
+    "extract_line": 2386
+  },
+  "register_ref": "C4P2-119",
+  "verify": false,
+  "notes": "from: ch4p1 C2.7.1 (20% silver). diverges: no 10-dwelling trigger; Platinum 5% alternative; Livable Housing Design Guidelines rather than Appendix A2. dwellings.silver_level_pct counts Silver or better (Gold, Platinum). 'Across a range of dwelling sizes' is qualitative and left to O4.9.1. No rounding rule is printed.",
+  "verified": {
+    "method": "page-image",
+    "page": 69,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "table-3.4a-rear",
+  "title": "Table 3.4a Lot boundary setbacks: rear setback",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5
+    },
+    {
+      "match": {
+        "site.r_code": "R5-R15"
+      },
+      "value": 3,
+      "note": "3 m 'applicable to R5-R15 only'"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R17.5+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "no rear setback provision for R17.5 and above (Table 2A shows N/A; register ch2-055 ambiguity)",
+      "verify": true
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "ch2-055",
+  "verify": true,
+  "notes": "Rear column of Table 3.4a. AMBIGUITY (register ch2-055): the draft gives no rear value for R17.5+; encoded as no provision (NOT_APPLICABLE) rather than the side-setback values.",
+  "verified": {
+    "method": "page-image",
+    "page": "32, 7",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R2 10m, R2.5 7.5m and '3m (applicable to R5-R15 only)' confirmed. No rear value for R17.5+ on the page; Table 2A (p7) prints N/A (register ch2-055)."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.4.1#side-3.6-to-7m-r30-r40",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Side setback, walls 3.6 m to 7 m high (R30-R40)",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. Table 3.4a Lot boundary setbacks, side setback: R5 and above, Wall height 3.6m to 7m: 1.5m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R30-R40"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.has_walls_3_6_to_7m",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.side_setback_walls_3_6_to_7m_m",
+    "site.r_code",
+    "building.has_walls_3_6_to_7m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.side_setback_walls_3_6_to_7m_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-side-3.6-to-7m"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "wall height",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4a",
+      "relation": "relaxed",
+      "note": "Part C Table 3.4a applied at R30-R40; 7.1 m+ 3 m -> 2 m (register ch3-057)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 33,
+    "table": "Table 3.4a",
+    "figure": "Figure 3.4a-c"
+  },
+  "register_ref": "ch3-055",
+  "verify": true,
+  "notes": "New to Chapter 3 as a separate record: the Chapter 2 R2-R40 rule allows the pedestrian access way reduction at R30-R40, Chapter 3 C3.4.1(ii) (p33) stops it at R25, so R30-R40 is tested without it. Applies only where the building has walls 3.6 m to 7 m high (condition on building.has_walls_3_6_to_7m); the band does not depend on the building's maximum wall height. Rounding gap between bands unresolved.",
+  "verified": {
+    "method": "page-image",
+    "page": 33,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 3.4a (p33) prints the bands as 'Wall height up to 3.5m', 'Wall height 3.6m to 7m' and 'Wall height above 7.1m', leaving 3.5-3.6 m and 7.0-7.1 m undefined; Table 3A (p7) prints the top band as '7.1m and above'. The encoded band conditions (> 3.5, > 7.0) are an inference. C3.4.1(ii) stops at R25 (p33), so R30-R40 has no pedestrian access way reduction."
+  }
+}

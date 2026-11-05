@@ -1,0 +1,150 @@
+{
+  "id": "table-3B-avg",
+  "title": "Table 3B Average site area per dwelling (grouped dwellings)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 1000,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 800,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R15"
+      },
+      "value": 666,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5"
+      },
+      "value": 571,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R20"
+      },
+      "value": 450,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R25"
+      },
+      "value": 350,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R30"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "site.r_code": "R35"
+      },
+      "value": 260
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 220
+    },
+    {
+      "match": {
+        "site.r_code": "R50"
+      },
+      "value": 180
+    },
+    {
+      "match": {
+        "site.r_code": "R60"
+      },
+      "value": 150
+    },
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": 120
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 120,
+      "note": "R80 site area provisions apply to all grouped dwellings on lots coded R100, R160 and LR, MR and HR (Table 3B note)"
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "No av applies"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 54,
+    "table": "Table 3B"
+  },
+  "register_ref": "ch3-090",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 54,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R10-R25 averages printed struck through (pink box: proposed removal for Perth and Peel); those rows keep verify true. All other values checked."
+  },
+  "notes": "Average site area column of Table 3B; used by C4.1.1-r1 and C4.1.1-r7. R2-R5: no average; R100-SL: 'No av applies'. Transcribed from Chapter 3 p54; values identical to Chapter 2 Table 2B and current Table D grouped rows. The dwelling-type column and the 'only applies to single houses' footnote on the battleaxe and frontage columns are removed, so those columns now read as applying to grouped dwellings (ch3-089, verify). The R10-R25 average site areas are struck through as a flagged proposed change for Perth and Peel only (ch3-090; Information Sheet 5); kept operative with verify true. R80 site area provisions apply to grouped dwellings on lots coded R100, R160, LR, MR and HR."
+}

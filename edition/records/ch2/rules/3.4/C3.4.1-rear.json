@@ -1,0 +1,96 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.4.1#rear",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Rear setback (R2-R15)",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. ii. For R2-R40, the stated setback distances may be reduced by half the width of an adjoining pedestrian access way to a maximum reduction of 2m (refer to Figure 3.4d). Table 3.4a Lot boundary setbacks, rear setback: R2 10m; R2.5 7.5m; R5 and above 3m (applicable to R5-R15 only).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R15"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.rear_setback_m",
+    "site.r_code",
+    "site.adjoining_pedestrian_access_way_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.rear_setback_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-rear"
+    }
+  },
+  "exceptions": [
+    {
+      "label": "adjoining pedestrian access way (C3.4.1(ii))",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.adjoining_pedestrian_access_way_width_m",
+        "op": ">",
+        "value": 0
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "building.rear_setback_m + min(site.adjoining_pedestrian_access_way_width_m / 2, 2)",
+          "op": ">=",
+          "value": {
+            "table": "table-3.4a-rear"
+          }
+        }
+      },
+      "inputs": [
+        "site.adjoining_pedestrian_access_way_width_m"
+      ],
+      "source": "C3.4.1(ii), Figure 3.4d, page 32"
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "setback",
+    "pedestrian access way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "relaxed",
+      "note": "R5-R15 rear 6 m -> 3 m; R2 and R2.5 unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2a",
+      "relation": "deleted",
+      "note": "rear setbacks by Tables 2a/2b at R17.5-R40 have no draft equivalent"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4a",
+      "relation": "unclear",
+      "note": "Part C applied Table 3.4a to all boundaries"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "ch2-055",
+  "verify": false,
+  "notes": "Split from the R17.5+ record so the pedestrian access way reduction (a formula) never meets a null table value.",
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R2 10m and R2.5 7.5m are merged across the side and rear columns; the R5-and-above rear cell reads '3m (applicable to R5-R15 only)'."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "table-1.1a",
+  "title": "Table 1.1a Private open space per apartment: minimum area by dwelling size",
+  "keys": [
+    "site.r_code",
+    "dwellings.min.pos_dwelling_category"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "studio_1bed"
+      },
+      "value": 8,
+      "note": "R10-R25 row: register C4P1-006 (mixed against Part B 5.3.1 C1.2)"
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "2bed"
+      },
+      "value": 10,
+      "note": "R10-R25 row: register C4P1-006 (mixed against Part B 5.3.1 C1.2)"
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "3bed_plus"
+      },
+      "value": 12,
+      "note": "R10-R25 row: register C4P1-006 (mixed against Part B 5.3.1 C1.2)"
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "ground_floor"
+      },
+      "value": 15,
+      "note": "R10-R25 row: register C4P1-006 (mixed against Part B 5.3.1 C1.2)"
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "studio_1bed"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "2bed"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "3bed_plus"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "ground_floor"
+      },
+      "value": 15
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 9,
+    "table": "Table 1.1a"
+  },
+  "register_ref": "C4P1-005",
+  "verify": false,
+  "notes": "Minimum private open space area per apartment (m2) by dwelling size; values identical at R10-R25 (C4P1-006, mixed: current Part B was 10 m2 for every size) and R30-R60 (C4P1-005, unchanged from Part C Table 1.1b). Rows split by coding only to carry the two register rows; ground floor dwelling applies whatever the bedroom count. Service areas excluded from the calculation. Published title 'Primary garden area provisions'.",
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

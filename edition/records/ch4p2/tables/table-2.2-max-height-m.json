@@ -1,0 +1,96 @@
+{
+  "id": "table-2.2-max-height-m",
+  "title": "Table 2.2 metres at the Table 2.1 storey limit (derived)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": 15
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "LR1",
+          "R-AC4"
+        ]
+      },
+      "value": 15
+    },
+    {
+      "match": {
+        "site.r_code": "R100"
+      },
+      "value": 21
+    },
+    {
+      "match": {
+        "site.r_code": "R160"
+      },
+      "value": 27
+    },
+    {
+      "match": {
+        "site.r_code": "MR1"
+      },
+      "value": 21
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "MR2",
+          "R-AC3"
+        ]
+      },
+      "value": 27
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "HR1",
+          "R-AC1"
+        ]
+      },
+      "value": 39
+    },
+    {
+      "match": {
+        "site.r_code": "HR2"
+      },
+      "value": 51
+    },
+    {
+      "match": {
+        "site.r_code": "HR3"
+      },
+      "value": 63
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R-PA",
+          "R-AC0"
+        ]
+      },
+      "value": null
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": "13-14"
+  },
+  "register_ref": "C4P2-067",
+  "verify": true,
+  "notes": "Derived, not printed: the Table 2.2 relative height for each Table 2.1 storey limit (4 = 15 m, 6 = 21 m, 8 = 27 m, 12 = 39 m, 16 = 51 m, 20 = 63 m). Table 2.2 is indicative (DG 2.2.1); A2.2.1 is expressed in storeys. Rows also match the current names (R-AC4 = LR1, R-AC3 = MR2, R-AC1 = HR1, R-AC0 = R-PA; register C4P2-017). R-AC2 has no column and no row. The generic LR, MR and HR bands have no row (MR and HR each span columns with different values), so a site coded only LR, MR or HR is NOT_APPLICABLE until its code is known.",
+  "verified": {
+    "method": "page-image",
+    "page": "13-14",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "derived, not printed. Table 2.2 (p14) is indicative (DG 2.2.1, p15); A 2.2.1 sets no metres limit."
+  }
+}

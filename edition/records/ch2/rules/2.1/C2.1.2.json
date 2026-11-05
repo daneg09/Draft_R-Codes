@@ -1,0 +1,94 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Dedicated weatherproof storage area per Table 2.1b",
+  "text": "Storage (applies to R50-R80; R100-SL; LR, MR, and HR only). C2.1.2 The dwelling has exclusive use of a dedicated, weatherproof storage area in accordance with Table 2.1b.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R50+",
+    "R100-SL"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.storage.area_m2",
+    "building.storage.min_dim_m",
+    "building.storage.height_m",
+    "building.storage.behind_street_setback",
+    "proposal.bedrooms"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "table-lookup",
+        "table": "table-2.1b",
+        "fact": "building.storage.area_m2",
+        "op": ">="
+      },
+      {
+        "type": "threshold",
+        "fact": "building.storage.min_dim_m",
+        "op": ">=",
+        "value": 1.0
+      },
+      {
+        "type": "threshold",
+        "fact": "building.storage.height_m",
+        "op": ">=",
+        "value": 2.0
+      },
+      {
+        "type": "boolean",
+        "fact": "building.storage.behind_street_setback",
+        "expected": true
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.1",
+  "defined_terms": [
+    "primary street setback",
+    "storage area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.9",
+      "relation": "relaxed",
+      "note": "min dimension 1.5 m -> 1 m; height 2.1 m -> 2 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.10",
+      "relation": "relaxed",
+      "note": "'opening not to open inwards' and 0.9 m circulation test dropped"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.1b",
+      "relation": "relaxed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 15,
+    "extract_line": 449,
+    "table": "Table 2.1b"
+  },
+  "register_ref": "ch2-017",
+  "verify": false,
+  "notes": "Heading: applies to R50-R80, R100-SL, LR, MR and HR only; no storage requirement at R40 and below. LR/MR/HR single houses are assessed at R80 standards per the chapter note. Storage may be co-located in a garage or carport if a dedicated area; dimensions exclude services, plant, bins, bicycle parking and fixtures.",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.2",
+  "element_title": "Solar access and natural ventilation",
+  "title": "Courtyard that is the only daylight source to a habitable room is uncovered and at least 4 m2 (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Where a courtyard is the only source of daylight to a habitable room, the courtyard must be uncovered and open to the sky¹ with a: i. minimum area of 4m2 (refer Figure 2.2a). ¹Excludes minor projections",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.courtyard_daylight_only",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.courtyard_daylight_only",
+    "building.courtyard_open_to_sky",
+    "building.courtyard_area_m2"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "building.courtyard_open_to_sky",
+        "expected": true
+      },
+      {
+        "type": "threshold",
+        "fact": "building.courtyard_area_m2",
+        "op": ">=",
+        "value": 4.0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.2",
+  "defined_terms": [
+    "habitable room",
+    "minor projection"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.2",
+      "relation": "relaxed",
+      "note": "(ii) minimum dimension 0.5 x wall height for multiple dwellings dropped from the clause; Figure 2.2a still shows it"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.1",
+      "relation": "deleted",
+      "note": "habitable room openable window, 10% of floor area, 50% transparent; no successor (NCC), register C4P1-035"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.3",
+      "relation": "deleted",
+      "note": "bathroom openable window; no successor (NCC), register C4P1-036"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 18,
+    "extract_line": 550,
+    "figure": "Figure 2.2a"
+  },
+  "register_ref": "C4P1-034",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C2.2.1 (evaluator unchanged). Coding R30-R60 per the 'Windows and openings (applies to R30-R60 only)' heading. Register C4P1-034: Figure 2.2a still annotates 'Min dimension = 0.5 x wall height', so the dropped limb (ii) is likely a drafting omission; not encoded. Open to the sky excludes minor projections (footnote 1). The deleted window and bathroom ventilation clauses have no rule."
+}

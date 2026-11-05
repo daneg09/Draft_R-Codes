@@ -1,0 +1,61 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.8.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.8",
+  "element_title": "Vehicle access",
+  "title": "Walls, fences and structures no higher than 0.75 m within 1.5 m of a driveway meeting the street",
+  "text": "Walls, fences and other structures truncated or reduced to no higher than 0.75m within 1.5m of where walls, fences, other structures adjoin vehicle access points where a driveway meets a public street and where two streets intersect (refer Figure 3.8a).",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.sightlines.clear_0_75m_within_1_5m"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.sightlines.clear_0_75m_within_1_5m",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.8",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.8.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 43,
+    "figure": "Figure 3.8a"
+  },
+  "register_ref": "C4P2-096",
+  "verify": false,
+  "notes": "Chapter 2 fact parking.sightlines.clear_0_75m_within_1_5m. The street-corner limb is A3.8.7-r1. Figure 3.8a also shows a 1 m x 1 m lot truncation.",
+  "verified": {
+    "method": "page-image",
+    "page": 43,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

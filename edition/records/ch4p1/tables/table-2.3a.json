@@ -1,0 +1,39 @@
+{
+  "id": "table-2.3a",
+  "title": "Table 2.3a Car parking provisions (resident car parking minimum per dwelling)",
+  "keys": [
+    "site.location"
+  ],
+  "unit": "spaces",
+  "rows": [
+    {
+      "match": {
+        "site.location": "A"
+      },
+      "value": 0,
+      "note": "Location A: no minimum"
+    },
+    {
+      "match": {
+        "site.location": "B"
+      },
+      "value": 0,
+      "note": "Location B: no minimum"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 20,
+    "extract_line": 624,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "C4P1-039",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Value = resident car parking minimum per dwelling: 'No minimum' in both locations, no bedroom split (rule C2.3.1). The other rows are carried as rule formulas, because they multiply by the number of dwellings: visitor car parking 0.1 bays per dwelling (Location A) or 0.15 (Location B), no 0-4 dwelling exemption (C2.3.5; table-2.3a-visitor); resident bicycle 0.5 spaces per dwelling (C2.3.7); visitor bicycle 0.1 spaces per dwelling (C2.3.7-r1); motorcycle/scooter: developments exceeding 20 dwellings 0.1 bays per dwelling (C2.3.3). Footnote 1 (car and bicycle rows): round to the nearest whole number, 0.5 or greater up (1.4 -> 1, 1.5 -> 2). Footnote 2 (motorcycle): for each five motorcycle/scooter bays, car bays may be reduced by one (cites 'Table 2.3'). LOCATION A: within 800 m of a train station on a high-frequency rail route (straight line from the pedestrian entry to the platform to any part of a lot); within 250 m of a high-frequency transit route, or routes combining to timed stops every 15 minutes in weekday peaks 7-9am and 5-7pm (straight line from any part of the route to any part of the lot); and/or within the defined boundaries of an activity centre. LOCATION B: all other land. No Perth and Peel restriction is stated (register C4P1-047); there is no regional table (C4P1-048). The maximum (C2.3.4, R50+, 2 bays per dwelling averaged) is in the clause, not the table."
+}

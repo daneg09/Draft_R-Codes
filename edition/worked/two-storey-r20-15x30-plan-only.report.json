@@ -1,0 +1,3126 @@
+{
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "applicability": {
+    "chapter": "ch2",
+    "pathway": "deemed-exempt-or-merit",
+    "dwelling_type": "single_house",
+    "r_code": "R20",
+    "reasons": [
+      "Table 1.1: single_house at R20 -> ch2"
+    ],
+    "warnings": [],
+    "source": "rcodes:draft-2026-10-24/ch1/T1.1"
+  },
+  "development_application": {
+    "required": null,
+    "required_label": "not required by the R-Codes if all deemed exempt provisions are met; scheme not checked",
+    "basis": "Figure 2.1: single house, DA not required where all deemed exempt provisions are met. A scheme may require development approval for a single house irrespective of the R-Codes (heritage, special control areas, estate scheme provisions). site.scheme_requires_da not supplied.",
+    "source": "rcodes:draft-2026-10-24/ch1/F2.1"
+  },
+  "pathway": "undetermined",
+  "elements_on_merit": [],
+  "consultation": [],
+  "results": [
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.1.1-r1",
+      "chapter": "ch2",
+      "element": "1.1",
+      "element_title": "Private open space",
+      "title": "Outdoor living area minimum dimension 4 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.ola.min_dim_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.1",
+      "applicability": "applies",
+      "missing": [
+        "landscape.ola.min_dim_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 9,
+        "table": "Table 1.1a",
+        "figure": "Figure 1.1a"
+      },
+      "notes": "Minimum length and width of all areas contributing to the OLA (Table 1.1a note 2). Coding starts at R17.5: on the page the R2-R15 'No minimum applicable' cell spans the area, roof cover and minimum dimension columns (not the location column)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.1.1-r2",
+      "chapter": "ch2",
+      "element": "1.1",
+      "element_title": "Private open space",
+      "title": "Outdoor living area: 65% of required area without permanent roof cover",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.ola.uncovered_pct"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.1",
+      "applicability": "applies",
+      "missing": [
+        "landscape.ola.uncovered_pct"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 9,
+        "table": "Table 1.1a",
+        "figure": "Figure 1.1a"
+      },
+      "notes": "Permanent roof cover excludes minor projections such as eaves (note 1). The fact is the percentage of the REQUIRED OLA (Table 1.1a area) that is uncovered. Two-column extract; the 65% / 35% figures appear in both the table and the Figure 1.1a note."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.1.1-r3",
+      "chapter": "ch2",
+      "element": "1.1",
+      "element_title": "Private open space",
+      "title": "Outdoor living area behind the street setback area",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.front_fence.visually_permeable",
+          "landscape.ola.behind_street_setback",
+          "landscape.ola.in_primary_street_setback"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.1",
+      "applicability": "applies",
+      "missing": [
+        "building.front_fence.visually_permeable",
+        "landscape.ola.behind_street_setback",
+        "landscape.ola.in_primary_street_setback"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 9,
+        "table": "Table 1.1a"
+      },
+      "notes": "Table 1.1a location column with note 3 'does not apply where C1.1.2 is met'. On the page the location cell 'Behind the street setback area(3)' is merged across all five rows, R2-R15 included (the R2-R15 'No minimum applicable' cell spans only the area, roof cover and dimension columns), so coding is R2-R40 (corrected from R17.5-R40 in the page-image pass). building.front_fence.visually_permeable is a proposed fact (C3.6.5 and C3.6.6 compliance stated by the applicant) to avoid duplicating Part 3 fence thresholds here."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.1.1",
+      "chapter": "ch2",
+      "element": "1.1",
+      "element_title": "Private open space",
+      "title": "Outdoor living area minimum area (Table 1.1a)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.ola.area_m2"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.1",
+      "applicability": "applies",
+      "missing": [
+        "landscape.ola.area_m2"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 9,
+        "table": "Table 1.1a",
+        "figure": "Figure 1.1a"
+      },
+      "notes": "Area test only; dimension, roof cover and location are C1.1.1-r1 to -r3. R2-R15: no minimum (table row null). Figure 1.1a note: areas under 4 m wide not consolidated with the OLA do not count, and the OLA is to be accessible from the primary living space (figure note and M1.1.1(iii) only, not in the C1.1.1 wording)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.1.2",
+      "chapter": "ch2",
+      "element": "1.1",
+      "element_title": "Private open space",
+      "title": "Outdoor living area within the primary street setback area",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.front_fence.visually_permeable"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.1",
+      "applicability": "uncertain",
+      "missing": [
+        "building.front_fence.visually_permeable",
+        "landscape.ola.in_primary_street_setback"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 9
+      },
+      "notes": "Applies only where the OLA is located in the primary street setback area (rule condition); then any street walls or fences in that area must be visually permeable per C3.6.5 and C3.6.6. The same test is the exception on C1.1.1-r3. 'Single consolidated' is not tested (no fact). Pink note: Information Sheet 3 survey seeks feedback on POS structure and metrics, so this may change. applicability uncertain: landscape.ola.in_primary_street_setback"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.2.1-r1",
+      "chapter": "ch2",
+      "element": "1.2",
+      "element_title": "Trees and landscaping",
+      "title": "Soft landscaping minimum dimension 1 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.soft_min_dim_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+      "applicability": "applies",
+      "missing": [
+        "landscape.soft_min_dim_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 11,
+        "figure": "Figure 1.2a"
+      },
+      "notes": "Minimum dimension of areas counted as soft landscaping."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.2.1",
+      "chapter": "ch2",
+      "element": "1.2",
+      "element_title": "Trees and landscaping",
+      "title": "Soft landscaping minimum 15% of the site",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.soft_area_m2",
+          "site.significant_tree_retained"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+      "applicability": "applies",
+      "missing": [
+        "landscape.soft_area_m2",
+        "site.significant_tree_retained"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 11,
+        "figure": "Figure 1.2a"
+      },
+      "notes": "Soft landscape per the A1 definition (min 300 mm soil depth, in-ground planting, turf included; excludes permeable paving and planter boxes). C1.2.4 is an exception, not a rule (a concession not taken must not fail the element). C1.2.4 note: a retained tree replaces the tree planting provision 'in C1.2.4' like-for-like; the planting provision is actually C1.2.3 (cross-reference error, ch2-012). R100-SL: C1.2.1-r100sl."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.2.2",
+      "chapter": "ch2",
+      "element": "1.2",
+      "element_title": "Trees and landscaping",
+      "title": "Primary street setback area minimum 30% soft landscaping",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.street_setback_soft_area_m2",
+          "landscape.street_setback_area_m2"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+      "applicability": "applies",
+      "missing": [
+        "landscape.street_setback_soft_area_m2",
+        "landscape.street_setback_area_m2"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 11,
+        "figure": "Figure 1.2b"
+      },
+      "notes": "Paved areas are excluded from soft landscaping (Figure 1.2b). 30% soft excludes permeable paving, which the current 50%-impervious test allowed. R100-SL: no minimum (Table 2.10a), excluded by coding."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.2.3-r1",
+      "chapter": "ch2",
+      "element": "1.2",
+      "element_title": "Trees and landscaping",
+      "title": "One small tree per dwelling elsewhere on the lot (Table 1.2a)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.primary_street_setback_m",
+          "landscape.trees_elsewhere"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+      "applicability": "applies",
+      "missing": [
+        "building.primary_street_setback_m",
+        "landscape.trees_elsewhere"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 11,
+        "table": "Table 1.2a"
+      },
+      "verify": true,
+      "notes": "Table 1.2a 'Elsewhere on lot: 1 small tree (per dwelling)'. Note 1 lets it be planted in the primary street setback area if room allows, so the exceptions test total trees against the street requirement plus one. The C1.1.4 additional tree is checked by the C1.1.3 exception, not here."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.2.3-r2",
+      "chapter": "ch2",
+      "element": "1.2",
+      "element_title": "Trees and landscaping",
+      "title": "Deep soil area per required small tree (Table 1.2b)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.tree_deep_soil_min_dim_m",
+          "landscape.tree_deep_soil_min_m2"
+        ],
+        "detail": {
+          "mode": "all",
+          "parts": [
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "landscape.tree_deep_soil_min_m2"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "landscape.tree_deep_soil_min_dim_m"
+              ]
+            }
+          ]
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+      "applicability": "applies",
+      "missing": [
+        "landscape.tree_deep_soil_min_dim_m",
+        "landscape.tree_deep_soil_min_m2"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 12,
+        "table": "Table 1.2b",
+        "figure": "Figure 1.2c"
+      },
+      "notes": "Each required tree: 9 m2 deep soil area, 1.5 m minimum dimension; the facts are the smallest provided to any required tree. Small tree: canopy 2-6 m, height 3-8 m at maturity (table-1.2b, reference only). Medium and large trees are not carried into Chapter 2."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.2.3",
+      "chapter": "ch2",
+      "element": "1.2",
+      "element_title": "Trees and landscaping",
+      "title": "Small trees in the primary street setback area (Table 1.2a)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.trees_in_street_setback"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+      "applicability": "uncertain",
+      "missing": [
+        "building.primary_street_setback_m",
+        "landscape.trees_in_street_setback"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 11,
+        "table": "Table 1.2a"
+      },
+      "verify": true,
+      "notes": "Applies where the primary street setback is 1.5 m or greater (rule condition; read as the setback provided, building.primary_street_setback_m, not the Table 3.3 requirement; ambiguous). Frontage under 20 m: 1 small tree; 20 m or more: 1 per 10 m of frontage rounded down (table-1.2a). Street setback trees are in addition to the per-dwelling tree (C1.2.3-r1) and the C1.1.4 secondary POS tree. Tree provisions exclude ancillary dwellings. Excluded for R100-SL (no minimum tree provisions). applicability uncertain: building.primary_street_setback_m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.2.5",
+      "chapter": "ch2",
+      "element": "1.2",
+      "element_title": "Trees and landscaping",
+      "title": "Nominal root zone for a retained significant tree (AS4970)",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "site.retained_tree_root_zone_provided"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+      "applicability": "uncertain",
+      "missing": [
+        "site.retained_tree_root_zone_provided",
+        "site.significant_tree_retained"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 12
+      },
+      "notes": "Applies only where a significant existing tree is retained (rule condition). 'Nominal root zone' is not an AS4970 term (AS4970 uses tree protection zone and structural root zone); drafting query. applicability uncertain: site.significant_tree_retained"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C1.3.1",
+      "chapter": "ch2",
+      "element": "1.3",
+      "element_title": "Water management and conservation",
+      "title": "Stormwater from a small rainfall event retained on site",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "landscape.stormwater_retained_on_site",
+          "landscape.stormwater_to_system_required"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M1.3",
+      "applicability": "applies",
+      "missing": [
+        "landscape.stormwater_retained_on_site",
+        "landscape.stormwater_to_system_required"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 13
+      },
+      "notes": "Runoff from roofs, driveways, communal streets and other impervious surfaces generated by a small rainfall event (currently the first 15 mm) retained on site via garden areas, rainwater tanks and infiltration cells, appropriate to climatic, soil and groundwater conditions (not tested). C1.3.2 is an exception: connection to a district or local system only where the decision-maker requires it (check estate UWMP/LWMS drainage)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.1.1(i)",
+      "chapter": "ch2",
+      "element": "2.1",
+      "element_title": "Size and layout of dwellings",
+      "title": "Primary living space on the ground floor has direct access to the primary garden area",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.primary_living_direct_access_to_pga"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.1",
+      "applicability": "applies",
+      "missing": [
+        "building.primary_living_direct_access_to_pga"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 15,
+        "extract_line": 430
+      },
+      "verify": true,
+      "notes": "Clause carries no density qualifier but tests access to the primary garden area, which exists only at R50-R80 and R100-SL (C1.1.3). Whether it binds R40 and below (where the outdoor living area applies) is unclear; encoded for all codes as printed. Verify scope."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.3.1",
+      "chapter": "ch2",
+      "element": "2.3",
+      "element_title": "Parking",
+      "title": "Minimum on-site car parking spaces, Perth and Peel (Table 2.3a)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "site.location"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+      "applicability": "uncertain",
+      "missing": [
+        "site.location",
+        "site.region"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 18,
+        "extract_line": 542,
+        "table": "Table 2.3a"
+      },
+      "notes": "Minimum applies to all parking on site (garages, carports, uncovered, undercroft, basement). Location A/B definitions are in the table notes (register ch2-023: straight-line measurement enlarges Location A). Ancillary dwelling row and the R50+ maximum column are separate rules (C2.3.1-r1, -r2, -r3). applicability uncertain: site.region"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.3.2",
+      "chapter": "ch2",
+      "element": "2.3",
+      "element_title": "Parking",
+      "title": "Car spaces and manoeuvring areas per AS2890.1, Perth and Peel",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.as2890_compliant"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.as2890_compliant",
+        "site.region"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 18,
+        "extract_line": 543
+      },
+      "notes": "Twin of C2.3.4 (outside Perth and Peel). Visitor, motorcycle, bicycle and shade-tree parking provisions do not apply to single houses. applicability uncertain: site.region"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.3.3",
+      "chapter": "ch2",
+      "element": "2.3",
+      "element_title": "Parking",
+      "title": "Minimum on-site car parking spaces, R40 and below, outside Perth and Peel (Table 2.3b)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "tested": 2,
+        "threshold": 2,
+        "op": ">=",
+        "detail": {
+          "table": "table-2.3b",
+          "row": {
+            "proposal.bedrooms": {
+              "min": 3
+            }
+          },
+          "unit": "spaces"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+      "applicability": "uncertain",
+      "missing": [
+        "site.region"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 19,
+        "extract_line": 585,
+        "table": "Table 2.3b"
+      },
+      "notes": "No Location A/B outside Perth and Peel. R40-and-below minimum stays 2 for 2+ bedrooms while Perth and Peel falls to 1. The table's second column (headed 'Maximum garage and carport parking for R50 and above') is encoded literally in C2.3.3-r2 and -r3; no R50+ minimum is stated. applicability uncertain: site.region"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.3.4",
+      "chapter": "ch2",
+      "element": "2.3",
+      "element_title": "Parking",
+      "title": "Car spaces and manoeuvring areas per AS2890.1, outside Perth and Peel",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.as2890_compliant"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.as2890_compliant",
+        "site.region"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 19,
+        "extract_line": 586
+      },
+      "notes": "Twin of C2.3.2 (Perth and Peel). applicability uncertain: site.region"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.4.1",
+      "chapter": "ch2",
+      "element": "2.4",
+      "element_title": "Waste management",
+      "title": "Waste storage bins screened from view",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "services.bins_screened"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.4",
+      "applicability": "applies",
+      "missing": [
+        "services.bins_screened"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 20,
+        "extract_line": 607
+      },
+      "notes": "No waste management plan provision in this chapter. Merit wording changed from 'do not negatively impact' to 'minimise negative impacts'."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.5.1",
+      "chapter": "ch2",
+      "element": "2.5",
+      "element_title": "Utilities",
+      "title": "Service utilities accessible, with clear sightlines, integrated or screened from the street",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "services.service_utilities_accessible_screened"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.5",
+      "applicability": "applies",
+      "missing": [
+        "services.service_utilities_accessible_screened"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 20,
+        "extract_line": 620
+      },
+      "notes": "Service utilities: power, water, gas, wastewater, fire services, letterboxes, telecommunications. The three sub-tests are answered by one applicant fact (FACTS.md). NCC fire infrastructure note: visible and unobstructed. Register ch2-028: Part B solar collector, aerial and vent pipe provisions deleted (solar collectors exempt under the Regulations)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.5.2",
+      "chapter": "ch2",
+      "element": "2.5",
+      "element_title": "Utilities",
+      "title": "Functional utilities behind the primary street setback and not visible from the primary street",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "services.functional_utilities_behind_setback",
+          "services.functional_utilities_not_visible_from_street"
+        ],
+        "detail": {
+          "mode": "all",
+          "parts": [
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "services.functional_utilities_behind_setback"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "services.functional_utilities_not_visible_from_street"
+              ]
+            }
+          ]
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.5",
+      "applicability": "applies",
+      "missing": [
+        "services.functional_utilities_behind_setback",
+        "services.functional_utilities_not_visible_from_street"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 20,
+        "extract_line": 620
+      },
+      "notes": "Only sub-clause (i) is encoded; (ii) 'integrate with the development' and (iii) 'not visually obtrusive, minimise noise impact' need planner judgment and fall to M2.5. Functional utilities: air conditioning, plant, clothes drying, hot water, antennas and dishes, inverters and batteries, rainwater tanks; solar collectors and EV charging excluded."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.6.1-r1",
+      "chapter": "ch2",
+      "element": "2.6",
+      "element_title": "Outbuildings",
+      "title": "Outbuilding wall height (3 m, or 3.5 m where materials match the dwelling)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "outbuilding.matches_dwelling_materials",
+          "outbuilding.wall_height_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.6",
+      "applicability": "uncertain",
+      "missing": [
+        "outbuilding.matches_dwelling_materials",
+        "outbuilding.present",
+        "outbuilding.wall_height_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 21,
+        "extract_line": 651,
+        "table": "Table 2.6a",
+        "figure": "Figure 2.6a"
+      },
+      "verify": true,
+      "notes": "C2.6.2 says 'Notwithstanding C2.6.1(i)' but C2.6.1(i) is the lot-boundary cross-reference, not the wall height; the concession is read as modifying the Table 2.6a wall height. Figure 2.6a illustrates wall and total height measurement. applicability uncertain: outbuilding.present"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C2.6.1",
+      "chapter": "ch2",
+      "element": "2.6",
+      "element_title": "Outbuildings",
+      "title": "Outbuilding area, ridge height and location per Table 2.6a",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "outbuilding.in_street_setback_area",
+          "outbuilding.ridge_height_m",
+          "outbuilding.total_area_m2"
+        ],
+        "detail": {
+          "mode": "all",
+          "parts": [
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "outbuilding.total_area_m2"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "outbuilding.ridge_height_m"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "outbuilding.in_street_setback_area"
+              ]
+            }
+          ]
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M2.6",
+      "applicability": "uncertain",
+      "missing": [
+        "outbuilding.in_street_setback_area",
+        "outbuilding.present",
+        "outbuilding.ridge_height_m",
+        "outbuilding.total_area_m2"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 21,
+        "extract_line": 643,
+        "table": "Table 2.6a",
+        "figure": "Figure 2.6a"
+      },
+      "notes": "Table 2.6a: maximum individual or collective area 60m2 per site; maximum ridge height 4.2 m; not located within the primary or secondary street setback area. Wall height is rule C2.6.1-r1. C2.6.1 also requires that the outbuilding: (i) is set back or built up to lot boundaries per C3.4.1, C3.4.5 or C3.4.6; (ii) does not exceed site cover per C3.1.1; (iii) does not reduce the minimum OLA or PGA per C1.1.1 or C1.1.3; (iv) does not reduce minimum soft landscaping per C1.2.1; (v) does not reduce tree provisions and deep soil per C1.2.3. These cross-references are tested by those rules, not here. Register ch2-030: C3.4.6 does not exist in Chapter 2 (grouped-dwelling clause); C3.4.4 (boundary wall table) is omitted so a shed on a boundary has no clear path; C3.4.3 not referenced. Outbuildings must also meet the NCC (fire separation). Regional LGs may vary 2.6 by LPP without WAPC approval (Ch1 Table 2.5A). applicability uncertain: outbuilding.present"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.1.1",
+      "chapter": "ch2",
+      "element": "3.1",
+      "element_title": "Site cover",
+      "title": "Maximum site cover",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "tested": 42.89,
+        "threshold": 55,
+        "op": "<=",
+        "detail": {
+          "part": 193,
+          "of": 450,
+          "unit": "%"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.1",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 27,
+        "table": "Table 3.1a"
+      },
+      "notes": "Verified fixture rule. R30 and above (and R100-SL) return NOT_APPLICABLE through the null table row: 'Site cover does not apply to R30 and above'. Definitions differ from Part B open space (register ch2-037), so the +5 point relaxation is smaller when patios are built."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.1-r1",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Cone of vision setback from a bedroom or study major opening: 3 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.bedroom_study_setback_m",
+          "privacy.cone_captures_adjoining_opening"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.bedroom_study_setback_m",
+        "privacy.cone_captures_adjoining_opening",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 44,
+        "table": "Table 3.10a",
+        "figure": "Figure 3.10a, 3.10b"
+      },
+      "notes": "Table 3.10a row 'Major opening from bedroom and study': 3.0 m, literal in the evaluator because the table is keyed by source type rather than an application fact. The fact is the minimum setback of any such source, measured from the source to the adjoining property. Where the cone does not capture an adjoining opening or active habitable space the clause is satisfied regardless of the setback (encoded as an exception). Table 3.10a applies to sources with a floor level more than 0.5 m above NGL. The cone of vision radius includes the width of any adjoining ROW, communal street or battleaxe leg (p45 note). Applies to development adjoining an existing dwelling; vacant or unknown adjoining sites are C3.10.4. Coding excludes R100-SL: Table 2.10a removes all 3.10 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.1-r2",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Cone of vision setback from other habitable room major openings: 4.5 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.cone_captures_adjoining_opening",
+          "privacy.other_habitable_setback_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.cone_captures_adjoining_opening",
+        "privacy.other_habitable_setback_m",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 44,
+        "table": "Table 3.10a",
+        "figure": "Figure 3.10a, 3.10b"
+      },
+      "notes": "Table 3.10a row 'Major opening from habitable room other than bedroom and study': 4.5 m, literal in the evaluator because the table is keyed by source type rather than an application fact. The fact is the minimum setback of any such source, measured from the source to the adjoining property. Where the cone does not capture an adjoining opening or active habitable space the clause is satisfied regardless of the setback (encoded as an exception). Table 3.10a applies to sources with a floor level more than 0.5 m above NGL. The cone of vision radius includes the width of any adjoining ROW, communal street or battleaxe leg (p45 note). Applies to development adjoining an existing dwelling; vacant or unknown adjoining sites are C3.10.4. Coding excludes R100-SL: Table 2.10a removes all 3.10 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.1-r3",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Cone of vision setback from an outdoor active habitable space: 6 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.cone_captures_adjoining_opening",
+          "privacy.outdoor_active_setback_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.cone_captures_adjoining_opening",
+        "privacy.outdoor_active_setback_m",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 44,
+        "table": "Table 3.10a",
+        "figure": "Figure 3.10a, 3.10b"
+      },
+      "notes": "Table 3.10a row 'Outdoor active habitable space': 6.0 m, literal in the evaluator because the table is keyed by source type rather than an application fact. The fact is the minimum setback of any such source, measured from the source to the adjoining property. Where the cone does not capture an adjoining opening or active habitable space the clause is satisfied regardless of the setback (encoded as an exception). Table 3.10a applies to sources with a floor level more than 0.5 m above NGL. The cone of vision radius includes the width of any adjoining ROW, communal street or battleaxe leg (p45 note). Applies to development adjoining an existing dwelling; vacant or unknown adjoining sites are C3.10.4. Coding excludes R100-SL: Table 2.10a removes all 3.10 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.2",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Screening where the cone of vision captures an existing dwelling's opening",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.cone_forward_of_adjoining_setback_line",
+          "privacy.screened_or_offset"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.cone_captures_adjoining_opening",
+        "privacy.cone_forward_of_adjoining_setback_line",
+        "privacy.screened_or_offset",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 45,
+        "figure": "Figure 3.10c-3.10f"
+      },
+      "notes": "Fallback where C3.10.1 is not met. privacy.screened_or_offset covers limbs (i)-(iii) and the C3.10.3 offset. Table of changes: no DA required where the cone falls forward of the adjoining property's street setback or street setback line, whichever is greater. Table 3.10a applies to sources with a floor level more than 0.5 m above NGL. The cone of vision radius includes the width of any adjoining ROW, communal street or battleaxe leg (p45 note). Applies to development adjoining an existing dwelling; vacant or unknown adjoining sites are C3.10.4. Coding excludes R100-SL: Table 2.10a removes all 3.10 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.cone_captures_adjoining_opening, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.3",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Bedroom or study major opening offset 1.5 m from a parallel adjoining opening",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.bedroom_study_offset_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.bedroom_study_offset_m",
+        "privacy.cone_captures_adjoining_opening",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 45,
+        "figure": "Figure 3.10g"
+      },
+      "notes": "Alternative to C3.10.2 screening for bedroom and study openings only; measured edge to edge between the two parallel openings (proposed fact). Note on p45: offsetting gives an oblique view but may not address overlooking of other floor levels or active habitable spaces of the adjoining property. Table 3.10a applies to sources with a floor level more than 0.5 m above NGL. The cone of vision radius includes the width of any adjoining ROW, communal street or battleaxe leg (p45 note). Applies to development adjoining an existing dwelling; vacant or unknown adjoining sites are C3.10.4. Coding excludes R100-SL: Table 2.10a removes all 3.10 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.cone_captures_adjoining_opening, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.4-r1",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Vacant or unknown adjoining site: cone from a bedroom or study opening within the lot (3 m)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.bedroom_study_setback_m",
+          "privacy.screened_or_offset"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.bedroom_study_setback_m",
+        "privacy.screened_or_offset",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 45,
+        "table": "Table 3.10a",
+        "figure": "Figure 3.10h, 3.10i"
+      },
+      "notes": "Condition variant of C3.10.1-r1 for a vacant residential-zoned or unknown adjoining site: the Table 3.10a radius (3.0 m) is measured to the lot boundary so the cone stays within the lot. C3.10.5 screening is the exception (privacy.screened_or_offset also admits the C3.10.3 offset, which C3.10.5 does not list). Key greenfield rule while neighbouring lots are vacant. Part B note (iv) 'residential zoned land only' is not repeated, but the 'vacant residential zoned' wording remains. Coding excludes R100-SL (Table 2.10a; footnote restores 3.10 where the adjoining property is not R100-SL, not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.4-r2",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Vacant or unknown adjoining site: cone from other habitable room openings within the lot (4.5 m)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.other_habitable_setback_m",
+          "privacy.screened_or_offset"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.other_habitable_setback_m",
+        "privacy.screened_or_offset",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 45,
+        "table": "Table 3.10a",
+        "figure": "Figure 3.10h, 3.10i"
+      },
+      "notes": "Condition variant of C3.10.1-r2 for a vacant residential-zoned or unknown adjoining site: the Table 3.10a radius (4.5 m) is measured to the lot boundary so the cone stays within the lot. C3.10.5 screening is the exception (privacy.screened_or_offset also admits the C3.10.3 offset, which C3.10.5 does not list). Key greenfield rule while neighbouring lots are vacant. Part B note (iv) 'residential zoned land only' is not repeated, but the 'vacant residential zoned' wording remains. Coding excludes R100-SL (Table 2.10a; footnote restores 3.10 where the adjoining property is not R100-SL, not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.10.4-r3",
+      "chapter": "ch2",
+      "element": "3.10",
+      "element_title": "Visual privacy",
+      "title": "Vacant or unknown adjoining site: cone from an outdoor active habitable space within the lot (6 m)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "privacy.outdoor_active_setback_m",
+          "privacy.screened_or_offset"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.vacant_or_unknown",
+        "privacy.outdoor_active_setback_m",
+        "privacy.screened_or_offset",
+        "privacy.sources_above_0_5m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 45,
+        "table": "Table 3.10a",
+        "figure": "Figure 3.10h, 3.10i"
+      },
+      "notes": "Condition variant of C3.10.1-r3 for a vacant residential-zoned or unknown adjoining site: the Table 3.10a radius (6.0 m) is measured to the lot boundary so the cone stays within the lot. C3.10.5 screening is the exception (privacy.screened_or_offset also admits the C3.10.3 offset, which C3.10.5 does not list). Key greenfield rule while neighbouring lots are vacant. Part B note (iv) 'residential zoned land only' is not repeated, but the 'vacant residential zoned' wording remains. Coding excludes R100-SL (Table 2.10a; footnote restores 3.10 where the adjoining property is not R100-SL, not encoded). applicability uncertain: adjoining.vacant_or_unknown, privacy.sources_above_0_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.2.1#height",
+      "chapter": "ch2",
+      "element": "3.2",
+      "element_title": "Building height",
+      "title": "Maximum total building height",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.total_height_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.2",
+      "applicability": "applies",
+      "missing": [
+        "building.total_height_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 28,
+        "table": "Table 3.2a",
+        "figure": "Figure 3.2a, 3.2b"
+      },
+      "notes": "Height is the highest point of the development above natural ground level (deemed natural ground level where it varies). No wall height or roof-type limits in the draft. R100-SL 16 m taken from Table 2A (p7)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.2.1#storeys",
+      "chapter": "ch2",
+      "element": "3.2",
+      "element_title": "Building height",
+      "title": "Maximum number of storeys",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "tested": 2,
+        "threshold": 2,
+        "op": "<=",
+        "detail": {
+          "table": "table-3.2a-storeys",
+          "row": {
+            "site.r_code": "R2-R35"
+          },
+          "unit": "storeys"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.2",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 28,
+        "table": "Table 3.2a"
+      },
+      "notes": "Also register ch2-040, ch2-041. proposal.storeys is used (application form); building.storeys is the same count from the elevations. R100-SL has a separate rule (minimum two, maximum four storeys per Table 2.10a)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.1#laneway-primary",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Setback to an adjoining laneway or right-of-way that is the primary street",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.row_setback_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.row_setback_m",
+        "site.has_row",
+        "site.row_is_primary_street"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 29,
+        "table": "Table 3.3a"
+      },
+      "notes": "Table 3.3a footnote 1: this row does not apply to ancillary dwellings (applies_to is single_house only). applicability uncertain: site.has_row, site.row_is_primary_street"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.1#laneway",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Setback to an adjoining laneway or right-of-way that is not the primary street",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.row_setback_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.row_setback_m",
+        "site.has_row",
+        "site.row_is_primary_street"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 29,
+        "table": "Table 3.3a"
+      },
+      "notes": "R2-R12.5 take the secondary street value (merged cell confirmed on p29); R15+ 0.5 m. Communal streets are no longer separately listed. applicability uncertain: site.has_row, site.row_is_primary_street"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.1#r1",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Minor projections into the street setback",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.primary_street_projection_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "applies",
+      "missing": [
+        "building.primary_street_projection_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 29
+      },
+      "notes": "Un-numbered paragraph under C3.3.1. Applies to any street setback; the fact is the deepest projection into the primary street setback. Minor projections must also comply with the NCC (note)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.1#secondary",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Secondary street setback",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.secondary_street_setback_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.secondary_street_setback_m",
+        "site.has_secondary_street"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 29,
+        "table": "Table 3.3a"
+      },
+      "notes": "Applies only where the lot has a secondary street. R100-SL 1 m is a separate rule. applicability uncertain: site.has_secondary_street"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.1",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Primary street setback",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.primary_street_setback_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "applies",
+      "missing": [
+        "building.primary_street_setback_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 29,
+        "table": "Table 3.3a"
+      },
+      "notes": "building.primary_street_setback_m is the setback of the building excluding minor projections (C3.3.1-r1) and portions reduced under C3.3.2, which are separate tests. Where road widening is required the setback is measured from the adjusted street boundary (Table 3.3a note; site.road_widening_m). Corner truncation setback deleted (register ch2-045). R100-SL 1 m is a separate rule."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.2(i)#r1",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Reduced primary street setback for a portion of the frontage: maximum width of the reduced portion",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.primary_street_reduced_portion_width_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.primary_street_reduced_portion_width_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 30,
+        "table": "Table 3.3b",
+        "figure": "Figure 3.3a"
+      },
+      "notes": "The formula value is the permitted width; the rule MEETS when the built-forward width is at or under it. Per the Table 3.3b footnote, a garage provided in accordance with Table 3.3c is excluded from the width, so the fact is the width excluding such a garage. applicability uncertain: building.primary_street_reduced_portion_width_m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.2(i)",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Reduced primary street setback for a portion of the frontage: minimum reduced setback",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.primary_street_setback_reduced_portion_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.primary_street_reduced_portion_width_m",
+        "building.primary_street_setback_reduced_portion_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 30,
+        "table": "Table 3.3b",
+        "figure": "Figure 3.3a"
+      },
+      "notes": "Applies only where a portion is built forward (reduced-portion width > 0). No Table 3.3b row for R50+. Companion test C3.3.2(i)-r1 limits the width of the reduced portion. Draft typo 'in accordance with in Table 3.3b'. applicability uncertain: building.primary_street_reduced_portion_width_m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.2(ii)",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Porch, verandah or unenclosed balcony projection into the primary street setback",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.porch_projection_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.porch_projection_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 30,
+        "figure": "Figure 3.3b"
+      },
+      "notes": "Encoded as a formula whose value is a table lookup: evaluators._resolve_value accepts {'table': ...} as a formula value (only the expression itself cannot reference a table). Twice the projection must not exceed the Table 3.3a primary setback, i.e. the projection is at most half the required setback. Full building width is permitted so no width test. Coding excludes R100-SL (table has no row; the formula evaluator cannot return NOT_APPLICABLE). applicability uncertain: building.porch_projection_m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.2(iii)#r1",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Corner lot subdivision: porch, balcony or verandah setback to the original secondary street",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.porch_street_setback_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.porch_street_setback_m",
+        "site.corner_lot_subdivided"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 30
+      },
+      "notes": "Uses fact building.porch_street_setback_m (FACTS.md); the porch projection fact cannot express an absolute setback. applicability uncertain: site.corner_lot_subdivided"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.2(iii)",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Corner lot subdivision: reduced setback to the original secondary street",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.primary_street_setback_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "building.primary_street_setback_m",
+        "site.corner_lot_subdivided"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 30
+      },
+      "notes": "The original secondary street is the lot's primary street after subdivision, so the primary street setback fact is tested. The porch limb (1.5 m) is C3.3.2(iii)-r1. When this concession is claimed the C3.3.1 table value is not the operative test; a planner reconciles the two results. applicability uncertain: site.corner_lot_subdivided"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.3",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Garage setback from the primary street",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.garage.setback_primary_m",
+          "site.verge.path_or_road_offset_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "applies",
+      "missing": [
+        "parking.garage.setback_primary_m",
+        "site.verge.path_or_road_offset_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 31,
+        "table": "Table 3.3c",
+        "figure": "Figure 3.3c"
+      },
+      "notes": "Verified fixture rule. R40 and above are governed by Table 3.3a (C3.3.3#r40-plus). Reduction paragraphs are un-numbered in the draft. Garage-adjoins-dwelling reduction (Part B Figure 8b) deleted (register ch2-051). Applies only where a garage is proposed (condition parking.garage.present, as for C3.3.3#r40-plus)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.5#garage-row",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Garage setback from a right-of-way",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.garage.setback_row_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.garage.setback_row_m",
+        "site.has_row",
+        "site.row_is_primary_street"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 31,
+        "table": "Table 3.3a"
+      },
+      "notes": "Uses the 'not the primary street' row; where the ROW is the primary street the garage is governed by C3.3.3. The 6 m manoeuvring-space test of Part B C1.4 is not carried. applicability uncertain: site.has_row, site.row_is_primary_street"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.3.5#garage-secondary",
+      "chapter": "ch2",
+      "element": "3.3",
+      "element_title": "Street setbacks",
+      "title": "Garage setback from a secondary street",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.garage.setback_secondary_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.garage.setback_secondary_m",
+        "site.has_secondary_street"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 31,
+        "table": "Table 3.3a"
+      },
+      "notes": "Not in the table of changes; R2-R12.5 corner lots move from 1.5 m to 2-10 m, probably unintended (register ch2-053). applicability uncertain: site.has_secondary_street"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.1(i)",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Minor projections into the lot boundary setback",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.side_projection_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "missing": [
+        "building.side_projection_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 32
+      },
+      "notes": "Minor projections must also comply with the NCC (note). The fact is the deepest projection into any lot boundary setback."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.1#rear-r17.5",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Rear setback (R17.5 and above): no provision",
+      "column": "C",
+      "kind": "measurable",
+      "status": "NOT_APPLICABLE",
+      "outcome": {
+        "status": "NOT_APPLICABLE",
+        "detail": {
+          "reason": "no provision for this case"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 32,
+        "table": "Table 3.4a"
+      },
+      "verify": true,
+      "notes": "AMBIGUITY (register ch2-055, high priority): the draft gives no rear setback for R17.5+ (Table 2A N/A). Encoded as NOT_APPLICABLE through the null row, not as the side-setback values. Either reading needs confirmation. R100-SL added to coding: Table 2.10a does not modify rear setbacks and Table 2A (draft p7, extract line 189) shows N/A spanning R17.5 to R100-SL."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.1#side-3.6-to-7m",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Side setback, walls 3.6 m to 7 m high (R2-R40)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.side_setback_walls_3_6_to_7m_m",
+          "site.adjoining_pedestrian_access_way_width_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "uncertain",
+      "missing": [
+        "building.has_walls_3_6_to_7m",
+        "building.side_setback_walls_3_6_to_7m_m",
+        "site.adjoining_pedestrian_access_way_width_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 32,
+        "table": "Table 3.4a",
+        "figure": "Figure 3.4a-d"
+      },
+      "verify": true,
+      "notes": "R2 and R2.5 have flat side setbacks (10 m, 7.5 m) regardless of wall height. Applies only where the building has walls 3.6 m to 7 m high (condition on building.has_walls_3_6_to_7m); the band does not depend on the building's maximum wall height. Reduction (ii) is limited to a pedestrian access way (ROW, communal street and battleaxe leg credits of Part B dropped, register ch2-057). Rounding gap between bands unresolved. Split from the R50+ rule so the reduction is confined to R2-R40. applicability uncertain: building.has_walls_3_6_to_7m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.1#side-over-7.1m",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Side setback, walls above 7.1 m high (R2-R40)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.side_setback_walls_over_7_1m_m",
+          "site.adjoining_pedestrian_access_way_width_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "uncertain",
+      "missing": [
+        "building.has_walls_over_7_1m",
+        "building.side_setback_walls_over_7_1m_m",
+        "site.adjoining_pedestrian_access_way_width_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 32,
+        "table": "Table 3.4a",
+        "figure": "Figure 3.4a-d"
+      },
+      "verify": true,
+      "notes": "R2 and R2.5 have flat side setbacks (10 m, 7.5 m) regardless of wall height. Applies only where the building has walls 7.1 m high and above (condition on building.has_walls_over_7_1m); the band does not depend on the building's maximum wall height. Reduction (ii) is limited to a pedestrian access way (ROW, communal street and battleaxe leg credits of Part B dropped, register ch2-057). Rounding gap between bands unresolved. Split from the R50+ rule so the reduction is confined to R2-R40. applicability uncertain: building.has_walls_over_7_1m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.1#side-to-3.5m",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Side setback, walls up to 3.5 m high (R2-R40)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.side_setback_walls_to_3_5m_m",
+          "site.adjoining_pedestrian_access_way_width_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "uncertain",
+      "missing": [
+        "building.has_walls_to_3_5m",
+        "building.side_setback_walls_to_3_5m_m",
+        "site.adjoining_pedestrian_access_way_width_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 32,
+        "table": "Table 3.4a",
+        "figure": "Figure 3.4a-d"
+      },
+      "notes": "R2 and R2.5 have flat side setbacks (10 m, 7.5 m) regardless of wall height. Reduction (ii) is limited to a pedestrian access way (ROW, communal street and battleaxe leg credits of Part B dropped, register ch2-057). Rounding gap between bands unresolved. Split from the R50+ rule so the reduction is confined to R2-R40. Applies only where the building has walls up to 3.5 m high (condition on building.has_walls_to_3_5m); the band does not depend on the building's maximum wall height. applicability uncertain: building.has_walls_to_3_5m"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.2",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Second and third storey walls: maximum 14 m length at the Table 3.4a setback",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "detail": {
+          "mode": "any",
+          "parts": [
+            {
+              "status": "MEETS",
+              "tested": 12.3,
+              "threshold": 14,
+              "op": "<="
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "building.upper_storey_wall_over_14m_setback_m"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "building.upper_storey_wall_has_3x3_separation"
+              ]
+            }
+          ]
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 33,
+        "figure": "Figure 3.4e"
+      },
+      "notes": "Applies to buildings of two or more storeys. The setback of the first 14 m is tested by the C3.4.1 side rules. Overlaps with the 14 m boundary wall rule at R50+ (register ch2-065)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.3",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Carports, patios, verandahs or equivalent structures built to the lot boundary",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.boundary_structure.length_m",
+          "building.boundary_structure.post_height_m",
+          "building.boundary_structure.post_size_mm",
+          "building.boundary_structure.ridge_height_m"
+        ],
+        "detail": {
+          "mode": "all",
+          "parts": [
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "building.boundary_structure.length_m"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "building.boundary_structure.post_height_m"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "building.boundary_structure.ridge_height_m"
+              ]
+            },
+            {
+              "status": "CANNOT_TELL",
+              "missing": [
+                "building.boundary_structure.post_size_mm"
+              ]
+            }
+          ]
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "uncertain",
+      "missing": [
+        "building.boundary_structure.length_m",
+        "building.boundary_structure.post_height_m",
+        "building.boundary_structure.post_size_mm",
+        "building.boundary_structure.present",
+        "building.boundary_structure.ridge_height_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 33,
+        "table": "Table 3.4b",
+        "figure": "Figure 3.4f"
+      },
+      "notes": "All four Table 3.4b limits must be met (literal values; table-3.4b is documentary). Posts on the boundary of 450 mm or less are excluded from boundary wall length. Not explicit that the structure must be behind the street setback (C3.3.4 governs carports). NCC fire separation applies. Uses proposed fact building.boundary_structure.present. applicability uncertain: building.boundary_structure.present"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4(i)",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Boundary walls located behind the street setback",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.boundary_walls.behind_street_setback"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "uncertain",
+      "missing": [
+        "building.boundary_walls.behind_street_setback",
+        "building.boundary_walls.count"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34
+      },
+      "notes": "Also the Table 2.10a condition for R100-SL boundary walls. applicability uncertain: building.boundary_walls.count"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4(ii)",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Boundary wall overshadowing within C3.9.1",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34
+      },
+      "notes": "Cross-reference only: the test is C3.9.1 (element 3.9, another part). Recorded as judgment so the element is complete; the overshadowing result for the lot is read from C3.9.1. The draft omits C3.9.2 and C3.9.3 though they now govern narrow-lot and single-storey cases (register ch2-066)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4(iii)",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Boundary walls finished to an equivalent standard",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34
+      },
+      "notes": "'To the satisfaction of the decision-maker' needs a planner."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4#count-r20-r25",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Boundary walls on up to two lot boundaries, R20-R25",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.boundary_walls.count"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "missing": [
+        "building.boundary_walls.count"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34,
+        "table": "Table 3.4c",
+        "figure": "Figure 3.4h"
+      }
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4#height-r10-r40",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Boundary wall maximum height, R10-R40 (3.5 m)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.boundary_walls.adjoining_wall_exists",
+          "building.boundary_walls.max_height_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "uncertain",
+      "missing": [
+        "building.boundary_walls.adjoining_wall_exists",
+        "building.boundary_walls.count",
+        "building.boundary_walls.max_height_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34,
+        "table": "Table 3.4c",
+        "figure": "Figure 3.4g-i"
+      },
+      "notes": "One height rule for every band in R10-R40 (register ch2-061 to ch2-064). Height includes any retaining wall directly beneath the boundary wall (Table 3.4c note, Figure 3.4k; the fact is defined that way). Lower density code governs between differently coded sites (C3.4.4-r1). No boundary wall provision below R10. applicability uncertain: building.boundary_walls.count"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4#length-r20-r25",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Boundary wall maximum length, R20-R25 (greater of 9 m or 35% of the boundary)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.boundary_walls.adjoining_wall_exists",
+          "building.boundary_walls.max_length_m",
+          "building.boundary_walls.max_pct_of_boundary"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "uncertain",
+      "missing": [
+        "building.boundary_walls.adjoining_wall_exists",
+        "building.boundary_walls.count",
+        "building.boundary_walls.max_length_m",
+        "building.boundary_walls.max_pct_of_boundary"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34,
+        "table": "Table 3.4c",
+        "figure": "Figure 3.4h"
+      },
+      "notes": "Either limb satisfies the test (the greater of). Percentage is of the whole lot boundary, not the balance behind the street setback. applicability uncertain: building.boundary_walls.count"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4#r1",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Lower density code governs the boundary wall between differently coded sites",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34
+      },
+      "notes": "Table 3.4c note. Needs the adjoining lot's coding per boundary; no per-boundary fact exists, so recorded as judgment. A planner re-runs the C3.4.4 rules with the lower code where it applies."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.4#r2",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Retaining wall beneath a boundary wall is included in the wall height",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34
+      },
+      "notes": "Table 3.4c note. Measurement rule rather than a test: building.boundary_walls.max_height_m is defined to include the retaining wall beneath, so the height rules already apply it. Such a retaining wall is not assessed under C3.5.1. Estate bulk-earthworks retaining walls no longer exempt (register ch2-066)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.4.5",
+      "chapter": "ch2",
+      "element": "3.4",
+      "element_title": "Lot boundary setbacks",
+      "title": "Boundary wall abutting an existing or simultaneously constructed wall",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 34
+      },
+      "notes": "Applied mechanically as a not_applicable exception on every C3.4.4 height and length rule (fact building.boundary_walls.adjoining_wall_exists); whether the proposed wall stays within the height and length of the existing wall is a planner check, hence judgment here."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.5.1",
+      "chapter": "ch2",
+      "element": "3.5",
+      "element_title": "Site works and retaining walls",
+      "title": "Site works forward of the street setback line",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "site_works.forward_of_setback_for_access_drainage_light",
+          "site_works.forward_of_setback_max_change_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.5",
+      "applicability": "applies",
+      "missing": [
+        "site_works.forward_of_setback_for_access_drainage_light",
+        "site_works.forward_of_setback_max_change_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 36
+      },
+      "notes": "The fact is the greater of fill above and excavation below NGL forward of the line. Draft adds 'pedestrian universal access' to the exception list; otherwise as Part B C7.1 / Part C C3.5.1."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.5.2",
+      "chapter": "ch2",
+      "element": "3.5",
+      "element_title": "Site works and retaining walls",
+      "title": "Retaining walls and fill behind the street setback: setback per Table 3.5a",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "site_works.retaining_max_height_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.5",
+      "applicability": "applies",
+      "missing": [
+        "site_works.retaining_max_height_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 36,
+        "table": "Table 3.5a"
+      },
+      "notes": "Height is measured from NGL at the lot boundary adjacent to that point of the wall (Table 3.5a measurement note). Retaining up to 1 m may sit at nil setback (was 0.5 m under Part B Table 4). LDP modification of 3.5 needs WAPC approval in draft Table 2.5B, unlike the current code (register note)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.5.3",
+      "chapter": "ch2",
+      "element": "3.5",
+      "element_title": "Site works and retaining walls",
+      "title": "Excavation behind the street setback line may extend to the lot boundary",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "site_works.excavation_behind_setback"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.5",
+      "applicability": "applies",
+      "missing": [
+        "site_works.excavation_behind_setback"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 36
+      },
+      "notes": "Permissive clause encoded as a yes/no: all excavation on the site lies behind the street setback line (excavation forward of the line is governed by C3.5.1). Where no excavation is proposed the applicant answers true. NCC and engineering requirements may apply."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.6.1",
+      "chapter": "ch2",
+      "element": "3.6",
+      "element_title": "Streetscape",
+      "title": "Dwelling addresses the street",
+      "column": "C",
+      "kind": "conditional",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "detail": {
+          "mode": "all",
+          "parts": [
+            {
+              "status": "MEETS",
+              "tested": true,
+              "threshold": true,
+              "op": "=="
+            },
+            {
+              "status": "MEETS",
+              "tested": true,
+              "threshold": true,
+              "op": "=="
+            }
+          ]
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 37
+      },
+      "notes": "Both limbs required. 'Habitable room' qualifier on the major opening is dropped from the current code; Part B ancillary dwelling exemption not carried (see 2.8). Street includes a battleaxe driveway, communal street or ROW where that is the primary frontage."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.6.2",
+      "chapter": "ch2",
+      "element": "3.6",
+      "element_title": "Streetscape",
+      "title": "Upper-level outlook to adjoining public open space",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.upper_level_outlook_to_pos"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+      "applicability": "uncertain",
+      "missing": [
+        "building.upper_level_outlook_to_pos",
+        "site.adjoins_public_open_space"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 37
+      },
+      "notes": "New requirement on any two-storey house on a POS-fronting lot. 'Adjoining' POS is undefined (a road or path between the lot and the POS may or may not count). applicability uncertain: site.adjoins_public_open_space"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.6.3",
+      "chapter": "ch2",
+      "element": "3.6",
+      "element_title": "Streetscape",
+      "title": "Garage width as a proportion of frontage",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "tested": 38.87,
+        "threshold": 50,
+        "op": "<=",
+        "detail": {
+          "part": 5.83,
+          "of": 15,
+          "unit": "%"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 37,
+        "figure": "Figure 3.6a"
+      },
+      "verify": true,
+      "notes": "Frontage is measured at the primary street setback line (Appendix definition). Figure 3.6a: 6 m garage on 12 m frontage = 50%; on 10 m = 60%. No narrow-lot concession (handled through merit assessment). Clause text says 'upper floor balcony'; Figure 3.6a says 'upper floor or balcony'."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.6.5(i)",
+      "chapter": "ch2",
+      "element": "3.6",
+      "element_title": "Streetscape",
+      "title": "Front fence or wall maximum height 1.8 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.front_fence.height_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+      "applicability": "uncertain",
+      "missing": [
+        "building.front_fence.height_m",
+        "building.front_fence.present"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 38,
+        "figure": "Figure 3.6b"
+      },
+      "notes": "Height measured from NGL on the primary street side (limb iii). R100-SL is a separate rule (900 mm, Table 2.10a). New 1.8 m cap for R40 and below. C3.6.5 cannot be varied by LPP/LDP without WAPC approval (Ch1 Tables 2.5A/2.5B). Secondary street fencing provision (Part C C3.6.9) deleted (ch2-074). applicability uncertain: building.front_fence.present"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.6.5(ii)",
+      "chapter": "ch2",
+      "element": "3.6",
+      "element_title": "Streetscape",
+      "title": "Front fence or wall visually permeable above 1.2 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.front_fence.permeable_above_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+      "applicability": "uncertain",
+      "missing": [
+        "building.front_fence.permeable_above_m",
+        "building.front_fence.present"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 38,
+        "figure": "Figure 3.6b"
+      },
+      "notes": "Fact is the height above which the fence is visually permeable; the solid portion may not exceed 1.2 m above NGL on the street side. A fence wholly below 1.2 m is permeable above 1.2 m vacuously (supply the fence height). applicability uncertain: building.front_fence.present"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.6.6-r1",
+      "chapter": "ch2",
+      "element": "3.6",
+      "element_title": "Streetscape",
+      "title": "Front fence solid pillars maximum height 1.8 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.front_fence.pillar_height_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+      "applicability": "uncertain",
+      "missing": [
+        "building.front_fence.pillar_height_m",
+        "building.front_fence.pillars_present",
+        "building.front_fence.present"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 38,
+        "figure": "Figure 3.6b"
+      },
+      "notes": "Pillar size is C3.6.6-r2; the permeable infill between pillars is C3.6.5(ii). Part B allowed 400 mm pillars (relaxed to 450). applicability uncertain: building.front_fence.pillars_present, building.front_fence.present"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.6.6-r2",
+      "chapter": "ch2",
+      "element": "3.6",
+      "element_title": "Streetscape",
+      "title": "Front fence solid pillars maximum 450 mm by 450 mm",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "building.front_fence.pillar_size_mm"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+      "applicability": "uncertain",
+      "missing": [
+        "building.front_fence.pillar_size_mm",
+        "building.front_fence.pillars_present",
+        "building.front_fence.present"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 38,
+        "figure": "Figure 3.6b"
+      },
+      "notes": "Fact is the larger horizontal dimension of any pillar in millimetres. applicability uncertain: building.front_fence.pillars_present, building.front_fence.present"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.1",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Vehicle access from the lowest-order available street",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.access.from_lowest_order_street"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.access.from_lowest_order_street",
+        "site.has_communal_street",
+        "site.has_row",
+        "site.has_secondary_street"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39
+      },
+      "notes": "'Multiple accesses available' is modelled as any of a ROW, communal street or secondary street frontage. A ROW counts only where lawful, trafficable and drained to a constructed street; that qualification sits inside the applicant's answer. LDPs may vary C3.7.1 without WAPC approval (Table 2.5B). applicability uncertain: site.has_communal_street, site.has_row, site.has_secondary_street"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.10",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Battleaxe leg lighting and landscaping",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 41
+      },
+      "notes": "'Adequate' lighting and 'landscaped' need a planner; no evaluator."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.3(i)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Driveway minimum width 3 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.driveway.width_min_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "applies",
+      "missing": [
+        "parking.driveway.width_min_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39
+      },
+      "notes": "No driveway setback from the side lot boundary in the draft (Part B 0.5 m, Part C 0.3 m deleted; not in the table of changes)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.3(ii)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Driveway maximum width 6 m at the street boundary",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.driveway.width_at_boundary_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "applies",
+      "missing": [
+        "parking.driveway.width_at_boundary_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39
+      }
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.3(iii)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Driveway aggregate width 9 m per property (R35 and below)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.driveway.aggregate_width_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "applies",
+      "missing": [
+        "parking.driveway.aggregate_width_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39
+      },
+      "notes": "Aggregate of all driveway widths at the street boundary for the one property."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.3(iv)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Driveway set back 6 m from a street corner",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.driveway.setback_to_corner_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.driveway.setback_to_corner_m",
+        "site.corner_lot"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39,
+        "figure": "Figure 3.7b"
+      },
+      "notes": "Figure 3.7b measures the 6 m from the tangent point of the corner truncation. Applied to corner lots only. applicability uncertain: site.corner_lot"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.3(v)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Driveway at right angles to the road carriageway",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.driveway.right_angle_to_carriageway"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "applies",
+      "missing": [
+        "parking.driveway.right_angle_to_carriageway"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39
+      }
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.3(vi)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Driveway adequately trafficable and drained",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.driveway.trafficable_and_drained"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "applies",
+      "missing": [
+        "parking.driveway.trafficable_and_drained"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39
+      }
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.4",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Exit to the street in forward gear",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.driveway.exit_forward_gear"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.driveway.exit_forward_gear",
+        "parking.driveway.space_to_boundary_m",
+        "site.primary_street_class"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 39
+      },
+      "notes": "Where neither trigger holds the rule does not apply. Regional and rural-residential long driveways: threshold 15 m -> 30 m. Street class is the primary street's class; a driveway to a secondary street that is an arterial is not distinguished. applicability uncertain: parking.driveway.space_to_boundary_m, site.primary_street_class"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.5",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Sightline truncation at driveways, ROWs and street corners",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.sightlines.clear_0_75m_within_1_5m",
+          "site.verge.path_or_road_offset_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "applies",
+      "missing": [
+        "parking.sightlines.clear_0_75m_within_1_5m",
+        "site.verge.path_or_road_offset_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 40,
+        "figure": "Figure 3.7c"
+      },
+      "notes": "One yes/no covering all three locations in (i)-(iii). C3.7.6 is recorded as an exception on this rule, not a separate file. site.verge.path_or_road_offset_m is the nearer of the existing or planned path/road alignment."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.7",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "1 m x 1 m sightline truncation either side of a ROW driveway",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "parking.sightlines.row_truncation_1m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "missing": [
+        "parking.sightlines.row_truncation_1m",
+        "site.access_from_rear_row"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 40,
+        "figure": "Figure 3.7d"
+      },
+      "verify": true,
+      "notes": "Condition uses site.access_from_rear_row; a side ROW access would also trigger the clause but has no fact (parking.access.street_type == row is the alternative). applicability uncertain: site.access_from_rear_row"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.8(i)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Pedestrian access leg minimum width 1.5 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "proposal.retained_dwelling",
+          "site.pedestrian_access_leg_width_m"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "missing": [
+        "proposal.retained_dwelling",
+        "site.has_pedestrian_access_leg",
+        "site.pedestrian_access_leg_width_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 40
+      },
+      "notes": "Condition uses the proposed fact site.has_pedestrian_access_leg (a pedestrian-only leg is distinct from a battleaxe leg). 'Where required to retain' is tested only as the dwelling being retained. applicability uncertain: site.has_pedestrian_access_leg"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.8(ii)",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Pedestrian access leg continuous 1 m clear path",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "site.pedestrian_access_leg_clear_path_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "missing": [
+        "site.has_pedestrian_access_leg",
+        "site.pedestrian_access_leg_clear_path_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 40
+      },
+      "notes": "Clear of utilities and minor projections, excluding eaves. Proposed fact. applicability uncertain: site.has_pedestrian_access_leg"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.7.9",
+      "chapter": "ch2",
+      "element": "3.7",
+      "element_title": "Access",
+      "title": "Battleaxe leg minimum width 3.6 m",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "site.battleaxe_leg_width_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+      "applicability": "uncertain",
+      "missing": [
+        "site.battleaxe",
+        "site.battleaxe_leg_width_m"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 41,
+        "figure": "Figure 3.7e"
+      },
+      "notes": "3 m driveway is C3.7.3(i); the 0.3 m margins either side are not separately tested. Figure 3.7e is titled 'Communal street width' and shows the street setback to a communal street (Table 3.3a). Merit M3.7.3 allows a reduced leg where retaining an existing dwelling. applicability uncertain: site.battleaxe"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.8.1",
+      "chapter": "ch2",
+      "element": "3.8",
+      "element_title": "Retaining existing dwellings",
+      "title": "Provisions that apply to a retained dwelling",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.8",
+      "applicability": "uncertain",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 41
+      },
+      "notes": "Cross-reference list, in order: C1.1.1, C1.1.3; C1.2.1, C1.2.2, C1.2.3, C1.2.4; C1.3.1, C1.3.2; C2.3.1 and C2.3.3 (minimums only), C2.3.2, C2.3.4; C2.4.1; C2.5.1, C2.5.2; C2.6.1, C2.6.2; C3.4.1, C3.4.3, C3.4.4, C3.4.5 (newly created boundaries only). The listed rules run on the retained dwelling's facts; this record only flags the applicability. The list omits C1.1.2, C1.1.5 and C3.4.2 (register note)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.9.1-diagonal",
+      "chapter": "ch2",
+      "element": "3.9",
+      "element_title": "Solar access for adjoining sites",
+      "title": "Maximum overshadowing of a diagonally adjacent lot (Table 3.9a)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "adjoining.diagonal.r_code"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.9",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.diagonal.r_code",
+        "site.climate_zone"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 42,
+        "table": "Table 3.9a",
+        "figure": "Figure 3.9b"
+      },
+      "notes": "Second column of Table 3.9a (half the adjoining-property figure). Not subject to C3.9.3 or C3.9.4. New for single houses at R40 and below (not in the table of changes). Coding excludes R100-SL: Table 2.10a removes all 3.9 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: site.climate_zone"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.9.1",
+      "chapter": "ch2",
+      "element": "3.9",
+      "element_title": "Solar access for adjoining sites",
+      "title": "Maximum overshadowing of an adjoining property (Table 3.9a)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "adjoining.south.frontage_m",
+          "adjoining.south.r_code"
+        ],
+        "detail": {
+          "reason": "an exception may apply; its facts are missing"
+        }
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.9",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.south.frontage_m",
+        "adjoining.south.r_code",
+        "site.climate_zone"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 42,
+        "table": "Table 3.9a",
+        "figure": "Figure 3.9a, 3.9b, 3.9c"
+      },
+      "notes": "Shadow as % of the adjoining site area measured at NGL. Dividing fences up to 2 m do not contribute (Figure 3.9c). Where the adjoining site is a grouped dwelling development the limit applies per dwelling site excluding common property (footnote 1; adjoining.south.is_grouped_site, not encoded). C3.9.2 exemption also requires the single-storey building to meet C3.2.1, C3.4.1, C3.4.5, C3.4.6 (which does not exist in Chapter 2) and C3.1.1 (no metric at R30+); only storeys and wall height are tested. Named codes have no Table 3.9a row and return NOT_APPLICABLE (R80 standards). Coding excludes R100-SL: Table 2.10a removes all 3.9 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: site.climate_zone"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.9.3",
+      "chapter": "ch2",
+      "element": "3.9",
+      "element_title": "Solar access for adjoining sites",
+      "title": "Overshadowing of a narrow adjoining lot (Table 3.9b, rear half of site)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "adjoining.south.r_code",
+          "adjoining.south.frontage_m"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.9",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.south.battleaxe",
+        "adjoining.south.frontage_m",
+        "adjoining.south.r_code",
+        "site.climate_zone"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 43,
+        "table": "Table 3.9b",
+        "figure": "Figure 3.9e"
+      },
+      "notes": "Table 3.9b is keyed by the adjoining lot's coding and frontage; a non-narrow or sub-R40 adjoining lot has no row and returns NOT_APPLICABLE (C3.9.1 governs). No limit on the front half of the adjoining site. The C3.9.2 single-storey exemption is written against C3.9.1 only and is not applied here. 7.5 m narrow-lot threshold differs from the 8.5 m used in 3.4 (register note). Coding excludes R100-SL: Table 2.10a removes all 3.9 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: adjoining.south.battleaxe, site.climate_zone"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C3.9.4",
+      "chapter": "ch2",
+      "element": "3.9",
+      "element_title": "Solar access for adjoining sites",
+      "title": "Proportional shading limit where the neighbour's northern boundary is shared by several lots",
+      "column": "C",
+      "kind": "conditional",
+      "status": "CANNOT_TELL",
+      "outcome": {
+        "status": "CANNOT_TELL",
+        "missing": [
+          "overshadow.proportional_to_shared_boundary"
+        ]
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M3.9",
+      "applicability": "uncertain",
+      "missing": [
+        "adjoining.north_shared_boundary_count",
+        "overshadow.proportional_to_shared_boundary",
+        "site.climate_zone"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 43,
+        "figure": "Figure 3.9f"
+      },
+      "notes": "Applicant states that the shadow cast is within the Table 3.9a limit scaled by the share of the neighbour's northern boundary the site abuts (Figure 3.9f: 35% limit shared 3:1:1 over 50 m gives 15% / 5% / 5%). The proportional figure is not computed by the engine; C3.9.1 still tests the unscaled limit. Coding excludes R100-SL: Table 2.10a removes all 3.9 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded). applicability uncertain: adjoining.north_shared_boundary_count, site.climate_zone"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C4.1.1-r2",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "Minimum site area of a rear battleaxe site (Table 2B)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "tested": 450,
+        "threshold": 450,
+        "op": ">="
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M4.1",
+      "applicability": "uncertain",
+      "missing": [
+        "site.battleaxe"
+      ],
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 51,
+        "table": "Table 2B"
+      },
+      "verify": true,
+      "notes": "Applies to a battleaxe site (rule condition). Area calculated per C4.1.3(ii)-(iv): R40 and below includes the access leg where the leg is no more than 20% of the required area, plus half an adjoining ROW/reserve up to 2 m; R50 and above excludes the leg and truncations (effective lot area). R2-R5 and R100-SL: no battleaxe figure (null). Whether the C4.1.5-C4.1.7 concessions reduce the battleaxe column is not stated ('minimum and average site area'); not applied here. applicability uncertain: site.battleaxe"
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C4.1.1-r3",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "Minimum frontage of the site (Table 2B)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "tested": 15,
+        "threshold": 10,
+        "op": ">="
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M4.1",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 51,
+        "table": "Table 2B"
+      },
+      "notes": "Frontage measured at the primary street setback line (A1). R30 and above: no minimum (null). C4.1.4 is expressed for site area only, so no exception here."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C4.1.1",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "Minimum site area of the site (Table 2B)",
+      "column": "C",
+      "kind": "measurable",
+      "status": "MEETS",
+      "outcome": {
+        "status": "MEETS",
+        "tested": 450,
+        "threshold": 350,
+        "op": ">="
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M4.1",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 49,
+        "table": "Table 2B"
+      },
+      "verify": true,
+      "notes": "Site area of the lot the single house sits on, calculated per C4.1.2 and adjusted per C4.1.3 (the applicant supplies the adjusted site.area_m2). C4.1.4(i)/(ii) make the rule not applicable for a WAPC-approved or existing lot with legal road access (proposed facts). C4.1.5 to C4.1.7 concessions are exceptions on this rule (not separate rules, so a concession not taken cannot fail the element): the tested area divided by 0.65 must reach the Table 2B value. Coding bands for the concessions come from helper tables table-4.1a/b/c (true/false by coding) because exceptions cannot carry a coding of their own. Supply subdivision.lot_count = 1 and subdivision.reduced_lots_count = 1 for a single existing lot; read literally, C4.1.7(ii) then caps a lone small dwelling (1 of 1 = 100% > 50%). Subdivision lots are tested by C4.1.1-r1/-r4/-r5/-r6."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C4.1.2",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "Calculation of minimum site area",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M4.1",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 49
+      },
+      "notes": "Calculation rule, not a test: it defines the site.area_m2 the C4.1.1 rules read (the lot area, not a strata lot). Recorded as kind judgment with no evaluator."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/C4.1.3",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "Adjustments to site area for truncations, battleaxe legs and adjoining reserves",
+      "column": "C",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "fallback": "rcodes:draft-2026-10-24/ch2/M4.1",
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 49,
+        "figure": "Figures 4.1a-4.1c"
+      },
+      "notes": "Calculation adjustments, not tests: the applicant computes site.area_m2 (and the subdivision.* areas) with these adjustments. Recorded as kind judgment with no evaluator. Figure captions still cite 'C1.1.3(iii)/(iv)' and 'Table D' (current Part D numbering)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/M4.1.2",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "WAPC approval of lots up to 5% below Table 2B minimum and/or average site area",
+      "column": "M",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 49
+      },
+      "notes": "Printed in the M column; WAPC discretion, not an applicant test. Pink callout: potential change for local governments to approve up-to-5% variations through a development approval (Information Sheet 5); flagged only, not in the ToC. OP 2.2 to be repealed."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/M4.1.3",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "WAPC approval of average site area variation over 5% for corner and dual-frontage lots (R10 to R35)",
+      "column": "M",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 50
+      },
+      "notes": "Printed in the M column; WAPC discretion. ToC says 'R25 and R35 lots'; the draft text says R10 to R35 (base code for dual-coded land, battleaxe lots excluded). Pink callout: local governments may get the same power through a development approval (flagged only)."
+    },
+    {
+      "rule_id": "rcodes:draft-2026-10-24/ch2/M4.1.5",
+      "chapter": "ch2",
+      "element": "4.1",
+      "element_title": "Site area",
+      "title": "Potential change: minimum site area reduced up to 10% where the existing dwelling is retained",
+      "column": "M",
+      "kind": "judgment",
+      "status": "NOT_EVALUATED",
+      "outcome": {
+        "reason": "judgment provision; not evaluated"
+      },
+      "applicability": "applies",
+      "source": {
+        "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+        "page": 50
+      },
+      "notes": "Flagged potential change only (pink); no operative text. Information Sheet 5. Not in the ToC. Nothing to test; see element 3.8 for retained dwellings."
+    }
+  ],
+  "variations": [],
+  "missing": {
+    "adjoining lot information: scheme map, survey, neighbour's approved plans": [
+      "adjoining.diagonal.r_code",
+      "adjoining.north_shared_boundary_count",
+      "adjoining.south.battleaxe",
+      "adjoining.south.frontage_m",
+      "adjoining.south.r_code",
+      "adjoining.vacant_or_unknown"
+    ],
+    "application form": [
+      "proposal.retained_dwelling"
+    ],
+    "civil design / subdivision engineering drawings": [
+      "site.verge.path_or_road_offset_m"
+    ],
+    "elevations and site plan: cone of vision": [
+      "privacy.bedroom_study_offset_m",
+      "privacy.bedroom_study_setback_m",
+      "privacy.cone_captures_adjoining_opening",
+      "privacy.cone_forward_of_adjoining_setback_line",
+      "privacy.other_habitable_setback_m",
+      "privacy.outdoor_active_setback_m",
+      "privacy.screened_or_offset",
+      "privacy.sources_above_0_5m"
+    ],
+    "landscape plan": [
+      "landscape.ola.area_m2",
+      "landscape.ola.behind_street_setback",
+      "landscape.ola.in_primary_street_setback",
+      "landscape.ola.min_dim_m",
+      "landscape.ola.uncovered_pct",
+      "landscape.soft_area_m2",
+      "landscape.soft_min_dim_m",
+      "landscape.stormwater_retained_on_site",
+      "landscape.stormwater_to_system_required",
+      "landscape.street_setback_area_m2",
+      "landscape.street_setback_soft_area_m2",
+      "landscape.tree_deep_soil_min_dim_m",
+      "landscape.tree_deep_soil_min_m2",
+      "landscape.trees_elsewhere",
+      "landscape.trees_in_street_setback"
+    ],
+    "lot plan / certificate of title / scheme map": [
+      "site.access_from_rear_row",
+      "site.adjoining_pedestrian_access_way_width_m",
+      "site.adjoins_public_open_space",
+      "site.battleaxe",
+      "site.battleaxe_leg_width_m",
+      "site.climate_zone",
+      "site.corner_lot",
+      "site.corner_lot_subdivided",
+      "site.has_communal_street",
+      "site.has_pedestrian_access_leg",
+      "site.has_row",
+      "site.has_secondary_street",
+      "site.location",
+      "site.pedestrian_access_leg_clear_path_m",
+      "site.pedestrian_access_leg_width_m",
+      "site.primary_street_class",
+      "site.region",
+      "site.retained_tree_root_zone_provided",
+      "site.row_is_primary_street",
+      "site.significant_tree_retained"
+    ],
+    "shadow diagram, midday 21 June": [
+      "overshadow.proportional_to_shared_boundary"
+    ],
+    "site plan": [
+      "parking.access.from_lowest_order_street",
+      "parking.as2890_compliant",
+      "parking.driveway.aggregate_width_m",
+      "parking.driveway.exit_forward_gear",
+      "parking.driveway.right_angle_to_carriageway",
+      "parking.driveway.setback_to_corner_m",
+      "parking.driveway.space_to_boundary_m",
+      "parking.driveway.trafficable_and_drained",
+      "parking.driveway.width_at_boundary_m",
+      "parking.driveway.width_min_m",
+      "parking.garage.setback_primary_m",
+      "parking.garage.setback_row_m",
+      "parking.garage.setback_secondary_m",
+      "parking.sightlines.clear_0_75m_within_1_5m",
+      "parking.sightlines.row_truncation_1m",
+      "services.bins_screened",
+      "services.functional_utilities_behind_setback",
+      "services.functional_utilities_not_visible_from_street",
+      "services.service_utilities_accessible_screened"
+    ],
+    "site plan and elevations": [
+      "building.boundary_structure.length_m",
+      "building.boundary_structure.post_height_m",
+      "building.boundary_structure.post_size_mm",
+      "building.boundary_structure.present",
+      "building.boundary_structure.ridge_height_m",
+      "building.boundary_walls.adjoining_wall_exists",
+      "building.boundary_walls.behind_street_setback",
+      "building.boundary_walls.count",
+      "building.boundary_walls.max_height_m",
+      "building.boundary_walls.max_length_m",
+      "building.boundary_walls.max_pct_of_boundary",
+      "building.front_fence.height_m",
+      "building.front_fence.permeable_above_m",
+      "building.front_fence.pillar_height_m",
+      "building.front_fence.pillar_size_mm",
+      "building.front_fence.pillars_present",
+      "building.front_fence.present",
+      "building.front_fence.visually_permeable",
+      "building.has_walls_3_6_to_7m",
+      "building.has_walls_over_7_1m",
+      "building.has_walls_to_3_5m",
+      "building.porch_projection_m",
+      "building.porch_street_setback_m",
+      "building.primary_living_direct_access_to_pga",
+      "building.primary_street_projection_m",
+      "building.primary_street_reduced_portion_width_m",
+      "building.primary_street_setback_m",
+      "building.primary_street_setback_reduced_portion_m",
+      "building.row_setback_m",
+      "building.secondary_street_setback_m",
+      "building.side_projection_m",
+      "building.side_setback_walls_3_6_to_7m_m",
+      "building.side_setback_walls_over_7_1m_m",
+      "building.side_setback_walls_to_3_5m_m",
+      "building.total_height_m",
+      "building.upper_level_outlook_to_pos"
+    ],
+    "site plan: outbuildings": [
+      "outbuilding.in_street_setback_area",
+      "outbuilding.matches_dwelling_materials",
+      "outbuilding.present",
+      "outbuilding.ridge_height_m",
+      "outbuilding.total_area_m2",
+      "outbuilding.wall_height_m"
+    ],
+    "site works plan: levels, retaining": [
+      "site_works.excavation_behind_setback",
+      "site_works.forward_of_setback_for_access_drainage_light",
+      "site_works.forward_of_setback_max_change_m",
+      "site_works.retaining_max_height_m"
+    ]
+  },
+  "warnings": [],
+  "counts": {
+    "CANNOT_TELL": 78,
+    "MEETS": 9,
+    "NOT_APPLICABLE": 1,
+    "NOT_EVALUATED": 12
+  }
+}

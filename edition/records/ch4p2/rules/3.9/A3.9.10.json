@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Basement parking protrudes no more than 1 m above ground",
+  "text": "Basement parking does not protrude more than 1m above ground, and where it protrudes above ground is designed or screened to prevent negative visual impact on the streetscape.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.basement.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.basement.present",
+    "parking.basement.protrusion_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.basement.protrusion_m",
+    "op": "<=",
+    "value": 1.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [
+    "basement",
+    "natural ground level"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.9.10",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46
+  },
+  "register_ref": "C4P2-108",
+  "verify": true,
+  "notes": "parking.basement.present and parking.basement.protrusion_m (proposed; greatest height of the basement above natural ground level). 'Above ground' read as above natural ground level (verify: could be finished ground). Screening limb is A3.9.10-r1.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p46 'above ground' is not defined (natural or finished ground level)."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.5.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Balconies unscreened for at least 25% of their perimeter",
+  "text": "Balconies are unscreened for at least 25 per cent of their perimeter (including edges abutting a building).",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "dwellings.balconies_provided",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "dwellings.balconies_provided",
+    "dwellings.min.balcony_unscreened_perimeter_pct"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "dwellings.min.balcony_unscreened_perimeter_pct",
+    "op": ">=",
+    "value": 25
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.5",
+  "defined_terms": [
+    "balcony"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.5.2",
+      "relation": "same",
+      "note": "renumbered A3.5.2 -> A3.5.3"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36
+  },
+  "register_ref": "C4P2-087",
+  "verify": false,
+  "notes": "from: ch4p1 C1.1.2 fact (dwellings.min.balcony_unscreened_perimeter_pct, lowest of any balcony). Perimeter includes edges abutting a building.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

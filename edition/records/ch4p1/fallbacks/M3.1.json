@@ -1,0 +1,44 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.1",
+  "element_title": "Site cover",
+  "title": "Site cover merit assessment criteria",
+  "text": "M3.1.1 The site cover of the development is suitable for its context to: i. achieve appropriate building bulk on the site, consistent with the intent of the applicable density code and/or as outlined in the local planning framework; ii. ensure sufficient outdoor space for landscaping including trees and deep soil areas; iii. ensure adequate solar access and natural ventilation into the dwelling; iv. provide opportunities for residents to use space external to the dwelling for outdoor pursuits and access within and around the site; v. provide space for utilities and essential facilities; and vi. be compatible with the existing and/or desired streetscape and local character.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": null,
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.1.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.4-P4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 27
+  },
+  "register_ref": "C4P1-070",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 27,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 M3.1. Same text (p27). Merit criteria refer to site cover even though no deemed exempt cap applies at R30+ (C4P1-070)."
+}

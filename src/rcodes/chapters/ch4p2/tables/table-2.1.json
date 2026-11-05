@@ -1,0 +1,469 @@
+{
+  "id": "table-2.1",
+  "title": "Table 2.1 Primary Development Parameters (summary form)",
+  "keys": [
+    "site.r_code",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "R80"
+      },
+      "value": 4,
+      "note": "merged cell with LR1"
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "LR1"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "R100"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "R160"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "MR1"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "MR2"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "HR1"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "HR2"
+      },
+      "value": 16
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "HR3"
+      },
+      "value": 20
+    },
+    {
+      "match": {
+        "metric": "building_height_storeys",
+        "site.r_code": "R-PA"
+      },
+      "value": null,
+      "note": "refer to local planning scheme or LDP"
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "R80"
+      },
+      "value": 2,
+      "note": "note 4: both side boundaries, max 2/3 length"
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "R100"
+      },
+      "value": 2,
+      "note": "note 4: both side boundaries, max 2/3 length"
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "R160"
+      },
+      "value": 2,
+      "note": "note 4: both side boundaries, max 2/3 length"
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "LR1"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "MR1"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "MR2"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "HR1"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "HR2"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "HR3"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_storeys",
+        "site.r_code": "R-PA"
+      },
+      "value": null
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "R80"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "R100"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "R160"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "LR1"
+      },
+      "value": 2,
+      "note": "2 m or nil where commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "MR1"
+      },
+      "value": 2,
+      "note": "2 m or nil where commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "MR2"
+      },
+      "value": 2,
+      "note": "2 m or nil where commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "HR1"
+      },
+      "value": 2,
+      "note": "2 m or nil where commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "HR2"
+      },
+      "value": 2,
+      "note": "2 m or nil where commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "HR3"
+      },
+      "value": 2,
+      "note": "2 m or nil where commercial use at ground floor (note 1)"
+    },
+    {
+      "match": {
+        "metric": "street_setback_m",
+        "site.r_code": "R-PA"
+      },
+      "value": null
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "R80"
+      },
+      "value": 4,
+      "note": "merged cell with LR1 (4m)"
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "R80"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "R100"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "R100"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "R160"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "R160"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "LR1"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "LR1"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "MR1"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "MR1"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "MR2"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "MR2"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "HR1"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "HR1"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "HR2"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "HR2"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "HR3"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "HR3"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "R-PA"
+      },
+      "value": null
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "R-PA"
+      },
+      "value": null
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "R80"
+      },
+      "value": null,
+      "note": "N/A: no plot ratio"
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "R100"
+      },
+      "value": null,
+      "note": "N/A: no plot ratio"
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "R160"
+      },
+      "value": null,
+      "note": "N/A: no plot ratio"
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "LR1"
+      },
+      "value": null,
+      "note": "N/A: no plot ratio"
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "MR1"
+      },
+      "value": null,
+      "note": "N/A: no plot ratio"
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "MR2"
+      },
+      "value": null,
+      "note": "N/A: no plot ratio"
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "HR1"
+      },
+      "value": 4.0
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "HR2"
+      },
+      "value": 6.0
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "HR3"
+      },
+      "value": 7.0
+    },
+    {
+      "match": {
+        "metric": "plot_ratio",
+        "site.r_code": "R-PA"
+      },
+      "value": null
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13
+  },
+  "register_ref": "C4P2-016..C4P2-064",
+  "verify": false,
+  "notes": "Summary form for the regeneration check only; rules use the per-metric tables table-2.1-*. Verified against the page 13 extract and register rows C4P2-016 to C4P2-064 (Part 2 transcriber): no value differs. Extract cell runs, read with merged cells: height '4 6 8 6 8 12 16 20' (R80/LR1 merged); boundary wall '2^4 2 2^4 2^4 2 4 4' (superscript 4 on R80, R100, R160 only; MR2 and HR1 to HR3 4); street '2m | 2m or nil1 | 2m | 2m or nil1 | 2m or nil1'; side and rear '4m 4m 4m Nil Nil' (R80-LR1 | R100-R160 | MR1 | MR2 | HR1-HR3); plot ratio 'N/A N/A 4.0 6.0 7.0'. R-PA: refer to local planning scheme, local development plan and/or precinct controls (null). Columns: R80, LR1 (R-AC4), R100, R160, MR1 (new), MR2 (R-AC3), HR1 (R-AC1), HR2 (new), HR3 (new), R-PA (R-AC0). R-AC2 has no column. Boundary walls: note 4 (both side boundaries, max two-thirds length) attaches to R80, R100 and R160 only; LR1, MR1, MR2 and HR cells carry no length or boundary-count limit. Boundary wall row header superscripts read '1,2,3' although note 1 is the street setback note (C4P2-028, C4P2-064). Street setback 2 m or nil with ground-floor commercial use (note 1) for LR1, MR1, MR2, HR1 to HR3. Regeneration check: tests/test_ch4p2.py.",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M2.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.2",
+  "element_title": "Solar access and natural ventilation",
+  "title": "Solar access and natural ventilation merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.2.1 In climate zones 4, 5 and 6 the development is sited, oriented and designed to optimise winter solar gain whilst limiting summer sunlight into: i. the primary living space and habitable rooms; and ii. private open spaces, including the primary garden area; while balancing site constraints, outlook and views of significance. M2.2.2 Windows to habitable rooms are designed and positioned to optimize daylight, natural ventilation and outlook, while maintaining a reasonable level of visual privacy. M2.2.3 Dwellings optimize natural ventilation to habitable rooms (and bathrooms where possible) that is responsive to site and local climatic conditions.",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 16,
+    "extract_line": 484
+  },
+  "notes": "Merit criteria carry no density qualifier although C2.2.1 and C2.2.2 apply to R30-R80, R100-SL, LR, MR and HR only.",
+  "register_ref": "ch3-022",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

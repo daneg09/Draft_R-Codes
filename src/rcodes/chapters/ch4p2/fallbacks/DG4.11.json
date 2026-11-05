@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.11",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.11",
+  "element_title": "Roof design",
+  "title": "Roof design design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.11.1 Design solutions to achieve a roof design that complements the façade and streetscape can include: prominent elements at the street frontage and/or corners; skillion or very low pitch hipped roofs; reducing roof height and mass through the use of smaller elements; use of generous eaves and overhangs that assist with shading; roof form and/or materials that complement adjacent buildings; concealed roofs. DG 4.11.2 In higher density settings, roofs are often overlooked by, and may overlook, other buildings. In these cases the design of the roof/top of building should consider minimising impacts on visual amenity, such as reflectivity and the appearance of rooftop services. Service and access elements such as lift overruns and AC plant should be integrated into the roof design, with special consideration of the position, alignment, materials and the use of screening to minimise visual prominence when viewed from the street or adjacent buildings. DG 4.11.3 Consider opportunities to increase light and ventilation to upper level dwellings and dwellings located within the roof cavity via dormer or clerestory windows and openable skylights. DG 4.11.4 Useable roof spaces can make a major contribution to the amenity and sustainability of the development. Options may include: providing private or communal open space that incorporates measures to mitigate visual and acoustic privacy to dwellings within the development and on adjacent properties, while providing access to views; rooftop garden beds, landscaping and green roofs; provision of photovoltaic collector panels, considering optimum solar collection angle for the roof; other sustainability infrastructure. DG 4.11.5 Rooftop spaces should be considered where they contribute to amenity, landscaping, recreation and/or sustainability outcomes. The appropriateness and extent of roof activation should respond to the development context, recognising that rooftop activation may not be appropriate in all circumstances. the location and screening of plant and equipment; the structural requirements of the building; access, safety and maintenance requirements; impacts on privacy, overlooking and overshadowing; and solar access, wind exposure and user comfort.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 73,
+    "extract_line": 2520
+  },
+  "register_ref": "C4P2-121",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.11",
+      "relation": "same",
+      "note": "DG 4.11.1 to 4.11.4"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "DG 4.11.5 rooftop activation considerations (register C4P2-121)"
+    }
+  ],
+  "verify": false,
+  "notes": "Register C4P2-121: DG 4.11.5 (rooftop activation) is new; the Acceptable Outcomes are unchanged. Page 73 checked: DG 4.11.5's dash list follows the paragraph with no lead-in printed, so the text runs on as printed. Register C4P2-131: Vol2 Appendix A4 design development guidance is now draft Appendix A7.",
+  "verified": {
+    "method": "page-image",
+    "page": 73,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

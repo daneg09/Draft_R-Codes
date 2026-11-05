@@ -1,0 +1,39 @@
+# Python caches and build artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+pip-wheel-metadata/
+
+# Test and tool caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Scratch and tool output
+scratch/
+scratchpad/
+tool-results/
+*.tmp
+*.bak
+*~
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/

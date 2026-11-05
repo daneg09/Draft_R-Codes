@@ -1,0 +1,89 @@
+{
+  "id": "table-2.1a",
+  "title": "Table 2.1a Minimum dwelling size provisions (minimum internal floor area)",
+  "keys": [
+    "dwellings.min.bedrooms_of_smallest",
+    "dwellings.min.bathrooms_of_smallest"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": 0,
+        "dwellings.min.bathrooms_of_smallest": {
+          "max": 1
+        }
+      },
+      "value": 37,
+      "note": "studio"
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": 1,
+        "dwellings.min.bathrooms_of_smallest": {
+          "max": 1
+        }
+      },
+      "value": 47,
+      "note": "1 bed"
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": 2,
+        "dwellings.min.bathrooms_of_smallest": {
+          "max": 1
+        }
+      },
+      "value": 67,
+      "note": "2 bed x 1 bath"
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": 2,
+        "dwellings.min.bathrooms_of_smallest": 2
+      },
+      "value": 72,
+      "note": "2 bed x 2 bath"
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": {
+          "min": 3
+        },
+        "dwellings.min.bathrooms_of_smallest": {
+          "max": 1
+        }
+      },
+      "value": 90,
+      "note": "3 bed x 1 bath; 4+ bedrooms not printed, read as 3 bed",
+      "verify": true
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": {
+          "min": 3
+        },
+        "dwellings.min.bathrooms_of_smallest": 2
+      },
+      "value": 95,
+      "note": "3 bed x 2 bath; 4+ bedrooms not printed, read as 3 bed",
+      "verify": true
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 16,
+    "extract_line": 477,
+    "table": "Table 2.1a"
+  },
+  "register_ref": "C4P1-027",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "No 4+ bedroom row printed (p16); 3 bed rows extended to 4+. The +3 m2 toilet / +5 m2 bathroom note carries no footnote marker and sits under the whole table."
+  },
+  "notes": "Reference table: rule C2.1.6 carries these values in a formula because the table notes add 3 m2 for an additional separate toilet and 5 m2 for an additional bathroom, which a row lookup cannot add. Bedrooms 0 = studio. Minimum internal floor area excludes storerooms accessed external to the dwelling. Applies R30-R60 only. Not the Chapter 3 Table 2.1a (balcony sizes); same short id, different content."
+}

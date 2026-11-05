@@ -1,0 +1,39 @@
+{
+  "id": "table-3.9-resident",
+  "title": "Table 3.9 Parking ratios: resident car parking minimum per dwelling",
+  "keys": [
+    "site.location"
+  ],
+  "unit": "bays per dwelling",
+  "rows": [
+    {
+      "match": {
+        "site.location": "A"
+      },
+      "value": 0,
+      "note": "Location A: no minimum"
+    },
+    {
+      "match": {
+        "site.location": "B"
+      },
+      "value": 0,
+      "note": "Location B: no minimum"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-098",
+  "verify": false,
+  "notes": "Operative for A3.9.2. 'No minimum' across both columns, no bedroom split. Vol 2 had Location A 0.75 (1 bedroom) / 1 (2+ bedrooms) and Location B 1 / 1.25 bays per dwelling (C4P2-098, C4P2-099). LOCATION A: all land within 800 m of a train station on a high-frequency rail route (straight line from the pedestrian entry to the platform to any part of a lot); within 250 m of a high-frequency transit route, or multiple routes that combined have timed stops every 15 minutes in weekday peaks (7-9am and 5-7pm), measured in a straight line from any part of the route to any part of the lot; and/or within the defined boundaries of an activity centre. LOCATION B: not within Location A (C4P2-105, unchanged; the ToC's Perth and Peel limit is not in the text). No regional table.",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 46,
+    "note": "p46 footnote 1 (round up) on the resident car parking row ('No minimum' across both locations)."
+  }
+}

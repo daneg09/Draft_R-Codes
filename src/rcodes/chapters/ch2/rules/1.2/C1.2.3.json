@@ -1,0 +1,81 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Small trees in the primary street setback area (Table 1.2a)",
+  "text": "C1.2.3 A minimum number of trees to be planted in accordance with Tables 1.2a and provided with the required deep soil area per tree in accordance with Table 1.2b. Table 1.2a Minimum tree provisions. Single houses: Primary street setback: Where the primary street setback is 1.5m or greater: - Frontages less than 20m: 1 small tree in the primary street setback area; or - Frontages 20m or greater: 1 small tree in the primary street setback area per 10m of frontage(2). Trees required within the street setback area are in addition to trees required per dwelling and where providing a secondary private open space. 2 Frontage to be rounded down to the nearest 10m. Tree provisions exclude ancillary dwellings.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "building.primary_street_setback_m",
+      "op": ">=",
+      "value": 1.5
+    }
+  ],
+  "inputs": [
+    "landscape.trees_in_street_setback",
+    "site.frontage_m",
+    "building.primary_street_setback_m"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-1.2a",
+    "fact": "landscape.trees_in_street_setback",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+  "defined_terms": [
+    "small tree",
+    "primary street setback area",
+    "frontage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.4",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.2a",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.2",
+      "relation": "tightened",
+      "note": "Part B: one tree per dwelling, no street-setback tree"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 11,
+    "table": "Table 1.2a"
+  },
+  "register_ref": "ch2-010",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 1.2a 'Where the primary street setback is 1.5m or greater' does not say whether this is the setback provided or the setback required by Table 3.3a; the values (1 tree under 20m frontage, 1 per 10m of frontage rounded down at 20m or more, 1 per dwelling elsewhere) all check."
+  },
+  "notes": "Applies where the primary street setback is 1.5 m or greater (rule condition; read as the setback provided, building.primary_street_setback_m, not the Table 3.3 requirement; ambiguous). Frontage under 20 m: 1 small tree; 20 m or more: 1 per 10 m of frontage rounded down (table-1.2a). Street setback trees are in addition to the per-dwelling tree (C1.2.3-r1) and the C1.1.4 secondary POS tree. Tree provisions exclude ancillary dwellings. Excluded for R100-SL (no minimum tree provisions)."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.2",
+  "element_title": "Orientation",
+  "title": "Overshadowing of an adjoining property at midday 21 June, climate zones 4 to 6 (25% / 35% / 50% / nil by adjoining coding)",
+  "text": "Development in climate zones 4, 5 and 6 shall be designed such that the shadow cast at midday on 21st June onto any adjoining property does not exceed: adjoining properties coded R25 and lower - 25% of the site area (1); adjoining properties coded R30 - R40 - 35% of the site area (1); adjoining properties coded R50 - R60 - 50% of the site area (1); adjoining properties coded R80 or higher - Nil requirements. (1) Where a development site shares its southern boundary with a lot, and that lot is bound to the north by other lot(s), the limit of shading at A 3.2.3 shall be reduced proportionally to the percentage of the affected properties northern boundary that abuts the development site.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ],
+      "label": "climate zone 4, 5 or 6"
+    }
+  ],
+  "inputs": [
+    "overshadow.adjoining_pct",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.2-overshadow",
+    "fact": "overshadow.adjoining_pct",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.2",
+  "defined_terms": [
+    "adjoining property",
+    "overshadowing",
+    "site area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.2.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 28
+  },
+  "register_ref": "C4P2-080",
+  "verify": false,
+  "notes": "from: ch4p1 C3.8.1 (Table 3.8a), but here the limits are in the clause and there is no diagonal-lot or narrow-lot limit. 'R80 or higher - Nil requirements': table-3.2-overshadow returns null, so the rule is NOT_APPLICABLE for an adjoining lot coded R80+ or a named apartment code. The adjoining lot is read as adjoining.south (the lot receiving the shadow). Footnote 1 proportional reduction is A3.2.3-r1. Register: Vol 2 Figure A7.2 (proportionate northern boundary limits) deleted with Appendix A7; the draft footnote has no figure. ToC p12 'confirm no maximum overshadowing applies to R80'. Regional: the 25% limit still binds 4-8 storey buildings next to R25-and-lower land.",
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

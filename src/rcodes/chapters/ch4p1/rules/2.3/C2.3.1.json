@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Resident car parking per Table 2.3a (no minimum in Location A or B)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "Car parking is provided on site in accordance with Table 2.3a. Table 2.3a Car parking¹, Resident: No minimum (one cell spanning Location A and Location B). ¹Calculations of parking ratios shall be rounded to the nearest whole number, with fractions of 0.5 or greater rounded up (for example, 1.4 bays is rounded to 1 bay and 1.5 bays is rounded to 2 bays).",
+  "inputs": [
+    "parking.resident_spaces",
+    "site.location"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.3a",
+    "fact": "parking.resident_spaces",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.3",
+  "defined_terms": [
+    "car parking space",
+    "Location A",
+    "Location B"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.3.1",
+      "relation": "relaxed"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "relaxed",
+      "note": "R30-R60 Location A 0/0/1, Location B 1 per dwelling -> no minimum"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.3",
+      "relation": "relaxed",
+      "note": "R10-R25 1 to 1.5 (Location A) / 1.25 to 1.75 (Location B) per dwelling -> no minimum"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 19,
+    "extract_line": 587,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "C4P1-039",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C2.3.1. diverges: Table 2.3a p20 prints 'No minimum' for resident car parking in Location A and B, with no bedroom split, so the lookup returns 0 and the rule can only fail on a negative count; kept so the provision is reported. Fact parking.resident_spaces (apartments) replaces parking.spaces. Region all: the Chapter 4 Part 1 heading and table carry no Perth and Peel limit (Chapter 3's do); the regional gap is C2.3.1-r1. Register C4P1-039 (material): ToC and Information Sheet 3 say otherwise; the draft follows Information Sheet 4."
+}

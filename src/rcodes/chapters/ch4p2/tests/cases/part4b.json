@@ -1,0 +1,877 @@
+[
+  {
+    "title": "4.10-4.18 R160 mixed use, 8 storeys: every measurable and conditional A meets (Table 4.12 at the minimums)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p2/A4.10.5",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r4",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r5",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r6",
+      "rcodes:draft-2026-10-24/ch4p2/A4.14.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.15.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.4",
+      "rcodes:draft-2026-10-24/ch4p2/A4.18.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.10.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.10.5-r1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.10.6",
+      "rcodes:draft-2026-10-24/ch4p2/A4.11.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.13.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.13.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.14.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.14.4",
+      "rcodes:draft-2026-10-24/ch4p2/A4.14.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R160",
+        "region": "perth-peel",
+        "area_m2": 2000,
+        "mixed_use_area_designated": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 40,
+        "mixed_use": true
+      },
+      "building": {
+        "storeys": 8,
+        "street_setback_m": 0.5
+      },
+      "dwellings": {
+        "min": {
+          "nathers_margin_stars": 0.5
+        }
+      },
+      "landscape": {
+        "plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "on_structure": {
+          "large_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 76.8,
+            "min_soil_depth_m": 1.2,
+            "min_soil_area_m2": 64,
+            "min_soil_dim_m": 7
+          },
+          "medium_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 40,
+            "min_soil_depth_m": 1.0,
+            "min_soil_area_m2": 36,
+            "min_soil_dim_m": 6
+          },
+          "small_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 7.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 9,
+            "min_soil_dim_m": 3
+          },
+          "small_ornamental": {
+            "provided": true,
+            "min_soil_volume_m3": 3.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 4,
+            "min_soil_dim_m": 2
+          },
+          "shrub": {
+            "provided": true,
+            "min_soil_depth_m": 0.5
+          },
+          "ground_cover": {
+            "provided": true,
+            "min_soil_depth_m": 0.3
+          },
+          "turf": {
+            "provided": true,
+            "min_soil_depth_m": 0.2
+          }
+        }
+      },
+      "services": {
+        "fibre_ready": true,
+        "waste": {
+          "walga_better_practice": true,
+          "plan_provided": true,
+          "bin_area_per_wmp": true,
+          "communal_storage_area_m2": 30,
+          "communal_screened_from_view": true
+        }
+      },
+      "facade": {
+        "entry_awnings_provided": true,
+        "signage_provided": true
+      },
+      "roof": {
+        "useable_space_provided": true
+      },
+      "adaptive_reuse": {
+        "applies": true,
+        "heritage_value": true
+      },
+      "mixed_use": {
+        "nonres_access_from_street_or_primary_entry": true
+      },
+      "energy": {
+        "significant_initiative": false
+      },
+      "water": {
+        "individual_metering": true,
+        "overland_flow_path": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p2/A4.10.5": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r4": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r5": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r6": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.14.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.15.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.18.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.10.2": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.10.5-r1": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.10.6": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.11.3": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.13.1": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.13.2": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.14.1": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.14.4": "NOT_EVALUATED",
+        "rcodes:draft-2026-10-24/ch4p2/A4.14.5": "NOT_EVALUATED"
+      },
+      "pathway": "performance-assessment"
+    }
+  },
+  {
+    "title": "4.10-4.18 R160 mixed use: every measurable and conditional A fails (Table 4.12 just under, NatHERS +0.4, no initiative)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p2/A4.10.5",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r4",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r5",
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r6",
+      "rcodes:draft-2026-10-24/ch4p2/A4.14.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.15.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.4",
+      "rcodes:draft-2026-10-24/ch4p2/A4.18.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R160",
+        "region": "perth-peel",
+        "area_m2": 2000,
+        "mixed_use_area_designated": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 40,
+        "mixed_use": true
+      },
+      "building": {
+        "storeys": 8,
+        "street_setback_m": 0.5
+      },
+      "dwellings": {
+        "min": {
+          "nathers_margin_stars": 0.4
+        }
+      },
+      "landscape": {
+        "plan_provided": false,
+        "stormwater_retained_on_site": false,
+        "on_structure": {
+          "large_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 76.8,
+            "min_soil_depth_m": 1.2,
+            "min_soil_area_m2": 64,
+            "min_soil_dim_m": 6.9
+          },
+          "medium_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 30,
+            "min_soil_depth_m": 1.0,
+            "min_soil_area_m2": 36,
+            "min_soil_dim_m": 5
+          },
+          "small_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 7.2,
+            "min_soil_depth_m": 0.6,
+            "min_soil_area_m2": 9,
+            "min_soil_dim_m": 3
+          },
+          "small_ornamental": {
+            "provided": true,
+            "min_soil_volume_m3": 3.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 3.5,
+            "min_soil_dim_m": 1.8
+          },
+          "shrub": {
+            "provided": true,
+            "min_soil_depth_m": 0.45
+          },
+          "ground_cover": {
+            "provided": true,
+            "min_soil_depth_m": 0.25
+          },
+          "turf": {
+            "provided": true,
+            "min_soil_depth_m": 0.15
+          }
+        }
+      },
+      "services": {
+        "fibre_ready": false,
+        "waste": {
+          "walga_better_practice": false,
+          "plan_provided": false,
+          "bin_area_per_wmp": false,
+          "communal_storage_area_m2": 30,
+          "communal_screened_from_view": false
+        }
+      },
+      "facade": {
+        "entry_awnings_provided": false,
+        "signage_provided": true
+      },
+      "roof": {
+        "useable_space_provided": true
+      },
+      "adaptive_reuse": {
+        "applies": true,
+        "heritage_value": true
+      },
+      "mixed_use": {
+        "nonres_access_from_street_or_primary_entry": false
+      },
+      "energy": {
+        "significant_initiative": false
+      },
+      "water": {
+        "individual_metering": false,
+        "overland_flow_path": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p2/A4.10.5": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r5": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r6": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.14.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.15.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p2/A4.18.2": "DOES_NOT_MEET"
+      },
+      "pathway": "performance-assessment"
+    }
+  },
+  {
+    "title": "A4.15.1 limb (a): NatHERS margin 0.2 stars but a significant initiative is proposed: meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p2/A4.15.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R160",
+        "region": "perth-peel",
+        "area_m2": 2000,
+        "mixed_use_area_designated": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 40,
+        "mixed_use": true
+      },
+      "building": {
+        "storeys": 8,
+        "street_setback_m": 0.5
+      },
+      "dwellings": {
+        "min": {
+          "nathers_margin_stars": 0.4
+        }
+      },
+      "landscape": {
+        "plan_provided": false,
+        "stormwater_retained_on_site": false,
+        "on_structure": {
+          "large_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 76.8,
+            "min_soil_depth_m": 1.2,
+            "min_soil_area_m2": 64,
+            "min_soil_dim_m": 6.9
+          },
+          "medium_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 30,
+            "min_soil_depth_m": 1.0,
+            "min_soil_area_m2": 36,
+            "min_soil_dim_m": 5
+          },
+          "small_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 7.2,
+            "min_soil_depth_m": 0.6,
+            "min_soil_area_m2": 9,
+            "min_soil_dim_m": 3
+          },
+          "small_ornamental": {
+            "provided": true,
+            "min_soil_volume_m3": 3.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 3.5,
+            "min_soil_dim_m": 1.8
+          },
+          "shrub": {
+            "provided": true,
+            "min_soil_depth_m": 0.45
+          },
+          "ground_cover": {
+            "provided": true,
+            "min_soil_depth_m": 0.25
+          },
+          "turf": {
+            "provided": true,
+            "min_soil_depth_m": 0.15
+          }
+        }
+      },
+      "services": {
+        "fibre_ready": false,
+        "waste": {
+          "walga_better_practice": false,
+          "plan_provided": false,
+          "bin_area_per_wmp": false,
+          "communal_storage_area_m2": 30,
+          "communal_screened_from_view": false
+        }
+      },
+      "facade": {
+        "entry_awnings_provided": false,
+        "signage_provided": true
+      },
+      "roof": {
+        "useable_space_provided": true
+      },
+      "adaptive_reuse": {
+        "applies": true,
+        "heritage_value": true
+      },
+      "mixed_use": {
+        "nonres_access_from_street_or_primary_entry": false
+      },
+      "energy": {
+        "significant_initiative": true
+      },
+      "water": {
+        "individual_metering": false,
+        "overland_flow_path": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p2/A4.15.1": "MEETS"
+      },
+      "pathway": "performance-assessment"
+    }
+  },
+  {
+    "title": "A4.15.1: NatHERS margin 0.2 stars and no answer on limb (a): cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p2/A4.15.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R160",
+        "region": "perth-peel",
+        "area_m2": 2000,
+        "mixed_use_area_designated": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 40,
+        "mixed_use": true
+      },
+      "building": {
+        "storeys": 8,
+        "street_setback_m": 0.5
+      },
+      "dwellings": {
+        "min": {
+          "nathers_margin_stars": 0.2
+        }
+      },
+      "landscape": {
+        "plan_provided": false,
+        "stormwater_retained_on_site": false,
+        "on_structure": {
+          "large_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 76.8,
+            "min_soil_depth_m": 1.2,
+            "min_soil_area_m2": 64,
+            "min_soil_dim_m": 6.9
+          },
+          "medium_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 30,
+            "min_soil_depth_m": 1.0,
+            "min_soil_area_m2": 36,
+            "min_soil_dim_m": 5
+          },
+          "small_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 7.2,
+            "min_soil_depth_m": 0.6,
+            "min_soil_area_m2": 9,
+            "min_soil_dim_m": 3
+          },
+          "small_ornamental": {
+            "provided": true,
+            "min_soil_volume_m3": 3.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 3.5,
+            "min_soil_dim_m": 1.8
+          },
+          "shrub": {
+            "provided": true,
+            "min_soil_depth_m": 0.45
+          },
+          "ground_cover": {
+            "provided": true,
+            "min_soil_depth_m": 0.25
+          },
+          "turf": {
+            "provided": true,
+            "min_soil_depth_m": 0.15
+          }
+        }
+      },
+      "services": {
+        "fibre_ready": false,
+        "waste": {
+          "walga_better_practice": false,
+          "plan_provided": false,
+          "bin_area_per_wmp": false,
+          "communal_storage_area_m2": 30,
+          "communal_screened_from_view": false
+        }
+      },
+      "facade": {
+        "entry_awnings_provided": false,
+        "signage_provided": true
+      },
+      "roof": {
+        "useable_space_provided": true
+      },
+      "adaptive_reuse": {
+        "applies": true,
+        "heritage_value": true
+      },
+      "mixed_use": {
+        "nonres_access_from_street_or_primary_entry": false
+      },
+      "water": {
+        "individual_metering": false,
+        "overland_flow_path": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p2/A4.15.1": "CANNOT_TELL"
+      },
+      "pathway": "performance-assessment"
+    }
+  },
+  {
+    "title": "A4.12.3 large tree on structure with soil volume not stated: cannot tell; A4.15.1 meets on limb (b) alone",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p2/A4.12.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.15.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R160",
+        "region": "perth-peel",
+        "area_m2": 2000,
+        "mixed_use_area_designated": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 40,
+        "mixed_use": true
+      },
+      "building": {
+        "storeys": 8,
+        "street_setback_m": 0.5
+      },
+      "dwellings": {
+        "min": {
+          "nathers_margin_stars": 1.0
+        }
+      },
+      "landscape": {
+        "plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "on_structure": {
+          "large_tree": {
+            "provided": true,
+            "min_soil_depth_m": 1.2,
+            "min_soil_area_m2": 64,
+            "min_soil_dim_m": 7
+          },
+          "medium_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 40,
+            "min_soil_depth_m": 1.0,
+            "min_soil_area_m2": 36,
+            "min_soil_dim_m": 6
+          },
+          "small_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 7.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 9,
+            "min_soil_dim_m": 3
+          },
+          "small_ornamental": {
+            "provided": true,
+            "min_soil_volume_m3": 3.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 4,
+            "min_soil_dim_m": 2
+          },
+          "shrub": {
+            "provided": true,
+            "min_soil_depth_m": 0.5
+          },
+          "ground_cover": {
+            "provided": true,
+            "min_soil_depth_m": 0.3
+          },
+          "turf": {
+            "provided": true,
+            "min_soil_depth_m": 0.2
+          }
+        }
+      },
+      "services": {
+        "fibre_ready": true,
+        "waste": {
+          "walga_better_practice": true,
+          "plan_provided": true,
+          "bin_area_per_wmp": true,
+          "communal_storage_area_m2": 30,
+          "communal_screened_from_view": true
+        }
+      },
+      "facade": {
+        "entry_awnings_provided": true,
+        "signage_provided": true
+      },
+      "roof": {
+        "useable_space_provided": true
+      },
+      "adaptive_reuse": {
+        "applies": true,
+        "heritage_value": true
+      },
+      "mixed_use": {
+        "nonres_access_from_street_or_primary_entry": true
+      },
+      "energy": {
+        "significant_initiative": false
+      },
+      "water": {
+        "individual_metering": true,
+        "overland_flow_path": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p2/A4.12.3": "CANNOT_TELL",
+        "rcodes:draft-2026-10-24/ch4p2/A4.15.1": "MEETS"
+      },
+      "pathway": "performance-assessment"
+    }
+  },
+  {
+    "title": "A4.10.5 street setback 0.8 m (within 1 m) and no entry awnings: does not meet",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p2/A4.10.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R160",
+        "region": "perth-peel",
+        "area_m2": 2000,
+        "mixed_use_area_designated": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 40,
+        "mixed_use": true
+      },
+      "building": {
+        "storeys": 8,
+        "street_setback_m": 0.8
+      },
+      "dwellings": {
+        "min": {
+          "nathers_margin_stars": 0.5
+        }
+      },
+      "landscape": {
+        "plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "on_structure": {
+          "large_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 76.8,
+            "min_soil_depth_m": 1.2,
+            "min_soil_area_m2": 64,
+            "min_soil_dim_m": 7
+          },
+          "medium_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 40,
+            "min_soil_depth_m": 1.0,
+            "min_soil_area_m2": 36,
+            "min_soil_dim_m": 6
+          },
+          "small_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 7.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 9,
+            "min_soil_dim_m": 3
+          },
+          "small_ornamental": {
+            "provided": true,
+            "min_soil_volume_m3": 3.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 4,
+            "min_soil_dim_m": 2
+          },
+          "shrub": {
+            "provided": true,
+            "min_soil_depth_m": 0.5
+          },
+          "ground_cover": {
+            "provided": true,
+            "min_soil_depth_m": 0.3
+          },
+          "turf": {
+            "provided": true,
+            "min_soil_depth_m": 0.2
+          }
+        }
+      },
+      "services": {
+        "fibre_ready": true,
+        "waste": {
+          "walga_better_practice": true,
+          "plan_provided": true,
+          "bin_area_per_wmp": true,
+          "communal_storage_area_m2": 30,
+          "communal_screened_from_view": true
+        }
+      },
+      "facade": {
+        "entry_awnings_provided": false,
+        "signage_provided": true
+      },
+      "roof": {
+        "useable_space_provided": true
+      },
+      "adaptive_reuse": {
+        "applies": true,
+        "heritage_value": true
+      },
+      "mixed_use": {
+        "nonres_access_from_street_or_primary_entry": true
+      },
+      "energy": {
+        "significant_initiative": false
+      },
+      "water": {
+        "individual_metering": true,
+        "overland_flow_path": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p2/A4.10.5": "DOES_NOT_MEET"
+      },
+      "pathway": "performance-assessment"
+    }
+  },
+  {
+    "title": "Named coding HR1: conditional As in 4.16 to 4.18 still apply and meet",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.1",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.16.3",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.2",
+      "rcodes:draft-2026-10-24/ch4p2/A4.17.4",
+      "rcodes:draft-2026-10-24/ch4p2/A4.18.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "HR1",
+        "region": "perth-peel",
+        "area_m2": 1500,
+        "mixed_use_area_designated": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 40,
+        "mixed_use": true
+      },
+      "building": {
+        "storeys": 8,
+        "street_setback_m": 0.5
+      },
+      "dwellings": {
+        "min": {
+          "nathers_margin_stars": 0.5
+        }
+      },
+      "landscape": {
+        "plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "on_structure": {
+          "large_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 76.8,
+            "min_soil_depth_m": 1.2,
+            "min_soil_area_m2": 64,
+            "min_soil_dim_m": 7
+          },
+          "medium_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 40,
+            "min_soil_depth_m": 1.0,
+            "min_soil_area_m2": 36,
+            "min_soil_dim_m": 6
+          },
+          "small_tree": {
+            "provided": true,
+            "min_soil_volume_m3": 7.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 9,
+            "min_soil_dim_m": 3
+          },
+          "small_ornamental": {
+            "provided": true,
+            "min_soil_volume_m3": 3.2,
+            "min_soil_depth_m": 0.8,
+            "min_soil_area_m2": 4,
+            "min_soil_dim_m": 2
+          },
+          "shrub": {
+            "provided": true,
+            "min_soil_depth_m": 0.5
+          },
+          "ground_cover": {
+            "provided": true,
+            "min_soil_depth_m": 0.3
+          },
+          "turf": {
+            "provided": true,
+            "min_soil_depth_m": 0.2
+          }
+        }
+      },
+      "services": {
+        "fibre_ready": true,
+        "waste": {
+          "walga_better_practice": true,
+          "plan_provided": true,
+          "bin_area_per_wmp": true,
+          "communal_storage_area_m2": 30,
+          "communal_screened_from_view": true
+        }
+      },
+      "facade": {
+        "entry_awnings_provided": true,
+        "signage_provided": true
+      },
+      "roof": {
+        "useable_space_provided": true
+      },
+      "adaptive_reuse": {
+        "applies": true,
+        "heritage_value": true
+      },
+      "mixed_use": {
+        "nonres_access_from_street_or_primary_entry": true
+      },
+      "energy": {
+        "significant_initiative": false
+      },
+      "water": {
+        "individual_metering": true,
+        "overland_flow_path": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.16.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.17.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p2/A4.18.2": "MEETS"
+      },
+      "pathway": "performance-assessment"
+    }
+  }
+]

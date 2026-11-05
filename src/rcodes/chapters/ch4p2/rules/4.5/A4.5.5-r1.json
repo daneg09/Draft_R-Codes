@@ -1,0 +1,58 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.5.5-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.5",
+  "element_title": "Circulation and common spaces",
+  "title": "Dwelling openings near circulation spaces designed for visual privacy and to manage noise intrusion",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Bedroom windows and major openings to living rooms ... are designed to ensure visual privacy and manage noise intrusion.",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.5",
+  "defined_terms": [
+    "major opening",
+    "visual privacy"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.5.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 60,
+    "extract_line": 2073,
+    "figure": "Figure 4.5a"
+  },
+  "register_ref": "C4P2-115",
+  "verify": false,
+  "notes": "Second limb of A4.5.5; Figure 4.5a shows planter voids and structural separation for gallery access.",
+  "verified": {
+    "method": "page-image",
+    "page": 60,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

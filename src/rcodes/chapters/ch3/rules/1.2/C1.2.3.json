@@ -1,0 +1,66 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Communal street landscaped and lit",
+  "text": "C1.2.3 Where provided, the communal street (including any adjoining setbacks) is to be landscaped and provided with adequate lighting to pathways and vehicle access areas.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_communal_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "site.has_communal_street",
+    "site.communal_street_landscaped_and_lit"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site.communal_street_landscaped_and_lit",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.2",
+  "defined_terms": [
+    "communal street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.1",
+      "relation": "restructured",
+      "note": "C2.1(iv) lighting and landscaping of common property"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.3",
+      "relation": "restructured",
+      "note": "communal open space no longer mentioned"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 11
+  },
+  "register_ref": "ch3-011",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "diverges: a different provision under the same number. Chapter 3 C1.2.3 (p11) is communal street landscaping and lighting; Chapter 2 C1.2.3 is the street setback tree provision, which is C1.2.4 here. Applies only where a communal street is provided (rule condition). 'Adequate' lighting is stated by the applicant, not measured. C3.7.14 cross-refers to 'C1.3.3', which does not exist; it should be C1.2.3 (ch3-011)."
+}

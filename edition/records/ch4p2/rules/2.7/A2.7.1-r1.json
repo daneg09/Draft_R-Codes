@@ -1,0 +1,62 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.7.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.7",
+  "element_title": "Building separation",
+  "title": "Building separation to the adjoining property boundary at least the Table 2.7 distance (MR2, HR1, HR2, HR3)",
+  "text": "A 2.7.1 Development complies with the separation requirements set out in Table 2.7.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.separation_to_boundary_m",
+    "building.separation_storeys",
+    "adjoining.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.7-adjoining",
+    "fact": "building.separation_to_boundary_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.7",
+  "defined_terms": [
+    "building separation"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T2.7",
+      "relation": "mixed",
+      "note": "Volume 2: up to 4 storeys refer 2.4 and 3.5; 5 to 8 storeys 9 m; 9+ storeys 12 m (all codes). Draft (MR2, HR only): 5+ storeys 9 m to R60 or below, 6 m to R80 or above"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 22,
+    "table": "Table 2.7"
+  },
+  "register_ref": "C4P2-075",
+  "verify": true,
+  "notes": "Up to 4 storeys: refer 2.4 (Table 2.1) and 3.5 (Table 3.5), NOT_APPLICABLE here. Proposed fact adjoining.r_code (coding of the adjoining property on the boundary faced). Gaps (C4P2-075): no adjoining-boundary row for R80, LR1, R100, R160 or MR1, whose 5th storey and above rest on the 4 m side/rear setback, A2.4.2 and Table 3.5, but Table 3.5 fifth storey and above says 'Refer Table 2.7' (circular); 'coded' is undefined for uncoded adjoining land; R160 loses Volume 2's 9 m from the 5th storey. Net against R60 or below: 9 m unchanged at 5 to 8 storeys, 12 m to 9 m at 9+. Table 3.5A lists separation against 'A2.6.1' (C4P2-007).",
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 2.7 (p22) adjoining rows apply to 'MR2, HR1, HR2 and HR3' only; the up-to-4-storeys cell is one merged 'Refer 2.4 Side and rear setbacks (Table 2.1) and 3.5 Visual privacy (Table 3.5)' across both rows; 'coded R60 or below / R80 or above' does not place uncoded adjoining land or R100-SL."
+  }
+}

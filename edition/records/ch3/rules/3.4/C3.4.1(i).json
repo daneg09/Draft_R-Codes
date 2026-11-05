@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.4.1(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Minor projections into the lot boundary setback",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. i. Minor projections, such as chimneys, eaves, window hoods and other architectural features, are acceptable provided they do not project more than 0.75m into the lot boundary setback. Note: Minor projections will need to comply with the NCC requirements.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.side_projection_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.side_projection_m",
+    "op": "<=",
+    "value": 0.75
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.4",
+  "defined_terms": [
+    "minor projection",
+    "lot boundary setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.1",
+      "relation": "unclear",
+      "note": "minor projection allowance not itemised in the register's current provision"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 33
+  },
+  "register_ref": "ch3-058",
+  "verify": false,
+  "notes": "Minor projections must also comply with the NCC (note). The fact is the deepest projection into any lot boundary setback.",
+  "verified": {
+    "method": "page-image",
+    "page": 33,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

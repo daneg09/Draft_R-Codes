@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG2.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.7",
+  "element_title": "Building separation",
+  "title": "Building separation Design Guidance",
+  "text": "DG 2.7.1 Where the Acceptable Outcomes cannot be achieved due to site constraints, screening, window offsetting, or raised sills should be used to achieve an appropriate level of privacy, while maintaining outlook, solar access and natural ventilation. DG 2.7.2 Required separation between towers should increase alongside defined building height thresholds to manage privacy and outlook. DG 2.7.3 Building separation should consider the quality of outlook from habitable rooms, not solely against direct line-of-sight overlooking. Achieving the separation distances while facing a blank wall is a poor amenity outcome, and may not achieve the Element Objectives. Separation between buildings on the same site should be wide enough to avoid compromising natural cross-ventilation to apartments on either side. Figure 2.7a: Building separation is measured from the outer face of building envelopes which includes balconies.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/PG2.7.1",
+      "relation": "restructured",
+      "note": "Volume 2 PG 2.7.1 to 2.7.4"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 23
+  },
+  "register_ref": "C4P2-076",
+  "verify": false,
+  "notes": "",
+  "verified": {
+    "method": "page-image",
+    "page": 23,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,1832 @@
+[
+  {
+    "title": "R40, 12 apartments on 1,000 m2: garden provisions all met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.1-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.3-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r4",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.8",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1(ii)",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.4.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.3-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r4": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.8": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1(ii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.4.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 2-bed apartment with 9 m2 POS, 2 m deep, balcony 20% unscreened: POS and balcony fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 9,
+          "pos_min_dim_m": 2.0,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 20
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 POS size category not stated: area and dimension cannot be told",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": null,
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1": "CANNOT_TELL",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r1": "CANNOT_TELL"
+      }
+    }
+  },
+  {
+    "title": "R20 ground floor apartment with 15 m2 courtyard, 3 m deep: R10-R25 POS met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 2,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 15,
+          "pos_min_dim_m": 3,
+          "pos_dwelling_category": "ground_floor",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 3-bed apartment with 11 m2 balcony, 2.4 m deep: area fails (12 m2), dimension met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 2,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 11,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "3bed_plus",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 studio apartment with 8 m2, 1.8 m deep balcony: area met, dimension fails (2 m)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 2,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 8,
+          "pos_min_dim_m": 1.8,
+          "pos_dwelling_category": "studio_1bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Soft landscaping 12% of site, 0.8 m wide strips, street setback 25% soft: fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.1-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 120,
+        "soft_min_dim_m": 0.8,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 15,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.1-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Soft landscaping 12% with a significant existing tree retained: 10% applies (C1.2.6), TPZ provided",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": true,
+        "has_communal_street": false,
+        "retained_tree_root_zone_provided": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 120,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.7": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.1": "C1.2.6 significant existing tree retained on site: soft landscaping reduced to 10%"
+      }
+    }
+  },
+  {
+    "title": "Soft landscaping 12%, tree retention not stated: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": null,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 120,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.1": "CANNOT_TELL"
+      }
+    }
+  },
+  {
+    "title": "Significant tree retained without a tree protection zone: C1.2.7 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": true,
+        "has_communal_street": false,
+        "retained_tree_root_zone_provided": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.7": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Lot 600 m2 with 1 medium and 2 small trees, deep soil met: C1.2.4 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 100,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 2,
+          "medium_count": 1,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3,
+          "small_min_m2": 9,
+          "small_min_dim_m": 1.5
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r4": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Lot 600 m2 with 1 large and 2 small trees, no medium: C1.2.4 fails (read literally)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 100,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 2,
+          "medium_count": 0,
+          "large_count": 1
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3,
+          "small_min_m2": 9,
+          "small_min_dim_m": 1.5,
+          "large_min_m2": 64,
+          "large_min_dim_m": 6
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r5": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Lot 900 m2 with 1 large and 1 small tree: C1.2.4-r1 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 140,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 1,
+          "medium_count": 0,
+          "large_count": 1
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3,
+          "small_min_m2": 9,
+          "small_min_dim_m": 1.5,
+          "large_min_m2": 64,
+          "large_min_dim_m": 6
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Lot 900 m2 with 1 medium and 1 small tree: C1.2.4-r1 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 140,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 1,
+          "medium_count": 1,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3,
+          "small_min_m2": 9,
+          "small_min_dim_m": 1.5
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Lot 1,500 m2 with 3 medium trees: needs 4 (2 plus 1 per 400 m2 or part over 1,000 m2), fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1500,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 240,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 3,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Lot 1,500 m2 with 4 medium trees: C1.2.4-r2 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1500,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 240,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 4,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Lot 1,500 m2 with 1 large, 1 small and 2 medium trees: C1.2.4-r2 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1500,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 240,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 1,
+          "medium_count": 2,
+          "large_count": 1
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3,
+          "small_min_m2": 9,
+          "small_min_dim_m": 1.5,
+          "large_min_m2": 64,
+          "large_min_dim_m": 6
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Deep soil short: small tree 8 m2, medium 36 m2 but 2.5 m wide, large 60 m2: all fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r4",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 1,
+          "medium_count": 2,
+          "large_count": 1
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 2.5,
+          "small_min_m2": 8,
+          "small_min_dim_m": 1.5,
+          "large_min_m2": 60,
+          "large_min_dim_m": 6
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r5": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Ten uncovered at-grade bays with 3 shade trees: met; communal street landscaped and lit",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.5",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": true,
+        "communal_street_landscaped_and_lit": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 10
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "parking_shade_trees": 3
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.5": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Ten uncovered at-grade bays with 2 shade trees; communal street unlit; no landscaping plan: fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.5",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.8"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": true,
+        "communal_street_landscaped_and_lit": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 10
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": false,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false,
+        "parking_shade_trees": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.5": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.8": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "11 apartments, mixed use: COS 60 m2 (66 needed), 20 m2 hard (22), 3.5 m wide, 30% roofed, in front setback, shared with commercial: fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1(ii)",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1(iii)",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.3-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 11,
+        "mixed_use": true
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 60,
+          "min_dim_m": 3.5,
+          "hard_landscape_area_m2": 20,
+          "max_roofed_pct": 30,
+          "in_common_property": true,
+          "behind_street_setback": false,
+          "universally_accessible": false,
+          "separated_from_noise_odour": false,
+          "oriented_to_limit_impacts": false,
+          "landscaped_and_lit": false,
+          "exclusive_to_residential": false
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1(i)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1(ii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1(iii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.3-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "60 apartments, mixed use: COS 300 m2 and hard landscape 100 m2 meet the caps; exclusive to residents",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r1",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.1(iii)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 60,
+        "mixed_use": true
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 300,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 100,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true,
+          "exclusive_to_residential": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.1(iii)": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Eight apartments with a 30 m2 communal garden: no Table 1.3a provision, C1.3.2 and C1.3.3 still apply",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.2",
+      "rcodes:draft-2026-10-24/ch4p1/C1.3.3",
+      "rcodes:draft-2026-10-24/ch4p1/C1.2.3-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 8,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 30,
+          "min_dim_m": 3,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": true,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.3.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C1.2.3-r1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Stormwater not retained on site, decision-maker requires connection: C1.4.1 not applicable (C1.4.2)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.4.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": false,
+        "stormwater_to_system_required": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.4.1": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.4.1": "C1.4.2 directed to a district or local stormwater drainage system where required by the decision-maker"
+      }
+    }
+  },
+  {
+    "title": "Stormwater not retained on site and no connection required: C1.4.1 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C1.4.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "frontage_m": 20,
+        "significant_tree_retained": false,
+        "has_communal_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "mixed_use": false
+      },
+      "dwellings": {
+        "balconies_provided": true,
+        "min": {
+          "pos_area_m2": 10,
+          "pos_min_dim_m": 2.4,
+          "pos_dwelling_category": "2bed",
+          "balcony_unscreened_perimeter_pct": 30
+        }
+      },
+      "parking": {
+        "uncovered_at_grade_spaces": 0
+      },
+      "landscape": {
+        "soft_area_m2": 160,
+        "soft_min_dim_m": 1.2,
+        "street_setback_area_m2": 60,
+        "street_setback_soft_area_m2": 20,
+        "trees": {
+          "small_count": 0,
+          "medium_count": 2,
+          "large_count": 0
+        },
+        "deep_soil": {
+          "medium_min_m2": 36,
+          "medium_min_dim_m": 3
+        },
+        "cos": {
+          "area_m2": 72,
+          "min_dim_m": 4,
+          "hard_landscape_area_m2": 24,
+          "max_roofed_pct": 20,
+          "in_common_property": true,
+          "behind_street_setback": true,
+          "universally_accessible": true,
+          "separated_from_noise_odour": true,
+          "oriented_to_limit_impacts": true,
+          "landscaped_and_lit": true
+        },
+        "landscaping_plan_provided": true,
+        "stormwater_retained_on_site": false,
+        "stormwater_to_system_required": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C1.4.1": "DOES_NOT_MEET"
+      }
+    }
+  }
+]

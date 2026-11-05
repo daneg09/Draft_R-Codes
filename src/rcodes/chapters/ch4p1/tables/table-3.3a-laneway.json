@@ -1,0 +1,45 @@
+{
+  "id": "table-3.3a-laneway",
+  "title": "Table 3.3a Minimum setback of buildings from the street: adjoining laneway or right-of-way where it is not the primary street",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 3,
+      "note": "as per secondary street (merged cell R10-R12.5)"
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 2,
+      "note": "as per secondary street (merged cell R10-R12.5)"
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R60"
+      },
+      "value": 0.5
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P1-077",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "'As per Secondary Street setbacks' merged across R10 and R12.5 (p29, p7)."
+  },
+  "notes": "Copied from Chapter 3 and checked against p29 and Table 4A p7. No communal street row (register C4P1-077; rule C3.3.1#communal-street)."
+}

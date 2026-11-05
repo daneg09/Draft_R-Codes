@@ -1,0 +1,38 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M3.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Streetscape merit assessment criteria",
+  "text": "M3.6.1 The design of dwelling façades, street walls and fences in the street setback area contributes positively to streetscape, context and local character. M3.6.2 The building design addresses street frontages and provides opportunity for passive surveillance and social interaction. M3.6.3 Dwelling and building entries are: i. accessible and protected from the weather; and ii. well-lit for safety and amenity, without opportunity for concealment, and designed to enable passive surveillance of the entry from within the lot. M3.6.4 Visual connectivity between the dwelling and the streetscape should be maintained and the effect of the garage on the streetscape should be minimised whereby the streetscape is not dominated by garages. M3.6.5 The height of street walls and fences allows for passive surveillance of the street from the development whilst balancing the need for privacy of private open space and the impact of traffic noise, where located on a primary distributor, district distributor or integrator arterial road.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.6.1",
+      "relation": "same",
+      "note": "P3.6.1-P3.6.5"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 37
+  },
+  "register_ref": "C4P1-108",
+  "verify": false,
+  "notes": "from: ch3 M3.6 (unchanged). Deleted deemed exempt provisions with no successor: Part C C3.6.9 secondary street fencing (C4P1-107); Part C C3.6.3 porch weather cover. Chapter 3 C3.6.1 (address the street) has no counterpart here.",
+  "verified": {
+    "method": "page-image",
+    "page": 37,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

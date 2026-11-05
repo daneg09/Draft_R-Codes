@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.6.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.6",
+  "element_title": "Public domain interface",
+  "title": "Bins not in the primary street setback or visible from the primary street",
+  "text": "Bins are not located within the primary street setback or in locations visible from the primary street.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "services.bins_outside_street_setback_not_visible"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.bins_outside_street_setback_not_visible",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.6",
+  "defined_terms": [
+    "primary street",
+    "street setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.6.8",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 39
+  },
+  "register_ref": "C4P2-094",
+  "verify": false,
+  "notes": "services.bins_outside_street_setback_not_visible (proposed). services.bins_screened (Chapter 2) is a different test.",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

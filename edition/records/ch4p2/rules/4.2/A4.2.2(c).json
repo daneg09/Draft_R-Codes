@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.2.2(c)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.2",
+  "element_title": "Natural ventilation",
+  "title": "Dwellings at the 10th storey or above: balconies have high and low level ventilation openings",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "For dwellings located at the 10th storey or above, balconies incorporate high and low level ventilation openings.",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "building.height_storeys",
+      "op": ">=",
+      "value": 10
+    }
+  ],
+  "inputs": [
+    "building.height_storeys",
+    "dwellings.balconies_10th_storey_high_low_vents"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "dwellings.balconies_10th_storey_high_low_vents",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.2",
+  "defined_terms": [
+    "storey",
+    "balcony"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.2.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 52,
+    "extract_line": 1772
+  },
+  "register_ref": "C4P2-112",
+  "verify": false,
+  "notes": "verify: read as balconies enclosed enough to need vents (wintergardens); an open balcony has no ventilation openings to speak of. Condition uses the building's storey count; the clause applies to the dwellings on storey 10 and above.",
+  "verified": {
+    "method": "page-image",
+    "page": 52,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

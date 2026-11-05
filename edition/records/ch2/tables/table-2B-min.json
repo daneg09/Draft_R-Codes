@@ -1,0 +1,133 @@
+{
+  "id": "table-2B-min",
+  "title": "Table 2B Minimum site area per dwelling (single houses)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 5000
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 4000
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": 2000
+    },
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 875
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 700
+    },
+    {
+      "match": {
+        "site.r_code": "R15"
+      },
+      "value": 580
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5"
+      },
+      "value": 500
+    },
+    {
+      "match": {
+        "site.r_code": "R20"
+      },
+      "value": 350
+    },
+    {
+      "match": {
+        "site.r_code": "R25"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "site.r_code": "R30"
+      },
+      "value": 260
+    },
+    {
+      "match": {
+        "site.r_code": "R35"
+      },
+      "value": 220
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 180
+    },
+    {
+      "match": {
+        "site.r_code": "R50"
+      },
+      "value": 160
+    },
+    {
+      "match": {
+        "site.r_code": "R60"
+      },
+      "value": 120
+    },
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": 100
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 100,
+      "note": "R80 site area provisions apply to all single houses on lots coded R100, R160 and LR, MR and HR (Table 2B note)"
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": 80
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 51,
+    "table": "Table 2B"
+  },
+  "register_ref": "ch2-097",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 51,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Minimum site area column of Table 2B; used by C4.1.1 and C4.1.1-r4. Transcribed from page 51. The strikethrough on the R10-R25 average site areas is a flagged proposed change for the Perth and Peel regions only (Information Sheet 5); the averages are kept as operative with verify true. Table 2B drops the dwelling-type column and the multiple-dwelling rows of current Table D; single-house values are unchanged."
+}

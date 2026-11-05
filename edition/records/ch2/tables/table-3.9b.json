@@ -1,0 +1,56 @@
+{
+  "id": "table-3.9b",
+  "title": "Table 3.9b Maximum overshadowing for narrow lots (rear half of the adjoining site)",
+  "keys": [
+    "adjoining.south.r_code",
+    "adjoining.south.frontage_m"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "adjoining.south.r_code": "R40",
+        "adjoining.south.frontage_m": {
+          "max": 7.5
+        }
+      },
+      "value": 35,
+      "note": "no maximum on the front half; 35% of the rear half"
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R50-R60",
+        "adjoining.south.frontage_m": {
+          "max": 7.5
+        }
+      },
+      "value": 55,
+      "note": "no maximum on the front half; 55% of the rear half"
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R80+",
+        "adjoining.south.frontage_m": {
+          "max": 7.5
+        }
+      },
+      "value": null,
+      "note": "R80 and higher: no maximum overshadowing"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 43,
+    "table": "Table 3.9b"
+  },
+  "register_ref": "ch2-084",
+  "verify": false,
+  "notes": "Two keys: the adjoining lot must be coded R40 or greater AND have a frontage of 7.5 m or less; any other adjoining lot has no row (NOT_APPLICABLE, C3.9.1 governs). Battleaxe adjoining lots are excluded by a rule condition, not here. Figure 3.9e: the rear half is the half of the lot depth furthest from the street.",
+  "verified": {
+    "method": "page-image",
+    "page": 43,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R40 rear half 35%, R50-R60 55%, front half no maximum; R80 and higher no maximum. Frontage key 7.5m or less from C3.9.3(ii)."
+  }
+}

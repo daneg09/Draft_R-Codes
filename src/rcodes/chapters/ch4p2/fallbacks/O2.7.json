@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.7",
+  "element_title": "Building separation",
+  "title": "Building separation Element Objectives",
+  "text": "Development is to achieve the following Element Objectives: O 2.7.1 New development supports the desired future streetscape character with spaces between buildings. O 2.7.2 Building separation is in proportion to building height. O 2.7.3 Buildings are separated sufficiently to provide for residential amenity including visual and acoustic privacy, natural ventilation, sunlight and daylight access and outlook. O 2.7.4 Suitable areas are provided for communal and private open space, deep soil areas and landscaping between buildings.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.7",
+      "relation": "same",
+      "note": "Element Objectives"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 22
+  },
+  "register_ref": "C4P2-074",
+  "verify": false,
+  "notes": "The intent says generic separation factors are 'defined by the Primary Development Parameters in Table 2.1'; they are in Table 2.7.",
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

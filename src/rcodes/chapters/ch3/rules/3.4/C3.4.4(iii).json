@@ -1,0 +1,47 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.4.4(iii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary walls finished to an equivalent standard",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: iii. they are finished to an equivalent standard to the rest of the development, to the satisfaction of the decision-maker.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.4",
+  "defined_terms": [
+    "boundary wall"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.4.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 35
+  },
+  "register_ref": "ch3-066",
+  "verify": false,
+  "notes": "'To the satisfaction of the decision-maker' needs a planner.",
+  "verified": {
+    "method": "page-image",
+    "page": 35,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

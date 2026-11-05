@@ -1,0 +1,53 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "No detrimental impact on, and minimal canopy loss of, adjoining trees",
+  "text": "The development is sited and planned to have no detrimental impacts on, and to minimise canopy loss of adjoining trees.",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "figure": "Figure 3.3d"
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Judgment (Figure 3.3d: protect neighbouring trees and root zones during construction).",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

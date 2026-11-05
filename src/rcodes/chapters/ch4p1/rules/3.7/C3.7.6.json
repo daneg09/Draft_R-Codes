@@ -1,0 +1,83 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Simultaneous entry and exit on a primary distributor or integrator arterial",
+  "text": "Apartments located on a designated primary distributor or integrator arterial road, driveways to allow for two vehicles to enter and exit simultaneously in forward gear. Driveways must be minimum 5.5m wide for a minimum 6.3m length (excluding manoeuvring tapers) from the street boundary (refer Figure 3.7d).",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "primary distributor or integrator arterial frontage",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.primary_street_class",
+          "op": "==",
+          "value": "primary_distributor"
+        },
+        {
+          "type": "threshold",
+          "fact": "site.primary_street_class",
+          "op": "==",
+          "value": "integrator_arterial"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "site.communal_street_passing_bay",
+    "site.primary_street_class"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site.communal_street_passing_bay",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "driveway",
+    "primary distributor",
+    "integrator arterial",
+    "street boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.6",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.5",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 40,
+    "figure": "Figure 3.7d"
+  },
+  "register_ref": "C4P1-112",
+  "verify": true,
+  "notes": "from: ch3 C3.7.6 (unchanged; 'apartments located on' for 'grouped dwellings located on'). Applies where the primary street is a designated primary distributor or integrator arterial. site.communal_street_passing_bay answers a driveway at least 5.5 m wide for 6.3 m from the street boundary, tapers excluded (Figure 3.7d); one answer serves C3.7.5 and C3.7.6.",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Arterial trigger and 5.5m x 6.3m from the street boundary confirmed. Shares site.communal_street_passing_bay with C3.7.5 (passing points every 30m); the trigger reads only the primary street's class while the page says 'located on' such a road."
+  }
+}

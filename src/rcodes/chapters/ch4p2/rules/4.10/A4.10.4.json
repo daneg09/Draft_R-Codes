@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.10.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.10",
+  "element_title": "Facade design",
+  "title": "Building services fixtures integrated in the façade and not visually intrusive",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Building services fixtures are integrated in the design of the façade and are not visually intrusive from the public realm.",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.10",
+  "defined_terms": [
+    "public realm"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.10.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 70,
+    "extract_line": 2417
+  },
+  "register_ref": "C4P2-120",
+  "verify": false,
+  "notes": "Related: A4.18.1 (utilities in the front setback, at the entry or on visible roof areas).",
+  "verified": {
+    "method": "page-image",
+    "page": 70,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

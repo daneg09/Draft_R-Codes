@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.16",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.16",
+  "element_title": "Water management and conservation",
+  "title": "Water management and conservation design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.16.1 Good water management and conservation requires a holistic approach encompassing: principles of Water Sensitive Urban Design; design management, such as the efficiency of appliances and fittings, and support for positive water use behaviours; seeking alternative water sources and storage opportunities; understanding water in the landscape and the impact of multiple dwelling development on the water cycle. DG 4.16.2 Individual apartment metering of water is an effective way to transfer price signals to apartment occupants to assist with reducing potable water use. Larger developments should consider the use of technology to enable remote reading. DG 4.16.3 When fittings and appliances are to be supplied by the developer, these should be within one level of the highest level available under the Water Efficiency Labelling and Standards (WELS) system. DG 4.16.4 The use of potable water on-site should be reduced. Strategies can include: using suitable and reliable alternative water sources, including waste water recycling or rainwater harvesting; integrating infrastructure to harvest and store stormwater from the roof and/or sealed surfaces within the building and landscape design; install greywater systems, or plan the wastewater drains to be 'greywater' ready for future conversion; use irrigation systems that respond to soil moisture to maximise water efficiency; select drought tolerant and low water use plants species. DG 4.16.5 Stormwater should be managed on-site as much as practical, consider: harvesting roof run-off for internal use for toilet flushing and clothes washing; maximising the use of permeable surfaces at ground level to enable groundwater recharge, and minimising impervious areas; incorporating on-site infiltration and detention systems such as swales, garden beds, rain gardens, tree pits, infiltration cells and detention tanks (the latter shall be sited to avoid conflict with deep soil areas); designing landscape treatments to slow down overland flows and minimise opportunities for scouring; minimising the potential for nutrient run off through appropriate plant species and soil selection in landscaped areas. DG 4.16.6 Planning and design shall consider the potential for flooding from major rainfall events and incorporate design responses to mitigate the impacts on occupants, buildings and the environment. Responses may include: considering the future risk of inundation on the basis of the best available estimates of future climate change impacts particular to the location; provide sufficient area for stormwater detention/retention on-site; ensure an overland flow path such that habitable spaces are not inundated in a major rain event; integrate stormwater management systems in design of landscaping, open space and circulation areas.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 83,
+    "extract_line": 2858
+  },
+  "register_ref": "C4P2-126",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.16",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "DG 4.16.5 and DG 4.16.6 use 'shall' inside design guidance; recorded as printed.",
+  "verified": {
+    "method": "page-image",
+    "page": 83,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.4.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.4",
+  "element_title": "Private open space and balconies",
+  "title": "Privacy screening does not screen the whole open space or obscure outlook from adjacent living rooms",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Where private open space requires screening to achieve visual privacy requirements, the entire open space is not screened and any screening is designed such that it does not obscure the outlook from adjacent living rooms.",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.4",
+  "defined_terms": [
+    "private open space",
+    "visual privacy"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.4.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 58,
+    "extract_line": 1998
+  },
+  "register_ref": "C4P2-114",
+  "verify": false,
+  "notes": "Judgment: 'obscure the outlook' has no measure. Compare ch4p1 C1.1.2 (unscreened perimeter %), which this chapter does not use.",
+  "verified": {
+    "method": "page-image",
+    "page": 58,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

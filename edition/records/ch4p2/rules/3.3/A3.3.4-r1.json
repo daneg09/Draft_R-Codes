@@ -1,0 +1,52 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.4-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Deep soil areas co-located with retained or adjoining trees, or sited to suit tree growth and communal open space",
+  "text": "Deep soil areas are to be co-located with existing trees for retention and/or adjoining trees, or alternatively provided in a location that is conducive to tree growth and suitable for communal open space.",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Second sentence of A3.3.4; location quality is judgment.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

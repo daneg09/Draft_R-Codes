@@ -1,0 +1,73 @@
+{
+  "id": "table-2.7-adjoining",
+  "title": "Table 2.7 Building separation to adjoining property boundary (MR2, HR1, HR2, HR3)",
+  "keys": [
+    "building.separation_storeys",
+    "adjoining.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "building.separation_storeys": {
+          "max": 4
+        }
+      },
+      "value": null,
+      "note": "up to 4 storeys: refer 2.4 side and rear setbacks (Table 2.1) and 3.5 visual privacy (Table 3.5)"
+    },
+    {
+      "match": {
+        "building.separation_storeys": {
+          "min": 5
+        },
+        "adjoining.r_code": "R60-"
+      },
+      "value": 9,
+      "note": "adjoining property coded R60 or below"
+    },
+    {
+      "match": {
+        "building.separation_storeys": {
+          "min": 5
+        },
+        "adjoining.r_code": [
+          "R80+",
+          "R100-SL",
+          "LR1",
+          "MR1",
+          "MR2",
+          "HR1",
+          "HR2",
+          "HR3",
+          "R-PA",
+          "LR",
+          "MR",
+          "HR",
+          "R-AC0",
+          "R-AC1",
+          "R-AC2",
+          "R-AC3",
+          "R-AC4"
+        ]
+      },
+      "value": 6,
+      "note": "adjoining property coded R80 or above (R100-SL read as R80 or above; verify)",
+      "verify": true
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 22
+  },
+  "register_ref": "C4P2-075",
+  "verify": true,
+  "notes": "Applies to MR2, HR1, HR2 and HR3 only. The extract interleaves the 9m, 6m and 'Refer 2.4 ... and 3.5' cells; read per C4P2-075 (5 storeys and above: 9 m to R60 or below, 6 m to R80 or above; up to 4 storeys: no number). An adjoining property with no R-coding (commercial, POS, road) matches no row and is NOT_APPLICABLE: 'coded' is undefined for uncoded land (C4P2-075). Both keys must be known for a lookup, so an up-to-4-storey case with no adjoining.r_code is CANNOT_TELL rather than NOT_APPLICABLE.",
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "as A2.7.1-r1: rows apply to MR2, HR1, HR2, HR3 only; up-to-4-storeys is a merged 'Refer 2.4 (Table 2.1) and 3.5 (Table 3.5)' cell; uncoded adjoining land and R100-SL are not placed by 'coded R60 or below / R80 or above'."
+  }
+}

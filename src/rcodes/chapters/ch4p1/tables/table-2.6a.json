@@ -1,0 +1,51 @@
+{
+  "id": "table-2.6a",
+  "title": "Table 2.6a Outbuilding provisions",
+  "keys": [
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "max_area_m2"
+      },
+      "value": 60,
+      "note": "maximum individual or collective area per site (m2)"
+    },
+    {
+      "match": {
+        "metric": "max_wall_height_m"
+      },
+      "value": 3,
+      "note": "maximum wall height (m); 3.5 m under C2.6.2 where materials match the dwelling"
+    },
+    {
+      "match": {
+        "metric": "max_ridge_height_m"
+      },
+      "value": 4.2,
+      "note": "maximum ridge height (m)"
+    },
+    {
+      "match": {
+        "metric": "location"
+      },
+      "value": "not within the primary or secondary street setback area"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 22,
+    "extract_line": 694,
+    "table": "Table 2.6a"
+  },
+  "register_ref": "C4P1-058",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Copied from ch3 table-2.6a; values checked against p22, unchanged. Documentation table: 'metric' is not an application fact, so the engine does not look it up; rules C2.6.1 and C2.6.1-r1 carry the values. Refer Figure 2.6a for wall and ridge height guidance."
+}

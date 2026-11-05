@@ -1,0 +1,60 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.1.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Private open space per apartment: minimum dimension (Table 1.1a), R30 to R60",
+  "text": "Primary garden area. C1.1.1 A minimum of one private open space area is provided for the exclusive use of each dwelling, in accordance with Table 1.1a. Table 1.1a Primary garden area provisions. Minimum private open space dimension: Studio/1 bedroom 2m; 2 bedrooms, 3 or more bedrooms 2.4m; Ground floor dwelling 3m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "dwellings.min.pos_min_dim_m",
+    "dwellings.min.pos_dwelling_category",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-1.1a-dim",
+    "fact": "dwellings.min.pos_min_dim_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.1",
+  "defined_terms": [
+    "private open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.1.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.1b",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 9,
+    "table": "Table 1.1a"
+  },
+  "register_ref": "C4P1-005",
+  "verify": false,
+  "notes": "from: ch3 C1.1.3-r1. diverges: dimension by apartment size (2 m studio/1 bed, 2.4 m 2 bed and 3+ bed, 3 m ground floor; table-1.1a-dim) in place of a flat 3 m PGA dimension. The extract prints 2.4m once between the 2 and 3+ bedroom rows (merged cell); the register reads it for both. Fact describes the least compliant apartment against Table 1.1a (p9) and its size category (studio_1bed, 2bed, 3bed_plus, ground_floor; proposed fact). Service areas (bin storage, clothes drying, air conditioning units and the like) are excluded from the POS area. Table 1.1a is titled 'Primary garden area provisions', a misnomer for apartments (C4P1-004, C4P1-005).",
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

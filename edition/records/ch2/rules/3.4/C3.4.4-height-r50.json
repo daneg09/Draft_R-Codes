@@ -1,0 +1,87 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.4.4#height-r50",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary wall maximum height, R50 and above (7 m)",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: i. boundary walls are located behind the street setback; ii. overshadowing does not exceed the limits of C3.9.1; and iii. they are finished to an equivalent standard to the rest of the development, to the satisfaction of the decision-maker. Table 3.4c Lot boundary setbacks, maximum boundary wall height: R50 and above 7m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R50+",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.boundary_walls.count",
+      "op": ">=",
+      "value": 1
+    }
+  ],
+  "inputs": [
+    "building.boundary_walls.max_height_m",
+    "building.boundary_walls.count",
+    "building.boundary_walls.adjoining_wall_exists"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.boundary_walls.max_height_m",
+    "op": "<=",
+    "value": 7
+  },
+  "exceptions": [
+    {
+      "label": "abuts an existing or simultaneously constructed wall of similar or greater dimension (C3.4.5)",
+      "condition": {
+        "type": "boolean",
+        "fact": "building.boundary_walls.adjoining_wall_exists",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "building.boundary_walls.adjoining_wall_exists"
+      ],
+      "source": "C3.4.5, page 34",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "wall height"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4b",
+      "relation": "same",
+      "note": "7 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 34,
+    "table": "Table 3.4c",
+    "figure": "Figure 3.4j"
+  },
+  "register_ref": "ch2-065",
+  "verify": false,
+  "notes": "Height includes any retaining wall beneath (Figure 3.4k).",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.5-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Minimum parking for an ancillary dwelling, R40 and below, outside Perth and Peel (1)",
+  "text": "Table 2.3b (occupant car parking): Ancillary dwelling - minimum parking space(s) for R40 and below (per dwelling) 1.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling",
+    "ancillary_dwelling"
+  ],
+  "coding": [
+    "R2-R40"
+  ],
+  "region": "regional",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.ancillary_dwelling",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.ancillary_dwelling",
+    "parking.ancillary_spaces"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.ancillary_spaces",
+    "op": ">=",
+    "value": 1
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "ancillary dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.1",
+      "relation": "same",
+      "note": "Part B Location B ancillary 1"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "tightened",
+      "note": "R30-R40 ancillary 0 -> 1"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 20,
+    "extract_line": 648,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch3-030",
+  "verify": false,
+  "notes": "Content twin of Chapter 2 C2.3.3-r1 (renumbered). Regional ancillary dwellings at R40 and below need 1 space; Perth and Peel need 0 (C2.3.1-r1).",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

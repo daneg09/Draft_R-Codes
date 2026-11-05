@@ -1,0 +1,55 @@
+{
+  "id": "table-1.1a",
+  "title": "Table 1.1a Outdoor living area provisions: minimum area (single houses R2-R40)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2-R15"
+      },
+      "value": null,
+      "note": "No minimum applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5"
+      },
+      "value": 36
+    },
+    {
+      "match": {
+        "site.r_code": "R20-R25"
+      },
+      "value": 30
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R35"
+      },
+      "value": 24
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 20
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 9,
+    "table": "Table 1.1a"
+  },
+  "register_ref": "ch2-002",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Minimum OLA area by coding. The other Table 1.1a columns are constants carried by the rules: 65% of the required area without permanent roof cover (C1.1.1-r2), 4 m minimum dimension (C1.1.1-r1), behind the street setback area unless C1.1.2 (C1.1.1-r3). Same values as current Table B. On the page the location cell is merged across all rows including R2-R15, so C1.1.1-r3 applies R2-R40."
+}

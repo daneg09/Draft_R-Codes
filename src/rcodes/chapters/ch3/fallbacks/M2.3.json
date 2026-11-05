@@ -1,0 +1,45 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Parking merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.3.1 Siting and the extent of parking does not dominate the development or streetscape and responds to the context and local character by: i. supporting the efficient use of the site; and ii. minimising the extent of paving for parking and vehicle access. M2.3.2 Adequate parking is provided for various modes of transport, including bicycles, motorcycles, scooters and cars, that has regard to the following considerations: i. the proximity of the proposed development to public transport, activity centres, areas of amenity and other facilities; ii. the type, size and number of dwellings; and iii. the availability of on-street and other off-street parking. M2.3.3 Parking spaces are designed for flexibility and adaptability having regard for: i. the needs of occupants, including consideration of universally accessible parking spaces; and ii. the ability to use the space for alternative purposes.",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 18,
+    "extract_line": 558
+  },
+  "register_ref": "ch3-025",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-P3.2",
+      "relation": "deleted",
+      "note": "reduced on-site parking where controlled street parking exists"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-P3.3",
+      "relation": "deleted",
+      "note": "off-site parking and shared-use reductions"
+    }
+  ],
+  "notes": "Register ch3-032: the Part B off-site parking and parking reduction design principles (P3.2, P3.3) are deleted; no rule is written. M2.3.2(iii) 'availability of on-street and other off-street parking' is the remaining hook. Ch1 Table 2.5A allows LPP reductions of Table 2.3a minimums without WAPC approval; Table 2.3b clauses are not listed.",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.2",
+  "element_title": "Building height",
+  "title": "Building height Element Objectives",
+  "text": "Development is to achieve the following Element Objectives: O 2.2.1 The height of development responds to the desired future scale and character of the street and local area, including existing buildings that are unlikely to change. O 2.2.2 The height of buildings within a development responds to changes in topography. O 2.2.3 Development incorporates articulated roof design and/or roof top communal open space where appropriate. O 2.2.4 The height of development recognises the need for daylight and solar access to adjoining and nearby residential development, communal open space and in some cases, public spaces.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O2.2.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/O2.2.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/O2.2.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/O2.2.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 15
+  },
+  "register_ref": "C4P2-068",
+  "verify": false,
+  "notes": "Wording unchanged from Volume 2 (C4P2-068). The intent's adjoining-amenity test is softened (C4P2-066).",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

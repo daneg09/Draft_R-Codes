@@ -1,0 +1,31 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M2.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.7",
+  "element_title": "Universal design",
+  "title": "Universal design merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M2.7.1 Development provides accessible housing or adaptable dwellings that are proportionate in number to the size of the development and intended occupancy. M2.7.2 Accessible housing and adaptable dwellings provide housing options for people with disabilities and/or limited or reduced mobility, facilitate ageing in place, and are designed in accordance with the universal design requirements: i. of the Livable Housing Design Guidelines; ii. of the Australian Building Codes Board Livable Housing Design Standard (2022); iii. of AS4299; and/or iv. to suit the specific needs of the occupant.",
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 22,
+    "extract_line": 674
+  },
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

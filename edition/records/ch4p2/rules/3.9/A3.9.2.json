@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Resident car parking: no minimum in Location A or B (Table 3.9)",
+  "text": "Parking is provided for cars and motorcycles in accordance with Table 3.9. Table 3.9 Resident car parking: No minimum (Location A and Location B).",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.resident_spaces"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.9-resident",
+    "fact": "parking.resident_spaces",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [
+    "Location A",
+    "Location B"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.9.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.9",
+      "relation": "relaxed",
+      "note": "Location A 0.75 (1-bed) / 1 (2+ bed) and Location B 1 / 1.25 bays per dwelling -> no minimum"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-098",
+  "verify": false,
+  "notes": "Register C4P2-098 (Location A) and C4P2-099 (Location B): resident minimum removed. table-3.9-resident returns 0 for both locations, so the rule only reports the provision. Location A: within 800 m of a high-frequency rail station (pedestrian entry to platform, straight line, to any part of the lot), within 250 m of a high-frequency transit route (or routes combining to 15-minute weekday peak stops, 7-9am and 5-7pm), and/or within an activity centre boundary; Location B: all other land (C4P2-105, unchanged). ToC says Location A applies to Perth and Peel only; no such limit is in the Part 2 text (C4P2-098). Footnote 2 (one car bay less per five motorcycle bays) has no resident minimum to reduce.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

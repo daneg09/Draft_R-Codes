@@ -1,0 +1,67 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.3.2(iii)#r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Corner lot subdivision: porch, balcony or verandah setback to the original secondary street",
+  "text": "C3.3.2 Notwithstanding C3.3.1, the following reductions are permitted: iii. in areas coded R15 or higher, the street setback, may be reduced to 2.5m, or 1.5m to a porch, balcony, verandah or the equivalent, where a single house results from a subdivision of an original corner lot and has its frontage to the original secondary street.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R15+",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.corner_lot_subdivided",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.porch_street_setback_m",
+    "site.corner_lot_subdivided"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.porch_street_setback_m",
+    "op": ">=",
+    "value": 1.5
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.3",
+  "defined_terms": [
+    "porch",
+    "verandah",
+    "balcony"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1(iv)",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 31
+  },
+  "register_ref": "ch3-050",
+  "verify": true,
+  "notes": "Porch limb of C3.3.2(iii); same single-house wording issue (register ch3-050). Uses fact building.porch_street_setback_m.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed on p31: the grouped dwellings chapter still says 'where a single house results from a subdivision of an original corner lot'. The page does not say whether a grouped dwelling qualifies."
+  }
+}

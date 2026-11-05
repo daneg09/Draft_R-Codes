@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "More than 20 apartments: 0.1 motorcycle/scooter bays per dwelling (Table 2.3a)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "Motorcycle/scooter parking is provided on site in accordance with Table 2.3a. Table 2.3a Motorcycle/scooter parking²: Developments exceeding 20 dwellings to provide 0.1 motorcycle/scooter bays per dwelling. ²For each five motorcycle/scooter parking bays provided in accordance with Table 2.3, car parking bays may be reduced by one bay.",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">",
+      "value": 20
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count",
+    "parking.motorcycle_spaces"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "parking.motorcycle_spaces",
+    "op": ">=",
+    "value": "round(0.1 * proposal.dwelling_count + 0.001)",
+    "label": "0.1 bays per dwelling, rounded to the nearest whole number with 0.5 rounded up"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.3",
+  "defined_terms": [
+    "motorcycle/scooter parking"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.3.2",
+      "relation": "restructured",
+      "note": "20 or more dwellings, 1 per 10 car spaces -> exceeding 20 dwellings, 0.1 per dwelling"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 19,
+    "extract_line": 589,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "C4P1-042",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Footnote 1 (rounding) is marked on the car and bicycle rows only, not the motorcycle row (p20); rounding applied by analogy. Footnote 2 cites 'Table 2.3' and its car-bay reduction has no resident minimum to reduce."
+  },
+  "notes": "new: no Chapter 3 equivalent. Applies to developments exceeding 20 dwellings (21 or more; current '20 or more'). verify: the rounding footnote 1 is attached to the car and bicycle rows, not the motorcycle row; the nearest-whole-number rounding is applied by analogy. Footnote 2 (one car bay reduction per five motorcycle bays) cites 'Table 2.3' (wrong ref) and has nothing to reduce for residents, as there is no resident minimum; whether it reduces visitor bays is unclear, so it is not encoded."
+}

@@ -1,0 +1,295 @@
+{
+  "site": {
+    "id": "15 m x 30 m R20 lot (owner's brief; no lot, street or LGA given)",
+    "r_code": "R20",
+    "width_m": 15,
+    "depth_m": 30,
+    "area_m2": 450,
+    "frontage_m": 15
+  },
+  "proposal": {
+    "dwelling_type": "single_house",
+    "dwelling_count": 1,
+    "storeys": 2,
+    "bedrooms": 5,
+    "ancillary_dwelling": false,
+    "primary_living_space_floor": "ground",
+    "small_dwelling": false,
+    "seeks_universal_design_site_area_variation": false
+  },
+  "subdivision": {
+    "proposed": false
+  },
+  "building": {
+    "storeys": 2,
+    "roofed_area_m2": 193,
+    "house_length_m": 20.39,
+    "house_width_m": 10.1,
+    "upper_storey_wall_max_length_m": 12.3,
+    "entrance_identifiable_from_street": true,
+    "major_opening_to_frontage": true
+  },
+  "parking": {
+    "spaces": 2,
+    "garage_carport_spaces": 2,
+    "garage": {
+      "present": true,
+      "bays": 2,
+      "ext_width_m": 5.83,
+      "parallel_parking": false,
+      "upper_floor_over_half_width": true,
+      "entrance_clearly_visible": true
+    },
+    "carport": {
+      "present": false
+    }
+  },
+  "facts_meta": {
+    "site.r_code": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "owner's brief: \"the design on an R20 lot with the following dimensions: 15m wide, 30m deep\"",
+        "where": "owner's brief"
+      }
+    },
+    "site.width_m": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "owner's brief: \"the design on an R20 lot with the following dimensions: 15m wide, 30m deep\"",
+        "where": "owner's brief"
+      }
+    },
+    "site.depth_m": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "owner's brief: \"the design on an R20 lot with the following dimensions: 15m wide, 30m deep\"",
+        "where": "owner's brief"
+      }
+    },
+    "site.area_m2": {
+      "method": "computed",
+      "confidence": 1.0,
+      "source": {
+        "file": "owner's brief: \"the design on an R20 lot with the following dimensions: 15m wide, 30m deep\"",
+        "where": "owner's brief"
+      },
+      "note": "15 m x 30 m = 450 m2; assumes a rectangular lot with no truncation (none stated)"
+    },
+    "site.frontage_m": {
+      "method": "assumed",
+      "confidence": 0.9,
+      "source": {
+        "file": "owner's brief: \"the design on an R20 lot with the following dimensions: 15m wide, 30m deep\"",
+        "where": "owner's brief"
+      },
+      "note": "assumed equal to the 15 m lot width: frontage is measured at the primary street setback line (A1), which equals the width for a rectangular lot whose 15 m side is the street boundary; the brief does not say which side faces the street"
+    },
+    "proposal.dwelling_type": {
+      "method": "inferred",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "whole page: one dwelling, one kitchen"
+      }
+    },
+    "proposal.dwelling_count": {
+      "method": "inferred",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "whole page: one dwelling"
+      }
+    },
+    "proposal.storeys": {
+      "method": "inferred",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "two floor plans (ground left, upper right) and two-storey render top right"
+      }
+    },
+    "proposal.bedrooms": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "page summary: 5 bedrooms; plans show GUEST (ground), BED 3, BED 4, BED 5 and MASTER SUITE (upper)"
+      }
+    },
+    "proposal.ancillary_dwelling": {
+      "method": "inferred",
+      "confidence": 0.95,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "whole page: no second kitchen or self-contained unit shown"
+      }
+    },
+    "proposal.primary_living_space_floor": {
+      "method": "inferred",
+      "confidence": 0.95,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan: FAMILY, DINING and KITCHEN at the rear of the ground floor"
+      }
+    },
+    "proposal.small_dwelling": {
+      "method": "inferred",
+      "confidence": 0.95,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "whole page: five-bedroom, two-storey house; internal floor area plainly far above the 70 m2 small-dwelling limit (C2.9.1)"
+      }
+    },
+    "proposal.seeks_universal_design_site_area_variation": {
+      "method": "inferred",
+      "confidence": 0.9,
+      "source": {
+        "file": "owner's brief: \"the design on an R20 lot with the following dimensions: 15m wide, 30m deep\"",
+        "where": "owner's brief: one house on an existing 450 m2 lot; no site-area variation is sought"
+      }
+    },
+    "subdivision.proposed": {
+      "method": "inferred",
+      "confidence": 0.9,
+      "source": {
+        "file": "owner's brief: \"the design on an R20 lot with the following dimensions: 15m wide, 30m deep\"",
+        "where": "owner's brief: build the design on the lot; no lots are created"
+      }
+    },
+    "building.storeys": {
+      "method": "inferred",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "two floor plans and two-storey render"
+      }
+    },
+    "building.roofed_area_m2": {
+      "method": "measured",
+      "confidence": 0.85,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan, outer wall line"
+      },
+      "note": "Scaled at ~34 px/m (20.390 m dimension = 699 px; garage internal 5.610 m = 190 px). Ground-floor outline traced including the ALFRESCO (taken as under the main roof, as is usual for a project home; it lies inside the 20.390 m overall dimension) and the PORCH, excluding eaves: ~193 m2 (+/- 5 m2). The 20.39 x 10.10 = 205.9 m2 bounding box is an upper bound and was not used: the rear is narrower (main house right wall ~0.5 m inside the garage and ensuite line; the alfresco is only ~4.6 m of the rear width) and the left wall steps in ~0.4 m at the multi-purpose room. Without the alfresco the figure would be ~178 m2."
+    },
+    "building.house_length_m": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan, vertical dimension '20.390m' at left"
+      }
+    },
+    "building.house_width_m": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan, horizontal dimension '10.100m' at bottom"
+      }
+    },
+    "building.upper_storey_wall_max_length_m": {
+      "method": "measured",
+      "confidence": 0.85,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "upper floor plan, right of page"
+      },
+      "note": "upper floor scaled front to back: ~420 px at ~34 px/m = ~12.3 m (+/- 0.3 m), so no upper-storey side wall exceeds 12.3 m including the front ledge; upper plan checked at the ground plan scale against MASTER SUITE 3900 wide"
+    },
+    "building.entrance_identifiable_from_street": {
+      "method": "inferred",
+      "confidence": 0.85,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "front elevation render, top right: entry and porch beside the garage; the render is not a measured drawing"
+      }
+    },
+    "building.major_opening_to_frontage": {
+      "method": "inferred",
+      "confidence": 0.85,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "front elevation render: large ground and upper-floor windows face the street; OFFICE and LOUNGE at the front on the plans"
+      }
+    },
+    "parking.spaces": {
+      "method": "inferred",
+      "confidence": 0.9,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan: GARAGE 5610 x 5710 drawn with two cars; page summary: 2 car spaces"
+      },
+      "note": "two spaces in the garage; driveway spaces are not shown (no site plan), so this is a minimum"
+    },
+    "parking.garage_carport_spaces": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "page summary: 2 car spaces; garage drawn with two cars"
+      }
+    },
+    "parking.garage.present": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan: GARAGE 5610 x 5710"
+      }
+    },
+    "parking.garage.bays": {
+      "method": "stated",
+      "confidence": 1.0,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "page summary: 2 car spaces (not read by any rule; parking.garage_carport_spaces carries it to the engine)"
+      }
+    },
+    "parking.garage.ext_width_m": {
+      "method": "computed",
+      "confidence": 0.8,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan: GARAGE 5610 x 5710 (internal)"
+      },
+      "note": "5.61 m internal + 2 x 0.11 m walls (single-leaf brick allowance, matching the thin garage walls drawn) = 5.83 m. Scaled outer-to-outer width is ~5.78 m. A double-brick allowance (2 x 0.27 m) would give 6.15 m."
+    },
+    "parking.carport.present": {
+      "method": "inferred",
+      "confidence": 0.85,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan: parking is the enclosed double GARAGE; no carport drawn"
+      }
+    },
+    "parking.garage.parallel_parking": {
+      "method": "inferred",
+      "confidence": 0.95,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "ground floor plan and render: garage door faces the street"
+      }
+    },
+    "parking.garage.upper_floor_over_half_width": {
+      "method": "inferred",
+      "confidence": 0.85,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "front elevation render and upper plan: MASTER SUITE sits over the garage"
+      }
+    },
+    "parking.garage.entrance_clearly_visible": {
+      "method": "inferred",
+      "confidence": 0.85,
+      "source": {
+        "file": "the plan page supplied by the owner (not published)",
+        "where": "front elevation render: dwelling entry beside the garage, visible from the street"
+      }
+    }
+  }
+}

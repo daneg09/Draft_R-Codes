@@ -1,0 +1,113 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.8.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.8",
+  "element_title": "Solar access for adjoining sites",
+  "title": "Maximum overshadowing of an adjoining property (Table 3.8a)",
+  "text": "In climate zones 4, 5, and 6, development is designed that its shadow cast at midday, 21 June (refer Figure 3.8a) onto any other adjoining property and/or diagonally adjacent lot (refer Figure 3.8b) does not exceed the limits set out in Table 3.8a. Table 3.8a Maximum overshadowing (percentage of dwelling site area): Adjoining property: R25 and lower 25%; R30-R40 35%; R50-60 50%.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "label": "climate zone 4, 5 or 6",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "adjoining.south.frontage_m",
+    "adjoining.south.r_code",
+    "overshadow.adjoining_pct",
+    "overshadow.adjoining_rear_half_pct",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.8a",
+    "fact": "overshadow.adjoining_pct",
+    "op": "<="
+  },
+  "exceptions": [
+    {
+      "label": "C3.8.2 narrow adjoining lot (R40+, frontage 7.5 m or less): Table 3.8b governs",
+      "condition": {
+        "type": "table-lookup",
+        "table": "table-3.8b",
+        "fact": "overshadow.adjoining_rear_half_pct",
+        "op": "<="
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "adjoining.south.r_code",
+        "adjoining.south.frontage_m",
+        "overshadow.adjoining_rear_half_pct"
+      ],
+      "source": "C3.8.2, p43",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.8",
+  "defined_terms": [
+    "adjoining property",
+    "overshadowing",
+    "site area",
+    "natural ground level"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.9.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.9a",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.2-C2.1",
+      "relation": "same",
+      "note": "adjoining limits unchanged for R10-R25"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 42,
+    "table": "Table 3.8a",
+    "figure": "Figure 3.8a, 3.8b, 3.8c"
+  },
+  "register_ref": "C4P1-125",
+  "verify": false,
+  "notes": "diverges: from ch3 C3.9.1; the C3.9.2 single-storey exemption is removed because this chapter has none (3.8 is C3.8.1 to C3.8.3 only, p42-43), so the storeys and wall-height inputs are dropped. Narrow-lot exception relabelled C3.8.2 (Table 3.8b). Shadow as % of the adjoining site area at NGL; dividing fences up to 2 m do not contribute (Figure 3.8c). Footnote 1: per grouped dwelling site area excluding common property where the adjoining site is a grouped development (not encoded). Adjoining lots coded R80+ have no row in Table 3.8a (NOT_APPLICABLE).",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 3.8a prints three rows only (R25 and lower, R30-R40, R50-60); no R80+ row and no single-storey exemption in this element. Footnote 1 (per grouped dwelling site area excluding common property) not encoded. The narrow-lot exception keeps its own verify flag."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.1",
+  "element_title": "Site cover",
+  "title": "Maximum site cover",
+  "text": "C3.1.1 Development on each site does not exceed the maximum site cover percentages of Table 3.1a. Table 3.1a Maximum site cover: R2 and R2.5 25%; R5 35%; R10 45%; R12.5 50%; R15-R25 55%. Site cover does not apply to R30 and above.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.roofed_area_m2",
+    "site.area_m2",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "percentage-of",
+    "fact": "building.roofed_area_m2",
+    "of": "site.area_m2",
+    "op": "<=",
+    "value": {
+      "table": "table-3.1a"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.1",
+  "defined_terms": [
+    "site cover"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.4-C4",
+      "relation": "relaxed",
+      "note": "open space minimum replaced by site cover maximum; +5 points at every code R2-R25"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "relaxed",
+      "note": "open space column inverted to site cover"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.1a",
+      "relation": "deleted",
+      "note": "R30+ site cover removed (register ch3-042)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.4-C4",
+      "relation": "deleted",
+      "note": "grouped-dwelling site including its proportionate share of common property not carried (register ch3-043)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 28,
+    "table": "Table 3.1a"
+  },
+  "register_ref": "ch3-041",
+  "verify": false,
+  "notes": "Site cover is tested against the grouped dwelling's own site: the land occupied by the dwelling plus all areas, contiguous or not, designated for the exclusive use of its occupants (Appendix A1 'site', register ch3-043; C4.1.2(i), p51, states the same basis for site area). Part B 5.1.4 C4 added the dwelling's proportionate share of common property; the draft does not, so a common driveway no longer dilutes the denominator (tightening, not in the Table of Changes). site.area_m2 and building.roofed_area_m2 are therefore the exclusive-use site and its roofed area for each dwelling; run the rule per dwelling or supply the worst dwelling. Basis confirmed on p28 and Appendix A1 (pass 1). R30 and above (and R100-SL) return NOT_APPLICABLE through the null table row (register ch3-042). +5 points at every code R2-R25 (register ch3-041).",
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values match p28. Site basis settled: C3.1.1 prints 'site' as a defined term, and Appendix A1 'site' (ii) for a grouped dwelling is the area occupied by the dwelling together with any area allocated (by strata scheme or otherwise) for its exclusive use or benefit; C4.1.2(i) (p51) uses the same basis. No share of common property."
+  }
+}

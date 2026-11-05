@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.4.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.4",
+  "element_title": "Communal open space",
+  "title": "Communal open space separated or screened from bins, vents, condensers, noise sources and vehicle circulation",
+  "text": "Communal open space is separated or screened from adverse amenity impacts such as bins, vents, condenser units, noise sources and vehicle circulation areas.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "landscape.cos.area_m2",
+      "op": ">",
+      "value": 0,
+      "label": "communal open space provided"
+    }
+  ],
+  "inputs": [
+    "landscape.cos.area_m2",
+    "landscape.cos.separated_from_noise_odour"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.cos.separated_from_noise_odour",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.4",
+  "defined_terms": [
+    "communal open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.4.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 34
+  },
+  "register_ref": "C4P2-083",
+  "verify": false,
+  "notes": "from: ch4p1 C1.3.2 (landscape.cos.separated_from_noise_odour).",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

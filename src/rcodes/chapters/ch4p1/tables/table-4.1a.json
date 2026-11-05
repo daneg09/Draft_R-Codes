@@ -1,0 +1,35 @@
+{
+  "id": "table-4.1a",
+  "title": "C4.1.4 coding band: R25 and below",
+  "keys": [
+    "site.r_code"
+  ],
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R25-"
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": "R30+"
+      },
+      "value": false
+    }
+  ],
+  "default": false,
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 50
+  },
+  "register_ref": "C4P1-143",
+  "verify": false,
+  "notes": "Engine helper, not a published table: true where the clause's coding band applies, false otherwise (default false). Used as a condition inside the concession exceptions on C4.1.1 (a table-lookup with no fact answers MEETS when the value is truthy), because exceptions cannot carry a coding of their own. Values are never null. Chapter 4 Part 1 covers R10-R60 only. C4.1.4: small dwelling (C2.9.1) at R25 and below.",
+  "verified": {
+    "method": "page-image",
+    "page": 50,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

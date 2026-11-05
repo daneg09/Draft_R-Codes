@@ -1,0 +1,96 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.9.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.9",
+  "element_title": "Solar access for adjoining sites",
+  "title": "Proportional shading limit where the neighbour's northern boundary is shared by several lots",
+  "text": "Where an adjoining property shares a northern lot boundary with more than one lot including the development site, the limit of shading at C3.9.1 shall be cumulative and proportional to the length of the shared boundary/ies of the development site (refer Figure 3.9f). This does not apply to diagonally adjacent lots.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "label": "climate zone 4, 5 or 6",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "count",
+      "fact": "adjoining.north_shared_boundary_count",
+      "op": ">=",
+      "value": 2
+    }
+  ],
+  "inputs": [
+    "adjoining.north_shared_boundary_count",
+    "overshadow.proportional_to_shared_boundary",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "overshadow.proportional_to_shared_boundary",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.9",
+  "defined_terms": [
+    "adjoining property",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.2-C2.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.9.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 45,
+    "figure": "Figure 3.9f"
+  },
+  "register_ref": "ch3-086",
+  "verify": false,
+  "notes": "Same as Chapter 2 C3.9.4. Applicant states that the shadow is within the Table 3.9a limit scaled by the share of the neighbour's northern boundary the site abuts (Figure 3.9f). Not computed by the engine. Coding excludes R100-SL: Chapter 3 Table 2.10a (p26) removes all 3.9 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded).",
+  "verified": {
+    "method": "page-image",
+    "page": 45,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

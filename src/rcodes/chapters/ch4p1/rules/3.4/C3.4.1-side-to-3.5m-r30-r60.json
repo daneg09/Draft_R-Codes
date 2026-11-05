@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Side setback, walls up to 3.5 m high (R30-R60)",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. Table 3.4a Lot boundary setbacks, side setback: Wall height up to 3.5m 1m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.has_walls_to_3_5m",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.side_setback_walls_to_3_5m_m",
+    "site.r_code",
+    "building.has_walls_to_3_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.side_setback_walls_to_3_5m_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-side-to-3.5m"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "wall height",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4a",
+      "relation": "same",
+      "note": "walls up to 3.5 m 1 m (C4P1-085)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.4.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 32,
+    "table": "Table 3.4a",
+    "figure": "Figure 3.4a-c"
+  },
+  "register_ref": "C4P1-085",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C3.4.1(ii) stops at R25, so R30-R60 has no pedestrian access way reduction. Table 4A (p7) agrees (1m)."
+  },
+  "notes": "from: ch3 C3.4.1#side-to-3.5m-r30-r40 and C3.4.1#side-to-3.5m-r50, merged into one R30-R60 record (same Table 3.4a value 1 m, no pedestrian access way reduction above R25; Chapter 4 Part 1 has no R80+ or R100-SL codes). Rounding gap between wall-height bands unresolved. Applies only where the building has walls up to 3.5 m high (condition on building.has_walls_to_3_5m); the band does not depend on the building's maximum wall height."
+}

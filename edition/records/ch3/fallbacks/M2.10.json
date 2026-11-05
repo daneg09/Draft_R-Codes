@@ -1,0 +1,32 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M2.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.10",
+  "element_title": "Housing on lots less than 100m2",
+  "title": "Housing on lots less than 100m2 merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "text": "M2.10.1 Housing on lots less than 100m2 are integrated with the streetscape and surrounding development and does not form the predominant housing type in a street. M2.10.2 Housing on lots less than 100m2 are designed to a high standard to contribute to the desired streetscape character and minimise adverse impacts on the amenity of adjoining properties.",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 25,
+    "extract_line": 820
+  },
+  "register_ref": "ch3-040",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

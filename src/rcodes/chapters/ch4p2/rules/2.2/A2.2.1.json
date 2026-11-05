@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.2",
+  "element_title": "Building height",
+  "title": "Building height in storeys within the Table 2.1 limit",
+  "text": "A 2.2.1 Development complies with the building height limit (storeys) set out in Table 2.1, except where modified by the local planning framework, in which case development complies with the building height limit set out in the applicable local planning instrument.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.height_storeys",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.1-height-storeys",
+    "fact": "building.height_storeys",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.2",
+  "defined_terms": [
+    "building height",
+    "storey",
+    "natural ground level"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.2.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "relaxed",
+      "note": "R80 4 unchanged; R100 4 to 6; R160 5 to 8; R-AC4/LR1 3 to 4; R-AC3/MR2 6 to 8 (R-AC2 7 to 8); R-AC1/HR1 9 to 12; MR1 6, HR2 16, HR3 20 new"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 15,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-068; C4P2-018..C4P2-027",
+  "verify": false,
+  "notes": "Storeys above natural ground level (2.2 intent). R-PA has no limit (refer to scheme/LDP): NOT_APPLICABLE. Double-height floors generally count as two storeys (DG 2.2.1). DG 2.2.2 lists circumstances in which exceeding the default height may meet O 2.2 (new design guidance, C4P2-069). The 2.2 intent now reads 'seek to minimise impacts of likely future development on adjoining properties where possible' in place of 'shall not adversely impact the amenity of adjoining properties' (C4P2-066, not in the Table of Changes). The 'except where modified by the local planning framework' limb is applied through the instruments layer (Chapter 1B 3.5, Table 3.5A); this rule encodes the Table 2.1 default.",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r30-r40-narrow",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary walls on up to two lot boundaries, R30-R40 narrow lots with rear right-of-way access",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: i. boundary walls are located behind the street setback; ii. overshadowing does not exceed the limits of C3.8.1; and iii. they are finished to an equivalent standard to the rest of the development, to the satisfaction of the decision-maker. Table 3.4c Lot boundary setbacks, R30 - R40 where frontage is 8.5m or less and access is taken from a rear right of way: number of boundaries Two.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R40"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.frontage_m",
+      "op": "<=",
+      "value": 8.5
+    },
+    {
+      "type": "boolean",
+      "fact": "site.access_from_rear_row",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.boundary_walls.count",
+    "site.frontage_m",
+    "site.access_from_rear_row"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "building.boundary_walls.count",
+    "op": "<=",
+    "value": 2
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4b",
+      "relation": "new",
+      "note": "no narrow-lot row in Part C (C4P1-094)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4c"
+  },
+  "register_ref": "C4P1-094",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page confirms 'Two' for the narrow rear-access row and 'All' for all other R30-R40 lots."
+  },
+  "notes": "from: ch3 C3.4.4#count-r30-r40-narrow. Table 3.4c (p34) values unchanged from Chapter 3; the clause text now cites C3.8.1 for overshadowing. Narrow lots (frontage 8.5 m or less, access from a rear right-of-way) are limited to two boundaries while other R30-R40 lots may build on all boundaries."
+}

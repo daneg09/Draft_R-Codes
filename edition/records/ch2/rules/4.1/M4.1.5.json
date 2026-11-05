@@ -1,0 +1,43 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M4.1.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Potential change: minimum site area reduced up to 10% where the existing dwelling is retained",
+  "text": "Potential change: New provision to allow minimum site area to be reduced up to 10 per cent where the existing dwelling is retained. Refer to Information Sheet 5: Lot size and density.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [
+    "site area"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 50
+  },
+  "register_ref": "ch2-093",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 50,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Pink potential-change text only; checked verbatim. Nothing operative."
+  },
+  "notes": "Flagged potential change only (pink); no operative text. Information Sheet 5. Not in the ToC. Nothing to test; see element 3.8 for retained dwellings."
+}

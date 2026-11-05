@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.11",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Noise sources at least 1 m from habitable room walls and 3 m from bedroom windows (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Potential noise sources such as garage doors, service areas, active communal open space, communal waste storage areas and non-residential components of a mixed use development are not located within; i. 1m to the external wall of habitable rooms; and ii. 3m of a window to a bedroom.",
+  "inputs": [
+    "dwellings.min.noise_source_to_habitable_wall_m",
+    "dwellings.min.noise_source_to_bedroom_window_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.noise_source_to_habitable_wall_m",
+        "op": ">=",
+        "value": 1.0
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.noise_source_to_bedroom_window_m",
+        "op": ">=",
+        "value": 3.0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "habitable room",
+    "bedroom",
+    "communal open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.12",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 17,
+    "extract_line": 517
+  },
+  "register_ref": "C4P1-032",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 17,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "new: no Chapter 3 equivalent. Heading 'Managing impacts on amenity (applies to R30-R60 only)'. Noise sources include garage doors, service areas, active communal open space, communal waste storage and non-residential components; the list is not closed ('such as')."
+}

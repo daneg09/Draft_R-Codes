@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.1#r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Minor projections into the street setback",
+  "text": "C3.3.1 Buildings are set back from the street boundary in accordance with Table 3.3a. Minor projections, such as chimneys, eaves, window hoods and other architectural features, are acceptable provided they do not project more than 0.75m into the street setback. Note: Minor projections will need to comply with the NCC requirements.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.primary_street_projection_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.primary_street_projection_m",
+    "op": "<=",
+    "value": 0.75
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "minor projection",
+    "street setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-C2.1",
+      "relation": "unclear",
+      "note": "minor projection allowance not itemised in the register's current provision"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 29
+  },
+  "register_ref": "ch2-042",
+  "verify": false,
+  "notes": "Un-numbered paragraph under C3.3.1. Applies to any street setback; the fact is the deepest projection into the primary street setback. Minor projections must also comply with the NCC (note).",
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

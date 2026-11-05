@@ -1,0 +1,46 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M4.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "WAPC approval of lots up to 5% below Table 2B minimum and/or average site area",
+  "text": "The WAPC, in consultation with the local government, may approve the creation of a green title lot or survey-strata lot (excluding battleaxe lots) with a minimum and/or average site area up to 5 per cent less than that specified in Table 2B where it will: i. not create more than one lot with a reduced minimum lots size; ii. facilitate the protection of an environmental or heritage feature; iii. facilitate the retention of a significant element that contributes toward an existing streetscape worthy of retention; iv. facilitate the development of lots with separate and sufficient frontage to more than one public street; v. overcome a special or unusual limitation on the development of the land imposed by its size, shape or other feature; vi. allow land to be developed with housing of the same type and form as land in the vicinity and which would not otherwise be able to be developed; or vii. achieve specific objectives of the local planning framework.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [
+    "green title lot",
+    "survey-strata lot",
+    "battleaxe lot"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/P1.1.2",
+      "relation": "tightened",
+      "note": "adds (i) no more than one lot with a reduced minimum; excludes battleaxe lots"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 49
+  },
+  "register_ref": "ch2-090",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 49,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Text checked. The pink callout (local governments to approve up-to-5% variations through a development approval) is a potential change only."
+  },
+  "notes": "Printed in the M column; WAPC discretion, not an applicant test. Pink callout: potential change for local governments to approve up-to-5% variations through a development approval (Information Sheet 5); flagged only, not in the ToC. OP 2.2 to be repealed."
+}

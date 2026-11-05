@@ -1,0 +1,43 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M4.1.2-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Potential change: local government approval of site area variations up to 5% through a development approval",
+  "text": "Potential change: Local governments to have ability to approve variations to minimum and/or average site area up to 5 per cent through a development approval. Refer to Information Sheet 5: Lot size and density.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "Operational Policy 2.2 consolidation; currently WAPC (P1.1.2)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 49
+  },
+  "register_ref": "C4P1-137",
+  "verify": false,
+  "notes": "from: ch3 M4.1.2 (pink callout recorded there in notes only). Flagged potential change (pink box, p49); no clause text. Says 'minimum and/or average' although apartments have no minimum. Information Sheet 5. Nothing to test.",
+  "verified": {
+    "method": "page-image",
+    "page": 49,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Pink 'Potential change' callout linked to M4.1.2; says 'minimum and/or average' though apartments have no minimum."
+  }
+}

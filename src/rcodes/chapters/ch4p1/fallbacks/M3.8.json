@@ -1,0 +1,37 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M3.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "element": "3.8",
+  "element_title": "Solar access for adjoining sites",
+  "title": "Solar access for adjoining sites merit assessment criteria",
+  "text": "M3.8.1 Development is designed to protect solar access for neighbouring sites taking into account the potential to overshadow: i. major openings to primary living spaces, in particular those oriented between north west, north and east; ii. private open space and communal open space; and iii. roof mounted solar collectors.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.9.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 42
+  },
+  "register_ref": "C4P1-128",
+  "verify": false,
+  "notes": "from: ch3 M3.9 (renumbered M3.8.1, text unchanged). Table 3.8a footnote and figure labels still cite 'Table 3.9a' / 'Figure 3.8.d' (mis-numbered).",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

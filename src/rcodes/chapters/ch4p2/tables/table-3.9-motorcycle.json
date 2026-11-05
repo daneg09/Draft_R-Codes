@@ -1,0 +1,43 @@
+{
+  "id": "table-3.9-motorcycle",
+  "title": "Table 3.9 Parking ratios: motorcycle/scooter parking per dwelling (reference)",
+  "keys": [
+    "proposal.dwelling_count"
+  ],
+  "unit": "bays per dwelling",
+  "rows": [
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "max": 20
+        }
+      },
+      "value": null,
+      "note": "no provision"
+    },
+    {
+      "match": {
+        "proposal.dwelling_count": {
+          "min": 21
+        }
+      },
+      "value": 0.1,
+      "note": "developments exceeding 20 dwellings"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-103",
+  "verify": false,
+  "notes": "Reference for A3.9.2-r2 (formula). Footnote 2: for each five motorcycle/scooter bays provided per Table 3.9, car parking bays may be reduced by one (not encoded; no resident minimum). Vol 2: 1 motorcycle space per 10 car bays.",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 46,
+    "note": "p46 footnote 2 only on the motorcycle/scooter row."
+  }
+}

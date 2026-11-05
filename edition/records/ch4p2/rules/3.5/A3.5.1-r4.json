@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Privacy setback from the 5th storey and above: refer Table 2.7 building separation",
+  "text": "For development adjoining an existing dwelling, all sources of overlooking are orientated, offset or setback in accordance with Table 3.5 so that the cone of vision (refer to Figure 3.5a) does not capture major openings and/or active habitable spaces on an adjoining property (refer to Figure 3.5b). Table 3.5: 5th storey and above - Refer Table 2.7 (Building separation).",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "privacy.sources_above_0_5m",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.vacant_or_unknown",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "adjoining.vacant_or_unknown",
+    "privacy.sources_above_0_5m"
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.5",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T3.5",
+      "relation": "same",
+      "note": "5th storey and above refers to Table 2.7"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36,
+    "table": "Table 3.5"
+  },
+  "register_ref": "C4P2-091",
+  "verify": false,
+  "notes": "Table 3.5 gives no distance above the fourth storey; it refers to Table 2.7, which the element 2.7 rules test (table-2.7-adjoining: 9 m to R60-and-below, 6 m to R80+ from the fifth storey). Recorded here so the element is complete. Register C4P2-091: circular where Table 2.7 has no adjoining-boundary row (R80, LR1, R100, R160, MR1).",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p36 Table 3.5 '5th storey and above: Refer Table 2.7 (Building separation)' is one cell merged across all three source rows."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG2.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.5",
+  "element_title": "Plot ratio",
+  "title": "Plot ratio Design Guidance",
+  "text": "DG 2.5.1 Meeting the Acceptable Outcome for plot ratio alone does not ensure good amenity and should always considered alongside height, setbacks, building separation, and solar access Design Elements. Plot ratio is intended to operate as one of several complementary controls that collectively influence development intensity, building bulk and built form outcomes. DG 2.5.2 Where plot ratio is high, achieving the Element Objective may involve slender, well-separated built form rather than maximising site coverage at every level. Redistribution of plot ratio floor space above the relevant building height acceptable outcome may be appropriate under certain circumstances to protect the amenity of adjoining properties or even properties further afield (i.e. overshadowing). This is because plot ratio assists in managing how floor area is distributed within the available building envelope, reducing the need to rely solely on height, setback and building separation controls to influence building bulk. DG 2.5.3 Distinguishing commercial/retail podium floor space from residential floor space in plot ratio calculations helps ensure mixed-use outcomes do not compromise residential amenity above.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/PG2.5.1",
+      "relation": "restructured",
+      "note": "PG 2.5.1 to 2.5.3 reworked; PG 2.5.4 (residential plot ratio lower than non-residential) not carried"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 20
+  },
+  "register_ref": "C4P2-072",
+  "verify": false,
+  "notes": "'should always considered' as printed. DG 2.5.2 contemplates floor space above the height Acceptable Outcome.",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

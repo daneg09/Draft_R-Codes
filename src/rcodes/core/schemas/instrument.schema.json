@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riseurban.au/rcodes/schemas/instrument.schema.json",
+  "title": "Local planning instrument",
+  "description": "An LDP, LPP, scheme or precinct structure plan that applies to a site, with the R-Codes clauses it varies. Whether a variation is recognised is decided by the engine against the permission tables of the code version being run, not by this record.",
+  "type": "object",
+  "required": ["type", "ref", "clauses"],
+  "properties": {
+    "type": {"enum": ["ldp", "lpp", "scheme", "precinct_structure_plan", "structure_plan", "other"]},
+    "ref": {"type": "string"},
+    "title": {"type": "string"},
+    "lga": {"type": "string"},
+    "adopted": {"type": "string", "description": "ISO date"},
+    "wapc_approved": {"type": "boolean", "description": "the instrument (or this variation) has WAPC approval"},
+    "extent": {"type": "object"},
+    "clauses": {"type": "array", "items": {
+      "type": "object",
+      "required": ["ref"],
+      "properties": {
+        "ref": {"type": "string", "description": "the instrument's own clause reference"},
+        "text": {"type": "string"},
+        "cites": {"type": "array", "items": {"type": "string"}, "description": "R-Codes clause IDs or bare clause refs the instrument cites (any version)"},
+        "targets": {"type": "array", "items": {
+          "type": "object",
+          "required": ["chapter"],
+          "properties": {
+            "chapter": {"type": "string"},
+            "element": {"type": "string"},
+            "clause": {"type": "string", "description": "e.g. C3.3.3; omit to target the whole element"},
+            "effect": {"type": "object", "properties": {
+              "set": {"type": "object"},
+              "replace_evaluator": {"type": "object"},
+              "exclude": {"type": "boolean"}}},
+            "wapc_approved": {"type": "boolean"},
+            "reading_confirmed": {"type": "boolean", "description": "a planner has confirmed what this clause varies"}
+          }}}
+      }}}
+  }
+}

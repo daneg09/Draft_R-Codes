@@ -1,0 +1,59 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.5.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.5",
+  "element_title": "Site works and retaining walls",
+  "title": "Excavation behind the street setback line may extend to the lot boundary",
+  "text": "Excavation within the site is permitted behind the street setback line and may be constructed up to the lot boundary. Note: NCC and engineering requirements may apply.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "site_works.excavation_behind_setback"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site_works.excavation_behind_setback",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.5",
+  "defined_terms": [
+    "street setback line",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.5.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.7-C7.3",
+      "relation": "relaxed",
+      "note": "Part B: fill/excavation within 1 m of a boundary limited to 0.5 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 36
+  },
+  "register_ref": "C4P1-100",
+  "verify": false,
+  "notes": "from: ch3 C3.5.3 (unchanged). Permissive clause encoded as a yes/no: all excavation on the site lies behind the street setback line (excavation forward of the line is C3.5.1); true where no excavation is proposed. Relevant to semi-basement car parks. NCC and engineering requirements may apply.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Permissive clause; page clear. Yes/no encoding is an interpretation (see notes)."
+  }
+}

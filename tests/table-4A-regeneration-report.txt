@@ -1,0 +1,28 @@
+HARD (unflagged) mismatches:
+
+Flagged / informational:
+side_setback_over_7_1m_m R10: table says 3.5; rules ['C3.4.1#side-over-7.1m'] give ['2.0']
+side_setback_over_7_1m_m R12.5: table says 3.5; rules ['C3.4.1#side-over-7.1m'] give ['2.0']
+side_setback_over_7_1m_m R15: table says 3.5; rules ['C3.4.1#side-over-7.1m'] give ['2.0']
+side_setback_over_7_1m_m R17.5: table says 3.5; rules ['C3.4.1#side-over-7.1m'] give ['2.0']
+side_setback_over_7_1m_m R20: table says 3.5; rules ['C3.4.1#side-over-7.1m'] give ['2.0']
+side_setback_over_7_1m_m R25: table says 3.5; rules ['C3.4.1#side-over-7.1m'] give ['2.0']
+side_setback_over_7_1m_m R30: table says 3.5; rules ['C3.4.1#side-over-7.1m-r30-r60'] give ['2.0']
+side_setback_over_7_1m_m R35: table says 3.5; rules ['C3.4.1#side-over-7.1m-r30-r60'] give ['2.0']
+side_setback_over_7_1m_m R40: table says 3.5; rules ['C3.4.1#side-over-7.1m-r30-r60'] give ['2.0']
+side_setback_over_7_1m_m R50: table says 3.5; rules ['C3.4.1#side-over-7.1m-r30-r60'] give ['2.0']
+side_setback_over_7_1m_m R60: table says 3.5; rules ['C3.4.1#side-over-7.1m-r30-r60'] give ['2.0']
+rear_setback_m R10: table says 6; rules ['C3.4.1#rear'] give ['3']
+rear_setback_m R12.5: table says 6; rules ['C3.4.1#rear'] give ['3']
+rear_setback_m R15: table says 6; rules ['C3.4.1#rear'] give ['3']
+rear_setback_m R17.5: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R20: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R25: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R30: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R35: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R40: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R50: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+rear_setback_m R60: table says None; rules ['C3.4.1#rear-r17.5'] agree (row flagged verify)
+
+Omitted metrics:
+side_setback_m: no rows in table-4A; not checked

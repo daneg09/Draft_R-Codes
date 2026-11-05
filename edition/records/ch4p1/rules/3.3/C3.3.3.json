@@ -1,0 +1,140 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Garage setback from the primary street",
+  "text": "C3.3.3 Garages are set back from the primary street boundary in accordance with Table 3.3c. Table 3.3c Setback of garages from the primary street: R10 - R35 5.0m (Refer Figure 3.3c); R40 and above In accordance with Table 3.3a. In areas coded R2 - R35, setback of garages to the primary street may be reduced: i. to 4.5m where an existing or planned footpath, shared path or road alignment is located more than 1m from the street boundary; or ii. to 3m where the garage allows vehicles to be parked parallel to the street. The wall parallel to the street must include more than one opening.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R35"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.garage.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.garage.setback_primary_m",
+    "site.verge.path_or_road_offset_m",
+    "parking.garage.parallel_parking",
+    "parking.garage.parallel_wall_openings",
+    "parking.garage.present"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.garage.setback_primary_m",
+    "op": ">=",
+    "value": 5.0
+  },
+  "exceptions": [
+    {
+      "label": "footpath or road more than 1 m from boundary",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.verge.path_or_road_offset_m",
+        "op": ">",
+        "value": 1.0
+      },
+      "effect": {
+        "set": {
+          "value": 4.5
+        }
+      },
+      "inputs": [
+        "site.verge.path_or_road_offset_m"
+      ]
+    },
+    {
+      "label": "garage allows parallel parking",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "parking.garage.parallel_parking",
+            "expected": true
+          },
+          {
+            "type": "count",
+            "fact": "parking.garage.parallel_wall_openings",
+            "op": ">",
+            "value": 1
+          }
+        ]
+      },
+      "effect": {
+        "set": {
+          "value": 3.0
+        }
+      },
+      "inputs": [
+        "parking.garage.parallel_parking",
+        "parking.garage.parallel_wall_openings"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "defined_terms": [
+    "garage",
+    "primary street",
+    "street boundary",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.1-C1.1",
+      "relation": "tightened",
+      "note": "4.5 -> 5.0 m at R10-R25; 0.5 m behind the dwelling reduction deleted (C4P1-081)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.4",
+      "relation": "relaxed",
+      "note": "R30-R35 5.0 m with 4.5 m footpath reduction unchanged; 3 m parallel-parking reduction now also at R30-R35"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3b",
+      "relation": "same",
+      "note": "R30-R35 5.0 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3c",
+    "figure": "Figure 3.3c (captioned 'Figure 3.3s')"
+  },
+  "register_ref": "C4P1-081",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear. The reduction paragraph says 'R2 - R35'; the figure cited as 3.3c is captioned 'Figure 3.3s'."
+  },
+  "notes": "from: ch3 C3.3.3. Table 3.3c (p31): R10-R35 5.0 m (reduced to 4.5 m where a footpath, shared path or road alignment is more than 1 m from the boundary, or 3 m for parallel parking with more than one opening; the text says 'R2 - R35'). R40 and above follow Table 3.3a (C3.3.3#r40-plus). 'Garage' may catch ground-level undercroft parking beneath an apartment building; the draft does not say (C4P1-081). Stale labels on p31: 'Figure 3.3s', 'Table B column 7', Figure 3.3d citing Part B. Applies only where a garage is proposed (condition parking.garage.present, as for C3.3.3#r40-plus).",
+  "variable_by": [
+    {
+      "instrument": "ldp",
+      "permission": "without-wapc",
+      "source": "T2.5B row 3.3"
+    },
+    {
+      "instrument": "lpp",
+      "permission": "wapc",
+      "source": "T2.5A row 3.3 other"
+    }
+  ]
+}

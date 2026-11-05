@@ -1,0 +1,84 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Visitor car parking, 5 or more dwellings: 0.1 bays per dwelling (Location A) or 0.15 (Location B), rounded up (Table 3.9)",
+  "text": "Table 3.9 Visitor car parking: 0-4 dwellings - No visitor parking required; 5+ dwellings - 0.1 bays per dwelling (Location A), 0.15 bays per dwelling (Location B). (1) Calculations of parking ratios shall be rounded up to the next whole number.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">=",
+      "value": 5
+    }
+  ],
+  "inputs": [
+    "parking.visitor_spaces",
+    "proposal.dwelling_count",
+    "site.location"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "parking.visitor_spaces",
+    "op": ">=",
+    "value": {
+      "table": "table-3.9-visitor-bays"
+    },
+    "label": "0.1 (A) or 0.15 (B) per dwelling, rounded up"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [
+    "visitor car parking space",
+    "Location A",
+    "Location B"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.9.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.9",
+      "relation": "mixed",
+      "note": "1 per 4 dwellings to 12, then 1 per 8 (A and B alike) -> 0-4 nil; 0.1 (A) / 0.15 (B) per dwelling"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-101",
+  "verify": false,
+  "notes": "Register C4P2-100 (0-4 dwellings: none, relaxed), C4P2-101 (Location A relaxed: 12 -> 2, 40 -> 4, 100 -> 10), C4P2-102 (Location B mixed: 12 -> 2, 40 -> 6, 100 -> 15, 200 -> 30; lower than Vol 2 up to about 60 dwellings, higher above). Table 3.9 footnote 1: rounded up to the next whole number (round(x + 0.4999) is ceiling for these ratios). diverges: ch4p1 Table 2.3a rounds to the nearest whole number for the same rates (register C4P2-104). Footnote 2 (one car bay less per five motorcycle bays) is not applied to visitor bays: the table does not say which bays it reduces. The required bay count comes from table-3.9-visitor-bays, keyed on site.location (rows A and B only): an unknown location gives CANNOT_TELL, where the earlier 'A else B' formula treated any value other than 'A' as Location B.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

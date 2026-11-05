@@ -1,0 +1,50 @@
+{
+  "id": "table-3.9a-diagonal",
+  "title": "Table 3.9a Maximum overshadowing: diagonally adjacent lots (percentage of dwelling site area)",
+  "keys": [
+    "adjoining.diagonal.r_code"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "adjoining.diagonal.r_code": "R25-"
+      },
+      "value": 12.5,
+      "note": "R25 and lower"
+    },
+    {
+      "match": {
+        "adjoining.diagonal.r_code": "R30-R40"
+      },
+      "value": 17.5
+    },
+    {
+      "match": {
+        "adjoining.diagonal.r_code": "R50-R60"
+      },
+      "value": 25
+    },
+    {
+      "match": {
+        "adjoining.diagonal.r_code": "R80+"
+      },
+      "value": null,
+      "note": "R80 or higher: no maximum overshadowing"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 44,
+    "table": "Table 3.9a"
+  },
+  "register_ref": "ch3-083",
+  "verify": false,
+  "notes": "Second column of Table 3.9a, split out because a table row carries one value. Footnote 1 (per grouped dwelling site area, excluding common property) applies to this column too. Values checked against Chapter 3: same as Chapter 2.",
+  "verified": {
+    "method": "page-image",
+    "page": 44,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

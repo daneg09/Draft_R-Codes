@@ -1,0 +1,26 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch1/2.5.2",
+  "title": "Clause 2.5.2 Schemes and precinct structure plans (untabled modification rights)",
+  "version": "draft-2026-10-24",
+  "instruments": [
+    "scheme",
+    "precinct_structure_plan"
+  ],
+  "chapters": [
+    "ch2",
+    "ch3",
+    "ch4p1"
+  ],
+  "default": "untabled",
+  "source": {
+    "file": "Residential Design Codes Chapter 1 - Operation of the Code.pdf",
+    "page": 11,
+    "clause": "2.5.2",
+    "pdf_page": 18
+  },
+  "notes": "Clause 2.5.2: a local planning scheme may amend, replace, augment and/or exclude any R-Codes provision; a precinct structure plan may amend, replace or augment any deemed exempt criteria. Neither is subject to Tables 2.5A/2.5B (register CH1-40, CH1-41). Spec decision 13.1 records that only LDPs and LPPs carry variation rights; this file encodes what the draft text says so the engine reports a scheme or precinct structure plan variation as 'untabled' rather than silently ignoring it. Set \"enabled\": false to suppress. Clause 2.5.2 sits in Chapter 1A (operation of Chapters 2, 3 and 4 Part 1). Chapter 1B (3.5.1, 3.5.2) gives no equivalent untabled right for Chapter 4 Part 2: a precinct structure plan must be consistent with the R-Codes and may only augment Chapter 4 Part 2 with Objectives with WAPC approval; schemes are not mentioned. ch4p2 was therefore removed from 'chapters' in pass 1. Verified: method page-image, page 11 (PDF p18); Chapter 1B 3.5 p15 (PDF p22), date 2026-11-02, by opus-4.5-pass-1 (stamp held in notes because permission-table.schema.json does not allow a top-level 'verified' key).",
+  "enabled": true,
+  "rows": [
+    {"element": "*", "clauses": "all", "permission": "untabled", "register_ref": "CH1-40, CH1-41", "verify": true, "note": "Scheme: 'may include clauses that amend, replace, augment and/or exclude any provision of the R-Codes as provided for in the LPS Regulations'. Precinct structure plan: 'may amend, replace and/or augment any deemed exempt criteria of the R-Codes' (not merit criteria). Kept for review: one row with clauses 'all' covers both instruments, so a PSP variation of a merit criterion is over-reported as untabled."}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "table-3.3a-primary",
+  "title": "Table 3.3a Minimum setback of buildings from the street: primary street",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10-R12.5"
+      },
+      "value": 7.5
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R25"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R35"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "site.r_code": "R50-R60"
+      },
+      "value": 2
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P1-076",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 4A (p7) agrees."
+  },
+  "notes": "Copied from Chapter 3 and checked against p29 and Table 4A p7; trimmed to R10-R60 (R2-R5 rows and R80+ / named codes dropped)."
+}

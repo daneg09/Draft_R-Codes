@@ -1,0 +1,85 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.12(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Pedestrian access leg minimum width 1.5 m",
+  "text": "Where a pedestrian access leg is required to provide access from a dwelling site to a public street, it is to: i. be a minimum width of 1.5m; and The pedestrian access leg may be reduced to 1m where required to retain an existing dwelling.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_pedestrian_access_leg",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.retained_dwelling",
+    "site.has_pedestrian_access_leg",
+    "site.pedestrian_access_leg_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "site.pedestrian_access_leg_width_m",
+    "op": ">=",
+    "value": 1.5
+  },
+  "exceptions": [
+    {
+      "label": "reduced to 1 m where required to retain an existing dwelling",
+      "condition": {
+        "type": "boolean",
+        "fact": "proposal.retained_dwelling",
+        "expected": true
+      },
+      "effect": {
+        "set": {
+          "value": 1.0
+        }
+      },
+      "inputs": [
+        "proposal.retained_dwelling"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "pedestrian access leg"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.10",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.6-C6.1",
+      "relation": "relaxed",
+      "note": "row-level crosswalk ch3-079"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 42
+  },
+  "register_ref": "ch3-079",
+  "verify": false,
+  "notes": "Content twin of Chapter 2 C3.7.8(i), renumbered C3.7.12 in Chapter 3; evaluator, inputs, conditions and exception unchanged. A pedestrian access leg from a dwelling site to a public street. 'Where required to retain' is tested only as the dwelling being retained.",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

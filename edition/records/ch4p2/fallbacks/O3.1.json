@@ -1,0 +1,50 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.1",
+  "element_title": "Site analysis and design response",
+  "title": "Site analysis and design response Element Objectives",
+  "text": "No Element Objectives are printed for element 3.1. It is Intent and Design Guidance only (DG 3.1.1 to DG 3.1.5; Appendix A4 Site analysis and design response guidance). Intent: The relationship of new development to the surrounding streetscape, natural environment and neighbourhood character is fundamental to good design. A thorough and systematic site analysis is a critical part of the design process, undertaken at the outset of a project to inform a positive design response to the opportunities and constraints of the site. Many local planning instruments identify the existing or intended future character of an area and design should respond appropriately to the identified character and qualities. In areas undergoing change the design response must respond to the planned future character of the locality, while mitigating impacts on existing residents and development. Where local character is not defined, the site analysis process should inform a reasoned assessment of future character and the appropriate design response. Site analysis should evaluate the physical and cultural elements of the locality, as well as the conditions affecting the site itself, so that opportunities and constraints for development can be addressed in the design response. The analysis must also reference any local planning policies, precinct structure plans, local development plans and other applicable local planning instruments, and demonstrate how the proposed development meets the requirements of these planning instruments.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/3.1",
+      "relation": "same",
+      "note": "no Element Objectives in Vol 2 either"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 26
+  },
+  "register_ref": "C4P2-078",
+  "verify": false,
+  "notes": "Placeholder so element 3.1 has an O record (the fallback check requires one per element); there is no objective to assess against. The text is the printed Intent. Figure 3.1a site design response sequence (p27).",
+  "verified": {
+    "method": "page-image",
+    "page": 26,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p26 confirmed: no Element Objectives are printed for 3.1; text is the Intent."
+  }
+}

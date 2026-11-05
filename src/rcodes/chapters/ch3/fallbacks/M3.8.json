@@ -1,0 +1,30 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M3.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "element": "3.8",
+  "element_title": "Retaining existing dwellings",
+  "title": "Retaining existing dwellings merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M3.8.1 Retained dwellings, dwelling extension or redevelopment are to: i. enhance the streetscape appearance of the existing dwelling(s) retained; or ii. complement established or future built form in the locality as specified within the relevant local planning framework. M3.8.2 Retained dwellings provide adequate outdoor and indoor amenity for residents.",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 43
+  },
+  "register_ref": "ch3-082",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 43,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

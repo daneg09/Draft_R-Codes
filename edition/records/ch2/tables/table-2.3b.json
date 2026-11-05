@@ -1,0 +1,54 @@
+{
+  "id": "table-2.3b",
+  "title": "Table 2.3b Car parking provisions for development outside of the Perth and Peel regions (minimum spaces per dwelling, R40 and below)",
+  "keys": [
+    "proposal.bedrooms"
+  ],
+  "unit": "spaces",
+  "rows": [
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 1,
+      "note": "studio and 1 bedroom; second column (R50+ 'maximum garage and carport') prints 1"
+    },
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 2,
+      "note": "2 bedroom; second column prints 1"
+    },
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 2,
+      "note": "3+ bedroom; second column prints 1"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 19,
+    "extract_line": 587,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch2-024",
+  "verify": true,
+  "notes": "Value = 'Minimum parking space(s) for R40 and below (per dwelling)'. Ancillary dwelling row: minimum 1 (rule C2.3.3-r1); second column 0 (rule C2.3.3-r3). HEADER PROBLEM: the second column is headed 'Maximum garage and carport parking for R50 and above (per dwelling)' but prints 0/1/1/1, the Part C Location B MINIMUM values, so it reads like a minimum column with a 'maximum' header; no R50+ minimum is stated. Encoded literally in rules C2.3.3-r2 (<= 1) and C2.3.3-r3 (<= 0) with verify true. No Location A/B outside Perth and Peel. C2.9.1(ii) small dwelling parking cites Table 2.3a only, so regional small dwellings have no stated parking requirement.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Minimum column (1/1/2/2) matches p19. Page 19 prints the second column of Table 2.3b headed 'Maximum garage and carport parking for R50 and above (per dwelling)' with values 0 / 1 / 1 / 1 (ancillary / studio-1 bed / 2 bed / 3+ bed). The headings are not transposed between rows; the column values read like minimums under a 'maximum' heading. Encoded as printed."
+  }
+}

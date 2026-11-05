@@ -1,0 +1,81 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.7.8(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Pedestrian access leg minimum width 1.5 m",
+  "text": "Where a pedestrian access leg is required to provide access from a dwelling site to a public street, it is to: i. be a minimum width of 1.5m; and ii. provide a continuous path of travel with a minimum width of 1m, clear of any utilities or minor projections (excluding eaves). The pedestrian access leg may be reduced to 1m where required to retain an existing dwelling.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_pedestrian_access_leg",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.retained_dwelling",
+    "site.has_pedestrian_access_leg",
+    "site.pedestrian_access_leg_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "site.pedestrian_access_leg_width_m",
+    "op": ">=",
+    "value": 1.5
+  },
+  "exceptions": [
+    {
+      "label": "reduced to 1 m where required to retain an existing dwelling",
+      "condition": {
+        "type": "boolean",
+        "fact": "proposal.retained_dwelling",
+        "expected": true
+      },
+      "effect": {
+        "set": {
+          "value": 1.0
+        }
+      },
+      "inputs": [
+        "proposal.retained_dwelling"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+  "defined_terms": [
+    "pedestrian access leg"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.10",
+      "relation": "same",
+      "note": "Part C C3.7.10-C3.7.12; new deemed exempt for R40 and below (Part B relied on subdivision policy)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 40
+  },
+  "register_ref": "ch2-080",
+  "verify": false,
+  "notes": "Condition uses the proposed fact site.has_pedestrian_access_leg (a pedestrian-only leg is distinct from a battleaxe leg). 'Where required to retain' is tested only as the dwelling being retained.",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

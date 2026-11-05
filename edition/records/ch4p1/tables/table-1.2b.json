@@ -1,0 +1,150 @@
+{
+  "id": "table-1.2b",
+  "title": "Table 1.2b Tree size and deep soil area: reference",
+  "keys": [
+    "tree_size",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "canopy_at_maturity_min_m"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "canopy_at_maturity_max_m"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "height_at_maturity_min_m"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "height_at_maturity_max_m"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "deep_soil_area_m2"
+      },
+      "value": 9
+    },
+    {
+      "match": {
+        "tree_size": "small",
+        "metric": "deep_soil_min_dimension_m"
+      },
+      "value": 1.5
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "canopy_at_maturity_min_m"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "canopy_at_maturity_max_m"
+      },
+      "value": 9
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "height_at_maturity_min_m"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "height_at_maturity_max_m"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "deep_soil_area_m2"
+      },
+      "value": 36
+    },
+    {
+      "match": {
+        "tree_size": "medium",
+        "metric": "deep_soil_min_dimension_m"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "canopy_at_maturity_min_m"
+      },
+      "value": 9
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "canopy_at_maturity_max_m"
+      },
+      "value": null
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "height_at_maturity_min_m"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "height_at_maturity_max_m"
+      },
+      "value": null
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "deep_soil_area_m2"
+      },
+      "value": 64
+    },
+    {
+      "match": {
+        "tree_size": "large",
+        "metric": "deep_soil_min_dimension_m"
+      },
+      "value": 6
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 10,
+    "table": "Table 1.2b"
+  },
+  "register_ref": "C4P1-011",
+  "verify": false,
+  "notes": "Reference transcription (keys are not facts; C1.2.4-r3 to -r5 carry the deep soil values as literals). Large tree: canopy over 9 m, height over 12 m (no maximum, null). Figure 1.2c labels heights 3-8 m, 8-12 m, over 12 m and canopies 2-6 m, 6-9 m, over 9 m.",
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

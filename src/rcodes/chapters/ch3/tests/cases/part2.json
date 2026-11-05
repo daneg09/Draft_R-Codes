@@ -1,0 +1,2316 @@
+[
+  {
+    "title": "R60, upstairs living, 3 bed, balcony 12m2 x 2.4 m, storage 4m2: meets 2.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)",
+      "rcodes:draft-2026-10-24/ch3/C2.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "primary_living_space_floor": "upper",
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_direct_access_to_upper_pos": true,
+        "upper_pos": {
+          "area_m2": 12,
+          "min_dim_m": 2.4
+        },
+        "storage": {
+          "area_m2": 4,
+          "min_dim_m": 1.2,
+          "height_m": 2.1,
+          "behind_street_setback": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.1.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60, upstairs living, 3 bed, balcony 10m2 fails 12m2; storage 3m2 fails 4m2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)",
+      "rcodes:draft-2026-10-24/ch3/C2.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "primary_living_space_floor": "upper",
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_direct_access_to_upper_pos": true,
+        "upper_pos": {
+          "area_m2": 10,
+          "min_dim_m": 2.4
+        },
+        "storage": {
+          "area_m2": 3,
+          "min_dim_m": 1.2,
+          "height_m": 2.1,
+          "behind_street_setback": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.1.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60, upstairs living, 1 bed, balcony 8m2 x 2 m meets (dimension 2 m band)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 1,
+        "primary_living_space_floor": "upper",
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_direct_access_to_upper_pos": true,
+        "upper_pos": {
+          "area_m2": 8,
+          "min_dim_m": 2.0
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60, upstairs living, 2 bed, balcony 10m2 x 2.0 m fails 2.4 m dimension",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 2,
+        "primary_living_space_floor": "upper",
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_direct_access_to_upper_pos": true,
+        "upper_pos": {
+          "area_m2": 10,
+          "min_dim_m": 2.0
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60, upstairs living, balcony size unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "primary_living_space_floor": "upper",
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_direct_access_to_upper_pos": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "building.upper_pos.area_m2"
+      ]
+    }
+  },
+  {
+    "title": "R60, ground floor living with direct access to the PGA: meets C2.1.1(i)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.1(i)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "primary_living_space_floor": "ground",
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_direct_access_to_pga": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.1(i)": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60, ground floor living without direct access to the PGA: fails C2.1.1(i)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.1(i)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "primary_living_space_floor": "ground",
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_direct_access_to_pga": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.1(i)": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60, storage in front of the street setback fails C2.1.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "storage": {
+          "area_m2": 4,
+          "min_dim_m": 1.0,
+          "height_m": 2.0,
+          "behind_street_setback": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60, courtyard sole daylight source, open to sky, 4m2: meets C2.2.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "courtyard_daylight_only": true,
+        "courtyard_open_to_sky": true,
+        "courtyard_area_m2": 4.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60, courtyard sole daylight source, 3.5m2: fails C2.2.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "courtyard_daylight_only": true,
+        "courtyard_open_to_sky": true,
+        "courtyard_area_m2": 3.5
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 climate zone 5, living opening faces north with 3 x 3 m uncovered area: meets C2.2.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_major_opening_orientation": "N",
+        "primary_living_uncovered_min_dim_m": 3.0,
+        "primary_living_uncovered_area_m2": 9.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60 climate zone 5, living opening faces south, no transitional structure plan: fails C2.2.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_major_opening_orientation": "other",
+        "primary_living_uncovered_min_dim_m": 3.0,
+        "primary_living_uncovered_area_m2": 9.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 climate zone 5, opening faces north-east but uncovered area only 2.5 m wide: fails C2.2.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "primary_living_major_opening_orientation": "NE",
+        "primary_living_uncovered_min_dim_m": 2.5,
+        "primary_living_uncovered_area_m2": 9.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 Perth Location B, 3 bed, 1 space, 2 garage spaces, AS2890 compliant: meets C2.3.1, -r2, C2.3.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.1",
+      "rcodes:draft-2026-10-24/ch3/C2.3.1-r2",
+      "rcodes:draft-2026-10-24/ch3/C2.3.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "garage_carport_spaces": 2,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.3.1-r2": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.3.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 Perth Location B, 1 bed, no spaces: fails C2.3.1 (minimum 1); AS2890 not met fails C2.3.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.1",
+      "rcodes:draft-2026-10-24/ch3/C2.3.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 1,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 0,
+        "garage_carport_spaces": 0,
+        "as2890_compliant": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.3.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 Perth Location A, 2 bed, no spaces: meets C2.3.1 (minimum 0)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "perth-peel",
+        "location": "A",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 2,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 0,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60 Perth, 3 bed, 3 garage spaces: fails maximum 2 (C2.3.1-r2)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.1-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 3,
+        "garage_carport_spaces": 3,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.1-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 Perth, 1 bed, 2 garage spaces: fails maximum 1 (C2.3.1-r2)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.1-r2",
+      "rcodes:draft-2026-10-24/ch3/C2.3.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 1,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "garage_carport_spaces": 2,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.1-r2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.3.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60 Perth with ancillary dwelling, 0 ancillary spaces, 1 ancillary garage space: meets -r1 and -r3",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.1-r1",
+      "rcodes:draft-2026-10-24/ch3/C2.3.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "garage_carport_spaces": 2,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 1,
+        "as2890_compliant": true
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 80,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.3.1-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60 Perth with ancillary dwelling, 2 ancillary garage spaces: fails -r3; ancillary spaces unknown: cannot tell -r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.1-r3",
+      "rcodes:draft-2026-10-24/ch3/C2.3.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "garage_carport_spaces": 2,
+        "ancillary_garage_carport_spaces": 2,
+        "as2890_compliant": true
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 80,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.1-r3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.3.1-r1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "parking.ancillary_spaces"
+      ]
+    }
+  },
+  {
+    "title": "R20 regional, 3 bed, 2 spaces, AS2890 compliant: meets C2.3.5 and C2.3.6",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5",
+      "rcodes:draft-2026-10-24/ch3/C2.3.6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.3.6": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 regional, 3 bed, 1 space: fails C2.3.5 (minimum 2); AS2890 not met fails C2.3.6",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5",
+      "rcodes:draft-2026-10-24/ch3/C2.3.6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 1,
+        "as2890_compliant": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.3.6": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 regional, 1 bed, 1 space: meets C2.3.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 1,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 1,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 regional with ancillary dwelling, 1 ancillary space: meets C2.3.5-r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 1,
+        "as2890_compliant": true
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 80,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5-r1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 regional with ancillary dwelling, 0 ancillary spaces: fails C2.3.5-r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 0,
+        "as2890_compliant": true
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 80,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 regional, 1 garage space: meets Table 2.3b second column as printed (C2.3.5-r2)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 1,
+        "garage_carport_spaces": 1,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5-r2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60 regional, 2 garage spaces: fails Table 2.3b second column as printed (C2.3.5-r2)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "garage_carport_spaces": 2,
+        "as2890_compliant": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 regional with ancillary dwelling, no ancillary garage space: meets C2.3.5-r3 as printed",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 1,
+        "garage_carport_spaces": 1,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 0,
+        "as2890_compliant": true
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 80,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60 regional with ancillary dwelling, 1 ancillary garage space: fails C2.3.5-r3 as printed",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.5-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 300,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 1,
+        "garage_carport_spaces": 1,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 1,
+        "as2890_compliant": true
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 80,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.5-r3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Bins screened, service utilities screened, functional utilities behind setback and hidden: meets 2.4 and 2.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.4.2",
+      "rcodes:draft-2026-10-24/ch3/C2.5.1",
+      "rcodes:draft-2026-10-24/ch3/C2.5.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 375,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "services": {
+        "bins_screened": true,
+        "service_utilities_accessible_screened": true,
+        "functional_utilities_behind_setback": true,
+        "functional_utilities_not_visible_from_street": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.4.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.5.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.5.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Bins visible, service utilities not screened, hot water unit visible from the primary street: fails 2.4 and 2.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.4.2",
+      "rcodes:draft-2026-10-24/ch3/C2.5.1",
+      "rcodes:draft-2026-10-24/ch3/C2.5.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 375,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "services": {
+        "bins_screened": false,
+        "service_utilities_accessible_screened": false,
+        "functional_utilities_behind_setback": true,
+        "functional_utilities_not_visible_from_street": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.4.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.5.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.5.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 shed 60m2, wall 3.0 m, ridge 4.2 m, behind street setback: meets C2.6.1 and -r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.6.1",
+      "rcodes:draft-2026-10-24/ch3/C2.6.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "outbuilding": {
+        "present": true,
+        "total_area_m2": 60,
+        "wall_height_m": 3.0,
+        "ridge_height_m": 4.2,
+        "in_street_setback_area": false,
+        "matches_dwelling_materials": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.6.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.6.1-r1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 shed 65m2 in the secondary street setback area: fails C2.6.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.6.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "outbuilding": {
+        "present": true,
+        "total_area_m2": 65,
+        "wall_height_m": 2.4,
+        "ridge_height_m": 4.0,
+        "in_street_setback_area": true,
+        "matches_dwelling_materials": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.6.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 shed wall 3.4 m matching the dwelling: meets -r1 via C2.6.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.6.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "outbuilding": {
+        "present": true,
+        "total_area_m2": 40,
+        "wall_height_m": 3.4,
+        "ridge_height_m": 4.0,
+        "in_street_setback_area": false,
+        "matches_dwelling_materials": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.6.1-r1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch3/C2.6.1-r1": "C2.6.2: external wall and roof materials, finishes and colour match the dwelling"
+      }
+    }
+  },
+  {
+    "title": "R20 shed wall 3.4 m, materials match unknown: cannot tell -r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.6.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "outbuilding": {
+        "present": true,
+        "total_area_m2": 40,
+        "wall_height_m": 3.4,
+        "ridge_height_m": 4.0,
+        "in_street_setback_area": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.6.1-r1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "outbuilding.matches_dwelling_materials"
+      ]
+    }
+  },
+  {
+    "title": "R20 shed wall 3.4 m, materials do not match: fails -r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.6.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "outbuilding": {
+        "present": true,
+        "total_area_m2": 40,
+        "wall_height_m": 3.4,
+        "ridge_height_m": 4.0,
+        "in_street_setback_area": false,
+        "matches_dwelling_materials": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.6.1-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 shed wall 3.6 m even with matching materials: fails -r1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.6.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "outbuilding": {
+        "present": true,
+        "total_area_m2": 40,
+        "wall_height_m": 3.6,
+        "ridge_height_m": 4.2,
+        "in_street_setback_area": false,
+        "matches_dwelling_materials": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.6.1-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Gold-level dwelling 105m2 seeking the site area variation: meets C2.7.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 250,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "seeks_universal_design_site_area_variation": true,
+        "universal_design_level": "gold",
+        "internal_floor_area_m2": 105,
+        "dwelling_count": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.7.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Silver-level dwelling seeking the gold site area variation: fails C2.7.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 250,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "seeks_universal_design_site_area_variation": true,
+        "universal_design_level": "silver",
+        "internal_floor_area_m2": 105,
+        "dwelling_count": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.7.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Gold-level dwelling 120m2 seeking the site area variation: fails 110m2 (C2.7.2)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.7.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 250,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "seeks_universal_design_site_area_variation": true,
+        "universal_design_level": "gold",
+        "internal_floor_area_m2": 120,
+        "dwelling_count": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.7.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "One ancillary dwelling of 90m2 with an ordinary primary dwelling: meets C2.8.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.8.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 0
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 90,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.8.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Ancillary dwelling of 95m2: fails 90m2 (C2.8.1)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.8.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 0
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 95,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.8.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Ancillary dwelling of 80m2 on the same site as a small dwelling: fails 70m2 (C2.8.1)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.8.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 250,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "small_dwelling": true,
+        "internal_floor_area_m2": 70,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 0
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 80,
+        "on_same_site_as_small_dwelling": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.8.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Ancillary dwelling of 70m2 on the same site as a small dwelling of 70m2: meets C2.8.1 and C2.9.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.8.1",
+      "rcodes:draft-2026-10-24/ch3/C2.9.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 250,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "small_dwelling": true,
+        "internal_floor_area_m2": 70,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 0
+      },
+      "ancillary": {
+        "count": 1,
+        "internal_floor_area_m2": 70,
+        "on_same_site_as_small_dwelling": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.8.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.9.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Two ancillary dwellings: fails one per site (C2.8.1)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.8.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 0
+      },
+      "ancillary": {
+        "count": 2,
+        "internal_floor_area_m2": 60,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.8.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Ancillary dwelling, floor area unknown: cannot tell C2.8.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.8.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 600,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "ancillary_dwelling": true,
+        "dwelling_count": 2
+      },
+      "parking": {
+        "spaces": 2,
+        "ancillary_spaces": 0,
+        "ancillary_garage_carport_spaces": 0
+      },
+      "ancillary": {
+        "count": 1,
+        "on_same_site_as_small_dwelling": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.8.1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "ancillary.internal_floor_area_m2"
+      ]
+    }
+  },
+  {
+    "title": "Small dwelling of 75m2: fails 70m2 (C2.9.1)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.9.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 250,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "small_dwelling": true,
+        "internal_floor_area_m2": 75,
+        "dwelling_count": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.9.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R100-SL lot of 90m2 fronting the primary street: meets C2.10.1(i); (ii) is judgment",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.10.1(i)",
+      "rcodes:draft-2026-10-24/ch3/C2.10.1(ii)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R100-SL",
+        "area_m2": 90,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "fronts_street_or_row": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.10.1(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.10.1(ii)": "NOT_EVALUATED"
+      }
+    }
+  },
+  {
+    "title": "R100-SL lot of 90m2 not fronting a street or right-of-way: fails C2.10.1(i)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.10.1(i)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R100-SL",
+        "area_m2": 90,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "bedrooms": 3,
+        "dwelling_count": 2
+      },
+      "building": {
+        "fronts_street_or_row": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.10.1(i)": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 grouped, storage 4m2 x 1 m x 2 m behind the setback: meets C2.1.2 (all codes in Chapter 3)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "bedrooms": 3
+      },
+      "building": {
+        "storage": {
+          "area_m2": 4,
+          "min_dim_m": 1.0,
+          "height_m": 2.0,
+          "behind_street_setback": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 grouped, 2 bed, storage 3m2: fails C2.1.2 (4m2 for 2+ bed)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.1.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "bedrooms": 2
+      },
+      "building": {
+        "storage": {
+          "area_m2": 3,
+          "min_dim_m": 1.0,
+          "height_m": 2.0,
+          "behind_street_setback": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.1.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 grouped, courtyard sole daylight source, open to sky, 4m2: meets C2.2.1 (R30 and above in Chapter 3)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "bedrooms": 3
+      },
+      "building": {
+        "courtyard_daylight_only": true,
+        "courtyard_open_to_sky": true,
+        "courtyard_area_m2": 4
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R30 grouped, courtyard sole daylight source, covered: fails C2.2.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "bedrooms": 3
+      },
+      "building": {
+        "courtyard_daylight_only": true,
+        "courtyard_open_to_sky": false,
+        "courtyard_area_m2": 6
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 grouped climate zone 5, living opening faces north with 3 x 3 m uncovered area: meets C2.2.2",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "bedrooms": 3
+      },
+      "building": {
+        "primary_living_major_opening_orientation": "N",
+        "primary_living_uncovered_min_dim_m": 3.0,
+        "primary_living_uncovered_area_m2": 9.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R60 grouped climate zone 5, opening faces south in a pre-2024 structure plan: still fails C2.2.2 (footnote names single houses only)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.2.2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5,
+        "structure_plan_or_ldp_approved_before_2024_04_10": true
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 2,
+        "bedrooms": 3
+      },
+      "building": {
+        "primary_living_major_opening_orientation": "other",
+        "primary_living_uncovered_min_dim_m": 3.0,
+        "primary_living_uncovered_area_m2": 9.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.2.2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "8 grouped dwellings, Location A, 1 visitor bay (0.8 -> 1): meets C2.3.3",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "A",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 8,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 1
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "5 grouped dwellings, Location A, no visitor bay (0.5 rounds up to 1): fails C2.3.3",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "A",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 5,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "12 grouped dwellings, Location B, 2 visitor bays (1.8 -> 2): meets C2.3.3",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 12,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "12 grouped dwellings, Location B, 1 visitor bay: fails C2.3.3 (needs 2)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 12,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 1
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "12 grouped dwellings, Location A, 1 visitor bay (1.2 -> 1): meets C2.3.3",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "A",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 12,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 1
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "8 grouped dwellings, Perth, visitor bays unknown: cannot tell C2.3.3",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 8,
+        "bedrooms": 3
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.3": "CANNOT_TELL"
+      }
+    }
+  },
+  {
+    "title": "Perth visitor bay marked, on common property, connected to entries: meets C2.3.4",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 8,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 1,
+        "visitor_spaces_marked_and_accessible": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.4": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Perth visitor bay not signposted for visitors: fails C2.3.4",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 8,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 1,
+        "visitor_spaces_marked_and_accessible": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.4": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "10 grouped dwellings, regional, 2 visitor bays (1.5 rounds up to 2): meets C2.3.7",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 10,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 2
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.7": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "10 grouped dwellings, regional, 1 visitor bay: fails C2.3.7",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.7"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 10,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 1
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.7": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Regional visitor bays marked, on common property, connected to entries: meets C2.3.8",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.8"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 10,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 2,
+        "visitor_spaces_marked_and_accessible": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.8": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "Regional visitor bays inside a security gate away from common property: fails C2.3.8",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.8"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "regional",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 10,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 2,
+        "visitor_spaces_marked_and_accessible": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.8": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "Bin space per local government requirements; communal bin store screened; 6 dwellings: meets C2.4.1 and C2.4.3; plan is judgment",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.4.1",
+      "rcodes:draft-2026-10-24/ch3/C2.4.3",
+      "rcodes:draft-2026-10-24/ch3/C2.4.3-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 6,
+        "bedrooms": 3
+      },
+      "services": {
+        "bins_screened": true,
+        "waste": {
+          "bin_space_per_lg_requirements": true,
+          "communal_storage_area_m2": 12,
+          "communal_area_separated_or_screened": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.4.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.4.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch3/C2.4.3-r1": "NOT_EVALUATED"
+      }
+    }
+  },
+  {
+    "title": "No dedicated bin space; communal bin store beside a bedroom window: fails C2.4.1 and C2.4.3",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.4.1",
+      "rcodes:draft-2026-10-24/ch3/C2.4.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 6,
+        "bedrooms": 3
+      },
+      "services": {
+        "bins_screened": true,
+        "waste": {
+          "bin_space_per_lg_requirements": false,
+          "communal_storage_area_m2": 12,
+          "communal_area_separated_or_screened": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.4.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch3/C2.4.3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "10 grouped dwellings, 2 at silver level (20%): meets C2.7.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.7.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 10,
+        "bedrooms": 3,
+        "dwellings_universal_design_pct": 20
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.7.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "12 grouped dwellings, 2 at silver level (16.7%, 3 needed after rounding up): fails C2.7.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.7.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 12,
+        "bedrooms": 3,
+        "dwellings_universal_design_pct": 16.67
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.7.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "12 grouped dwellings, universal design share unknown: cannot tell C2.7.1",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.7.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "location": "B",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 12,
+        "bedrooms": 3
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.7.1": "CANNOT_TELL"
+      }
+    }
+  },
+  {
+    "title": "8 grouped dwellings, Perth, 1 visitor bay, location not stated: cannot tell C2.3.3 (no default to Location B)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch3/C2.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 2000,
+        "region": "perth-peel",
+        "climate_zone": 5
+      },
+      "proposal": {
+        "dwelling_type": "grouped_dwelling",
+        "dwelling_count": 8,
+        "bedrooms": 3
+      },
+      "parking": {
+        "visitor_spaces": 1
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch3/C2.3.3": "CANNOT_TELL"
+      }
+    }
+  }
+]

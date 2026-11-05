@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG3.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.7",
+  "element_title": "Pedestrian access and entries",
+  "title": "Pedestrian access and entries Design Guidance",
+  "text": "DG 3.7.1 Primary entries to the site and building(s) should be clearly identifiable from the street. For taller developments, a clearly defined and visible lobby or waiting area should be provided to lifts and stairs. On sites with a narrow street frontage, consider a primary street address with clear sightlines and pathways to secondary building entries. Where there are multiple entries, consider design treatments that provide a clear visual hierarchy to distinguish and identify communal entries from private entries, residential entries from non-residential activities and pedestrian entries from vehicle. Design solutions might include awnings, architectural detailing, materials, colour and landscape treatments. DG 3.7.2 The design of entries should incorporate CPTED principles. Direct, clearly visible and well lit access is required from the street entry to common circulation areas. Consider lighting and design elements that ensure entries are legible and safe to access at night. DG 3.7.3 Entries shall be designed in accordance with universal design principles. The design of ground floors and car parks should minimise level changes along pathways and at entries. It is often preferable for the entrance to be at street level and the level transitions to occur within the building. Where required, integrate ramps and steps into the overall building and landscape design. DG 3.7.4 Pedestrian and vehicle paths should be separated wherever possible, with pedestrians given priority over vehicles. Where pedestrian entry is via a shared vehicle space, consider using measures such as a pedestrian gate, differentiated surface, lighting and/or signage to provide a distinct pedestrian entry. DG 3.7.5 Where security gates are used, consider providing a set-back from the footpath to allow space for a pedestrian to stand while opening the gate without blocking the footpath. DG 3.7.6 For large developments 'wayfinding' signage and maps are recommended to assist visitors and residents, with intercom controls to manage visitor access to private areas. DG 3.7.7 Service areas located at the building entry areas (such as fire utilities and mailboxes) should be easy to locate, functional and carefully integrated into the overall design of the development. Consider access and locations for the delivery of large parcels and shopping. DG 3.7.8 On large sites consider opportunities to provide pedestrian links through the site to provide connections to open space, main streets, centres and public transport, and to increase site activation. Pedestrian links should be direct, with clear sightlines and passive surveillance from dwellings within the development, while maintaining appropriate privacy for residents. Consider integrating passive spaces, such as seating, to facilitate casual interaction.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG3.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 42
+  },
+  "register_ref": "C4P2-095",
+  "verify": false,
+  "notes": "Columns interleaved; DG 3.7.1 list re-joined by sense.",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

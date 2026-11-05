@@ -1,0 +1,103 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.6.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Garage width as a proportion of frontage",
+  "text": "A garage door and its supporting structures (or a garage wall where a garage is aligned parallel to the street) facing the primary street is not to occupy more than 50 per cent of the frontage at the setback line as viewed from the street. This may be increased up to 60 per cent where an upper floor balcony extends for more than half the width of the garage and its supporting structures (or a garage wall where a garage is aligned parallel to the street) and the entrance to the dwelling is clearly visible from the primary street (refer Figure 3.6b).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.garage.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.garage.entrance_clearly_visible",
+    "parking.garage.ext_width_m",
+    "parking.garage.present",
+    "parking.garage.upper_floor_over_half_width",
+    "site.frontage_m"
+  ],
+  "evaluator": {
+    "type": "percentage-of",
+    "fact": "parking.garage.ext_width_m",
+    "of": "site.frontage_m",
+    "op": "<=",
+    "value": 50
+  },
+  "exceptions": [
+    {
+      "label": "upper floor or balcony over more than half the garage width and entrance clearly visible",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "parking.garage.upper_floor_over_half_width",
+            "expected": true
+          },
+          {
+            "type": "boolean",
+            "fact": "parking.garage.entrance_clearly_visible",
+            "expected": true
+          }
+        ]
+      },
+      "effect": {
+        "set": {
+          "value": 60
+        }
+      },
+      "inputs": [
+        "parking.garage.upper_floor_over_half_width",
+        "parking.garage.entrance_clearly_visible"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.6",
+  "defined_terms": [
+    "garage",
+    "frontage",
+    "primary street",
+    "street setback line"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.5",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.2-C2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 37,
+    "figure": "Figure 3.6a"
+  },
+  "register_ref": "C4P1-104",
+  "verify": false,
+  "notes": "from: ch3 C3.6.3 (unchanged; 50% / 60% limits). Frontage measured at the primary street setback line. The clause text cites 'Figure 3.6b' but the garage figure is Figure 3.6a (6 m garage on 12 m = 50%, on 10 m = 60%); Figure 3.6b is the fence figure.",
+  "verified": {
+    "method": "page-image",
+    "page": 37,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "50% / 60% confirmed. Clause cites 'Figure 3.6b' (the fence figure); the garage figure is Figure 3.6a. Clause says 'an upper floor balcony'; Figure 3.6a says 'upper floor or balcony'."
+  }
+}

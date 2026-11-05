@@ -1,0 +1,61 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.1.3-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Primary garden area maximum permanent roof cover 35%",
+  "text": "Primary garden area (applies to R30-R80; R100-SL; LR, MR and HR only). C1.1.3 A single consolidated primary garden area to be provided in accordance with Table 1.1b. Table 1.1b Primary garden area provisions. Maximum permanent roof cover(1): 35% of the primary garden area provided. 1 Permanent roof cover excludes minor projections (eaves).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R30-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.pga.roofed_pct"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "landscape.pga.roofed_pct",
+    "op": "<=",
+    "value": 35
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.1",
+  "defined_terms": [
+    "primary garden area",
+    "permanent roof cover"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.1.1",
+      "relation": "relaxed",
+      "note": "one-third -> 35% of the PGA provided"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 10,
+    "table": "Table 1.1b"
+  },
+  "register_ref": "ch3-006",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "diverges: coding R30-R80 and R80-equivalent codes (PGA applies from R30 in Chapter 3, p10). 35% of the primary garden area provided. Permanent roof cover excludes eaves."
+}

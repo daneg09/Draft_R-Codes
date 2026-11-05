@@ -1,0 +1,638 @@
+[
+  {
+    "title": "R20 existing lot 450 m2, 10 m frontage: minimum area and frontage met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 10
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 lot 330 m2, no WAPC approval or existing-lot status, not a small dwelling: fails minimum 350",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 330,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 10
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 existing lot 330 m2 with legal road access: not applicable via C4.1.4(ii)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 330,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 10
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "C4.1.4(ii) existing lot with permanent legal access to a public road"
+      }
+    }
+  },
+  {
+    "title": "R20 lot 250 m2 for a small dwelling: 250 / 0.65 = 385 >= 350, meets via C4.1.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 250,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 10
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": true,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "C4.1.5 small dwelling at R25 and below: minimum and average site area reduced by up to 35%"
+      }
+    }
+  },
+  {
+    "title": "R20 lot 250 m2, small dwelling status unknown: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 250,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 10
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": null,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "proposal.small_dwelling"
+      ]
+    }
+  },
+  {
+    "title": "R20 lot 200 m2 for a small dwelling: 200 / 0.65 = 308 < 350, fails even with C4.1.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 200,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 10
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": true,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 lot 180 m2 for a gold-level accessible dwelling: 180 / 0.65 = 277 >= 260, meets via C4.1.6",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 180,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 8
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "gold"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "C4.1.6 gold-level accessible or small dwelling at R30 to R40: reduced by up to 35%, no site under 100 m2, at most 50% of 4 or more sites"
+      }
+    }
+  },
+  {
+    "title": "R25 lot 220 m2 for a gold-level dwelling that is not small: no concession at R25 and below, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R25",
+        "area_m2": 220,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 8
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "gold"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 subdivision of 4 lots, smallest 90 m2 and average 110 m2, small dwellings: 100 m2 floor fails both",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r4",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 600,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": true,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 4,
+        "reduced_lots_count": 2,
+        "min_site_area_m2": 90,
+        "avg_site_area_m2": 110,
+        "min_frontage_m": 5,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 subdivision of 4 lots, smallest 110 m2 and average 130 m2, 2 of 4 small dwellings: meets via C4.1.7; no frontage minimum",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r4",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r1",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 600,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": true,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 4,
+        "reduced_lots_count": 2,
+        "min_site_area_m2": 110,
+        "avg_site_area_m2": 130,
+        "min_frontage_m": 5,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r4": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r5": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r4": "C4.1.7 gold-level accessible or small dwelling at R50 and above: reduced by up to 35%, no site under 100 m2, small dwellings at most 50% of sites",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r1": "C4.1.7 gold-level accessible or small dwelling at R50 and above: reduced by up to 35%, no site under 100 m2, small dwellings at most 50% of sites"
+      }
+    }
+  },
+  {
+    "title": "R60 subdivision, 3 of 4 lots reduced for small dwellings: 75% exceeds the 50% cap, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 600,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 20
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": true,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 4,
+        "reduced_lots_count": 3,
+        "min_site_area_m2": 110,
+        "avg_site_area_m2": 130,
+        "min_frontage_m": 5,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r4": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 battleaxe lot 420 m2: minimum 350 met, battleaxe minimum 450 not met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 420,
+        "region": "regional",
+        "battleaxe": true,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 4
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r2": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 battleaxe lot 460 m2: battleaxe minimum met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r2"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 460,
+        "region": "regional",
+        "battleaxe": true,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 4
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r2": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R10 subdivision: average 950 m2 fails the (flagged) 1000 m2 average; minimum 900 and frontage 20 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r1",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r4",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R10",
+        "area_m2": 1850,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 40
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 2,
+        "reduced_lots_count": 0,
+        "min_site_area_m2": 900,
+        "avg_site_area_m2": 925,
+        "min_frontage_m": 20,
+        "battleaxe_lot": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r4": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r5": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R10 subdivision with a 950 m2 battleaxe lot: battleaxe minimum 925 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R10",
+        "area_m2": 1850,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 40
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 2,
+        "reduced_lots_count": 0,
+        "min_site_area_m2": 900,
+        "avg_site_area_m2": 925,
+        "min_frontage_m": 20,
+        "battleaxe_lot": true,
+        "min_battleaxe_site_area_m2": 950
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r6": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R2 subdivision: no average and no battleaxe figure in Table 2B",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r1",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R2",
+        "area_m2": 12000,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "frontage_m": 80
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": true,
+        "lot_count": 2,
+        "reduced_lots_count": 0,
+        "min_site_area_m2": 5500,
+        "avg_site_area_m2": 6000,
+        "min_frontage_m": 50,
+        "battleaxe_lot": true,
+        "min_battleaxe_site_area_m2": 5500
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r1": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r6": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "R100-SL existing lot 80 m2: minimum 80 met, no frontage minimum",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1",
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R100-SL",
+        "area_m2": 80,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 5
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r3": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "R25 lot 300 m2, 7 m frontage: frontage 8 m not met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch2/C4.1.1-r3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R25",
+        "area_m2": 300,
+        "region": "regional",
+        "battleaxe": false,
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "frontage_m": 7
+      },
+      "proposal": {
+        "dwelling_type": "single_house",
+        "small_dwelling": false,
+        "universal_design_level": "none"
+      },
+      "subdivision": {
+        "proposed": false,
+        "lot_count": 1,
+        "reduced_lots_count": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch2/C4.1.1-r3": "DOES_NOT_MEET"
+      }
+    }
+  }
+]

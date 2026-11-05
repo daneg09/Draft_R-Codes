@@ -1,0 +1,84 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.8.1-diagonal",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.8",
+  "element_title": "Solar access for adjoining sites",
+  "title": "Maximum overshadowing of a diagonally adjacent lot (Table 3.8a)",
+  "text": "In climate zones 4, 5, and 6, development is designed that its shadow cast at midday, 21 June (refer Figure 3.8a) onto any other adjoining property and/or diagonally adjacent lot (refer Figure 3.8b) does not exceed the limits set out in Table 3.8a. Table 3.8a Maximum overshadowing (percentage of dwelling site area): Diagonally adjacent lots: R25 and lower 12.5%; R30-R40 17.5%; R50-60 25%.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "label": "climate zone 4, 5 or 6",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "adjoining.diagonal.r_code",
+    "overshadow.diagonal_pct",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.8a-diagonal",
+    "fact": "overshadow.diagonal_pct",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.8",
+  "defined_terms": [
+    "diagonally adjacent lot",
+    "overshadowing"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.9a",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.2-C2.1",
+      "relation": "tightened",
+      "note": "Part B did not limit shadow on diagonally adjacent lots"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 42,
+    "table": "Table 3.8a",
+    "figure": "Figure 3.8b"
+  },
+  "register_ref": "C4P1-125",
+  "verify": false,
+  "notes": "diverges: from ch3 C3.9.1-diagonal; the C3.9.2 single-storey exemption is removed (none in this chapter). Second column of Table 3.8a (half the adjoining figure). Not subject to C3.8.2 or C3.8.3. R10-R25: diagonal limit is new for apartments.",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

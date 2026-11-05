@@ -1,0 +1,62 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Minimum on-site car parking spaces, R40 and below, outside Perth and Peel (Table 2.3b)",
+  "text": "Applies to development outside of the Perth and Peel regions only. Occupant parking. C2.3.5 Car parking is provided on site in accordance with Table 2.3b.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R2-R40"
+  ],
+  "region": "regional",
+  "inputs": [
+    "parking.spaces",
+    "proposal.bedrooms"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.3b",
+    "fact": "parking.spaces",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "car parking space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.1",
+      "relation": "same",
+      "note": "R25 and below equal Part B Location B values"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "tightened",
+      "note": "R30-R40: 2 bed 1 -> 2, 3+ bed 1 -> 2 against Part C Location B; R50+ minimum removed (register ch3-030 rates the element 'mixed')"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 20,
+    "extract_line": 636,
+    "table": "Table 2.3b"
+  },
+  "register_ref": "ch3-030",
+  "verify": false,
+  "notes": "Content twin of Chapter 2 C2.3.3 (renumbered C2.3.5 in Chapter 3; evaluator unchanged). Outside Perth and Peel (heading p20). Table 2.3b minimum for R40 and below: 1/2/2 (studio-1 bed / 2 bed / 3+ bed), same as Chapter 2. No R50+ minimum stated. Second column (headed 'Maximum garage and carport parking for R50 and above') is C2.3.5-r2 and -r3; visitor parking is C2.3.7.",
+  "verified": {
+    "method": "page-image",
+    "page": 20,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

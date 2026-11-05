@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Primary living space has direct physical and visual access to private open space (R30-R60)",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "The primary living space is to have direct physical and visual access to a private open space in accordance with Table 2.1a.",
+  "inputs": [
+    "dwellings.primary_living_direct_access_to_pos"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "dwellings.primary_living_direct_access_to_pos",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "primary living space",
+    "private open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.3",
+      "relation": "same",
+      "note": "Part C cited Table 1.1b; draft cites Table 2.1a"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 15,
+    "extract_line": 449
+  },
+  "register_ref": "C4P1-023",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C2.1.2 cites 'Table 2.1a', which on p16 is the minimum dwelling size table, not a private open space table; only the access test is encoded. Heading 'Primary living space (applies to R30-R60 only)' confirmed to cover C2.1.1 to C2.1.3 (p15)."
+  },
+  "notes": "from: ch3 C2.1.1(ii). diverges: Chapter 3 splits ground-floor (primary garden area) and upper-floor (balcony sized per Table 2.1a) access; here one clause requires access to the apartment's private open space, whose size is tested in element 1.1 (Table 1.1a). The clause cites 'Table 2.1a', which in this chapter is minimum dwelling size; the register (C4P1-023) reads it as the renumbered POS table 1.1a. Broken cross-reference, so only the access test is encoded. R30-R60 per the 'Primary living space' heading, which covers C2.1.1 to C2.1.3 (p15)."
+}

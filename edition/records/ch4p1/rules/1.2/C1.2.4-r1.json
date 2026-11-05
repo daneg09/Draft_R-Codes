@@ -1,0 +1,109 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.2.4-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Minimum trees on a lot of 700 to 1,000 m2: 2 medium, or 1 large and 1 small (Table 1.2a)",
+  "text": "Tree Canopy. C1.2.4 A minimum number of trees to be planted in accordance with Tables 1.2a and provided with the required deep soil area per tree in accordance with Table 1.2b. Table 1.2a Minimum tree provisions. Lot size 700m2 - 1,000m2: 2 medium trees or 1 large tree and 1 small tree.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.area_m2",
+      "op": ">=",
+      "value": 700
+    },
+    {
+      "type": "threshold",
+      "fact": "site.area_m2",
+      "op": "<=",
+      "value": 1000
+    }
+  ],
+  "inputs": [
+    "site.area_m2",
+    "landscape.trees.small_count",
+    "landscape.trees.medium_count",
+    "landscape.trees.large_count"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "any",
+    "parts": [
+      {
+        "type": "count",
+        "fact": "landscape.trees.medium_count",
+        "op": ">=",
+        "value": 2
+      },
+      {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "count",
+            "fact": "landscape.trees.large_count",
+            "op": ">=",
+            "value": 1
+          },
+          {
+            "type": "count",
+            "fact": "landscape.trees.small_count",
+            "op": ">=",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.2",
+  "defined_terms": [
+    "small tree",
+    "medium tree",
+    "large tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.4",
+      "relation": "same",
+      "note": "R30-R60"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.2a",
+      "relation": "same",
+      "note": "multiple dwelling rows"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.2",
+      "relation": "tightened",
+      "note": "R10-R25: 2/3/4 trees on 2 m x 2 m pits -> sized trees with deep soil"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 10,
+    "table": "Table 1.2a"
+  },
+  "register_ref": "C4P1-011",
+  "verify": true,
+  "notes": "from: ch3 C1.2.4. diverges: lot-size tree table (p10) as C1.2.4. Lot 700 m2 to 1,000 m2 inclusive (rule conditions). Counts are the trees planted across the development lot by Table 1.2b size, excluding the C1.2.5 parking shade trees; a retained significant tree counts like-for-like by its size (C1.2.6 note). The table does not say whether a larger tree may stand in for a smaller one, so it is tested literally (verify). For R10-R25 apartments this is a step up from Part B (C4P1-011).",
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 1.2a (p10) does not say whether a larger tree may stand in for a smaller one (e.g. a large tree for a required medium tree); counts tested literally."
+  }
+}

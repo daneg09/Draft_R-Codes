@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.6.6-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Front fence solid pillars maximum height 1.8 m",
+  "text": "Solid pillars that form part of front fences or walls are not more than 1.8m above natural ground level, provided the horizontal dimension of the pillars is not greater than 450mm by 450mm and pillars are separated by visually permeable fencing in line with C3.6.5 (Refer Figure 3.6b).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.front_fence.present",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "building.front_fence.pillars_present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.front_fence.pillar_height_m",
+    "building.front_fence.pillars_present",
+    "building.front_fence.present"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.front_fence.pillar_height_m",
+    "op": "<=",
+    "value": 1.8
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.6",
+  "defined_terms": [
+    "natural ground level",
+    "visually permeable"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.4-C4.1",
+      "relation": "tightened",
+      "note": "Part B had no overall height cap; pillars 400 -> 450 mm (relaxed)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 39,
+    "figure": "Figure 3.6b"
+  },
+  "register_ref": "ch3-072",
+  "verify": false,
+  "notes": "Same as Chapter 2 C3.6.6. Pillar size is C3.6.6-r2. Part B allowed 400 mm pillars (relaxed to 450).",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

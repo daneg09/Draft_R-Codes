@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.15",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.15",
+  "element_title": "Energy efficiency",
+  "title": "Energy efficiency design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.15.1 Examples of energy efficient initiatives that exceed current minimum practice are provided below. Applicants are encouraged to propose other innovative solutions where supported by evidence demonstrating how minimum practice is exceeded: ceiling fans to all habitable rooms; hot water systems that are more energy efficient than electric storage units; provision of an external clothesline to every dwelling, located in an area out of direct view on an external wall or in a breezeway; use of a photovoltaic array for communal services; installation of a lift with regenerative braking; solar powered lighting of external open space, circulation areas and common spaces. DG 4.15.2 Strategies to improve the NATHERs rating of individual dwellings can include: maximising dwellings with northerly orientation and opportunities for natural ventilation (refer 4.1 Solar and daylight access and 4.2 Natural ventilation for further guidance); achieving effective shading from summer sun; use of thermal mass for passive heating and cooling; improving the thermal performance and insulative properties of glazing, openings and the building fabric, particularly on west facing elevations; avoiding the use of electric storage systems as the primary domestic hot water system for individual dwellings. DG 4.15.3 Consider initiatives that future proof the development for our changing energy environment, such as: designing the roof, electrical distribution system and metering with capacity for future installation of systems such as a photovoltaic array or battery storage that can provide the equivalent of at least 1kW energy per dwelling; providing conduits and capacity in the electrical distribution system and metering for future provision of electric car charging within car parking areas.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 81,
+    "extract_line": 2790
+  },
+  "register_ref": "C4P2-125",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.15",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "DG 4.15.1 is the list A4.15.1(a) refers to.",
+  "verified": {
+    "method": "page-image",
+    "page": 81,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

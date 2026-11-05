@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Street setbacks merit assessment criteria",
+  "text": "M3.3.1 Buildings are set back from street boundaries an appropriate distance to ensure they: i. are consistent with the existing or future streetscape and local character; ii. provide sufficient space for tree planting and other landscaping, as well as community interaction; iii. provide adequate privacy to the dwellings; iv. accommodate site planning requirements such as parking and utilities; and v. allow safety clearances for easements for essential service corridors and sightlines. M3.3.2 Buildings mass and form that: i. uses design features to affect the size and scale of the building; ii. provide the opportunity for building articulation, such as well-defined entries, varying setbacks across the building width, verandahs, porches and balconies; iii. uses appropriate minor projections that do not detract from the character of the streetscape; iv. minimises the proportion of the façade at ground level taken up by building services, vehicle entries, parking supply, blank walls, servicing infrastructure access, meters and the like; and v. positively contributes to the prevailing or future development context and streetscape as outlined in the local planning framework. M3.3.3 Garages and/or carports are set back to: i. contribute positively to the streetscape and appearance of dwellings; ii. maintain clear sightlines along the street, to not obstruct views of dwellings from the street and vice versa; and iii. ensure vehicle parking on a driveway only occurs where space permits and does not impede on any existing or planned adjoining pedestrian, cycle, or dual-use path.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": null,
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.3.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.3.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P3.3.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-P2.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.2-P2.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29
+  },
+  "register_ref": "C4P1-084",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": "29, 31",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 M3.3. Same text (M3.3.1-M3.3.2 p29, M3.3.3 p31; C4P1-084)."
+}

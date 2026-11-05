@@ -1,0 +1,58 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.1.1-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Outdoor living area: 65% of required area without permanent roof cover",
+  "text": "Outdoor Living Area (applies to R2-R40 only). C1.1.1 An outdoor living area to be provided in accordance with Table 1.1a. (Refer to Figure 1.1a) Table 1.1a Outdoor living area provisions. Minimum area without permanent roof cover(1): R2-R15 No minimum applicable; R17.5, R20-R25, R30-R35, R40 65% of the required outdoor living area. 1 Permanent roof cover excludes minor projections (eaves).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R17.5-R40"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.ola.uncovered_pct"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "landscape.ola.uncovered_pct",
+    "op": ">=",
+    "value": 65
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.1",
+  "defined_terms": [
+    "outdoor living area",
+    "permanent roof cover"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.1-C1.1",
+      "relation": "relaxed",
+      "note": "two-thirds uncovered -> 65% (35% may be roofed)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 9,
+    "table": "Table 1.1a",
+    "figure": "Figure 1.1a"
+  },
+  "register_ref": "ch2-002",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear. Figure 1.1a legend reads '35% of OLA may be covered area under roof space or eaves', counting eaves, while Table 1.1a note 1 excludes eaves from permanent roof cover; the table governs."
+  },
+  "notes": "Permanent roof cover excludes minor projections such as eaves (note 1). The fact is the percentage of the REQUIRED OLA (Table 1.1a area) that is uncovered. Two-column extract; the 65% / 35% figures appear in both the table and the Figure 1.1a note."
+}

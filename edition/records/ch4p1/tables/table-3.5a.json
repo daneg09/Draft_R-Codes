@@ -1,0 +1,67 @@
+{
+  "id": "table-3.5a",
+  "title": "Table 3.5a Setback of retaining walls and fill",
+  "keys": [
+    "site_works.retaining_max_height_m"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site_works.retaining_max_height_m": {
+          "max": 1.0
+        }
+      },
+      "value": 0,
+      "note": "1m or less"
+    },
+    {
+      "match": {
+        "site_works.retaining_max_height_m": {
+          "max": 1.5
+        }
+      },
+      "value": 1.5
+    },
+    {
+      "match": {
+        "site_works.retaining_max_height_m": {
+          "max": 2.0
+        }
+      },
+      "value": 2.0
+    },
+    {
+      "match": {
+        "site_works.retaining_max_height_m": {
+          "max": 2.5
+        }
+      },
+      "value": 2.5
+    },
+    {
+      "match": {
+        "site_works.retaining_max_height_m": {
+          "min": 2.5
+        }
+      },
+      "value": 3.0,
+      "note": "3m +"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 36,
+    "table": "Table 3.5a"
+  },
+  "register_ref": "C4P1-099",
+  "verify": false,
+  "notes": "from: ch3 table-3.5a; values checked against Chapter 4 Part 1 p36 (1 m or less 0 m; 1.5 m 1.5 m; 2 m 2 m; 2.5 m 2.5 m; 3 m+ 3 m), same for R10-R60. Rows are matched in order; footnote 1 'take the nearest higher value' is encoded as upper-bound bands (a 1.2 m wall needs 1.5 m). Height measured from NGL at the lot boundary adjacent to that point of the wall. R10-R25: nil setback now up to 1 m (Part B 0.5 m).",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Five rows confirmed; footnote 1 'take the nearest higher value' encoded as upper-bound bands."
+  }
+}

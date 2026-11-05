@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.6.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.6",
+  "element_title": "Storage",
+  "title": "Separate or open-space storage is integrated and not readily visible from the public domain",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Storage provided separately from dwellings or within or adjacent to private open space, is integrated into the design of the building or open space and is not readily visible from the public domain. (Footnote 1: Storage on/adjacent to private open space is additional to required open space area and dimensions.)",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.6",
+  "defined_terms": [
+    "private open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.6.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 62,
+    "extract_line": 2153
+  },
+  "register_ref": "C4P2-116",
+  "verify": false,
+  "notes": "Footnote 1 (storage is additional to the Table 4.4 POS) is a counting rule for A4.4.1: supply dwellings.min.pos_area_m2 net of storage.",
+  "verified": {
+    "method": "page-image",
+    "page": 62,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

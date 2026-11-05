@@ -1,0 +1,46 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C4.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Calculation of minimum site area for a grouped dwelling",
+  "text": "The minimum site area set out in Table 3B is calculated as follows: i. in the case of a grouped dwelling, the area of land occupied by the dwelling itself, together with all other areas whether contiguous or not, designated for the exclusive use of the occupants of that dwelling.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch3/M4.1",
+  "defined_terms": [
+    "site area",
+    "grouped dwelling",
+    "common property"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 51
+  },
+  "register_ref": "ch3-089",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 51,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "diverges: Chapter 3 text (p51) is the grouped dwelling calculation (land occupied by the dwelling plus all areas, contiguous or not, for the exclusive use of its occupants) in place of the single house lot area. Calculation rule, not a test: it defines subdivision.site_area_per_dwelling_m2 and subdivision.avg_site_area_per_dwelling_m2 read by C4.1.1 and C4.1.1-r7. Common property and the communal driveway are not part of a dwelling's site area. Recorded as kind judgment with no evaluator.",
+  "inputs": []
+}

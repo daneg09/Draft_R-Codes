@@ -1,0 +1,46 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M4.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "WAPC approval of lots with average site area up to 5% below Table 4B",
+  "text": "M4.1.2 The WAPC, in consultation with the local government, may approve the creation of a green title lot, survey-strata lot or strata lot with an average site area up to 5 per cent less than that specified in Table 4B where it will: i. facilitate the protection of an environmental or heritage feature; ii. facilitate the retention of a significant element that contributes toward an existing streetscape worthy of retention; iii. facilitate the development of lots with separate and sufficient frontage to more than one public street; iv. overcome a special or unusual limitation on the development of the land imposed by its size, shape or other feature; v. allow land to be developed with housing of the same type and form as land in the vicinity and which would not otherwise be able to be developed; or vi. achieve specific objectives of the local planning framework.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": null,
+  "defined_terms": [
+    "green title lot",
+    "survey-strata lot",
+    "strata lot"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/P1.1.2",
+      "relation": "same",
+      "note": "minimum dropped (no minimum for apartments)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 49
+  },
+  "register_ref": "C4P1-136",
+  "verify": false,
+  "notes": "from: ch3 M4.1.2. diverges: average site area only (no minimum), strata lots included, no battleaxe exclusion and no 'not more than one lot' limb; six grounds as current P1.1.2. WAPC discretion, not an applicant test.",
+  "verified": {
+    "method": "page-image",
+    "page": 49,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

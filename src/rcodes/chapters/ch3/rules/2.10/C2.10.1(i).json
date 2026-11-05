@@ -1,0 +1,65 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.10.1(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.10",
+  "element_title": "Housing on lots less than 100m2",
+  "title": "R100-SL grouped dwelling fronts a primary street, secondary street or public right-of-way",
+  "text": "Housing on lots less than 100m2 - applies to single houses and grouped dwellings in areas coded R100-SL only. C2.10.1 Grouped dwellings in areas coded R100-SL are to comply with the following: i. dwellings to front a primary street, secondary street, or public right-of-way; and",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.area_m2",
+      "op": "<",
+      "value": 100.0
+    }
+  ],
+  "inputs": [
+    "site.area_m2",
+    "building.fronts_street_or_row"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.fronts_street_or_row",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.10",
+  "defined_terms": [
+    "primary street",
+    "secondary street",
+    "right-of-way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.10.1",
+      "relation": "mixed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 25,
+    "extract_line": 820
+  },
+  "register_ref": "ch3-040",
+  "verify": true,
+  "notes": "Element heading p25: 'applies to single houses and grouped dwellings in areas coded R100-SL only'. The lot-under-100m2 condition comes from the element title; read for grouped dwellings as the dwelling's lot or strata lot. Verify whether an R100-SL lot of 100m2 or more is caught.",
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Ambiguous on the page: the element sub-heading (p25) reads 'Housing on lots less than 100m2 - applies to single houses and grouped dwellings in areas coded R100-SL only', while C2.10.1 names only the R100-SL coding; whether an R100-SL lot of 100m2 or more is caught is not stated."
+  }
+}

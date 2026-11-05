@@ -1,0 +1,99 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.2.3-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.2",
+  "element_title": "Orientation",
+  "title": "Proportional overshadowing limit where the affected lot's northern boundary is shared with other lots (A3.2.3 footnote 1)",
+  "text": "Where a development site shares its southern boundary with a lot, and that lot is bound to the north by other lot(s), the limit of shading at A 3.2.3 shall be reduced proportionally to the percentage of the affected properties northern boundary that abuts the development site.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ],
+      "label": "climate zone 4, 5 or 6"
+    },
+    {
+      "type": "count",
+      "fact": "adjoining.north_shared_boundary_count",
+      "op": ">=",
+      "value": 2
+    }
+  ],
+  "inputs": [
+    "adjoining.north_shared_boundary_count",
+    "overshadow.proportional_to_shared_boundary",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "overshadow.proportional_to_shared_boundary",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.2",
+  "defined_terms": [
+    "adjoining property",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.2.3",
+      "relation": "same",
+      "note": "footnote 1"
+    },
+    {
+      "id": "rcodes:vol2-2024/Fig-A7.2",
+      "relation": "deleted",
+      "note": "Appendix A7 explanatory figure not carried into the draft"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 28
+  },
+  "register_ref": "C4P2-080",
+  "verify": true,
+  "notes": "from: ch4p1 C3.8.3. Applicant states that the shadow is within the A3.2.3 limit scaled by the share of the affected lot's northern boundary that abuts the site; not computed. The supporting figure (Vol 2 Figure A7.2) is deleted, so the method of proportioning is not illustrated. Moot where the adjoining lot is coded R80 or higher (nil requirement).",
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p28 footnote 1 says the limit is 'reduced proportionally' but gives no method or figure for the proportioning (Vol 2 Figure A7.2 deleted)."
+  }
+}

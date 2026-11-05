@@ -1,0 +1,39 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M2.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.6",
+  "element_title": "Outbuildings",
+  "title": "Outbuildings merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "M2.6.1 Outbuildings minimise negative impacts on the amenity for residents of the development, adjoining properties or the streetscape. M2.6.2 Siting and size of outbuildings does not compromise the ability to provide adequate primary garden area, soft landscaping, trees and deep soil areas.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 22,
+    "extract_line": 688
+  },
+  "register_ref": "C4P1-060",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P2.6.1",
+      "relation": "relaxed",
+      "note": "'do not negatively impact' -> 'minimise negative impacts'"
+    }
+  ],
+  "notes": "from: ch3 M2.6 (same text).",
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Car parking and vehicle circulation designed to AS2890.1 or local planning instruments",
+  "text": "Car parking and vehicle circulation areas are designed in accordance with AS2890.1 (as amended) or the requirements of applicable local planning instruments.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.as2890_compliant"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.as2890_compliant",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.9.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46
+  },
+  "register_ref": "C4P2-108",
+  "verify": false,
+  "notes": "parking.as2890_compliant read to include compliance with an applicable local planning instrument instead.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

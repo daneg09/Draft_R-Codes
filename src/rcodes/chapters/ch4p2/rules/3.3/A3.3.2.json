@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Removal of a tree meeting the A3.3.1 criteria is supported by an arboriculture report",
+  "text": "The removal of existing trees that meet any of the criteria at A3.3.1 is supported by an arboriculture report.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "landscape.existing_trees.qualifying_present",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "landscape.existing_trees.qualifying_all_retained",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "landscape.existing_trees.qualifying_all_retained",
+    "landscape.existing_trees.qualifying_present",
+    "landscape.existing_trees.removal_arboriculture_report"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.existing_trees.removal_arboriculture_report",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Applies only where a qualifying tree is removed. The text says 'any of the criteria', A3.3.1 combines them with AND and AND/OR; read as a tree that qualifies under A3.3.1.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.7.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.7",
+  "element_title": "Managing the impact of noise",
+  "title": "Major openings to habitable rooms oriented away or shielded from external noise",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Major openings to habitable rooms are oriented away or shielded from external noise sources.",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.7",
+  "defined_terms": [
+    "major opening",
+    "habitable room"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.7.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 65,
+    "extract_line": 2249
+  },
+  "register_ref": "C4P2-117",
+  "verify": false,
+  "notes": "",
+  "verified": {
+    "method": "page-image",
+    "page": 65,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

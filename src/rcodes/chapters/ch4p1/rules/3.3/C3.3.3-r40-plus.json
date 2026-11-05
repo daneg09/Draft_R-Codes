@@ -1,0 +1,65 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Garage setback from the primary street, R40 and above",
+  "text": "C3.3.3 Garages are set back from the primary street boundary in accordance with Table 3.3c. Table 3.3c Setback of garages from the primary street: R40 and above In accordance with Table 3.3a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R40-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.garage.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.garage.setback_primary_m",
+    "site.r_code",
+    "parking.garage.present"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-primary",
+    "fact": "parking.garage.setback_primary_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "defined_terms": [
+    "garage",
+    "primary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3b",
+      "relation": "same",
+      "note": "R40+ per Table 3.3a"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3c"
+  },
+  "register_ref": "C4P1-081",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C3.3.3#r40-plus. Table 3.3c 'R40 and above: in accordance with Table 3.3a', so the primary street table is looked up directly (R40 3 m, R50-R60 2 m). No reductions apply above R35."
+}

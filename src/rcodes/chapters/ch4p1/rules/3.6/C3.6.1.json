@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.6.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Upper-level balconies or windows overlook the street and public domain",
+  "text": "Addressing the street. C3.6.1 For apartments, upper level balconies and/or windows overlook the street and public domain areas, including public open space where applicable.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.storeys",
+      "op": ">=",
+      "value": 2
+    }
+  ],
+  "inputs": [
+    "building.storeys",
+    "building.upper_level_overlook_street"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.upper_level_overlook_street",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.6",
+  "defined_terms": [
+    "balcony",
+    "public open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.2",
+      "relation": "restructured",
+      "note": "adds 'including public open space where applicable'"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.3-C3.1",
+      "relation": "restructured",
+      "note": "Part B C3.1-C3.3; R10-R25 'major opening faces the street' rule dropped"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 37
+  },
+  "register_ref": "C4P1-102",
+  "verify": false,
+  "notes": "diverges: no ch3 twin for the street limb. Chapter 3 C3.6.1 (entrance identifiable, major opening to the frontage) has no Chapter 4 Part 1 equivalent; this clause (p37) asks that upper-level balconies and/or windows overlook the street and public domain areas. Tested with building.upper_level_overlook_street, applied only where the building has an upper level (building.storeys >= 2). The public open space limb ('where applicable') is C3.6.1-r1, from ch3 C3.6.2.",
+  "verified": {
+    "method": "page-image",
+    "page": 37,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed (printed with a double full stop). 'Upper level' is read as a building of two or more storeys (interpretation)."
+  }
+}

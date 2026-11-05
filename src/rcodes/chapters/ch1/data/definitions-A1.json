@@ -1,0 +1,2677 @@
+{
+ "id": "rcodes:draft-2026-10-24/ch1/A1",
+ "title": "Appendix A1 Definitions",
+ "source": {
+  "file": "Residential Design Codes - Appendices.pdf",
+  "appendix": "A1",
+  "pages": [
+   4,
+   11
+  ],
+  "page_images": "Working/pages/appendices/page-04.png .. page-11.png",
+  "extract": "Working/text/draft/Residential Design Codes - Appendices.txt",
+  "version": "draft-2026-10-24",
+  "conventions": "Terms lower-cased; dash-bulleted lists rendered as (i), (ii) on new lines, numbering restarting after an intervening paragraph; bold cross-reference styling not retained; superscript 2 rendered as ²; see_also holds only explicit cross-references ('means', 'see also', 'refer to definition', 'the parent lot'); aliases added for slash/inverted headings to aid lookup."
+ },
+ "terms": [
+  {
+   "term": "accessible housing / dwellings",
+   "definition": "dwellings having features already in place to enable use by people with a disability.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "accessible housing",
+    "accessible dwellings"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "acoustic privacy",
+   "definition": "freedom from sound-based disturbance between apartments, between apartments and commercial areas, and between external and internal spaces.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "active habitable space",
+   "definition": "any:\n(i) habitable room with a internal floor area greater than 10m²; and\n(ii) balcony, courtyard, patio, verandah or other forms of private open space.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "activity centre",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "adaptable housing / dwellings",
+   "definition": "dwellings designed and built to accommodate future changes to suit occupants with mobility impairment or life cycle needs.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "adaptable housing",
+    "adaptable dwellings"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "adaptive reuse",
+   "definition": "the conversion of an existing building or structure from one use to another, or from one configuration to another.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "adjoining tree/s",
+   "definition": "tree or trees located on a lot or reserve immediately adjacent to the development site and provide some canopy cover over it.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "adjoining tree",
+    "adjoining trees"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "adjoining property",
+   "definition": "any lot:\n(i) on which any dwelling for which provision is made in the R-Codes may be constructed under the scheme; and\n(ii) which shares a boundary or portion of a boundary with a lot on which there is a proposed residential development site or is separated from that lot by a right-of-way, vehicle access way, pedestrian access way, access leg of a battleaxe lot or the equivalent not more than 6m in width.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "amenity",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015 and includes the 'liveability', comfort or quality of a place which makes it pleasant and agreeable to be in for individuals and the community. Amenity is important in the public, communal and private domains and includes the enjoyment of sunlight, outlook, privacy and quiet. It also includes protection from pollution and odours.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "ancillary dwelling",
+   "definition": "self-contained dwelling on the same site as a dwelling which may be attached to, integrated with or detached from the dwelling.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "apartment",
+   "definition": "means a multiple dwelling.",
+   "page": 4,
+   "see_also": [
+    "multiple dwelling"
+   ],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "at-grade",
+   "definition": "located at same height as ground level.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "balcony",
+   "definition": "a balustraded platform on the outside of a dwelling with access from an upper internal room.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "basement",
+   "definition": "a building floor level in which 50 per cent or more of its volume is below natural ground level.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "battleaxe lot",
+   "definition": "a single house lot that has a frontage for purposes of servicing and access to a public road only through a strip of connecting land containing a pedestrian access leg and/ or vehicular access way that is part of the lot. The term excludes a site that has vehicle access from a private or communal street or right-of-way connected to a public road.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "bay window",
+   "definition": "a window which projects a short way past the face of the building. It can have windows on the return walls and sometimes incorporates a seat.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "bca",
+   "definition": "Building Code of Australia, an element of the National Construction Code (NCC).",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "boundary wall",
+   "definition": "a wall, on or less than 600mm from any lot boundary (green title or survey-strata lot), other than a street boundary.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "building",
+   "definition": "any structure whether fixed or moveable, temporary or permanent, placed or erected on land, and the term includes dwellings and structures appurtenant to dwellings such as carports, garages, verandahs, patios, outbuildings and retaining walls, but excludes boundary fences, pergolas and swimming pools.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "building width",
+   "definition": "the width of the building as viewed from the primary street.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "building depth",
+   "definition": "the horizontal distance across the building including external walls, balconies and external circulation walkways.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "building envelope/s",
+   "definition": "as defined under the Planning and Development (Local Planning Scheme) Regulations 2015 indicates the intended maximum extent of development for a site, defined by a combination of building height limits and setbacks from street, side and rear boundaries.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "building envelope",
+    "building envelopes"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "Printed as 'Local Planning Scheme Regulations' (singular 'Scheme'); kept verbatim."
+  },
+  {
+   "term": "building line",
+   "definition": "the predominant line formed by the main external face of the building. Balconies or bay window projections may or may not be included depending on desired streetscape.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "building massing",
+   "definition": "the overall shape, form and size of a building.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "carport",
+   "definition": "An unenclosed structure designed to accommodate one or more motor vehicles and being without a door.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "circulation core",
+   "definition": "vertical circulation (lift and/or stairs) within a building. A single core may include multiple lifts serving the same floor.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "clerestory",
+   "definition": "high-level windows that can be part of a wall above a lower roof.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "climate zone",
+   "definition": "as defined by the NCC. Western Australia is divided into five climate zones based on humidity and temperature, ranging from temperate in the southwest to hot/arid in the interior to hot/humid in the north. Refer Climate Zones Map.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "'Climate Zones Map' is Figure A1.1 on page 11."
+  },
+  {
+   "term": "common property",
+   "definition": "has the meaning given by section 10 of the Strata Titles Act 1985.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "communal open space",
+   "definition": "outdoor areas within the lot and either at ground level or on structure that is accessible to and shared by occupants of the dwellings for communal recreational use. It does not include driveways or car parking areas.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "communal street",
+   "definition": "common property or private street providing joint access to two or more dwellings in a residential development and may include vehicle and pedestrian access, and landscaping.",
+   "page": 4,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 4,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "cone of vision",
+   "definition": "the limits of outlook from any given viewpoint for the purposes of assessing the extent of overlooking from that point, measured by applying a viewing cut off angle not less than 45 degrees horizontally and extending 90 degrees down to the ground.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "continuous path of travel",
+   "definition": "an uninterrupted route to or within premises or buildings and providing access to all services and facilities (AS1428.1). It should not incorporate any step, stairway, turnstile, revolving door, escalator, hazard or other impediment which would prevent it from being safely negotiated by people with disability.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "cornice",
+   "definition": "decorative horizontal moulding at the top of a building which 'crowns' or finishes the external façade.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "courtyard",
+   "definition": "open space at ground level or on a structure that is open to the sky and and bound by the building on three or more sides.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "Printed 'open to the sky and and bound'; kept verbatim."
+  },
+  {
+   "term": "cpted",
+   "definition": "Crime Prevention Through Environmental Design.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "crossover",
+   "definition": "the vehicle access point (or driveway) running from the property boundary to the edge of the road.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "cross-over apartment",
+   "definition": "cross ventilating apartment with two opposite aspects and with a change in level between one side of the building and the other.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "cross-through apartment",
+   "definition": "cross ventilating apartment on one level with two opposite aspects.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "datum line",
+   "definition": "significant point or line in space established by the existing or desired context, often defined as an Australian Height Datum (AHD). For example, the top of significant trees or the cornice of a heritage building.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "daylight",
+   "definition": "consists of both skylight (diffuse light from the sky) and sunlight (direct beam radiation from the sun). Daylight changes with the time of day, season and weather conditions.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "deemed exempt",
+   "definition": "a proposal, or a component of a proposal, that complies with the deemed exempt provision of the R-Codes, or an adopted local planning policy.\nA reference to deemed exempt criteria in the R-Codes is to be construed as a reference to a deemed-to-comply provision of the R-Codes for the purpose of the definition of deemed-to-comply provision in clause 1 of Schedule 2 of the LPS Regulations",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "Second paragraph is printed in italics and has no closing full stop."
+  },
+  {
+   "term": "deep soil area",
+   "definition": "soft landscape area on lot with no impeding building structure or feature above or below, which supports growth of small to large canopy trees and meets a stated minimum dimension. Used primarily for landscaping and open to the sky, deep soil areas exclude basement car parks, services, swimming pools, tennis courts and impervious surfaces including car parks, driveways and roof areas.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "development",
+   "definition": "as defined under the Planning and Development Act 2005.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "development site",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "driveway",
+   "definition": "the portion of the paved vehicle access way between a car parking area and the property boundary, excluding any associated landscaping or pedestrian path on either side.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "dual aspect apartment",
+   "definition": "cross ventilating apartments which have at least two major external walls with openings facing in different directions including corner and cross-over apartments.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "dual key apartment",
+   "definition": "an apartment with a common internal corridor and lockable doors to sections within the apartment so that it is able to be separated into two independent units. For the purposes of assessment they are considered as two units.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "dwelling",
+   "definition": "a building or portion of a building being used, adapted, or designed or intended to be used for the purpose of human habitation on a permanent basis by a single person, a single family, or no more than six persons who do not comprise a single family.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "dwelling alignment",
+   "definition": "means the vertical external face of any building comprising solid building material, but excludes any projections such as balconies, eaves, porches and verandahs.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "effective lot area",
+   "definition": "that part of the lot that is capable of development and excludes any vehicle or pedestrian access legs and associated truncations.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "enclosed",
+   "definition": "an area bound on three or more sides by a permanent wall and covered in an impervious material.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "façade",
+   "definition": "the external face of a building, generally the principal face, facing a public street or space.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "facade"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "freehold scheme",
+   "definition": "has the meaning given by section 8(2) of the Strata Titles Act 1985.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "frontage",
+   "definition": "the width of a lot at the primary street setback line, provided that in the case of battleaxe or other irregularly shaped lots, it shall be as determined by the decision-maker.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "functional utilities",
+   "definition": "functional utilities associated with the dwelling to achieve efficient, comfortable and environmentally sustainable operating outcomes including, but not limited to air-conditioning, plant, clothes drying, hot water systems, antennas and satellite dishes, solar collectors, inverters and batteries, electric vehicle charging and rainwater tanks.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "garage",
+   "definition": "any roofed structure, other than a carport, designed to accommodate one or more motor vehicles.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "green façade / green wall",
+   "definition": "a wall with fixtures to facilitate climbing plants. It can also be a cladding structure with growing medium to facilitate plant growth.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "green façade",
+    "green facade",
+    "green wall"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "green roof",
+   "definition": "a roof surface that supports the growth of vegetation comprising of a waterproofing membrane, drainage layer, organic growing medium (soil) and vegetation. Green roofs can be classified as either extensive or intensive, depending on the depth of substrate used and the level of maintenance required. Intensive green roofs are generally greater than 300mm deep and are designed as accessible landscape spaces with pathways and other features. Extensive green roofs are generally less than 300mm deep and are generally not trafficable.",
+   "page": 5,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 5,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "green title lot",
+   "definition": "a lot owned in fee simple issued with a certificate of title under the Transfer of Land Act 1893, other than a strata lot or a survey-strata lot.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "greywater",
+   "definition": "wastewater from clothes washing machines, showers, bathtubs, hand washing, lavatories and sinks that are not used for disposal of chemical or chemical-biological ingredients. Excludes water from the toilet (which is regarded as 'blackwater'). Refer to Department of Health Guidelines for the Non-potable Uses of Recycled Water in Western Australia.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "grouped dwelling",
+   "definition": "a dwelling that is one of a group of two or more dwellings on the same lot such that no dwelling is placed wholly or partly vertically above or below another, except where special conditions of landscape or topography dictate otherwise, and includes a dwelling in a strata titles scheme with common property.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "habitable room/space",
+   "definition": "as defined by the NCC for a room/space used for normal domestic activities that includes:\n(i) a bedroom, living room, lounge room, music room, sitting room, television room, kitchen, scullery, dining room, sewing room, study, playroom, family room, sunroom, gymnasium, fully enclosed swimming pool or patio;\nbut excludes:\n(i) a bathroom, laundry, water closet, pantry, walk-in wardrobe, corridor, hallway, lobby, photographic darkroom, clothes drying room, verandah and unenclosed swimming pool or patio and other spaces of a specialised nature occupied neither frequently nor for extended periods.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "habitable room",
+    "habitable space"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "height, building",
+   "definition": "this is the distance between the point where the base of the wall meets the natural ground level and measured to the highest point of a wall or roof of a building vertically above that point excluding minor projections.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "building height"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "height, wall",
+   "definition": "this is the vertical distance between the point where the base of the wall meets the natural ground level at the boundary immediately adjacent to the wall and measured to the top of the wall or parapet.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "wall height"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "heritage-protected place",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "high-frequency route",
+   "definition": "a public transport route that runs a service at least every 15 minutes during weekday peak periods (7am to 9am and 5pm to 7pm).",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "highlight window",
+   "definition": "window with a sill at 1600mm above floor level, or higher.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "impervious area/surface/ material",
+   "definition": "surfaces that do not permit the penetration of rainwater into the ground and instead generates stormwater run-off, typically to drainage systems.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "impervious area",
+    "impervious surface",
+    "impervious material"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "incidental development",
+   "definition": "development which is associated with or attached to a dwelling and incidental to its main residential functions.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "internal floor area",
+   "definition": "in relation to a room or dwelling, the internal area measured within the finished surfaces of the walls, and includes the area occupied by any cupboard or other built-in furniture, fixture or fitting but excludes any garages.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "juliet balcony",
+   "definition": "a small balcony with little or no projection, generally ornamental or only large enough for one person standing.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "landscape / landscaping / landscaped",
+   "definition": "land developed with garden beds, shrubs and trees, or by the planting of lawns, and includes such features as rockeries, ornamental ponds, swimming pools, barbecue areas or playgrounds and any other such area approved of by the decision-maker as landscaped area.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "landscape",
+    "landscaping",
+    "landscaped"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "landscape character",
+   "definition": "the distinct and recognisable pattern of elements that occurs consistently in a particular type of landscape, and how this is perceived by people. It reflects particular combinations of geology, landform, soils, vegetation, land use and human settlement.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "laneway",
+   "definition": "a narrow local street type without a verge located along the rear and/or side property boundary, typically used in more dense residential areas when smaller lot layouts justify rear garaging, and where alternative vehicle access is needed for lots fronting busy streets or parks.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "leasehold scheme",
+   "definition": "has the meaning given by section 8(3) of the Strata Titles Act 1985.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "legibility",
+   "definition": "where the design of the urban form, including the local street and public open space networks provides a sense of direction and connection, giving clear signals regarding the spatial layout and geography of an area.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "lightwell",
+   "definition": "an opening to the sky, bound on four sides by building volume, with a height to width ratio of more than 2:1.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "livable housing",
+   "definition": "dwellings designed for accessibility and long-term adaptability. Livable Housing Design Guidelines (Livable Housing Australia) standards are applicable in relation to this Code.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "local character / local identity",
+   "definition": "the natural, cultural and historic characteristics of an area that are intrinsic to the locality, and which the local community relate to or as defined in the local planning framework. See also sense of place.",
+   "page": 6,
+   "see_also": [
+    "sense of place"
+   ],
+   "applies_to": [],
+   "aliases": [
+    "local character",
+    "local identity"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "local development plan",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "local planning framework",
+   "definition": "comprises all strategic, statutory and policy planning documents which collectively outline the planning for an area and development requirements for sites, of the decision-maker and generally include a scheme, local planning strategy (including any housing component), structure plans, local development plans and local planning policies.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "local planning policy",
+   "definition": "any policy prepared by a local government in accordance with the procedures set out in the local planning scheme.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "local planning scheme",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 6,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 6,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "local planning strategy",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015; a document which supports the preparation and review of a local planning scheme in accordance with Part 3 of the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "loft",
+   "definition": "a room or space within the roof space of a building.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "lot",
+   "definition": "for single houses, a lot as defined under the Planning and Development Act 2005, as amended. For multiple or grouped dwellings, the parent lot.",
+   "page": 7,
+   "see_also": [
+    "parent lot"
+   ],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "lot boundary",
+   "definition": "the boundary between a lot and any other parcel of land, excluding a street boundary.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "lot in a strata scheme",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "lot in a survey-strata scheme",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "major opening",
+   "definition": "a window, door or other opening in the exterior wall of a habitable room that provides external means of light or view for that room or space, but does not include an opening or openings that:\n(i) in aggregate do not exceed 1m² in any such wall, (provided that adjoining or contiguous windows at the junction of two walls forming an internal angle of 90 degrees or less shall be aggregated); or\n(ii) are glazed in an obscure material and are not able to be opened; or\n(iii) have a sill height not less than 1.6m above floor level.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "major rainfall event",
+   "definition": "events greater than a minor rainfall event and up to and including the 1 per cent annual exceedance probability (AEP) event (refer Department of Water and Environmental Regulation).",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "mansard roof",
+   "definition": "Where the upper level of the building is pitched and appears as an extension of the roof through the use of the same form and/or materials. Is counted as a storey where the vertical height is greater than 2.4 metres.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "merit assessment",
+   "definition": "specific design objectives for each element of R-Codes are to be met by all residential development subject to and are to be used in the preparation, submission and assessment for proposals for the purpose of determining their compliance with R-Codes. A proposal is required to demonstrate compliance with merit assessment criteria where it does not satisfy corresponding deemed exempt provisions.\nFor the purpose of the R-Codes, a reference to design principles in a planning instrument, other than State Planning Policy 7.0, is to be taken to be a reference to 'merit assessment' criteria.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "Second paragraph is printed in italics."
+  },
+  {
+   "term": "mezzanine",
+   "definition": "an intermediate floor between main floors of a building.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "mid-winter",
+   "definition": "21 June (winter solstice) when the sun is lowest in the sky.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "minor projection",
+   "definition": "(i) in relation to the height of a building: a chimney, vent pipe, aerial or other appurtenance of like scale;\n(ii) in relation to a wall: a rainwater pipe, vent pipe, eaves overhang, cornice or other moulding or decorative feature, provided that the projection does not exceed 0.75m measured horizontally.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "minor rainfall event",
+   "definition": "rainfall events greater than small rainfall events and less than major rainfall events (refer Department of Water and Environmental Regulation).",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "mixed use development",
+   "definition": "buildings that contain commercial and other non-residential uses in conjunction with residential dwellings in a multiple dwelling configuration.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "multiple dwelling",
+   "definition": "a dwelling in a group of more than one dwelling on a lot where any part of the plot ratio area of a dwelling is vertically above any part of the plot ratio area of any other but:\n(i) does not include a grouped dwelling; and\n(ii) includes any dwellings above the ground floor in a mixed use development.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "native vegetation",
+   "definition": "vegetation that has evolved or is endemic to a local area. These species are preferred as they are well-adapted to local soil and climate conditions, have lower water and fertiliser needs, and are often more resilient to pests and diseases.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "natural cross ventilation",
+   "definition": "natural ventilation which allows air to flow between positive pressure on the windward side of the building to the negative pressure on the leeward side of the building providing a greater degree of comfort and amenity for occupants. The connection between these windows must provide a clear, unobstructed air flow path. For an apartment to be considered cross ventilated, the majority of the primary living space and n-1 bedrooms (where n is the number of bedrooms) should be on a ventilation path.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "natural ground level",
+   "definition": "the levels on a site which precede the proposed development, excluding any site works unless approved by the decision-maker or established as part of subdivision of the land preceding development.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "natural ventilation",
+   "definition": "the movement of a sufficient volume of fresh air through a dwelling to refresh indoor air.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "ncc",
+   "definition": "National Construction Code, comprising the Building Code of Australia (BCA) and Plumbing Code of Australia (PCA).",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "non-habitable room/space",
+   "definition": "any room or space that is not defined as a habitable room or space in the NCC.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "non-habitable room",
+    "non-habitable space"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "open plan",
+   "definition": "dwelling layouts where spaces are not divided into discrete rooms but are open and connected to allow flexibility of use (typically living, dining, kitchen and study areas).",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "operable screens",
+   "definition": "louvres, sliding, folding or retractable elements on a building designed to provide shade, privacy, and protection from natural elements.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "operable walls",
+   "definition": "walls which can be moved, for example by sliding, folding, or pivoting, to allow for different room configurations or a balcony.",
+   "page": 7,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "outbuilding",
+   "definition": "an enclosed non-habitable structure that is detached from any dwelling and may include a detached garage.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "outdoor living area",
+   "definition": "the area external to a single house, grouped or multiple dwelling to be used in conjunction with that dwelling such that it is capable of active or passive use and is readily accessible from the dwelling.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "parapet",
+   "definition": "the portion of a wall protruding above a roof or terrace. Often taken to refer to the decorative element which establishes the street wall height of heritage buildings.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "parent lot",
+   "definition": "relating to multiple or grouped dwellings, the lot inclusive of common areas to which the strata titles scheme relates.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "passive surveillance",
+   "definition": "actual and perceived monitoring of public spaces by people as they go about their daily activities. Commonly referred to as 'eyes on the street'.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "patio",
+   "definition": "an unenclosed structure covered in an impervious material which may or may not be attached to a dwelling.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "pedestrian access leg",
+   "definition": "provides access from a public street to a dwelling where sole vehicular access is via a rear right-of-way. It can be in the form of a portion of the rear lot or as common property in the case of a strata title scheme.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "permeable surface/ pavement",
+   "definition": "surfaces that permit the penetration of rainwater.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "permeable surface",
+    "permeable pavement"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "Heading printed in sentence case ('Permeable surface/ pavement'), unlike every other A1 heading."
+  },
+  {
+   "term": "plot ratio",
+   "definition": "the ratio of the gross plot ratio area of buildings on a development site to the area of land in the site boundaries.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "plot ratio area",
+   "definition": "the gross total area of all floors of buildings on a development site, including the area of any internal and external walls but not including:\n(i) the areas of any lift shafts;\n(ii) stairs or stair landings common to two or more dwellings;\n(iii) machinery, air conditioning and equipment rooms;\n(iv) space that is wholly below natural ground level;\n(v) area used exclusively for the parking of wheeled vehicles at or below natural ground level;\n(vi) storerooms;\n(vii) lobbies, bin storage areas, passageways to bin storage areas or amenities areas common to more than one dwelling; and\n(viii) balconies, eaves, verandahs, courtyards and roof terraces.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "podium",
+   "definition": "the base of a building upon which taller (tower) elements are positioned.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "porch",
+   "definition": "a roofed open platform attached to the front of a dwelling.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "potable water",
+   "definition": "water which conforms to Australian Standards for drinking quality.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "precinct structure plan",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "primary garden area",
+   "definition": "an external ground floor area for single house and grouped dwellings set aside on a site for the exclusive use of the occupants of the dwelling to which it abuts. It may include (but is not limited to) landscaping, deep soil areas and trees, paved areas and patios with a floor level not greater than 0.5m above natural ground level.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "primary living space",
+   "definition": "the identified room(s) within a dwelling that is the focus of life and activity and usually the largest room. This area is connected with private open space and may include any of the following room types: living room, lounge room, family room, or an integrated open plan living area that has one of these room types together with a kitchen or dining area.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "primary street",
+   "definition": "unless otherwise designated by the local government, the sole or principal public road that provides access to the major entry (front door) to the dwelling or building.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "private open space",
+   "definition": "means outdoor space located at ground level or on a structure that is within private ownership and provided for the recreational use of residents of the dwelling to which it abuts and excludes car parking spaces and access ways. It includes primary garden areas, outdoor living areas, balconies, courtyards and terraces.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "public domain",
+   "definition": "places accessible for common use by the public, including both the natural and built environment. It often includes streets, parks, and public walkways.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "public open space",
+   "definition": "publicly accessible land set aside for the purpose of public enjoyment and protection of unique, environmental, social and cultural values for existing and future generations. It is vested in or under the control of a public authority.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "rainwater",
+   "definition": "water harvested directly from roof runoff from domestic or commercial buildings and captured in rainwater tanks.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "right-of-way",
+   "definition": "a strip of land such as a laneway, available either for use by the general public, or a restricted section of the community, and may be created by subdivision, specific transfer, or continued use over a period of years. They may be:\n(i) private, where the land is created in a plan of subdivision and available to landowners that are legally entitled; or\n(ii) public, where the land has been vested in the Crown.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "root protection area",
+   "definition": "an area at the base of a tree to be retained and protected and in which contain critical roots required for the survival of that tree or group of trees.",
+   "page": 8,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 8,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "rootable soil zone / space",
+   "definition": "areas beyond the primary deep soil area under adjacent pavements that are engineered and constructed to support tree root penetration. This is achieved by the use of structural soil and structural cells which are materials for creation of rootable soil zone beneath pavements and other structures. Structural soil involves the use of structural materials, such as rock, that interlock under specified compaction loads while leaving macro spaces that provide rootable soil zone for tree roots. Structural cells are similar but utilise a plastic cell structure to meet the required compaction and loading.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "rootable soil zone",
+    "rootable soil space"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "scheme",
+   "definition": "the local planning scheme that specifies zoning and development standards gazetted pursuant to the Planning and Development Act 2005.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "scheme plan",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985, and for a strata titles scheme means the strata plan or survey-strata plan registered, or proposed to be registered, for the strata titles scheme as a scheme document.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "screening/ screened",
+   "definition": "permanently fixed external perforated panels or trellises composed of solid or obscured translucent panels.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "screening",
+    "screened"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "secondary street",
+   "definition": "in the case of a site that has access from more than one public road, a road that is not the primary street.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "sense of place",
+   "definition": "the essential memorable and recognisable characteristics of an area.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "service area",
+   "definition": "areas designated for building services installed to make the building functional, comfortable, efficient and safe.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "service utilities",
+   "definition": "supply and reticulation of essential services including, but not limited to power, water, gas, wastewater, fire services, letterboxes and telecommunications.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "setback",
+   "definition": "the horizontal distance between a wall at any point and an adjacent lot boundary, measured at right angles (90 degrees) to the boundary.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "sightlines",
+   "definition": "lines of clear physically uninterrupted sight.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "significant existing tree",
+   "definition": "an existing tree that meets the following criteria:\n(i) healthy specimens with ongoing viability; and\n(ii) species is not included on a State or local area weed register; and\n(iii) height of at least 4m; and/or\n(iv) trunk diameter of at least 160mm, measured 1m from the ground; and/or\n(v) average canopy diameter of at least 4m; or\n(vi) as specified with the local planning framework.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "verify": true,
+   "note": "Criteria joined by 'and', 'and', 'and/or', 'and/or', 'or': the image is legible but the connectives do not resolve which criteria are cumulative and which alternative (e.g. whether the LPF limb replaces all others)."
+  },
+  {
+   "term": "single aspect",
+   "definition": "a dwelling or room with openings facing primarily in one direction from a single major external wall.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "single house",
+   "definition": "a dwelling standing wholly on its own green title or survey-strata lot, together with any easement over adjoining land for support of a wall or for access or services and excludes dwellings on titles with areas held in common property.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "site",
+   "definition": "(i) In the case of a single house, the green title or survey-strata lot on which it stands.\n(ii) In the case of a grouped dwelling, the area occupied by the dwelling together with any area allocated (whether by way of strata title scheme or otherwise) for the exclusive use or benefit of that dwelling.\n(iii) In the case of a multiple dwelling or apartment development, the lot (or parent lot where the lot is subdivided under strata scheme) on which the dwellings stand.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "site area",
+   "definition": "the area of land required for the construction of a dwelling to satisfy the requirements of the R-Codes.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "site cover",
+   "definition": "the area occupied by any building, including upper storeys or balconies projecting beyond the ground floor building alignment, or other structures roofed with impervious material, but excludes:\n(i) uncovered driveways and parking spaces;\n(ii) eaves and pergolas; and\n(iii) a basement that is constructed wholly underground.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "site design response",
+   "definition": "illustrated design strategy based on a comprehensive analysis of a site. The site design response is carried out early in a design process to optimize the relationship between conflicting contextual design requirements.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "site responsive",
+   "definition": "deriving from analysis of the physical characteristics of an area (such as landform, views, prevailing breezes, environmental features) and to manage constraints and opportunities to create optimum design outcomes.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "sloping site",
+   "definition": "a site with a slope of 15 per cent or greater.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "small dwelling",
+   "definition": "a single house or grouped dwelling with an internal floor area no greater that 70m²; or a multiple dwelling with an internal floor area no greater than 60m².",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "Printed 'no greater that 70m²'; kept verbatim."
+  },
+  {
+   "term": "small rainfall event",
+   "definition": "the first 15mm of a rainfall event (refer Department of Water and Environmental Regulation).",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "soffit",
+   "definition": "the under surface of a balcony or other projecting building element.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "soft landscape",
+   "definition": "any landscaped area with a minimum soil depth of 300mm that contains in-ground planting and excludes removable planter boxes/pots and permeable paving areas. Turf is included.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "solar access",
+   "definition": "is the ability of a building to continue to receive direct sunlight without obstruction from other buildings or impediments, not including trees.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "solar collectors",
+   "definition": "solar collecting components of the following: thermal heating systems, photovoltaic systems and skylights.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "source of overlooking",
+   "definition": "major openings and active habitable space with a floor level of more than 0.5m above natural ground level.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "stack effect ventilation or solar chimney",
+   "definition": "air convection resulting from hot air being pushed up and out by colder denser air which is drawn in at a lower level.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "stack effect ventilation",
+    "solar chimney"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "standard structure plan",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 9,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "storage",
+   "definition": "dedicated, secured and conveniently located areas for the storage of large or bulky items, but excludes built-in furniture and internal storage located in areas such as kitchens, laundries, bathrooms and bedrooms.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "storage (inside apartments)",
+   "definition": "built-in furniture (fixed) such as linen cupboards, shelves, media cabinets, study nooks excluding storage located in kitchens, bathrooms and bedrooms.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "storage (external to apartments)",
+   "definition": "dedicated, secured and conveniently located areas for the storage of large or bulky items. This is to be in addition to any internal apartment storage in kitchens, bathrooms and bedrooms.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "storey",
+   "definition": "the portion of a building which is situated between the top of any floor and the top of the floor next above it and if there is no floor above it, that portion between the top of the floor and the ceiling above it but does not include:\n(i) a basement;\n(ii) a space that contains only a lift shaft, stairway or meter room;\n(iii) roof top terrace with no permanent impervious roof structure;\n(iv) a mezzanine; or\n(v) a loft.\nDouble height floors greater than 5m floor to ceiling are counted as two floors.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "stormwater",
+   "definition": "urban surface water runoff from rainfall events, consisting of rainfall runoff and any material (soluble and insoluble) mobilised in its path of flow.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "strata lot",
+   "definition": "refer to definition for a lot in a strata scheme.",
+   "page": 10,
+   "see_also": [
+    "lot in a strata scheme"
+   ],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "strata plan",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "strata scheme",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985 and may include freehold or leasehold schemes.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "strata titles scheme",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "street",
+   "definition": "any public road, communal street, private street, laneway, right-of-way or other shared access way that provides the principal frontage to a dwelling but does not include an access leg to a single battleaxe lot.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "note": "Printed 'right- of-way' (stray space); cleaned to 'right-of-way'."
+  },
+  {
+   "term": "street boundary",
+   "definition": "the boundary between the land comprising a street and the lands that abuts thereon.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "streetscape",
+   "definition": "the visible components in a street between the facing buildings, including the form of the buildings, garages, setbacks, fencing, driveways, utilities, street surfaces, street trees and street furniture such as lighting, signs, barriers and bus shelters.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "street setback",
+   "definition": "the horizontal distance between the street boundary and a building, measured at right angles (90 degrees) to the street boundary.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "street setback area",
+   "definition": "the area between the street boundary and a building (excluding retaining walls) up to the street setback line.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "street setback line",
+   "definition": "the minimum distance between the street boundary and a building in accordance with Part B, Table B and Part C, Table 3.3a.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   },
+   "verify": true,
+   "note": "Cross-refers to 'Part B, Table B and Part C, Table 3.3a', which are not the structure of the draft 2026 Codes (chapters 1-4); target tables cannot be identified from the image."
+  },
+  {
+   "term": "structure plan",
+   "definition": "as defined under the Planning and Development (Local Planning Schemes) Regulations 2015.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "studio",
+   "definition": "a dwelling consisting of one habitable room that combines kitchen, living and sleeping space.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "sunlight",
+   "definition": "direct beam radiation from the sun.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "survey-strata lot",
+   "definition": "refer to definition for lot in a survey-strata scheme.",
+   "page": 10,
+   "see_also": [
+    "lot in a survey-strata scheme"
+   ],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "survey-strata plan",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "survey-strata scheme",
+   "definition": "has the meaning given by section 3 of the Strata Titles Act 1985, and may include freehold or leasehold schemes.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "sustainability/sustainable",
+   "definition": "meeting the needs of current and future generations through the integration of environmental protection, social advancement and economic prosperity.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "sustainability",
+    "sustainable"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "terrace",
+   "definition": "an outdoor area, usually paved and unroofed, that is connected to a dwelling and accessible from at least one room or used in conjunction with residential dwellings in a multiple dwelling configuration. May be at-grade or on a structure such as a podium or a roof.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "tree management plan",
+   "definition": "a plan that sets out the tree protection measures required prior to, during, and post construction.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "trickle vent",
+   "definition": "a very small permanent opening in a window or a wall that allows small amounts of ventilation into spaces intended to be naturally ventilated when major openings (windows, doors, etc) are otherwise closed.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "unenclosed",
+   "definition": "an area bounded on no more than two sides by a permanent wall and covered in a water impervious material.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "universally accessible/ universal access",
+   "definition": "features to enable use and access by people with disability.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "aliases": [
+    "universally accessible",
+    "universal access"
+   ],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "universal design",
+   "definition": "the design of products and environments that are inherently accessible to all, including older people and people with disability.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "utilities",
+   "definition": "external fixtures, equipment, plant or other structures which are necessary for a dwelling to achieve efficient, comfortable and environmentally sustainable operating outcomes and includes service and functional utilities or other fixtures as necessary for the residential use of the buildings on site. It excludes essential plumbing vents above the roof line and external roof-water down pipes.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "verandah",
+   "definition": "a roofed open platform attached to a dwelling.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "visually permeable",
+   "definition": "in reference to a wall, gate, door, screen or fence that the vertical surface, when viewed directly from the street or other public space, has:\n(i) continuous vertical or horizontal gaps of 50mm or greater width occupying not less than one third of the total surface area;\n(ii) continuous vertical or horizontal gaps less than 50mm in width, occupying at least one half of the total surface area in aggregate; or\n(iii) a surface offering equal or lesser obstruction to view.",
+   "page": 10,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "walkable catchment",
+   "definition": "the actual area served within a walking distance along the street/footpath network from a public transport stop/station entrance or an activity centre.",
+   "page": 11,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "walkway",
+   "definition": "an external circulation area, generally single loaded, which provides access to individual apartments along its length.",
+   "page": 11,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "wall",
+   "definition": "the vertical external face of a constructed building comprising solid building material and including enclosures to verandahs and balconies.",
+   "page": 11,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "wapc",
+   "definition": "Western Australian Planning Commission.",
+   "page": 11,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "wintergarden",
+   "definition": "an enclosed balcony, typically glazed and can be used to minimise noise impacts along busy roads, railway lines and from aircraft noise.",
+   "page": 11,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  },
+  {
+   "term": "winter solar gain",
+   "definition": "the heating of the building interior due to sunlight penetration through windows or heating of the building mass.",
+   "page": 11,
+   "see_also": [],
+   "applies_to": [],
+   "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+   }
+  }
+ ]
+}

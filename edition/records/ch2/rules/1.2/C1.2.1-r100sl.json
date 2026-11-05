@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.2.1-r100sl",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Soft landscaping for lots coded R100-SL: 10% of the site (Table 2.10a)",
+  "text": "Table 2.10a Modified provisions for housing on lots less than 100m2. 1.2 Trees and landscaping | C1.2.1 C1.2.2 C1.2.4 | Landscaping - minimum of 10% of the site to be provided as soft landscaping, with a minimum dimension of 1m; and - no minimum landscaping of the street setback area. Trees - no minimum tree provisions",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.soft_area_m2",
+    "site.area_m2",
+    "landscape.soft_min_dim_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "percentage-of",
+        "fact": "landscape.soft_area_m2",
+        "of": "site.area_m2",
+        "op": ">=",
+        "value": 10
+      },
+      {
+        "type": "threshold",
+        "fact": "landscape.soft_min_dim_m",
+        "op": ">=",
+        "value": 1
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+  "defined_terms": [
+    "soft landscape"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.1",
+      "relation": "unclear",
+      "note": "current R100-SL modification not confirmed from the register"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 25,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch2-008",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear (10%, 1m)."
+  },
+  "notes": "Table 2.10a: minimum 10% of the site as soft landscaping with a 1 m minimum dimension; no minimum landscaping of the street setback area (C1.2.2 excluded by coding) and no minimum tree provisions (C1.2.3 rules excluded by coding). Table 2.10a lists C1.2.4 in its clauses column; whether the tree-retention reduction is disapplied is unclear (moot at 10%). Two-column extract."
+}

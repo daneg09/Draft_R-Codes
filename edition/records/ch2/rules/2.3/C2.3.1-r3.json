@@ -1,0 +1,66 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.3.1-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Maximum garage and carport parking for an ancillary dwelling, R50 and above, Perth and Peel (1)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house",
+    "ancillary_dwelling"
+  ],
+  "coding": [
+    "R50+"
+  ],
+  "region": "perth-peel",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.ancillary_dwelling",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.ancillary_dwelling",
+    "parking.ancillary_garage_carport_spaces"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.ancillary_garage_carport_spaces",
+    "op": "<=",
+    "value": 1
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+  "defined_terms": [
+    "ancillary dwelling",
+    "garage",
+    "carport"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 18,
+    "extract_line": 549,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch2-022",
+  "verify": false,
+  "notes": "Uses proposed fact parking.ancillary_garage_carport_spaces (FACTS.md has only parking.ancillary_spaces).",
+  "text": "Applies to development within the Perth and Peel regions only. C2.3.1 Car parking is provided on site in accordance with Table 2.3a. Table 2.3a Car parking provisions for development within the Perth and Peel regions, Maximum garage and carport parking for R50 and above (per dwelling)(1), Location A and Location B: Ancillary dwelling 1. (1) No maximum garage and carport parking applies to R40 and below.",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

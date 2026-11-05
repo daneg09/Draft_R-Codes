@@ -1,0 +1,122 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.2.3-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "One small tree per dwelling elsewhere on the lot (Table 1.2a)",
+  "text": "C1.2.3 A minimum number of trees to be planted in accordance with Tables 1.2a and provided with the required deep soil area per tree in accordance with Table 1.2b. Table 1.2a Minimum tree provisions. Single houses: Elsewhere on lot(1): 1 small tree (per dwelling). 1 Can also be planted in primary street setback area if adequate room is available. Trees required within the street setback area are in addition to trees required per dwelling and where providing a secondary private open space. Tree provisions exclude ancillary dwellings.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.trees_elsewhere",
+    "landscape.trees_in_street_setback",
+    "site.frontage_m",
+    "building.primary_street_setback_m"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "landscape.trees_elsewhere",
+    "op": ">=",
+    "value": 1
+  },
+  "exceptions": [
+    {
+      "label": "per-dwelling tree planted in the primary street setback area (Table 1.2a note 1); street setback trees also required",
+      "condition": {
+        "type": "threshold",
+        "fact": "building.primary_street_setback_m",
+        "op": ">=",
+        "value": 1.5
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "landscape.trees_in_street_setback + landscape.trees_elsewhere - 1",
+          "op": ">=",
+          "value": {
+            "table": "table-1.2a"
+          }
+        }
+      },
+      "source": "Table 1.2a note 1",
+      "inputs": [
+        "landscape.trees_in_street_setback",
+        "site.frontage_m",
+        "building.primary_street_setback_m"
+      ],
+      "verify": true
+    },
+    {
+      "label": "per-dwelling tree planted in the primary street setback area (Table 1.2a note 1); no street setback trees required",
+      "condition": {
+        "type": "threshold",
+        "fact": "building.primary_street_setback_m",
+        "op": "<",
+        "value": 1.5
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "landscape.trees_in_street_setback + landscape.trees_elsewhere",
+          "op": ">=",
+          "value": 1
+        }
+      },
+      "source": "Table 1.2a note 1",
+      "inputs": [
+        "landscape.trees_in_street_setback",
+        "building.primary_street_setback_m"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+  "defined_terms": [
+    "small tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.4",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.2a",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.2",
+      "relation": "tightened",
+      "note": "R2-R40: one tree -> at least two small trees where a street tree is required"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 11,
+    "table": "Table 1.2a"
+  },
+  "register_ref": "ch2-010",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 1.2a 'Where the primary street setback is 1.5m or greater' does not say whether this is the setback provided or the setback required by Table 3.3a; the values (1 tree under 20m frontage, 1 per 10m of frontage rounded down at 20m or more, 1 per dwelling elsewhere) all check. The note-1 exceptions branch on the same 1.5m setback test."
+  },
+  "notes": "Table 1.2a 'Elsewhere on lot: 1 small tree (per dwelling)'. Note 1 lets it be planted in the primary street setback area if room allows, so the exceptions test total trees against the street requirement plus one. The C1.1.4 additional tree is checked by the C1.1.3 exception, not here."
+}

@@ -1,0 +1,43 @@
+{
+  "id": "table-2.1b",
+  "title": "Table 2.1b Storage provisions (minimum storage area)",
+  "keys": [
+    "proposal.bedrooms"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 3,
+      "note": "studio / 1 bedroom dwelling"
+    },
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "min": 2
+        }
+      },
+      "value": 4,
+      "note": "2+ bedroom dwelling"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 15,
+    "extract_line": 462,
+    "table": "Table 2.1b"
+  },
+  "register_ref": "ch3-021",
+  "verify": false,
+  "notes": "Location: behind the primary street setback. Minimum dimension 1 m (length and width); minimum height 2 m; both constant, encoded in rule C2.1.2. Chapter 3 applies storage to grouped dwellings at all codes (no density heading on p15).",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

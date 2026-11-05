@@ -1,0 +1,44 @@
+{
+  "id": "table-3.8a",
+  "title": "Table 3.8a Maximum overshadowing: adjoining property (percentage of dwelling site area)",
+  "keys": [
+    "adjoining.south.r_code"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "adjoining.south.r_code": "R25-"
+      },
+      "value": 25,
+      "note": "R25 and lower"
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R30-R40"
+      },
+      "value": 35
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R50-R60"
+      },
+      "value": 50
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 42,
+    "table": "Table 3.8a"
+  },
+  "register_ref": "C4P1-125",
+  "verify": false,
+  "notes": "from: ch3 table-3.9a (renumbered 3.8a); values checked against Chapter 4 Part 1 p42: R25 and lower 25%, R30-R40 35%, R50-R60 50%. Chapter 4 Part 1 prints only these three rows (no R80+ row, unlike Chapter 3), so an adjoining lot coded R80 or above, or a named code, has no row (NOT_APPLICABLE). Site area is the ground surface at NGL without regard to buildings. Footnote 1: where the development adjoins a grouped dwelling development the limit applies to each grouped dwelling site area excluding common property (the footnote cites 'Figure 3.8.d'; the page header cites 'Table 3.9a', both mis-numbered).",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Three rows only on the page; no R80+ row. Footnote cites 'Figure 3.8.d'; Figure 3.8b labels cite 'Table 3.9a' (both mis-numbered)."
+  }
+}

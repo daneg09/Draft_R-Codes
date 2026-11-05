@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Side setback at least the Table 2.1 minimum",
+  "text": "A 2.4.1 Development complies with the side and rear setbacks set out in Table 2.1, except where: (a) modified by the local planning framework, in which case development complies with the side and rear setbacks set out in the applicable local planning instrument AND/OR (b) a greater setback is required to address 3.5 Visual privacy.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.side_setback_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.1-side-setback",
+    "fact": "building.side_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.4",
+  "defined_terms": [
+    "setback",
+    "boundary wall"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.4.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "tightened",
+      "note": "R80 3 to 4 m; R100 and R160 3 m (3.5/4.0 m average over 16 m) to flat 4 m; R-AC4/LR1 nil to 4 m; MR1 4 m new; MR2, HR nil unchanged; average-side-setback row deleted"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 18,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-071; C4P2-037..C4P2-045",
+  "verify": true,
+  "notes": "verify: building.side_setback_m is read as the least side setback of the building excluding any boundary wall assessed under A2.4.1-r2 and -r3 (FACTS-PROPOSED-part2.md). The draft does not say whether a Table 2.1 boundary wall is an exception to the 4 m side setback for LR1 and MR1 (A2.4.1 silent; C4P2-029, C4P2-030). The R80, R100 and R160 increases are omitted from the Table of Changes (C4P2-037 to C4P2-039). Limb (b), a greater setback for visual privacy, is tested by the 3.5 rules, not here. Table 2.1 note 5: boundary setbacks are also determined by 2.7 separation, 3.5 visual privacy and NCC building separation. The 'except where modified by the local planning framework' limb is applied through the instruments layer (Chapter 1B 3.5, Table 3.5A); this rule encodes the Table 2.1 default.",
+  "verified": {
+    "method": "page-image",
+    "page": "13, 18",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "neither A 2.4.1 (p18) nor Table 2.1 (p13) says whether a boundary wall within the Table 2.1 boundary wall limits is an exception to the 4 m side setback (R80, LR1, R100, R160, MR1)."
+  }
+}

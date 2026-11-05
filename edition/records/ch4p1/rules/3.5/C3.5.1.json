@@ -1,0 +1,76 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.5.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.5",
+  "element_title": "Site works and retaining walls",
+  "title": "Site works forward of the street setback line",
+  "text": "Retaining walls, fill and excavation forward of the street setback line, not more than 0.5m above or below the natural ground level, except where necessary to provide for pedestrian universal access and/or vehicle access, drainage works, or natural light to a dwelling.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "site_works.forward_of_setback_for_access_drainage_light",
+    "site_works.forward_of_setback_max_change_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "site_works.forward_of_setback_max_change_m",
+    "op": "<=",
+    "value": 0.5
+  },
+  "exceptions": [
+    {
+      "label": "necessary for universal or vehicle access, drainage or natural light",
+      "condition": {
+        "type": "boolean",
+        "fact": "site_works.forward_of_setback_for_access_drainage_light",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "site_works.forward_of_setback_for_access_drainage_light"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.5",
+  "defined_terms": [
+    "street setback line",
+    "natural ground level",
+    "retaining wall",
+    "fill"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.5.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.7-C7.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 36
+  },
+  "register_ref": "C4P1-099",
+  "verify": false,
+  "notes": "from: ch3 C3.5.1 (unchanged). The fact is the greater of fill above and excavation below NGL forward of the street setback line. Exception covers pedestrian universal access, vehicle access, drainage works or natural light.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

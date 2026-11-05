@@ -1,0 +1,79 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "1 m x 1 m sightline truncation either side of a ROW or communal street driveway",
+  "text": "Walls, fences and other structures truncated or reduced to no higher than 0.75m within a 1m x 1m sightline truncation on either side of a driveway where vehicle access is taken from a right-of-way or communal street (refer Figure 3.7f).",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "vehicle access from a right-of-way or communal street",
+      "parts": [
+        {
+          "type": "boolean",
+          "fact": "site.access_from_rear_row",
+          "expected": true
+        },
+        {
+          "type": "threshold",
+          "fact": "parking.access.street_type",
+          "op": "==",
+          "value": "communal_street"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "parking.access.street_type",
+    "parking.sightlines.row_truncation_1m",
+    "site.access_from_rear_row"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.sightlines.row_truncation_1m",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "driveway",
+    "right-of-way",
+    "communal street"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "current code has only the general 1.5 m truncation"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 40,
+    "figure": "Figure 3.7f"
+  },
+  "register_ref": "C4P1-116",
+  "verify": true,
+  "notes": "from: ch3 C3.7.9 (unchanged). Applies where vehicle access is taken from a right-of-way or communal street. parking.sightlines.row_truncation_1m is read as the truncation either side of the driveway at the ROW or communal street; site.access_from_rear_row stands for any ROW access.",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "0.75m and 1m x 1m confirmed. The page triggers on access taken from any right-of-way or communal street; the condition uses site.access_from_rear_row, so a side ROW access is missed (parking.access.street_type == row would match the page)."
+  }
+}

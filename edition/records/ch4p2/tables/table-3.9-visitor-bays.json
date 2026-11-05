@@ -1,0 +1,32 @@
+{
+  "id": "table-3.9-visitor-bays",
+  "title": "Table 3.9 visitor car parking: required bays for the total number of dwellings, by location",
+  "keys": [
+    "site.location"
+  ],
+  "unit": "bays (expression over proposal.dwelling_count)",
+  "rows": [
+    {
+      "match": {
+        "site.location": "A"
+      },
+      "value": "round(0.1 * proposal.dwelling_count + 0.4999)",
+      "note": "Location A: 0.1 bays per dwelling"
+    },
+    {
+      "match": {
+        "site.location": "B"
+      },
+      "value": "round(0.15 * proposal.dwelling_count + 0.4999)",
+      "note": "Location B: 0.15 bays per dwelling"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-101",
+  "verify": false,
+  "notes": "Used as the threshold of A3.9.2-r1 (formula evaluator, value {\"table\": \"table-3.9-visitor-bays\"}). Each row value is an arithmetic expression the formula evaluator evaluates against the facts, so the ratio is applied to the total number of dwellings and rounded up to the next whole number ('+ 0.4999' is a ceiling for these ratios). No default: a missing site.location gives CANNOT_TELL. A value other than A or B matches no row (no provision); the formula evaluator does not yet map a null threshold to NOT_APPLICABLE (core/evaluators.py ev_formula), so intake should reject such a value against FACTS.md (A / B)."
+}

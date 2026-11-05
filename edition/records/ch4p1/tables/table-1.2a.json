@@ -1,0 +1,51 @@
+{
+  "id": "table-1.2a",
+  "title": "Table 1.2a Minimum tree provisions by lot size (apartments): reference",
+  "keys": [
+    "site.area_m2"
+  ],
+  "rows": [
+    {
+      "match": {
+        "site.area_m2": {
+          "max": 699.99
+        }
+      },
+      "value": "1 medium tree and 2 small trees",
+      "note": "less than 700 m2"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 700,
+          "max": 1000
+        }
+      },
+      "value": "2 medium trees or 1 large tree and 1 small tree",
+      "note": "700 m2 - 1,000 m2"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 1000.01
+        }
+      },
+      "value": "2 medium trees or 1 large tree and 1 small tree PLUS 1 medium tree per 400 m2 in excess of 1,000 m2 or part thereof",
+      "note": "greater than 1,000 m2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 10,
+    "table": "Table 1.2a"
+  },
+  "register_ref": "C4P1-011",
+  "verify": false,
+  "notes": "Reference transcription (values are text; the rules C1.2.4, C1.2.4-r1 and C1.2.4-r2 carry the counts as literals with exact boundary conditions). Lot size read as site.area_m2 of the development lot. Same as current Part C Table 1.2a for multiple dwellings; replaces the Part B 2/3/4-tree rule at R10-R25.",
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

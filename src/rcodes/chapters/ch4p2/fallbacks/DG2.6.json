@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG2.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.6",
+  "element_title": "Building depth",
+  "title": "Building depth Design Guidance",
+  "text": "DG 2.6.1 Where greater building depth is proposed, demonstrate that indicative layouts achieve acceptable natural ventilation and daylighting requirements. This may require additional building articulation. Greater building depths may be possible where higher ceiling heights are provided. DG 2.6.2 For mixed use development, align building depth to the likely future uses. For example, transition deeper commercial or retail podium levels to a narrower residential tower above. DG 2.6.3 Side and rear setbacks should anticipate that neighbouring sites may also be redeveloped to a similar height, so building separation is adequate for a future context, not just the current context.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.6",
+      "relation": "restructured",
+      "note": "Volume 2 planning guidance; PG 2.6.7 'set the depth control in metres' not carried"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 21
+  },
+  "register_ref": "C4P2-073",
+  "verify": false,
+  "notes": "DG 2.6.3 concerns setbacks and separation although it sits under building depth.",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

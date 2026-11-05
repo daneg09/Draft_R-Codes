@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.4.3-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.4",
+  "element_title": "Waste management",
+  "title": "Waste management plan for five or more grouped dwellings (Note)",
+  "text": "Note: Where five or more grouped dwellings are proposed, a waste management plan to the satisfaction of the decision-maker, is to be provided.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">=",
+      "value": 5
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count"
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.4",
+  "defined_terms": [
+    "decision-maker"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.4.4",
+      "relation": "restructured",
+      "note": "waste management plan DTC for 5+ grouped dwellings reduced to a Note (register ch3-033)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 21,
+    "extract_line": 673
+  },
+  "register_ref": "ch3-033",
+  "verify": true,
+  "notes": "New in Chapter 3. Printed as a Note in the deemed exempt column after C2.4.3, not a numbered clause; 'to the satisfaction of the decision-maker' needs a planner, so judgment. verify: whether a Note binds as a deemed exempt provision.",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording and the five-dwelling trigger match p21. Ambiguous on the page: printed as an unnumbered italic Note in the deemed exempt column below C2.4.3, so whether it binds as a deemed exempt provision is not stated."
+  }
+}

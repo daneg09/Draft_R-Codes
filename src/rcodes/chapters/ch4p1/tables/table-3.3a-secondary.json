@@ -1,0 +1,50 @@
+{
+  "id": "table-3.3a-secondary",
+  "title": "Table 3.3a Minimum setback of buildings from the street: secondary street",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R35"
+      },
+      "value": 1.5
+    },
+    {
+      "match": {
+        "site.r_code": "R40-R60"
+      },
+      "value": 1,
+      "note": "R40 and R50-R60 share the 1 m cell"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P1-076",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Merged cells read directly on p29 and p7: 1.5m spans R15-25 and R30-35; 1m spans R40 and R50-60."
+  },
+  "notes": "Copied from Chapter 3 and checked against p29 and Table 4A p7. Four values sit in merged cells across six columns in the extract; spans per register C4P1-076."
+}

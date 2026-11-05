@@ -1,0 +1,3037 @@
+[
+  {
+    "title": "R20 two-storey apartment development meeting every 3.1-3.4 provision",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#r1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)#r1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(ii)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.3",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear-r17.5",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.2",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r20-r25",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r20-r25",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4(i)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)#r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(ii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.3": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear-r17.5": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r20-r25": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r20-r25": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4(i)": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 three-storey apartment development failing every 3.1-3.4 provision",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#r1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)#r1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(ii)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.3",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.2",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r20-r25",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r20-r25",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4(i)"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 270,
+        "total_height_m": 11,
+        "max_wall_height_m": 7.5,
+        "primary_street_setback_m": 5.0,
+        "primary_street_projection_m": 1.0,
+        "primary_street_setback_reduced_portion_m": 3.5,
+        "primary_street_reduced_portion_width_m": 6,
+        "porch_projection_m": 3.5,
+        "side_setback_walls_to_3_5m_m": 0.8,
+        "side_setback_walls_3_6_to_7m_m": 1.2,
+        "side_projection_m": 1.0,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 16,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.8,
+          "max_length_m": 12,
+          "max_pct_of_boundary": 40,
+          "behind_street_setback": false,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "side_setback_walls_over_7_1m_m": 1.5,
+        "upper_storey_wall_over_14m_setback_m": 2,
+        "upper_storey_wall_has_3x3_separation": false,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 4.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.1.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)#r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(ii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.3": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1(i)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.2": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r20-r25": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r20-r25": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4(i)": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 side setback and boundary wall height short; exception facts missing",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 0.8,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 4.0,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "CANNOT_TELL",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "site.adjoining_pedestrian_access_way_width_m",
+        "building.boundary_walls.adjoining_wall_exists"
+      ]
+    }
+  },
+  {
+    "title": "R20 side setback rescued by a 1 m pedestrian access way; boundary wall height abuts an existing wall",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 1.0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 0.8,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 4.0,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": true
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "adjoining pedestrian access way (C3.4.1(ii))",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "abuts an existing or simultaneously constructed wall of similar or greater dimension (C3.4.5)"
+      }
+    }
+  },
+  {
+    "title": "R20 side setback 0.5 m with a 6 m access way: reduction capped at 2 m so 2.5 m meets 1 m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 6.0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 0.5,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "adjoining pedestrian access way (C3.4.1(ii))"
+      }
+    }
+  },
+  {
+    "title": "R20 upper storey wall 16 m with the remainder set back 3 m; 9 m boundary wall at 40% of boundary",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.2",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r20-r25"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 16,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 9,
+          "max_pct_of_boundary": 40,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "upper_storey_wall_over_14m_setback_m": 3.0,
+        "upper_storey_wall_has_3x3_separation": false,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r20-r25": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 upper storey wall with a 3 m x 3 m separation; boundary patio at every Table 3.4b limit",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.2",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 16,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": true,
+          "length_m": 10,
+          "post_height_m": 3,
+          "ridge_height_m": 4.2,
+          "post_size_mm": 450
+        },
+        "upper_storey_wall_over_14m_setback_m": 2.0,
+        "upper_storey_wall_has_3x3_separation": true,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.2": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 boundary patio 11 m long fails Table 3.4b",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": true,
+          "length_m": 11,
+          "post_height_m": 3,
+          "ridge_height_m": 4.2,
+          "post_size_mm": 450
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.3": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R12.5 apartment development: one 9 m boundary wall; laneway setback 2 m (as per secondary street); rear 3 m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-row",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r10-r17.5",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r10-r17.5",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R12.5",
+        "area_m2": 800,
+        "frontage_m": 20,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 400,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 7.5,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 5.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.5,
+          "max_length_m": 9,
+          "max_pct_of_boundary": 25,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "row_setback_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_row_m": 2.0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.1.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-row": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r10-r17.5": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r10-r17.5": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R12.5 apartment development: two boundary walls, 10 m long; laneway setback 1.5 m; rear 2.5 m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-row",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r10-r17.5",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r10-r17.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R12.5",
+        "area_m2": 800,
+        "frontage_m": 20,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 400,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 7.5,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 5.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 2.5,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 2,
+          "max_height_m": 3.5,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 25,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "row_setback_m": 1.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_row_m": 1.5
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-row": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r10-r17.5": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r10-r17.5": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R12.5 rear setback 1.5 m beside a 3 m access way: 1.5 + 1.5 = 3 m meets",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R12.5",
+        "area_m2": 800,
+        "frontage_m": 20,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 3.0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 400,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 7.5,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 5.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 1.5,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.5,
+          "max_length_m": 9,
+          "max_pct_of_boundary": 25,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "row_setback_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_row_m": 2.0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear": "adjoining pedestrian access way (C3.4.1(ii))"
+      }
+    }
+  },
+  {
+    "title": "R30 narrow laneway lot: two boundary walls at 75% excluding adjoining POS; garage and carport 0.5 m to the laneway",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-row",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-row",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40-narrow",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r30-r40-narrow",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear-r17.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 240,
+        "frontage_m": 8.0,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": true,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 160,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 4.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 3.0,
+        "primary_street_reduced_portion_width_m": 4.0,
+        "porch_projection_m": 2.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 2,
+          "max_height_m": 3.5,
+          "max_length_m": 15,
+          "max_pct_of_boundary": 60,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false,
+          "excl_adjoining_pos_pct": 75
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "row_setback_m": 0.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 20,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_row_m": 0.5
+        },
+        "carport": {
+          "present": true,
+          "setback_row_m": 0.5
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.1.1": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-row": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-row": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40-narrow": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r30-r40-narrow": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear-r17.5": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "R30 narrow laneway lot: 85% boundary wall on three boundaries; carport 0.3 m to the laneway",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-row",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40-narrow",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r30-r40-narrow"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 240,
+        "frontage_m": 8.0,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": true,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 160,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 4.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 3.0,
+        "primary_street_reduced_portion_width_m": 4.0,
+        "porch_projection_m": 2.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.5,
+          "max_length_m": 15,
+          "max_pct_of_boundary": 60,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false,
+          "excl_adjoining_pos_pct": 85
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "row_setback_m": 0.3,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 20,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_row_m": 0.5
+        },
+        "carport": {
+          "present": true,
+          "setback_row_m": 0.3
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-row": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40-narrow": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r30-r40-narrow": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 standard lot: boundary walls on three boundaries at 60% of each",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.3"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 300,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 4.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 3.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 2.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.5,
+          "max_length_m": 16,
+          "max_pct_of_boundary": 60,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r10-r40": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.3": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R30 standard lot: boundary wall at 70% of the boundary",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 300,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 4.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 3.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 2.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.5,
+          "max_length_m": 16,
+          "max_pct_of_boundary": 70,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 three-storey corner apartment development: 13 m height band, 2 m third-storey setback, garage and carport 3 m / 1 m (R40 side setback tested by the R30-R60 rule, no access way credit)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#secondary",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.4",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-secondary",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-secondary",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": true,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 200,
+        "total_height_m": 12.5,
+        "max_wall_height_m": 8.0,
+        "primary_street_setback_m": 3.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 2.0,
+        "primary_street_reduced_portion_width_m": 4.0,
+        "porch_projection_m": 1.5,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.5,
+          "max_length_m": 16,
+          "max_pct_of_boundary": 65,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "secondary_street_setback_m": 1.0,
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 3.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_secondary_m": 1.0
+        },
+        "carport": {
+          "present": true,
+          "setback_primary_m": 3.0,
+          "setback_secondary_m": 1.0,
+          "width_m": 7,
+          "free_of_walls_forward_of_setback": true,
+          "unobstructed_view_dwelling_to_street": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.1.1": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#secondary": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.4": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-secondary": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-secondary": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 four-storey apartment development: fails storeys, height, secondary street, garage, carport (66% width, no reduction) (R40 side setback tested by the R30-R60 rule, no access way credit)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#secondary",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.4",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-secondary",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-secondary",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": true,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 4,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 200,
+        "total_height_m": 13.5,
+        "max_wall_height_m": 8.0,
+        "primary_street_setback_m": 3.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 1.5,
+        "primary_street_reduced_portion_width_m": 4.0,
+        "porch_projection_m": 1.5,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.5,
+          "max_length_m": 16,
+          "max_pct_of_boundary": 65,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "secondary_street_setback_m": 0.8,
+        "side_setback_walls_over_7_1m_m": 1.8,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 2.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_secondary_m": 0.8
+        },
+        "carport": {
+          "present": true,
+          "setback_primary_m": 1.0,
+          "setback_secondary_m": 0.8,
+          "width_m": 8,
+          "free_of_walls_forward_of_setback": true,
+          "unobstructed_view_dwelling_to_street": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#secondary": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(i)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.4": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#garage-secondary": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.5#carport-secondary": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 carport at 1.5 m: 50 per cent reduction of the 3 m setback",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": true,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 200,
+        "total_height_m": 12.5,
+        "max_wall_height_m": 8.0,
+        "primary_street_setback_m": 3.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 2.0,
+        "primary_street_reduced_portion_width_m": 4.0,
+        "porch_projection_m": 1.5,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.5,
+          "max_length_m": 16,
+          "max_pct_of_boundary": 65,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "secondary_street_setback_m": 1.0,
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 3.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_secondary_m": 1.0
+        },
+        "carport": {
+          "present": true,
+          "setback_primary_m": 1.5,
+          "setback_secondary_m": 1.0,
+          "width_m": 7,
+          "free_of_walls_forward_of_setback": true,
+          "unobstructed_view_dwelling_to_street": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.4": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.4": "carport 50 per cent reduction"
+      }
+    }
+  },
+  {
+    "title": "R40 carport at 1.5 m: sightline fact missing so the reduction cannot be tested",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.4"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 300,
+        "frontage_m": 12,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": true,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 200,
+        "total_height_m": 12.5,
+        "max_wall_height_m": 8.0,
+        "primary_street_setback_m": 3.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 2.0,
+        "primary_street_reduced_portion_width_m": 4.0,
+        "porch_projection_m": 1.5,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 3,
+          "max_height_m": 3.5,
+          "max_length_m": 16,
+          "max_pct_of_boundary": 65,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "secondary_street_setback_m": 1.0,
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 3.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0,
+          "setback_secondary_m": 1.0
+        },
+        "carport": {
+          "present": true,
+          "setback_primary_m": 1.5,
+          "setback_secondary_m": 1.0,
+          "width_m": 7,
+          "free_of_walls_forward_of_setback": true
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.4": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "parking.carport.unobstructed_view_dwelling_to_street"
+      ]
+    }
+  },
+  {
+    "title": "R50 three-storey apartment development: 7 m boundary wall band, 13 m wall, 60% of a lot wider than 8.5 m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(ii)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r50",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50-wide"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R50",
+        "area_m2": 250,
+        "frontage_m": 10,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 3.0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 180,
+        "total_height_m": 13,
+        "max_wall_height_m": 8.0,
+        "primary_street_setback_m": 2.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 0,
+        "porch_projection_m": 1.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 2,
+          "max_height_m": 6.5,
+          "max_length_m": 13,
+          "max_pct_of_boundary": 60,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 2.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(ii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r50": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50-wide": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R50 apartment development: side setbacks short (no access way credit above R25); 18 m boundary wall stepped only 2 m; 70%",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r50",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50-wide"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R50",
+        "area_m2": 250,
+        "frontage_m": 10,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 3.0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 180,
+        "total_height_m": 13,
+        "max_wall_height_m": 8.0,
+        "primary_street_setback_m": 2.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 0,
+        "porch_projection_m": 1.0,
+        "side_setback_walls_to_3_5m_m": 0.9,
+        "side_setback_walls_3_6_to_7m_m": 1.2,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 2,
+          "max_height_m": 7.5,
+          "max_length_m": 18,
+          "max_pct_of_boundary": 70,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false,
+          "beyond_14m_setback_m": 2.0,
+          "beyond_14m_setback_length_m": 3.0
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "side_setback_walls_over_7_1m_m": 1.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 2.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#height-r50": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50-wide": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R50 apartment development: 18 m boundary wall stepped back 3 m for 3 m beyond 14 m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R50",
+        "area_m2": 250,
+        "frontage_m": 10,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 3.0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 180,
+        "total_height_m": 13,
+        "max_wall_height_m": 8.0,
+        "primary_street_setback_m": 2.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 0,
+        "porch_projection_m": 1.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 2,
+          "max_height_m": 6.5,
+          "max_length_m": 18,
+          "max_pct_of_boundary": 60,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false,
+          "beyond_14m_setback_m": 3.0,
+          "beyond_14m_setback_length_m": 3.0
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 2.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r50": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R15 lot from a corner-lot subdivision: 2.5 m to the original secondary street, porch at 1.5 m; laneway as primary street 1.5 m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)#r1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway-primary",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R15",
+        "area_m2": 400,
+        "frontage_m": 14,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": true,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 200,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 2.5,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 0,
+        "porch_projection_m": 0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "porch_street_setback_m": 1.5,
+        "row_setback_m": 1.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)#r1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway-primary": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R15 corner-lot subdivision lot: 2.0 m and porch 1.2 m fail; laneway-primary 1.0 m fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)#r1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway-primary"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R15",
+        "area_m2": 400,
+        "frontage_m": 14,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": true,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 200,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 2.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 0,
+        "porch_projection_m": 0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "porch_street_setback_m": 1.2,
+        "row_setback_m": 1.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.2(iii)#r1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway-primary": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R10 lot where the laneway is the primary street: 3 m (as per secondary street)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway-primary"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R10",
+        "area_m2": 1000,
+        "frontage_m": 14,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": true,
+        "has_secondary_street": false,
+        "has_row": true,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        },
+        "row_is_primary_street": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 400,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 7.5,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 0,
+        "porch_projection_m": 0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "porch_street_setback_m": 1.5,
+        "row_setback_m": 3.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway-primary": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R30 apartment development: side setbacks 1 m / 1.5 m / 2 m by wall height meet Table 3.4a",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60"
+    ],
+    "app": {
+      "site": {
+        "region": "perth-peel",
+        "frontage_m": 15,
+        "area_m2": 400,
+        "r_code": "R30",
+        "adjoining_pedestrian_access_way_width_m": 0
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "max_wall_height_m": 8.5,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 apartment development beside a 3 m pedestrian access way: no reduction above R25 in Chapter 4 Part 1, so short setbacks fail",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60"
+    ],
+    "app": {
+      "site": {
+        "region": "perth-peel",
+        "frontage_m": 15,
+        "area_m2": 400,
+        "r_code": "R40",
+        "adjoining_pedestrian_access_way_width_m": 3.0
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 1
+      },
+      "building": {
+        "max_wall_height_m": 9.0,
+        "side_setback_walls_to_3_5m_m": 0.5,
+        "side_setback_walls_3_6_to_7m_m": 1.0,
+        "side_setback_walls_over_7_1m_m": 1.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R25 apartment development beside a 3 m pedestrian access way: 0.5 m + 1.5 m credit meets the 1 m side setback (R10-R25 band)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m"
+    ],
+    "app": {
+      "site": {
+        "region": "perth-peel",
+        "frontage_m": 15,
+        "area_m2": 400,
+        "r_code": "R25",
+        "adjoining_pedestrian_access_way_width_m": 3.0
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 1,
+        "dwelling_count": 1
+      },
+      "building": {
+        "max_wall_height_m": 3.2,
+        "side_setback_walls_to_3_5m_m": 0.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": false,
+        "has_walls_over_7_1m": false
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 two apartment buildings on one lot: 9 m facing walls 4 m apart (2.0 m each side as if a lot boundary)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "same_lot_separation_applies": true,
+        "separation_same_lot_wall_height_m": 9.0,
+        "separation_same_lot_m": 4.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.6": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 two apartment buildings on one lot: 9 m facing walls 3.5 m apart fails 4 m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "same_lot_separation_applies": true,
+        "separation_same_lot_wall_height_m": 9.0,
+        "separation_same_lot_m": 3.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.6": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 facing portions of one apartment building: 6 m walls 3 m apart meets (1.5 m each side)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "same_lot_separation_applies": true,
+        "separation_same_lot_wall_height_m": 6.0,
+        "separation_same_lot_m": 3.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.6": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 single-storey facing wings 1.8 m apart fail 2 m (1 m each side)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "same_lot_separation_applies": true,
+        "separation_same_lot_wall_height_m": 3.0,
+        "separation_same_lot_m": 1.8,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.6": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 two apartment buildings: separation given but facing wall height missing",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.6"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "same_lot_separation_applies": true,
+        "separation_same_lot_m": 4.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.6": "CANNOT_TELL"
+      },
+      "missing_contains": [
+        "building.separation_same_lot_wall_height_m"
+      ]
+    }
+  },
+  {
+    "title": "R20 apartment development: site cover on the whole lot (1000 m2, 560 m2 roofed = 56%) fails 55%",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 1000,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 560,
+        "total_height_m": 8.5,
+        "max_wall_height_m": 6.2,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R60 three-storey apartment block: 13 m and 3 storeys, 2 m street setback, 1/1.5/2 m side setbacks, nil rear, 90% site cover not tested",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.1.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear-r17.5"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 1000,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 900,
+        "total_height_m": 12.8,
+        "max_wall_height_m": 9.5,
+        "primary_street_setback_m": 2.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 2.0,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.1.1": "NOT_APPLICABLE",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.3#r40-plus": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "MEETS",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear-r17.5": "NOT_APPLICABLE"
+      }
+    }
+  },
+  {
+    "title": "R35 three-storey apartment block fails 2 storeys, 10 m, 4 m street setback and 2 m third-storey side setback",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys",
+      "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+      "rcodes:draft-2026-10-24/ch4p1/C3.3.1",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R35",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 3,
+        "dwelling_count": 6
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 10.5,
+        "max_wall_height_m": 9.0,
+        "primary_street_setback_m": 3.5,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "side_setback_walls_over_7_1m_m": 1.9,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#storeys": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.3.1": "DOES_NOT_MEET",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m-r30-r60": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 two-storey apartment development with a 7.5 m wall: 2.0 m side setback above 7.1 m meets Table 3.4a",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "corner_lot": false,
+        "corner_lot_subdivided": false,
+        "has_secondary_street": false,
+        "has_row": false,
+        "access_from_rear_row": false,
+        "adjoining_pedestrian_access_way_width_m": 0,
+        "verge": {
+          "path_or_road_offset_m": 0.5,
+          "basis": "existing"
+        }
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "roofed_area_m2": 240,
+        "total_height_m": 9.5,
+        "max_wall_height_m": 7.5,
+        "primary_street_setback_m": 6.0,
+        "primary_street_projection_m": 0.5,
+        "primary_street_setback_reduced_portion_m": 4.0,
+        "primary_street_reduced_portion_width_m": 4.5,
+        "porch_projection_m": 3.0,
+        "side_setback_walls_to_3_5m_m": 1.0,
+        "side_setback_walls_3_6_to_7m_m": 1.5,
+        "side_projection_m": 0.5,
+        "rear_setback_m": 3.0,
+        "upper_storey_wall_max_length_m": 12,
+        "boundary_walls": {
+          "count": 1,
+          "max_height_m": 3.2,
+          "max_length_m": 10,
+          "max_pct_of_boundary": 33,
+          "behind_street_setback": true,
+          "adjoining_wall_exists": false
+        },
+        "boundary_structure": {
+          "present": false
+        },
+        "side_setback_walls_over_7_1m_m": 2.0,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": true
+      },
+      "parking": {
+        "garage": {
+          "present": true,
+          "setback_primary_m": 5.5,
+          "parallel_parking": false,
+          "parallel_wall_openings": 0
+        },
+        "carport": {
+          "present": false
+        }
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 apartment development, every wall 7.5 m high (none in the lower bands), 2 m side setback: meets C3.4.1#side-over-7.1m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "adjoining_pedestrian_access_way_width_m": 0
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "max_wall_height_m": 7.5,
+        "has_walls_to_3_5m": false,
+        "has_walls_3_6_to_7m": false,
+        "has_walls_over_7_1m": true,
+        "side_setback_walls_over_7_1m_m": 2.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-over-7.1m": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 apartment development with walls 3.6 to 7 m, their side setback not stated: cannot tell C3.4.1#side-3.6-to-7m",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m",
+      "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 450,
+        "frontage_m": 15,
+        "region": "perth-peel",
+        "adjoining_pedestrian_access_way_width_m": 0
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "storeys": 2,
+        "dwelling_count": 1
+      },
+      "building": {
+        "max_wall_height_m": 6.5,
+        "has_walls_to_3_5m": true,
+        "has_walls_3_6_to_7m": true,
+        "has_walls_over_7_1m": false,
+        "side_setback_walls_to_3_5m_m": 1.0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-3.6-to-7m": "CANNOT_TELL",
+        "rcodes:draft-2026-10-24/ch4p1/C3.4.1#side-to-3.5m": "MEETS"
+      }
+    }
+  }
+]

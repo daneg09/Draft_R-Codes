@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Rear setback at least the Table 2.1 minimum",
+  "text": "A 2.4.1 Development complies with the side and rear setbacks set out in Table 2.1, except where: (a) modified by the local planning framework, in which case development complies with the side and rear setbacks set out in the applicable local planning instrument AND/OR (b) a greater setback is required to address 3.5 Visual privacy.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.rear_setback_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.1-rear-setback",
+    "fact": "building.rear_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.4",
+  "defined_terms": [
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.4.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "mixed",
+      "note": "R80 3 to 4 m (tightened); R100, R160, R-AC4/LR1 6 to 4 m (relaxed); MR1 4 m new; MR2, HR1 nil unchanged; HR2, HR3 nil new"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 18,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-071; C4P2-046..C4P2-053",
+  "verify": false,
+  "notes": "The Table of Changes says MR2 and all HR rear setbacks are reduced from 6 m to nil; R-AC3, R-AC2 and R-AC1 were already nil (C4P2-051). The R80 increase is not in the Table of Changes (C4P2-046). Limb (b), a greater setback for visual privacy, is tested by the 3.5 rules, not here. Table 2.1 note 5: boundary setbacks are also determined by 2.7 separation, 3.5 visual privacy and NCC building separation. The 'except where modified by the local planning framework' limb is applied through the instruments layer (Chapter 1B 3.5, Table 3.5A); this rule encodes the Table 2.1 default.",
+  "verified": {
+    "method": "page-image",
+    "page": "13, 18",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

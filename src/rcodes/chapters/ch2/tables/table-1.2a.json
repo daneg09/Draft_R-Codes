@@ -1,0 +1,294 @@
+{
+  "id": "table-1.2a",
+  "title": "Table 1.2a Minimum tree provisions: small trees in the primary street setback area by frontage (single houses)",
+  "keys": [
+    "site.frontage_m"
+  ],
+  "unit": "trees",
+  "rows": [
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 300
+        }
+      },
+      "value": 30,
+      "note": "300 m to under 310 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 290
+        }
+      },
+      "value": 29,
+      "note": "290 m to under 300 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 280
+        }
+      },
+      "value": 28,
+      "note": "280 m to under 290 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 270
+        }
+      },
+      "value": 27,
+      "note": "270 m to under 280 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 260
+        }
+      },
+      "value": 26,
+      "note": "260 m to under 270 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 250
+        }
+      },
+      "value": 25,
+      "note": "250 m to under 260 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 240
+        }
+      },
+      "value": 24,
+      "note": "240 m to under 250 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 230
+        }
+      },
+      "value": 23,
+      "note": "230 m to under 240 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 220
+        }
+      },
+      "value": 22,
+      "note": "220 m to under 230 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 210
+        }
+      },
+      "value": 21,
+      "note": "210 m to under 220 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 200
+        }
+      },
+      "value": 20,
+      "note": "200 m to under 210 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 190
+        }
+      },
+      "value": 19,
+      "note": "190 m to under 200 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 180
+        }
+      },
+      "value": 18,
+      "note": "180 m to under 190 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 170
+        }
+      },
+      "value": 17,
+      "note": "170 m to under 180 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 160
+        }
+      },
+      "value": 16,
+      "note": "160 m to under 170 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 150
+        }
+      },
+      "value": 15,
+      "note": "150 m to under 160 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 140
+        }
+      },
+      "value": 14,
+      "note": "140 m to under 150 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 130
+        }
+      },
+      "value": 13,
+      "note": "130 m to under 140 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 120
+        }
+      },
+      "value": 12,
+      "note": "120 m to under 130 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 110
+        }
+      },
+      "value": 11,
+      "note": "110 m to under 120 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 100
+        }
+      },
+      "value": 10,
+      "note": "100 m to under 110 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 90
+        }
+      },
+      "value": 9,
+      "note": "90 m to under 100 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 80
+        }
+      },
+      "value": 8,
+      "note": "80 m to under 90 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 70
+        }
+      },
+      "value": 7,
+      "note": "70 m to under 80 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 60
+        }
+      },
+      "value": 6,
+      "note": "60 m to under 70 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 50
+        }
+      },
+      "value": 5,
+      "note": "50 m to under 60 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 40
+        }
+      },
+      "value": 4,
+      "note": "40 m to under 50 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 30
+        }
+      },
+      "value": 3,
+      "note": "30 m to under 40 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "min": 20
+        }
+      },
+      "value": 2,
+      "note": "20 m to under 30 m frontage"
+    },
+    {
+      "match": {
+        "site.frontage_m": {
+          "max": 20
+        }
+      },
+      "value": 1,
+      "note": "frontage less than 20 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 11,
+    "table": "Table 1.2a"
+  },
+  "register_ref": "ch2-010",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Applies where the primary street setback is 1.5 m or greater (rule condition on C1.2.3). Frontage under 20 m: 1 small tree; 20 m or more: 1 small tree per 10 m of frontage, frontage rounded down to the nearest 10 m (note 2). Rows are listed from the largest band down so the first matching 'min' row wins; the last row catches frontages under 20 m. Frontages over 300 m fall in the 300 m row (30 trees) and need a manual count. The 'elsewhere on lot' column (1 small tree per dwelling, plantable in the street setback if room allows, note 1) is C1.2.3-r1. Tree provisions exclude ancillary dwellings. No tree provisions at R100-SL (Table 2.10a)."
+}

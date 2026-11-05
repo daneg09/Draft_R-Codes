@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.15(ii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Communal street 1.2 m universally accessible pedestrian path (20 or more potential lots)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_communal_street",
+      "expected": true
+    },
+    {
+      "type": "count",
+      "fact": "site.communal_street_serves_lots",
+      "op": ">=",
+      "value": 20
+    }
+  ],
+  "inputs": [
+    "parking.pedestrian_access_width_m",
+    "site.communal_street_serves_lots",
+    "site.has_communal_street"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.pedestrian_access_width_m",
+    "op": ">=",
+    "value": 1.2
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "communal street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.13",
+      "relation": "relaxed",
+      "note": "tree-per-dwelling ratio dropped"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.7",
+      "relation": "relaxed",
+      "note": "with Part B P5.2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 43
+  },
+  "register_ref": "ch3-081",
+  "verify": true,
+  "notes": "New to the grouped package (no Chapter 2 twin). Applies where the communal street serves 20 or more potential strata or survey-strata lots (site.communal_street_serves_lots, read as potential lots or dwellings each taking driveway access from the communal street). Greenfield in practice. parking.pedestrian_access_width_m is read as the width of the pedestrian path within the communal street (the same fact C3.7.11(i) tests at 1 m). 'Universally accessible' is not tested.",
+  "text": "Notwithstanding C3.7.13, where a proposed development has the potential to be subdivided to create 20 or more strata lots or survey-strata lots, with each lot obtaining driveway access from a communal street, the communal street shall be a minimum 12m wide, which shall include: ii. a 1.2m wide universally accessible pedestrian path;",
+  "verified": {
+    "method": "page-image",
+    "page": 43,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "1.2m and the 20-lot trigger confirmed. 'Universally accessible' is not tested; the width fact is the same one C3.7.11(i) tests at 1m."
+  }
+}

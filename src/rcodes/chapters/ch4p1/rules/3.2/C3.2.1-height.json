@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.2.1#height",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.2",
+  "element_title": "Building height",
+  "title": "Maximum total building height",
+  "text": "C3.2.1 Building height complies with Table 3.2a. Table 3.2a Maximum building heights, maximum total building height: R2-R35 10m; R40-R60 13m. Refer Figure 3.2a for building height and natural ground level measurement guidance. Refer Figure 3.2b for total building height guidance.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.total_height_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.2a-height",
+    "fact": "building.total_height_m",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.2",
+  "defined_terms": [
+    "total building height",
+    "natural ground level",
+    "deemed natural ground level"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.6-C6",
+      "relation": "relaxed",
+      "note": "R10-R25 category B: wall 7 m, total 8 m (gable, skillion, concealed) or 10 m (hipped, pitched) -> 10 m total, no wall or roof-type split (C4P1-071)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T3",
+      "relation": "restructured",
+      "note": "wall height and roof-type metrics deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.2a",
+      "relation": "relaxed",
+      "note": "R30-R35 concealed/skillion 8 -> 10 m (C4P1-072); R40 10 -> 13 m (C4P1-073); R50-R60 concealed/skillion 11 -> 13 m (C4P1-074)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 28,
+    "table": "Table 3.2a",
+    "figure": "Figure 3.2a, 3.2b"
+  },
+  "register_ref": "C4P1-071",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear. Table 3.2a prints the lower row as 'R2-R35' in an R10-R60 chapter; its note cites '3.9 Solar access for adjoining sites' (element 3.8 here). Table 4A (p7) agrees: 10m R10-R35, 13m R40-R60."
+  },
+  "notes": "from: ch3 C3.2.1#height. Table 3.2a (p28) prints R2-R35 10 m and R40-R60 13 m; the table is trimmed to R10-R60 and the R80+ and R100-SL rows dropped. Height is the highest point above natural ground level (deemed natural ground level where it varies; Figures 3.2a, 3.2b). The table note still points to '3.9 Solar access for adjoining sites', which is element 3.8 in this chapter. Register rows C4P1-071 to C4P1-074 by band."
+}

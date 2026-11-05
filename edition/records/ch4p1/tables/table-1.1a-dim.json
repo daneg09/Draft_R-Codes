@@ -1,0 +1,86 @@
+{
+  "id": "table-1.1a-dim",
+  "title": "Table 1.1a Private open space per apartment: minimum dimension by dwelling size",
+  "keys": [
+    "site.r_code",
+    "dwellings.min.pos_dwelling_category"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "studio_1bed"
+      },
+      "value": 2,
+      "note": "R10-R25 row: register C4P1-006 (mixed)"
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "2bed"
+      },
+      "value": 2.4,
+      "note": "R10-R25 row: register C4P1-006 (mixed)"
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "3bed_plus"
+      },
+      "value": 2.4,
+      "note": "R10-R25 row: register C4P1-006 (mixed)"
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R25",
+        "dwellings.min.pos_dwelling_category": "ground_floor"
+      },
+      "value": 3,
+      "note": "R10-R25 row: register C4P1-006 (mixed)"
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "studio_1bed"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "2bed"
+      },
+      "value": 2.4
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "3bed_plus"
+      },
+      "value": 2.4
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R60",
+        "dwellings.min.pos_dwelling_category": "ground_floor"
+      },
+      "value": 3
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 9,
+    "table": "Table 1.1a"
+  },
+  "register_ref": "C4P1-005",
+  "verify": false,
+  "notes": "Minimum private open space dimension (m). The 2.4 m cell spans the 2 bed and 3+ bed rows (the extract prints it once between them; register C4P1-005 reads 2.4 m for both).",
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "2.4m cell spans the 2 bedrooms and 3 or more bedrooms rows (merged)."
+  }
+}

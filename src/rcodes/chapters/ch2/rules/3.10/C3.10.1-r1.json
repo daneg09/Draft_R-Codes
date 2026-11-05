@@ -1,0 +1,104 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.10.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.10",
+  "element_title": "Visual privacy",
+  "title": "Cone of vision setback from a bedroom or study major opening: 3 m",
+  "text": "For development adjoining an existing dwelling. C3.10.1 All sources of overlooking are oriented, offset or setback in accordance with Table 3.10a so that the cone of vision (refer Figure 3.10a) does not capture major openings and/or active habitable spaces on an adjoining property (refer Figure 3.10b). Table 3.10a Cone of vision radius (type of habitable room/active habitable space with a floor level of more than 0.5m above natural ground level): Major opening from bedroom and study: 3m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "privacy.sources_above_0_5m",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.vacant_or_unknown",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "adjoining.vacant_or_unknown",
+    "privacy.bedroom_study_setback_m",
+    "privacy.cone_captures_adjoining_opening",
+    "privacy.sources_above_0_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "privacy.bedroom_study_setback_m",
+    "op": ">=",
+    "value": 3.0
+  },
+  "exceptions": [
+    {
+      "label": "cone of vision does not capture a major opening or active habitable space of the adjoining existing dwelling",
+      "condition": {
+        "type": "boolean",
+        "fact": "privacy.cone_captures_adjoining_opening",
+        "expected": false
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "privacy.cone_captures_adjoining_opening"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+  "defined_terms": [
+    "cone of vision",
+    "major opening",
+    "active habitable space",
+    "adjoining property",
+    "natural ground level"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.1-C1.1",
+      "relation": "relaxed",
+      "note": "R50 and lower 4.5/6/7.5 m -> 3/4.5/6 m; trigger narrowed to cones capturing an existing dwelling's openings"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.10a",
+      "relation": "same",
+      "note": "Part C 'higher than R50' values now apply to all codes"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 44,
+    "table": "Table 3.10a",
+    "figure": "Figure 3.10a, 3.10b"
+  },
+  "register_ref": "ch2-086",
+  "verify": false,
+  "notes": "Table 3.10a row 'Major opening from bedroom and study': 3.0 m, literal in the evaluator because the table is keyed by source type rather than an application fact. The fact is the minimum setback of any such source, measured from the source to the adjoining property. Where the cone does not capture an adjoining opening or active habitable space the clause is satisfied regardless of the setback (encoded as an exception). Table 3.10a applies to sources with a floor level more than 0.5 m above NGL. The cone of vision radius includes the width of any adjoining ROW, communal street or battleaxe leg (p45 note). Applies to development adjoining an existing dwelling; vacant or unknown adjoining sites are C3.10.4. Coding excludes R100-SL: Table 2.10a removes all 3.10 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded).",
+  "verified": {
+    "method": "page-image",
+    "page": 44,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

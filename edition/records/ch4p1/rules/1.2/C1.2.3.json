@@ -1,0 +1,65 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Communal street landscaped and lit",
+  "text": "C1.2.3 Where provided, the communal street (including any adjoining setbacks) and communal open space is landscaped and provided with adequate lighting to pathways and vehicle access areas.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_communal_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "site.has_communal_street",
+    "site.communal_street_landscaped_and_lit"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site.communal_street_landscaped_and_lit",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.2",
+  "defined_terms": [
+    "communal street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.1",
+      "relation": "restructured",
+      "note": "C2.1(iv) lighting of common property"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 10
+  },
+  "register_ref": "C4P1-010",
+  "verify": false,
+  "notes": "from: ch3 C1.2.3. Test unchanged (communal street limb); the Chapter 4 Part 1 clause (p10) also covers communal open space, tested separately as C1.2.3-r1. Applies where a communal street is provided.",
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

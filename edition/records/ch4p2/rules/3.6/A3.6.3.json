@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.6.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.6",
+  "element_title": "Public domain interface",
+  "title": "Upper level balconies and/or windows overlook the street and public domain",
+  "text": "Upper level balconies and/or windows overlook the street and public domain areas.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.storeys",
+      "op": ">=",
+      "value": 2
+    }
+  ],
+  "inputs": [
+    "building.storeys",
+    "building.upper_level_overlook_street"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.upper_level_overlook_street",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.6",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.6.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 39
+  },
+  "register_ref": "C4P2-094",
+  "verify": false,
+  "notes": "from: ch4p1 C3.6.1 (building.upper_level_overlook_street; applies where building.storeys >= 2).",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

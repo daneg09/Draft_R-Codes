@@ -1,0 +1,66 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.4.4(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary walls located behind the street setback",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: i. boundary walls are located behind the street setback;",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.boundary_walls.count",
+      "op": ">=",
+      "value": 1
+    }
+  ],
+  "inputs": [
+    "building.boundary_walls.behind_street_setback",
+    "building.boundary_walls.count"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.boundary_walls.behind_street_setback",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "street setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.4.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 34
+  },
+  "register_ref": "ch2-066",
+  "verify": false,
+  "notes": "Also the Table 2.10a condition for R100-SL boundary walls.",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

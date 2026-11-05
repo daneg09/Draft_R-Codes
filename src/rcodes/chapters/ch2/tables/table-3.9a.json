@@ -1,0 +1,50 @@
+{
+  "id": "table-3.9a",
+  "title": "Table 3.9a Maximum overshadowing: adjoining property (percentage of dwelling site area)",
+  "keys": [
+    "adjoining.south.r_code"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "adjoining.south.r_code": "R25-"
+      },
+      "value": 25,
+      "note": "R25 and lower"
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R30-R40"
+      },
+      "value": 35
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R50-R60"
+      },
+      "value": 50
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R80+"
+      },
+      "value": null,
+      "note": "R80 or higher: no maximum overshadowing"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 42,
+    "table": "Table 3.9a"
+  },
+  "register_ref": "ch2-082",
+  "verify": false,
+  "notes": "Site area is the ground surface measured at NGL without regard to buildings. Footnote 1: where the development adjoins a grouped dwelling development the limit applies to each grouped dwelling site area excluding common property (Figure 3.9d). Named codes (R100-SL, LR, MR, HR) have no row.",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O3.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Visual privacy Element Objectives",
+  "text": "O 3.5.1 The orientation and design of buildings, windows and balconies minimises direct overlooking of habitable rooms and private outdoor living areas within the site and of neighbouring properties, while maintaining daylight and solar access, ventilation and the external outlook of habitable rooms.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O3.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36
+  },
+  "register_ref": "C4P2-085",
+  "verify": false,
+  "notes": "Single objective. Intent notes lower visual privacy may be acceptable in denser urban contexts.",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

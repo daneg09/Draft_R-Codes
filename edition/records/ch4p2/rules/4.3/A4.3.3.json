@@ -1,0 +1,79 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.3",
+  "element_title": "Size and layout of dwellings",
+  "title": "Ceiling heights at least 2.7 m to habitable rooms and 2.4 m to non-habitable rooms",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Measured from the finished floor level to finished ceiling level, minimum ceiling heights are: Habitable rooms – 2.7m; Non-habitable rooms – 2.4m. All other ceilings meet or exceed the requirements of the NCC.",
+  "inputs": [
+    "dwellings.min.ceiling_height_habitable_m",
+    "dwellings.min.ceiling_height_non_habitable_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.ceiling_height_habitable_m",
+        "op": ">=",
+        "value": 2.7
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.ceiling_height_non_habitable_m",
+        "op": ">=",
+        "value": 2.4
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.3",
+  "defined_terms": [
+    "habitable room",
+    "non-habitable room"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.3.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 55,
+    "extract_line": 1892,
+    "figure": "Figure 4.3b"
+  },
+  "register_ref": "C4P2-113",
+  "verify": false,
+  "notes": "from: ch4p1 C2.1.5. diverges: habitable 2.7 m (ch4p1 2.65 m). 'All other ceilings meet the NCC' is a building permit matter and is not encoded. Figure 4.3b also shows 1.5 m attic spaces and 3.3 m mixed use ground floor (guidance only).",
+  "verified": {
+    "method": "page-image",
+    "page": 55,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "id": "table-3B",
+  "title": "Table 3B Site area requirements (grouped dwellings): reference",
+  "keys": [
+    "site.r_code",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R2"
+      },
+      "value": 5000
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R2.5"
+      },
+      "value": 4000
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R5"
+      },
+      "value": 2000
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R10"
+      },
+      "value": 875
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R12.5"
+      },
+      "value": 700
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R15"
+      },
+      "value": 580
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R17.5"
+      },
+      "value": 500
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R20"
+      },
+      "value": 350
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R25"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R30"
+      },
+      "value": 260
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R35"
+      },
+      "value": 220
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R40"
+      },
+      "value": 180
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R50"
+      },
+      "value": 160
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R60"
+      },
+      "value": 120
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R80"
+      },
+      "value": 100
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 100,
+      "note": "R80 site area provisions apply to all grouped dwellings on lots coded R100, R160 and LR, MR and HR (Table 3B note)"
+    },
+    {
+      "match": {
+        "metric": "min_site_area_m2",
+        "site.r_code": "R100-SL"
+      },
+      "value": 80
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R2"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R2.5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R10"
+      },
+      "value": 1000,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R12.5"
+      },
+      "value": 800,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R15"
+      },
+      "value": 666,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R17.5"
+      },
+      "value": 571,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R20"
+      },
+      "value": 450,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R25"
+      },
+      "value": 350,
+      "note": "struck through in the draft: proposed removal of average site area for R10-R25 in Perth and Peel (flagged, not operative; Information Sheet 5)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R30"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R35"
+      },
+      "value": 260
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R40"
+      },
+      "value": 220
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R50"
+      },
+      "value": 180
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R60"
+      },
+      "value": 150
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R80"
+      },
+      "value": 120
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 120,
+      "note": "R80 site area provisions apply to all grouped dwellings on lots coded R100, R160 and LR, MR and HR (Table 3B note)"
+    },
+    {
+      "match": {
+        "metric": "avg_site_area_m2",
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "No av applies"
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R2"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R2.5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R5"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R10"
+      },
+      "value": 925
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R12.5"
+      },
+      "value": 762.5
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R15"
+      },
+      "value": 655
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R17.5"
+      },
+      "value": 587.5
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R20"
+      },
+      "value": 450
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R25"
+      },
+      "value": 425
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R30"
+      },
+      "value": 410
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R35"
+      },
+      "value": 395
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R40"
+      },
+      "value": 380
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R50"
+      },
+      "value": 160
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R60"
+      },
+      "value": 120
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R80"
+      },
+      "value": 100
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 100,
+      "note": "R80 site area provisions apply to all grouped dwellings on lots coded R100, R160 and LR, MR and HR (Table 3B note)"
+    },
+    {
+      "match": {
+        "metric": "battleaxe_min_site_area_m2",
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R2"
+      },
+      "value": 50
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 40
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R5"
+      },
+      "value": 30
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R10"
+      },
+      "value": 20
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R12.5"
+      },
+      "value": 17
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R15"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R17.5"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R20"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R25"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R30"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R35"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R40"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R50"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R60"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R80"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "R80 site area provisions apply to all grouped dwellings on lots coded R100, R160 and LR, MR and HR (Table 3B note); '-' indicated not applicable"
+    },
+    {
+      "match": {
+        "metric": "min_frontage_m",
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 54,
+    "table": "Table 3B"
+  },
+  "register_ref": "ch3-090",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 54,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R10-R25 averages printed struck through (pink box: proposed removal for Perth and Peel); those rows keep verify true. All other values checked."
+  },
+  "notes": "Consolidated reference (keys site.r_code and metric; 'metric' is not a fact, so rules do not look this file up). Operative lookups: table-3B-min, table-3B-avg, table-3B-battleaxe, table-3B-frontage. Transcribed from Chapter 3 p54; values identical to Chapter 2 Table 2B and current Table D grouped rows. The dwelling-type column and the 'only applies to single houses' footnote on the battleaxe and frontage columns are removed, so those columns now read as applying to grouped dwellings (ch3-089, verify). The R10-R25 average site areas are struck through as a flagged proposed change for Perth and Peel only (ch3-090; Information Sheet 5); kept operative with verify true. R80 site area provisions apply to grouped dwellings on lots coded R100, R160, LR, MR and HR."
+}

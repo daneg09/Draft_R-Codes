@@ -1,0 +1,81 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.7.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.7",
+  "element_title": "Universal design",
+  "title": "Gold-level universal design dwelling seeking the site area variation: gold level and maximum 110m2",
+  "text": "C2.7.2 Accessible dwellings that seek to apply the gold level universal design site area variation as part of 4.0 - Land, C4.1.6 or C4.1.7 shall; i. be designed and constructed in accordance with the gold level universal design requirements of A4 Universal design requirements, or are certified Livable Housing Australia to a minimum gold level of performance; and ii. have a maximum internal floor area of 110m2. Note: All other provisions of the R-Codes still apply.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.seeks_universal_design_site_area_variation",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.seeks_universal_design_site_area_variation",
+    "proposal.universal_design_level",
+    "proposal.internal_floor_area_m2"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "proposal.universal_design_level",
+        "op": "==",
+        "value": "gold"
+      },
+      {
+        "type": "threshold",
+        "fact": "proposal.internal_floor_area_m2",
+        "op": "<=",
+        "value": 110.0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.7",
+  "defined_terms": [
+    "internal floor area",
+    "universal design"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.5.4-C4",
+      "relation": "same",
+      "note": "Part B applied at R30 and R40 only; now all codes via C4.1.6/C4.1.7"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.7.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 23,
+    "extract_line": 737
+  },
+  "register_ref": "ch3-037",
+  "verify": false,
+  "notes": "Content twin of Chapter 2 C2.7.1 (numbered C2.7.2 in Chapter 3; evaluator unchanged). Applies only where the applicant seeks the gold-level site area variation (C4.1.6 or C4.1.7). 'gold' covers A4 gold or LHA gold certification; internal floor area is that of the accessible dwelling. Same stale A4 reference as C2.7.1.",
+  "verified": {
+    "method": "page-image",
+    "page": 23,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

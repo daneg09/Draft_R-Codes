@@ -1,0 +1,461 @@
+[
+ {
+  "title": "R80, 4-storey double-loaded apartment building: Part 2 defaults met; plot ratio N/A",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A2.5.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.6.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.7.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.2",
+   "rcodes:draft-2026-10-24/ch4p2/T2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.8"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R80",
+    "area_m2": 1500,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 4,
+    "height_m": 15,
+    "street_setback_m": 2.5,
+    "ground_floor_commercial": false,
+    "side_setback_m": 4,
+    "rear_setback_m": 4.5,
+    "boundary_wall_storeys": 2,
+    "boundary_wall_length_pct": 60,
+    "boundary_walls": {
+     "adjoining_wall_exists": false
+    },
+    "plot_ratio": 1.6,
+    "depth_m": 18,
+    "single_aspect_central_corridor": true,
+    "same_lot_separation_applies": true,
+    "separation_within_site_m": 3.5,
+    "separation_storeys": 4
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.3.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.5.1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.6.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.7.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.2": "NOT_EVALUATED",
+    "rcodes:draft-2026-10-24/ch4p2/T2.1": "NOT_EVALUATED",
+    "rcodes:draft-2026-10-24/ch4p2/A2.8": "NOT_EVALUATED"
+   }
+  }
+ },
+ {
+  "title": "R80, 5 storeys with ground-floor shop and 3 m setbacks: Part 2 defaults not met (no nil option at R80)",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A2.6.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.7.1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R80",
+    "area_m2": 1500,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 5,
+    "height_m": 18,
+    "street_setback_m": 0,
+    "ground_floor_commercial": true,
+    "side_setback_m": 3,
+    "rear_setback_m": 3,
+    "boundary_wall_storeys": 3,
+    "boundary_wall_length_pct": 80,
+    "boundary_walls": {
+     "adjoining_wall_exists": false
+    },
+    "depth_m": 22,
+    "single_aspect_central_corridor": true,
+    "same_lot_separation_applies": true,
+    "separation_within_site_m": 2.5,
+    "separation_storeys": 5
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.3.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.6.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.7.1": "DOES_NOT_MEET"
+   }
+  }
+ },
+ {
+  "title": "HR1, 12-storey mixed-use tower, nil street setback with ground-floor commercial, 9 m to R40 neighbour",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A2.5.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.7.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.7.1-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "HR1",
+    "area_m2": 3000,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 12,
+    "height_m": 39,
+    "street_setback_m": 0,
+    "ground_floor_commercial": true,
+    "side_setback_m": 0,
+    "rear_setback_m": 0,
+    "boundary_wall_storeys": 4,
+    "boundary_walls": {
+     "adjoining_wall_exists": false
+    },
+    "plot_ratio": 4.0,
+    "same_lot_separation_applies": true,
+    "separation_within_site_m": 6,
+    "separation_storeys": 12,
+    "separation_to_boundary_m": 9
+   },
+   "adjoining": {
+    "r_code": "R40"
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.3.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.5.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.7.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.7.1-r1": "MEETS"
+   }
+  }
+ },
+ {
+  "title": "HR2, 17 storeys at plot ratio 6.5, 5 m to an R80 neighbour and 5 m between towers: not met",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A2.5.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.7.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.7.1-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "HR2",
+    "area_m2": 3000,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 17,
+    "height_m": 54,
+    "street_setback_m": 2,
+    "ground_floor_commercial": false,
+    "plot_ratio": 6.5,
+    "boundary_wall_storeys": 5,
+    "boundary_walls": {
+     "adjoining_wall_exists": false
+    },
+    "same_lot_separation_applies": true,
+    "separation_within_site_m": 5,
+    "separation_storeys": 17,
+    "separation_to_boundary_m": 5
+   },
+   "adjoining": {
+    "r_code": "R80"
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.3.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.5.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.7.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.7.1-r1": "DOES_NOT_MEET"
+   }
+  }
+ },
+ {
+  "title": "MR1, nil street setback with ground-floor use not stated: street setback CANNOT_TELL; 4 m side and rear met",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.5.1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "MR1",
+    "area_m2": 2000,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 6,
+    "street_setback_m": 0,
+    "side_setback_m": 4,
+    "rear_setback_m": 4,
+    "plot_ratio": 3.0
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.3.1": "CANNOT_TELL",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.5.1": "NOT_APPLICABLE"
+   }
+  }
+ },
+ {
+  "title": "R100, 3-storey boundary wall abutting an equal existing wall (note 2): boundary wall limits not applicable",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R100",
+    "area_m2": 1200,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 6,
+    "boundary_wall_storeys": 3,
+    "boundary_wall_length_pct": 90,
+    "boundary_walls": {
+     "adjoining_wall_exists": true
+    }
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3": "NOT_APPLICABLE"
+   }
+  }
+ },
+ {
+  "title": "R160, 3-storey boundary wall, adjoining wall not stated: CANNOT_TELL on the note 2 exception",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R160",
+    "area_m2": 1200,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 8,
+    "height_m": 27,
+    "boundary_wall_storeys": 3,
+    "boundary_wall_length_pct": 50
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2": "CANNOT_TELL",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3": "MEETS"
+   }
+  }
+ },
+ {
+  "title": "MR2, 4 storeys facing an R30 neighbour: Table 2.7 refers to 2.4 and 3.5 (no number); nil side and rear met",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.5.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.7.1-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "MR2",
+    "area_m2": 1500,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 4,
+    "side_setback_m": 0,
+    "rear_setback_m": 0,
+    "plot_ratio": 2.5,
+    "separation_storeys": 4,
+    "separation_to_boundary_m": 0
+   },
+   "adjoining": {
+    "r_code": "R30"
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.5.1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.7.1-r1": "NOT_APPLICABLE"
+   }
+  }
+ },
+ {
+  "title": "R-PA planned area: Table 2.1 refers to the scheme and LDP, so the defaults are not applicable",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A2.5.1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R-PA",
+    "area_m2": 5000,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 30,
+    "height_m": 93,
+    "street_setback_m": 0,
+    "ground_floor_commercial": true,
+    "side_setback_m": 0,
+    "rear_setback_m": 0,
+    "boundary_wall_storeys": 6,
+    "plot_ratio": 9.0
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.3.1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r2": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A2.5.1": "NOT_APPLICABLE"
+   }
+  }
+ },
+ {
+  "title": "LR1, 4 storeys at 16 m with ground-floor commercial (nil street option) and a 3.5 m side setback",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "LR1",
+    "area_m2": 1000,
+    "region": "perth-peel"
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling"
+   },
+   "building": {
+    "height_storeys": 4,
+    "height_m": 16,
+    "street_setback_m": 1,
+    "ground_floor_commercial": true,
+    "side_setback_m": 3.5,
+    "rear_setback_m": 4
+   }
+  },
+  "expect": {
+   "pathway": "performance-assessment",
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.2.1-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.3.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r1": "MEETS"
+   }
+  }
+ }
+]

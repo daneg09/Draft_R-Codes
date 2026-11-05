@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.17",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.17",
+  "element_title": "Waste management",
+  "title": "Waste management design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.17.1 Explore opportunities to influence diversion from landfill across the waste cycle from generation, disposal, storage and collection. DG 4.17.2 Consider the appropriate waste management systems for the scale and nature of development; for instance, combined bulk receptacles for larger developments with on-site bin management. Consult early with the local government or waste contractor to determine the right waste collection strategy for your development. DG 4.17.3 Avoid excessive numbers of individual dwelling wheeled bins where possible. Make sure that if kerbside pick-up is required, individual bins can be accommodated on the kerbside without impacting pedestrian use of the footpath or creating unsightly visual impacts. DG 4.17.4 Design on-site vehicle access and circulation areas to suit the required handling of bins, including the design of pedestrian access and circulation to allow bins to be easily manoeuvred between storage and collection points. DG 4.17.5 Consider providing temporary storage for large bulk items such as mattresses, taking into account management of these areas and the control of vermin, odour and dust. DG 4.17.6 In larger/taller buildings, incorporating waste chutes increases the convenience of waste management for occupants. Communal recycling rooms/cupboards can also be located throughout the development, coupled with an appropriate management regime to ensure regular removal of recyclables and management of the facility.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 85,
+    "extract_line": 2937
+  },
+  "register_ref": "C4P2-127",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.17",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 85,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

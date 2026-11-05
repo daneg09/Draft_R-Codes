@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C1.2.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Landscaping plan for apartments (Appendix A3)",
+  "text": "Landscaping Plan. C1.2.8 For apartments, provide a landscaping plan in accordance with Appendix A3.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.landscaping_plan_provided"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.landscaping_plan_provided",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M1.2",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.8",
+      "relation": "same",
+      "note": "R30-R60 multiple dwellings"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "new deemed exempt item for R10-R25 apartments"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 11
+  },
+  "register_ref": "C4P1-015",
+  "verify": false,
+  "notes": "from: ch3 C1.2.8. diverges: no five-dwelling threshold; 'For apartments, provide a landscaping plan' (p11) applies to every apartment development. Plan content against Appendix A3 is stated, not tested.",
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

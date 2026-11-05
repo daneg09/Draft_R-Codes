@@ -1,0 +1,140 @@
+{
+  "id": "table-2B-frontage",
+  "title": "Table 2B Minimum frontage (single houses)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 50
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 40
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": 30
+    },
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 20
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 17
+    },
+    {
+      "match": {
+        "site.r_code": "R15"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "site.r_code": "R20"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.r_code": "R25"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "site.r_code": "R30"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R35"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R50"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R60"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "R80 site area provisions apply to all single houses on lots coded R100, R160 and LR, MR and HR (Table 2B note); '-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 51,
+    "table": "Table 2B"
+  },
+  "register_ref": "ch2-097",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 51,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Minimum frontage column of Table 2B; used by C4.1.1-r3 and C4.1.1-r5. R30 and above: none. Transcribed from page 51. The strikethrough on the R10-R25 average site areas is a flagged proposed change for the Perth and Peel regions only (Information Sheet 5); the averages are kept as operative with verify true. Table 2B drops the dwelling-type column and the multiple-dwelling rows of current Table D; single-house values are unchanged."
+}

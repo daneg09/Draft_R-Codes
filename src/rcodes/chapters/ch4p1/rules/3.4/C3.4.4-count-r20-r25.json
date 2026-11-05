@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.4#count-r20-r25",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary walls on up to two lot boundaries, R20-R25",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: i. boundary walls are located behind the street setback; ii. overshadowing does not exceed the limits of C3.8.1; and iii. they are finished to an equivalent standard to the rest of the development, to the satisfaction of the decision-maker. Table 3.4c Lot boundary setbacks, number of boundaries: R20 - R25 Two.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R20-R25"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.boundary_walls.count"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "building.boundary_walls.count",
+    "op": "<=",
+    "value": 2
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.2(ii)",
+      "relation": "same",
+      "note": "two boundaries"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4c",
+    "figure": "Figure 3.4h"
+  },
+  "register_ref": "C4P1-093",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C3.4.4#count-r20-r25. Table 3.4c (p34) values unchanged from Chapter 3; the clause text now cites C3.8.1 for overshadowing. Two boundaries (Table 3.4c)."
+}

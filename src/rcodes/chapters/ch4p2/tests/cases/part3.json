@@ -1,0 +1,706 @@
+[
+ {
+  "title": "HR1, 40 apartments on 1,200 m2, Location B: Part 3 Acceptable Outcomes met",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.8",
+   "rcodes:draft-2026-10-24/ch4p2/A3.7.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.7.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.7.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.7",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.7",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.9",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.10"
+  ],
+  "app": {
+   "site": {
+    "r_code": "HR1",
+    "area_m2": 1200,
+    "region": "perth-peel",
+    "climate_zone": 5,
+    "location": "B",
+    "frontage_m": 25,
+    "corner_lot": false,
+    "has_public_realm_frontage": true,
+    "primary_street_class": "local",
+    "significant_tree_retained": false
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 40
+   },
+   "adjoining": {
+    "south": {
+     "r_code": "R30"
+    },
+    "solar_collectors_r40_or_lower": true,
+    "north_shared_boundary_count": 1,
+    "vacant_or_unknown": false
+   },
+   "overshadow": {
+    "adjoining_pct": 30,
+    "solar_collectors_affected": false
+   },
+   "building": {
+    "faces_public_realm": true,
+    "storeys": 8,
+    "upper_level_overlook_street": true,
+    "front_fence": {
+     "present": true,
+     "permeable_above_m": 1.0
+    }
+   },
+   "public_domain": {
+    "entry_from_street": true,
+    "ground_floor_level_difference_avg_m": 0.6,
+    "ground_floor_level_difference_m": 1.0,
+    "fence_height_m": 0.9,
+    "entries_weather_protected": true
+   },
+   "landscape": {
+    "existing_trees": {
+     "qualifying_present": true,
+     "qualifying_all_retained": true
+    },
+    "deep_soil_pct": 11,
+    "deep_soil_permeable_paving_pct": 10,
+    "trees": {
+     "small_count": 3,
+     "medium_count": 1,
+     "large_count": 1
+    },
+    "deep_soil": {
+     "small_min_m2": 9,
+     "small_min_dim_m": 2,
+     "medium_min_m2": 36,
+     "medium_min_dim_m": 3,
+     "large_min_m2": 64,
+     "large_min_dim_m": 6
+    },
+    "cos": {
+     "area_m2": 240,
+     "hard_landscape_area_m2": 80,
+     "min_dim_m": 5,
+     "universally_accessible": true,
+     "solar_access_pct": 60,
+     "separated_from_noise_odour": true
+    },
+    "parking_shade_trees": 2
+   },
+   "privacy": {
+    "sources_above_0_5m": true,
+    "bedroom_study_setback_m": 3.5,
+    "other_habitable_setback_m": 5,
+    "outdoor_active_setback_m": 6.5,
+    "cone_captures_adjoining_opening": true,
+    "living_room_outlook": true
+   },
+   "dwellings": {
+    "balconies_provided": true,
+    "min": {
+     "balcony_unscreened_perimeter_pct": 40
+    },
+    "ground_floor_fronting_count": 4,
+    "ground_floor_fronting_direct_access_pct": 75
+   },
+   "parking": {
+    "outside_primary_street_setback": true,
+    "behind_street_setback": true,
+    "path_of_travel_to_entries": true,
+    "access": {
+     "count": 1
+    },
+    "driveway": {
+     "two_way": true,
+     "dwellings_served": 40,
+     "parking_to_street_m": 20
+    },
+    "sightlines": {
+     "clear_0_75m_within_1_5m": true
+    },
+    "bicycle_spaces": 20,
+    "bicycle_spaces_visitor": 4,
+    "bicycle_secure_undercover_path": true,
+    "resident_spaces": 40,
+    "visitor_spaces": 6,
+    "motorcycle_spaces": 4,
+    "resident_spaces_per_dwelling_avg": 1.0,
+    "as2890_compliant": true,
+    "visitor_bays_visible_signed_accessible": true,
+    "uncovered_at_grade_spaces": 6,
+    "basement": {
+     "present": true,
+     "protrusion_m": 0.8
+    }
+   },
+   "services": {
+    "bins_outside_street_setback_not_visible": true,
+    "bins_not_at_primary_entry": true
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r5": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r6": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.6": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.5": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.5": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.6": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.8": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.7.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.7.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.7.6": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.6": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.7": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.5": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.7": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.9": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.10": "MEETS"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "R100, 12 apartments on 900 m2, Location A, next to R20: Part 3 Acceptable Outcomes not met",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.3-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.7",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.4.5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.6.8",
+   "rcodes:draft-2026-10-24/ch4p2/A3.7.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.7.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.7.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.7",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.7-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.7",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.9",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.10",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R100",
+    "area_m2": 900,
+    "region": "regional",
+    "climate_zone": 5,
+    "location": "A",
+    "frontage_m": 18,
+    "corner_lot": true,
+    "corner_sightline_clear_0_75m": false,
+    "has_public_realm_frontage": true,
+    "primary_street_class": "local",
+    "significant_tree_retained": false
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 12
+   },
+   "adjoining": {
+    "south": {
+     "r_code": "R20"
+    },
+    "solar_collectors_r40_or_lower": true,
+    "north_shared_boundary_count": 2,
+    "vacant_or_unknown": false
+   },
+   "overshadow": {
+    "adjoining_pct": 30,
+    "solar_collectors_affected": true,
+    "proportional_to_shared_boundary": false
+   },
+   "building": {
+    "faces_public_realm": false,
+    "storeys": 5,
+    "upper_level_overlook_street": false,
+    "front_fence": {
+     "present": true,
+     "permeable_above_m": 1.5
+    }
+   },
+   "public_domain": {
+    "entry_from_street": true,
+    "ground_floor_level_difference_avg_m": 1.1,
+    "ground_floor_level_difference_m": 1.5,
+    "fence_height_m": 1.5,
+    "entries_weather_protected": false
+   },
+   "landscape": {
+    "existing_trees": {
+     "qualifying_present": true,
+     "qualifying_all_retained": false,
+     "removal_arboriculture_report": false
+    },
+    "deep_soil_pct": 5,
+    "deep_soil_permeable_paving_pct": 30,
+    "planting_on_structure_m2": 50,
+    "trees": {
+     "small_count": 0,
+     "medium_count": 1,
+     "large_count": 0
+    },
+    "deep_soil": {
+     "rootable_soil_zone_provided": false,
+     "medium_min_m2": 30,
+     "medium_min_dim_m": 2.5
+    },
+    "cos": {
+     "area_m2": 50,
+     "hard_landscape_area_m2": 10,
+     "min_dim_m": 3,
+     "universally_accessible": false,
+     "solar_access_pct": 30,
+     "separated_from_noise_odour": false
+    },
+    "parking_shade_trees": 2
+   },
+   "privacy": {
+    "sources_above_0_5m": true,
+    "bedroom_study_setback_m": 2,
+    "other_habitable_setback_m": 4,
+    "outdoor_active_setback_m": 5,
+    "cone_captures_adjoining_opening": true,
+    "living_room_outlook": false
+   },
+   "dwellings": {
+    "balconies_provided": true,
+    "min": {
+     "balcony_unscreened_perimeter_pct": 20
+    },
+    "ground_floor_fronting_count": 2,
+    "ground_floor_fronting_direct_access_pct": 50
+   },
+   "parking": {
+    "outside_primary_street_setback": false,
+    "behind_street_setback": false,
+    "path_of_travel_to_entries": false,
+    "access": {
+     "count": 2
+    },
+    "driveway": {
+     "two_way": false,
+     "dwellings_served": 12,
+     "parking_to_street_m": 10
+    },
+    "sightlines": {
+     "clear_0_75m_within_1_5m": false
+    },
+    "bicycle_spaces": 4,
+    "bicycle_spaces_visitor": 1,
+    "bicycle_secure_undercover_path": false,
+    "resident_spaces": 0,
+    "visitor_spaces": 1,
+    "resident_spaces_per_dwelling_avg": 2.5,
+    "as2890_compliant": false,
+    "visitor_bays_visible_signed_accessible": false,
+    "uncovered_at_grade_spaces": 9,
+    "basement": {
+     "present": true,
+     "protrusion_m": 1.5
+    }
+   },
+   "services": {
+    "bins_outside_street_setback_not_visible": false,
+    "bins_not_at_primary_entry": false
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.3-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.4": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.4": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r5": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.6": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.7": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.1-r2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.4.5": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.4": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.5": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.6": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.6.8": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.7.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.7.2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.7.6": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.6": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.7": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.7-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.4": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.5": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.7": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.9": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.10": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2": "MEETS"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "R80, 21 apartments on 2,000 m2, Location A: exceptions (7% deep soil with retained tree, rootable soil zone, arborist report), nil overshadowing next to MR2, vacant neighbour",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A3.2.3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r5",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r6",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.2-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.2-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.2-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R80",
+    "area_m2": 2000,
+    "region": "perth-peel",
+    "climate_zone": 5,
+    "location": "A",
+    "frontage_m": 40,
+    "significant_tree_retained": true
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 21
+   },
+   "adjoining": {
+    "south": {
+     "r_code": "MR2"
+    },
+    "vacant_or_unknown": true
+   },
+   "overshadow": {
+    "adjoining_pct": 60
+   },
+   "landscape": {
+    "existing_trees": {
+     "qualifying_present": true,
+     "qualifying_all_retained": false,
+     "removal_arboriculture_report": true
+    },
+    "deep_soil_pct": 8,
+    "trees": {
+     "small_count": 0,
+     "medium_count": 2,
+     "large_count": 1
+    },
+    "deep_soil": {
+     "rootable_soil_zone_provided": true,
+     "medium_min_m2": 36,
+     "medium_min_dim_m": 2,
+     "large_min_m2": 64,
+     "large_min_dim_m": 4.5
+    }
+   },
+   "privacy": {
+    "sources_above_0_5m": true,
+    "bedroom_study_setback_m": 3,
+    "other_habitable_setback_m": 4.5,
+    "outdoor_active_setback_m": 5.9
+   },
+   "parking": {
+    "access": {
+     "count": 2
+    },
+    "visitor_spaces": 3,
+    "motorcycle_spaces": 3,
+    "bicycle_spaces": 11,
+    "bicycle_spaces_visitor": 3
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A3.2.3": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.1": "NOT_APPLICABLE",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r5": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r6": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.2-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.2-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.2-r3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1": "MEETS"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "R80, 2,000 m2: exception facts missing give CANNOT_TELL; 21 dwellings in Location A need 3 visitor bays",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r4",
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r3",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R80",
+    "area_m2": 2000,
+    "region": "perth-peel",
+    "climate_zone": 5,
+    "location": "A",
+    "frontage_m": 40
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 21
+   },
+   "adjoining": {
+    "south": {
+     "r_code": "R40"
+    },
+    "vacant_or_unknown": false
+   },
+   "overshadow": {
+    "adjoining_pct": 60
+   },
+   "landscape": {
+    "existing_trees": {
+     "qualifying_present": true,
+     "qualifying_all_retained": false
+    },
+    "deep_soil_pct": 8,
+    "trees": {
+     "small_count": 1,
+     "medium_count": 1,
+     "large_count": 0
+    },
+    "deep_soil": {
+     "medium_min_m2": 36,
+     "medium_min_dim_m": 2,
+     "large_min_m2": 64,
+     "large_min_dim_m": 4.5,
+     "small_min_m2": 9,
+     "small_min_dim_m": 1.5
+    }
+   },
+   "privacy": {
+    "sources_above_0_5m": true,
+    "bedroom_study_setback_m": 3,
+    "other_habitable_setback_m": 4.5,
+    "outdoor_active_setback_m": 5.9,
+    "cone_captures_adjoining_opening": null
+   },
+   "parking": {
+    "access": {
+     "count": 2
+    },
+    "visitor_spaces": 2,
+    "motorcycle_spaces": 3,
+    "bicycle_spaces": 11,
+    "bicycle_spaces_visitor": 3
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.1": "CANNOT_TELL",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.4": "CANNOT_TELL",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r4": "CANNOT_TELL",
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r3": "CANNOT_TELL",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1": "DOES_NOT_MEET"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "MR1, 4 apartments on 650 m2: one medium tree; one opening on a 15 m frontage; bicycle rates round up",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.8.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1",
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "MR1",
+    "area_m2": 650,
+    "location": "B",
+    "frontage_m": 15
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 4
+   },
+   "landscape": {
+    "trees": {
+     "small_count": 2,
+     "medium_count": 1,
+     "large_count": 0
+    }
+   },
+   "parking": {
+    "access": {
+     "count": 1
+    },
+    "bicycle_spaces": 2,
+    "bicycle_spaces_visitor": 1
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.8.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.1-r1": "MEETS"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "HR1, 40 apartments, 6 visitor bays, location not stated: cannot tell A3.9.2-r1 (no default to Location B)",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "HR1",
+    "area_m2": 1200,
+    "region": "perth-peel",
+    "climate_zone": 5
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 40
+   },
+   "parking": {
+    "visitor_spaces": 6
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r1": "CANNOT_TELL"
+   }
+  }
+ }
+]

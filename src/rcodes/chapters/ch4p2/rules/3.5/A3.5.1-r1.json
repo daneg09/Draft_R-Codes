@@ -1,0 +1,106 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.5.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Cone of vision setback from a bedroom, study or open access walkway major opening, first 4 storeys: 3 m (Table 3.5)",
+  "text": "For development adjoining an existing dwelling, all sources of overlooking are orientated, offset or setback in accordance with Table 3.5 so that the cone of vision (refer to Figure 3.5a) does not capture major openings and/or active habitable spaces on an adjoining property (refer to Figure 3.5b).",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "privacy.sources_above_0_5m",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.vacant_or_unknown",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "adjoining.vacant_or_unknown",
+    "privacy.bedroom_study_setback_m",
+    "privacy.cone_captures_adjoining_opening",
+    "privacy.sources_above_0_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "privacy.bedroom_study_setback_m",
+    "op": ">=",
+    "value": 3.0
+  },
+  "exceptions": [
+    {
+      "label": "cone of vision does not capture a major opening or active habitable space of the adjoining existing dwelling",
+      "condition": {
+        "type": "boolean",
+        "fact": "privacy.cone_captures_adjoining_opening",
+        "expected": false
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "privacy.cone_captures_adjoining_opening"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.5",
+  "defined_terms": [
+    "cone of vision",
+    "major opening",
+    "active habitable space",
+    "adjoining property",
+    "natural ground level",
+    "open access walkway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.5.1",
+      "relation": "restructured",
+      "note": "fixed side and rear setbacks -> cone of vision to an existing dwelling's openings"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.5",
+      "relation": "relaxed",
+      "note": "adjoining R50 or lower 4.5 m / higher 3 m -> 3 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36,
+    "table": "Table 3.5",
+    "figure": "Figure 3.5a, 3.5b"
+  },
+  "register_ref": "C4P2-085",
+  "verify": false,
+  "notes": "from: ch4p1 C3.9.1-r1 (Table 3.5 value literal). Register C4P2-088: one value for all adjoining sites, the former 'higher than R50' value (relaxed by 1.5 m for R50-and-lower neighbours). Sources with a floor level more than 0.5 m above NGL; the setback fact is the least cone of vision setback from such sources on the first four storeys (fifth storey and above is A3.5.1-r4). Applies where the adjoining property has an existing dwelling (adjoining.vacant_or_unknown false; vacant or unknown is A3.5.2). Where the cone does not capture an adjoining opening or active habitable space the outcome is met (exception). Register C4P2-085: no outcome for adjoining non-dwelling uses (commercial, POS); ToC quotes this clause as 'A2.3.1' ending 'private outdoor living areas'. Figure 3.5b caption cites 'Table 3.10a' (drafting error, should be Table 3.5; C4P2-092).",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

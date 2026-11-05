@@ -1,0 +1,540 @@
+[
+ {
+  "title": "R100, 40 apartments, 12 storeys, climate zone 5: every 4.1 to 4.9 value at its limit meets",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A4.1.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.1.2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.1.3",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.2(a)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.2(b)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.2(c)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.3",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.4",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.3",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A4.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.5.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.5.5",
+   "rcodes:draft-2026-10-24/ch4p2/A4.6.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.7.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.7.2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.8.1(b)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.9.1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R100",
+    "region": "perth-peel",
+    "climate_zone": 5,
+    "area_m2": 3000,
+    "local_housing_mix_requirement": false
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 40
+   },
+   "building": {
+    "height_storeys": 12
+   },
+   "circulation": {
+    "corridor_width_m": 1.5
+   },
+   "noise": {
+    "exceeds_ncc_minimum": true
+   },
+   "dwellings": {
+    "with_2h_sun_pct": 70,
+    "no_sun_pct": 15,
+    "habitable_rooms_external_window_visible": true,
+    "lightwell_skylight_primary_daylight": false,
+    "lightwell_primary_fresh_air": false,
+    "cross_ventilated_pct": 60,
+    "single_aspect_in_cross_ventilated_share": true,
+    "single_aspect_openings_45_90_to_cooling_wind": true,
+    "balconies_10th_storey_high_low_vents": true,
+    "cross_through_end_openings_only_present": true,
+    "single_aspect_open_plan_present": true,
+    "single_aspect_open_plan_ceiling_height_m": 2.7,
+    "single_aspect_kitchen_furthest": false,
+    "pos_accessed_from_habitable_room": true,
+    "storage_separate_ventilated_weatherproof": true,
+    "noise_source_adjacent_habitable_wall": false,
+    "bedroom_living_openings_onto_circulation": false,
+    "max_same_bedroom_count_pct": 80,
+    "silver_level_pct": 20,
+    "platinum_level_pct": 0,
+    "min": {
+     "habitable_window_glazing_pct": 10,
+     "habitable_window_clear_glazing_pct": 50,
+     "openings_two_walls": true,
+     "opening_centre_separation_m": 2.0,
+     "internal_floor_area_m2": 72,
+     "bedrooms_of_smallest": 2,
+     "bathrooms_of_smallest": 2,
+     "separate_toilets_of_smallest": 0,
+     "master_bedroom_area_m2": 10,
+     "master_bedroom_min_dim_m": 3,
+     "bedroom_area_m2": 9,
+     "bedroom_min_dim_m": 3,
+     "primary_living_min_dim_m": 4,
+     "living_room_bedrooms": 2,
+     "ceiling_height_habitable_m": 2.7,
+     "ceiling_height_non_habitable_m": 2.4,
+     "pos_area_m2": 10,
+     "pos_min_dim_m": 2.4,
+     "pos_dwelling_category": "2bed",
+     "storage_area_m2": 4,
+     "storage_bedrooms": 2,
+     "storage_min_dim_m": 1.5,
+     "storage_height_m": 2.1,
+     "noise_source_to_bedroom_window_m": 3.0
+    },
+    "max": {
+     "single_aspect_room_depth_ratio": 3,
+     "cross_through_depth_m": 20,
+     "single_aspect_open_plan_length_m": 8.1
+    }
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A4.1.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.1.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.1.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.2(a)": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.2(b)": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.2(c)": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.3": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.4.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.5.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.5.5": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.6.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.7.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.7.2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.8.1(b)": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.9.1": "MEETS"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "R100, 40 apartments: each 4.1 to 4.9 value just short does not meet",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A4.1.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.1.2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.1.3",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.2(a)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.2(b)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.2(c)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.3",
+   "rcodes:draft-2026-10-24/ch4p2/A4.2.4",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.3",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A4.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.5.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.5.5",
+   "rcodes:draft-2026-10-24/ch4p2/A4.6.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.7.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.7.2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.8.1(b)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.9.1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R100",
+    "region": "perth-peel",
+    "climate_zone": 5,
+    "area_m2": 3000,
+    "local_housing_mix_requirement": false
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 40
+   },
+   "building": {
+    "height_storeys": 12
+   },
+   "circulation": {
+    "corridor_width_m": 1.4
+   },
+   "noise": {
+    "exceeds_ncc_minimum": false
+   },
+   "dwellings": {
+    "with_2h_sun_pct": 69,
+    "no_sun_pct": 15,
+    "habitable_rooms_external_window_visible": true,
+    "lightwell_skylight_primary_daylight": true,
+    "lightwell_primary_fresh_air": true,
+    "cross_ventilated_pct": 59,
+    "single_aspect_in_cross_ventilated_share": true,
+    "single_aspect_openings_45_90_to_cooling_wind": true,
+    "balconies_10th_storey_high_low_vents": false,
+    "cross_through_end_openings_only_present": true,
+    "single_aspect_open_plan_present": true,
+    "single_aspect_open_plan_ceiling_height_m": 2.7,
+    "single_aspect_kitchen_furthest": false,
+    "pos_accessed_from_habitable_room": true,
+    "storage_separate_ventilated_weatherproof": true,
+    "noise_source_adjacent_habitable_wall": false,
+    "bedroom_living_openings_onto_circulation": true,
+    "max_same_bedroom_count_pct": 85,
+    "silver_level_pct": 19,
+    "platinum_level_pct": 4,
+    "min": {
+     "habitable_window_glazing_pct": 9.9,
+     "habitable_window_clear_glazing_pct": 50,
+     "openings_two_walls": true,
+     "opening_centre_separation_m": 1.9,
+     "internal_floor_area_m2": 71,
+     "bedrooms_of_smallest": 2,
+     "bathrooms_of_smallest": 2,
+     "separate_toilets_of_smallest": 0,
+     "master_bedroom_area_m2": 9.9,
+     "master_bedroom_min_dim_m": 3,
+     "bedroom_area_m2": 9,
+     "bedroom_min_dim_m": 2.9,
+     "primary_living_min_dim_m": 3.9,
+     "living_room_bedrooms": 2,
+     "ceiling_height_habitable_m": 2.65,
+     "ceiling_height_non_habitable_m": 2.4,
+     "pos_area_m2": 9.9,
+     "pos_min_dim_m": 2.4,
+     "pos_dwelling_category": "2bed",
+     "storage_area_m2": 3.9,
+     "storage_bedrooms": 2,
+     "storage_min_dim_m": 1.5,
+     "storage_height_m": 2.1,
+     "noise_source_to_bedroom_window_m": 2.9
+    },
+    "max": {
+     "single_aspect_room_depth_ratio": 3.1,
+     "cross_through_depth_m": 20.5,
+     "single_aspect_open_plan_length_m": 8.2
+    }
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A4.1.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.1.2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.1.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.2(a)": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.2(b)": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.2(c)": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.2.4": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.3": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.4": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.4.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.5.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.5.5": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.6.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.7.1": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.7.2": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.8.1(b)": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.9.1": "DOES_NOT_MEET"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "MR1, climate zone 1, 8 storeys, local housing strategy mix, studio at limits, kitchen allowance to 9 m, 5% platinum: meets",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r2",
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A4.4.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.6.1",
+   "rcodes:draft-2026-10-24/ch4p2/A4.8.1(a)",
+   "rcodes:draft-2026-10-24/ch4p2/A4.9.1"
+  ],
+  "app": {
+   "site": {
+    "r_code": "MR1",
+    "region": "perth-peel",
+    "climate_zone": 1,
+    "area_m2": 3000,
+    "local_housing_mix_requirement": true
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 40
+   },
+   "building": {
+    "height_storeys": 8
+   },
+   "circulation": {
+    "corridor_width_m": 1.5
+   },
+   "noise": {
+    "exceeds_ncc_minimum": true
+   },
+   "dwellings": {
+    "with_2h_sun_pct": 70,
+    "no_sun_pct": 15,
+    "habitable_rooms_external_window_visible": true,
+    "lightwell_skylight_primary_daylight": false,
+    "lightwell_primary_fresh_air": false,
+    "cross_ventilated_pct": 60,
+    "single_aspect_in_cross_ventilated_share": true,
+    "single_aspect_openings_45_90_to_cooling_wind": true,
+    "balconies_10th_storey_high_low_vents": true,
+    "cross_through_end_openings_only_present": true,
+    "single_aspect_open_plan_present": true,
+    "single_aspect_open_plan_ceiling_height_m": 2.7,
+    "single_aspect_kitchen_furthest": true,
+    "pos_accessed_from_habitable_room": true,
+    "storage_separate_ventilated_weatherproof": true,
+    "noise_source_adjacent_habitable_wall": false,
+    "bedroom_living_openings_onto_circulation": false,
+    "max_same_bedroom_count_pct": 80,
+    "silver_level_pct": 10,
+    "platinum_level_pct": 5,
+    "min": {
+     "habitable_window_glazing_pct": 10,
+     "habitable_window_clear_glazing_pct": 50,
+     "openings_two_walls": true,
+     "opening_centre_separation_m": 2.0,
+     "internal_floor_area_m2": 36,
+     "bedrooms_of_smallest": 0,
+     "bathrooms_of_smallest": 1,
+     "separate_toilets_of_smallest": 0,
+     "master_bedroom_area_m2": 10,
+     "master_bedroom_min_dim_m": 3,
+     "bedroom_area_m2": 9,
+     "bedroom_min_dim_m": 3,
+     "primary_living_min_dim_m": 3.6,
+     "living_room_bedrooms": 0,
+     "ceiling_height_habitable_m": 2.7,
+     "ceiling_height_non_habitable_m": 2.4,
+     "pos_area_m2": 15,
+     "pos_min_dim_m": 3,
+     "pos_dwelling_category": "ground_floor",
+     "storage_area_m2": 3,
+     "storage_bedrooms": 0,
+     "storage_min_dim_m": 1.5,
+     "storage_height_m": 2.1,
+     "noise_source_to_bedroom_window_m": 3.0
+    },
+    "max": {
+     "single_aspect_room_depth_ratio": 3,
+     "cross_through_depth_m": 20,
+     "single_aspect_open_plan_length_m": 9.0
+    },
+    "mix_per_local_requirement": true
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.2-r2": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.4": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.4.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.6.1": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.8.1(a)": "MEETS",
+    "rcodes:draft-2026-10-24/ch4p2/A4.9.1": "MEETS"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "MR1: kitchen allowance capped at 9 m (3.0 m ceiling, 9.2 m long) and mix not per local strategy: does not meet",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.4",
+   "rcodes:draft-2026-10-24/ch4p2/A4.8.1(a)"
+  ],
+  "app": {
+   "site": {
+    "r_code": "MR1",
+    "region": "perth-peel",
+    "climate_zone": 1,
+    "area_m2": 3000,
+    "local_housing_mix_requirement": true
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 40
+   },
+   "building": {
+    "height_storeys": 8
+   },
+   "circulation": {
+    "corridor_width_m": 1.5
+   },
+   "noise": {
+    "exceeds_ncc_minimum": true
+   },
+   "dwellings": {
+    "with_2h_sun_pct": 70,
+    "no_sun_pct": 15,
+    "habitable_rooms_external_window_visible": true,
+    "lightwell_skylight_primary_daylight": false,
+    "lightwell_primary_fresh_air": false,
+    "cross_ventilated_pct": 60,
+    "single_aspect_in_cross_ventilated_share": true,
+    "single_aspect_openings_45_90_to_cooling_wind": true,
+    "balconies_10th_storey_high_low_vents": true,
+    "cross_through_end_openings_only_present": true,
+    "single_aspect_open_plan_present": true,
+    "single_aspect_open_plan_ceiling_height_m": 3.0,
+    "single_aspect_kitchen_furthest": true,
+    "pos_accessed_from_habitable_room": true,
+    "storage_separate_ventilated_weatherproof": true,
+    "noise_source_adjacent_habitable_wall": false,
+    "bedroom_living_openings_onto_circulation": false,
+    "max_same_bedroom_count_pct": 80,
+    "silver_level_pct": 10,
+    "platinum_level_pct": 5,
+    "min": {
+     "habitable_window_glazing_pct": 10,
+     "habitable_window_clear_glazing_pct": 50,
+     "openings_two_walls": true,
+     "opening_centre_separation_m": 2.0,
+     "internal_floor_area_m2": 36,
+     "bedrooms_of_smallest": 0,
+     "bathrooms_of_smallest": 1,
+     "separate_toilets_of_smallest": 0,
+     "master_bedroom_area_m2": 10,
+     "master_bedroom_min_dim_m": 3,
+     "bedroom_area_m2": 9,
+     "bedroom_min_dim_m": 3,
+     "primary_living_min_dim_m": 3.6,
+     "living_room_bedrooms": 0,
+     "ceiling_height_habitable_m": 2.7,
+     "ceiling_height_non_habitable_m": 2.4,
+     "pos_area_m2": 15,
+     "pos_min_dim_m": 3,
+     "pos_dwelling_category": "ground_floor",
+     "storage_area_m2": 3,
+     "storage_bedrooms": 0,
+     "storage_min_dim_m": 1.5,
+     "storage_height_m": 2.1,
+     "noise_source_to_bedroom_window_m": 3.0
+    },
+    "max": {
+     "single_aspect_room_depth_ratio": 3,
+     "cross_through_depth_m": 20,
+     "single_aspect_open_plan_length_m": 9.2
+    },
+    "mix_per_local_requirement": false
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.4": "DOES_NOT_MEET",
+    "rcodes:draft-2026-10-24/ch4p2/A4.8.1(a)": "DOES_NOT_MEET"
+   },
+   "pathway": "performance-assessment"
+  }
+ },
+ {
+  "title": "R100: open plan 8.5 m under a 2.7 m ceiling, kitchen position not stated: cannot tell",
+  "covers": [
+   "rcodes:draft-2026-10-24/ch4p2/A4.3.4"
+  ],
+  "app": {
+   "site": {
+    "r_code": "R100",
+    "region": "perth-peel",
+    "climate_zone": 5,
+    "area_m2": 3000,
+    "local_housing_mix_requirement": false
+   },
+   "proposal": {
+    "dwelling_type": "multiple_dwelling",
+    "dwelling_count": 40
+   },
+   "building": {
+    "height_storeys": 12
+   },
+   "circulation": {
+    "corridor_width_m": 1.5
+   },
+   "noise": {
+    "exceeds_ncc_minimum": true
+   },
+   "dwellings": {
+    "with_2h_sun_pct": 70,
+    "no_sun_pct": 15,
+    "habitable_rooms_external_window_visible": true,
+    "lightwell_skylight_primary_daylight": false,
+    "lightwell_primary_fresh_air": false,
+    "cross_ventilated_pct": 60,
+    "single_aspect_in_cross_ventilated_share": true,
+    "single_aspect_openings_45_90_to_cooling_wind": true,
+    "balconies_10th_storey_high_low_vents": true,
+    "cross_through_end_openings_only_present": true,
+    "single_aspect_open_plan_present": true,
+    "single_aspect_open_plan_ceiling_height_m": 2.7,
+    "pos_accessed_from_habitable_room": true,
+    "storage_separate_ventilated_weatherproof": true,
+    "noise_source_adjacent_habitable_wall": false,
+    "bedroom_living_openings_onto_circulation": false,
+    "max_same_bedroom_count_pct": 80,
+    "silver_level_pct": 20,
+    "platinum_level_pct": 0,
+    "min": {
+     "habitable_window_glazing_pct": 10,
+     "habitable_window_clear_glazing_pct": 50,
+     "openings_two_walls": true,
+     "opening_centre_separation_m": 2.0,
+     "internal_floor_area_m2": 72,
+     "bedrooms_of_smallest": 2,
+     "bathrooms_of_smallest": 2,
+     "separate_toilets_of_smallest": 0,
+     "master_bedroom_area_m2": 10,
+     "master_bedroom_min_dim_m": 3,
+     "bedroom_area_m2": 9,
+     "bedroom_min_dim_m": 3,
+     "primary_living_min_dim_m": 4,
+     "living_room_bedrooms": 2,
+     "ceiling_height_habitable_m": 2.7,
+     "ceiling_height_non_habitable_m": 2.4,
+     "pos_area_m2": 10,
+     "pos_min_dim_m": 2.4,
+     "pos_dwelling_category": "2bed",
+     "storage_area_m2": 4,
+     "storage_bedrooms": 2,
+     "storage_min_dim_m": 1.5,
+     "storage_height_m": 2.1,
+     "noise_source_to_bedroom_window_m": 3.0
+    },
+    "max": {
+     "single_aspect_room_depth_ratio": 3,
+     "cross_through_depth_m": 20,
+     "single_aspect_open_plan_length_m": 8.5
+    }
+   }
+  },
+  "expect": {
+   "rules": {
+    "rcodes:draft-2026-10-24/ch4p2/A4.3.4": "CANNOT_TELL"
+   },
+   "pathway": "performance-assessment"
+  }
+ }
+]

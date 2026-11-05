@@ -1,0 +1,26 @@
+{
+  "chapter": "ch4p2",
+  "version": "draft-2026-10-24",
+  "title": "Chapter 4 Part 2 Apartments R80 and above",
+  "kind": "built-form",
+  "pathway": "performance",
+  "dwelling_types": ["multiple_dwelling"],
+  "coding": ["R80+", "LR1", "MR1", "MR2", "HR1", "HR2", "HR3", "R-PA", "LR", "MR", "HR", "R-AC0", "R-AC1", "R-AC2", "R-AC3", "R-AC4"],
+  "summary_table": "table-2.1",
+  "source": {"file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf", "extract": "Working/text/draft/Residential Design Codes Chapter 4 (Part 2) - Apartments.txt"},
+  "register": "Working/register/ch4p2-apartments-r80-plus.csv",
+  "twin": "ch4p1",
+  "columns": {"testable": "A", "fallback": "O", "guidance": "DG"},
+  "elements": {
+    "2.1": "Primary development parameters", "2.2": "Building height", "2.3": "Street setbacks", "2.4": "Side and rear setbacks",
+    "2.5": "Plot ratio", "2.6": "Building depth", "2.7": "Building separation", "2.8": "Development incentives for community benefit",
+    "3.1": "Site analysis and design response", "3.2": "Orientation", "3.3": "Tree canopy and deep soil areas", "3.4": "Communal open space",
+    "3.5": "Visual privacy", "3.6": "Public domain interface", "3.7": "Pedestrian access and entries", "3.8": "Vehicle access",
+    "3.9": "Car and bicycle parking",
+    "4.1": "Solar and daylight access", "4.2": "Natural ventilation", "4.3": "Size and layout of dwellings", "4.4": "Private open space and balconies",
+    "4.5": "Circulation and common spaces", "4.6": "Storage", "4.7": "Managing the impact of noise", "4.8": "Dwelling mix",
+    "4.9": "Universal design", "4.10": "Facade design", "4.11": "Roof design", "4.12": "Landscape design", "4.13": "Adaptive reuse",
+    "4.14": "Mixed use", "4.15": "Energy efficiency", "4.16": "Water management and conservation", "4.17": "Waste management", "4.18": "Utilities"
+  },
+  "notes": "Entirely performance-based (Chapter 1B). Acceptable Outcomes (A) are the testable provisions; an A that is not met is assessed against the element Objectives (O) with Design Guidance (DG) informing the assessment. Table 2.1 sets default primary development parameters by coding column (R80, LR1, R100, R160, MR1, MR2, HR1, HR2, HR3, R-PA) that the local planning framework may amend or replace; codes LR1, MR2, HR1 and R-PA are the renamed R-AC4, R-AC3, R-AC1 and R-AC0 and MR1, HR2, HR3 are new (register C4P2-017). R-AC2 has no column. Design review applies to larger, complex or innovative proposals (Chapter 1B 3.2)."
+}

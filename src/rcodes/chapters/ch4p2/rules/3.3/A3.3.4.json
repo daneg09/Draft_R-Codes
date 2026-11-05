@@ -1,0 +1,93 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Deep soil area at least 10% of site area (7% where existing trees are retained) (Table 3.3a)",
+  "text": "Deep soil areas are provided in accordance with Table 3.3a. Deep soil areas are to be co-located with existing trees for retention and/or adjoining trees, or alternatively provided in a location that is conducive to tree growth and suitable for communal open space.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.deep_soil_pct",
+    "site.significant_tree_retained"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "landscape.deep_soil_pct",
+    "op": ">=",
+    "value": 10
+  },
+  "exceptions": [
+    {
+      "label": "existing tree(s) retained on site: 7%",
+      "condition": {
+        "type": "boolean",
+        "fact": "site.significant_tree_retained",
+        "expected": true
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "threshold",
+          "fact": "landscape.deep_soil_pct",
+          "op": ">=",
+          "value": 7
+        }
+      },
+      "inputs": [
+        "landscape.deep_soil_pct",
+        "site.significant_tree_retained"
+      ],
+      "source": "Table 3.3a, p31"
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [
+    "deep soil area",
+    "site area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.4",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.3a",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Table 3.3a 'Minimum deep soil area' 10% of site area, 7% if existing tree(s) retained on site. The 10%/7% cell is merged across all three site-area rows (confirmed p31), so it applies to every site area. 'Existing tree(s) retained' read as site.significant_tree_retained. The co-location sentence is A3.3.4-r1 (judgment). Regional: 10% deep soil competes with basement parking on 1,000 m2 lots.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p31 Table 3.3a: the '10% OR 7% if existing tree(s) retained on site (% site area)' cell has no row rules and spans all three site-area rows."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "table-3.4a-side-to-3.5m",
+  "title": "Table 3.4a Lot boundary setbacks: side setback, wall height up to 3.5 m",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10-R60"
+      },
+      "value": 1.0
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "C4P1-085",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "1m confirmed; Table 3.4a has no coding column. Table 4A (p7) agrees."
+  },
+  "notes": "Copied from Chapter 3 and checked against p32; R2 and R2.5 flat rows dropped, one value for R10-R60. No rounding footnote: the 3.5-3.6 m and 7.0-7.1 m gaps are unresolved."
+}

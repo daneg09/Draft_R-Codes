@@ -1,0 +1,154 @@
+{
+  "id": "table-2.10a",
+  "title": "Table 2.10a Modified provisions for housing on lots less than 100m2 (R100-SL)",
+  "keys": [
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "pga_min_area_m2"
+      },
+      "value": 15,
+      "note": "1.1 Private open space, C1.1.1: a single consolidated uncovered primary garden area with a minimum area of 15m2"
+    },
+    {
+      "match": {
+        "metric": "pga_min_dim_m"
+      },
+      "value": 3,
+      "note": "1.1 C1.1.1: minimum dimension 3 m"
+    },
+    {
+      "match": {
+        "metric": "pga_uncovered"
+      },
+      "value": true,
+      "note": "1.1 C1.1.1: PGA uncovered; the current 'or one POS balcony/roof terrace per Table 1.1b' alternative is removed"
+    },
+    {
+      "match": {
+        "metric": "soft_landscaping_min_pct"
+      },
+      "value": 10,
+      "note": "1.2 Trees and landscaping, C1.2.1: minimum 10% of the site as soft landscaping"
+    },
+    {
+      "match": {
+        "metric": "soft_landscaping_min_dim_m"
+      },
+      "value": 1,
+      "note": "1.2 C1.2.1: minimum dimension 1 m"
+    },
+    {
+      "match": {
+        "metric": "street_setback_soft_landscaping_min_pct"
+      },
+      "value": null,
+      "note": "1.2 C1.2.2: no minimum landscaping of the street setback area"
+    },
+    {
+      "match": {
+        "metric": "trees_min"
+      },
+      "value": null,
+      "note": "1.2 Trees and landscaping (clauses listed C1.2.1, C1.2.2, C1.2.4): no minimum tree provisions. The tree clause cited elsewhere in this chapter is C1.2.3 (C2.6.1(v)); the page lists C1.2.4.",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "storeys_min"
+      },
+      "value": 2,
+      "note": "3.2 Building height, C3.2.1: minimum two storey building height"
+    },
+    {
+      "match": {
+        "metric": "storeys_max"
+      },
+      "value": 4,
+      "note": "3.2 C3.2.1: maximum four storey building height in accordance with Table 3.2a"
+    },
+    {
+      "match": {
+        "metric": "primary_street_setback_m"
+      },
+      "value": 1,
+      "note": "3.3 Street setbacks, C3.3.1: 1 m primary street setback"
+    },
+    {
+      "match": {
+        "metric": "secondary_street_setback_m"
+      },
+      "value": 1,
+      "note": "3.3 C3.3.1: 1 m secondary street setback"
+    },
+    {
+      "match": {
+        "metric": "row_setback_m"
+      },
+      "value": 0.5,
+      "note": "3.3 C3.3.1: 0.5 m setback to an adjoining right-of-way"
+    },
+    {
+      "match": {
+        "metric": "upper_floor_street_setback_m"
+      },
+      "value": 0,
+      "note": "3.3 C3.3.1: nil street setback for upper floors"
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_location"
+      },
+      "value": "behind the street setback",
+      "note": "3.4 Lot boundary setbacks (footnote 1), cites C3.4.5: boundary walls permitted behind the street setback; register says the reference should be C3.4.4",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_max_height_m"
+      },
+      "value": 13,
+      "note": "3.4 (footnote 1), cites C3.4.5: maximum boundary wall height 13 m",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "street_fence_max_height_mm"
+      },
+      "value": 900,
+      "note": "3.6 Streetscape, C3.6.5: street fences not to exceed 900 mm in height"
+    },
+    {
+      "match": {
+        "metric": "overshadowing"
+      },
+      "value": null,
+      "note": "3.9 Solar access for adjoining sites (footnote 1), all clauses: no overshadowing provisions apply"
+    },
+    {
+      "match": {
+        "metric": "visual_privacy"
+      },
+      "value": null,
+      "note": "3.10 Visual privacy (footnote 1), all clauses: no visual privacy provisions apply"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 25,
+    "extract_line": 774,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch2-035",
+  "verify": true,
+  "notes": "Documentation table keyed by 'metric' (not an application fact); it is not looked up by the engine. Each row records one modified value for a provision owned by another element; the owning parts write their R100-SL rule variants from it. A null value means the provision does not apply at R100-SL. Footnote 1 (3.4, 3.9, 3.10): where development abuts an adjoining property not coded R100-SL, the modified provisions of Table 2.10a do not apply. Not carried from Vol 1 Table 2.10a: 85% maximum site cover (consistent with removal of site cover at R30+), ceiling heights 2.65 m / 2.4 m, and the balcony/roof-terrace POS alternative.",
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "All values match p25. Kept flagged for cross-references printed on the page: the 3.4 row cites C3.4.5 for boundary walls (register ch2-035 says C3.4.4), and the 1.2 row lists C1.2.4 for trees where the tree clause appears to be C1.2.3."
+  }
+}

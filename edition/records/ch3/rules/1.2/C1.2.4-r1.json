@@ -1,0 +1,131 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.2.4-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "One small tree per grouped dwelling elsewhere on the lot (Table 1.2a)",
+  "text": "Tree Canopy. C1.2.4 A minimum number of trees to be planted in accordance with Tables 1.2a and provided with the required deep soil area per tree in accordance with Table 1.2b. Table 1.2a Minimum tree provisions. Grouped dwellings, elsewhere on lot(1): 1 small tree (per dwelling). Trees required within the street setback area are in addition to trees required per dwelling and where providing a secondary private open space. 1 Can also be planted in primary street setback area if adequate room is available. Tree provisions exclude ancillary dwellings.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R2-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.trees_elsewhere",
+    "proposal.dwelling_count",
+    "landscape.trees_in_street_setback",
+    "site.frontage_m",
+    "building.primary_street_setback_m"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "landscape.trees_elsewhere",
+    "op": ">=",
+    "value": {
+      "fact": "proposal.dwelling_count"
+    }
+  },
+  "exceptions": [
+    {
+      "label": "per-dwelling trees planted in the primary street setback area (Table 1.2a note 1); street setback trees also required",
+      "condition": {
+        "type": "threshold",
+        "fact": "building.primary_street_setback_m",
+        "op": ">=",
+        "value": 1.5
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "landscape.trees_in_street_setback + landscape.trees_elsewhere - proposal.dwelling_count",
+          "op": ">=",
+          "value": {
+            "table": "table-1.2a"
+          }
+        }
+      },
+      "source": "Table 1.2a note 1",
+      "inputs": [
+        "landscape.trees_in_street_setback",
+        "landscape.trees_elsewhere",
+        "proposal.dwelling_count",
+        "site.frontage_m",
+        "building.primary_street_setback_m"
+      ],
+      "verify": true
+    },
+    {
+      "label": "per-dwelling trees planted in the primary street setback area (Table 1.2a note 1); no street setback trees required",
+      "condition": {
+        "type": "threshold",
+        "fact": "building.primary_street_setback_m",
+        "op": "<",
+        "value": 1.5
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "landscape.trees_in_street_setback + landscape.trees_elsewhere",
+          "op": ">=",
+          "value": {
+            "fact": "proposal.dwelling_count"
+          }
+        }
+      },
+      "source": "Table 1.2a note 1",
+      "inputs": [
+        "landscape.trees_in_street_setback",
+        "landscape.trees_elsewhere",
+        "proposal.dwelling_count",
+        "building.primary_street_setback_m"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.2",
+  "defined_terms": [
+    "small tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.4",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.2a",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.2",
+      "relation": "tightened",
+      "note": "R25 and below: 2 m x 2 m planting area -> small tree with 9 m2 deep soil, plus street setback trees"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 11,
+    "table": "Table 1.2a"
+  },
+  "register_ref": "ch3-012",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "1 small tree per dwelling checks. The note-1 exceptions branch on the 1.5m primary street setback test, which does not say whether it is the setback provided or required (as C1.2.4)."
+  },
+  "notes": "diverges: content twin of Chapter 2 C1.2.3-r1, renumbered; Table 1.2a (p11) row 'Grouped dwellings: 1 small tree (per dwelling)' is tested against proposal.dwelling_count rather than 1, since the tree count is for the lot. Note 1 lets the per-dwelling trees be planted in the primary street setback area if room allows, so the exceptions test total trees against the street requirement plus one per dwelling. C1.1.4 and C1.2.5 trees are additional and not netted out here."
+}

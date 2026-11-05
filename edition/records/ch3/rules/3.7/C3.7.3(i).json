@@ -1,0 +1,58 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.3(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Driveway minimum width 3 m",
+  "text": "Driveways must be: i. a minimum 3m wide;",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.driveway.width_min_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.driveway.width_min_m",
+    "op": ">=",
+    "value": 3.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "driveway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.2",
+      "relation": "relaxed",
+      "note": "side boundary clearance 0.5 m -> 0.3 m; 9 m aggregate width limit deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 40
+  },
+  "register_ref": "ch3-075",
+  "verify": false,
+  "notes": "Same test as Chapter 2 C3.7.3(i). Unlike Chapter 2, Chapter 3 keeps a 0.3 m side boundary setback (C3.7.3(iii)) and has no aggregate width limit.",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

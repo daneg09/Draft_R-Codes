@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Deep soil shortfall offset by planting on structure of twice the shortfall",
+  "text": "Where the required deep soil areas cannot be provided due to site restrictions, planting on structure with an area equivalent to two times the shortfall in deep soil area provision is provided.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "formula",
+      "expr": "landscape.deep_soil_pct < (7 if site.significant_tree_retained else 10)",
+      "label": "deep soil below the A3.3.4 minimum"
+    }
+  ],
+  "inputs": [
+    "landscape.deep_soil_pct",
+    "landscape.planting_on_structure_m2",
+    "site.area_m2",
+    "site.significant_tree_retained"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "landscape.planting_on_structure_m2",
+    "op": ">=",
+    "value": "2 * ((7 if site.significant_tree_retained else 10) - landscape.deep_soil_pct) / 100 * site.area_m2",
+    "label": "twice the deep soil shortfall"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [
+    "deep soil area",
+    "planting on structure"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Applies where deep soil is below the A3.3.4 minimum (10%, or 7% with a retained tree). Shortfall = (required % - provided %) x site area. Whether the shortfall arises from 'site restrictions' is not tested. landscape.planting_on_structure_m2 proposed.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

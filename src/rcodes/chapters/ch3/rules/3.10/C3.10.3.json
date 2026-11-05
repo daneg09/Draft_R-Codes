@@ -1,0 +1,84 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.10.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.10",
+  "element_title": "Visual privacy",
+  "title": "Bedroom or study major opening offset 1.5 m from a parallel adjoining opening",
+  "text": "Notwithstanding C3.10.2, a major opening to a bedroom or study may be offset a minimum of 1.5m from a parallel major opening on an adjoining property, measured from the edge of one major opening to another (refer Figure 3.10g).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "privacy.sources_above_0_5m",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.vacant_or_unknown",
+      "expected": false
+    },
+    {
+      "type": "boolean",
+      "fact": "privacy.cone_captures_adjoining_opening",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "adjoining.vacant_or_unknown",
+    "privacy.bedroom_study_offset_m",
+    "privacy.cone_captures_adjoining_opening",
+    "privacy.sources_above_0_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "privacy.bedroom_study_offset_m",
+    "op": ">=",
+    "value": 1.5
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.10",
+  "defined_terms": [
+    "major opening",
+    "adjoining property"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.10.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 47,
+    "figure": "Figure 3.10g"
+  },
+  "register_ref": "ch3-088",
+  "verify": false,
+  "notes": "Same as Chapter 2 C3.10.3. Bedroom and study openings only; measured edge to edge between parallel openings. May not address overlooking of other floor levels (p47 note). Applies to sources with a floor level more than 0.5 m above NGL; the cone radius includes the width of any adjoining ROW, communal street or battleaxe leg (p47 note). C3.10.4 applies C3.10.1-C3.10.3 between grouped dwellings on the same lot. Vacant or unknown adjoining sites are C3.10.5. Coding excludes R100-SL: Chapter 3 Table 2.10a (p26) removes all 3.10 provisions for R100-SL; its footnote restores them where the adjoining property is not R100-SL (not encoded).",
+  "verified": {
+    "method": "page-image",
+    "page": 47,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

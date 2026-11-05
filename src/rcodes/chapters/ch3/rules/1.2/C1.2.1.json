@@ -1,0 +1,95 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Soft landscaping minimum 15% of the site",
+  "text": "Landscaping. C1.2.1 Development to provide a minimum 15% soft landscaping per site with a minimum dimension of 1m (refer Figure 1.2a). C1.2.6 The soft landscaping percentage of C1.2.1 may be reduced to 10% where a significant existing tree is retained on site. Note: a retained tree replaces the tree planting provision in C1.2.4 on a like-for-like basis.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R2-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.soft_area_m2",
+    "site.area_m2",
+    "site.significant_tree_retained"
+  ],
+  "evaluator": {
+    "type": "percentage-of",
+    "fact": "landscape.soft_area_m2",
+    "of": "site.area_m2",
+    "op": ">=",
+    "value": 15
+  },
+  "exceptions": [
+    {
+      "label": "C1.2.6 significant existing tree retained on site: soft landscaping reduced to 10%",
+      "condition": {
+        "type": "boolean",
+        "fact": "site.significant_tree_retained",
+        "expected": true
+      },
+      "effect": {
+        "set": {
+          "value": 10
+        }
+      },
+      "source": "C1.2.6 (register ch3-014)",
+      "inputs": [
+        "site.significant_tree_retained"
+      ],
+      "verify": false
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.2",
+  "defined_terms": [
+    "soft landscape",
+    "site area",
+    "significant existing tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.1",
+      "relation": "same",
+      "note": "R30 and above unchanged"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "no site-wide soft landscaping requirement for grouped R25 and below in Part B"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.6",
+      "relation": "same",
+      "note": "tree-retention reduction to 10% now C1.2.6; new for R25 and below (ch3-014)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 11,
+    "figure": "Figure 1.2a"
+  },
+  "register_ref": "ch3-009",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values (15%, 1m; 10% with a retained significant tree, C1.2.6 on p12) check. 'Per site' does not say whether a grouped development is tested per dwelling site or across the whole development; Figure 1.2a shows several dwellings without settling it (ch3-009)."
+  },
+  "notes": "diverges: the tree-retention reduction is C1.2.6 in Chapter 3 (p12; C1.2.4 in Chapter 2), so the exception label and source are renumbered; the test is unchanged. Soft landscape per A1 (300 mm soil, in-ground planting, turf; excludes permeable paving and planter boxes). 'Per site' for a grouped dwelling reads as the dwelling's site (A1 exclusive-use area); whether 15% is tested per dwelling or across the development is ambiguous (ch3-009). R100-SL: C1.2.1-r100sl."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG2.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.8",
+  "element_title": "Development incentives for community benefit",
+  "title": "Development incentives intent",
+  "text": "Intent: This section provides guidance for local government on relevant considerations to establish development incentives that may be provided in exchange for community benefit in nominated areas. The application of development incentives should be led by the local government and are intrinsically linked to design excellence as established through design review. Accordingly this section does not provide grounds for development proponents to claim development incentives outside of designated provisions in local planning instruments. Development incentives are a method through which additional development potential or flexibility (such as additional plot ratio and/or building height) is offered in exchange for tangible community benefit, such as public amenities, culture and recreation facilities or affordable and/or accessible housing. It is important that the cost and value of the community benefit can be objectively measured and assessed as the local government will need to determine whether the incentive is sufficient to attract investment in the desired community benefit, and also demonstrate that the value of the community benefit is broadly commensurate with the additional development entitlement. Local governments will therefore need to give careful consideration to setting an appropriate range for this discretion and should seek feedback from the development and building industry to achieve a feasible trade-off between development bonuses and incentive provisions. Design Review Panel advice should also be sought to ensure that high quality design outcomes are achievable and are appropriate to the local context. It is also important that development incentives be applied in a responsible and accountable manner to avoid the expectation that they become the 'default' development standard in a locality. Ideally development incentives would be confined to planned local areas included in local planning schemes and/or precinct structure plans, and/or limited to a focussed area or specific site that is identified for community infrastructure.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/PG2.8.1",
+      "relation": "relocated",
+      "note": "examples moved to Appendix A8"
+    },
+    {
+      "id": "rcodes:vol2-2024/PG2.8.2",
+      "relation": "relocated",
+      "note": "weighting and upper cap moved to Appendix A8"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 24
+  },
+  "register_ref": "C4P2-077",
+  "verify": false,
+  "notes": "No numbered Design Guidance is printed for 2.8; the intent is the guidance record.",
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

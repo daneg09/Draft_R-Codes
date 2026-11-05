@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Minimum on-site car parking spaces, Perth and Peel (Table 2.3a)",
+  "text": "Applies to development within the Perth and Peel regions only. Occupant parking. C2.3.1 Car parking is provided on site in accordance with Table 2.3a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "perth-peel",
+  "inputs": [
+    "parking.spaces",
+    "site.location",
+    "proposal.bedrooms"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.3a",
+    "fact": "parking.spaces",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "car parking space",
+    "Location A",
+    "Location B"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.1",
+      "relation": "relaxed",
+      "note": "R25 and below: Location A 1 bed 1 -> 0, 2 bed 1 -> 0 (3+ bed stays 1); Location B 2+ bed 2 -> 1; aged/accessible/small dwelling rows absorbed into bedroom rows"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.3.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "same",
+      "note": "R30+ minimums unchanged"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 18,
+    "extract_line": 563,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch3-025",
+  "verify": false,
+  "notes": "Occupant parking, Perth and Peel (heading p18). Table 2.3a p19 minimums are the same as Chapter 2. Per dwelling: parking.spaces and proposal.bedrooms describe the dwelling tested (for mixed developments assess each dwelling type). Minimum covers all parking types on site. Ancillary row and R50+ maximum column are C2.3.1-r1 to -r3; visitor parking is C2.3.3.",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

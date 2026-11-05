@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.6.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Upper-level outlook to adjoining public open space",
+  "text": "Where adjoining public open space, dwellings with two or more storeys are to include an upper-level balcony and/or window to a habitable room which overlooks the public open space.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.adjoins_public_open_space",
+      "expected": true
+    },
+    {
+      "type": "count",
+      "fact": "proposal.storeys",
+      "op": ">=",
+      "value": 2
+    }
+  ],
+  "inputs": [
+    "building.upper_level_outlook_to_pos",
+    "proposal.storeys",
+    "site.adjoins_public_open_space"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.upper_level_outlook_to_pos",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.6",
+  "defined_terms": [
+    "public open space",
+    "habitable room",
+    "balcony"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "Part C C3.6.2 applied to multiple dwellings only; new for single houses"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 37
+  },
+  "register_ref": "ch2-069",
+  "verify": false,
+  "notes": "New requirement on any two-storey house on a POS-fronting lot. 'Adjoining' POS is undefined (a road or path between the lot and the POS may or may not count).",
+  "verified": {
+    "method": "page-image",
+    "page": 37,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page reads 'Where adjoining public open space'; wording confirmed. 'Adjoining' is not defined on the page (a road or path between lot and POS is not addressed)."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.3(v)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Driveway at right angles to the road carriageway",
+  "text": "Driveways must be: v. aligned at right angles to the road carriageway; and",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.driveway.right_angle_to_carriageway"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.driveway.right_angle_to_carriageway",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "driveway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.2",
+      "relation": "relaxed",
+      "note": "side clearance 0.5 m -> 0.3 m; 4 m minimum for 5+ dwellings and 9 m aggregate removed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 39
+  },
+  "register_ref": "C4P1-110",
+  "verify": false,
+  "notes": "from: ch3 C3.7.3(v) (unchanged).",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.1-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Maximum garage and carport parking for an ancillary dwelling, R50 and above, Perth and Peel (1)",
+  "text": "Table 2.3a (occupant car parking, Location A and Location B): Ancillary dwelling - maximum garage and carport parking for R50 and above (per dwelling) 1.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling",
+    "ancillary_dwelling"
+  ],
+  "coding": [
+    "R50+"
+  ],
+  "region": "perth-peel",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.ancillary_dwelling",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.ancillary_dwelling",
+    "parking.ancillary_garage_carport_spaces"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.ancillary_garage_carport_spaces",
+    "op": "<=",
+    "value": 1
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "ancillary dwelling",
+    "garage",
+    "carport"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "relaxed",
+      "note": "ancillary maximum 1 applied at R30+; now R50 and above only"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 19,
+    "extract_line": 598,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch3-026",
+  "verify": false,
+  "notes": "Table 2.3a ancillary dwelling maximum garage and carport parking 1 at R50 and above, Location A and B.",
+  "verified": {
+    "method": "page-image",
+    "page": 19,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

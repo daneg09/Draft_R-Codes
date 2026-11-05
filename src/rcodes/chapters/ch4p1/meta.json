@@ -1,0 +1,24 @@
+{
+  "chapter": "ch4p1",
+  "version": "draft-2026-10-24",
+  "title": "Chapter 4 Part 1 Apartments R10 to R60",
+  "kind": "built-form",
+  "pathway": "deemed-exempt-or-merit",
+  "dwelling_types": ["multiple_dwelling"],
+  "coding": ["R10-R60"],
+  "summary_table": "table-4A",
+  "source": {"file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf", "extract": "Working/text/draft/Residential Design Codes Chapter 4 (Part 1) - Apartments.txt"},
+  "register": "Working/register/ch4p1-apartments-r10-r60.csv",
+  "twin": "ch3",
+  "elements": {
+    "1.1": "Private open space", "1.2": "Trees and landscaping", "1.3": "Communal open space", "1.4": "Water management and conservation",
+    "2.1": "Size and layout of dwellings", "2.2": "Solar access and natural ventilation", "2.3": "Parking",
+    "2.4": "Waste management", "2.5": "Utilities", "2.6": "Outbuildings", "2.7": "Universal design",
+    "2.8": "Ancillary dwellings", "2.9": "Small dwellings",
+    "3.1": "Site cover", "3.2": "Building height", "3.3": "Street setbacks", "3.4": "Lot boundary setbacks",
+    "3.5": "Site works and retaining walls", "3.6": "Streetscape", "3.7": "Access",
+    "3.8": "Solar access for adjoining sites", "3.9": "Visual privacy",
+    "4.1": "Site area"
+  },
+  "notes": "Apartments (multiple dwellings) in areas coded R10 to R60. Content twin of Chapter 3 for most of Parts 1, 3 and 4, but element numbering differs: 1.3 is communal open space and water is 1.4; there is no 2.10 and no 3.8 retained dwellings; solar access is 3.8 and visual privacy 3.9. The draft calls these dwellings apartments while Table 1.1 says multiple dwellings (register C4P1-002). Regional parking (outside Perth and Peel) has no table in this chapter (C4P1-048)."
+}

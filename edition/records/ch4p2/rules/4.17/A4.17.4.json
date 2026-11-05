@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.17.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.17",
+  "element_title": "Waste management",
+  "title": "Communal waste storage screened from view from the street, open space and private dwellings",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Communal waste storage is sited and designed to be screened from view from the street, open space and private dwellings.",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "services.waste.communal_storage_area_m2",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "services.waste.communal_storage_area_m2",
+    "services.waste.communal_screened_from_view"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.waste.communal_screened_from_view",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.17",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.17.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 84,
+    "extract_line": 2902
+  },
+  "register_ref": "C4P2-127",
+  "verify": false,
+  "notes": "from: ch4p1 C2.4.2/C2.4.3; diverges: screening from view from the street, open space and private dwellings, not separation from major openings (C2.4.3) or bin screening from public areas (C2.4.2), so a new fact. Trigger as ch4p1: a communal waste storage area is provided.",
+  "verified": {
+    "method": "page-image",
+    "page": 84,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

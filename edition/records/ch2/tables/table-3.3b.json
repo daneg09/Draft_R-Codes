@@ -1,0 +1,78 @@
+{
+  "id": "table-3.3b",
+  "title": "Table 3.3b Reduced primary street setback",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 13
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R12.5"
+      },
+      "value": 5
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R25"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R35"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R50+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "no row in Table 3.3b for R50 and above"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 30,
+    "table": "Table 3.3b"
+  },
+  "register_ref": "ch2-046",
+  "verify": false,
+  "notes": "Reduced primary street setback column only. The 'maximum percentage of frontage width' column is the same for every code (the greater of 30% of the frontage width or 4 m) and is encoded as a formula in C3.3.2(i)-r1. Footnote: maximum percentage of frontage width excludes garages provided in accordance with Table 3.3c.",
+  "verified": {
+    "method": "page-image",
+    "page": 30,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riseurban.au/rcodes/schemas/rule.schema.json",
+  "title": "R-Codes rule record",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "chapter",
+    "element",
+    "title",
+    "kind",
+    "column",
+    "applies_to",
+    "coding",
+    "region",
+    "source"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^rcodes:[a-z0-9][a-z0-9.-]*/[a-z0-9-]+/[A-Za-z0-9.()-]+(#[A-Za-z0-9.-]+)?$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "chapter": {
+      "type": "string"
+    },
+    "part": {
+      "type": "string"
+    },
+    "element": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$|^operation$"
+    },
+    "element_title": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string",
+      "description": "the provision as printed, cleaned of column interleaving; sub-rules carry the relevant sub-paragraph"
+    },
+    "kind": {
+      "enum": [
+        "measurable",
+        "conditional",
+        "judgment"
+      ]
+    },
+    "column": {
+      "enum": [
+        "C",
+        "M",
+        "A",
+        "O",
+        "DG",
+        "table",
+        "operation"
+      ]
+    },
+    "fallback_kind": {
+      "enum": [
+        "M",
+        "O",
+        "DG"
+      ]
+    },
+    "current_term": {
+      "type": "string"
+    },
+    "applies_to": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "single_house",
+          "grouped_dwelling",
+          "multiple_dwelling",
+          "ancillary_dwelling",
+          "any"
+        ]
+      }
+    },
+    "coding": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "region": {
+      "enum": [
+        "all",
+        "perth-peel",
+        "regional"
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evaluator"
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evaluator": {
+      "$ref": "#/$defs/evaluator"
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/exception"
+      }
+    },
+    "fallback": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "defined_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variable_by": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "replaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "relation"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "relation": {
+            "enum": [
+              "same",
+              "tightened",
+              "relaxed",
+              "restructured",
+              "renamed",
+              "relocated",
+              "deleted",
+              "new",
+              "mixed",
+              "unclear"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "file",
+        "page"
+      ],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "extract_line": {
+          "type": "integer"
+        },
+        "table": {
+          "type": "string"
+        },
+        "figure": {
+          "type": "string"
+        }
+      }
+    },
+    "register_ref": {
+      "type": "string"
+    },
+    "verify": {
+      "type": "boolean",
+      "description": "true until checked against the rendered page"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verified": {
+      "type": "object",
+      "required": [
+        "method",
+        "page",
+        "date"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "enum": [
+            "page-image",
+            "rendered-pdf",
+            "register-only"
+          ]
+        },
+        "page": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "date": {
+          "type": "string"
+        },
+        "by": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "description": "set when the record's values and text were checked against the rendered page; verify should then be false"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "enum": [
+              "measurable",
+              "conditional"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "evaluator",
+          "inputs"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "evaluator": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "threshold",
+            "table-lookup",
+            "percentage-of",
+            "formula",
+            "count",
+            "boolean",
+            "geometry",
+            "composite"
+          ]
+        },
+        "fact": {
+          "type": "string"
+        },
+        "op": {
+          "enum": [
+            ">=",
+            "<=",
+            ">",
+            "<",
+            "==",
+            "!="
+          ]
+        },
+        "value": {},
+        "of": {
+          "type": "string"
+        },
+        "table": {
+          "type": "string"
+        },
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expr": {
+          "type": "string"
+        },
+        "expected": {
+          "type": "boolean"
+        },
+        "measure": {
+          "enum": [
+            "area",
+            "min_dimension",
+            "intersects",
+            "intersection_area",
+            "pct_of"
+          ]
+        },
+        "geometry": {
+          "type": "string"
+        },
+        "other": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "all",
+            "any"
+          ]
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evaluator"
+          }
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "exception": {
+      "type": "object",
+      "required": [
+        "label",
+        "condition",
+        "effect"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "condition": {
+          "$ref": "#/$defs/evaluator"
+        },
+        "effect": {
+          "type": "object",
+          "properties": {
+            "set": {
+              "type": "object"
+            },
+            "replace_evaluator": {
+              "$ref": "#/$defs/evaluator"
+            },
+            "not_applicable": {
+              "type": "boolean"
+            }
+          }
+        },
+        "source": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "verify": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

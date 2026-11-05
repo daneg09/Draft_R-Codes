@@ -1,0 +1,46 @@
+{
+  "id": "table-3.9a",
+  "title": "Table 3.9a Cone of vision radius",
+  "keys": [
+    "privacy.source_type"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "privacy.source_type": "bedroom_study"
+      },
+      "value": 3.0,
+      "note": "Major opening from bedroom and study"
+    },
+    {
+      "match": {
+        "privacy.source_type": "other_habitable"
+      },
+      "value": 4.5,
+      "note": "Major opening from habitable room other than bedroom and study"
+    },
+    {
+      "match": {
+        "privacy.source_type": "outdoor_active"
+      },
+      "value": 6.0,
+      "note": "Outdoor active habitable space"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 44,
+    "table": "Table 3.9a"
+  },
+  "register_ref": "C4P1-129",
+  "verify": false,
+  "notes": "from: ch3 table-3.10a (renumbered 3.9a); values checked against p44: bedroom and study 3 m, other habitable room 4.5 m, outdoor active habitable space 6 m, for sources with a floor level more than 0.5 m above NGL; one table for all codes R10-R60 (Part C had 4.5 / 6 / 7.5 m at R50 and lower). Documentary: the C3.9.1 and C3.9.5 rules carry the values literally (one rule per source type); privacy.source_type is not an application fact. Figures 3.9a and 3.9c still cite 'Table 3.10a' (stale numbering).",
+  "verified": {
+    "method": "page-image",
+    "page": 44,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "3m / 4.5m / 6m confirmed. Figures 3.9b and 3.9c legends cite 'Table 3.10a'."
+  }
+}

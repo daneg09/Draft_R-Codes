@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.6.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.6",
+  "element_title": "Building depth",
+  "title": "Building depth no more than 20 m where single-aspect apartments line both sides of a central corridor",
+  "text": "A 2.6.1 Developments that comprise single aspect apartments on each side of a central circulation corridor shall have a maximum building depth of 20m. All other proposals will be assessed on their merits with particular consideration to 4.1 Solar and daylight access and 4.2 Natural ventilation.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.single_aspect_central_corridor",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.depth_m",
+    "building.single_aspect_central_corridor"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.depth_m",
+    "op": "<=",
+    "value": 20
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.6",
+  "defined_terms": [
+    "building depth",
+    "single aspect"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.6.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 21
+  },
+  "register_ref": "C4P2-073",
+  "verify": false,
+  "notes": "Applies only to double-loaded single-aspect layouts (proposed fact building.single_aspect_central_corridor). Building depth measured per Figure 2.6b. The 20 m limit is unchanged while storey limits rise (C4P2-073). Volume 2 PG 2.6.7 not carried. Chapter 1 Table 3.5A row 'A2.6.1 Where decreasing building separation' is a cross-reference error: separation is A2.7.1; this clause is building depth (C4P2-007).",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

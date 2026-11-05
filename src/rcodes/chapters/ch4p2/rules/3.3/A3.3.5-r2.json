@@ -1,0 +1,97 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Trees on a 700-1,000 m2 site: 2 medium trees or 1 large tree (Table 3.3a)",
+  "text": "Table 3.3a: 700 - 1,000m2 - 2 medium trees OR 1 large tree AND small trees to suit area.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.area_m2",
+      "op": ">=",
+      "value": 700
+    },
+    {
+      "type": "threshold",
+      "fact": "site.area_m2",
+      "op": "<=",
+      "value": 1000
+    }
+  ],
+  "inputs": [
+    "landscape.trees.large_count",
+    "landscape.trees.medium_count",
+    "site.area_m2"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "any",
+    "parts": [
+      {
+        "type": "count",
+        "fact": "landscape.trees.medium_count",
+        "op": ">=",
+        "value": 2
+      },
+      {
+        "type": "count",
+        "fact": "landscape.trees.large_count",
+        "op": ">=",
+        "value": 1
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [
+    "medium tree",
+    "large tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.5",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.3a",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Retained and new trees both count. 'Small trees to suit area' not tested.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

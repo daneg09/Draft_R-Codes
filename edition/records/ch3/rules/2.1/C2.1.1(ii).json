@@ -1,0 +1,129 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.1.1(ii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Primary living space on an upper floor has direct access to open space sized per Table 2.1a",
+  "text": "C2.1.1 Each dwelling is to have one room that is the designated primary living space where: ii. the primary living space is provided on an upper floor, it is to have direct physical and visual access to a private open space (such as a balcony or rooftop terrace) in accordance with Table 2.1a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "proposal.primary_living_space_floor",
+      "op": "==",
+      "value": "upper"
+    }
+  ],
+  "inputs": [
+    "proposal.primary_living_space_floor",
+    "building.primary_living_direct_access_to_upper_pos",
+    "building.upper_pos.area_m2",
+    "building.upper_pos.min_dim_m",
+    "proposal.bedrooms"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "building.primary_living_direct_access_to_upper_pos",
+        "expected": true
+      },
+      {
+        "type": "table-lookup",
+        "table": "table-2.1a",
+        "fact": "building.upper_pos.area_m2",
+        "op": ">="
+      },
+      {
+        "type": "composite",
+        "mode": "any",
+        "parts": [
+          {
+            "type": "composite",
+            "mode": "all",
+            "parts": [
+              {
+                "type": "count",
+                "fact": "proposal.bedrooms",
+                "op": "<=",
+                "value": 1
+              },
+              {
+                "type": "threshold",
+                "fact": "building.upper_pos.min_dim_m",
+                "op": ">=",
+                "value": 2.0
+              }
+            ]
+          },
+          {
+            "type": "composite",
+            "mode": "all",
+            "parts": [
+              {
+                "type": "count",
+                "fact": "proposal.bedrooms",
+                "op": ">=",
+                "value": 2
+              },
+              {
+                "type": "threshold",
+                "fact": "building.upper_pos.min_dim_m",
+                "op": ">=",
+                "value": 2.4
+              }
+            ]
+          }
+        ],
+        "label": "minimum dimension 2 m (studio/1 bed) or 2.4 m (2+ bed) per Table 2.1a"
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.1",
+  "defined_terms": [
+    "primary living space",
+    "private open space",
+    "balcony"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.2",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.1b",
+      "relation": "restructured",
+      "note": "balcony sizes moved from Table 1.1b to Table 2.1a"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 15,
+    "extract_line": 443,
+    "table": "Table 2.1a"
+  },
+  "register_ref": "ch3-020",
+  "verify": true,
+  "notes": "Table 2.1a minimum dimension column (2 m / 2.4 m) is encoded in the evaluator. Rows '2+ bedroom 10m2' and '3 or more bedrooms 12m2' overlap; the table encodes 2 bedrooms = 10m2 and 3+ = 12m2 (current Table 1.1b reading). Register ch3-020: an upstairs-living dwelling at R25 and below cannot meet both this and the C1.1.1 OLA access test unless a balcony counts as OLA; two merit clauses are numbered M2.1.2.",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values match p15 (8m2 / 10m2 / 12m2; 2m / 2.4m). Ambiguous on the page: Table 2.1a rows '2+ bedroom' (10m2) and '3 or more bedrooms' (12m2) overlap; the 2.4m dimension cell spans both rows. Same density-scope question as C2.1.1(i)."
+  }
+}

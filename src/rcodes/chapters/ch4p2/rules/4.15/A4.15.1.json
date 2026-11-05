@@ -1,0 +1,79 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.15.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.15",
+  "element_title": "Energy efficiency",
+  "title": "One significant energy initiative beyond minimum practice, or every dwelling 0.5 NatHERS stars above the NCC minimum",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "(a) Incorporate at least one significant energy efficiency initiative within the development that exceeds minimum practice (refer Design Guidance) OR (b) All dwellings exceed the minimum NATHERS requirement for apartments by 0.5 stars. [Footnote 1] Compliance with the NCC requires that development shall achieve an average star-rating across all dwellings that meets or exceeds a nominated benchmark, and that each unit meets or exceeds a slightly lower benchmark. Compliance with this Acceptable Outcome requires that each unit exceeds that lower benchmark by at least half a star.",
+  "inputs": [
+    "dwellings.min.nathers_margin_stars",
+    "energy.significant_initiative"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "any",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.nathers_margin_stars",
+        "op": ">=",
+        "value": 0.5,
+        "label": "(b) every dwelling at least 0.5 stars above the NCC per-dwelling NatHERS minimum"
+      },
+      {
+        "type": "boolean",
+        "fact": "energy.significant_initiative",
+        "expected": true,
+        "label": "(a) at least one significant initiative exceeding minimum practice (DG 4.15.1)"
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.15",
+  "defined_terms": [
+    "NatHERS",
+    "NCC"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.15.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 80,
+    "extract_line": 2762
+  },
+  "register_ref": "C4P2-125",
+  "verify": false,
+  "notes": "Either limb meets. (b) is measurable: dwellings.min.nathers_margin_stars is the smallest margin of any dwelling above the NCC per-dwelling (lower) benchmark, tested >= 0.5 per footnote 1 ('at least half a star'). (a) is encoded as an applicant statement (energy.significant_initiative) naming a DG 4.15.1 initiative or an evidenced alternative; whether it is 'significant' and 'exceeds minimum practice' is for the assessor, so a MEETS on limb (a) alone should be confirmed. This replaces the FACTS placeholder energy.rating_met.",
+  "verified": {
+    "method": "page-image",
+    "page": 80,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M3.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "element": "3.10",
+  "element_title": "Visual privacy",
+  "title": "Visual privacy merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M3.10.1 Direct overlooking of major openings and active habitable spaces of adjacent dwellings and adjoining properties minimised through: i. building siting, layout and design; ii. design and location of major openings; iii. landscape screening of outdoor active habitable spaces; and/or iv. design and location of screening devices. M3.10.2 Adequate visual privacy achieved through appropriate interfaces between dwellings and adjoining properties including measures such as: i. offsetting the location of ground and first floor windows so that viewing is oblique rather than direct; ii. building boundary walls where appropriate; iii. setting back the upper storeys from the lot boundary; iv. providing higher or lower windows, or windows with obscure glazing; and/or v. screening (including landscaping, fencing, timber screens, external blinds, window hoods and shutters). M3.10.3 Visual privacy strategies maintain amenity of habitable rooms and active habitable space with regard to solar access, natural ventilation and external outlook both within the development and for adjoining properties.",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 46
+  },
+  "register_ref": "ch3-087",
+  "verify": false,
+  "notes": "M3.10.1 opening words checked on the rendered page: 'of adjacent dwellings and adjoining properties minimised through' (the extract interleaves Figure 3.10a labels).",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

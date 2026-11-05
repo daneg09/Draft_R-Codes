@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.6",
+  "element_title": "Storage",
+  "title": "Storage design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.6.1 Given the reliance on storerooms for the secure storage of personal goods in apartment development, best practice is to ensure that storerooms are ventilated, protected from the weather and free from moisture ingress to provide dry and mould free storage. This can be achieved by: integrating the storeroom into the main building; installing fixed vents in the walls and door; painting or rendering single leaf masonry walls; providing moisture protection under the slab and/or waterproofing to retaining walls. DG 4.6.2 Store rooms can be convenient places for the location of services, but this should not be at the cost of valuable storage space, or ease of maintenance access. If services are located in the storeroom, consider: locating A/C condenser units at a height that retains storage functionality below; locating electrical distribution boards/switchboards adjacent to the door so they are readily accessible for maintenance and power outages; increasing the size of the store room. DG 4.6.3 Consider providing wall mounted bicycle mounts in storerooms to retain storage functionality below and to reduce the requirement for common area bicycle racks. DG 4.6.4 Storage areas should be wide enough to accommodate larger and less frequently accessed items. DG 4.6.5 Storage space in internal or basement car parks is best positioned at the rear or side of car spaces or in cages, so that allocated car parking remains accessible and that storage can be accessed even when a car is in the bay. DG 4.6.6 If communal storage is provided, it should be additional to the minimum requirements for individual dwellings at A4.6.1 and easily accessed from common circulation areas. DG 4.6.7 Storerooms that are not attached to a primary building should: not exceed 5 per cent of the site area; be separated into buildings each with an internal floor area not greater than 60m2; have a wall height not greater than 2.4m; have a roof ridge line not greater than 4.2m; be set back behind the primary or secondary street frontage; comply with side and rear boundary setback requirements. DG 4.6.8 Locating storage areas adjacent to dwelling entries should be carefully considered, as this can reduce opportunities for natural light, solar access and ventilation to habitable rooms.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 63,
+    "extract_line": 2176
+  },
+  "register_ref": "C4P2-116",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.6",
+      "relation": "same",
+      "note": "DG 4.6.1 to 4.6.7"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "DG 4.6.8 storage adjacent to dwelling entries (register C4P2-116)"
+    }
+  ],
+  "verify": false,
+  "notes": "Two columns on page 63 checked word for word against the page image. New item: DG 4.6.8 (register C4P2-116; the page prints no \"(new)\" marker). DG 4.6.7 limits for detached storerooms (5% of site, 60 m2 each, 2.4 m wall, 4.2 m ridge) are guidance only.",
+  "verified": {
+    "method": "page-image",
+    "page": 63,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

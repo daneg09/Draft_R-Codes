@@ -1,0 +1,173 @@
+{
+  "id": "table-3.4c",
+  "title": "Table 3.4c Lot boundary setbacks (boundary walls)",
+  "keys": [
+    "site.r_code",
+    "metric",
+    "site.frontage_m",
+    "site.access_from_rear_row"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "max_height_m",
+        "site.r_code": "R10-R17.5"
+      },
+      "value": 3.5
+    },
+    {
+      "match": {
+        "metric": "max_length_m",
+        "site.r_code": "R10-R17.5"
+      },
+      "value": 9,
+      "note": "Figures 3.4g, 3.4h"
+    },
+    {
+      "match": {
+        "metric": "max_boundaries",
+        "site.r_code": "R10-R17.5"
+      },
+      "value": 1
+    },
+    {
+      "match": {
+        "metric": "max_height_m",
+        "site.r_code": "R20-R25"
+      },
+      "value": 3.5
+    },
+    {
+      "match": {
+        "metric": "max_length_m",
+        "site.r_code": "R20-R25"
+      },
+      "value": 9,
+      "note": "the greater of 9 m or 35% of the lot boundary the wall abuts"
+    },
+    {
+      "match": {
+        "metric": "max_length_pct",
+        "site.r_code": "R20-R25"
+      },
+      "value": 35,
+      "note": "the greater of 9 m or 35% of the lot boundary the wall abuts"
+    },
+    {
+      "match": {
+        "metric": "max_boundaries",
+        "site.r_code": "R20-R25"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "max_height_m",
+        "site.frontage_m": {
+          "max": 8.5
+        },
+        "site.access_from_rear_row": true,
+        "site.r_code": "R30-R40"
+      },
+      "value": 3.5,
+      "note": "narrow lot: frontage 8.5 m or less and access from a rear right-of-way"
+    },
+    {
+      "match": {
+        "metric": "max_length_pct",
+        "site.frontage_m": {
+          "max": 8.5
+        },
+        "site.access_from_rear_row": true,
+        "site.r_code": "R30-R40"
+      },
+      "value": 80,
+      "note": "80% of the lot boundary the wall abuts, excluding any portion abutting an adjoining private open space"
+    },
+    {
+      "match": {
+        "metric": "max_boundaries",
+        "site.frontage_m": {
+          "max": 8.5
+        },
+        "site.access_from_rear_row": true,
+        "site.r_code": "R30-R40"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "max_height_m",
+        "site.r_code": "R30-R40"
+      },
+      "value": 3.5,
+      "note": "all other lots"
+    },
+    {
+      "match": {
+        "metric": "max_length_pct",
+        "site.r_code": "R30-R40"
+      },
+      "value": 65,
+      "note": "all other lots: 65% of the lot boundary (Figure 3.4i); per-boundary or cumulative not stated",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "max_boundaries",
+        "site.r_code": "R30-R40"
+      },
+      "value": null,
+      "note": "All"
+    },
+    {
+      "match": {
+        "metric": "max_height_m",
+        "site.r_code": "R50-R60"
+      },
+      "value": 7
+    },
+    {
+      "match": {
+        "metric": "max_length_m",
+        "site.r_code": "R50-R60"
+      },
+      "value": 14,
+      "note": "14 m, then set back a minimum of 3 m from the lot boundary for a minimum length of 3 m (Figure 3.4j)"
+    },
+    {
+      "match": {
+        "metric": "max_length_pct",
+        "site.frontage_m": {
+          "min": 8.5000001
+        },
+        "site.r_code": "R50-R60"
+      },
+      "value": 65,
+      "note": "frontage greater than 8.5 m: cumulative maximum of 65% of the lot boundary the wall abuts"
+    },
+    {
+      "match": {
+        "metric": "max_boundaries",
+        "site.r_code": "R50-R60"
+      },
+      "value": null,
+      "note": "All"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4c"
+  },
+  "register_ref": "C4P1-092",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "All Table 3.4c cells confirmed on p34. Kept flagged for the R30-R40 65% row: per wall or cumulative per boundary is not stated, and Figure 3.4i (p35) shows only one wall per boundary. The R50+ wide-lot 65% is printed as cumulative. Note cites C3.4.5 for wall height (should be C3.4.4)."
+  },
+  "notes": "Copied from Chapter 3 and checked against p34; R100-SL and R2-R5 rows dropped, R50+ rows trimmed to R50-R60. Documentary table: the C3.4.4 rules carry the values as literals, one rule per band and metric. Other register rows C4P1-093 to C4P1-095. Table notes: lower density code governs between differently coded sites; a retaining wall directly beneath a boundary wall is included in the wall height (Figure 3.4k; note cites C3.4.5, should be C3.4.4)."
+}

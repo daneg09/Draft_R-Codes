@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG3.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Visual privacy Design Guidance",
+  "text": "DG 3.5.1 For people to feel comfortable living in higher-density environments, the siting of buildings and the design of apartments should carefully balance the need for outlook with the need for privacy. DG 3.5.2 Document the location of existing windows and balconies in adjoining buildings during the site analysis phase and endeavour to offset new habitable room windows and balconies from existing ones. DG 3.5.3 Retaining an open aspect from balconies and principal windows in interior rooms is critical for resident amenity. Screens, enclosures, highlight windows, or landscape elements should not be used to justify a reduction in the visual privacy setbacks for the primary outlook from interior spaces. While balconies can increase internal privacy they may also restrict daylight access. DG 3.5.4 Bedrooms, living spaces and other habitable rooms should be separated from gallery walkway access and other open circulation space by the apartment's service areas or lightwells. DG 3.5.5 Communal open space, common areas and access paths should be separated from private open space and apartment windows, particularly to habitable rooms. Design solutions may include: increased setbacks; solid or partially-solid balustrades to balconies at lower levels; use of fencing and/or trees and vegetation to separate spaces; screening devices; changes of level; bay windows or pop out windows to direct outlook away from other dwellings; planter boxes incorporated into walls and balustrades; pergolas or shading devices to limit overlooking of lower dwellings or private open space; portions of fixed louvres or screen panels to windows and balconies.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG3.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 37
+  },
+  "register_ref": "C4P2-093",
+  "verify": false,
+  "notes": "DG 3.5.3 is badly interleaved with Figure 3.5a labels in the extract (reconstructed). Figures 3.5a (vertical cone, 1.6 m above floor level, 45 degrees) and 3.5b (horizontal 45 degree cone) relocate the deleted Vol 2 Appendix A7.3 figures (C4P2-092); both captions read 'Establishing a cone of vision beyond a lot boundary' and Figure 3.5b cites 'Table 3.10a' (should be Table 3.5).",
+  "verified": {
+    "method": "page-image",
+    "page": 37,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

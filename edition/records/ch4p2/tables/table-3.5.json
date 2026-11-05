@@ -1,0 +1,62 @@
+{
+  "id": "table-3.5",
+  "title": "Table 3.5 Required privacy setback to adjoining sites (reference)",
+  "keys": [
+    "privacy.source_type",
+    "privacy.storey_band"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "privacy.source_type": "bedroom_study",
+        "privacy.storey_band": "first_four"
+      },
+      "value": 3.0,
+      "note": "major opening to bedroom, study and open access walkways"
+    },
+    {
+      "match": {
+        "privacy.source_type": "other_habitable",
+        "privacy.storey_band": "first_four"
+      },
+      "value": 4.5,
+      "note": "major openings to habitable rooms other than bedrooms and studies"
+    },
+    {
+      "match": {
+        "privacy.source_type": "outdoor_active",
+        "privacy.storey_band": "first_four"
+      },
+      "value": 6.0,
+      "note": "unenclosed private outdoor spaces"
+    },
+    {
+      "match": {
+        "privacy.source_type": [
+          "bedroom_study",
+          "other_habitable",
+          "outdoor_active"
+        ],
+        "privacy.storey_band": "fifth_and_above"
+      },
+      "value": null,
+      "note": "Refer Table 2.7 (Building separation)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36,
+    "table": "Table 3.5"
+  },
+  "register_ref": "C4P2-088",
+  "verify": false,
+  "notes": "Reference transcription. Sources with a floor level more than 0.5 m above natural ground level. Values checked against p36. Rules A3.5.1-r1 to -r3 and A3.5.2-r1 to -r3 carry the first-four-storey values as literals (privacy.source_type is not an application fact); fifth storey and above refers to Table 2.7 (A3.5.1-r4). Register C4P2-088 to C4P2-090: Vol 2 had two columns (adjoining R50 or lower 4.5 / 6 / 7.5 m; higher than R50 3 / 4.5 / 6 m); the draft keeps one column at the former 'higher than R50' values (relaxed by 1.5 m for R50-and-lower neighbours; ToC calls it a simplification and does not say the column is deleted). C4P2-091: 5th storey and above unchanged ('Refer Table 2.7'), circular where Table 2.7 has no adjoining-boundary row. Cone of vision figures: Figures 3.5a and 3.5b replace the deleted Appendix A7.3 figures (C4P2-092); Figure 3.5b cites 'Table 3.10a'.",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 36,
+    "note": "p36: 3 / 4.5 / 6 m first 4 storeys; '5th storey and above: Refer Table 2.7 (Building separation)' merged across all rows."
+  }
+}

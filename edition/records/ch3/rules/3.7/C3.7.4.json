@@ -1,0 +1,96 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Exit to the street in forward gear",
+  "text": "Driveways designed to allow vehicles to exit to the street in forward gear where the driveway: i. Serves five or more dwellings; ii. the distance from an on site car parking space to the street boundary is 30m or more; or iii. the street to which it connects is a designated primary distributor or integrator arterial.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "serves five or more dwellings, 30 m or more to the street boundary, or primary distributor / integrator arterial",
+      "parts": [
+        {
+          "type": "count",
+          "fact": "parking.driveway.dwellings_served",
+          "op": ">=",
+          "value": 5
+        },
+        {
+          "type": "threshold",
+          "fact": "parking.driveway.space_to_boundary_m",
+          "op": ">=",
+          "value": 30.0
+        },
+        {
+          "type": "threshold",
+          "fact": "site.primary_street_class",
+          "op": "==",
+          "value": "primary_distributor"
+        },
+        {
+          "type": "threshold",
+          "fact": "site.primary_street_class",
+          "op": "==",
+          "value": "integrator_arterial"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "parking.driveway.dwellings_served",
+    "parking.driveway.exit_forward_gear",
+    "parking.driveway.space_to_boundary_m",
+    "site.primary_street_class"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.driveway.exit_forward_gear",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "driveway",
+    "street boundary",
+    "primary distributor",
+    "integrator arterial"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.4",
+      "relation": "relaxed",
+      "note": "15 m -> 30 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 40
+  },
+  "register_ref": "ch3-076",
+  "verify": false,
+  "notes": "diverges: Chapter 3 C3.7.4 (p40) adds trigger (i) 'serves five or more dwellings' (proposed fact parking.driveway.dwellings_served); triggers (ii) 30 m and (iii) primary distributor / integrator arterial as Chapter 2. Where no trigger holds the rule does not apply. 15 m -> 30 m for R25 and below. Street class is the primary street's class.",
+  "verified": {
+    "method": "page-image",
+    "page": 40,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

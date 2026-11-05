@@ -1,0 +1,72 @@
+{
+  "id": "table-3.3a-secondary",
+  "title": "Table 3.3a Minimum setback of buildings from the street: secondary street",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R35"
+      },
+      "value": 1.5
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R40+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 1,
+      "note": "R40 and R50-R80 share the 1 m cell in the draft"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 30,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "ch3-045",
+  "verify": false,
+  "notes": "Second row of Table 3.3a. The R40 and R50-R80 columns merge into one 1 m cell in the extract; both read 1 m in the register.",
+  "verified": {
+    "method": "page-image",
+    "page": 30,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

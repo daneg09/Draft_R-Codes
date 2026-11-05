@@ -1,0 +1,53 @@
+{
+  "id": "table-2.1b",
+  "title": "Table 2.1b Storage provisions (minimum storage area)",
+  "keys": [
+    "dwellings.min.storage_bedrooms"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "dwellings.min.storage_bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 3,
+      "note": "studio / 1 bedroom dwelling"
+    },
+    {
+      "match": {
+        "dwellings.min.storage_bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 4,
+      "note": "2 bedroom dwelling"
+    },
+    {
+      "match": {
+        "dwellings.min.storage_bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 5,
+      "note": "3+ bedroom dwelling"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 17,
+    "extract_line": 526,
+    "table": "Table 2.1b"
+  },
+  "register_ref": "C4P1-029",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 17,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Minimum dimension 1.5 m (length and width; reducible to 1 m under C2.1.9), minimum height 2.1 m, location behind the primary street setback; all constant across rows, carried in rule C2.1.8. Key is the bedroom count of the apartment with the least compliant storage. Storage can be co-located within a garage or carport but must be a dedicated area; dimensions and areas exclude services, plant, utilities, bin storage, bicycle parking and fixtures. Differs from Chapter 3 Table 2.1b (no 3+ bed row, 1 m, 2 m)."
+}

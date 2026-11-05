@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.5.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.5",
+  "element_title": "Plot ratio",
+  "title": "Plot ratio within the Table 2.1 maximum",
+  "text": "A 2.5.1 Development complies with the plot ratio requirements set out in Table 2.1, except where modified by the local planning framework, in which case development complies with the plot ratio set out in the applicable local planning instrument.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.plot_ratio",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-2.1-plot-ratio",
+    "fact": "building.plot_ratio",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.5",
+  "defined_terms": [
+    "plot ratio",
+    "plot ratio area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.5.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "relaxed",
+      "note": "R80 1.0, R100 1.3, R160 2.0, R-AC4 1.2, R-AC3 2.0 to N/A; R-AC1 3.0 to HR1 4.0; HR2 6.0, HR3 7.0 new; R-AC2 2.5 deleted"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 20,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-072; C4P2-054..C4P2-063",
+  "verify": false,
+  "notes": "R80, LR1, R100, R160, MR1 and MR2 are N/A (no plot ratio): NOT_APPLICABLE, so O 2.5.1 (bulk and scale) is the only bulk control there (C4P2-054, C4P2-072). R-PA refers to the scheme/LDP: NOT_APPLICABLE. A2.5.1 still refers to 'plot ratio requirements set out in Table 2.1' for codes where the table says N/A. Whether introducing a plot ratio where Table 2.1 says N/A is 'increasing plot ratio' under Table 3.5A is unclear (C4P2-006). Volume 2 PG 2.5.4 (lower residential than non-residential plot ratio) not carried. The 'except where modified by the local planning framework' limb is applied through the instruments layer (Chapter 1B 3.5, Table 3.5A); this rule encodes the Table 2.1 default.",
+  "verified": {
+    "method": "page-image",
+    "page": "13, 20",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riseurban.au/rcodes/schemas/table.schema.json",
+  "title": "R-Codes lookup table",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "keys",
+    "rows",
+    "source"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "fact names used to match rows, e.g. site.r_code"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "match",
+          "value"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "match": {
+            "type": "object",
+            "description": "key -> band, value, or list of values"
+          },
+          "value": {
+            "description": "number, boolean, string, or null for no provision"
+          },
+          "note": {
+            "type": "string"
+          },
+          "verify": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "default": {
+      "description": "value when no row matches; omit to make a miss NOT_APPLICABLE"
+    },
+    "source": {
+      "type": "object"
+    },
+    "register_ref": {
+      "type": "string"
+    },
+    "verify": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "object",
+      "required": [
+        "method",
+        "page",
+        "date"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "enum": [
+            "page-image",
+            "rendered-pdf",
+            "register-only"
+          ]
+        },
+        "page": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "date": {
+          "type": "string"
+        },
+        "by": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "description": "set when the record's values and text were checked against the rendered page; verify should then be false"
+    }
+  }
+}

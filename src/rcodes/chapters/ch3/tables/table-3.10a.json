@@ -1,0 +1,45 @@
+{
+  "id": "table-3.10a",
+  "title": "Table 3.10a Cone of vision radius",
+  "keys": [
+    "privacy.source_type"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "privacy.source_type": "bedroom_study"
+      },
+      "value": 3.0,
+      "note": "Major opening from bedroom and study"
+    },
+    {
+      "match": {
+        "privacy.source_type": "other_habitable"
+      },
+      "value": 4.5,
+      "note": "Major opening from habitable room other than bedroom and study"
+    },
+    {
+      "match": {
+        "privacy.source_type": "outdoor_active"
+      },
+      "value": 6.0,
+      "note": "Outdoor active habitable space"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 46,
+    "table": "Table 3.10a"
+  },
+  "register_ref": "ch3-087",
+  "verify": false,
+  "notes": "Type of habitable room / active habitable space with a floor level of more than 0.5 m above natural ground level. Documentary: the C3.10.1 and C3.10.5 rules carry the values literally (one rule per source type) because an application has every source type at once; privacy.source_type is not an application fact. One table for all codes (Part B: 4.5 / 6 / 7.5 m at R50 and lower).",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

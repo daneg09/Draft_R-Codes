@@ -1,0 +1,64 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.7.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Battleaxe leg minimum width 3.6 m",
+  "text": "A battleaxe leg is to be a minimum width of 3.6m, inclusive of a minimum: i. 3m wide driveway in accordance with C3.7.3; and ii. 0.3m setback either side of the driveway (refer Figure 3.7e).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.battleaxe",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "site.battleaxe",
+    "site.battleaxe_leg_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "site.battleaxe_leg_width_m",
+    "op": ">=",
+    "value": 3.6
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+  "defined_terms": [
+    "battleaxe leg",
+    "driveway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.10",
+      "relation": "same",
+      "note": "Part C C3.7.10-C3.7.12; new deemed exempt for R40 and below (Part B relied on subdivision policy)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 41,
+    "figure": "Figure 3.7e"
+  },
+  "register_ref": "ch2-080",
+  "verify": false,
+  "notes": "3 m driveway is C3.7.3(i); the 0.3 m margins either side are not separately tested. Figure 3.7e is titled 'Communal street width' and shows the street setback to a communal street (Table 3.3a). Merit M3.7.3 allows a reduced leg where retaining an existing dwelling.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

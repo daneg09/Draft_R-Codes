@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this edition, cite it as below and cite each provision by clause ID, printed page and version (see edition/GOVERNANCE.md)."
+title: "Draft WA Residential Design Codes: machine-readable edition"
+abstract: "An unofficial machine-readable transcription of the draft consolidated Residential Design Codes of Western Australia (consultation draft advertised 24 October 2026), with a Python reference engine. Every value and text was checked against the page image in one pass run by an AI model (Claude Opus 4.5, 2 November 2026) with two value corrections; 123 records remain flagged where the draft page itself is ambiguous; no human review of the records has been done yet and corrections are welcome by issue. The published WAPC PDFs govern."
+type: dataset
+version: "draft-2026-10-24 edition 1.0"
+date-released: "2026-11-03"
+authors:
+  - family-names: "Gaunt"
+    given-names: "Dane"
+keywords:
+  - "Residential Design Codes"
+  - "R-Codes"
+  - "Western Australia"
+  - "planning"
+  - "rules as code"
+license: "MIT AND CC-BY-4.0"
+repository-code: "https://github.com/daneg09/Draft_R-Codes"

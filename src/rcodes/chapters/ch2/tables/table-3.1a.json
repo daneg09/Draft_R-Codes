@@ -1,0 +1,67 @@
+{
+  "id": "table-3.1a",
+  "title": "Table 3.1a Maximum site cover",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2-R2.5"
+      },
+      "value": 25
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": 35
+    },
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 45
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 50
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R25"
+      },
+      "value": 55
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R30+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "Site cover does not apply to R30 and above (Table 3.1a note; register ch2-038)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 27,
+    "table": "Table 3.1a"
+  },
+  "register_ref": "ch2-037",
+  "verify": false,
+  "notes": "Copied from the verified fixture; R30+ row widened to the named codes so they also return NOT_APPLICABLE.",
+  "verified": {
+    "method": "page-image",
+    "page": 27,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

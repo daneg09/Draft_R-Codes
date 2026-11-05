@@ -1,0 +1,77 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Visitor parking for 5 or more grouped dwellings, Perth and Peel (Table 2.3a: 0.1 bays per dwelling Location A, 0.15 Location B)",
+  "text": "Visitor parking. C2.3.3 Visitor parking for grouped dwellings is provided on site in accordance with Table 2.3a. Table 2.3a visitor car parking, minimum parking space: Location A - 0-4 dwellings no visitor parking required; 5+ dwellings 0.1 bays per dwelling for the total number of dwellings. Location B - 0-4 dwellings no visitor parking required; 5+ dwellings 0.15 bays per dwelling for the total number of dwellings. Calculations of parking ratios shall be rounded to the nearest whole number, with fractions of 0.5 or greater rounded up (for example, 1.4 bays is rounded to 1 bay and 1.5 bays is rounded to 2 bays).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "perth-peel",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">=",
+      "value": 5
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count",
+    "site.location",
+    "parking.visitor_spaces"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "parking.visitor_spaces",
+    "op": ">=",
+    "value": {
+      "table": "table-2.3a-visitor-bays"
+    },
+    "label": "0.1 (Location A) or 0.15 (Location B) bays per dwelling for the total number of dwellings, rounded to the nearest whole number with 0.5 rounded up"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.3",
+  "defined_terms": [
+    "visitor car parking space",
+    "common property",
+    "Location A",
+    "Location B"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.2",
+      "relation": "relaxed",
+      "note": "1 bay per four dwellings in excess of four"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "relaxed",
+      "note": "5-8: 1; 9-12: 2; 13+: 3 plus 1 per four; now 0.1 / 0.15 per dwelling"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 18,
+    "extract_line": 569,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch3-027",
+  "verify": false,
+  "notes": "diverges: Chapter 2 C2.3.3 is regional occupant parking (its Chapter 3 twin is C2.3.5); this clause is visitor parking, which has no Chapter 2 equivalent. Table 2.3a p19: 0-4 dwellings no visitor parking (rule excluded by the condition); 5+ dwellings 0.1 bays per dwelling (Location A) or 0.15 (Location B) on the total number of dwellings. Rounding note: nearest whole number, 0.5 or greater rounded up; '+ 0.001' makes Python round() round 0.5 up. Worked (register ch3-027): 8 dwellings 1 bay (A and B); 12 dwellings A 1 / B 2; 20 dwellings A 2 / B 3. Location A/B definitions as for C2.3.1. The required bay count comes from table-2.3a-visitor-bays, keyed on site.location (rows A and B only): an unknown location gives CANNOT_TELL, where the earlier 'A else B' formula treated any value other than 'A' as Location B.",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

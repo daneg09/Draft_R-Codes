@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Tree canopy and deep soil areas Element Objectives",
+  "text": "O 3.3.1 Site planning maximises retention of existing healthy and appropriate trees and protects the viability of adjoining trees. O 3.3.2 Adequate measures are taken to improve tree canopy (long term) or to offset reduction of tree canopy from pre-development condition. O 3.3.3 Development includes deep soil areas, or other infrastructure to support planting on structures, with sufficient area and volume to sustain healthy plant and tree growth.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O3.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Unchanged. O 3.3.3 is interleaved with A3.3.5 and A3.3.1 in the extract; check against the rendered page.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

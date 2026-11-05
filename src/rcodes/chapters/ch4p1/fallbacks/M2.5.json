@@ -1,0 +1,39 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M2.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.5",
+  "element_title": "Utilities",
+  "title": "Utilities merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "M2.5.1 The site is serviced with utilities that are fit for purpose and meet current performance and access requirements of service providers, addressing access, maintenance and safety considerations. M2.5.2 Utilities balance operational requirements with the need to minimise: i. visual, noise, heat and air quality impacts on habitable rooms and private open space both on the development site and adjoining properties; and ii. the visual impact on the streetscape.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 21,
+    "extract_line": 664
+  },
+  "register_ref": "C4P1-057",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P2.5.1",
+      "relation": "same",
+      "note": "Part C P2.5.1 to P2.5.2"
+    }
+  ],
+  "notes": "from: ch3 M2.5 (same text).",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

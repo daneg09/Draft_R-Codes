@@ -1,0 +1,88 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.2.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.2",
+  "element_title": "Solar access and natural ventilation",
+  "title": "Courtyard that is the only daylight source to a habitable room is uncovered and at least 4m2",
+  "text": "Windows and openings (applies to R50-R80; R100-SL; LR, MR, and HR only). C2.2.1 Where a courtyard is the only source of daylight to a habitable room, the courtyard must be uncovered and open to the sky(1) with a: i. minimum area of 4m2 (refer Figure 2.2a). (1) Excludes minor projections",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R50+",
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.courtyard_daylight_only",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.courtyard_daylight_only",
+    "building.courtyard_open_to_sky",
+    "building.courtyard_area_m2"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "building.courtyard_open_to_sky",
+        "expected": true
+      },
+      {
+        "type": "threshold",
+        "fact": "building.courtyard_area_m2",
+        "op": ">=",
+        "value": 4.0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.2",
+  "defined_terms": [
+    "habitable room",
+    "major opening"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.1",
+      "relation": "deleted",
+      "note": "openable window 10% of floor area deleted (NCC duplication), register ch2-018"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.2.3",
+      "relation": "deleted",
+      "note": "bathroom openable window deleted, register ch2-018"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 16,
+    "extract_line": 470,
+    "figure": "Figure 2.2a"
+  },
+  "register_ref": "ch2-019",
+  "verify": false,
+  "notes": "Heading 'Windows and openings (applies to R50-R80; R100-SL; LR, MR, and HR only)'; merit criteria M2.2.1-M2.2.3 carry no density qualifier (register ch2-021). Clause has an 'i.' with no 'ii.'; Figure 2.2a still captioned '(multiple dwellings)'. 'Open to the sky' excludes minor projections (footnote 1).",
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Figure 2.2a also annotates 'Min dimension = 0.5 x wall height'; this is in the figure only, not the clause, and is not encoded."
+  }
+}

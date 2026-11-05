@@ -1,0 +1,91 @@
+{
+  "id": "table-4B-avg",
+  "title": "Table 4B Average site area per dwelling (apartments)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 1000
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 800
+    },
+    {
+      "match": {
+        "site.r_code": "R15"
+      },
+      "value": 666
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5"
+      },
+      "value": 571
+    },
+    {
+      "match": {
+        "site.r_code": "R20"
+      },
+      "value": 450
+    },
+    {
+      "match": {
+        "site.r_code": "R25"
+      },
+      "value": 350
+    },
+    {
+      "match": {
+        "site.r_code": "R30"
+      },
+      "value": 300
+    },
+    {
+      "match": {
+        "site.r_code": "R35"
+      },
+      "value": 260
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 115
+    },
+    {
+      "match": {
+        "site.r_code": "R50"
+      },
+      "value": 100
+    },
+    {
+      "match": {
+        "site.r_code": "R60"
+      },
+      "value": 85
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 51,
+    "table": "Table 4B"
+  },
+  "register_ref": "C4P1-147",
+  "verify": false,
+  "notes": "Average site area column of Table 4B; used by C4.1.1. Transcribed from Chapter 4 Part 1 p51; values identical to current Table D multiple dwelling averages (C4P1-147). Average only: no minimum site area applies to apartments, and the dwelling-type column is removed. Unlike Chapter 3 Table 3B, the R10-R25 averages are not struck through: the maisonette / low-scale apartment reform is consultation only (Information Sheet 5), so they stay operative (C4P1-149). Values differ from Chapter 3 at R40 (115 v 220), R50 (100 v 180) and R60 (85 v 150). Explanatory Guidelines: yield = lot area / average site area, rounded down; residential component of mixed use only.",
+  "verified": {
+    "method": "page-image",
+    "page": 51,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R10-R25 averages are not struck through on p51 (unlike Chapter 3 Table 3B). R40 printed Av 115 after R35 Av 260."
+  }
+}

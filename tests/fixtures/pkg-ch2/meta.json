@@ -1,0 +1,11 @@
+{
+  "chapter": "ch2",
+  "version": "draft-2026-10-24",
+  "title": "Chapter 2 Single Houses (test fixture subset)",
+  "kind": "built-form",
+  "pathway": "deemed-exempt-or-merit",
+  "dwelling_types": ["single_house"],
+  "coding": ["all"],
+  "summary_table": "rcodes:draft-2026-10-24/ch2/T2A",
+  "notes": "Fixture only: two rules so the engine can be tested before the real ch2 package exists."
+}

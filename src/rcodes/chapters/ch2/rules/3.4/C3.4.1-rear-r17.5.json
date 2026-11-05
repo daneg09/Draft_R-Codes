@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.4.1#rear-r17.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Rear setback (R17.5 and above): no provision",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. Table 3.4a Lot boundary setbacks, rear setback: R5 and above 3m (applicable to R5-R15 only).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R17.5+",
+    "R100-SL",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.rear_setback_m",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.rear_setback_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-rear"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "relaxed",
+      "note": "R5-R15 rear 6 m -> 3 m; R2 and R2.5 unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2a",
+      "relation": "deleted",
+      "note": "rear setbacks by Tables 2a/2b at R17.5-R40 have no draft equivalent"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4a",
+      "relation": "unclear",
+      "note": "Part C applied Table 3.4a to all boundaries"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "ch2-055",
+  "verify": true,
+  "notes": "AMBIGUITY (register ch2-055, high priority): the draft gives no rear setback for R17.5+ (Table 2A N/A). Encoded as NOT_APPLICABLE through the null row, not as the side-setback values. Either reading needs confirmation. R100-SL added to coding: Table 2.10a does not modify rear setbacks and Table 2A (draft p7, extract line 189) shows N/A spanning R17.5 to R100-SL.",
+  "verified": {
+    "method": "page-image",
+    "page": "32, 7",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "The rear cell for 'R5 and above' reads '3m (applicable to R5-R15 only)' and nothing else; Table 2A (p7) prints N/A for R17.5 to R100-SL. The page does not say whether R17.5+ has no rear setback or falls back to the side setback values (register ch2-055)."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Outdoor living area within the primary street setback area",
+  "text": "C1.1.2 Notwithstanding C1.1.1, a single consolidated outdoor living area may be located within the primary street setback area where any street walls or fences within the primary street setback area are visually permeable in accordance with C3.6.5 and C3.6.6.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R2-R25"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "landscape.ola.in_primary_street_setback",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "landscape.ola.in_primary_street_setback",
+    "building.front_fence.visually_permeable"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.front_fence.visually_permeable",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.1",
+  "defined_terms": [
+    "outdoor living area",
+    "primary street setback area",
+    "visually permeable"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "current Part B requires the OLA behind the street setback; front-setback OLA only via P1.3"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 9
+  },
+  "register_ref": "ch3-005",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "diverges: coding R2-R25 (OLA applies to R2-R25 only, Chapter 3 p9). Applies only where the OLA is in the primary street setback area (rule condition); then street walls or fences there must be visually permeable per C3.6.5 and C3.6.6. 'Single consolidated' not tested. C1.2.2 30% soft landscaping still applies, so the OLA cannot be all paving. Information Sheet 3 seeks feedback on POS structure."
+}

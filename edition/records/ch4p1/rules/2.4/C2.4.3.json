@@ -1,0 +1,64 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.4.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.4",
+  "element_title": "Waste management",
+  "title": "Communal waste storage area separated or screened from major openings, primary garden areas and communal open space",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "Where a communal waste storage area is provided, it is to be separated or screened from major openings, primary garden areas and communal open space to avoid the adverse impact of potential sources of noise and odour.",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "services.waste.communal_storage_area_m2",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "services.waste.communal_storage_area_m2",
+    "services.waste.communal_area_separated_or_screened"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.waste.communal_area_separated_or_screened",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.4",
+  "defined_terms": [
+    "major opening",
+    "primary garden area",
+    "communal open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.4.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 21,
+    "extract_line": 650
+  },
+  "register_ref": "C4P1-051",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C2.4.3 (evaluator unchanged). Trigger: a communal waste storage area is provided (services.waste.communal_storage_area_m2 > 0). C2.1.11 separately keeps communal waste storage 1 m from habitable room walls and 3 m from bedroom windows at R30-R60."
+}

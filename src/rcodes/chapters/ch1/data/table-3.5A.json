@@ -1,0 +1,54 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch1/T3.5A",
+  "title": "Table 3.5A Local planning framework: modification of Acceptable Outcomes (Chapter 4 Part 2)",
+  "version": "draft-2026-10-24",
+  "instruments": [
+    "lpp",
+    "ldp"
+  ],
+  "chapters": [
+    "ch4p2"
+  ],
+  "default": "wapc",
+  "source": {
+    "file": "Residential Design Codes Chapter 1 - Operation of the Code.pdf",
+    "page": "15-16",
+    "clause": "3.5.2",
+    "pdf_page": "22-23"
+  },
+  "notes": "Chapter 1B 3.5.2: LPPs and LDPs may amend or replace Acceptable Outcomes in accordance with Table 3.5 where warranted by specific need, consistent with the Element Objectives, and able to be implemented and audited. Any modification not satisfying the table's conditions requires prior WAPC approval. Rows from register T35A-01..T35A-12, checked against the rendered page (the page heads it 'Table 3.5A', the text cites 'Table 3.5'; legend has no Regional LG row). Elements 2.2 to 2.7 sit under one merged element cell, 'All of Section 2 key development parameters (height, plot ratio, setbacks)'; element numbers are taken from the clause references. Verified: method page-image, page 16 (PDF p23); legend p15 (PDF p22), date 2026-11-02, by opus-4.5-pass-1 (stamp held in notes because permission-table.schema.json does not allow a top-level 'verified' key).",
+  "rows": [
+    {"element": "2.2", "element_title": "Building height", "clauses": ["A2.2.1"], "permission": "without-wapc", "direction": "increase", "condition": "Where increasing maximum building height metrics.", "register_ref": "T35A-01"},
+    {"element": "2.3", "element_title": "Street setbacks", "clauses": ["A2.3.1"], "permission": "without-wapc", "direction": "decrease", "condition": "Where decreasing minimum setbacks of buildings from the street.", "register_ref": "T35A-02"},
+    {"element": "2.4", "element_title": "Side and rear setbacks", "clauses": ["A2.4.1"], "permission": "without-wapc", "direction": "any", "condition": "Where: decreasing setbacks of buildings from the side and/or rear lot boundary/s; increasing boundary wall height or length.", "register_ref": "T35A-03", "verify": true, "note": "Page is clear (dark green), but the condition mixes directions (decrease setbacks, increase wall height/length); encoded as direction 'any' and must be checked per metric."},
+    {"element": "2.5", "element_title": "Plot ratio", "clauses": ["A2.5.1"], "permission": "without-wapc", "direction": "increase", "condition": "where increasing plot ratio", "register_ref": "T35A-04"},
+    {"element": "2.7", "element_title": "Building separation", "clauses": ["A2.7.1"], "permission": "without-wapc", "direction": "decrease", "condition": "Where decreasing building separation", "register_ref": "T35A-05", "verify": true, "note": "Page prints 'A2.6.1' against 'Where decreasing building separation'; in Chapter 4 Part 2, 2.6 is Building depth and 2.7 Building separation, so encoded against A2.7.1. Confirm the clause number."},
+    {"element": "3.2", "element_title": "Orientation", "clauses": "all", "permission": "wapc", "register_ref": "T35A-06"},
+    {"element": "3.3", "element_title": "Tree canopy and deep soil area", "clauses": "all", "permission": "wapc", "register_ref": "T35A-06"},
+    {"element": "3.4", "element_title": "Communal open space", "clauses": "all", "permission": "wapc", "register_ref": "T35A-06"},
+    {"element": "3.5", "element_title": "Visual privacy", "clauses": "all", "permission": "without-wapc", "direction": "decrease", "condition": "Only where reducing cone of vision setbacks.", "register_ref": "T35A-07"},
+    {"element": "3.6", "element_title": "Public domain interface", "clauses": "all", "permission": "without-wapc", "register_ref": "T35A-08"},
+    {"element": "3.7", "element_title": "Pedestrian access and entries", "clauses": "all", "permission": "without-wapc", "register_ref": "T35A-08"},
+    {"element": "3.8", "element_title": "Vehicle access", "clauses": "all", "permission": "without-wapc", "register_ref": "T35A-08"},
+    {"element": "3.9", "element_title": "Car and bicycle parking", "clauses": ["A3.9.2"], "permission": "without-wapc", "direction": "decrease", "condition": "Where reducing minimum occupant and/or visitor car parking spaces provided on site per dwelling.", "register_ref": "T35A-09"},
+    {"element": "3.9", "element_title": "Car and bicycle parking", "clauses": "other", "permission": "wapc", "register_ref": "T35A-09"},
+    {"element": "4.1", "element_title": "Solar and daylight access", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.2", "element_title": "Natural ventilation", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.3", "element_title": "Size and layout of dwellings", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.4", "element_title": "Private open space and balconies", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.5", "element_title": "Circulation and common space", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.6", "element_title": "Storage", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.7", "element_title": "Managing the impact of noise", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.8", "element_title": "Dwelling mix", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.9", "element_title": "Universal design", "clauses": "all", "permission": "wapc", "register_ref": "T35A-10"},
+    {"element": "4.10", "element_title": "Façade design", "clauses": "all", "permission": "wapc", "register_ref": "T35A-11"},
+    {"element": "4.11", "element_title": "Roof design", "clauses": "all", "permission": "wapc", "register_ref": "T35A-11"},
+    {"element": "4.12", "element_title": "Landscape design", "clauses": "all", "permission": "wapc", "register_ref": "T35A-12"},
+    {"element": "4.13", "element_title": "Adaptive reuse", "clauses": "all", "permission": "wapc", "register_ref": "T35A-11"},
+    {"element": "4.14", "element_title": "Mixed use", "clauses": "all", "permission": "wapc", "register_ref": "T35A-12"},
+    {"element": "4.15", "element_title": "Energy efficiency", "clauses": "all", "permission": "wapc", "register_ref": "T35A-12"},
+    {"element": "4.16", "element_title": "Water management and conservation", "clauses": "all", "permission": "wapc", "register_ref": "T35A-12"},
+    {"element": "4.17", "element_title": "Waste management", "clauses": "all", "permission": "wapc", "register_ref": "T35A-12"},
+    {"element": "4.18", "element_title": "Utilities", "clauses": "all", "permission": "wapc", "register_ref": "T35A-12"}
+  ]
+}

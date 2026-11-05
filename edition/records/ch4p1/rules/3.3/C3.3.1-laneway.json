@@ -1,0 +1,78 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.3.1#laneway",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Setback to an adjoining laneway or right-of-way that is not the primary street",
+  "text": "C3.3.1 Buildings are set back from the street boundary in accordance with Table 3.3a. Table 3.3a, adjoining laneway or right-of-way, where it is not the primary street to the dwelling: R10 and R12.5 As per Secondary Street setbacks; R15-25 to R50-60 0.5m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_row",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "site.row_is_primary_street",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "building.row_setback_m",
+    "site.r_code",
+    "site.has_row",
+    "site.row_is_primary_street"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-laneway",
+    "fact": "building.row_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "defined_terms": [
+    "right-of-way",
+    "laneway",
+    "primary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "relaxed",
+      "note": "R10-R25 ROW treated as a secondary street: R15-R25 1.5 m -> 0.5 m; R10-R12.5 unchanged (as per secondary street)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3a",
+      "relation": "same",
+      "note": "ROW not the primary street 0.5 m (R30-R60)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P1-077",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "'As per Secondary Street setbacks' is one cell spanning R10 and R12.5 across both laneway rows; 0.5m spans R15-25 to R50-60 (p29). Table 4A (p7) prints the same merged cells."
+  },
+  "notes": "from: ch3 C3.3.1#laneway. R10-R12.5 'as per secondary street setbacks' (3 m, 2 m), R15-R60 0.5 m (p29, p7; C4P1-077). Communal streets are not listed (C3.3.1#communal-street)."
+}

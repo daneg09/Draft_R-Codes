@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.13",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.13",
+  "element_title": "Adaptive reuse",
+  "title": "Adaptive reuse design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.13.1 Where dwellings in adaptive reuse proposals cannot satisfy the acceptable outcomes or design guidance recommendations of this Code due to the limitations of the existing building, applicants should demonstrate that the overall amenity and performance of dwellings still meets the objectives. Typical residential standards that require greater flexibility in adaptive reuse proposals include: habitable room depths and ceiling heights; alternative approaches to natural ventilation and daylighting; alternatives landscape approaches where deep soil areas cannot be achieved; open space and circulation areas; visual and acoustic privacy; car-parking provision. DG 4.13.2 Design features to maximise dwelling amenity within the constraints of an existing building should be applied sensitively. Suggested design approaches include: generously-sized voids, atriums, lightwells, roof lights and courtyards in deeper buildings to improve daylight penetration and ventilation; utilising available ceiling height to increase daylight and sense of space. DG 4.13.3 Design solutions to ensure additions are respectful to the existing building may include: highlight and make good use of the special qualities and features of the existing building; design new works to complement the character, siting, scale, proportion, pattern, form, detailing and landscaping of the existing building and surrounds; use contemporary and complementary materials, finishes, textures and colours to distinguish new elements from the existing building. DG 4.13.4 The character and heritage value of some buildings may be protected within the local planning framework, Heritage of Western Australian Act 1990, Heritage Act 2018 or Commonwealth legislation. Refer to the requirements of these planning instruments, regulations and legislation in developing schemes for the adaptive reuse of affected buildings.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 77,
+    "extract_line": 2656
+  },
+  "register_ref": "C4P2-123",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.13",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Printed 'Heritage of Western Australian Act 1990' (the Heritage of Western Australia Act 1990 was repealed by the Heritage Act 2018); kept as printed. DG 4.13.1 is the route for adaptive reuse proposals that cannot meet other elements' Acceptable Outcomes.",
+  "verified": {
+    "method": "page-image",
+    "page": 77,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

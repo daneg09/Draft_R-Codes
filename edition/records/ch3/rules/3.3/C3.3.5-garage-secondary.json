@@ -1,0 +1,78 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.3.5#garage-secondary",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Garage setback from a secondary street",
+  "text": "C3.3.5 Garages and carports are set back from a secondary street and right-of way in accordance with Table 3.3a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.garage.present",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "site.has_secondary_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.garage.setback_secondary_m",
+    "site.r_code",
+    "parking.garage.present",
+    "site.has_secondary_street"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-secondary",
+    "fact": "parking.garage.setback_secondary_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.3",
+  "defined_terms": [
+    "garage",
+    "secondary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.1-C1.3",
+      "relation": "mixed",
+      "note": "1.5 m all codes -> Table 3.3a: tightened R2-R12.5, relaxed R40+"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.3.6",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 32,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "ch3-054",
+  "verify": false,
+  "notes": "Communal street not mentioned in C3.3.5 (register ch3-054).",
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.7.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.7",
+  "element_title": "Universal design",
+  "title": "Ten or more grouped dwellings: at least 20% of dwellings at silver level universal design",
+  "text": "C2.7.1 Where 10 or more grouped dwellings are proposed, a minimum 20 per cent(1) of all dwellings are: i. designed and constructed to a minimum silver level universal design in accordance with A4 Universal design requirements, or ii. certified Livable Housing Australia to a minimum silver level of performance. Note: No universal design provisions apply for grouped dwellings development with less than 10 dwellings. All other provisions of the R-Codes still apply. (1) Where calculations result in a fraction of a dwelling, the provision is to be rounded up to the nearest whole number.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">=",
+      "value": 10
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count",
+    "proposal.dwellings_universal_design_pct"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "proposal.dwellings_universal_design_pct",
+    "op": ">=",
+    "value": 20
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.7",
+  "defined_terms": [
+    "universal design"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.7.1",
+      "relation": "same",
+      "note": "R30+ unchanged"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "new for grouped developments of 10+ dwellings at R25 and below (Part B had no universal design requirement)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 23,
+    "extract_line": 737
+  },
+  "register_ref": "ch3-036",
+  "verify": false,
+  "notes": "diverges: Chapter 2 C2.7.1 is the gold-level site area variation (its Chapter 3 twin is C2.7.2); this 20% silver clause has no Chapter 2 equivalent. Footnote 1: a fraction of a dwelling rounds up; percentage >= 20 of an integer count is the same test as count >= ceil(0.2 x dwellings). Silver means silver or better. Cross-reference to 'A4' is stale: universal design requirements are Appendix A2 in the draft (register ch3-036).",
+  "verified": {
+    "method": "page-image",
+    "page": 23,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

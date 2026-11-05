@@ -1,0 +1,95 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.4.4#length-r50-wide",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary wall cumulative length, R50 and above, frontage greater than 8.5 m (65%)",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: i. boundary walls are located behind the street setback; ii. overshadowing does not exceed the limits of C3.9.1; and iii. they are finished to an equivalent standard to the rest of the development, to the satisfaction of the decision-maker. Table 3.4c Lot boundary setbacks, R50 and above where frontage is greater than 8.5m: maximum boundary wall height 7m; maximum boundary wall length 14m length, at which point the wall is to be set back a minimum of 3m measured from the lot boundary for a minimum length of 3m, with a cumulative maximum of 65% of the lot boundary the wall abuts.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R50+",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.boundary_walls.count",
+      "op": ">=",
+      "value": 1
+    },
+    {
+      "type": "threshold",
+      "fact": "site.frontage_m",
+      "op": ">",
+      "value": 8.5
+    }
+  ],
+  "inputs": [
+    "building.boundary_walls.max_pct_of_boundary",
+    "building.boundary_walls.count",
+    "site.frontage_m",
+    "building.boundary_walls.adjoining_wall_exists"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.boundary_walls.max_pct_of_boundary",
+    "op": "<=",
+    "value": 65
+  },
+  "exceptions": [
+    {
+      "label": "abuts an existing or simultaneously constructed wall of similar or greater dimension (C3.4.5)",
+      "condition": {
+        "type": "boolean",
+        "fact": "building.boundary_walls.adjoining_wall_exists",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "building.boundary_walls.adjoining_wall_exists"
+      ],
+      "source": "C3.4.5, page 34",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "frontage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4b",
+      "relation": "relaxed",
+      "note": "two-thirds measured behind the setback -> 65% of the whole boundary"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 35,
+    "table": "Table 3.4c",
+    "figure": "Figure 3.4j"
+  },
+  "register_ref": "ch3-065",
+  "verify": true,
+  "notes": "The 'cumulative' total of boundary wall along one boundary is taken as building.boundary_walls.max_pct_of_boundary (the fact vocabulary has no separate cumulative-per-boundary fact).",
+  "verified": {
+    "method": "page-image",
+    "page": 35,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values clear on the page, but the page says 'cumulative maximum of 65%' while the encoded fact (building.boundary_walls.max_pct_of_boundary) is the longest single wall as % of its boundary; cumulative length of all walls on one boundary is not captured."
+  }
+}

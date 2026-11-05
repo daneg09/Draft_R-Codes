@@ -1,0 +1,46 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M4.1.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Decision-maker may approve a strata lot of lesser average site area for apartments R40 to R60",
+  "text": "Notwithstanding M4.1.2, for apartments in areas coded R40 - R60; the decision-maker may approve a development application involving the creation of a strata lot of a lesser average site area than that specified in Table 4B provided that the proposed variation does not limit the ability for the development to achieve the relevant provisions of the R-Codes, and will: i. facilitate housing and dwelling diversity; ii. facilitate the protection of an environmental or heritage feature; iii. facilitate the retention of a significant element that contributes toward an existing streetscape worthy of retention; iv. allow land to be developed with housing of the same types and form as land in the vicinity and which would not otherwise be able to be developed; or v. achieve specific objectives of the local planning framework.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R40-R60"
+  ],
+  "region": "all",
+  "inputs": [],
+  "fallback": null,
+  "defined_terms": [
+    "strata lot",
+    "decision-maker"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "current P1.1.2 allows only 5% via the WAPC"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 50
+  },
+  "register_ref": "C4P1-140",
+  "verify": false,
+  "notes": "New here (no Chapter 3 equivalent; ch3 M4.1.3 is the corner-lot variation over 5% for R10-R35). Limited to R40-R60 and to a development application creating a strata lot; the ToC omits both. The Explanatory Guidelines say site area variations may be approved 'where the WAPC is satisfied', conflicting with 'decision-maker' (verify). The 'dwelling diversity' ground is open-ended. No limit on the size of the variation.",
+  "verified": {
+    "method": "page-image",
+    "page": 50,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page says 'the decision-maker' and 'R40 - R60'; the Explanatory Guidelines conflict is outside this page."
+  }
+}

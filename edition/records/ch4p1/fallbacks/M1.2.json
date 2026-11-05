@@ -1,0 +1,54 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Trees and landscaping merit assessment criteria",
+  "text": "M1.2.1 Site planning allows for: i. site responsive and sustainable landscape design; and ii. the retention of existing trees on the subject site and adjoining properties. M1.2.2 Provision of trees and high quality landscaping: i. enhances the built form, streetscape and pedestrian amenity, as viewed from the street; ii. provides shade and amenity for communal streets and parking areas; and iii. contributes to the visual appeal, comfort and amenity of the development, in particular private open space and communal open space and outlook from habitable rooms. M1.2.3 Development provides sufficient deep soil area to sustain healthy tree and plant growth, providing for an increase in urban tree canopy over time, and assist in managing the quantity and quality of stormwater.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.2.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.2.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.2.3",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.1",
+      "relation": "deleted",
+      "note": "Part B communal landscaping list: no-parking street setback, COS sightline to habitable windows, retention of trees over 3 m in COS and screened clothes drying have no successor (C4P1-151)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 10
+  },
+  "register_ref": "C4P1-016",
+  "verify": false,
+  "notes": "from: ch3 M1.2. Text identical (p10). C1.2.6 (soft landscaping reduced to 10% for a retained tree) is an exception on C1.2.1, not a rule. Part B 5.3.2 C2.1 items partly relocated (C1.2.3 lighting, 2.4 bins, 3.7 paths); the rest deleted (C4P1-151).",
+  "inputs": [],
+  "verified": {
+    "method": "page-image",
+    "page": 10,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

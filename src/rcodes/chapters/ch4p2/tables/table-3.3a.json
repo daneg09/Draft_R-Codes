@@ -1,0 +1,109 @@
+{
+  "id": "table-3.3a",
+  "title": "Table 3.3a Minimum deep soil area and tree provision requirements (reference)",
+  "keys": [
+    "site.area_m2",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "site.area_m2": {
+          "max": 699.99
+        },
+        "metric": "deep_soil_pct"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "max": 699.99
+        },
+        "metric": "deep_soil_pct_existing_tree_retained"
+      },
+      "value": 7
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "max": 699.99
+        },
+        "metric": "trees"
+      },
+      "value": "1 medium tree and small trees to suit area"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 700,
+          "max": 1000
+        },
+        "metric": "deep_soil_pct"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 700,
+          "max": 1000
+        },
+        "metric": "deep_soil_pct_existing_tree_retained"
+      },
+      "value": 7
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 700,
+          "max": 1000
+        },
+        "metric": "trees"
+      },
+      "value": "2 medium trees OR 1 large tree AND small trees to suit area"
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 1000.01
+        },
+        "metric": "deep_soil_pct"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 1000.01
+        },
+        "metric": "deep_soil_pct_existing_tree_retained"
+      },
+      "value": 7
+    },
+    {
+      "match": {
+        "site.area_m2": {
+          "min": 1000.01
+        },
+        "metric": "trees"
+      },
+      "value": "1 large tree and 1 medium tree for each additional 400m2 in excess of 1000m2 OR 1 large tree for each additional 900m2 in excess of 1000m2 AND small trees to suit area"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Reference transcription ('metric' is not a fact; rules A3.3.4 and A3.3.5-r1 to -r3 carry the values). Deep soil 10% of site area (7% if existing tree(s) retained on site): the cell is merged across all three site-area rows (confirmed p31). Note 1: minimum requirement for trees includes retained or new trees. Tree sizes per Table 3.3b. Unchanged from Vol 2.",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 31,
+    "note": "p31: the deep soil cell (10% OR 7% if existing tree(s) retained on site, % site area) is merged across all three site-area rows."
+  }
+}

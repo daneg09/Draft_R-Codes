@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Major openings of ground-floor apartments facing car parking or non-residential uses set back at least 3 m (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Major openings to ground floor apartments facing directly onto car parking areas and/or non-residential components of a mixed use development are set back a minimum 3m and are designed to ensure visual privacy and manage noise intrusion and light spill.",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "dwellings.ground_floor_openings_to_car_park",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "dwellings.ground_floor_openings_to_car_park",
+    "dwellings.min.ground_floor_opening_to_car_park_setback_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "dwellings.min.ground_floor_opening_to_car_park_setback_m",
+    "op": ">=",
+    "value": 3.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "major opening",
+    "mixed use development"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.11",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 17,
+    "extract_line": 512
+  },
+  "register_ref": "C4P1-031",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 17,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "new: no Chapter 3 equivalent. Heading 'Managing impacts on amenity (applies to R30-R60 only)'. Applies where any ground-floor apartment has a major opening facing directly onto car parking or a non-residential component (dwellings.ground_floor_openings_to_car_park). Only the 3 m setback is encoded; 'designed to ensure visual privacy and manage noise intrusion and light spill' needs a planner and falls to M2.1.6."
+}

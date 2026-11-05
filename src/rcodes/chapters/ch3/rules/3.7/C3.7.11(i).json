@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.11(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Pedestrian path minimum 1 m wide (10 or more dwellings on a communal street)",
+  "text": "For 10 or more grouped dwellings that are served by a communal street, a pedestrian path is provided as follows: i. minimum 1m wide, clear of any utilities or minor projections;",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_communal_street",
+      "expected": true
+    },
+    {
+      "type": "count",
+      "fact": "site.communal_street_serves_lots",
+      "op": ">=",
+      "value": 10
+    }
+  ],
+  "inputs": [
+    "parking.pedestrian_access_width_m",
+    "site.communal_street_serves_lots",
+    "site.has_communal_street"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.pedestrian_access_width_m",
+    "op": ">=",
+    "value": 1.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "communal street",
+    "minor projections"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.6-C6.1",
+      "relation": "relaxed",
+      "note": "row-level crosswalk ch3-079: Part B C6.1-C6.5; R25 and below path 1.2 m -> 1 m, 2.5 m separation and shared-street rules deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.8",
+      "relation": "relaxed",
+      "note": "row-level crosswalk ch3-079: Part C C3.7.8-C3.7.10"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 42
+  },
+  "register_ref": "ch3-079",
+  "verify": false,
+  "notes": "New to the grouped package (no Chapter 2 twin). Applies to 10 or more grouped dwellings served by a communal street; site.communal_street_serves_lots is read as the number of dwellings the communal street serves. Width clear of utilities and minor projections.",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

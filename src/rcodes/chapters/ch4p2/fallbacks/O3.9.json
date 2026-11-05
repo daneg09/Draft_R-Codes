@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Car and bicycle parking Element Objectives",
+  "text": "O 3.9.1 Parking and facilities are provided for cyclists and other modes of transport. O 3.9.2 Car parking provision is appropriate to the location, with reduced provision possible in areas that are highly walkable and/or have good public transport or cycle networks and/or are close to employment centres. O 3.9.3 Car parking is designed to be safe and accessible. O 3.9.4 The design and location of car parking minimises negative visual and environmental impacts on amenity and the streetscape.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O3.9",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46
+  },
+  "register_ref": "C4P2-106",
+  "verify": false,
+  "notes": "Objectives unchanged; Table 3.9 values changed (C4P2-097 to C4P2-107).",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

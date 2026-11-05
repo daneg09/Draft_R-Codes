@@ -1,0 +1,84 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.5.2-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.5",
+  "element_title": "Visual privacy",
+  "title": "Vacant or unknown adjoining site: cone of vision from a bedroom, study or open access walkway kept within the lot (3 m, Table 3.5)",
+  "text": "Where an adjoining property is vacant residential zoned land, or when the location of a major opening or an active habitable space is unknown, all sources of overlooking are oriented, offset or set back in accordance with Table 3.5 so that the cone of vision does not extend beyond the lot boundaries.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "privacy.sources_above_0_5m",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.vacant_or_unknown",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "adjoining.vacant_or_unknown",
+    "privacy.bedroom_study_setback_m",
+    "privacy.sources_above_0_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "privacy.bedroom_study_setback_m",
+    "op": ">=",
+    "value": 3.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.5",
+  "defined_terms": [
+    "cone of vision",
+    "major opening",
+    "active habitable space",
+    "adjoining property",
+    "natural ground level",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": null,
+      "relation": "new",
+      "note": "no Vol 2 equivalent: fixed setbacks applied to all boundaries"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 36,
+    "table": "Table 3.5"
+  },
+  "register_ref": "C4P2-086",
+  "verify": false,
+  "notes": "New (register C4P2-086, not in ToC). from: ch4p1 C3.9.5-r1, without an equivalent of ch4p1 C3.9.6 (no screening alternative in this chapter's text). The setback fact is the least distance from such sources on the first four storeys to the lot boundary along the cone of vision; the full Table 3.5 distance applies to the boundary. Fifth storey and above: refer Table 2.7 (A3.5.1-r4).",
+  "verified": {
+    "method": "page-image",
+    "page": 36,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

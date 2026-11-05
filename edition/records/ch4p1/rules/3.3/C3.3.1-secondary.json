@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.3.1#secondary",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Secondary street setback",
+  "text": "C3.3.1 Buildings are set back from the street boundary in accordance with Table 3.3a. Table 3.3a Minimum setback of buildings from the street, secondary street: R10 3m; R12.5 2m; R15-25 and R30-35 1.5m; R40 and R50-60 1m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_secondary_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.secondary_street_setback_m",
+    "site.r_code",
+    "site.has_secondary_street"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-secondary",
+    "fact": "building.secondary_street_setback_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.3",
+  "defined_terms": [
+    "secondary street",
+    "street boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "same",
+      "note": "R10 3 m, R12.5 2 m, R15-R25 1.5 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3a",
+      "relation": "same",
+      "note": "R30-R35 1.5 m, R40-R60 1 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "C4P1-076",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Merged cells confirmed on p29: 1.5m spans R15-25 and R30-35; 1m spans R40 and R50-60. Table 4A (p7) agrees."
+  },
+  "notes": "from: ch3 C3.3.1#secondary. R10 3 m, R12.5 2 m, R15-R35 1.5 m, R40-R60 1 m (p29, p7; the four values sit in merged cells across six columns, spans read per register C4P1-076). Applies only where the lot has a secondary street."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "table-2.7",
+  "title": "Table 2.7 Building separation within site boundary",
+  "keys": [
+    "building.separation_storeys"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "building.separation_storeys": {
+          "max": 4
+        }
+      },
+      "value": 3,
+      "note": "up to 4 storeys"
+    },
+    {
+      "match": {
+        "building.separation_storeys": {
+          "min": 5
+        }
+      },
+      "value": 6,
+      "note": "5 storeys and above"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 22
+  },
+  "register_ref": "C4P2-074",
+  "verify": false,
+  "notes": "Application 'All R-Codes', within site boundary: 3 m up to 4 storeys, 6 m at 5 storeys and above. No room-type distinction; measured from the outer face of the building envelope including balconies (Figure 2.7a). Volume 2 required 12/18/24 m between habitable rooms (C4P2-074).",
+  "verified": {
+    "method": "page-image",
+    "page": 22,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

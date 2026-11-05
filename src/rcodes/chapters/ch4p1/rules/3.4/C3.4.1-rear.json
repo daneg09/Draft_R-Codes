@@ -1,0 +1,100 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.1#rear",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Rear setback (R10-R15)",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. ii. For R10-R25, the stated setback distances may be reduced by half the width of an adjoining pedestrian access way to a maximum reduction of 2m (refer to Figure 3.4d). Table 3.4a Lot boundary setbacks, rear setback: 3m (applicable to R10-R15 only).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R15"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.rear_setback_m",
+    "site.r_code",
+    "site.adjoining_pedestrian_access_way_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.rear_setback_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-rear"
+    }
+  },
+  "exceptions": [
+    {
+      "label": "adjoining pedestrian access way (C3.4.1(ii))",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.adjoining_pedestrian_access_way_width_m",
+        "op": ">",
+        "value": 0
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "building.rear_setback_m + min(site.adjoining_pedestrian_access_way_width_m / 2, 2)",
+          "op": ">=",
+          "value": {
+            "table": "table-3.4a-rear"
+          }
+        }
+      },
+      "inputs": [
+        "site.adjoining_pedestrian_access_way_width_m"
+      ],
+      "source": "C3.4.1(ii), Figure 3.4d, page 32"
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "setback",
+    "pedestrian access way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "relaxed",
+      "note": "R10-R12.5 rear 6 m -> 3 m (C4P1-086)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2a",
+      "relation": "restructured",
+      "note": "R15 rear by the Tables 2a/2b wall matrix -> flat 3 m (may tighten for low walls)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T2b",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.1(vi)",
+      "relation": "tightened",
+      "note": "R10-R25 reduction by half an adjoining ROW, pedestrian access way, communal street or battleaxe leg -> pedestrian access way only (C4P1-089)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "C4P1-086",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 3.4a (p32) rear cell is one merged cell across all wall heights reading '3m (applicable to R10-R15 only)'; Table 4A (p7) prints 6m as one merged cell spanning R10, R12.5 and R15 and all three wall-height rows. Draft conflict; Table 3.4a encoded."
+  },
+  "notes": "from: ch3 C3.4.1#rear (R2 10 m and R2.5 7.5 m rows dropped). Table 3.4a (p32) rear column: 3 m 'applicable to R10-R15 only', all wall heights. CONFLICT: Table 4A (p7) shows 6 m at R10-R15 (register C4P1-003 conflict 2); Table 3.4a is encoded. Pedestrian access way reduction (C3.4.1(ii), R10-R25, max 2 m) as an exception."
+}

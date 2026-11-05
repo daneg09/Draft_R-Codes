@@ -1,0 +1,80 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.5.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.5",
+  "element_title": "Utilities",
+  "title": "Functional utilities behind the primary street setback and not visible from the primary street",
+  "text": "C2.5.2 Functional utilities (with the exception of solar collectors and electric vehicle charging): i. are located behind the primary street setback and not visible from the primary street; ii. are designed to integrate with the development; and iii. are located and/or screened so that they are not visually obtrusive and minimise the impact of noise sources to habitable rooms and private open space both on the development site and adjoining properties.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "services.functional_utilities_behind_setback",
+    "services.functional_utilities_not_visible_from_street"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "services.functional_utilities_behind_setback",
+        "expected": true
+      },
+      {
+        "type": "boolean",
+        "fact": "services.functional_utilities_not_visible_from_street",
+        "expected": true
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.5",
+  "defined_terms": [
+    "functional utilities",
+    "primary street setback",
+    "primary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.2",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.4-C4.7",
+      "relation": "relaxed",
+      "note": "secondary-street screening of antennas and clothes drying becomes primary-street only"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.5.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.5.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 21,
+    "extract_line": 683
+  },
+  "register_ref": "ch3-034",
+  "verify": false,
+  "notes": "Only sub-clause (i) is encoded; (ii) 'integrate with the development' and (iii) 'not visually obtrusive, minimise noise impact' need planner judgment and fall to M2.5. Solar collectors and EV charging excluded.",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

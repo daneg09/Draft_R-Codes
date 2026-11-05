@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.1",
+  "element_title": "Site cover",
+  "title": "Maximum site cover",
+  "text": "Development on each site does not exceed the maximum site cover percentages of Table 3.1a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.roofed_area_m2",
+    "site.area_m2",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "percentage-of",
+    "fact": "building.roofed_area_m2",
+    "of": "site.area_m2",
+    "op": "<=",
+    "value": {
+      "table": "table-3.1a"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.1",
+  "defined_terms": [
+    "site cover"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.4-C4",
+      "relation": "relaxed",
+      "note": "open space minimum replaced by site cover maximum; +5 points at every code R2-R25"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "relaxed",
+      "note": "open space column inverted to site cover"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.1a",
+      "relation": "deleted",
+      "note": "R30+ site cover removed (register ch2-038)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 27,
+    "table": "Table 3.1a"
+  },
+  "register_ref": "ch2-037",
+  "verify": false,
+  "notes": "Verified fixture rule. R30 and above (and R100-SL) return NOT_APPLICABLE through the null table row: 'Site cover does not apply to R30 and above'. Definitions differ from Part B open space (register ch2-037), so the +5 point relaxation is smaller when patios are built.",
+  "verified": {
+    "method": "page-image",
+    "page": 27,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

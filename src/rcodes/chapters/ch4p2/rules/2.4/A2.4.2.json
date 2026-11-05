@@ -1,0 +1,53 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.4.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Setback from the boundary to achieve the 2.7, 3.3, 3.5 and 4.1 Objectives",
+  "text": "A 2.4.2 Development is setback from the boundary in order to achieve the Objectives outlined in 2.7 Building separation, 3.3 Tree canopy and deep soil areas, 3.5 Visual privacy and 4.1 Solar and daylight access.",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.4",
+  "defined_terms": [
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A2.4.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 18
+  },
+  "register_ref": "C4P2-071",
+  "verify": false,
+  "notes": "Cross-reference to other elements' Objectives; judgment. New DG 2.4.5 and 2.4.9 support build-to-boundary and reduced setbacks next to non-residential land (C4P2-071).",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

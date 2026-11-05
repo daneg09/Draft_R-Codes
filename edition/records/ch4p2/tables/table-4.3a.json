@@ -1,0 +1,57 @@
+{
+  "id": "table-4.3a",
+  "title": "Table 4.3a Minimum internal floor areas for dwelling types",
+  "keys": [
+    "dwellings.min.bedrooms_of_smallest"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": 0
+      },
+      "value": 36,
+      "note": "studio"
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": 1
+      },
+      "value": 47,
+      "note": "1 bed"
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": 2
+      },
+      "value": 67,
+      "note": "2 bed x 1 bath"
+    },
+    {
+      "match": {
+        "dwellings.min.bedrooms_of_smallest": {
+          "min": 3
+        }
+      },
+      "value": 90,
+      "note": "3 bed x 1 bath; 4+ bedrooms not printed, read as 3 bed",
+      "verify": true
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 55,
+    "extract_line": 1898,
+    "table": "Table 4.3a"
+  },
+  "register_ref": "C4P2-113",
+  "verify": false,
+  "notes": "Reference table: rule A4.3.1 carries these values in a formula because footnote 1 adds 3 m2 for a second or separate toilet and 5 m2 for a second bathroom, which a row lookup cannot add. Only one-bathroom rows are printed. Bedrooms 0 = studio.",
+  "verified": {
+    "method": "page-image",
+    "page": 55,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "36/47/67/90 m2 confirmed; footnote 1 marker on the 2 bed x 1 bath and 3 bed x 1 bath rows only. The 3+ row stays flagged: 4+ bedrooms not printed."
+  }
+}

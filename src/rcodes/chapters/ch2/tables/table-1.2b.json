@@ -1,0 +1,59 @@
+{
+  "id": "table-1.2b",
+  "title": "Table 1.2b Tree size and deep soil area (small tree)",
+  "keys": [
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "canopy_at_maturity_min_m"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "canopy_at_maturity_max_m"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "metric": "height_at_maturity_min_m"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "metric": "height_at_maturity_max_m"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "metric": "deep_soil_area_m2"
+      },
+      "value": 9
+    },
+    {
+      "match": {
+        "metric": "deep_soil_min_dimension_m"
+      },
+      "value": 1.5
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 12,
+    "table": "Table 1.2b"
+  },
+  "register_ref": "ch2-011",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 12,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Reference transcription in the table-2A style (the key 'metric' is not a fact, so rules do not look this table up; C1.2.3-r2 carries 9 m2 and 1.5 m as literals). Only the small tree row exists in Chapter 2. Figure 1.2c shows the deep soil area per small tree. Current Part B planting area was 2 m x 2 m (4 m2)."
+}

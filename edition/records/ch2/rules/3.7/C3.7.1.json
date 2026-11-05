@@ -1,0 +1,87 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.7.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Vehicle access from the lowest-order available street",
+  "text": "Where multiple accesses are available, vehicle access to on site car parking spaces to be provided via the lowest available street in the hierarchy, as follows: i. where available, from a right-of-way or communal street available for lawful use to access the relevant site and which is trafficable and drained from the property boundary to a constructed street; or ii. from the secondary street or primary street where no right-of-way or communal street exists.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "multiple accesses available",
+      "parts": [
+        {
+          "type": "boolean",
+          "fact": "site.has_row",
+          "expected": true
+        },
+        {
+          "type": "boolean",
+          "fact": "site.has_communal_street",
+          "expected": true
+        },
+        {
+          "type": "boolean",
+          "fact": "site.has_secondary_street",
+          "expected": true
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "parking.access.from_lowest_order_street",
+    "site.has_communal_street",
+    "site.has_row",
+    "site.has_secondary_street"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.access.from_lowest_order_street",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.7",
+  "defined_terms": [
+    "right-of-way",
+    "communal street",
+    "secondary street",
+    "primary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.1",
+      "relation": "relaxed",
+      "note": "corner lots R40 and below may now take access from the primary street"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 39
+  },
+  "register_ref": "ch2-075",
+  "verify": false,
+  "notes": "'Multiple accesses available' is modelled as any of a ROW, communal street or secondary street frontage. A ROW counts only where lawful, trafficable and drained to a constructed street; that qualification sits inside the applicant's answer. LDPs may vary C3.7.1 without WAPC approval (Table 2.5B).",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

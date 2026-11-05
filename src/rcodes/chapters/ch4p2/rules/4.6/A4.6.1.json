@@ -1,0 +1,98 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.6.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.6",
+  "element_title": "Storage",
+  "title": "Each dwelling has exclusive separate, ventilated, weatherproof bulky goods storage per Table 4.6 (area by bedrooms, 1.5 m, 2.1 m high)",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Each dwelling has exclusive use of a separate, ventilated, weatherproof, bulky goods storage area. This can be located either internally or externally to the dwelling with dimensions in accordance with Table 4.6.",
+  "inputs": [
+    "dwellings.min.storage_area_m2",
+    "dwellings.min.storage_bedrooms",
+    "dwellings.min.storage_min_dim_m",
+    "dwellings.min.storage_height_m",
+    "dwellings.storage_separate_ventilated_weatherproof"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "table-lookup",
+        "table": "table-4.6",
+        "fact": "dwellings.min.storage_area_m2",
+        "op": ">="
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.storage_min_dim_m",
+        "op": ">=",
+        "value": 1.5
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.storage_height_m",
+        "op": ">=",
+        "value": 2.1
+      },
+      {
+        "type": "boolean",
+        "fact": "dwellings.storage_separate_ventilated_weatherproof",
+        "expected": true
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.6",
+  "defined_terms": [
+    "storage area",
+    "dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.6.1",
+      "relation": "same",
+      "note": "register C4P2-116 change_type 'new' refers to DG 4.6.8 only"
+    },
+    {
+      "id": "rcodes:vol2-2024/T4.6",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 62,
+    "extract_line": 2144,
+    "table": "Table 4.6a"
+  },
+  "register_ref": "C4P2-116",
+  "verify": false,
+  "notes": "from: ch4p1 C2.1.8 (facts). diverges: no 1 m reduction and no street-setback or inward-opening test; adds ventilated and separate. Table printed as 'Table 4.6a' while A4.6.1 cites 'Table 4.6' (C4P2-116); table id table-4.6. Dimensions exclusive of services and plant (table note). Placeholder fact dwellings.min.storage_area_m3 in FACTS.md is wrong (the table is m2) and is not used.",
+  "verified": {
+    "method": "page-image",
+    "page": 62,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

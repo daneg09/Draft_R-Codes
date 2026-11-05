@@ -1,0 +1,78 @@
+{
+  "id": "table-3.3a-primary",
+  "title": "Table 3.3a Minimum setback of buildings from the street: primary street",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 20
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 15
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "site.r_code": "R10-R12.5"
+      },
+      "value": 7.5
+    },
+    {
+      "match": {
+        "site.r_code": "R15-R25"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "site.r_code": "R30-R35"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R50+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 2,
+      "note": "R50-R80; R80 Code Standards apply to R100, R160, LR, MR and HR (Table 3.3a note)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 29,
+    "table": "Table 3.3a"
+  },
+  "register_ref": "ch2-042",
+  "verify": false,
+  "notes": "Table 3.3a split into one file per street type (primary, secondary, laneway, laneway-primary) because table keys are application facts. R100-SL (1 m, Table 2.10a) is a separate rule, not a row.",
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

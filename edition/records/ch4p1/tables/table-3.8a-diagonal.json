@@ -1,0 +1,43 @@
+{
+  "id": "table-3.8a-diagonal",
+  "title": "Table 3.8a Maximum overshadowing: diagonally adjacent lots (percentage of dwelling site area)",
+  "keys": [
+    "adjoining.diagonal.r_code"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "adjoining.diagonal.r_code": "R25-"
+      },
+      "value": 12.5,
+      "note": "R25 and lower"
+    },
+    {
+      "match": {
+        "adjoining.diagonal.r_code": "R30-R40"
+      },
+      "value": 17.5
+    },
+    {
+      "match": {
+        "adjoining.diagonal.r_code": "R50-R60"
+      },
+      "value": 25
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 42,
+    "table": "Table 3.8a"
+  },
+  "register_ref": "C4P1-125",
+  "verify": false,
+  "notes": "from: ch3 table-3.9a-diagonal (renumbered 3.8a); second column of Table 3.8a, split out because a table row carries one value. Values checked against p42: 12.5% / 17.5% / 25%. No R80+ row in this chapter (NOT_APPLICABLE for higher codes). Footnote 1 applies to this column too. R10-R25: a diagonal-lot limit is new for apartments (Part B had none).",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

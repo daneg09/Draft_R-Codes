@@ -1,0 +1,38 @@
+{
+  "id": "table-3.2a-height",
+  "title": "Table 3.2a Maximum building heights: maximum total building height",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10-R35"
+      },
+      "value": 10,
+      "note": "printed as R2-R35"
+    },
+    {
+      "match": {
+        "site.r_code": "R40-R60"
+      },
+      "value": 13
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 28,
+    "table": "Table 3.2a"
+  },
+  "register_ref": "C4P1-071",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 28,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Lower row printed 'R2-R35'. Table 4A (p7) agrees."
+  },
+  "notes": "Copied from Chapter 3 and checked against p28 and Table 4A p7; trimmed to R10-R60 (R80+ and R100-SL rows dropped). No wall height limit and no roof-type distinction. Register rows C4P1-071 to C4P1-074."
+}

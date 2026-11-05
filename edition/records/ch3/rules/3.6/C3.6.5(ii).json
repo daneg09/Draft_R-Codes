@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.6.5(ii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Front fence or wall visually permeable above 1.2 m",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.front_fence.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.front_fence.permeable_above_m",
+    "building.front_fence.present"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.front_fence.permeable_above_m",
+    "op": "<=",
+    "value": 1.2
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.6",
+  "defined_terms": [
+    "visually permeable",
+    "primary street setback area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.4-C4.1",
+      "relation": "tightened",
+      "note": "Part B had no overall height cap; pillars 400 -> 450 mm (relaxed)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 39,
+    "figure": "Figure 3.6b"
+  },
+  "register_ref": "ch3-072",
+  "verify": false,
+  "notes": "Same as Chapter 2 C3.6.5(ii). Fact is the height above which the fence is visually permeable; the solid portion may not exceed 1.2 m above NGL on the street side.",
+  "text": "When provided, fences or walls within the primary street setback area are to be: i. a maximum height of 1.8m; and ii. visually permeable above 1.2m (refer Figure 3.6b); iii. measured from natural ground level on the primary street side of the fence or wall.",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M1.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.3",
+  "element_title": "Water management and conservation",
+  "title": "Water management and conservation merit assessment criteria",
+  "text": "M1.3.1 Flooding risk is reduced to limit the impact of major rainfall events. M1.3.2 Stormwater is managed on site wherever possible either by containment or infiltration, as permitted by the soil and other site conditions, or otherwise appropriately treated to reduce the export of nutrients, sediments and other pollutants, prior to off site discharge. M1.3.3 Development incorporates water sensitive urban design mechanisms, including water conservation approaches and site appropriate stormwater collection, retention, treatment and reuse.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.9-P9",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.4.1",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.4.2",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.4.3",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 13
+  },
+  "register_ref": "ch3-018",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Text identical to Chapter 2 (p13). Current-code principle IDs are inferred from the element.",
+  "inputs": []
+}

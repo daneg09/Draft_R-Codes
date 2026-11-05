@@ -1,0 +1,106 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.4.4#length-r30-r40",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Boundary wall maximum length, R30-R40 all other lots (65% of the lot boundary)",
+  "text": "C3.4.4 Boundary walls may be built in accordance with Table 3.4c provided: i. boundary walls are located behind the street setback; ii. overshadowing does not exceed the limits of C3.8.1; and iii. they are finished to an equivalent standard to the rest of the development, to the satisfaction of the decision-maker. Table 3.4c Lot boundary setbacks, R30 - R40 all other lots: maximum boundary wall length 65% of the lot boundary; number of boundaries All (Figure 3.4i).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R40"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "building.boundary_walls.count",
+      "op": ">=",
+      "value": 1
+    },
+    {
+      "type": "composite",
+      "mode": "any",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.frontage_m",
+          "op": ">",
+          "value": 8.5,
+          "label": "frontage greater than 8.5 m"
+        },
+        {
+          "type": "boolean",
+          "fact": "site.access_from_rear_row",
+          "expected": false,
+          "label": "access not from a rear right-of-way"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "building.boundary_walls.max_pct_of_boundary",
+    "building.boundary_walls.count",
+    "site.frontage_m",
+    "site.access_from_rear_row",
+    "building.boundary_walls.adjoining_wall_exists"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.boundary_walls.max_pct_of_boundary",
+    "op": "<=",
+    "value": 65
+  },
+  "exceptions": [
+    {
+      "label": "abuts an existing or simultaneously constructed wall of similar or greater dimension (C3.4.5)",
+      "condition": {
+        "type": "boolean",
+        "fact": "building.boundary_walls.adjoining_wall_exists",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "building.boundary_walls.adjoining_wall_exists"
+      ],
+      "source": "C3.4.5, page 34",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.4",
+  "defined_terms": [
+    "boundary wall",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4b",
+      "relation": "mixed",
+      "note": "two-thirds behind the setback -> 65% of the whole boundary (small tightening); R30-R35 two boundaries -> all (C4P1-094)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 34,
+    "table": "Table 3.4c",
+    "figure": "Figure 3.4i"
+  },
+  "register_ref": "C4P1-094",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Value 65% clear. The page does not say whether the 65% is per wall or cumulative per boundary: Figure 3.4i (p35) in this chapter shows one wall per boundary (W1 on A, W2 on B, W3 on C), unlike the Chapter 3 figure which groups W3-W5 on boundary C. The encoded fact is the longest single wall."
+  },
+  "notes": "from: ch3 C3.4.4#length-r30-r40. Table 3.4c (p34) values unchanged from Chapter 3; the clause text now cites C3.8.1 for overshadowing. All other R30-R40 lots: 65% of the lot boundary, all boundaries. Unclear whether per boundary or cumulative; the fact is per boundary. Boundary walls are single storey at R30-R40, so mainly garages and bin stores for apartments (C4P1-094)."
+}

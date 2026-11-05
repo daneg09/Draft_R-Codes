@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.3",
+  "element_title": "Street setbacks",
+  "title": "Street setbacks Design Guidance",
+  "text": "DG 2.3.1 Street setbacks within established residential areas often form a consistent pattern that contributes to streetscape character. Where there is no identified future character change, new development should respond to the established setback pattern. DG 2.3.2 In areas undergoing transition from lower to higher densities, street setbacks should support the intended future character of the street, unless an adjoining building or buildings are unlikely to change (such as a strata apartment complex) or is a heritage place. The setback of this portion of the façade may need to respond to this context. This may involve maintaining established setbacks where they contribute to the desired character, or adopting reduced setbacks where they assist in creating a stronger street edge, improving activation, defining the public realm, or supporting higher-density urban outcomes. DG 2.3.3 Where appropriate, street setbacks can provide opportunities for deep soil planting, tree canopy, landscape character and enhanced residential amenity. In other contexts, a more urban built form may be appropriate where it contributes to the desired streetscape character and public realm outcomes. DG 2.3.4 Building articulation can be achieved through the coordination of built form elements and visual interest in the building frontage. Dwellings should not present to the street as a flat façade and should demonstrate articulation through: well-defined entry points, targeted lighting and protection from the elements; appropriate, well-detailed materials, which reflect the character of the area; consideration of rhythm, proportion and scale of built form elements within the context of the building frontage and the broader character of the streetscape; and coordination of vertical and/or horizontal building elements (e.g. minor projections and shading elements), aligning to neighbouring built form. DG 2.3.5 Consideration should be given to opportunities for ground-floor apartments to have their 'own door' access from the street. A ground floor terrace/balcony or threshold space may be required in order to provide some separation between the private and public domain. DG 2.3.6 Corner sites present opportunities to positively address multiple street frontages through building design, articulation, landscaping and active interfaces, reducing the visual prominence of blank walls where practicable. DG 2.3.7 Utilities are to be integrated into the overall architectural approach of the building and minimised in scope and scale, where possible. For example, locating the short edge of a utility facing the street. DG 2.3.8 When the optimal location for the private open space for ground floor dwellings is in the street setback area, walls and fencing should provide a balance of visual permeability and visual privacy, utilising screening and landscaping. DG 2.3.9 Raising the ground floor height of a dwelling by 0.5m-1m from natural ground level, and including a setback from the street boundary to facilitate low level soft landscaping, can provide an appropriate balance between passive surveillance to the street and privacy for residents. DG 2.3.10 Consider the provision of adjustable privacy devices that allow for occupant choice in moderating their desired level of comfort. DG 2.3.11 Active and visually engaging frontages can contribute to street activity, passive surveillance and a stronger relationship between buildings and the public realm where appropriate to the context. DG 2.3.12 Passive surveillance of the street, good lighting and high levels of street activity are desirable to deter criminal behaviour and to ensure people feel safe and secure using the street at all times. DG 2.3.13 The relationship between building height, street width and setback influences the scale and character of the public realm. Consider how the overall building form contributes to a comfortable and legible pedestrian environment. DG 2.3.14 Generally, for buildings above four storeys, the setbacks of upper levels can assist in reducing perceived visual bulk and overshadowing at the street level, and create a more human scale at the street level.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/PG2.3.1",
+      "relation": "restructured",
+      "note": "Volume 2 PG 2.3.1 to 2.3.4 (for local governments) replaced by 14 Design Guidance items"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 17
+  },
+  "register_ref": "C4P2-070",
+  "verify": false,
+  "notes": "Three-column page de-interleaved; checked word for word against page 17.",
+  "verified": {
+    "method": "page-image",
+    "page": 17,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

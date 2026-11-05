@@ -1,0 +1,55 @@
+{
+  "id": "table-2.1a",
+  "title": "Table 2.1a Private open space balcony or rooftop terrace provisions (minimum area)",
+  "keys": [
+    "proposal.bedrooms"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 8,
+      "note": "studio / 1 bedroom; minimum dimension 2 m"
+    },
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 10,
+      "note": "printed as '2+ bedroom'; read as 2 bedrooms because the next row is '3 or more'; minimum dimension 2.4 m",
+      "verify": true
+    },
+    {
+      "match": {
+        "proposal.bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 12,
+      "note": "3 or more bedrooms; minimum dimension 2.4 m"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 15,
+    "extract_line": 438,
+    "table": "Table 2.1a"
+  },
+  "register_ref": "ch2-016",
+  "verify": true,
+  "notes": "proposal.bedrooms 0 = studio. The minimum dimension column (2 m for studio/1 bed, 2.4 m otherwise) is encoded in rule C2.1.1(ii), not here. Current Table 1.1b ground-floor row (15m2, 3 m) is not carried.",
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "All values match p15. Ambiguous on the page: rows '2+ bedroom' (10m2) and '3 or more bedrooms' (12m2) overlap; the 2-bedroom row is kept flagged."
+  }
+}

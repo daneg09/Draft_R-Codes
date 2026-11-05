@@ -1,0 +1,68 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.11(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Pedestrian path minimum 1 m wide (apartments on a communal street)",
+  "text": "For apartments that are served by a communal street, a pedestrian path is provided as follows: i. minimum 1m wide, clear of any utilities or minor projections;",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_communal_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.pedestrian_access_width_m",
+    "site.has_communal_street"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "parking.pedestrian_access_width_m",
+    "op": ">=",
+    "value": 1.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "communal street",
+    "minor projections"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.9",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.6-C6.1",
+      "relation": "relaxed",
+      "note": "Part B C6.1-C6.3: 1.2 m path for 10+ dwellings -> 1 m; 2.5 m separation from major openings dropped"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 41
+  },
+  "register_ref": "C4P1-118",
+  "verify": false,
+  "notes": "diverges: from ch3 C3.7.11(i); Chapter 4 Part 1 C3.7.11 (p41) applies to any apartments served by a communal street, with no 10-dwelling threshold, so the site.communal_street_serves_lots condition is removed. Width clear of utilities and minor projections.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "No dwelling-count threshold on this page."
+  }
+}

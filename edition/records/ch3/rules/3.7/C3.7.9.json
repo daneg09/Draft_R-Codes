@@ -1,0 +1,83 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "1 m x 1 m sightline truncation either side of a ROW or communal street driveway",
+  "text": "Walls, fences and other structures truncated or reduced to no higher than 0.75m within a 1m x 1m sightline truncation on either side of a driveway where vehicle access is taken from a right-of-way or communal street (refer Figure 3.7f).",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "vehicle access from a right-of-way or communal street",
+      "parts": [
+        {
+          "type": "boolean",
+          "fact": "site.access_from_rear_row",
+          "expected": true
+        },
+        {
+          "type": "threshold",
+          "fact": "parking.access.street_type",
+          "op": "==",
+          "value": "communal_street"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "parking.access.street_type",
+    "parking.sightlines.row_truncation_1m",
+    "site.access_from_rear_row"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.sightlines.row_truncation_1m",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "driveway",
+    "right-of-way",
+    "communal street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.5-C5",
+      "relation": "relaxed",
+      "note": "reduced 1 m x 1 m truncation new to Part B"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.7",
+      "relation": "relaxed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 41,
+    "figure": "Figure 3.7f"
+  },
+  "register_ref": "ch3-078",
+  "verify": true,
+  "notes": "diverges: clause number reused and trigger widened. Chapter 3 C3.7.9 (p41) is the 1 m x 1 m truncation (content twin of Chapter 2 C3.7.7) and applies where access is taken from a right-of-way OR a communal street; the condition adds parking.access.street_type == communal_street. Chapter 2 C3.7.9 is the battleaxe leg width, which is Chapter 3 C3.7.13. parking.sightlines.row_truncation_1m is read as the truncation either side of the driveway at the ROW or communal street.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values (0.75m, 1m x 1m) and the right-of-way or communal street trigger confirmed. The page triggers on access taken from any right-of-way; the condition uses site.access_from_rear_row, so a side ROW access is missed. parking.access.street_type == row would match the page; left as encoded (pairing signature with ch2 C3.7.7)."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M1.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Trees and landscaping merit assessment criteria",
+  "text": "M1.2.1 Site planning allows for: i. site responsive and sustainable landscape design; and ii. the retention of existing trees on the subject site and adjoining properties. M1.2.2 Provision of trees and high quality landscaping: i. enhances the built form, streetscape and pedestrian amenity, as viewed from the street; ii. provides shade and amenity for communal streets and parking areas; and iii. contributes to the visual appeal, comfort and amenity of the development, in particular private open space and communal open space and outlook from habitable rooms. M1.2.3 Development provides sufficient deep soil area to sustain healthy tree and plant growth, providing for an increase in urban tree canopy over time, and assist in managing the quantity and quality of stormwater.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-P2",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.2.1",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.2.2",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P1.2.3",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.1",
+      "relation": "deleted",
+      "note": "Part B communal landscape list for common property (ch3-017); parts retained in C1.2.3, C2.4.2, C3.7.10-C3.7.12; no rule"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 11
+  },
+  "register_ref": "ch3-009",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 11,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Merit criteria for element 1.2; text identical to Chapter 2 (p11). M1.2.2(iii) still mentions communal open space, which grouped dwellings no longer have (ch3-019). The Part B C2.1(i)-(ix) common property landscape list is deleted (ch3-017) and has no rule. Current-code principle IDs are inferred from the element.",
+  "inputs": []
+}

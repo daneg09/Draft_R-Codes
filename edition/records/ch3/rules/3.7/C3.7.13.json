@@ -1,0 +1,81 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.13",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Communal street or battleaxe leg minimum width 3.6 m",
+  "text": "A communal street or battleaxe leg is to be a minimum width of 3.6m, inclusive of a minimum: i. 3m wide driveway in accordance with C3.7.3; and ii. 0.3m setback either side of the driveway (refer Figure 3.7g).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "communal street or battleaxe leg",
+      "parts": [
+        {
+          "type": "boolean",
+          "fact": "site.has_communal_street",
+          "expected": true
+        },
+        {
+          "type": "boolean",
+          "fact": "site.battleaxe",
+          "expected": true
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "site.battleaxe",
+    "site.communal_street_width_m",
+    "site.has_communal_street"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "site.communal_street_width_m",
+    "op": ">=",
+    "value": 3.6
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "communal street",
+    "battleaxe leg",
+    "driveway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.11",
+      "relation": "restructured"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.2",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 42,
+    "figure": "Figure 3.7g"
+  },
+  "register_ref": "ch3-080",
+  "verify": false,
+  "notes": "Content twin of Chapter 2 C3.7.9 (battleaxe leg 3.6 m), renumbered and widened to a communal street or battleaxe leg; the fact is site.communal_street_width_m (communal street or battleaxe leg width) instead of site.battleaxe_leg_width_m. The text sets one width (3.6 m) regardless of dwelling count; C3.7.15 ('notwithstanding C3.7.13') sets 12 m where 20 or more lots take access, tested separately. The 3 m driveway is C3.7.3(i); the 0.3 m margins are C3.7.3(iii). Merit M3.7.3 allows a reduced width to retain an existing dwelling.",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

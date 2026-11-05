@@ -1,0 +1,49 @@
+{
+  "id": "table-4.1c",
+  "title": "C4.1.7 coding band: R50 and above",
+  "keys": [
+    "site.r_code"
+  ],
+  "rows": [
+    {
+      "match": {
+        "site.r_code": [
+          "R50+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": true,
+      "note": "LR, MR, HR take R80 standards (Table 3B note)"
+    },
+    {
+      "match": {
+        "site.r_code": "R40-"
+      },
+      "value": false
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": false,
+      "note": "R100-SL lots are under 100 m2, so the 100 m2 floor could never be met; treated as outside C4.1.7"
+    }
+  ],
+  "default": false,
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 53
+  },
+  "register_ref": "ch3-096",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 53,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Helper table. C4.1.7 says 'R50 and above' with no carve-out; treating R100-SL as false is an interpretation (its 80m2 minimum sits under the 100m2 floor of C4.1.7(i))."
+  },
+  "notes": "Engine helper, not a published table: true where the clause's coding band applies, false otherwise (default false). Used as a condition inside the concession exceptions on C4.1.1, C4.1.1-r1, C4.1.1-r4 and C4.1.1-r7 (a table-lookup with no fact answers MEETS when the value is truthy), because exceptions cannot carry a coding of their own. Values are never null so a composite condition cannot pass on NOT_APPLICABLE. C4.1.7: gold-level accessible (C2.7.1) or small dwelling (C2.9.1) at R50 and above. Chapter 3 text (p53) is the same as Chapter 2."
+}

@@ -1,0 +1,52 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.8",
+  "element_title": "Development incentives for community benefit",
+  "title": "Development incentives for community benefit (local planning instruments only)",
+  "text": "This section provides guidance for local government on relevant considerations to establish development incentives that may be provided in exchange for community benefit in nominated areas. ... this section does not provide grounds for development proponents to claim development incentives outside of designated provisions in local planning instruments.",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.8",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.8",
+      "relation": "relocated",
+      "note": "intent and Planning Objectives kept; PG 2.8.1 and 2.8.2 moved to Appendix A8"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 24
+  },
+  "register_ref": "C4P2-077",
+  "verify": false,
+  "notes": "No Acceptable Outcome is printed for 2.8; this record keeps the element complete. Incentives (additional plot ratio or height for community benefit) arise only from designated provisions in local planning instruments and are applied through the instruments layer, not claimed by a proponent. Plot-ratio bonuses in existing regional schemes or PSPs for R-AC areas lose their base where Table 2.1 now says N/A (C4P2-077).",
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

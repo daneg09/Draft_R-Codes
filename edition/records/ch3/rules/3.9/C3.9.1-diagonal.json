@@ -1,0 +1,127 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.9.1-diagonal",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.9",
+  "element_title": "Solar access for adjoining sites",
+  "title": "Maximum overshadowing of a diagonally adjacent lot (Table 3.9a)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "label": "climate zone 4, 5 or 6",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    "adjoining.diagonal.r_code",
+    "building.max_wall_height_m",
+    "building.storeys",
+    "overshadow.diagonal_pct",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.9a-diagonal",
+    "fact": "overshadow.diagonal_pct",
+    "op": "<="
+  },
+  "exceptions": [
+    {
+      "label": "C3.9.2 single storey, wall height not more than 3.5 m",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "count",
+            "fact": "building.storeys",
+            "op": "==",
+            "value": 1
+          },
+          {
+            "type": "threshold",
+            "fact": "building.max_wall_height_m",
+            "op": "<=",
+            "value": 3.5
+          }
+        ]
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "building.storeys",
+        "building.max_wall_height_m"
+      ],
+      "source": "C3.9.2, p43",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.9",
+  "defined_terms": [
+    "diagonally adjacent lot",
+    "overshadowing"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.2-C2.1",
+      "relation": "tightened",
+      "note": "Part B did not limit shadow on diagonally adjacent lots"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.9a",
+      "relation": "mixed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 44,
+    "table": "Table 3.9a",
+    "figure": "Figure 3.9b"
+  },
+  "register_ref": "ch3-083",
+  "verify": false,
+  "notes": "Same as Chapter 2. Second column of Table 3.9a (half the adjoining-property figure). Table 3.9a footnote 1 (p44): where the development adjoins a grouped dwelling development, the limit applies to each grouped dwelling site area excluding common property (Figure 3.9d); supply the adjoining percentage per dwelling site (adjoining.south.is_grouped_site flags it; not encoded). Not subject to C3.9.3 or C3.9.4. R25 and below: diagonal limit is new (Part B had none). Coding excludes R100-SL: Chapter 3 Table 2.10a (p26) removes all 3.9 provisions for R100-SL, but its footnote restores them where the development abuts a property not coded R100-SL (not encoded).",
+  "text": "In climate zones 4, 5, and 6, development is designed that its shadow cast at midday, 21 June (refer Figure 3.9a) onto any other adjoining property and/or diagonally adjacent lot (refer Figure 3.9b) does not exceed the limits set out in Table 3.9a.",
+  "verified": {
+    "method": "page-image",
+    "page": 44,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Table 3.9a diagonal column checked: 12.5 / 17.5 / 25 / no maximum (R80 or higher). Exception source cites p43 (the Chapter 2 page); the Chapter 3 page is 45, left unchanged (pairing signature)."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.6",
+  "element_title": "Building depth",
+  "title": "Building depth Element Objectives",
+  "text": "Development is to achieve the following Element Objectives: O 2.6.1 Building depth supports apartment layouts that optimise daylight and solar access and natural ventilation. O 2.6.2 Articulation of building form to allow adequate access to daylight and natural ventilation where greater building depths are proposed. O 2.6.3 Room depths and/or ceiling heights optimise daylight and solar access and natural ventilation.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.6",
+      "relation": "same",
+      "note": "Element Objectives"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 21
+  },
+  "register_ref": "C4P2-073",
+  "verify": false,
+  "notes": "",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

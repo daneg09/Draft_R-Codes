@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.6.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Grouped dwellings address the street",
+  "text": "Grouped dwellings are to address the street (including a battleaxe driveway, communal street or right-of-way where this is the primary frontage) in accordance with the following: i. the primary entrance to each dwelling must be readily identifiable from the street; and ii. provide at least one major opening on the dwelling frontage with an outlook to the street.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.entrance_identifiable_from_street",
+    "building.major_opening_to_frontage"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "building.entrance_identifiable_from_street",
+        "expected": true,
+        "label": "(i) primary entrance readily identifiable from the street"
+      },
+      {
+        "type": "boolean",
+        "fact": "building.major_opening_to_frontage",
+        "expected": true,
+        "label": "(ii) at least one major opening on the frontage with outlook to the street"
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.6",
+  "defined_terms": [
+    "major opening",
+    "primary street",
+    "frontage",
+    "communal street",
+    "right-of-way"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.3-C3.1",
+      "relation": "restructured",
+      "note": "Part B C3.1-C3.3"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.1",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 38
+  },
+  "register_ref": "ch3-069",
+  "verify": false,
+  "notes": "Same test as Chapter 2 C3.6.1; Chapter 3 says 'grouped dwellings' and 'the primary entrance to each dwelling'. Both limbs required for every dwelling; the facts answer for the worst dwelling. Street includes a battleaxe driveway, communal street or ROW where that is the primary frontage.",
+  "verified": {
+    "method": "page-image",
+    "page": 38,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

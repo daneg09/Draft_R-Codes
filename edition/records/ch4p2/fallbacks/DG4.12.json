@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.12",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.12",
+  "element_title": "Landscape design",
+  "title": "Landscape design design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.12.1 As a general principle landscape design should respond to existing site and environmental conditions, taking advantage of views, topography, soil profiles and significant existing landscape features such as existing trees and drainage patterns. DG 4.12.2 Planting should feature a mix of shade trees (refer Tables 3.3a and 3.3b and Table 4.12, hardy shrubs, ground covers/understorey and native and endemic species. DG 4.12.3 Landscape design should be environmentally sustainable, considering local environmental conditions and constraints. Consider: diverse and appropriate plant selection, preferencing the use of native or endemic species or non-invasive, Waterwise plants; minimising the use of turf unless sustainable water harvesting and reuse systems are used; vegetated stormwater management systems and passively irrigated gardens; space and equipment for composting; use of sub-surface irrigation and irrigation systems with rain and soil moisture sensors; opportunities to harvest and re-use rainwater collected and stored on-site; maximising the use of permeable surfaces to allow infiltration of rainwater and irrigation; eco-zoning and hydro-zoning to minimise irrigation needs; providing water efficient garden beds for residents to plant vegetables and herbs. Food production areas can require specific micro-climate, soil and maintenance requirements, so ensure that the type of garden and species can grow in the given conditions. DG 4.12.4 Where the local government supports verge greening, consider including a mix of trees and low native ground covers that provide both shade and soil cover without obscuring visibility for street users. While this approach should minimise the need for ongoing irrigation, consider irrigation needs to enable establishment and periodic watering to maintain plant health. Avoid the use of turf and other irrigation-intensive plants. DG 4.12.5 Landscape design can play an important role in enhancing the micro-climate and improving the thermal performance of buildings. Strategies may include: designing the landscape to suit winter and summer sun positions, consider existing shading and the direction of prevailing winds; providing a balance of evergreen and deciduous trees to provide shading in summer and sunlight access in winter; green roofs or green walls/façades and other vertical greening strategies that shade and cool the building; utilising materials with high reflectivity, low heat conductivity and capacity and high moisture capacity; shade structures such as pergolas in open space; closed system water features that can cool through evaporation. DG 4.12.6 Planting on structures can be a viable landscaping alternative on constrained or highly urbanised sites. These constructed environments require particular technical expertise for their implementation and ongoing maintenance. When considering planting on structures, have regard for the following: planter requirements should be established early to ensure structures are reinforced to deal with additional saturated soil weight; plant species should be selected with care to ensure they can survive and thrive in intended conditions. Major considerations may include: selection for species for heat resistance, drought and wind tolerance; capability of withstanding seasonal changes in solar access; plant longevity; appropriate soil profile and volume should be provided to facilitate good plant growth. Consider: modifying depths and widths according to the planting mix and irrigation frequency; use of free draining soils; choose soils with a long life span; providing sufficient volume to enable tree anchorage; account for irrigation and for drainage pathways to reduce staining and ongoing maintenance of the planting infrastructure and the building fabric. DG 4.12.7 All gardens require maintenance. Allocate an area for this to be undertaken and allow the storage of gardening equipment.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 75,
+    "extract_line": 2588
+  },
+  "register_ref": "C4P2-122",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.12",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Page 75 checked word for word, including the nesting of the DG 4.12.6 sub-lists. DG 4.12.2 prints '(refer Tables 3.3a and 3.3b and Table 4.12, hardy shrubs' with no closing parenthesis; kept as printed. Register C4P2-122: the Table of Changes (p19) says a DG was modified to add 'Landscape design should be guided by the relevant local government direction...' (cited as DG 4.14.2, wrong element number); that sentence is not in the draft 4.12 guidance (p75) nor in DG 4.14.2 (p79).",
+  "verified": {
+    "method": "page-image",
+    "page": 75,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.8.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.8",
+  "element_title": "Solar access for adjoining sites",
+  "title": "Overshadowing of a narrow adjoining lot (Table 3.8b, rear half of site)",
+  "text": "Notwithstanding C3.8.1, in climate zones 4, 5, and 6, where the adjoining property is: i. coded R40 or greater; and ii. has a lot frontage 7.5m or less (excluding battleaxe lots); iii. development is designed so that its shadow cast at midday, 21 June onto any other adjoining property does not exceed the limits set out in Table 3.8b.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "all",
+      "label": "climate zone 4, 5 or 6",
+      "parts": [
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": ">=",
+          "value": 4
+        },
+        {
+          "type": "threshold",
+          "fact": "site.climate_zone",
+          "op": "<=",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.south.battleaxe",
+      "expected": false
+    }
+  ],
+  "inputs": [
+    "adjoining.south.battleaxe",
+    "adjoining.south.frontage_m",
+    "adjoining.south.r_code",
+    "overshadow.adjoining_rear_half_pct",
+    "site.climate_zone"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.8b",
+    "fact": "overshadow.adjoining_rear_half_pct",
+    "op": "<="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.8",
+  "defined_terms": [
+    "adjoining property",
+    "frontage",
+    "battleaxe lot",
+    "overshadowing"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.9.2",
+      "relation": "relaxed",
+      "note": "R50-R60 rear half 50% -> 55%"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.9b",
+      "relation": "relaxed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 43,
+    "table": "Table 3.8b",
+    "figure": "Figure 3.8e"
+  },
+  "register_ref": "C4P1-126",
+  "verify": false,
+  "notes": "from: ch3 C3.9.3 (renumbered C3.8.2; Table 3.8b). Keyed by the adjoining lot's coding and frontage; other adjoining lots have no row (NOT_APPLICABLE, C3.8.1 governs). No limit on the front half.",
+  "verified": {
+    "method": "page-image",
+    "page": 43,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R40 or greater, 7.5m frontage, battleaxe exclusion and Table 3.8b confirmed."
+  }
+}

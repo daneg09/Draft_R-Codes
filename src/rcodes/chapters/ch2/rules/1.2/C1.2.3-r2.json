@@ -1,0 +1,80 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.2.3-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Deep soil area per required small tree (Table 1.2b)",
+  "text": "C1.2.3 A minimum number of trees to be planted in accordance with Tables 1.2a and provided with the required deep soil area per tree in accordance with Table 1.2b. Table 1.2b Tree size and deep soil area. Tree size Small: Canopy at maturity 2-6m; Tree height at maturity 3-8m; Minimum deep soil area 9m2; Minimum deep soil area dimension 1.5m. Refer to Figure 1.2c for the provision of deep soil area for tree provisions.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R80",
+    "R100",
+    "R160",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.tree_deep_soil_min_m2",
+    "landscape.tree_deep_soil_min_dim_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "landscape.tree_deep_soil_min_m2",
+        "op": ">=",
+        "value": 9
+      },
+      {
+        "type": "threshold",
+        "fact": "landscape.tree_deep_soil_min_dim_m",
+        "op": ">=",
+        "value": 1.5
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.2",
+  "defined_terms": [
+    "deep soil area",
+    "small tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T1.2b",
+      "relation": "same",
+      "note": "small tree row only"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.2",
+      "relation": "tightened",
+      "note": "2 m x 2 m planting area (4 m2) -> 9 m2 deep soil, 1.5 m min dimension"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 12,
+    "table": "Table 1.2b",
+    "figure": "Figure 1.2c"
+  },
+  "register_ref": "ch2-011",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 12,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Each required tree: 9 m2 deep soil area, 1.5 m minimum dimension; the facts are the smallest provided to any required tree. Small tree: canopy 2-6 m, height 3-8 m at maturity (table-1.2b, reference only). Medium and large trees are not carried into Chapter 2."
+}

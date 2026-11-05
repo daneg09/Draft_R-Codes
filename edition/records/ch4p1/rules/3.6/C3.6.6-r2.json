@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.6.6-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Front fence solid pillars maximum 450 mm by 450 mm",
+  "text": "Solid pillars that form part of front fences or walls are not more than 1.8m above natural ground level, provided the horizontal dimension of the pillars is not greater than 450mm by 450mm and pillars are separated by visually permeable fencing in line with C3.6.5 (Refer Figure 3.6b).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.front_fence.present",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "building.front_fence.pillars_present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.front_fence.pillar_size_mm",
+    "building.front_fence.pillars_present",
+    "building.front_fence.present"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.front_fence.pillar_size_mm",
+    "op": "<=",
+    "value": 450
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.6",
+  "defined_terms": [
+    "visually permeable"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.8",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.4-C4.2",
+      "relation": "relaxed",
+      "note": "pillars 400 mm -> 450 mm"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 38,
+    "figure": "Figure 3.6b"
+  },
+  "register_ref": "C4P1-106",
+  "verify": false,
+  "notes": "from: ch3 C3.6.6-r2. Fact is the larger horizontal dimension of any pillar in millimetres.",
+  "verified": {
+    "method": "page-image",
+    "page": 38,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

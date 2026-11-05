@@ -1,0 +1,62 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.10.1(ii)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.10",
+  "element_title": "Housing on lots less than 100m2",
+  "title": "R100-SL grouped dwelling: all R-Codes provisions apply subject to the Table 2.10a modifications",
+  "text": "Housing on lots less than 100m2 - applies to single houses and grouped dwellings in areas coded R100-SL only. C2.10.1 Grouped dwellings in areas coded R100-SL are to comply with the following: ii. all provisions of the R-Codes to apply, subject to the modifications in Table 2.10a.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "site.area_m2",
+      "op": "<",
+      "value": 100.0
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.10",
+  "defined_terms": [
+    "primary garden area",
+    "soft landscaping",
+    "boundary wall",
+    "street setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.10.1",
+      "relation": "mixed"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.10a",
+      "relation": "mixed",
+      "note": "85% site cover and ceiling height rows removed; balcony/roof terrace POS alternative removed; cross-references now C3.4.5 and C3.6.5"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 26,
+    "extract_line": 824,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch3-040",
+  "verify": true,
+  "notes": "Not evaluated here: Table 2.10a (p26) modifies values owned by elements 1.1, 1.2, 3.2, 3.3, 3.4, 3.6, 3.9 and 3.10; those parts carry R100-SL variants. Footnote 1: where development abuts a property not coded R100-SL, the modified provisions do not apply. Register ch3-040: ToC says 'no modifications made', which is inaccurate.",
+  "verified": {
+    "method": "page-image",
+    "page": 25,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Ambiguous on the page: the element sub-heading (p25) reads 'Housing on lots less than 100m2 - applies to single houses and grouped dwellings in areas coded R100-SL only', while C2.10.1 names only the R100-SL coding; whether an R100-SL lot of 100m2 or more is caught is not stated."
+  }
+}

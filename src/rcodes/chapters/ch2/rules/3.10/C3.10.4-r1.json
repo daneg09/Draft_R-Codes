@@ -1,0 +1,109 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.10.4-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.10",
+  "element_title": "Visual privacy",
+  "title": "Vacant or unknown adjoining site: cone from a bedroom or study opening within the lot (3 m)",
+  "text": "For development adjoining a vacant or unknown site. C3.10.4 Where an adjoining property is vacant residential zoned land, or when the location of a major opening or an active habitable space is unknown, all sources of overlooking are oriented, offset or set back in accordance with Table 3.10a so that the cone of vision does not extend beyond the lot boundaries (refer Figure 3.10h). Table 3.10a Cone of vision radius (type of habitable room/active habitable space with a floor level of more than 0.5m above natural ground level): Major opening from bedroom and study: 3m. C3.10.5 Notwithstanding C3.10.4 where the cone of vision extends beyond a lot boundary behind the street setback on an adjoining property, the source of overlooking is designed to restrict the view in the direction of the adjoining property through one or more of the following: i. incorporate a permanent, fixed vertical or horizontal building element such as a fin or window hood (refer Figure 3.10i); ii. have permanent, obscure glazing in any part of the window below 1.6m above floor level (refer Figure 3.10e); or iii. have permanent screening that is a minimum 75 per cent obscure to any part of the window or active habitable below 1.6m above floor level (refer Figure 3.10f).",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "numeric",
+    "LR",
+    "MR",
+    "HR",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "privacy.sources_above_0_5m",
+      "expected": true
+    },
+    {
+      "type": "boolean",
+      "fact": "adjoining.vacant_or_unknown",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "adjoining.vacant_or_unknown",
+    "privacy.bedroom_study_setback_m",
+    "privacy.screened_or_offset",
+    "privacy.sources_above_0_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "privacy.bedroom_study_setback_m",
+    "op": ">=",
+    "value": 3.0
+  },
+  "exceptions": [
+    {
+      "label": "C3.10.5 source of overlooking screened (fixed element, obscure glazing or 75% screen below 1.6 m)",
+      "condition": {
+        "type": "boolean",
+        "fact": "privacy.screened_or_offset",
+        "expected": true
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "boolean",
+          "fact": "privacy.screened_or_offset",
+          "expected": true
+        }
+      },
+      "inputs": [
+        "privacy.screened_or_offset"
+      ],
+      "source": "C3.10.5, p45",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.10",
+  "defined_terms": [
+    "cone of vision",
+    "major opening",
+    "active habitable space",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.10.5",
+      "relation": "relaxed",
+      "note": "Part C C3.10.5-C3.10.6 with revised Table 3.10a distances"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.4.1-C1.1(i)",
+      "relation": "relaxed"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 45,
+    "table": "Table 3.10a",
+    "figure": "Figure 3.10h, 3.10i"
+  },
+  "register_ref": "ch2-088",
+  "verify": false,
+  "notes": "Condition variant of C3.10.1-r1 for a vacant residential-zoned or unknown adjoining site: the Table 3.10a radius (3.0 m) is measured to the lot boundary so the cone stays within the lot. C3.10.5 screening is the exception (privacy.screened_or_offset also admits the C3.10.3 offset, which C3.10.5 does not list). Key greenfield rule while neighbouring lots are vacant. Part B note (iv) 'residential zoned land only' is not repeated, but the 'vacant residential zoned' wording remains. Coding excludes R100-SL (Table 2.10a; footnote restores 3.10 where the adjoining property is not R100-SL, not encoded).",
+  "verified": {
+    "method": "page-image",
+    "page": 45,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C3.10.5 exception keeps its own verify flag: privacy.screened_or_offset also admits the C3.10.3 offset, which C3.10.5 does not list, and C3.10.5's 'behind the street setback' qualifier is not tested."
+  }
+}

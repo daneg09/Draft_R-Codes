@@ -1,0 +1,51 @@
+{
+  "id": "table-3.4a-side-to-3.5m",
+  "title": "Table 3.4a Lot boundary setbacks: side setback, wall height up to 3.5 m",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "flat side setback regardless of wall height"
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "flat side setback regardless of wall height"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R5+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 1.0
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 33,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "ch3-055",
+  "verify": false,
+  "notes": "Table 3.4a split into one file per wall-height band (and rear) because table keys are application facts. No rounding footnote in the draft: the 3.5-3.6 m and 7.0-7.1 m gaps are unresolved (register ch3-055).",
+  "verified": {
+    "method": "page-image",
+    "page": 33,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values confirmed on p33; Table 3A (p7) prints the 1m cell spanning R5 to R100-SL."
+  }
+}

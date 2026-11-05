@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A2.4.1-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.4",
+  "element_title": "Side and rear setbacks",
+  "title": "Boundary wall length no more than two-thirds of the boundary (R80, R100, R160, note 4)",
+  "text": "A 2.4.1 Development complies with the side and rear setbacks set out in Table 2.1, except where: (a) modified by the local planning framework, in which case development complies with the side and rear setbacks set out in the applicable local planning instrument AND/OR (b) a greater setback is required to address 3.5 Visual privacy.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+"
+  ],
+  "region": "all",
+  "inputs": [
+    "building.boundary_wall_length_pct",
+    "building.boundary_walls.adjoining_wall_exists"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.boundary_wall_length_pct",
+    "op": "<=",
+    "value": 66.67
+  },
+  "exceptions": [
+    {
+      "label": "Table 2.1 note 2: wall abuts an existing or simultaneously constructed wall of equal or greater proportions",
+      "condition": {
+        "type": "boolean",
+        "fact": "building.boundary_walls.adjoining_wall_exists",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "source": "Table 2.1 note 2",
+      "inputs": [
+        "building.boundary_walls.adjoining_wall_exists"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O2.4",
+  "defined_terms": [
+    "boundary wall"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T2.1",
+      "relation": "relaxed",
+      "note": "Volume 2 note 3: wall on one boundary only, max 2/3 length; draft note 4: both side boundaries, max 2/3 length"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13,
+    "table": "Table 2.1"
+  },
+  "register_ref": "C4P2-028; C4P2-064",
+  "verify": true,
+  "notes": "Note 4 ('Boundary wall permitted to both side boundaries, and shall not exceed 2/3 length') sits on the R80, R100 and R160 cells only; the LR1, MR1, MR2 and HR cells carry no length or number-of-boundaries limit. verify: note 4 is ambiguous whether 2/3 applies to each boundary or combined (C4P2-028); read as each wall against the boundary it abuts, 66.67%. Walls on both side boundaries are permitted for these codes, so building.boundary_wall_both_sides is not tested. The Table of Changes says only R100 and R160 get two boundary walls (C4P2-028).",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "superscript 4 confirmed on the R80, R100 and R160 boundary wall cells only (LR1, MR1, MR2, HR cells carry none). Note 4 'Boundary wall permitted to both side boundaries, and shall not exceed 2/3 length' does not say 2/3 of what (each boundary or both combined) and is silent on rear boundaries."
+  }
+}

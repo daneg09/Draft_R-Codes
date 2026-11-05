@@ -1,0 +1,54 @@
+{
+  "id": "table-3.4b",
+  "title": "Table 3.4b Carports, patios, verandahs or equivalent structures provisions",
+  "keys": [
+    "site.r_code",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "max_length_m",
+        "site.r_code": "all"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "metric": "max_wall_height_m",
+        "site.r_code": "all"
+      },
+      "value": 3,
+      "note": "measured to the top of pillar or post (Figure 3.4f)"
+    },
+    {
+      "match": {
+        "metric": "max_ridge_height_m",
+        "site.r_code": "all"
+      },
+      "value": 4.2
+    },
+    {
+      "match": {
+        "metric": "max_post_dimension_mm",
+        "site.r_code": "all"
+      },
+      "value": 450,
+      "note": "pillars or posts on the boundary 450 mm or less are excluded from boundary wall length"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 34,
+    "table": "Table 3.4b"
+  },
+  "register_ref": "ch3-061",
+  "verify": false,
+  "notes": "Documentary table in the table-3A 'metric' convention; it is not looked up at run time (the engine reads keys as application facts). C3.4.3 carries the four values as literal thresholds. NCC fire separation and non-combustible materials note retained in the draft.",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

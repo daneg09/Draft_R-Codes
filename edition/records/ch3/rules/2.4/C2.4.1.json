@@ -1,0 +1,59 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.4.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.4",
+  "element_title": "Waste management",
+  "title": "Dedicated, accessible space for the dwelling's waste bins per local government requirements",
+  "text": "C2.4.1 A dedicated and accessible space is provided to accommodate the required number and type of waste storage bins for the dwelling, in line with requirements of the local government.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "services.waste.bin_space_per_lg_requirements"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.waste.bin_space_per_lg_requirements",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.4",
+  "defined_terms": [
+    "waste storage"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.4.1",
+      "relation": "same",
+      "note": "Part C clause number inferred from the register's order"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "no Part B equivalent for grouped dwellings R25 and below"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 21,
+    "extract_line": 669
+  },
+  "register_ref": "ch3-033",
+  "verify": false,
+  "notes": "diverges: Chapter 2 C2.4.1 is bin screening (its Chapter 3 twin is C2.4.2); this dedicated-space clause has no Chapter 2 equivalent. Uses proposed fact services.waste.bin_space_per_lg_requirements; the local government's bin numbers and types are outside the R-Codes, so the applicant states compliance.",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

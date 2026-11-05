@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG3.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.2",
+  "element_title": "Orientation",
+  "title": "Orientation Design Guidance",
+  "text": "DG 3.2.1 The street frontage of a development plays a role in defining the form and character of the street and should be sited and oriented accordingly. Development also contributes to the activation and surveillance of adjacent streets and should provide passive surveillance of the street and incorporate clear entries from the street to the extent possible. DG 3.2.2 Within the site, explore design solutions that configure the building plan to optimise solar access within the development, by maximising the number of dwellings and open space areas that have a northerly orientation. On sites that do not have good northern access, solar access to individual spaces may be improved through building articulation and use of courtyards. DG 3.2.3 The impact of development on solar access to properties located to the south must be considered. Measures such as increasing the setback of upper levels, breaking up building mass and orienting the development at right angles to the adjoining boundary may assist in improving solar access for neighbouring sites. In considering overshadowing of neighbouring properties priority should be given to achieving acceptable solar access to habitable rooms, outdoor living spaces and solar collectors.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG3.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 29
+  },
+  "register_ref": "C4P2-079",
+  "verify": false,
+  "notes": "Figures 3.2a, 3.2b.",
+  "verified": {
+    "method": "page-image",
+    "page": 29,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

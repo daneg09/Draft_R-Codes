@@ -1,0 +1,72 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.12.3-r5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.12",
+  "element_title": "Landscape design",
+  "title": "Planting on structure, ground cover: soil depth 300 mm",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Planting on building structures meets the requirements of Table 4.12.",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "landscape.on_structure.ground_cover.provided",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "landscape.on_structure.ground_cover.provided",
+    "landscape.on_structure.ground_cover.min_soil_depth_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "landscape.on_structure.ground_cover.min_soil_depth_m",
+    "op": ">=",
+    "value": 0.3
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.12",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.12.3",
+      "relation": "same",
+      "note": "Vol2 Table 4.12 values unchanged (register C4P2-122)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 74,
+    "extract_line": 2548,
+    "table": "Table 4.12"
+  },
+  "register_ref": "C4P2-122",
+  "verify": false,
+  "notes": "Values from Table 4.12 (table-4.12, p74). Applies only where this plant type is planted on a building structure (podium, terrace, wall or roof); the facts describe the least compliant planter of that type. Soil depth is printed as a range, 300-450mm, with no note on when the upper figure applies; as Table 4.12 states minimum soil standards, the lower bound (0.3 m) is the minimum (pass 1, p74).",
+  "verified": {
+    "method": "page-image",
+    "page": 74,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

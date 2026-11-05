@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "More than 10 apartments: no more than 80% with the same number of bedrooms (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Where more than 10 apartments are proposed, no more than 80 per cent of dwellings have the same number of bedrooms.",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">",
+      "value": 10
+    }
+  ],
+  "inputs": [
+    "proposal.dwelling_count",
+    "dwellings.max_same_bedroom_count_pct"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "dwellings.max_same_bedroom_count_pct",
+    "op": "<=",
+    "value": 80
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.8",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 16,
+    "extract_line": 496
+  },
+  "register_ref": "C4P1-028",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "new: no Chapter 3 equivalent. Applies where more than 10 apartments (11 or more); 10 or fewer escape the mix rule. Heading 'Dwelling size and mix (applies to R30-R60 only)'."
+}

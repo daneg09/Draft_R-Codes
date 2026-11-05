@@ -1,0 +1,73 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.3.3#r40-plus",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Garage setback from the primary street, R40 and above",
+  "text": "C3.3.3 Garages are set back from the primary street boundary in accordance with Table 3.3c. Table 3.3c Setback of garages from the primary street: R40 and above, In accordance with Table 3.3a.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R40+",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "parking.garage.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "parking.garage.setback_primary_m",
+    "site.r_code",
+    "parking.garage.present"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-3.3a-primary",
+    "fact": "parking.garage.setback_primary_m",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.3",
+  "defined_terms": [
+    "garage",
+    "primary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.1-C1.1",
+      "relation": "relaxed",
+      "note": "R40 4.5 m -> 3 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.3b",
+      "relation": "same",
+      "note": "R40+ per Table 3.3a; R50+ 2 m unchanged"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 31,
+    "table": "Table 3.3c"
+  },
+  "register_ref": "ch2-050",
+  "verify": false,
+  "notes": "Table 3.3c R40-and-above cell reads 'In accordance with Table 3.3a', so the primary street table is looked up directly. No reductions apply above R35. R100-SL not encoded (Table 2.10a 1 m would apply by the same reading).",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

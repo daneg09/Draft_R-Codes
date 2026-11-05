@@ -1,0 +1,66 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.11.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.11",
+  "element_title": "Roof design",
+  "title": "Useable roof space is safe and limits overlooking and noise",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Useable roof space is safe for users and minimises overlooking and noise impacts on private open space and habitable rooms within the development and on adjoining sites.",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "roof.useable_space_provided",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "roof.useable_space_provided"
+  ],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.11",
+  "defined_terms": [
+    "habitable room",
+    "private open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.11.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 72,
+    "extract_line": 2494
+  },
+  "register_ref": "C4P2-121",
+  "verify": false,
+  "notes": "Applies where a useable (accessible) roof space is proposed. Register C4P2-121: new DG 4.11.5 lists rooftop activation considerations relevant here.",
+  "verified": {
+    "method": "page-image",
+    "page": 72,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

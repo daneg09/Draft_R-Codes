@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C1.1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Outdoor living area minimum area (Table 1.1a)",
+  "text": "Outdoor Living Area (applies to R2-R40 only). C1.1.1 An outdoor living area to be provided in accordance with Table 1.1a. (Refer to Figure 1.1a) Table 1.1a Outdoor living area provisions. Minimum Outdoor living area (m2): R2-R15 No minimum applicable; R17.5 36m2; R20-R25 30m2; R30-R35 24m2; R40 20m2.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "R2-R40"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.ola.area_m2",
+    "site.r_code"
+  ],
+  "evaluator": {
+    "type": "table-lookup",
+    "table": "table-1.1a",
+    "fact": "landscape.ola.area_m2",
+    "op": ">="
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M1.1",
+  "defined_terms": [
+    "outdoor living area",
+    "primary living space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.1-C1.1",
+      "relation": "same",
+      "note": "areas unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/T-B",
+      "relation": "same",
+      "note": "Table B OLA column"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 9,
+    "table": "Table 1.1a",
+    "figure": "Figure 1.1a"
+  },
+  "register_ref": "ch2-002",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "Area test only; dimension, roof cover and location are C1.1.1-r1 to -r3. R2-R15: no minimum (table row null). Figure 1.1a note: areas under 4 m wide not consolidated with the OLA do not count, and the OLA is to be accessible from the primary living space (figure note and M1.1.1(iii) only, not in the C1.1.1 wording)."
+}

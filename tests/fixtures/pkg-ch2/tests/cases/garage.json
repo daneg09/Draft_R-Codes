@@ -1,0 +1,46 @@
+[
+  {
+    "title": "R30 lot, garage at 5.0 m, meets",
+    "covers": ["rcodes:draft-2026-10-24/ch2/C3.3.3", "rcodes:draft-2026-10-24/ch2/C3.1.1"],
+    "app": {
+      "site": {"r_code": "R30", "area_m2": 375, "region": "regional", "verge": {"path_or_road_offset_m": 0.5, "basis": "existing"}},
+      "proposal": {"dwelling_type": "single_house"},
+      "building": {"roofed_area_m2": 240},
+      "parking": {"garage": {"setback_primary_m": 5.0, "parallel_parking": false, "parallel_wall_openings": 0}}
+    },
+    "expect": {"rules": {"rcodes:draft-2026-10-24/ch2/C3.3.3": "MEETS", "rcodes:draft-2026-10-24/ch2/C3.1.1": "NOT_APPLICABLE"}, "pathway": "deemed-exempt"}
+  },
+  {
+    "title": "R30 lot, garage at 4.5 m, verge unknown, cannot tell",
+    "covers": ["rcodes:draft-2026-10-24/ch2/C3.3.3"],
+    "app": {
+      "site": {"r_code": "R30", "area_m2": 375},
+      "proposal": {"dwelling_type": "single_house"},
+      "building": {"roofed_area_m2": 240},
+      "parking": {"garage": {"setback_primary_m": 4.5, "parallel_parking": false, "parallel_wall_openings": 0}}
+    },
+    "expect": {"rules": {"rcodes:draft-2026-10-24/ch2/C3.3.3": "CANNOT_TELL"}, "missing_contains": ["site.verge.path_or_road_offset_m"]}
+  },
+  {
+    "title": "R30 lot, garage at 4.5 m, footpath 1.2 m off boundary, meets via exception",
+    "covers": ["rcodes:draft-2026-10-24/ch2/C3.3.3"],
+    "app": {
+      "site": {"r_code": "R30", "area_m2": 375, "verge": {"path_or_road_offset_m": 1.2, "basis": "planned"}},
+      "proposal": {"dwelling_type": "single_house"},
+      "building": {"roofed_area_m2": 240},
+      "parking": {"garage": {"setback_primary_m": 4.5, "parallel_parking": false, "parallel_wall_openings": 0}}
+    },
+    "expect": {"rules": {"rcodes:draft-2026-10-24/ch2/C3.3.3": "MEETS"}, "exception": {"rcodes:draft-2026-10-24/ch2/C3.3.3": "footpath or road more than 1 m from boundary"}}
+  },
+  {
+    "title": "R20 lot, site cover 62% fails 55%",
+    "covers": ["rcodes:draft-2026-10-24/ch2/C3.1.1"],
+    "app": {
+      "site": {"r_code": "R20", "area_m2": 450, "verge": {"path_or_road_offset_m": 0.5}},
+      "proposal": {"dwelling_type": "single_house"},
+      "building": {"roofed_area_m2": 279},
+      "parking": {"garage": {"setback_primary_m": 6.0, "parallel_parking": false, "parallel_wall_openings": 0}}
+    },
+    "expect": {"rules": {"rcodes:draft-2026-10-24/ch2/C3.1.1": "DOES_NOT_MEET", "rcodes:draft-2026-10-24/ch2/C3.3.3": "MEETS"}, "pathway": "merit-assessment", "elements_on_merit": ["3.1"]}
+  }
+]

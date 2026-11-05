@@ -1,0 +1,170 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Dedicated weatherproof storage per Table 2.1b, behind the primary street setback, opening not inwards",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "Each dwelling has exclusive use of a dedicated, weatherproof storage area in accordance with Table 2.1b, that is located behind the primary street setback and accessible via an opening that does not open inwards. C2.1.9 Notwithstanding C2.1.8, minimum storage area dimension can be reduced to 1m where: i. it can be demonstrated that an adjacent circulation space achieves 0.9m clearance; ii. the door or opening is located on the greater dimension and is openable for a minimum 80 per cent of the length; and iii. the minimum storage area is still achieved (refer Figure 2.1d). Table 2.1b Storage provisions: Studio / 1 bedroom dwelling 3m2; 2 bedroom dwelling 4m2; 3+ bed bedroom dwelling 5m2; minimum storage area dimension¹ 1.5m; minimum storage area height 2.1m; location behind the primary street setback. Minimum dimension refers to the minimum length and width of the storage area. Storage can be co-located within a garage or carport but must provide a dedicated area. Dimensions and areas are exclusive of services, plant, utilities, bin storage, bicycle parking and fixtures and facilities. ¹Minimum dimension can be reduced in accordance with C2.1.9",
+  "inputs": [
+    "dwellings.min.storage_area_m2",
+    "dwellings.min.storage_bedrooms",
+    "dwellings.min.storage_min_dim_m",
+    "dwellings.min.storage_height_m",
+    "dwellings.storage_behind_street_setback",
+    "dwellings.storage_opening_not_inward",
+    "dwellings.min.storage_circulation_m",
+    "dwellings.storage_door_on_greater_dim_80pct_openable"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "table-lookup",
+        "table": "table-2.1b",
+        "fact": "dwellings.min.storage_area_m2",
+        "op": ">="
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.storage_min_dim_m",
+        "op": ">=",
+        "value": 1.5
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.storage_height_m",
+        "op": ">=",
+        "value": 2.1
+      },
+      {
+        "type": "boolean",
+        "fact": "dwellings.storage_behind_street_setback",
+        "expected": true
+      },
+      {
+        "type": "boolean",
+        "fact": "dwellings.storage_opening_not_inward",
+        "expected": true
+      }
+    ]
+  },
+  "exceptions": [
+    {
+      "label": "C2.1.9: minimum dimension reduced to 1 m with 0.9 m adjacent circulation and the door on the greater dimension, openable for 80% of its length",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "threshold",
+            "fact": "dwellings.min.storage_circulation_m",
+            "op": ">=",
+            "value": 0.9
+          },
+          {
+            "type": "boolean",
+            "fact": "dwellings.storage_door_on_greater_dim_80pct_openable",
+            "expected": true
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "composite",
+          "mode": "all",
+          "parts": [
+            {
+              "type": "table-lookup",
+              "table": "table-2.1b",
+              "fact": "dwellings.min.storage_area_m2",
+              "op": ">="
+            },
+            {
+              "type": "threshold",
+              "fact": "dwellings.min.storage_min_dim_m",
+              "op": ">=",
+              "value": 1.0
+            },
+            {
+              "type": "threshold",
+              "fact": "dwellings.min.storage_height_m",
+              "op": ">=",
+              "value": 2.1
+            },
+            {
+              "type": "boolean",
+              "fact": "dwellings.storage_behind_street_setback",
+              "expected": true
+            },
+            {
+              "type": "boolean",
+              "fact": "dwellings.storage_opening_not_inward",
+              "expected": true
+            }
+          ]
+        }
+      },
+      "inputs": [
+        "dwellings.min.storage_circulation_m",
+        "dwellings.storage_door_on_greater_dim_80pct_openable"
+      ],
+      "source": "C2.1.9, p17 (register C4P1-030)",
+      "verify": false
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "storage area",
+    "primary street setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.9",
+      "relation": "same",
+      "note": "R30-R60 unchanged"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.1b",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.10",
+      "relation": "same",
+      "note": "dimension reduction carried as the C2.1.9 exception"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "R10-R25 multiple dwellings had no storage requirement under Part B"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 17,
+    "extract_line": 512,
+    "table": "Table 2.1b",
+    "figure": "Figure 2.1d"
+  },
+  "register_ref": "C4P1-029",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 17,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "from: ch3 C2.1.2. diverges: Table 2.1b values differ from Chapter 3 (3/4/5 m2 by 1/2/3+ bedrooms, minimum dimension 1.5 m, height 2.1 m, against Chapter 3's 3/4 m2, 1 m and 2 m) and the opening must not open inwards. No density heading on p17, so R10-R60 (new for R10-R25, register C4P1-029). C2.1.9 is the exception: dimension 1 m where adjacent circulation is 0.9 m clear and the door is on the greater dimension and 80% openable; (iii) 'minimum storage area is still achieved' is the area part of the same composite. Storage may be co-located in a garage or carport if a dedicated area; dimensions exclude services, plant, bins, bicycle parking and fixtures."
+}

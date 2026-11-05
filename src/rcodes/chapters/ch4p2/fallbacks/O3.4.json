@@ -1,0 +1,54 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O3.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.4",
+  "element_title": "Communal open space",
+  "title": "Communal open space Element Objectives",
+  "text": "O 3.4.1 Provision of quality communal open space that enhances resident amenity and provides opportunities for landscaping, tree retention and deep soil areas. O 3.4.2 Communal open space is safe, universally accessible and provides a high level of amenity for residents. O 3.4.3 Communal open space is designed and oriented to minimise impacts on the habitable rooms and private open space within the site and of neighbouring properties. O 3.4.4 Communal space is provided having regard to the availability and accessibility of public open space to support the recreational and amenity needs of residents.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O3.4",
+      "relation": "same",
+      "note": "O 3.4.1-3.4.3"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "O 3.4.4 (communal space having regard to nearby public open space)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 34
+  },
+  "register_ref": "C4P2-084",
+  "verify": false,
+  "notes": "New O 3.4.4 (register C4P2-084, more permissive): nearby public open space may support a reduction in communal open space; the Intent's 400 m walkable catchment is not a new threshold.",
+  "verified": {
+    "method": "page-image",
+    "page": 34,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

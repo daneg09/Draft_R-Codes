@@ -1,0 +1,54 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG3.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Car and bicycle parking Design Guidance",
+  "text": "DG 3.9.1 The location, form, quantity and organisation of parking is usually a balance of development feasibility, site constraints, local context, resident expectations, apartment types and regulatory car parking requirements. The provisions of deep soil areas, stormwater management and tree retention can also affect the size and shape of a car park footprint. DG 3.9.2 Parking requirements should be determined considering the proximity of the development to a centre(s) and the availability of public parking or high-frequency public transport services. Reducing car parking requirements may reduce car dependency and encourage walking, cycling and the use of public transport. DG 3.9.3 Visitor parking may be reduced where there is adequate on-street parking or public parking in the near vicinity of the development. DG 3.9.4 The provision of parking for alternative forms of transport such as car share vehicles, motorcycles and bicycles should also be considered. DG 3.9.5 In determining an appropriate amount of car parking for a development, consideration should be given to: the proximity and frequency of public transport services accessible from the site; the likely current and future demand for parking spaces; the availability of alternative transport options, including car-share facilities and active transport infrastructure; The allocation, location and design of resident parking should support access for residents with accessibility needs; the likely impact of parking demand on neighbouring land uses and the surrounding locality; and the site's location, accessibility, and the characteristics of the intended occupants. DG 3.9.6 Options such as tandem parking (where two bays are allocated to one dwelling) and car-stackers may also reduce the overall area required for parking. DG 3.9.7 Consideration should be given to decoupling resident parking from dwellings so that all parking bays can be managed allocated or leased according to need. DG 3.9.8 On-site parking provision should include: provision for motorbikes and scooters; secure undercover bicycle parking for residents; appropriately located bike storage for visitors. DG 3.9.9 Detailed design of internal circulation and car parking areas should provide particular attention to: safe and continuous paths of travel for pedestrians and cyclists, ideally separated but otherwise via differentiating surface treatments, traffic calming devices and appropriate signage to establish a shared use zone; in a single width driveway, sufficient width for a vehicle to safely pass a pedestrian with child, a cyclist or wheelchair user; clear sightlines within circulation areas; the visibility and accessibility of visitor parking; reducing light-spill from headlights and overhead lighting into the habitable rooms of dwellings within the development and adjoining properties; managing the visual impact, noise, heat absorption and reflective glare associated with long driveways and extensive areas of parking and banks of garage doors. DG 3.9.10 Consider electric vehicle charging infrastructure for both resident and visitor bays. When not installing charging stations as part of the development, electrical supply and car park distribution board should allow for future capacity to supply electric vehicle charging points at a recommended minimum 20 per cent of total bays. DG 3.9.11 For below-ground car parking: excavation should be minimised through efficient car park layouts and ramp design; where it protrudes above ground, employ design solutions such as stepping car park levels, using split levels on sloping sites or design solutions applicable for at-grade parking; avoid underground car parking in locations with high water tables that require de-watering; ventilation grills or screening devices for car parking openings should be integrated into the façade and landscape design of the development. DG 3.9.12 At-grade car parks should be safe, comfortable and landscaped environments. Design solutions to achieve this include: providing safe and direct access from car parking to building entry points; incorporating parking into the landscape design of the site, by extending planting and materials into the car park space; to manage stormwater run-off from car park surfaces, the incorporation of tree pits, vegetated swales, bio-filters, infiltration cells, permeable paving and/or on-site detention tanks as appropriate; using light coloured paving materials or permeable paving systems, and planting shade trees between parking spaces to reduce increased surface temperatures from large areas of paving (refer 4.12 Landscape design). DG 3.9.13 For above-ground car parking, consider: screening, landscaping, public art and other design elements to integrate the above ground car parking with the building façade; 'sleeving' the car park with active uses along the street frontage. DG 3.9.14 The allocation, location and design of visitor parking should respond to the needs of users likely to require short-term access to the development, including visitors with accessibility needs, home care and health service providers, tradespeople and delivery services.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG3.9",
+      "relation": "same",
+      "note": "DG 3.9.1-3.9.13"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "DG 3.9.14 (visitor parking for accessibility needs, home care, tradespeople, delivery)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 47
+  },
+  "register_ref": "C4P2-109",
+  "verify": false,
+  "notes": "Pages 47-48; three columns interleaved, re-joined by sense. New DG 3.9.14 (C4P2-109).",
+  "verified": {
+    "method": "page-image",
+    "page": "47-48",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

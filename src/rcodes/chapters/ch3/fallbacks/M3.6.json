@@ -1,0 +1,31 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M3.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Streetscape merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "text": "M3.6.1 The design of dwelling façades, street walls and fences in the street setback area contributes positively to streetscape, context and local character. M3.6.2 The building design addresses street frontages and provides opportunity for passive surveillance and social interaction. M3.6.3 Dwelling and building entries are: i. accessible and protected from the weather; and ii. well-lit for safety and amenity, without opportunity for concealment, and designed to enable passive surveillance of the entry from within the lot. M3.6.4 Visual connectivity between the dwelling and the streetscape should be maintained and the effect of the garage on the streetscape should be minimised whereby the streetscape is not dominated by garages. M3.6.5 The height of street walls and fences allows for passive surveillance of the street from the development whilst balancing the need for privacy of private open space and the impact of traffic noise, where located on a primary distributor, district distributor or integrator arterial road.",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 38
+  },
+  "register_ref": "ch3-069",
+  "verify": false,
+  "notes": "Deleted deemed exempt provisions with no draft counterpart: front door weather cover 1.2 m (Part C C3.6.3) and secondary street fence permeability (Part C C3.6.9).",
+  "verified": {
+    "method": "page-image",
+    "page": 38,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

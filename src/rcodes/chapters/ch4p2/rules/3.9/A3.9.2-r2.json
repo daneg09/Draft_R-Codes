@@ -1,0 +1,74 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.2-r2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Motorcycle/scooter parking, more than 20 dwellings: 0.1 bays per dwelling (Table 3.9)",
+  "text": "Table 3.9 Motorcycle/scooter parking (2): Developments exceeding 20 dwellings to provide 0.1 motorcycle/scooter bays per dwelling. (2) For each five motorcycle/scooter parking bays provided in accordance with Table 3.9, car parking bays may be reduced by one bay.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">",
+      "value": 20
+    }
+  ],
+  "inputs": [
+    "parking.motorcycle_spaces",
+    "proposal.dwelling_count"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "parking.motorcycle_spaces",
+    "op": ">=",
+    "value": "round(0.1 * proposal.dwelling_count + 0.4999)",
+    "label": "0.1 per dwelling, rounded up"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/T3.9",
+      "relation": "restructured",
+      "note": "1 motorcycle space per 10 car bays -> 0.1 per dwelling over 20 dwellings"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-103",
+  "verify": true,
+  "notes": "from: ch4p1 C2.3.3. Rate decoupled from car bays. verify: footnote 1 (rounding up) is attached to the car and bicycle rows, not this row; rounding up applied by analogy. Footnote 2 not encoded (no resident minimum to reduce; C4P2-103).",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p46 footnote 1 (round up) is marked on the resident car, visitor car and bicycle rows only; the motorcycle/scooter row carries footnote 2 alone."
+  }
+}

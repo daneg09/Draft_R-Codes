@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.9.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.9",
+  "element_title": "Car and bicycle parking",
+  "title": "Resident bicycle parking: 0.5 spaces per dwelling, rounded up (Table 3.9)",
+  "text": "Secure, undercover bicycle parking is provided in accordance with Table 3.9 and accessed via a continuous path of travel from the vehicle or cycle entry point. Table 3.9 Bicycle parking: Resident 0.5 space per dwelling.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.bicycle_spaces",
+    "proposal.dwelling_count"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "parking.bicycle_spaces",
+    "op": ">=",
+    "value": "round(0.5 * proposal.dwelling_count + 0.4999)",
+    "label": "0.5 per dwelling, rounded up"
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.9",
+  "defined_terms": [
+    "bicycle parking"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.9.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.9",
+      "relation": "same",
+      "note": "resident bicycle 0.5 per dwelling"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-097",
+  "verify": false,
+  "notes": "from: ch4p1 C2.3.7. Table 3.9 footnote 1: rounded up to the next whole number (round(x + 0.4999) is ceiling for these ratios). diverges: ch4p1 Table 2.3a rounds to the nearest whole number for the same rates (register C4P2-104). Same rate in Location A and B. Security, cover and path limbs are A3.9.1-r2.",
+  "verified": {
+    "method": "page-image",
+    "page": 46,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

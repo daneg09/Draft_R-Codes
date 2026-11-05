@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.10",
+  "element_title": "Facade design",
+  "title": "Facade design design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.10.1 Good façade design can be achieved by consideration of some of the following design solutions: use of materials, openings, awnings and design details at the street level that have a human scale, with proportions that are appropriate to the streetscape; well defined entries that are integrated into the overall design of the façade and streetscape and provide legibility and amenity for users; coherent and balanced composition of building elements to achieve scale, texture and rhythm, including expression of horizontal or vertical elements to reference existing streetscape patterns; changes in texture, material, detail and colour to achieve a finer grained scale; use of building articulation to animate the façade with changing light and shadows throughout the day; variation in floor heights to define the building base and enhance the human scale; grouping of floors or elements such as balconies, windows and shading devices on taller buildings to add visual interest and texture; defining corners through articulation of the building or roof, or changes in height, materials and colour. DG 4.10.2 The design and siting of awnings should consider: location at all building entries to define the entry and provide weather protection; integration of awnings into the façade design and streetscape, and the relationship to residential windows, balconies and street infrastructure; continuous awnings over busy footpaths, including on secondary frontages for corner sites; material selection for durability, maintenance, shade, glare, acoustic reverberation and weather protection; rainwater collection and discharge to prevent discharge onto pedestrian areas below. DG 4.10.3 Legible building design can minimise the extent of signage needed at street level. Where required, signage should be integrated with the design of the façade to assist wayfinding, complementing the scale, proportion and detailing of the development. DG 4.10.4 Early consideration needs to be given to integrating or concealing building services and fixtures within the overall façade design such that they do not detract from the appearance of the building from the street. DG 4.10.5 Consider façade design measures to minimise bird-window collision, such as exterior visual markers or framing to interrupt expanses of glass, and use of shades or awnings.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 71,
+    "extract_line": 2458
+  },
+  "register_ref": "C4P2-120",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.10",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Two-column extract reordered by reading the column breaks; wording unchanged. Register C4P2-131: Vol2 Appendix A4 design development guidance is now draft Appendix A7, which supports façade design development.",
+  "verified": {
+    "method": "page-image",
+    "page": 71,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

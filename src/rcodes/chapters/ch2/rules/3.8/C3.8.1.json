@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C3.8.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "3.0 Neighbourliness",
+  "element": "3.8",
+  "element_title": "Retaining existing dwellings",
+  "title": "Provisions that apply to a retained dwelling",
+  "text": "Where a dwelling is retained as part of a development it is to comply with the following provisions: 1.1 Private open space - C1.1.1, C1.1.3; 1.2 Trees and landscaping - C1.2.1, C1.2.2, C1.2.3, and C1.2.4; 1.3 Water management and conservation - C1.3.1 and C1.3.2; 2.3 Parking - C2.3.1 and C2.3.3 (minimums only) and C2.3.2, C2.3.4; 2.4 Waste management - C2.4.1; 2.5 Utilities - C2.5.1 and C2.5.2; 2.6 Outbuildings - C2.6.1 and C2.6.2; 3.4 Lot boundary setbacks - C3.4.1, C3.4.3, C3.4.4, C3.4.5 (applicable only to newly created lot or site boundaries).",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.retained_dwelling",
+      "expected": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M3.8",
+  "defined_terms": [
+    "retained dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.6-C6",
+      "relation": "relaxed",
+      "note": "'equivalent maintenance standard' upgrade deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.8.1",
+      "relation": "restructured",
+      "note": "cross-reference list revised"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 41
+  },
+  "register_ref": "ch2-081",
+  "verify": false,
+  "notes": "Cross-reference list, in order: C1.1.1, C1.1.3; C1.2.1, C1.2.2, C1.2.3, C1.2.4; C1.3.1, C1.3.2; C2.3.1 and C2.3.3 (minimums only), C2.3.2, C2.3.4; C2.4.1; C2.5.1, C2.5.2; C2.6.1, C2.6.2; C3.4.1, C3.4.3, C3.4.4, C3.4.5 (newly created boundaries only). The listed rules run on the retained dwelling's facts; this record only flags the applicability. The list omits C1.1.2, C1.1.5 and C3.4.2 (register note).",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

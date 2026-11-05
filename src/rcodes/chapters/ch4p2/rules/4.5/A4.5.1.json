@@ -1,0 +1,63 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.5.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.5",
+  "element_title": "Circulation and common spaces",
+  "title": "Circulation corridors at least 1.5 m wide",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Circulation corridors are a minimum 1.5m in width.",
+  "inputs": [
+    "circulation.corridor_width_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "circulation.corridor_width_m",
+    "op": ">=",
+    "value": 1.5
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.5",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.5.1",
+      "relation": "same",
+      "note": "register C4P2-115 change_type 'new' refers to DG 4.5.8 only"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 60,
+    "extract_line": 2062
+  },
+  "register_ref": "C4P2-115",
+  "verify": false,
+  "notes": "Fact is the narrowest common circulation corridor.",
+  "verified": {
+    "method": "page-image",
+    "page": 60,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

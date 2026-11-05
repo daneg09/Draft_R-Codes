@@ -1,0 +1,141 @@
+{
+  "id": "table-3B-frontage",
+  "title": "Table 3B Minimum frontage (grouped dwellings)",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R2"
+      },
+      "value": 50
+    },
+    {
+      "match": {
+        "site.r_code": "R2.5"
+      },
+      "value": 40
+    },
+    {
+      "match": {
+        "site.r_code": "R5"
+      },
+      "value": 30
+    },
+    {
+      "match": {
+        "site.r_code": "R10"
+      },
+      "value": 20
+    },
+    {
+      "match": {
+        "site.r_code": "R12.5"
+      },
+      "value": 17
+    },
+    {
+      "match": {
+        "site.r_code": "R15"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "site.r_code": "R20"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "site.r_code": "R25"
+      },
+      "value": 8
+    },
+    {
+      "match": {
+        "site.r_code": "R30"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R35"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R40"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R50"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R60"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "R80 site area provisions apply to all grouped dwellings on lots coded R100, R160 and LR, MR and HR (Table 3B note); '-' indicated not applicable"
+    },
+    {
+      "match": {
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "'-' indicated not applicable"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 54,
+    "table": "Table 3B"
+  },
+  "register_ref": "ch3-089",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 54,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Values checked. Whether the frontage is of the parent lot or of each dwelling site (ch3-089) is carried on rules C4.1.1-r3 and -r5."
+  },
+  "notes": "Minimum frontage column of Table 3B; used by C4.1.1-r3 and C4.1.1-r5. R30 and above: none. Transcribed from Chapter 3 p54; values identical to Chapter 2 Table 2B and current Table D grouped rows. The dwelling-type column and the 'only applies to single houses' footnote on the battleaxe and frontage columns are removed, so those columns now read as applying to grouped dwellings (ch3-089, verify). The R10-R25 average site areas are struck through as a flagged proposed change for Perth and Peel only (ch3-090; Information Sheet 5); kept operative with verify true. R80 site area provisions apply to grouped dwellings on lots coded R100, R160, LR, MR and HR."
+}

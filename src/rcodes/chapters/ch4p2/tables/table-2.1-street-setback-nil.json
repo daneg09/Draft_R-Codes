@@ -1,0 +1,86 @@
+{
+  "id": "table-2.1-street-setback-nil",
+  "title": "Table 2.1 note 1: nil street setback available with ground-floor commercial use",
+  "keys": [
+    "site.r_code"
+  ],
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": false
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "LR1",
+          "R-AC4"
+        ]
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": "R100"
+      },
+      "value": false
+    },
+    {
+      "match": {
+        "site.r_code": "R160"
+      },
+      "value": false
+    },
+    {
+      "match": {
+        "site.r_code": "MR1"
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "MR2",
+          "R-AC3"
+        ]
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "HR1",
+          "R-AC1"
+        ]
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": "HR2"
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": "HR3"
+      },
+      "value": true
+    }
+  ],
+  "default": false,
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13
+  },
+  "register_ref": "C4P2-035",
+  "verify": false,
+  "notes": "Helper for the A2.3.1 exception: true where the Table 2.1 street setback cell reads '2m or nil' (note 1). Default false so an unlisted code never takes the nil option. Rows also match the current names (R-AC4 = LR1, R-AC3 = MR2, R-AC1 = HR1, R-AC0 = R-PA; register C4P2-017). R-AC2 has no column and no row. The generic LR, MR and HR bands have no row (MR and HR each span columns with different values), so a site coded only LR, MR or HR is NOT_APPLICABLE until its code is known.",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

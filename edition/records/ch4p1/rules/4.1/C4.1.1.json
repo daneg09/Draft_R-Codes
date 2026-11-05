@@ -1,0 +1,414 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C4.1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Average site area per apartment (Table 4B)",
+  "text": "Minimum and average site area. C4.1.1 Development which complies with the dwelling type and site area provisions set out in Table 4B and the following provisions. Table 4B Site area requirements. Site area per dwelling (m2): R10 Av 1000; R12.5 Av 800; R15 Av 666; R17.5 Av 571; R20 Av 450; R25 Av 350; R30 Av 300; R35 Av 260; R40 Av 115; R50 Av 100; R60 Av 85. Site area variations. Site area variations are subject to C4.1.1. C4.1.3 The following variations to the minimum and average site area set out in Table 4B may be made: i. in the case of a apartments; the area of a lot, survey-strata lot or strata lot approved by the WAPC; or ii. the area of any existing lot, survey-strata lot or strata lot with permanent legal access to a public road, notwithstanding that it is less than that required in Table 4B. C4.1.4 In areas coded R25 and below; for a small dwelling (in accordance with C2.9.1) that is the subject of a proposed development, the minimum and average site area of Table 4B may be reduced by up to 35 per cent. C4.1.5 In areas coded R30 to R40; for an accessible dwelling designed to gold level universal design (in accordance with C2.7.1), or a small dwelling (in accordance with C2.9.1) that is the subject of a development proposal, the minimum and average site area of Table 4B may be reduced by up to 35 per cent, provided that: i. for development or subdivision of 4 or more dwellings or sites, the site area reduction is limited to a maximum 50 per cent of the total number of dwellings or sites. C4.1.6 In areas coded R50 and above; for an accessible dwelling designed to gold level universal design (in accordance with C2.7.1), or a small dwelling (in accordance with C2.9.1) that is the subject of a development proposal, the minimum and average site area of Table 4B may be reduced by up to 35 per cent, provided that: i. the site area reduction is limited for small dwellings to a maximum 50 per cent of the total number of dwellings or sites. C4.1.7 For apartments in areas coded R30 to R60; where a significant existing tree is retained on a site that is subject to a development proposal, the average site area of Table 4B may be reduced by 10 per cent. This reduction is limited to dwellings not already subject to a reduced average site area under C4.1.3.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "site.area_m2",
+    "subdivision.truncation_area_added_m2",
+    "proposal.dwelling_count",
+    "site.r_code",
+    "site.lot_approved_by_wapc",
+    "site.existing_lot_with_legal_access",
+    "proposal.reduced_site_area_dwelling_count",
+    "proposal.reduced_small_dwelling_count",
+    "site.significant_tree_retained"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "(site.area_m2 + min(subdivision.truncation_area_added_m2, 20)) / proposal.dwelling_count",
+    "op": ">=",
+    "value": {
+      "table": "table-4B-avg"
+    }
+  },
+  "exceptions": [
+    {
+      "label": "C4.1.3(i) area of a lot, survey-strata lot or strata lot approved by the WAPC",
+      "condition": {
+        "type": "boolean",
+        "fact": "site.lot_approved_by_wapc",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "source": "C4.1.3(i) (register C4P1-142)",
+      "inputs": [
+        "site.lot_approved_by_wapc"
+      ],
+      "verify": true
+    },
+    {
+      "label": "C4.1.3(ii) existing lot with permanent legal access to a public road",
+      "condition": {
+        "type": "boolean",
+        "fact": "site.existing_lot_with_legal_access",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "source": "C4.1.3(ii) (register C4P1-142)",
+      "inputs": [
+        "site.existing_lot_with_legal_access"
+      ],
+      "verify": true
+    },
+    {
+      "label": "C4.1.4 small dwellings at R25 and below: average site area reduced by up to 35% per small dwelling",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "table-lookup",
+            "table": "table-4.1a",
+            "label": "coded R25 or below"
+          },
+          {
+            "type": "count",
+            "fact": "proposal.reduced_site_area_dwelling_count",
+            "op": ">=",
+            "value": 1
+          },
+          {
+            "type": "formula",
+            "expr": "proposal.reduced_small_dwelling_count == proposal.reduced_site_area_dwelling_count"
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "(site.area_m2 + min(subdivision.truncation_area_added_m2, 20)) / (proposal.dwelling_count - 0.35 * proposal.reduced_site_area_dwelling_count)",
+          "op": ">=",
+          "value": {
+            "table": "table-4B-avg"
+          }
+        }
+      },
+      "source": "C4.1.4 (register C4P1-143)",
+      "inputs": [
+        "site.r_code",
+        "proposal.reduced_site_area_dwelling_count",
+        "proposal.reduced_small_dwelling_count",
+        "site.area_m2",
+        "subdivision.truncation_area_added_m2",
+        "proposal.dwelling_count"
+      ],
+      "verify": false
+    },
+    {
+      "label": "C4.1.5 gold-level accessible or small dwellings at R30 to R40: reduced by up to 35%, at most 50% of 4 or more dwellings",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "table-lookup",
+            "table": "table-4.1b",
+            "label": "coded R30 to R40"
+          },
+          {
+            "type": "count",
+            "fact": "proposal.reduced_site_area_dwelling_count",
+            "op": ">=",
+            "value": 1
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "composite",
+          "mode": "all",
+          "parts": [
+            {
+              "type": "formula",
+              "expr": "(site.area_m2 + min(subdivision.truncation_area_added_m2, 20)) / (proposal.dwelling_count - 0.35 * proposal.reduced_site_area_dwelling_count)",
+              "op": ">=",
+              "value": {
+                "table": "table-4B-avg"
+              }
+            },
+            {
+              "type": "composite",
+              "mode": "any",
+              "parts": [
+                {
+                  "type": "count",
+                  "fact": "proposal.dwelling_count",
+                  "op": "<",
+                  "value": 4
+                },
+                {
+                  "type": "percentage-of",
+                  "fact": "proposal.reduced_site_area_dwelling_count",
+                  "of": "proposal.dwelling_count",
+                  "op": "<=",
+                  "value": 50
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "source": "C4.1.5 (register C4P1-144)",
+      "inputs": [
+        "site.r_code",
+        "proposal.reduced_site_area_dwelling_count",
+        "site.area_m2",
+        "subdivision.truncation_area_added_m2",
+        "proposal.dwelling_count"
+      ],
+      "verify": false
+    },
+    {
+      "label": "C4.1.6 gold-level accessible or small dwellings at R50 and above: reduced by up to 35%, small dwellings at most 50% of dwellings",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "table-lookup",
+            "table": "table-4.1c",
+            "label": "coded R50 or above"
+          },
+          {
+            "type": "count",
+            "fact": "proposal.reduced_site_area_dwelling_count",
+            "op": ">=",
+            "value": 1
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "composite",
+          "mode": "all",
+          "parts": [
+            {
+              "type": "formula",
+              "expr": "(site.area_m2 + min(subdivision.truncation_area_added_m2, 20)) / (proposal.dwelling_count - 0.35 * proposal.reduced_site_area_dwelling_count)",
+              "op": ">=",
+              "value": {
+                "table": "table-4B-avg"
+              }
+            },
+            {
+              "type": "percentage-of",
+              "fact": "proposal.reduced_small_dwelling_count",
+              "of": "proposal.dwelling_count",
+              "op": "<=",
+              "value": 50
+            }
+          ]
+        }
+      },
+      "source": "C4.1.6 (register C4P1-145)",
+      "inputs": [
+        "site.r_code",
+        "proposal.reduced_site_area_dwelling_count",
+        "proposal.reduced_small_dwelling_count",
+        "site.area_m2",
+        "subdivision.truncation_area_added_m2",
+        "proposal.dwelling_count"
+      ],
+      "verify": false
+    },
+    {
+      "label": "C4.1.7 significant existing tree retained at R30 to R60: average site area reduced by 10% for dwellings not otherwise reduced",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "table-lookup",
+            "table": "table-4.1d",
+            "label": "coded R30 to R60"
+          },
+          {
+            "type": "boolean",
+            "fact": "site.significant_tree_retained",
+            "expected": true
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "composite",
+          "mode": "all",
+          "parts": [
+            {
+              "type": "formula",
+              "expr": "(site.area_m2 + min(subdivision.truncation_area_added_m2, 20)) / (0.9 * (proposal.dwelling_count - proposal.reduced_site_area_dwelling_count) + 0.65 * proposal.reduced_site_area_dwelling_count)",
+              "op": ">=",
+              "value": {
+                "table": "table-4B-avg"
+              }
+            },
+            {
+              "type": "composite",
+              "mode": "any",
+              "parts": [
+                {
+                  "type": "count",
+                  "fact": "proposal.reduced_site_area_dwelling_count",
+                  "op": "<=",
+                  "value": 0
+                },
+                {
+                  "type": "composite",
+                  "mode": "all",
+                  "parts": [
+                    {
+                      "type": "table-lookup",
+                      "table": "table-4.1b",
+                      "label": "coded R30 to R40"
+                    },
+                    {
+                      "type": "composite",
+                      "mode": "any",
+                      "parts": [
+                        {
+                          "type": "count",
+                          "fact": "proposal.dwelling_count",
+                          "op": "<",
+                          "value": 4
+                        },
+                        {
+                          "type": "percentage-of",
+                          "fact": "proposal.reduced_site_area_dwelling_count",
+                          "of": "proposal.dwelling_count",
+                          "op": "<=",
+                          "value": 50
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "composite",
+                  "mode": "all",
+                  "parts": [
+                    {
+                      "type": "table-lookup",
+                      "table": "table-4.1c",
+                      "label": "coded R50 or above"
+                    },
+                    {
+                      "type": "percentage-of",
+                      "fact": "proposal.reduced_small_dwelling_count",
+                      "of": "proposal.dwelling_count",
+                      "op": "<=",
+                      "value": 50
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "source": "C4.1.7 (register C4P1-146)",
+      "inputs": [
+        "site.r_code",
+        "site.significant_tree_retained",
+        "proposal.reduced_site_area_dwelling_count",
+        "proposal.reduced_small_dwelling_count",
+        "site.area_m2",
+        "subdivision.truncation_area_added_m2",
+        "proposal.dwelling_count"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M4.1",
+  "defined_terms": [
+    "site area",
+    "small dwelling",
+    "significant existing tree",
+    "survey-strata lot",
+    "strata lot"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/T-D",
+      "relation": "same",
+      "note": "multiple dwelling averages; dwelling-type column removed"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.3",
+      "relation": "same",
+      "note": "C1.1.3(i) corner truncation, now C4.1.2"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.4",
+      "relation": "same",
+      "note": "variations, now C4.1.3"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.5",
+      "relation": "restructured",
+      "note": "aged/dependent and single-bedroom one-third reduction -> small dwelling 35% at R25 and below (C4.1.4)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.5.2",
+      "relation": "deleted",
+      "note": "aged and dependent persons' dwellings (C4P1-152)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.5.3",
+      "relation": "deleted",
+      "note": "single bedroom dwellings (C4P1-152)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.6",
+      "relation": "same",
+      "note": "now C4.1.5"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.7",
+      "relation": "same",
+      "note": "now C4.1.6"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.8",
+      "relation": "same",
+      "note": "now C4.1.7"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 49,
+    "table": "Table 4B"
+  },
+  "register_ref": "C4P1-138",
+  "verify": true,
+  "notes": "from: ch3 C4.1.1-r7. diverges: Table 4B (p51) average only, apartment values; tested as the development site area plus up to 20 m2 of corner truncation (C4.1.2; supply 0 where none) divided by the number of apartments, because apartments have no individual sites and the current Part D C1.1.2 calculation is not carried (C4P1-139). Concessions per qualifying dwelling: C4.1.4 to C4.1.6 require Table 4B x (n - 0.35k), C4.1.7 Table 4B x (0.9(n - k) + 0.65k), k = proposal.reduced_site_area_dwelling_count; no 100 m2 floor (Chapter 3 has one, this text does not); the R50+ 50% cap counts small dwellings only (proposed proposal.reduced_small_dwelling_count). C4.1.4 needs every reduced dwelling to be a small dwelling and has no cap at R25 and below (C4P1-143, not flagged in the ToC). C4.1.7 limits the 10% to dwellings 'not already subject to a reduced average site area under C4.1.3'; C4.1.3 is the WAPC/existing-lot variation and the concessions are C4.1.4-C4.1.6, read as the intended cross-reference (verify). C4.1.3(i)/(ii) make the rule not applicable where the development's own lot is WAPC-approved or existing with legal road access; read literally that waives Table 4B for any existing lot (verify). Maisonette apartments (C4P1-149): no provision; R10-R25 averages apply. The FACTS fact subdivision.avg_site_area_reduction_tree_pct is not used (10% is the code's value).",
+  "verified": {
+    "method": "page-image",
+    "page": "49-51",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C4.1.7 (p50) limits the 10% to dwellings 'not already subject to a reduced average site area under C4.1.3'; C4.1.3 is the WAPC/existing-lot variation and the concessions are C4.1.4-C4.1.6 (cross-reference error on the page). C4.1.3(i) 'in the case of a apartments; the area of a lot ... approved by the WAPC' and C4.1.3(ii) (any existing lot with legal road access) read literally waive Table 4B. C4.1.3-C4.1.6 refer to 'the minimum and average site area of Table 4B' but Table 4B (p51) prints an average column only. Table 4B values and the 35%, 50% and 10% concessions confirmed."
+  }
+}

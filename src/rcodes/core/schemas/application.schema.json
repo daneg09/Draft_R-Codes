@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riseurban.au/rcodes/schemas/application.schema.json",
+  "title": "R-Codes application data document (base)",
+  "description": "Facts a proposal supplies as data. Field names are the fact names rules read, joined with dots. Every numeric field should have a facts_meta entry; a missing entry means unknown, not zero. Chapter packages extend this schema.",
+  "type": "object",
+  "required": ["site", "proposal"],
+  "properties": {
+    "site": {
+      "type": "object",
+      "required": ["r_code"],
+      "properties": {
+        "id": {"type": "string"},
+        "lga": {"type": "string"},
+        "region": {"enum": ["perth-peel", "regional"]},
+        "r_code": {"type": "string"},
+        "area_m2": {"type": "number"},
+        "width_m": {"type": "number"},
+        "depth_m": {"type": "number"},
+        "frontage_m": {"type": "number"},
+        "corner_lot": {"type": "boolean"},
+        "primary_street": {"type": "string"},
+        "primary_street_class": {"type": "string"},
+        "secondary_street": {"type": "string"},
+        "laneway": {"type": "boolean"},
+        "verge": {"type": "object", "properties": {
+          "path_or_road_offset_m": {"type": "number"},
+          "basis": {"enum": ["existing", "planned"]},
+          "source": {"type": "string"}}},
+        "scheme_requires_da": {"type": "boolean", "description": "the local planning scheme requires a DA for this proposal irrespective of the R-Codes"},
+        "heritage_or_special_control": {"type": "boolean"},
+        "instruments": {"type": "array", "items": {"$ref": "instrument.schema.json"}},
+        "boundary": {"$ref": "#/$defs/geometry"}
+      }
+    },
+    "proposal": {
+      "type": "object",
+      "required": ["dwelling_type"],
+      "properties": {
+        "dwelling_type": {"enum": ["single_house", "grouped_dwelling", "multiple_dwelling"]},
+        "dwelling_count": {"type": "integer", "minimum": 1},
+        "ancillary_dwelling": {"type": "boolean"},
+        "mixed_use": {"type": "boolean"},
+        "storeys": {"type": "integer"},
+        "pathway_requested": {"enum": ["deemed-exempt", "merit", "performance"]}
+      }
+    },
+    "building": {"type": "object"},
+    "dwellings": {
+      "description": "Either an array of objects, one per-dwelling record (flattened as dwellings.0.bedrooms), or an object of development-wide summary facts describing the least compliant dwelling or a share of dwellings (flattened as dwellings.min.pos_area_m2, dwellings.with_2h_sun_pct; Chapter 4 Part 1 apartments).",
+      "oneOf": [
+        {"type": "array", "description": "per-dwelling records", "items": {"type": "object"}},
+        {"type": "object", "description": "summary facts (dwellings.min.*, dwellings.max.*, dwellings.*_pct)"}
+      ]
+    },
+    "landscape": {"type": "object"},
+    "parking": {"type": "object"},
+    "services": {"type": "object"},
+    "drawings": {"type": "object"},
+    "facts_meta": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "source": {"type": "object"},
+          "method": {"enum": ["stated", "measured", "computed", "inferred", "assumed"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "geometry": {"type": "object", "required": ["type", "coordinates"], "properties": {"type": {"type": "string"}, "coordinates": {}}}
+  }
+}

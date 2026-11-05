@@ -1,0 +1,14 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/M3.1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "element": "3.1",
+  "element_title": "Site cover",
+  "title": "Site cover merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": ["single_house"],
+  "coding": ["all"],
+  "region": "all",
+  "source": {"file": "Residential Design Codes Chapter 2 - Single Houses.pdf", "page": 27}
+}

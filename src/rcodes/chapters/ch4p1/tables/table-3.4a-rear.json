@@ -1,0 +1,41 @@
+{
+  "id": "table-3.4a-rear",
+  "title": "Table 3.4a Lot boundary setbacks: rear setback",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R10-R15"
+      },
+      "value": 3,
+      "note": "3 m 'applicable to R10-R15 only'; Table 4A (p7) says 6 m (register C4P1-003 conflict 2)",
+      "verify": true
+    },
+    {
+      "match": {
+        "site.r_code": "R17.5-R60"
+      },
+      "value": null,
+      "note": "no rear setback provision for R17.5 and above (Table 4A N/A; register C4P1-087)",
+      "verify": true
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 32,
+    "table": "Table 3.4a"
+  },
+  "register_ref": "C4P1-086",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 32,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "'3m (applicable to R10-R15 only)' confirmed on p32; Table 4A (p7) prints 6m spanning R10-R15 and N/A from R17.5. No rear value for R17.5+ on either page."
+  },
+  "notes": "Copied from Chapter 3 and checked against p32; R2 and R2.5 rows dropped, rear 3 m band printed R10-R15 (Chapter 3: R5-R15). Both rows conflict with or are unexplained by Table 4A."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG3.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Tree canopy and deep soil areas Design Guidance",
+  "text": "DG 3.3.1 Existing and adjacent trees should be assessed during the site analysis phase for possible retention. Design testing should seek to retain trees and provide protection for adjacent trees. Where existing trees within the site or adjacent to the site boundary are identified for retention (or on site relocation), arboricultural advice should be obtained on the design of deep soil areas and management requirements to preserve the trees during and after construction. DG 3.3.2 The location of deep soil areas should be determined early in the design process and arboricultural advice obtained to ensure the deep soil areas can sustain trees. Where trees are being retained, the deep soil area should be co-located with the existing trees and be of sufficient dimensions to protect and sustain healthy root systems and provide stability for mature specimens. Where new trees are proposed, the deep soil area should be sited to maximise their contribution to local amenity, such as providing shade, contributing to the tree canopy, the quality of the streetscape and improving the outlook of residents. DG 3.3.3 Whole of lot design solutions to maximise tree canopy and the effectiveness of deep soil areas may include: basement and sub-basement car park design being consolidated beneath building footprints; use of increased front, side or rear setbacks; providing adequate clearance around trees to ensure long term health based on expert advice; the engineering of additional rootable soil space beneath proposed hardstand areas to increase the area available for root development and tree stability; co-location with other deep soil areas on neighbouring sites to create larger contiguous areas of deep soil (especially in rear setback areas); selecting plant species that suit the available space and micro-climate of the deep soil area, including consideration that the size, shape and attributes of trees at maturity suit the location. DG 3.3.4 Where the required deep soil areas cannot be achieved, consider the following options for planting on structures: green walls, living walls and vertical gardens that enable landscaping of highly constrained spaces, supported by expert advice with respect to technical and maintenance considerations; wall design that incorporates planting including trellis structures; green roofs, particularly where roofs are visible from the public domain or other parts of the development; large scale planter boxes suited to small or medium trees. DG 3.3.5 Planting on structures will require expert technical advice for design and specification of the planting elements and systems. Planter requirements will need to be determined early in the design process to ensure they are of sufficient size to sustain plants and the building structure is reinforced to account for additional saturated soil weight. DG 3.3.6 Design should account for irrigation and for drainage pathways to reduce staining and ongoing maintenance of the planting infrastructure and the building fabric. DG 3.3.7 If extensive planting on structure is proposed, such as green walls or roofs, consider the use of an alternative water source, such as rainwater or recycled greywater.",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG3.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 33
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Three columns interleaved in the extract; list items of DG 3.3.3 and DG 3.3.4 assigned by sense. Register C4P2-082: ToC says DG 3.3.5 was modified to include climatic conditions (heat, rainfall, wind exposure); not found, DG 3.3.5 is word-for-word Vol 2.",
+  "verified": {
+    "method": "page-image",
+    "page": 33,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

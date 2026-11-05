@@ -1,0 +1,39 @@
+{
+  "id": "table-2.8a",
+  "title": "Table 2.8a Ancillary dwelling provisions (maximum internal floor area)",
+  "keys": [
+    "ancillary.on_same_site_as_small_dwelling"
+  ],
+  "unit": "m2",
+  "rows": [
+    {
+      "match": {
+        "ancillary.on_same_site_as_small_dwelling": true
+      },
+      "value": 70,
+      "note": "when provided on the same site as a small dwelling in accordance with C2.9.1; maximum 1 per site"
+    },
+    {
+      "match": {
+        "ancillary.on_same_site_as_small_dwelling": false
+      },
+      "value": 90,
+      "note": "all other primary dwellings; maximum 1 per site"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 24,
+    "extract_line": 779,
+    "table": "Table 2.8a"
+  },
+  "register_ref": "ch3-038",
+  "verify": false,
+  "notes": "Maximum ancillary dwellings: 1 per site in both rows (rule C2.8.1 count). Note: provisions relate to the ancillary dwelling portion of the development, except 3.1 site cover, 3.4 lot boundary setbacks and 3.9 solar access for adjoining sites, which are assessed in combination with the primary dwelling; the primary dwelling must still comply with all relevant provisions.",
+  "verified": {
+    "method": "page-image",
+    "page": 24,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

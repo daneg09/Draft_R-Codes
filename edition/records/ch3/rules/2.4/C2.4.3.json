@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C2.4.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "2.0 The Building",
+  "element": "2.4",
+  "element_title": "Waste management",
+  "title": "Communal waste storage area separated or screened from major openings, primary garden areas and communal open space",
+  "text": "C2.4.3 Where a communal waste storage area is provided, it is to be separated or screened from major openings, primary garden areas and communal open space to avoid the adverse impact of potential sources of noise and odour.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "threshold",
+      "fact": "services.waste.communal_storage_area_m2",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "services.waste.communal_storage_area_m2",
+    "services.waste.communal_area_separated_or_screened"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.waste.communal_area_separated_or_screened",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M2.4",
+  "defined_terms": [
+    "major opening",
+    "primary garden area",
+    "communal open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.4.3",
+      "relation": "same",
+      "note": "Part C clause number inferred from the register's order"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "no Part B equivalent for grouped dwellings R25 and below"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 21,
+    "extract_line": 669
+  },
+  "register_ref": "ch3-033",
+  "verify": false,
+  "notes": "New in Chapter 3 (no Chapter 2 equivalent). Trigger: a communal waste storage area is provided (services.waste.communal_storage_area_m2 > 0; FACTS.md labels that fact C2.4.2). Uses proposed fact services.waste.communal_area_separated_or_screened. Register ch3-033: the Part B communal pick-up area clause (bins not collected from the adjoining street) is not carried over, so no collection-point rule is written.",
+  "verified": {
+    "method": "page-image",
+    "page": 21,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

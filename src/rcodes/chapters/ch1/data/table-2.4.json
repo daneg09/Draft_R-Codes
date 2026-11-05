@@ -1,0 +1,35 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch1/T2.4",
+  "title": "Table 2.4 Recommended community consultation parameters",
+  "source": {
+    "file": "Residential Design Codes Chapter 1 - Operation of the Code.pdf",
+    "page": 9,
+    "clause": "2.4.1",
+    "pdf_page": 16
+  },
+  "register_ref": "CH1-28, CH1-29",
+  "chapters": [
+    "ch2",
+    "ch3",
+    "ch4p1"
+  ],
+  "notes": "Recommended, not mandatory; clause 64 of Schedule 2 of the LPS Regulations governs. Consultation is recommended only for elements assessed on merit that may affect the amenity of adjoining properties or the street. Elements not listed (private open space, trees and landscaping, retaining existing dwellings, access) have no recommended parameter.",
+  "verified": {
+    "method": "page-image",
+    "page": "9 (PDF p16)",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "rows": [
+    {"element_title": "Outbuildings", "elements": {"ch2": "2.6", "ch3": "2.6", "ch4p1": "2.6"}, "parties": "directly affected adjoining property/s only"},
+    {"element_title": "Site cover", "elements": {"ch2": "3.1", "ch3": "3.1", "ch4p1": "3.1"}, "parties": "adjoining property/s only"},
+    {"element_title": "Building height", "elements": {"ch2": "3.2", "ch3": "3.2", "ch4p1": "3.2"}, "parties": "adjoining property/s only"},
+    {"element_title": "Street setbacks", "elements": {"ch2": "3.3", "ch3": "3.3", "ch4p1": "3.3"}, "parties": "adjoining properties that front the subject street only"},
+    {"element_title": "Lot boundary setbacks", "elements": {"ch2": "3.4", "ch3": "3.4", "ch4p1": "3.4"}, "parties": "directly affected adjoining property/s only"},
+    {"element_title": "Site works and retaining walls", "elements": {"ch2": "3.5", "ch3": "3.5", "ch4p1": "3.5"}, "clauses": ["C3.5.1", "C3.5.2"], "parties": "directly affected adjoining or adjacent property/s only"},
+    {"element_title": "Streetscape", "elements": {"ch2": "3.6", "ch3": "3.6", "ch4p1": "3.6"}, "clauses": ["C3.6.5", "C3.6.7", "C3.6.8", "C3.6.9"], "parties": "adjoining and adjacent properties that front the subject street only", "verify": true, "note": "Page prints 'Streetscape, C3.6.5, C3.6.7, C3.6.8 and 3.6.9 only'; the streetscape clauses in Chapters 2, 3 and 4 Part 1 end at C3.6.6, so three of the four references do not exist (CH1-29)."},
+    {"element_title": "Solar access for adjoining sites", "elements": {"ch2": "3.9", "ch3": "3.9", "ch4p1": "3.8"}, "parties": "directly affected adjoining property/s only"},
+    {"element_title": "Parking", "elements": {"ch2": "2.3", "ch3": "2.3", "ch4p1": "2.3"}, "parties": "adjoining property/s that front the subject street"},
+    {"element_title": "Visual privacy", "elements": {"ch2": "3.10", "ch3": "3.10", "ch4p1": "3.9"}, "parties": "directly affected adjoining property/s only"}
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.2.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.2",
+  "element_title": "Trees and landscaping",
+  "title": "Shade trees for uncovered at-grade car parking: one small tree per four spaces",
+  "text": "C1.2.5 Uncovered at-grade car parking to include shade trees planted at a minimum ratio of one small tree for every four car spaces, with the total number of trees to be rounded up to the nearest whole number. Note: These trees are in addition to the trees to be provided in accordance with C1.2.4.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "parking.uncovered_at_grade_spaces",
+      "op": ">",
+      "value": 0
+    }
+  ],
+  "inputs": [
+    "parking.uncovered_at_grade_spaces",
+    "landscape.parking_shade_trees"
+  ],
+  "evaluator": {
+    "type": "formula",
+    "expr": "4 * landscape.parking_shade_trees",
+    "op": ">=",
+    "value": {
+      "fact": "parking.uncovered_at_grade_spaces"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.2",
+  "defined_terms": [
+    "small tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.2-C2.1",
+      "relation": "same",
+      "note": "C2.1(iii) one tree per four uncovered spaces"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.4-C4.3",
+      "relation": "deleted",
+      "note": "landscaping with shade trees between every six consecutive external spaces"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C1.2.5",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 12
+  },
+  "register_ref": "ch3-013",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 12,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Ratio (1 per 4 spaces, rounded up) checks on p12. Table 2.10a (p26) says 'no minimum tree provisions' for R100-SL against C1.2.1, C1.2.2 and C1.2.4 only; whether that also removes the C1.2.5 shade trees is not stated, so coding stays all."
+  },
+  "notes": "diverges: a different provision under the same number. Chapter 3 C1.2.5 (p12) is shade trees for at-grade parking; Chapter 2 C1.2.5 is the retained-tree root zone, which is C1.2.7 here. Applies where uncovered at-grade spaces are provided (rule condition). trees >= ceil(spaces / 4) is tested as 4 x trees >= spaces (equivalent for whole numbers). Trees are additional to C1.2.4 trees (not netted out). Proposed facts parking.uncovered_at_grade_spaces and landscape.parking_shade_trees replace the boolean parking.shade_trees_per_4_bays. Table 2.10a 'no minimum tree provisions' for R100-SL is tied to C1.2.4; whether it also removes C1.2.5 is unclear, so coding is all."
+}

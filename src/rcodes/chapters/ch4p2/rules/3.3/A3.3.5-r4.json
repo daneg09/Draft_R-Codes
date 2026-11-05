@@ -1,0 +1,129 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.5-r4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Deep soil per small tree: 9 m2, width 2 m (or 1 m with a 1 m rootable soil zone) (Table 3.3b)",
+  "text": "Landscaping includes existing and new trees with shade producing canopies in accordance with Tables 3.3a and 3.3b. Table 3.3b Small: required DSA per tree 9m2; recommended minimum DSA width 2m; minimum DSA width where additional rootable soil zone (RSZ) provided (min 1m depth) 1m (DSA) + 1m (RSZ). (1) Rootable areas are for the purposes of determining minimum width only and do not have the effect of reducing the required DSA.",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "landscape.trees.small_count",
+      "op": ">=",
+      "value": 1
+    }
+  ],
+  "inputs": [
+    "landscape.deep_soil.rootable_soil_zone_provided",
+    "landscape.deep_soil.small_min_dim_m",
+    "landscape.deep_soil.small_min_m2",
+    "landscape.trees.small_count"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "threshold",
+        "fact": "landscape.deep_soil.small_min_m2",
+        "op": ">=",
+        "value": 9
+      },
+      {
+        "type": "threshold",
+        "fact": "landscape.deep_soil.small_min_dim_m",
+        "op": ">=",
+        "value": 2
+      }
+    ]
+  },
+  "exceptions": [
+    {
+      "label": "rootable soil zone provided: DSA width 1 m + RSZ 1 m",
+      "condition": {
+        "type": "boolean",
+        "fact": "landscape.deep_soil.rootable_soil_zone_provided",
+        "expected": true
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "composite",
+          "mode": "all",
+          "parts": [
+            {
+              "type": "threshold",
+              "fact": "landscape.deep_soil.small_min_m2",
+              "op": ">=",
+              "value": 9
+            },
+            {
+              "type": "threshold",
+              "fact": "landscape.deep_soil.small_min_dim_m",
+              "op": ">=",
+              "value": 1
+            }
+          ]
+        }
+      },
+      "inputs": [
+        "landscape.deep_soil.rootable_soil_zone_provided",
+        "landscape.deep_soil.small_min_dim_m",
+        "landscape.deep_soil.small_min_m2"
+      ],
+      "source": "Table 3.3b, p31"
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [
+    "deep soil area",
+    "small tree",
+    "rootable soil zone"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.5",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol2-2024/T3.3b",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "table": "Table 3.3b",
+    "figure": "Figure 3.3b, 3.3f"
+  },
+  "register_ref": "C4P2-082",
+  "verify": false,
+  "notes": "Tests the smallest deep soil area and width given to any small tree. The width column is 'recommended'; it is tested, with the lower width allowed where a rootable soil zone at least 1 m deep adjoins (landscape.deep_soil.rootable_soil_zone_provided, proposed; one answer for all trees). Table 3.3b note 1: the RSZ does not reduce the required area. Diverges from ch4p1 Table 1.2b (small tree width 1.5 m there).",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

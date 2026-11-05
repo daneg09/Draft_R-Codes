@@ -1,0 +1,126 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.7.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "One vehicle access point per lot",
+  "text": "Vehicle access points are limited to one per lot (refer Figure 3.7a) except where: i. an existing dwelling is being retained that has an established access point that is not able to serve the other dwellings; ii. dwellings front the street and access is not available from a communal street or rear right-of-way; or iii. the lot frontage exceeds 40m, two vehicle access points are permitted.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.access.count",
+    "proposal.retained_dwelling",
+    "site.frontage_m",
+    "site.has_communal_street",
+    "site.has_row"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.access.count",
+    "op": "<=",
+    "value": 1
+  },
+  "exceptions": [
+    {
+      "label": "(i) retained dwelling with an established access point",
+      "condition": {
+        "type": "boolean",
+        "fact": "proposal.retained_dwelling",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "proposal.retained_dwelling"
+      ],
+      "verify": true
+    },
+    {
+      "label": "(ii) dwellings front the street and no communal street or rear ROW access",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "site.has_row",
+            "expected": false
+          },
+          {
+            "type": "boolean",
+            "fact": "site.has_communal_street",
+            "expected": false
+          }
+        ]
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "site.has_row",
+        "site.has_communal_street"
+      ],
+      "verify": true
+    },
+    {
+      "label": "(iii) lot frontage exceeds 40 m: two access points",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.frontage_m",
+        "op": ">",
+        "value": 40
+      },
+      "effect": {
+        "set": {
+          "value": 2
+        }
+      },
+      "inputs": [
+        "site.frontage_m"
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.7",
+  "defined_terms": [
+    "frontage",
+    "right-of-way",
+    "communal street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.2",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.5-C5.1",
+      "relation": "unclear",
+      "note": "register C4P1-109 says unchanged; ch3 register found Part B had no one-access limit, which would make R10-R25 tightened"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 39,
+    "figure": "Figure 3.7a"
+  },
+  "register_ref": "C4P1-109",
+  "verify": true,
+  "notes": "diverges: from ch3 C3.7.2, coding widened. Chapter 4 Part 1 C3.7.2 (p39) has no 'In areas R40 and above' qualifier, so the one-access-per-lot limit applies at R10-R60 (Chapter 3: R40+). Exceptions unchanged: (i) and (ii) are tested only on retention and on the absence of a communal street or rear ROW ('not able to serve the other dwellings' and 'dwellings front the street' have no facts). proposal.retained_dwelling is used although this chapter has no retained-dwelling element.",
+  "verified": {
+    "method": "page-image",
+    "page": 39,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed; no 'In areas R40 and above' qualifier on this page, so R10-R60 is right. Exceptions (i) and (ii) state no effect; (i) 'not able to serve the other dwellings' and (ii) 'dwellings front the street' have no facts. Encoded as not applicable on retention / absence of a communal street or rear ROW."
+  }
+}

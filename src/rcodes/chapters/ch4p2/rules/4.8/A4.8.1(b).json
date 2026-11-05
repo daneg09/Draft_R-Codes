@@ -1,0 +1,80 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.8.1(b)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.8",
+  "element_title": "Dwelling mix",
+  "title": "No local housing strategy and more than 10 dwellings: at least 20% of apartments differ in bedroom number",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "(b) Where there is no local housing strategy, developments of greater than 10 dwellings include at least 20 per cent of apartments of differing bedroom numbers.",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.local_housing_mix_requirement",
+      "expected": false
+    },
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">",
+      "value": 10
+    }
+  ],
+  "inputs": [
+    "site.local_housing_mix_requirement",
+    "proposal.dwelling_count",
+    "dwellings.max_same_bedroom_count_pct"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "dwellings.max_same_bedroom_count_pct",
+    "op": "<=",
+    "value": 80
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.8",
+  "defined_terms": [
+    "dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.8.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 68,
+    "extract_line": 2358
+  },
+  "register_ref": "C4P2-118",
+  "verify": true,
+  "notes": "from: ch4p1 C2.1.7 (fact and 80% test). verify: '20 per cent of apartments of differing bedroom numbers' is read as at least 20% having a bedroom count different from the most common one, i.e. no bedroom count above 80%; it could instead mean 20% of each of several types.",
+  "verified": {
+    "method": "page-image",
+    "page": 68,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Page prints \"at least 20 per cent of apartments of differing bedroom numbers\" for \"developments of greater than 10 dwellings\": read as no single bedroom count above 80%; could mean 20% of each of several types."
+  }
+}

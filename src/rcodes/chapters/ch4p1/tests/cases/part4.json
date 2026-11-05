@@ -1,0 +1,554 @@
+[
+  {
+    "title": "R40 8 apartments on 1,000 m2 (125 m2 each): Table 4B 115 m2 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 8,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 9 apartments on 1,000 m2 (111 m2 each): fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 9,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 9 apartments on 1,020 m2 lot with 30 m2 corner truncation: only 20 m2 counts, 1,040/9 = 115.6 m2 met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1020,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 9,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 30
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R40 truncation not stated: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 8,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": null
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "CANNOT_TELL"
+      }
+    }
+  },
+  {
+    "title": "R60 12 apartments on 1,000 m2 (83 m2 each): 85 m2 fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R60",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 12,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 2 apartments on 900 m2 (450 m2 each): R10-R25 average still applies (maisonette reform not drafted), met",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 2,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R20 3 apartments on 900 m2 (300 m2 each): fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 3,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 3 apartments on 900 m2 on an existing lot with legal road access: not applicable via C4.1.3(ii)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": true,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 3,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "NOT_APPLICABLE"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "C4.1.3(ii) existing lot with permanent legal access to a public road"
+      }
+    }
+  },
+  {
+    "title": "R20 3 apartments on 900 m2, 2 small dwellings: 450 x (3 - 0.7) = 1,035 m2 needed, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 3,
+        "reduced_site_area_dwelling_count": 2,
+        "reduced_small_dwelling_count": 2
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R20 3 apartments on 1,050 m2, 2 small dwellings: 1,035 m2 needed, met by C4.1.4",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 1050,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 3,
+        "reduced_site_area_dwelling_count": 2,
+        "reduced_small_dwelling_count": 2
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "C4.1.4 small dwellings at R25 and below: average site area reduced by up to 35% per small dwelling"
+      }
+    }
+  },
+  {
+    "title": "R20 3 apartments on 1,050 m2, 2 reduced dwellings that are gold-level but not small: C4.1.4 not available, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 1050,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 3,
+        "reduced_site_area_dwelling_count": 2,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R30 4 apartments on 1,000 m2, 2 gold-level dwellings (50%): 300 x 3.3 = 990 m2, met by C4.1.5",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 4,
+        "reduced_site_area_dwelling_count": 2,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "C4.1.5 gold-level accessible or small dwellings at R30 to R40: reduced by up to 35%, at most 50% of 4 or more dwellings"
+      }
+    }
+  },
+  {
+    "title": "R30 4 apartments on 960 m2, 3 gold-level dwellings (75%, over the 50% cap): fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R30",
+        "area_m2": 960,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 4,
+        "reduced_site_area_dwelling_count": 3,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R50 10 apartments on 900 m2, 6 gold-level (none small): 100 x 7.9 = 790 m2, met by C4.1.6 (cap is small dwellings only)",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R50",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 10,
+        "reduced_site_area_dwelling_count": 6,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "MEETS"
+      }
+    }
+  },
+  {
+    "title": "R50 10 apartments on 900 m2, 6 small dwellings (60%): over the 50% small dwelling cap, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R50",
+        "area_m2": 900,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": false
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 10,
+        "reduced_site_area_dwelling_count": 6,
+        "reduced_small_dwelling_count": 6
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 9 apartments on 1,000 m2, significant tree retained: 115 x 0.9 x 9 = 931.5 m2, met by C4.1.7",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 9,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "MEETS"
+      },
+      "exception": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "C4.1.7 significant existing tree retained at R30 to R60: average site area reduced by 10% for dwellings not otherwise reduced"
+      }
+    }
+  },
+  {
+    "title": "R20 3 apartments on 1,000 m2, significant tree retained: C4.1.7 is R30-R60 only, fails",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R20",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": true
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 3,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "DOES_NOT_MEET"
+      }
+    }
+  },
+  {
+    "title": "R40 9 apartments on 1,000 m2, tree retention not stated: cannot tell",
+    "covers": [
+      "rcodes:draft-2026-10-24/ch4p1/C4.1.1"
+    ],
+    "app": {
+      "site": {
+        "r_code": "R40",
+        "area_m2": 1000,
+        "region": "perth-peel",
+        "lot_approved_by_wapc": false,
+        "existing_lot_with_legal_access": false,
+        "significant_tree_retained": null
+      },
+      "proposal": {
+        "dwelling_type": "multiple_dwelling",
+        "dwelling_count": 9,
+        "reduced_site_area_dwelling_count": 0,
+        "reduced_small_dwelling_count": 0
+      },
+      "subdivision": {
+        "truncation_area_added_m2": 0
+      }
+    },
+    "expect": {
+      "rules": {
+        "rcodes:draft-2026-10-24/ch4p1/C4.1.1": "CANNOT_TELL"
+      }
+    }
+  }
+]

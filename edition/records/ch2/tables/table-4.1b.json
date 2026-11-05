@@ -1,0 +1,50 @@
+{
+  "id": "table-4.1b",
+  "title": "C4.1.6 coding band: R30 to R40",
+  "keys": [
+    "site.r_code"
+  ],
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R30-R40"
+      },
+      "value": true
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R25-",
+          "R50+"
+        ]
+      },
+      "value": false
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": false
+    }
+  ],
+  "default": false,
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 50
+  },
+  "register_ref": "ch2-096",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 50,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Helper table; band 'R30 to R40' as printed in C4.1.6."
+  },
+  "notes": "Engine helper, not a published table: true where the clause's coding band applies, false otherwise (default false). Used as a condition inside the concession exceptions on C4.1.1, C4.1.1-r1 and C4.1.1-r4 (a table-lookup with no fact answers MEETS when the value is truthy), because exceptions cannot carry a coding of their own. Values are never null so a composite condition cannot pass on NOT_APPLICABLE. C4.1.6: gold-level accessible (C2.7.1) or small dwelling (C2.9.1) at R30 to R40."
+}

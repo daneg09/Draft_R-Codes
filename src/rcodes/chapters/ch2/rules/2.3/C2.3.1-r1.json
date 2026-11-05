@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C2.3.1-r1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "2.0 The Building",
+  "element": "2.3",
+  "element_title": "Parking",
+  "title": "Minimum parking for an ancillary dwelling, Perth and Peel (Table 2.3a: 0)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house",
+    "ancillary_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "perth-peel",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "proposal.ancillary_dwelling",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "proposal.ancillary_dwelling",
+    "parking.ancillary_spaces"
+  ],
+  "evaluator": {
+    "type": "count",
+    "fact": "parking.ancillary_spaces",
+    "op": ">=",
+    "value": 0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M2.3",
+  "defined_terms": [
+    "ancillary dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.3-C3.1",
+      "relation": "relaxed",
+      "note": "Location B ancillary 1 -> 0"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.3a",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 18,
+    "extract_line": 549,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch2-022",
+  "verify": false,
+  "notes": "Table 2.3a ancillary dwelling minimum is 0 in both Location A and Location B, so the test can only fail on a negative count; kept so the provision is reported.",
+  "text": "Applies to development within the Perth and Peel regions only. C2.3.1 Car parking is provided on site in accordance with Table 2.3a. Table 2.3a Car parking provisions for development within the Perth and Peel regions: Ancillary dwelling - Location A minimum parking space(s) (per dwelling) 0; Location B minimum parking space(s) (per dwelling) 0.",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

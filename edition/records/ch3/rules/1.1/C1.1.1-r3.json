@@ -1,0 +1,88 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C1.1.1-r3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "1.0 The Garden",
+  "element": "1.1",
+  "element_title": "Private open space",
+  "title": "Outdoor living area behind the street setback area",
+  "text": "Outdoor Living Area (applies to R2-R25 only). C1.1.1 An outdoor living area to be provided in accordance with Table 1.1a. (Refer to Figure 1.1a) Table 1.1a Outdoor living area provisions. Location: R2-R15, R17.5, R20-R25 Behind the street setback area(3). 3 Does not apply where C1.1.2 is met. C1.1.2 Notwithstanding C1.1.1, a single consolidated outdoor living area may be located within the primary street setback area where any street walls or fences within the primary street setback area are visually permeable in accordance with C3.6.5 and C3.6.6.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R2-R25"
+  ],
+  "region": "all",
+  "inputs": [
+    "landscape.ola.behind_street_setback",
+    "landscape.ola.in_primary_street_setback",
+    "building.front_fence.visually_permeable"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.ola.behind_street_setback",
+    "expected": true
+  },
+  "exceptions": [
+    {
+      "label": "C1.1.2 single consolidated OLA in the primary street setback area with visually permeable street walls and fences",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "boolean",
+            "fact": "landscape.ola.in_primary_street_setback",
+            "expected": true
+          },
+          {
+            "type": "boolean",
+            "fact": "building.front_fence.visually_permeable",
+            "expected": true
+          }
+        ]
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "source": "C1.1.2 (register ch3-005)",
+      "inputs": [
+        "landscape.ola.in_primary_street_setback",
+        "building.front_fence.visually_permeable"
+      ],
+      "verify": false
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M1.1",
+  "defined_terms": [
+    "outdoor living area",
+    "street setback area",
+    "primary street setback area"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.1-C1.1",
+      "relation": "relaxed",
+      "note": "C1.1(ii) behind the street setback; front-setback OLA now a deemed exempt option"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 9,
+    "table": "Table 1.1a"
+  },
+  "register_ref": "ch3-004",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 9,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Coding corrected to R2-R25: the location cell is merged across all rows including R2-R15."
+  },
+  "notes": "diverges: coding R2-R25 (Chapter 2 R2-R40; the OLA applies to R2-R25 only in Chapter 3, p9). On the page the location cell 'Behind the street setback area(3)' is merged across all three rows, R2-R15 included (the R2-R15 'No minimum applicable' cell spans only the area, roof cover and dimension columns), so coding is R2-R25 (corrected from R17.5-R25 in the page-image pass). Note 3 'does not apply where C1.1.2 is met'. Fence permeability is building.front_fence.visually_permeable."
+}

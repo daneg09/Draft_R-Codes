@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O4.16",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.16",
+  "element_title": "Water management and conservation",
+  "title": "Water management and conservation element objectives",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "O4.16.1 Minimise potable water consumption throughout the development. O4.16.2 Stormwater runoff from small rainfall events is managed on-site, wherever practical. O4.16.3 Reduce the risk of flooding so that the likely impacts of major rainfall events will be minimal.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 82,
+    "extract_line": 2816
+  },
+  "register_ref": "C4P2-126",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/O4.16",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Register C4P2-129: Vol2 Appendix A6 (summary list of all element objectives) is deleted with no draft equivalent, so these O records are the only listing of the 4.x objectives.",
+  "verified": {
+    "method": "page-image",
+    "page": 82,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

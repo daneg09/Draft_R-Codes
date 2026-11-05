@@ -1,0 +1,46 @@
+{
+  "id": "table-3.8b",
+  "title": "Table 3.8b Maximum overshadowing for narrow lots (rear half of the adjoining site)",
+  "keys": [
+    "adjoining.south.r_code",
+    "adjoining.south.frontage_m"
+  ],
+  "unit": "%",
+  "rows": [
+    {
+      "match": {
+        "adjoining.south.r_code": "R40",
+        "adjoining.south.frontage_m": {
+          "max": 7.5
+        }
+      },
+      "value": 35,
+      "note": "no maximum on the front half; 35% of the rear half"
+    },
+    {
+      "match": {
+        "adjoining.south.r_code": "R50-R60",
+        "adjoining.south.frontage_m": {
+          "max": 7.5
+        }
+      },
+      "value": 55,
+      "note": "no maximum on the front half; 55% of the rear half"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 43,
+    "table": "Table 3.8b"
+  },
+  "register_ref": "C4P1-126",
+  "verify": false,
+  "notes": "from: ch3 table-3.9b (renumbered 3.8b); values checked against p43: R40 35% and R50-R60 55% of the rear half, no maximum on the front half. No R80+ row in this chapter. Two keys: the adjoining lot must be coded R40 or greater AND have a frontage of 7.5 m or less; any other adjoining lot has no row (NOT_APPLICABLE, C3.8.1 governs). Battleaxe adjoining lots are excluded by a rule condition. Figure 3.8e: the rear half is the half of the lot depth furthest from the street.",
+  "verified": {
+    "method": "page-image",
+    "page": 43,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "R40 35% and R50-R60 55% of the rear half; 'No maximum overshadowing' on the front half (merged cell)."
+  }
+}

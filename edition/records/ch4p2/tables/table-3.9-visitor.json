@@ -1,0 +1,57 @@
+{
+  "id": "table-3.9-visitor",
+  "title": "Table 3.9 Parking ratios: visitor car parking per dwelling (reference)",
+  "keys": [
+    "site.location",
+    "proposal.dwelling_count"
+  ],
+  "unit": "bays per dwelling",
+  "rows": [
+    {
+      "match": {
+        "site.location": [
+          "A",
+          "B"
+        ],
+        "proposal.dwelling_count": {
+          "max": 4
+        }
+      },
+      "value": 0,
+      "note": "0-4 dwellings: no visitor parking required"
+    },
+    {
+      "match": {
+        "site.location": "A",
+        "proposal.dwelling_count": {
+          "min": 5
+        }
+      },
+      "value": 0.1
+    },
+    {
+      "match": {
+        "site.location": "B",
+        "proposal.dwelling_count": {
+          "min": 5
+        }
+      },
+      "value": 0.15
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 46,
+    "table": "Table 3.9"
+  },
+  "register_ref": "C4P2-101",
+  "verify": false,
+  "notes": "Reference for A3.9.2-r1, which takes its threshold from table-3.9-visitor-bays (rows give the bay count as an expression: ratio x dwellings, rounded up per footnote 1) because a lookup here returns the ratio, not the bay count. Register C4P2-100 (0-4 nil, relaxed), C4P2-101 (A relaxed), C4P2-102 (B mixed), C4P2-104 (rounding up; ch4p1 rounds to nearest).",
+  "verified": {
+    "method": "page-image",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "page": 46,
+    "note": "p46 footnote 1 on the visitor car parking row."
+  }
+}

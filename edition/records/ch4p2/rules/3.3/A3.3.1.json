@@ -1,0 +1,90 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A3.3.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "3.0 Siting the development",
+  "element": "3.3",
+  "element_title": "Tree canopy and deep soil areas",
+  "title": "Existing trees meeting the retention criteria are retained",
+  "text": "Retention of existing trees on the site that meet the following criteria: healthy specimens with ongoing viability AND species is not included on a State or local area weed register AND height of at least 4m AND/OR trunk diameter of at least 160mm, measured 1m from the ground AND/OR average canopy diameter of at least 4m.",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "landscape.existing_trees.qualifying_present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "landscape.existing_trees.qualifying_all_retained",
+    "landscape.existing_trees.qualifying_present",
+    "landscape.existing_trees.removal_arboriculture_report"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "landscape.existing_trees.qualifying_all_retained",
+    "expected": true
+  },
+  "exceptions": [
+    {
+      "label": "removal of qualifying trees supported by an arboriculture report (A3.3.2)",
+      "condition": {
+        "type": "boolean",
+        "fact": "landscape.existing_trees.removal_arboriculture_report",
+        "expected": true
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "landscape.existing_trees.removal_arboriculture_report"
+      ],
+      "source": "A3.3.2, p31",
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O3.3",
+  "defined_terms": [
+    "tree"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A3.3.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 31,
+    "figure": "Figure 3.3a"
+  },
+  "register_ref": "C4P2-082",
+  "verify": true,
+  "notes": "Applies where the site has an existing tree meeting the criteria (healthy and viable, not a listed weed, and at least one of height 4 m, trunk 160 mm at 1 m, canopy 4 m; Figure 3.3a). Exception: removal supported by an arboriculture report (A3.3.2) is read as an acceptable alternative, so the rule is NOT_APPLICABLE; A3.3.2 is also reported on its own. verify: whether A3.3.1 and A3.3.2 are alternatives is not stated.",
+  "verified": {
+    "method": "page-image",
+    "page": 31,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "p31 does not say whether A3.3.2 (removal supported by an arboriculture report) is an alternative to retention; the criteria mix AND with AND/OR."
+  }
+}

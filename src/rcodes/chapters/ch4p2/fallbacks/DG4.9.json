@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.9",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.9",
+  "element_title": "Universal design",
+  "title": "Universal design design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.9.1 The National Disability Insurance Scheme has adopted the Livable Housing Design Guidelines as a benchmark for accessibility and this is recommended as the appropriate benchmark for considering universal design under this Code. The Guidelines incorporate a list of required inclusions to achieve Silver, Gold or Platinum standard housing. These include features such as a step-free threshold, generous door and passage widths, provision for the future installation of grab rails and increasing the minimum size of wet areas. DG 4.9.2 Platinum Level dwellings are recommended to include two bedrooms, or a secondary studio bedroom space, to provide the option for carer accommodation. DG 4.9.3 Consider the provision of parking bays appropriate to the particular type of universal and adaptable dwellings provided in the development.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 69,
+    "extract_line": 2399
+  },
+  "register_ref": "C4P2-119",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.9",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Short two-column page; text reassembled with confidence.",
+  "verified": {
+    "method": "page-image",
+    "page": 69,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

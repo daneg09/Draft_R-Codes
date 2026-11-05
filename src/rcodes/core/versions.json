@@ -1,0 +1,32 @@
+{
+  "versions": [
+    {
+      "id": "draft-2026-10-24",
+      "label": "Draft consolidated R-Codes (advertised 24 October 2026)",
+      "status": "draft",
+      "date": "2026-10-24",
+      "consultation_closes": "2027-02-26",
+      "chapters": ["ch1", "ch2", "ch3", "ch4p1", "ch4p2"],
+      "operation_chapter": "ch1",
+      "notes": "Consultation draft. Rules encoded from this version are expected to be re-derived at gazettal."
+    },
+    {
+      "id": "vol1-v3-2026-04-10",
+      "label": "R-Codes Volume 1 version 3 (10 April 2026)",
+      "status": "in-force",
+      "date": "2026-04-10",
+      "chapters": ["partA", "partB", "partC", "partD"],
+      "operation_chapter": "partA",
+      "notes": "Current code for single houses, grouped dwellings and multiple dwellings R10 to R60. Operation package not yet built."
+    },
+    {
+      "id": "vol2-2024",
+      "label": "R-Codes Volume 2 Apartments (2024)",
+      "status": "in-force",
+      "date": "2024-03-01",
+      "chapters": ["v2"],
+      "operation_chapter": "v2",
+      "notes": "Current code for apartments R80 and above. Operation package not yet built."
+    }
+  ]
+}

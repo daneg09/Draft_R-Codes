@@ -1,0 +1,69 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C3.6.5(i)",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "3.0 Neighbourliness",
+  "element": "3.6",
+  "element_title": "Streetscape",
+  "title": "Front fence or wall maximum height 1.8 m",
+  "text": "When provided, fences or walls within the primary street setback area are to be: i. a maximum height of 1.8m; and iii. measured from natural ground level on the primary street side of the fence or wall.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.front_fence.present",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.front_fence.height_m",
+    "building.front_fence.present"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.front_fence.height_m",
+    "op": "<=",
+    "value": 1.8
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M3.6",
+  "defined_terms": [
+    "primary street setback area",
+    "natural ground level",
+    "visually permeable"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.6.7",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.4-C4.1",
+      "relation": "tightened",
+      "note": "R10-R25: 1.8 m overall cap added"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 38,
+    "figure": "Figure 3.6b"
+  },
+  "register_ref": "C4P1-106",
+  "verify": false,
+  "notes": "from: ch3 C3.6.5(i). Height measured from NGL on the primary street side (limb iii). Coding R10-R60; the Chapter 3 R100-SL 900 mm variant has no equivalent here.",
+  "verified": {
+    "method": "page-image",
+    "page": 38,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

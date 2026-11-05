@@ -1,0 +1,88 @@
+{
+  "id": "table-2.3a",
+  "title": "Table 2.3a Car parking provisions for development within the Perth and Peel regions (minimum spaces per dwelling)",
+  "keys": [
+    "site.location",
+    "proposal.bedrooms"
+  ],
+  "unit": "spaces",
+  "rows": [
+    {
+      "match": {
+        "site.location": "A",
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 0,
+      "note": "Location A studio and 1 bedroom; max garage/carport (R50+) 1"
+    },
+    {
+      "match": {
+        "site.location": "A",
+        "proposal.bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 0,
+      "note": "Location A 2 bedroom; max garage/carport (R50+) 2"
+    },
+    {
+      "match": {
+        "site.location": "A",
+        "proposal.bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 1,
+      "note": "Location A 3+ bedroom; max garage/carport (R50+) 2"
+    },
+    {
+      "match": {
+        "site.location": "B",
+        "proposal.bedrooms": {
+          "max": 1
+        }
+      },
+      "value": 1,
+      "note": "Location B studio and 1 bedroom; max garage/carport (R50+) 1"
+    },
+    {
+      "match": {
+        "site.location": "B",
+        "proposal.bedrooms": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "value": 1,
+      "note": "Location B 2 bedroom; max garage/carport (R50+) 2"
+    },
+    {
+      "match": {
+        "site.location": "B",
+        "proposal.bedrooms": {
+          "min": 3
+        }
+      },
+      "value": 1,
+      "note": "Location B 3+ bedroom; max garage/carport (R50+) 2"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 18,
+    "extract_line": 544,
+    "table": "Table 2.3a"
+  },
+  "register_ref": "ch2-022",
+  "verify": false,
+  "notes": "Value = minimum parking spaces per dwelling (all parking types). Ancillary dwelling row: minimum 0 in both locations, maximum garage/carport 1 at R50+ (rules C2.3.1-r1, -r3). Maximum garage and carport column (R50 and above only; footnote 1: none at R40 and below) is in rule C2.3.1-r2: 1 for studio/1 bed, 2 for 2 bed and 3+ bed. LOCATION A: all land within 800 m of a train station on a high-frequency rail route (straight line from the pedestrian entry to the platform to any part of the lot); within 250 m of a high-frequency transit route, or multiple routes that combined have timed stops every 15 minutes in weekday peaks 7-9am and 5-7pm (straight line from any part of the route to any part of the lot); and/or within the defined boundaries of an activity centre. LOCATION B: all other land. Register ch2-023: straight-line measurement replaces 'walkable catchment', enlarging Location A; 'high-frequency' is not defined.",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

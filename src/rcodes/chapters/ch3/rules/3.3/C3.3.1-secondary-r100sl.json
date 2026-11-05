@@ -1,0 +1,64 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.3.1#secondary-r100sl",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.3",
+  "element_title": "Street setbacks",
+  "title": "Secondary street setback on lots less than 100 m2 (R100-SL)",
+  "text": "Table 2.10a Modified provisions for housing on lots less than 100m2. 3.3 Street setbacks, C3.3.1: Primary or secondary street - 1m primary and secondary street setback.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R100-SL"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "site.has_secondary_street",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.secondary_street_setback_m",
+    "site.has_secondary_street"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.secondary_street_setback_m",
+    "op": ">=",
+    "value": 1.0
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.3",
+  "defined_terms": [
+    "secondary street"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T2.10a",
+      "relation": "unclear",
+      "note": "current Part C Table 2.10a; values not compared"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 26,
+    "table": "Table 2.10a"
+  },
+  "register_ref": "ch3-045",
+  "verify": false,
+  "notes": "Table 2.10a modified provision for C3.3.1 (Chapter 3 p26, register ch3-040).",
+  "verified": {
+    "method": "page-image",
+    "page": 26,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Confirmed on p26; Table 3A (p7) prints the 1m secondary street cell spanning R40 to R100-SL."
+  }
+}

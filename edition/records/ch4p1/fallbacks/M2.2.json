@@ -1,0 +1,39 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/M2.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.2",
+  "element_title": "Solar access and natural ventilation",
+  "title": "Solar access and natural ventilation merit assessment criteria",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R10-R60"
+  ],
+  "region": "all",
+  "text": "M2.2.1 In climate zones 4, 5 and 6 the development is sited, oriented and designed to optimise winter solar gain whilst limiting summer sunlight into: i. the primary living space and habitable rooms; and ii. private open spaces, including the primary garden area; iii. while balancing site constraints, outlook and views of significance. M2.2.2 Windows to habitable rooms are designed and positioned to optimize daylight, natural ventilation and outlook, while maintaining a reasonable level of visual privacy. M2.2.3 Dwellings optimize natural ventilation to habitable rooms (and bathrooms where possible) that is responsive to site and local climatic conditions.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 18,
+    "extract_line": 549
+  },
+  "register_ref": "C4P1-038",
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/P2.2.1",
+      "relation": "same",
+      "note": "Part C P2.2.1 to P2.2.3"
+    }
+  ],
+  "notes": "from: ch3 M2.2 (same text; the balancing words are printed as limb iii here).",
+  "verified": {
+    "method": "page-image",
+    "page": 18,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.5",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.5",
+  "element_title": "Circulation and common spaces",
+  "title": "Circulation and common spaces design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.5.1 The configuration of circulation and common spaces is an important consideration in the early planning phase, as these areas are used by all residents on a daily basis and inform the first impression of visitors. The design of circulation spaces is therefore critical in defining the character, style and amenity of the development. DG 4.5.2 Universal access is a mandatory requirement of contemporary building design for all publicly accessible places. In the context of an apartment development this means circulation areas and common spaces must be universally accessible via a continuous path of travel from the primary entry. DG 4.5.3 Design considerations to ensure safe and convenient access for all users of these spaces are listed below: provide secure access to circulation areas, including intercoms for residents to admit visitors; consider limiting the number of dwellings served by a single circulation core to no more than 12 on a floor; consider providing an additional lift when the number of dwellings serviced by a single lift exceeds 40, or when the travel distance between a single dwelling and a lift exceeds 50m; provide short, straight sightlines by minimising corridors lengths and avoiding tight corners between the circulation core and individual dwellings; for corridors or galleries with a length of more than 18m (or six entry doors) use changes in height, width, materials or lighting to reduce the apparent length of the corridor and improve amenity; design and locate fire escape stairs so they can be used as an attractive and functional alternative to the lift, particularly for residents on lower floors, having regard to fire safety requirements; provide low-level of constant light overnight and motion sensors for additional lighting when activated, including directional control of lighting to prevent light spill into dwellings; include legible signage for apartment numbers, common areas and general wayfinding; design and material selection for the prevention of slips, trips and falls; for example, handrails to assist elderly users, the use of slip resistant floor finishes in external and semi enclosed circulation spaces, including stairs, and weather protection at dwelling entries. DG 4.5.4 The design of circulation spaces should contribute to making dwelling entries distinct and private. This can be achieved by offsetting entry doors, creating an entry vestibule or varying ceiling height, width and materials in the corridor to create a 'porch'. In external galleries consider offsetting the dwelling entries from the gallery with an entry court, while avoiding creating spaces for concealment. DG 4.5.5 Windows of dwellings should not open directly onto circulation and common spaces. Use physical separation, screening, acoustic glazing, landscaping, lighting design and other devices to minimise impacts and to maintain privacy in the dwelling. DG 4.5.6 Good design can greatly enhance the amenity of circulation and common spaces. Consider design solutions such as: maximising daylight and natural ventilation to circulation and common spaces to improve amenity and thermal performance, and reduce operational costs; incorporating additional width or height in corridors and at entry lobbies, lifts and dwelling entries to create a sense of spaciousness and enable the movement of furnishings and bulky goods, for instance, the width of lift landings should exceed the depth of the lift car; providing seating in foyers and other breakout spaces within circulation and common spaces; where external galleries are provided, making these more open than closed above the balustrade; using materials, colours and lighting that create an attractive and welcoming environment. DG 4.5.7 Communal facilities: In larger developments, consider providing common spaces and rooms for a variety of activities and uses, such as facilities for the shared preparation of food, gardening and craft groups, mother's groups and children's play groups, as well as strata or resident meetings. Ideally these spaces will be co-located with communal open space. In some cases it might be appropriate to provide public access to promote connection with the wider community, but the safety and amenity of residents must be maintained. DG 4.5.8 Circulation and common spaces should be designed in proportion to the scale, intensity and occupancy of the development without compromising safe accesses, universal accessibility and amenity.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 61,
+    "extract_line": 2097
+  },
+  "register_ref": "C4P2-115",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.5",
+      "relation": "same",
+      "note": "DG 4.5.1 to 4.5.7"
+    },
+    {
+      "id": null,
+      "relation": "new",
+      "note": "DG 4.5.8 proportionate circulation and common spaces (register C4P2-115)"
+    }
+  ],
+  "verify": false,
+  "notes": "Three columns on page 61 checked word for word against the page image. New item: DG 4.5.8 (the page prints no \"(new)\" marker). The numeric prompts in DG 4.5.3 (12 dwellings per core per floor, extra lift above 40 dwellings or 50 m travel, 18 m or six doors) are guidance, not tests.",
+  "verified": {
+    "method": "page-image",
+    "page": 61,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

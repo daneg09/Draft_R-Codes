@@ -1,0 +1,70 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.4.1#side-to-3.5m-r30-r40",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Side setback, walls up to 3.5 m high (R30-R40)",
+  "text": "C3.4.1 Buildings are set back from lot boundaries in accordance with Table 3.4a. Refer Figure 3.4a, b, c. Table 3.4a Lot boundary setbacks, side setback: R5 and above, Wall height up to 3.5m: 1m.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "R30-R40"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "building.has_walls_to_3_5m",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "building.side_setback_walls_to_3_5m_m",
+    "site.r_code",
+    "building.has_walls_to_3_5m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "building.side_setback_walls_to_3_5m_m",
+    "op": ">=",
+    "value": {
+      "table": "table-3.4a-side-to-3.5m"
+    }
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.4",
+  "defined_terms": [
+    "lot boundary",
+    "wall height",
+    "setback"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/T3.4a",
+      "relation": "relaxed",
+      "note": "Part C Table 3.4a applied at R30-R40; 7.1 m+ 3 m -> 2 m (register ch3-057)"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 33,
+    "table": "Table 3.4a",
+    "figure": "Figure 3.4a-c"
+  },
+  "register_ref": "ch3-055",
+  "verify": false,
+  "notes": "New to Chapter 3 as a separate record: the Chapter 2 R2-R40 rule allows the pedestrian access way reduction at R30-R40, Chapter 3 C3.4.1(ii) (p33) stops it at R25, so R30-R40 is tested without it. Rounding gap between bands unresolved. Applies only where the building has walls up to 3.5 m high (condition on building.has_walls_to_3_5m); the band does not depend on the building's maximum wall height.",
+  "verified": {
+    "method": "page-image",
+    "page": 33,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C3.4.1(ii) stops at R25 (p33), so R30-R40 has no pedestrian access way reduction."
+  }
+}

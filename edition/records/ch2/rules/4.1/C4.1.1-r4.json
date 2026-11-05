@@ -1,0 +1,281 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch2/C4.1.1-r4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch2",
+  "part": "4.0 Land",
+  "element": "4.1",
+  "element_title": "Site area",
+  "title": "Minimum site area of proposed lots (Table 2B)",
+  "text": "C4.1.1 Development which complies with the dwelling type and site area provisions set out in Table 2B and the following provisions. Table 2B Site area requirements, Site area per dwelling (m2): R2 Min 5000; R2.5 Min 4000; R5 Min 2000; R10 Min 875; R12.5 Min 700; R15 Min 580; R17.5 Min 500; R20 Min 350; R25 Min 300; R30 Min 260; R35 Min 220; R40 Min 180; R50 Min 160; R60 Min 120; R80 Min 100; R100-SL Min 80. Notes: R80 site area provisions apply to all single houses located on lots coded R100, R160 and LR, MR and HR. - Indicated not applicable. Min. Minimum site area. Av. Average site area. C4.1.5 In areas coded R25 and below; for a small dwelling (in accordance with C2.9.1) that is the subject of a proposed development, the minimum and average site area of Table 2B may be reduced by up to 35 per cent. C4.1.6 In areas coded R30 to R40; for an accessible dwelling designed to gold level universal design (in accordance with C2.7.1), or a small dwelling (in accordance with C2.9.1) that is the subject of a development proposal, the minimum and average site area of Table 2B may be reduced by up to 35 per cent, provided that: i. for single houses, no site is less than 100m2; and ii. for development or subdivision of 4 or more dwellings or sites, the site area reduction is limited to a maximum 50 per cent of the total number of dwellings or sites. C4.1.7 In areas coded R50 and above; for an accessible dwelling designed to gold level universal design (in accordance with C2.7.1), or a small dwelling (in accordance with C2.9.1) that is the subject of a development proposal, the minimum and average site area of Table 2B may be reduced by up to 35 per cent, provided that: i. for single houses, no site is less than 100m2; and ii. the site area reduction is limited for small dwellings to a maximum 50 per cent of the total number of dwellings or sites.",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "single_house"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "boolean",
+      "fact": "subdivision.proposed",
+      "expected": true
+    }
+  ],
+  "inputs": [
+    "subdivision.proposed",
+    "subdivision.min_site_area_m2",
+    "site.r_code",
+    "proposal.small_dwelling",
+    "proposal.universal_design_level",
+    "subdivision.lot_count",
+    "subdivision.reduced_lots_count"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "subdivision.min_site_area_m2",
+    "op": ">=",
+    "value": {
+      "table": "table-2B-min"
+    }
+  },
+  "exceptions": [
+    {
+      "label": "C4.1.5 small dwelling at R25 and below: minimum and average site area reduced by up to 35%",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "table-lookup",
+            "table": "table-4.1a",
+            "label": "coded R25 or below"
+          },
+          {
+            "type": "boolean",
+            "fact": "proposal.small_dwelling",
+            "expected": true
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "formula",
+          "expr": "subdivision.min_site_area_m2 / 0.65",
+          "op": ">=",
+          "value": {
+            "table": "table-2B-min"
+          }
+        }
+      },
+      "source": "C4.1.5 (register ch2-095)",
+      "inputs": [
+        "site.r_code",
+        "proposal.small_dwelling",
+        "subdivision.min_site_area_m2"
+      ],
+      "verify": false
+    },
+    {
+      "label": "C4.1.6 gold-level accessible or small dwelling at R30 to R40: reduced by up to 35%, no site under 100 m2, at most 50% of 4 or more sites",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "table-lookup",
+            "table": "table-4.1b",
+            "label": "coded R30 to R40"
+          },
+          {
+            "type": "composite",
+            "mode": "any",
+            "parts": [
+              {
+                "type": "boolean",
+                "fact": "proposal.small_dwelling",
+                "expected": true
+              },
+              {
+                "type": "threshold",
+                "fact": "proposal.universal_design_level",
+                "op": "==",
+                "value": "gold"
+              }
+            ]
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "composite",
+          "mode": "all",
+          "parts": [
+            {
+              "type": "formula",
+              "expr": "subdivision.min_site_area_m2 / 0.65",
+              "op": ">=",
+              "value": {
+                "table": "table-2B-min"
+              }
+            },
+            {
+              "type": "threshold",
+              "fact": "subdivision.min_site_area_m2",
+              "op": ">=",
+              "value": 100
+            },
+            {
+              "type": "composite",
+              "mode": "any",
+              "parts": [
+                {
+                  "type": "count",
+                  "fact": "subdivision.lot_count",
+                  "op": "<",
+                  "value": 4
+                },
+                {
+                  "type": "percentage-of",
+                  "fact": "subdivision.reduced_lots_count",
+                  "of": "subdivision.lot_count",
+                  "op": "<=",
+                  "value": 50
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "source": "C4.1.6 (register ch2-096)",
+      "inputs": [
+        "site.r_code",
+        "proposal.small_dwelling",
+        "proposal.universal_design_level",
+        "subdivision.min_site_area_m2",
+        "subdivision.min_site_area_m2",
+        "subdivision.lot_count",
+        "subdivision.reduced_lots_count"
+      ],
+      "verify": false
+    },
+    {
+      "label": "C4.1.7 gold-level accessible or small dwelling at R50 and above: reduced by up to 35%, no site under 100 m2, small dwellings at most 50% of sites",
+      "condition": {
+        "type": "composite",
+        "mode": "all",
+        "parts": [
+          {
+            "type": "table-lookup",
+            "table": "table-4.1c",
+            "label": "coded R50 or above"
+          },
+          {
+            "type": "composite",
+            "mode": "any",
+            "parts": [
+              {
+                "type": "boolean",
+                "fact": "proposal.small_dwelling",
+                "expected": true
+              },
+              {
+                "type": "threshold",
+                "fact": "proposal.universal_design_level",
+                "op": "==",
+                "value": "gold"
+              }
+            ]
+          }
+        ]
+      },
+      "effect": {
+        "replace_evaluator": {
+          "type": "composite",
+          "mode": "all",
+          "parts": [
+            {
+              "type": "formula",
+              "expr": "subdivision.min_site_area_m2 / 0.65",
+              "op": ">=",
+              "value": {
+                "table": "table-2B-min"
+              }
+            },
+            {
+              "type": "threshold",
+              "fact": "subdivision.min_site_area_m2",
+              "op": ">=",
+              "value": 100
+            },
+            {
+              "type": "composite",
+              "mode": "any",
+              "parts": [
+                {
+                  "type": "boolean",
+                  "fact": "proposal.small_dwelling",
+                  "expected": false
+                },
+                {
+                  "type": "percentage-of",
+                  "fact": "subdivision.reduced_lots_count",
+                  "of": "subdivision.lot_count",
+                  "op": "<=",
+                  "value": 50
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "source": "C4.1.7 (register ch2-096)",
+      "inputs": [
+        "site.r_code",
+        "proposal.small_dwelling",
+        "proposal.universal_design_level",
+        "subdivision.min_site_area_m2",
+        "subdivision.min_site_area_m2",
+        "subdivision.lot_count",
+        "subdivision.reduced_lots_count"
+      ],
+      "verify": true
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch2/M4.1",
+  "defined_terms": [
+    "site area",
+    "green title lot",
+    "survey-strata lot",
+    "battleaxe lot",
+    "frontage",
+    "small dwelling"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/C1.1.1",
+      "relation": "same"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partD/T-D",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 2 - Single Houses.pdf",
+    "page": 51,
+    "table": "Table 2B"
+  },
+  "register_ref": "ch2-089",
+  "verify": true,
+  "verified": {
+    "method": "page-image",
+    "page": 51,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "C4.1.7(ii) 'limited for small dwellings to a maximum 50 per cent of the total number of dwellings or sites' does not say how it applies to a single lot or to gold-level accessible dwellings; the C4.1.7 exception keeps verify true."
+  },
+  "notes": "Applies where the application creates lots (rule condition); the smallest proposed site area. Concessions are per dwelling or site; the fact set carries one small_dwelling flag for the application, so the reduction applies to the smallest lot. C4.1.5 to C4.1.7 concessions are exceptions on this rule (not separate rules, so a concession not taken cannot fail the element): the tested area divided by 0.65 must reach the Table 2B value. Coding bands for the concessions come from helper tables table-4.1a/b/c (true/false by coding) because exceptions cannot carry a coding of their own. Supply subdivision.lot_count = 1 and subdivision.reduced_lots_count = 1 for a single existing lot; read literally, C4.1.7(ii) then caps a lone small dwelling (1 of 1 = 100% > 50%). "
+}

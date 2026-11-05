@@ -1,0 +1,590 @@
+{
+  "id": "table-3A",
+  "title": "Table 3A Deemed exempt summary (grouped dwellings)",
+  "keys": [
+    "site.r_code",
+    "metric"
+  ],
+  "rows": [
+    {
+      "match": {
+        "metric": "soft_landscaping_pct",
+        "site.r_code": [
+          "R2-R80",
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 15
+    },
+    {
+      "match": {
+        "metric": "soft_landscaping_pct",
+        "site.r_code": "R100-SL"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "metric": "site_cover_pct",
+        "site.r_code": "R2-R2.5"
+      },
+      "value": 25
+    },
+    {
+      "match": {
+        "metric": "site_cover_pct",
+        "site.r_code": "R5"
+      },
+      "value": 35
+    },
+    {
+      "match": {
+        "metric": "site_cover_pct",
+        "site.r_code": "R10"
+      },
+      "value": 45
+    },
+    {
+      "match": {
+        "metric": "site_cover_pct",
+        "site.r_code": "R12.5"
+      },
+      "value": 50
+    },
+    {
+      "match": {
+        "metric": "site_cover_pct",
+        "site.r_code": "R15-R25"
+      },
+      "value": 55
+    },
+    {
+      "match": {
+        "metric": "site_cover_pct",
+        "site.r_code": [
+          "R30+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "N/A from R30 (Table 3.1a note, p28); R80 standards (N/A) apply to R100, R160, LR, MR and HR (Table 3A footnote); R100-SL N/A (current Part C 85%, register ch3-001, ch3-042)"
+    },
+    {
+      "match": {
+        "metric": "storeys",
+        "site.r_code": "R2-R35"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "storeys",
+        "site.r_code": "R40-R60"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "metric": "storeys",
+        "site.r_code": [
+          "R80+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "total_height_m",
+        "site.r_code": "R2-R35"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "metric": "total_height_m",
+        "site.r_code": "R40-R60"
+      },
+      "value": 13
+    },
+    {
+      "match": {
+        "metric": "total_height_m",
+        "site.r_code": [
+          "R80+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 16
+    },
+    {
+      "match": {
+        "metric": "total_height_m",
+        "site.r_code": "R100-SL"
+      },
+      "value": 16,
+      "note": "16m cell printed spanning R80 and R100-SL (p7); Table 3.2a (p29) has no R100-SL row and Table 2.10a (p26) refers R100-SL to Table 3.2a"
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R2"
+      },
+      "value": 20
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 15
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R5"
+      },
+      "value": 12
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R10-R12.5"
+      },
+      "value": 7.5
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R15-R25"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R30-R35"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R40"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": [
+          "R50-R80",
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "primary_street_m",
+        "site.r_code": "R100-SL"
+      },
+      "value": 1
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": "R2"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": "R5"
+      },
+      "value": 6
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": "R10"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": "R12.5"
+      },
+      "value": 2
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": "R15-R35"
+      },
+      "value": 1.5
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": [
+          "R40+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 1
+    },
+    {
+      "match": {
+        "metric": "secondary_street_m",
+        "site.r_code": "R100-SL"
+      },
+      "value": 1
+    },
+    {
+      "match": {
+        "metric": "laneway_not_primary_m",
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_not_primary_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_not_primary_m",
+        "site.r_code": "R5"
+      },
+      "value": 6,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_not_primary_m",
+        "site.r_code": "R10"
+      },
+      "value": 3,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_not_primary_m",
+        "site.r_code": "R12.5"
+      },
+      "value": 2,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_not_primary_m",
+        "site.r_code": [
+          "R15+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 0.5
+    },
+    {
+      "match": {
+        "metric": "laneway_primary_m",
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_primary_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_primary_m",
+        "site.r_code": "R5"
+      },
+      "value": 6,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_primary_m",
+        "site.r_code": "R10"
+      },
+      "value": 3,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_primary_m",
+        "site.r_code": "R12.5"
+      },
+      "value": 2,
+      "note": "As per secondary street setbacks (merged cell R2-R12.5)"
+    },
+    {
+      "match": {
+        "metric": "laneway_primary_m",
+        "site.r_code": [
+          "R15+",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 1.5
+    },
+    {
+      "match": {
+        "metric": "laneway_not_primary_m",
+        "site.r_code": "R100-SL"
+      },
+      "value": null,
+      "note": "Table 3A (p7) prints N/A at R100-SL (0.5m spans R15 to R80), but Table 2.10a (p26) gives a 0.5m setback to any adjoining right-of-way; rule C3.3.1#laneway-r100sl applies 0.5m. Draft inconsistency between Table 3A and Table 2.10a (register ch3-001).",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "laneway_primary_m",
+        "site.r_code": "R100-SL"
+      },
+      "value": 0.5,
+      "note": "Table 3A (p7) shows '0.5m/Nil' at R100-SL: 0.5m setback, nil for upper floors (Table 2.10a, p26); the not-primary row reads N/A for the same lot (register ch3-001)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "flat side setback regardless of wall height"
+    },
+    {
+      "match": {
+        "metric": "side_setback_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "flat side setback regardless of wall height"
+    },
+    {
+      "match": {
+        "metric": "side_setback_to_3_5m_m",
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "R2 10m spans all wall heights"
+    },
+    {
+      "match": {
+        "metric": "side_setback_to_3_5m_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "R2.5 7.5m spans all wall heights"
+    },
+    {
+      "match": {
+        "metric": "side_setback_to_3_5m_m",
+        "site.r_code": [
+          "R5+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 1,
+      "note": "wall height Up to 3.5m (1st storey); cell spans R5 to R100-SL"
+    },
+    {
+      "match": {
+        "metric": "side_setback_3_6_to_7m_m",
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "R2 10m spans all wall heights"
+    },
+    {
+      "match": {
+        "metric": "side_setback_3_6_to_7m_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "R2.5 7.5m spans all wall heights"
+    },
+    {
+      "match": {
+        "metric": "side_setback_3_6_to_7m_m",
+        "site.r_code": [
+          "R5+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 1.5,
+      "note": "wall height 3.6m-7m (2nd storey); cell spans R5 to R100-SL"
+    },
+    {
+      "match": {
+        "metric": "side_setback_over_7_1m_m",
+        "site.r_code": "R2"
+      },
+      "value": 10,
+      "note": "R2 10m spans all wall heights"
+    },
+    {
+      "match": {
+        "metric": "side_setback_over_7_1m_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5,
+      "note": "R2.5 7.5m spans all wall heights"
+    },
+    {
+      "match": {
+        "metric": "side_setback_over_7_1m_m",
+        "site.r_code": [
+          "R5+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 2,
+      "note": "wall height 7.1m and above (3rd storey); cell spans R5 to R100-SL"
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "R2"
+      },
+      "value": 10
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "R2.5"
+      },
+      "value": 7.5
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": "R5-R15"
+      },
+      "value": 3
+    },
+    {
+      "match": {
+        "metric": "rear_setback_m",
+        "site.r_code": [
+          "R17.5+",
+          "R100-SL",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": null,
+      "note": "Table 3A (p7) shows N/A from R17.5; unexplained whether side setbacks then govern the rear boundary (register ch3-001, ch3-056)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_height_m",
+        "site.r_code": "R2-R5"
+      },
+      "value": 3.5,
+      "note": "Table 3A (p7) shows 3.5m across R2-R40, but Table 3.4c (p35) has no boundary-wall provision for R2-R5 (starts R10) (register ch3-001)",
+      "verify": true
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_height_m",
+        "site.r_code": "R10-R40"
+      },
+      "value": 3.5,
+      "note": "(1 storey)"
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_height_m",
+        "site.r_code": [
+          "R50-R80",
+          "R100",
+          "R160",
+          "LR",
+          "MR",
+          "HR"
+        ]
+      },
+      "value": 7,
+      "note": "(2 storey)"
+    },
+    {
+      "match": {
+        "metric": "boundary_wall_height_m",
+        "site.r_code": "R100-SL"
+      },
+      "value": 13,
+      "note": "(4 storey); Table 2.10a, where all adjoining lots are R100-SL"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 7
+  },
+  "register_ref": "ch3-001",
+  "verify": true,
+  "notes": "Copied from Chapter 2 Table 2A and checked value by value against Chapter 3 page 7 (extract identical to Chapter 2 page 7 apart from the title, the dwelling type in the R80 footnote and footnote 1 now citing C3.4.4 - C3.4.6) and against Tables 3.1a-3.4c (p28-35) and Table 2.10a (p26). Rows still marked verify are known draft inconsistencies: boundary wall height 3.5m shown from R2 though Table 3.4c starts at R10; rear setback N/A from R17.5; laneway rows at R100-SL ('0.5m N/A' against Table 2.10a 0.5m); R100-SL total height inferred. Other register ch3-001 points carried as notes, not rows: no communal street row although Part C Table C had 0.5m (register ch3-047; see rule C3.3.1#communal-street); 7.0m/7.1m wall-height band gap; R100-SL site cover N/A (current 85%); footnote 2 'Subject to C2.10.1' on R100-SL. Regeneration check: tests/test_ch3.py.",
+  "verified": {
+    "method": "page-image",
+    "page": 7,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Every cell checked against p7, including merged-cell spans. Footnote 1 (on the rear setback row) reads 'Boundary walls permitted in accordance with C3.4.4 - C3.4.6'; footnote 2 'Subject to C2.10.1'. Rows left flagged are draft inconsistencies: boundary wall 3.5m from R2 (Table 3.4c starts at R10); rear N/A from R17.5; R100-SL laneway N/A and 0.5m/Nil against Table 2.10a 0.5m. No communal street row."
+  }
+}

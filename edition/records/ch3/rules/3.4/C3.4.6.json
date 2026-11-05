@@ -1,0 +1,71 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.4.6",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Internal site boundaries between grouped dwellings on the same lot treated as lot boundaries",
+  "text": "C3.4.6 For grouped dwellings on the same lot, the lot boundary provisions of C3.4.1 to C3.4.5 are to apply to internal site boundaries as if they were lot boundaries (refer Figure 3.4l).",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "count",
+      "fact": "proposal.dwelling_count",
+      "op": ">=",
+      "value": 2
+    }
+  ],
+  "inputs": [
+    "building.internal_boundary_treated_as_lot_boundary",
+    "proposal.dwelling_count"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "building.internal_boundary_treated_as_lot_boundary",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.4",
+  "defined_terms": [
+    "grouped dwelling",
+    "lot boundary",
+    "site"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.1.3-C3.1(iv)",
+      "relation": "restructured",
+      "note": "separate buildings on the same lot set back as though a lot boundary lay between them, using Tables 2a/2b -> Table 3.4a (1.0/1.5/2.0 m)"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.4.6",
+      "relation": "same",
+      "note": "C3.4.1-C3.4.5 apply to internal site boundaries"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 35,
+    "figure": "Figure 3.4l (p36)"
+  },
+  "register_ref": "ch3-067",
+  "verify": false,
+  "notes": "New to Chapter 3 (no Chapter 2 twin). The clause is a cross-reference: every C3.4.1 to C3.4.5 test applies again at each internal site boundary. The engine holds one value per setback fact, so the internal-boundary results are supplied as a single confirmation (building.internal_boundary_treated_as_lot_boundary: the dwellings meet C3.4.1 to C3.4.5 at every internal site boundary, boundary walls included). building.internal_boundary_setback_m alone cannot be tested because the required value depends on wall height and nil setbacks are allowed under C3.4.4. Applies where the lot holds two or more dwellings. Open application question (not a page ambiguity): applying the Table 3.4c percentages and boundary counts to each internal boundary is unclear for terrace layouts; C3.4.5 is the safety valve (register ch3-067).",
+  "verified": {
+    "method": "page-image",
+    "page": 35,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed on p35. Figure 3.4l (p36) labels 'Dwellings set back from internal site boundaries according to C3.4.1 - C3.4.5'; Table 3A footnote 1 (p7) cites boundary walls 'in accordance with C3.4.4 - C3.4.6'. The page is unambiguous; how Table 3.4c boundary counts apply in terrace layouts is an application question, not a page ambiguity."
+  }
+}

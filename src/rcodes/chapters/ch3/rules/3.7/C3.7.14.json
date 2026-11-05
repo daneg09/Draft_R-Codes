@@ -1,0 +1,64 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.14",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Communal street or battleaxe leg lighting and landscaping",
+  "text": "A communal street or battleaxe, including any adjoining setbacks, is provided with adequate lighting and is landscaped in accordance with C1.3.3.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "conditions": [
+    {
+      "type": "composite",
+      "mode": "any",
+      "label": "communal street or battleaxe leg",
+      "parts": [
+        {
+          "type": "boolean",
+          "fact": "site.has_communal_street",
+          "expected": true
+        },
+        {
+          "type": "boolean",
+          "fact": "site.battleaxe",
+          "expected": true
+        }
+      ]
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "communal street",
+    "battleaxe leg"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.12",
+      "relation": "restructured"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 42
+  },
+  "register_ref": "ch3-080",
+  "verify": true,
+  "notes": "Content twin of Chapter 2 C3.7.10, renumbered and widened to a communal street or battleaxe leg (condition). 'Adequate' lighting and 'landscaped' need a planner; no evaluator. The cross-reference 'C1.3.3' is a drafting error for C1.2.3 (communal street landscaping and lighting).",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Wording confirmed. The page cross-references 'C1.3.3'; Chapter 3 has no C1.3.3 (element 1.3 is water management) and C1.2.3 is the communal street landscaping and lighting clause, so the reference looks like a drafting error."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.4.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.4",
+  "element_title": "Private open space and balconies",
+  "title": "Services and fixtures in private open space are not visible from the street or are integrated",
+  "kind": "judgment",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Services and fixtures located within private open space, including but not limited to air-conditioner units and clothes drying, are not visible from the street and/or are integrated into the building design.",
+  "inputs": [],
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.4",
+  "defined_terms": [
+    "private open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.4.4",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 58,
+    "extract_line": 1998
+  },
+  "register_ref": "C4P2-114",
+  "verify": false,
+  "notes": "Judgment because of the 'and/or are integrated' limb. Repeated as footnote 1 to Table 4.4.",
+  "verified": {
+    "method": "page-image",
+    "page": 58,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.10",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Legible, continuous pedestrian path from footpath and parking to entries",
+  "text": "A legible, well-defined, continuous path of travel is provided from the public footpath and car parking areas to building access areas such as lobbies, stairs, accessways and individual dwelling entries.",
+  "kind": "judgment",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "accessway"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.6-C6.1",
+      "relation": "relaxed",
+      "note": "row-level crosswalk ch3-079: Part B C6.1-C6.5; R25 and below path 1.2 m -> 1 m, 2.5 m separation and shared-street rules deleted"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.8",
+      "relation": "relaxed",
+      "note": "row-level crosswalk ch3-079: Part C C3.7.8-C3.7.10"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 42
+  },
+  "register_ref": "ch3-079",
+  "verify": false,
+  "notes": "diverges: clause number reused. Chapter 3 C3.7.10 (p42) is the general pedestrian path of travel; Chapter 2 C3.7.10 is battleaxe lighting and landscaping, which is Chapter 3 C3.7.14. 'Legible, well-defined' needs a planner; no evaluator. The measurable communal-street path tests are C3.7.11.",
+  "verified": {
+    "method": "page-image",
+    "page": 42,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "table-2.1-side-setback",
+  "title": "Table 2.1 Minimum side setbacks",
+  "keys": [
+    "site.r_code"
+  ],
+  "unit": "m",
+  "rows": [
+    {
+      "match": {
+        "site.r_code": "R80"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "LR1",
+          "R-AC4"
+        ]
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "R100"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "R160"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": "MR1"
+      },
+      "value": 4
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "MR2",
+          "R-AC3"
+        ]
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "HR1",
+          "R-AC1"
+        ]
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "site.r_code": "HR2"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "site.r_code": "HR3"
+      },
+      "value": 0,
+      "note": "Nil"
+    },
+    {
+      "match": {
+        "site.r_code": [
+          "R-PA",
+          "R-AC0"
+        ]
+      },
+      "value": null
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 13
+  },
+  "register_ref": "C4P2-037..C4P2-045",
+  "verify": false,
+  "notes": "Minimum side setback in metres (A2.4.1); Nil = 0. Extract '4m 4m 4m Nil Nil' read as R80-LR1 | R100-R160 | MR1 | MR2 | HR1-HR3 per C4P2-037 to C4P2-044. The Volume 2 'average side setback where building length exceeds 16m' row is deleted (C4P2-045). Note 5: boundary setbacks are also determined by 2.7 separation, 3.5 visual privacy and the NCC. Rows also match the current names (R-AC4 = LR1, R-AC3 = MR2, R-AC1 = HR1, R-AC0 = R-PA; register C4P2-017). R-AC2 has no column and no row. The generic LR, MR and HR bands have no row (MR and HR each span columns with different values), so a site coded only LR, MR or HR is NOT_APPLICABLE until its code is known.",
+  "verified": {
+    "method": "page-image",
+    "page": 13,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

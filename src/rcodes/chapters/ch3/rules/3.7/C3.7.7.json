@@ -1,0 +1,79 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.7.7",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.7",
+  "element_title": "Access",
+  "title": "Sightline truncation at driveways, ROWs and street corners",
+  "text": "Walls, fences and other structures truncated or reduced to no higher than 0.75m within 1.5m of where walls, fences or other structures adjoin: i. A driveway that intersects a street or communal street, but excludes a right-of-way as a street; ii. A right-of-way or communal street that intersects a public street; and iii. Two streets (excluding rights-of-way as a street) that intersect (refer Figure 3.7e). C3.7.8 C3.7.7 does not apply where an existing or planned pedestrian path, shared path or road alignment is located more than 1.5m from the street boundary.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "parking.sightlines.clear_0_75m_within_1_5m",
+    "site.verge.path_or_road_offset_m"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "parking.sightlines.clear_0_75m_within_1_5m",
+    "expected": true
+  },
+  "exceptions": [
+    {
+      "label": "C3.7.8 path, shared path or road alignment more than 1.5 m from the street boundary",
+      "condition": {
+        "type": "threshold",
+        "fact": "site.verge.path_or_road_offset_m",
+        "op": ">",
+        "value": 1.5
+      },
+      "effect": {
+        "not_applicable": true
+      },
+      "inputs": [
+        "site.verge.path_or_road_offset_m"
+      ],
+      "source": "C3.7.8, p41"
+    }
+  ],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.7",
+  "defined_terms": [
+    "driveway",
+    "right-of-way",
+    "communal street",
+    "street boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.2.5-C5",
+      "relation": "relaxed",
+      "note": "C3.7.8 path-offset exemption is new to Part B"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.7.7",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 41,
+    "figure": "Figure 3.7e"
+  },
+  "register_ref": "ch3-078",
+  "verify": false,
+  "notes": "diverges: clause number reused. Chapter 3 C3.7.7 is the sightline truncation (content twin of Chapter 2 C3.7.5, evaluator and inputs unchanged; exception relabelled C3.7.8); Chapter 2 C3.7.7 is the 1 m ROW truncation, which is Chapter 3 C3.7.9. Limb (i) now excludes a right-of-way as a street and limb (iii) excludes ROWs as a street. C3.7.8 is recorded as the exception. site.verge.path_or_road_offset_m is the nearer of the existing or planned path/road alignment.",
+  "verified": {
+    "method": "page-image",
+    "page": 41,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

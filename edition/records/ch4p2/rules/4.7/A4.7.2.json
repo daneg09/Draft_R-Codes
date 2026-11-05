@@ -1,0 +1,78 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.7.2",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.7",
+  "element_title": "Managing the impact of noise",
+  "title": "Noise sources not adjacent to habitable room external walls and at least 3 m from bedroom windows",
+  "kind": "measurable",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Potential noise sources such as garage doors, driveways, service areas, plant rooms, building services, mechanical equipment, active communal open space and refuse bins are not located adjacent to the external wall of habitable rooms or within 3m of a window to a bedroom.",
+  "inputs": [
+    "dwellings.noise_source_adjacent_habitable_wall",
+    "dwellings.min.noise_source_to_bedroom_window_m"
+  ],
+  "evaluator": {
+    "type": "composite",
+    "mode": "all",
+    "parts": [
+      {
+        "type": "boolean",
+        "fact": "dwellings.noise_source_adjacent_habitable_wall",
+        "expected": false
+      },
+      {
+        "type": "threshold",
+        "fact": "dwellings.min.noise_source_to_bedroom_window_m",
+        "op": ">=",
+        "value": 3.0
+      }
+    ]
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.7",
+  "defined_terms": [
+    "habitable room",
+    "bedroom",
+    "communal open space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.7.2",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 65,
+    "extract_line": 2246
+  },
+  "register_ref": "C4P2-117",
+  "verify": false,
+  "notes": "from: ch4p1 C2.1.11 (3 m bedroom window fact). diverges: 'not adjacent to' the external wall of habitable rooms in place of ch4p1's 1 m; list adds driveways, plant rooms, building services and mechanical equipment and is open ('such as').",
+  "verified": {
+    "method": "page-image",
+    "page": 65,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

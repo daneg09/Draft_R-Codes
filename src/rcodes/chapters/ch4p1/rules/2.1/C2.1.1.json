@@ -1,0 +1,55 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p1/C2.1.1",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p1",
+  "part": "2.0 The Building",
+  "element": "2.1",
+  "element_title": "Size and layout of dwellings",
+  "title": "Primary living space can accommodate 3.8 m x 3.8 m (R30-R60)",
+  "kind": "measurable",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R30-R60"
+  ],
+  "region": "all",
+  "text": "Each dwelling is to have one room that is the designated primary living space and for development in areas coded R30 to R60, this primary living space can accommodate a dimension of at least 3.8m x 3.8m¹ (refer Figure 2.1a). ¹Exclusive of built-in cabinetry along walls.",
+  "inputs": [
+    "dwellings.min.primary_living_min_dim_m"
+  ],
+  "evaluator": {
+    "type": "threshold",
+    "fact": "dwellings.min.primary_living_min_dim_m",
+    "op": ">=",
+    "value": 3.8
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p1/M2.1",
+  "defined_terms": [
+    "primary living space"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C2.1.1",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 1) - Apartments.pdf",
+    "page": 15,
+    "extract_line": 442,
+    "figure": "Figure 2.1a"
+  },
+  "register_ref": "C4P1-022",
+  "verify": false,
+  "verified": {
+    "method": "page-image",
+    "page": 15,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  },
+  "notes": "new: no Chapter 3 equivalent (Chapter 3 2.1 has no living-room dimension). Heading 'Primary living space (applies to R30-R60 only)'; no equivalent at R10-R25, as now. Dimension exclusive of built-in cabinetry along walls (footnote 1). Tested on the apartment with the smallest primary living space dimension."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/A4.17.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.17",
+  "element_title": "Waste management",
+  "title": "Bin area sized for separate green waste, recycling and general waste per the Level 1 WMP",
+  "kind": "conditional",
+  "column": "A",
+  "fallback_kind": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "Sufficient area is provided to accommodate the required number of bins for the separate storage of green waste, recycling and general waste in accordance with the WALGA Multiple Dwelling Waste Management Plan Guidelines - Level 1 Waste Management Plan (Design Phase) (or local government requirements where applicable).",
+  "inputs": [
+    "services.waste.bin_area_per_wmp"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "services.waste.bin_area_per_wmp",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch4p2/O4.17",
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/A4.17.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 84,
+    "extract_line": 2902
+  },
+  "register_ref": "C4P2-127",
+  "verify": false,
+  "notes": "from: ch4p1 C2.4.1 (bin space per local government requirements); diverges: the basis is the WALGA Level 1 WMP and three separate streams, so a new fact is used rather than services.waste.bin_space_per_lg_requirements. No area is printed in the draft; the WMP sets it.",
+  "verified": {
+    "method": "page-image",
+    "page": 84,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

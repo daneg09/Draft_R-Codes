@@ -1,0 +1,29 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/M3.4",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.4",
+  "element_title": "Lot boundary setbacks",
+  "title": "Lot boundary setbacks merit assessment criteria",
+  "text": "M3.4.1 Lot boundary setbacks reinforce the location's streetscape character and are consistent with the existing or desired built form local character. M3.4.2 The setback of development from lot boundaries provides a transition between sites with different land uses or intensity of development. M3.4.3 Buildings are set back from lot boundaries or adjacent buildings on the same lot to: i. provide adequate solar access and natural ventilation to the building and open spaces on the site and adjoining properties; and ii. address the potential for overlooking and resultant loss of privacy on adjoining properties. M3.4.4 Buildings are built up to lot boundaries where this: i. makes more effective use of space for primary garden areas and/or private open space; ii. maintains adequate solar access to major openings and private open space of adjoining properties; and iii. contributes positively to the prevailing or future development context and streetscape as outlined in the local planning framework.",
+  "kind": "judgment",
+  "column": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 33
+  },
+  "verified": {
+    "method": "page-image",
+    "page": "33, 34",
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

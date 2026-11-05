@@ -1,0 +1,51 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/O2.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "2.0 Primary development parameters",
+  "element": "2.3",
+  "element_title": "Street setbacks",
+  "title": "Street setbacks Element Objectives",
+  "text": "Development is to achieve the following Element Objectives: O 2.3.1 The setback of the development from the street reinforces and/or complements the existing or proposed landscape character of the street. O 2.3.2 The street setback provides a clear transition between the public and private realm. O 2.3.3 The street setback assists in achieving visual privacy to apartments from the street. O 2.3.4 The setback of the development enables passive surveillance and outlook to the street.",
+  "kind": "judgment",
+  "column": "O",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "fallback": null,
+  "defined_terms": [],
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/2.3",
+      "relation": "same",
+      "note": "Element Objectives"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 16
+  },
+  "register_ref": "C4P2-070",
+  "verify": false,
+  "notes": "The Volume 2 intent paragraph on local variation is removed (now Chapter 1) (C4P2-070).",
+  "verified": {
+    "method": "page-image",
+    "page": 16,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

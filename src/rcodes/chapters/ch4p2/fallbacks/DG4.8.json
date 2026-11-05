@@ -1,0 +1,49 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch4p2/DG4.8",
+  "version": "draft-2026-10-24",
+  "chapter": "ch4p2",
+  "part": "4.0 Designing the building",
+  "element": "4.8",
+  "element_title": "Dwelling mix",
+  "title": "Dwelling mix design guidance",
+  "kind": "judgment",
+  "column": "DG",
+  "applies_to": [
+    "multiple_dwelling"
+  ],
+  "coding": [
+    "R80+",
+    "LR1",
+    "MR1",
+    "MR2",
+    "HR1",
+    "HR2",
+    "HR3",
+    "R-PA",
+    "LR",
+    "MR",
+    "HR"
+  ],
+  "region": "all",
+  "text": "DG 4.8.1 When considering the preferred dwelling mix appropriate to the development location, take into consideration: objectives and demographic trends identified in a local housing strategy or other relevant local planning instrument; current and projected community demographics, the profile of existing housing stock and market data; employment, education and community services in the locality and the housing demand associated with those services; unmet housing need in the locality including a demand for affordable or accessible housing. DG 4.8.2 A diverse dwelling mix may include dwellings designed to suit singles, couples, unrelated adult sharers, families, multi-generation households, seniors ageing in place and people with disabilities. Consider flexible configurations of space that can respond to changes in household composition and work/life arrangements. Examples include: increased provision of adaptable/accessible dwellings; larger rooms that are generic in form and suited to a variety of uses and functions; dual master bedroom apartments with separate bathrooms; dwellings with a street front room suited for use as a home business; larger apartments with multiple living spaces; open plan, 'loft' style apartments with only a fixed kitchen, laundry and bathroom to accommodate temporary partitioning of space by occupants; larger apartments with access to larger outdoor courtyards or terraces to meet the needs of families. DG 4.8.3 Ground floor dwellings are particularly suited to assist with providing greater housing diversity. Good accessibility means they are also well suited to aged or disabled occupants who require adaptable or universally designed dwellings.",
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 68,
+    "extract_line": 2347
+  },
+  "register_ref": "C4P2-118",
+  "replaces": [
+    {
+      "id": "rcodes:vol2-2024/DG4.8",
+      "relation": "same"
+    }
+  ],
+  "verify": false,
+  "notes": "Two DG columns on page 68 checked word for word against the page image.",
+  "verified": {
+    "method": "page-image",
+    "page": 68,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}

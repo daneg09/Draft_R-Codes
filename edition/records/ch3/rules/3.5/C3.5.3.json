@@ -1,0 +1,59 @@
+{
+  "id": "rcodes:draft-2026-10-24/ch3/C3.5.3",
+  "version": "draft-2026-10-24",
+  "chapter": "ch3",
+  "part": "3.0 Neighbourliness",
+  "element": "3.5",
+  "element_title": "Site works and retaining walls",
+  "title": "Excavation behind the street setback line may extend to the lot boundary",
+  "text": "Excavation within the site is permitted behind the street setback line and may be constructed up to the lot boundary.",
+  "kind": "conditional",
+  "column": "C",
+  "fallback_kind": "M",
+  "applies_to": [
+    "grouped_dwelling"
+  ],
+  "coding": [
+    "all"
+  ],
+  "region": "all",
+  "inputs": [
+    "site_works.excavation_behind_setback"
+  ],
+  "evaluator": {
+    "type": "boolean",
+    "fact": "site_works.excavation_behind_setback",
+    "expected": true
+  },
+  "exceptions": [],
+  "fallback": "rcodes:draft-2026-10-24/ch3/M3.5",
+  "defined_terms": [
+    "street setback line",
+    "lot boundary"
+  ],
+  "replaces": [
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partB/5.3.7-C7.3",
+      "relation": "relaxed",
+      "note": "Part B: excavation within 1 m of boundary limited to 0.5 m"
+    },
+    {
+      "id": "rcodes:vol1-v3-2026-04-10/partC/C3.5.3",
+      "relation": "same"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 3 - Grouped Dwellings.pdf",
+    "page": 37
+  },
+  "register_ref": "ch3-068",
+  "verify": false,
+  "notes": "Same as Chapter 2 C3.5.3. Permissive clause encoded as a yes/no: all excavation on the site lies behind the street setback line (excavation forward of the line is C3.5.1); true where no excavation is proposed. NCC and engineering requirements may apply.",
+  "verified": {
+    "method": "page-image",
+    "page": 37,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1",
+    "note": "Permissive clause; page clear. Yes/no encoding is an interpretation (see notes)."
+  }
+}

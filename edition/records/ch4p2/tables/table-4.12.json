@@ -1,0 +1,109 @@
+{
+  "id": "table-4.12",
+  "title": "Table 4.12 Planting on structure: minimum soil standards for plant types and sizes (reference)",
+  "keys": [
+    "landscape.on_structure.plant_type"
+  ],
+  "unit": "soil volume m3, soil depth m, soil area m2, minimum dimension m",
+  "rows": [
+    {
+      "match": {
+        "landscape.on_structure.plant_type": "large_tree"
+      },
+      "value": {
+        "soil_volume_m3": 76.8,
+        "soil_depth_m": 1.2,
+        "soil_area_m2": 64,
+        "soil_min_dim_m": 7
+      },
+      "note": "Over 12m high, crown spread at maturity; 64m2 with minimum dimension 7m"
+    },
+    {
+      "match": {
+        "landscape.on_structure.plant_type": "medium_tree"
+      },
+      "value": {
+        "soil_volume_m3": 36,
+        "soil_depth_m": 1.0,
+        "soil_area_m2": 36,
+        "soil_min_dim_m": 5
+      },
+      "note": "8-12m high, crown spread at maturity; 36m2 with minimum dimension 5m"
+    },
+    {
+      "match": {
+        "landscape.on_structure.plant_type": "small_tree"
+      },
+      "value": {
+        "soil_volume_m3": 7.2,
+        "soil_depth_m": 0.8,
+        "soil_area_m2": 9,
+        "soil_min_dim_m": 3
+      },
+      "note": "4-8m high, crown spread at maturity; soil area printed 3m x 3m"
+    },
+    {
+      "match": {
+        "landscape.on_structure.plant_type": "small_ornamental"
+      },
+      "value": {
+        "soil_volume_m3": 3.2,
+        "soil_depth_m": 0.8,
+        "soil_area_m2": 4,
+        "soil_min_dim_m": 2
+      },
+      "note": "3-4m high, crown spread at maturity; soil area printed 2m x 2m"
+    },
+    {
+      "match": {
+        "landscape.on_structure.plant_type": "shrub"
+      },
+      "value": {
+        "soil_volume_m3": null,
+        "soil_depth_m": 0.5,
+        "soil_area_m2": null,
+        "soil_min_dim_m": null
+      },
+      "note": "soil depth printed 500-600mm; lower bound is the minimum (table states minimum soil standards)"
+    },
+    {
+      "match": {
+        "landscape.on_structure.plant_type": "ground_cover"
+      },
+      "value": {
+        "soil_volume_m3": null,
+        "soil_depth_m": 0.3,
+        "soil_area_m2": null,
+        "soil_min_dim_m": null
+      },
+      "note": "soil depth printed 300-450mm; lower bound is the minimum (table states minimum soil standards)"
+    },
+    {
+      "match": {
+        "landscape.on_structure.plant_type": "turf"
+      },
+      "value": {
+        "soil_volume_m3": null,
+        "soil_depth_m": 0.2,
+        "soil_area_m2": null,
+        "soil_min_dim_m": null
+      },
+      "note": "soil depth 200mm"
+    }
+  ],
+  "source": {
+    "file": "Residential Design Codes Chapter 4 (Part 2) - Apartments.pdf",
+    "page": 74,
+    "table": "Table 4.12",
+    "extract_line": 2580
+  },
+  "register_ref": "C4P2-122",
+  "verify": false,
+  "notes": "Reference transcription. Rules A4.12.3 to A4.12.3-r6 carry these values as literal thresholds, one rule per plant type (a planter of one type cannot be tested against another type's row), so no rule looks this table up. '--' cells are null (no standard). Unchanged from Vol2 Table 4.12 (register C4P2-122).",
+  "verified": {
+    "method": "page-image",
+    "page": 74,
+    "date": "2026-11-02",
+    "by": "opus-4.5-pass-1"
+  }
+}
