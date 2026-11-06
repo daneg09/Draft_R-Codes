@@ -44,7 +44,7 @@ a table looked up by coding unless `by <fact>`, `all(...)`/`any(...)` for severa
 
 | Layer | Path | Use | Size (tokens) |
 |---|---|---|---|
-| entry | `README.md` | this file | ~2494 |
+| entry | `README.md` | this file | ~2504 |
 | chapter 1 | `chapters/ch1/` | operation: applicability, DA, consultation, LPP and LDP permission levels | `chapters/ch1/operation.md` ~2179, `chapters/ch1/permissions.md` ~5446 |
 | digest | `chapters/<ch>/digest.md` | one line per provision: ID, title, kind, coding, facts, test, exceptions, fallback | 5631-6813 |
 | pack | `elements/<ch>/<element>.md` | one element in full: local variation, merit or objectives, questions, provisions | 472-10996, median 1895 |
@@ -141,4 +141,4 @@ checked against the page image in one pass by an AI model (Claude Opus 4.5, 2 No
 123 records remain flagged where the page itself is ambiguous; 225 flagged items in all
 (records, tables, exceptions, A1 terms) are in `indexes/flagged.md`. Corrections and confirmed draft inconsistencies are
 logged in the repository's `CHANGELOG.md` (`../CHANGELOG.md`). What governs, versions, citation, error reports
-and the disclaimer: `GOVERNANCE.md`.
+and the disclaimer: `GOVERNANCE.md`. Plain-English guide: `../HOW-TO-USE.md`.

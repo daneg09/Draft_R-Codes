@@ -10,6 +10,7 @@ Start with README.md. Select the chapter by Table 1.1, read its digest, then ope
 - [CLAUDE.md](CLAUDE.md): instructions for Claude Code
 - [SKILL.md](SKILL.md): assessment skill (rcodes-draft-assessment): procedure, both modes, report format
 - [GOVERNANCE.md](GOVERNANCE.md): what governs, versions, verification, citation, corrections, disclaimer
+- [HOW-TO-USE.md](../HOW-TO-USE.md): plain-English guide for non-developers (repository root)
 - [Worked example](worked/two-storey-r20-15x30.md): a two-storey, 5-bedroom project home design on a 15 m x 30 m R20 lot, plan-only and with a declared siting
 
 ## Chapter 1 operation

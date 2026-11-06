@@ -219,3 +219,17 @@ Found by running the worked-example plan (`edition/worked/two-storey-r20-15x30.m
 - Chapter 1 (`chapters/ch1/operation.applicability`): the note on the "all codings" rows of Table 1.1 (single house, grouped dwelling), which is about R100, R160 and LR/MR/HR, is printed, prefixed "Note:", only for those codings; it no longer appears for an R20 lot. The data file is unchanged.
 - Worked example: plan-only C3.4.1#rear-r17.5 is now Not applicable (was Cannot tell); counts 9 Meets, 1 Not applicable, 78 Cannot tell, 12 Not evaluated. C2.3.1, C2.3.2, C2.3.3 and C2.3.4 now carry `site.region`. Scenario statuses are unchanged; its missing-facts groups gain the new sources. Reports regenerated; tests in `tests/test_engine.py` and `tests/test_worked.py`.
 - Also (`core/evaluators.safe_eval`): formula fact names are read in sorted order, so the missing-facts order in a report no longer varies between runs.
+
+## 2026-11-06 Open items from a private run on a real R5 construction set (not published)
+
+Rule and engine items to fix in pass 2; none changes a verified value.
+
+- C3.9.3 (narrow adjoining lot): should be NOT_APPLICABLE when the adjoining lot is coded below R40 instead of asking for its frontage and battleaxe status; the C3.9.2 single-storey exemption was not applied on the run.
+- C3.4.4(ii), (iii), #r1, #r2 and C3.4.5 (judgment records): need the "at least one boundary wall" condition C3.4.4(i) carries, so they drop out when no boundary wall is proposed.
+- C4.1.2, C4.1.3, M4.1.2, M4.1.5: should carry a subdivision.proposed condition; C4.1.1 reports MEETS where its own note says the existing-lot exception makes it not applicable.
+- C2.6.1 provisos (setback, site cover, landscaping) are not tested for the outbuilding itself: the C3.4.1 rules read the dwelling's setbacks only, so an outbuilding closer to a boundary than the dwelling passes silently. Needs outbuilding setback facts.
+- C3.5.2: add a "retaining present" condition so a design with no retaining walls is not CANNOT_TELL.
+- C3.6.4: carport width rule runs for a carport behind the setback line (already flagged on the record).
+- Report display: C3.3.2(i)#r1 prints permitted width as tested and built width as threshold (reads backwards); C3.3.2(ii) prints twice the projection as tested.
+- Report counts omit provisions excluded by coding or conditions; add an "excluded" count.
+- Finding on the draft itself: the deletion of the averaging and area-compensation devices (register ch2-047) bites on designs drawn to the current code; under the draft only Table 3.3b's reduced portion (8 m at R5 for up to the greater of 30% of frontage or 4 m) and the C3.3.2(ii) porch, verandah or equivalent projection remain, and whether an alfresco counts as "verandah or equivalent" decides the outcome.

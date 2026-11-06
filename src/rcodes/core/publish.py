@@ -1229,7 +1229,7 @@ checked against the page image in one pass by an AI model (Claude Opus 4.5, 2 No
 {n_flag} records remain flagged where the page itself is ambiguous; {self.flagged_total} flagged items in all
 (records, tables, exceptions, A1 terms) are in `indexes/flagged.md`. Corrections and confirmed draft inconsistencies are
 logged in the repository's `CHANGELOG.md` (`../CHANGELOG.md`). What governs, versions, citation, error reports
-and the disclaimer: `{GOVERNANCE}`.
+and the disclaimer: `{GOVERNANCE}`. Plain-English guide: `../HOW-TO-USE.md`.
 """
         readme = readme.replace("~{tokens_placeholder}", "~" + str(tokens(readme) + 1))
         self.put("README.md", readme)
@@ -1260,6 +1260,7 @@ To assess a plan, follow `{SKILL}`.
              "- [CLAUDE.md](CLAUDE.md): instructions for Claude Code",
              f"- [SKILL.md]({SKILL}): assessment skill (rcodes-draft-assessment): procedure, both modes, report format",
              f"- [GOVERNANCE.md]({GOVERNANCE}): what governs, versions, verification, citation, corrections, disclaimer",
+             "- [HOW-TO-USE.md](../HOW-TO-USE.md): plain-English guide for non-developers (repository root)",
              f"- [Worked example]({WORKED}): a two-storey, 5-bedroom project home design on a 15 m x 30 m R20 lot, plan-only and with a declared siting",
              "", "## Chapter 1 operation", "",
              f"- [Operation]({CH1_OPERATION}): Table 1.1, Figure 2.1, Table 2.4, LPP and LDP variation, clause 2.5.2"]

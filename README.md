@@ -8,6 +8,9 @@ This is an unofficial transcription. The WAPC's published PDFs govern, the draft
 assessment made with this repository is not planning advice or a determination. See
 [`edition/GOVERNANCE.md`](edition/GOVERNANCE.md).
 
+**Not a developer?** Start with [HOW-TO-USE.md](HOW-TO-USE.md): a plain-English guide to downloading the
+folder, opening it in an AI tool, asking your question and reading the result.
+
 ## The edition, and the evidence for its three claims
 
 `edition/` holds every provision of the draft as a structured record with a stable ID
